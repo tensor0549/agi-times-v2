@@ -7,8 +7,293 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T17:26:08.040Z",
+  "generatedAt": "2026-08-10T17:54:39.472Z",
   "items": [
+    {
+      "id": "item_2d6534089afa802735b3",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06398",
+      "url": "https://arxiv.org/abs/2608.06398",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:54:23.240Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "EntropyMoE: Entropy-Aware Sparse Expert Routing for Tokenizer-Free LLMs",
+        "zh-Hans": "EntropyMoE：面向无分词器大语言模型的熵感知稀疏专家路由"
+      },
+      "summary": {
+        "en": "A Mixture-of-Experts architecture for byte-level LLMs that uses patch entropy to route dynamic byte patches to specialized experts, achieving lowest bits-per-byte among baselines.",
+        "zh-Hans": "一种面向字节级大语言模型的专家混合架构，使用补丁熵将动态字节补丁路由到专门的专家，在基线中实现最低的每字节比特数。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mixture-of-experts",
+        "tokenizer-free",
+        "byte-level",
+        "llm"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 87,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_2d6534089afa802735b37e45",
+          "url": "https://arxiv.org/abs/2608.06398",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06398v1 Announce Type: new Abstract: Recent byte-level large language models (LLMs) have made tokenizer-free modeling increasingly competitive by grouping bytes into dynamically sized patches. However, existing byte-patch architectures still apply the same dense feed-forward computation to every patch. This uniform computation cannot adapt model capacity to variations in patch semantics and granularity. We address this limitation with EntropyMoE, a Mixture-of-Experts (MoE) architecture designed for dynamic byte patches. EntropyMoE replaces the dense feed-forward modules in the global patch Transformer with Top-K expert layers. Each dynamic patch serves as the basic unit of expert routing, and its byte coverage determines its contribution to workload accounting. The router selects experts directly from patch entropy, using the same granularity signal that underlies dynamic patch construction to organize sparse computation. Patch entropy and length jointly define the feature space for regulating expert specialization. Experiments show that EntropyMoE achieves the lowest held-out bits-per-byte among matched dense and sparse baselines while maintaining comparable downstream "
+        }
+      ]
+    },
+    {
+      "id": "item_6f1a5d7fa821b2e4a6a1",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06400",
+      "url": "https://arxiv.org/abs/2608.06400",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:54:23.240Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models",
+        "zh-Hans": "超越路由权重：专家混合奖励模型的忠实响应级解释"
+      },
+      "summary": {
+        "en": "Proposes Contribution-Contrast method for interpreting MoE reward models by analyzing chosen-rejected response pairs, providing more coherent and faithful expert characterization than routing-based alternatives.",
+        "zh-Hans": "提出贡献对比方法来解释专家混合奖励模型，通过分析选择-拒绝响应对，提供比基于路由的替代方案更连贯和忠实的专家特征描述。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "reward-models",
+        "mixture-of-experts",
+        "interpretability",
+        "human-preferences"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 87,
+      "importanceScore": 70,
+      "importance": 70,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6f1a5d7fa821b2e4a6a10eb9",
+          "url": "https://arxiv.org/abs/2608.06400",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06400v1 Announce Type: new Abstract: Reward models are central to learning from human preferences, yet identifying what drives their predictions remains challenging. Recent sparse Mixture-of-Experts (MoE) reward models seek to improve interpretability by routing prompts to specialized experts and characterizing experts through examples with high routing weights. However, routing weights only reveal which prompts an expert $\\textit{receives}$, not how it $\\textit{judges}$ responses, providing only a partial account of expert behavior. We therefore propose $\\textbf{Co}$ntribution-$\\textbf{Co}$ntrast ($\\textbf{CoCo}$) response-level interpretation, which faithfully characterizes experts' roles using chosen-rejected response pairs with the largest contribution contrasts, jointly capturing routing and preference behavior. Across automatic and human evaluations, CoCo yields more coherent, faithful, and specialized interpretations than router-based, score-based, and sparse autoencoder-based alternatives while maintaining competitive reward modeling accuracy. To the best of our knowledge, this is the first systematic study of interpretation methods for MoE reward models."
+        }
+      ]
+    },
+    {
+      "id": "item_370e3c5be0ae4f4bc36c",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06402",
+      "url": "https://arxiv.org/abs/2608.06402",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:54:23.240Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Interpretable Unsupervised Community Detection with LLM-Symbolized Structured Processes",
+        "zh-Hans": "基于大语言模型符号化结构过程的可解释无监督社区检测"
+      },
+      "summary": {
+        "en": "LUCID method uses LLMs to perform interpretable, training-free community detection through a four-stage pipeline inspired by phase-transition kinetics, translating implicit knowledge into explicit logical structures.",
+        "zh-Hans": "LUCID方法使用大语言模型通过受相变动力学启发的四阶段流水线执行可解释的免训练社区检测，将隐式知识转化为显式逻辑结构。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "llm",
+        "community-detection",
+        "unsupervised",
+        "interpretable"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 87,
+      "importanceScore": 65,
+      "importance": 65,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_370e3c5be0ae4f4bc36c3e11",
+          "url": "https://arxiv.org/abs/2608.06402",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06402v1 Announce Type: new Abstract: Community detection is a fundamental task in graph analytics that aims to identify cohesive groups of entities with similar behaviors or interests. Classic objective-driven methods struggle with complex graph structures, while deep-learning approaches improve performance at the expense of interpretability and rely on labeled data and training. Large language models (LLMs), with strong reasoning capabilities and world knowledge, are promising for interpretable, label-free community detection. To leverage these strengths, we propose LUCID, an LLM-guided, interpretable, training-free, and unsupervised community detection method. Inspired by phase-transition kinetics in natural systems, where complex structures emerge through initialization, merging, refinement, and selection, LUCID is designed as a four-stage pipeline. Within this pipeline, the LLM induces formal rules that translate implicit knowledge into explicit and interpretable logical structures. Specifically, (1) the Local-View Community Initialization stage encodes local graph structures using k-ego contexts and unsupervised node roles; (2) the Multi-factor Community Merge stage"
+        }
+      ]
+    },
+    {
+      "id": "item_3b5de402a4072e7297e5",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06530",
+      "url": "https://arxiv.org/abs/2608.06530",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:54:23.240Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "KNOWPLAN: Knowledge-Driven AI Agents for Smart Degree Pathway Planning",
+        "zh-Hans": "KNOWPLAN：用于智能学位路径规划的知识驱动AI智能体"
+      },
+      "summary": {
+        "en": "Presents KnowPlan system that separates curriculum extraction from pathway optimization, using CatalogBrowse for data extraction and DegreeMap for student-specific planning under prerequisite constraints.",
+        "zh-Hans": "提出KnowPlan系统，将课程提取与路径优化分离，使用CatalogBrowse进行数据提取，使用DegreeMap在先修课程约束下进行学生特定规划。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "ai-agents",
+        "planning",
+        "knowledge-driven",
+        "education"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 87,
+      "importanceScore": 60,
+      "importance": 60,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3b5de402a4072e7297e505fc",
+          "url": "https://arxiv.org/abs/2608.06530",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06530v1 Announce Type: new Abstract: Planning a degree from official university sources requires solving two problems in order. The institution's curriculum must first be reconstructed from catalogs, departmental pages, JSON endpoints, and PDFs that share no schema, and only then can a student-specific path be optimized under prerequisite logic and overlapping requirement constraints. Coupling the two lets each failure mode hide the other, because a planner that drives its own crawling never learns facts its current plan does not need. We present KnowPlan, which enforces an extraction-first boundary and measures the interface between the stages rather than assuming it. CatalogBrowse explores with no access to any user profile. It scores legal actions by lower-confidence expected marginal gain over a finite set of atomic catalog obligations per unit of source access, parses deterministically through platform adapters with a span-constrained clause-to-AST model fallback, and terminates on a closure certificate over index, schema, provenance, and reference completeness instead of a reward threshold. Its output contract is three provenance-linked JSON documents. DegreeMap co"
+        }
+      ]
+    },
+    {
+      "id": "item_d491582e5638582efd59",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06544",
+      "url": "https://arxiv.org/abs/2608.06544",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:54:23.240Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "TaskSense: Focusing on What Matters in World Models",
+        "zh-Hans": "TaskSense：专注于世界模型中的关键要素"
+      },
+      "summary": {
+        "en": "TaskSense framework uses differentiable stochastic spatial attention to focus world models on task-relevant visual regions, reconstructing only attended areas to improve control performance under visual distractions.",
+        "zh-Hans": "TaskSense框架使用可微分随机空间注意力机制使世界模型专注于任务相关的视觉区域，仅重建关注区域以提高视觉干扰下的控制性能。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "world-models",
+        "visual-control",
+        "attention-mechanism",
+        "task-relevance"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 87,
+      "importanceScore": 65,
+      "importance": 65,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d491582e5638582efd59b823",
+          "url": "https://arxiv.org/abs/2608.06544",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06544v1 Announce Type: new Abstract: World models for visual control typically learn compact latent states by reconstructing observations, implicitly encouraging representations to preserve information across the entire visual input. However, task-relevant content often occupies only a small fraction of the observation, while background clutter and distractors consume valuable representational capacity. This mismatch between visual reconstruction and control objectives biases latent representations to model task-irrelevant visual content, diluting learning signals for control-relevant features and severely degrading downstream performance under visual distractions. We introduce TaskSense, a task-centric world modeling framework that enforces task relevance before latent encoding through a differentiable stochastic spatial attention mechanism conditioned on the previous latent state. To steer attention toward control-relevant regions, we augment training with an auxiliary inverse-dynamics objective. Rather than reconstructing the full observation, the world model reconstructs only the attended regions, encouraging latent representations to preserve task-relevant informati"
+        }
+      ]
+    },
     {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
