@@ -17,6 +17,14 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
   const oldFeed = new Map((baseFeed?.items ?? []).map((item) => [item.id, item]));
   const nextFeed = new Map((feed?.items ?? []).map((item) => [item.id, item]));
   const newFeed = (feed?.items ?? []).filter((item) => !oldFeed.has(item.id));
+  const allIds = new Set();
+  const allUrls = new Set();
+  const normalizeUrl = (value) => { const url = new URL(value); for (const key of [...url.searchParams.keys()]) if (key.startsWith('utm_') || key === 'ref') url.searchParams.delete(key); url.hash = ''; return url.href.replace(/\/$/, ''); };
+  for (const item of feed?.items ?? []) {
+    if (allIds.has(item.id)) errors.push(`${item.id}: duplicate feed ID`); else allIds.add(item.id);
+    let url; try { url = normalizeUrl(item.canonicalUrl ?? item.url); } catch { errors.push(`${item.id}: invalid canonical URL`); continue; }
+    if (allUrls.has(url)) errors.push(`${item.id}: duplicate canonical URL ${url}`); else allUrls.add(url);
+  }
 
   if (newFeed.length < 1) errors.push('incremental publication requires at least 1 new feed item');
   for (const [id, previous] of oldFeed) {

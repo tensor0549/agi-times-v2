@@ -41,6 +41,13 @@ describe('incremental publisher gate', () => {
     expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first] }, baseInsights: { items: [] }, insights: { items: [] }, now, requireInsight: true })).toThrow(/daily publication requires/);
   });
 
+  it('rejects duplicate IDs and normalized canonical URLs in the next feed', () => {
+    const duplicateId = { ...second, id: first.id };
+    expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first, duplicateId] }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/duplicate feed ID/);
+    const duplicateUrl = { ...second, url: `${first.url}?utm_source=test#fragment`, canonicalUrl: `${first.url}?utm_source=test#fragment` };
+    expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first, duplicateUrl] }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/duplicate canonical URL/);
+  });
+
   it('rejects timestamp-only Insight freshness', () => {
     const retimestamped = { ...insight, publishedAt: '2026-08-10T11:00:00Z', updatedAt: '2026-08-10T11:00:00Z' };
     expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first, second] }, baseInsights: { items: [insight] }, insights: { items: [retimestamped] }, now })).toThrow(/timestamps changed without an editorial change/);
