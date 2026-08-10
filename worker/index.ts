@@ -26,9 +26,9 @@ app.use('*', async (c, next) => {
 app.use('*', secureHeaders({
   contentSecurityPolicy: {
     defaultSrc: ["'self'"], imgSrc: ["'self'", 'https:', 'data:'],
-    scriptSrc: ["'self'"], styleSrc: ["'self'", "'unsafe-inline'"],
-    connectSrc: ["'self'", 'https://us.i.posthog.com', 'https://us.posthog.com'],
-    fontSrc: ["'self'", 'data:'], objectSrc: ["'none'"], baseUri: ["'self'"], frameAncestors: ["'none'"],
+    scriptSrc: ["'self'", 'https://static.cloudflareinsights.com'], styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
+    connectSrc: ["'self'", 'https://us.i.posthog.com', 'https://us.posthog.com', 'https://cloudflareinsights.com'],
+    fontSrc: ["'self'", 'data:', 'https://fonts.gstatic.com'], objectSrc: ["'none'"], baseUri: ["'self'"], frameAncestors: ["'none'"],
   },
   referrerPolicy: 'strict-origin-when-cross-origin',
   strictTransportSecurity: 'max-age=31536000; includeSubDomains; preload',
