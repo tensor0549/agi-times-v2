@@ -48,6 +48,14 @@ describe('incremental publisher gate', () => {
     expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first, duplicateUrl] }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/duplicate canonical URL/);
   });
 
+  it('rejects source monopoly in the first 10 and low-relevance academic items', () => {
+    const third = { ...feedItem('new-3', 'https://example.net/papers/three', 'A third supported result.'), sourceId: 'same-source' };
+    const monopolized = [first, second, third].map((item) => ({ ...item, sourceId: 'same-source' }));
+    expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: monopolized }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/maximum is 2/);
+    const weakPaper = { ...first, type: 'paper', importanceScore: 80, agiRelevanceScore: 60 };
+    expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [weakPaper] }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/academic items require/);
+  });
+
   it('rejects timestamp-only Insight freshness', () => {
     const retimestamped = { ...insight, publishedAt: '2026-08-10T11:00:00Z', updatedAt: '2026-08-10T11:00:00Z' };
     expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first, second] }, baseInsights: { items: [insight] }, insights: { items: [retimestamped] }, now })).toThrow(/timestamps changed without an editorial change/);

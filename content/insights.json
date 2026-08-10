@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T17:26:08.040Z",
+  "generatedAt": "2026-08-10T18:08:59.423Z",
   "items": [
     {
       "id": "insight_agent-optimization-mechanisms-2026_20260810",
@@ -15,22 +15,22 @@
       "schemaVersion": "1.0.0",
       "title": {
         "en": "Complementary Mechanisms Emerge for Engineering Adaptive AI Agents",
-        "zh-Hans": "工程化自适应AI智能体的互补机制涌现"
+        "zh-Hans": "自适应 AI 智能体工程出现多种互补机制"
       },
       "dek": {
         "en": "Recent projects demonstrate distinct external mechanisms for agent improvement through issue tracking, environment evolution, programmatic grading, and reusable experience systems.",
-        "zh-Hans": "最新项目展示了通过问题跟踪、环境演进、程序化评分和可重用经验系统改进智能体的不同外部机制。"
+        "zh-Hans": "近期项目展示了几条不同的智能体改进路径：问题跟踪、动态训练环境、程序化评分，以及可复用的经验系统。"
       },
       "body": {
         "en": "Multiple research initiatives are developing complementary external mechanisms for engineering more capable AI agents. ADIAS introduces issue-centric optimization that maintains persistent issue states to guide repair progress [^candidate_13c6b5c4068aadbfbaa4b9dc], while WebGrader creates programmatic grading systems that autonomously derive interaction flows and discover reusable verifier skills [^candidate_36ceb5b8982b00a4be18b536]. Microsoft's infrastructure projects provide foundational support through Orchard's reusable framework for agent training and evaluation [^candidate_b7821e4e183d8870d042655a], Echoverse's evolving environments for computer-use training [^candidate_1d97ce9901e405acee5e79d3], and EvoLib's system for transforming experience into evolving knowledge [^candidate_edf74927e8bf18460382ac67]. These approaches represent distinct engineering strategies rather than fundamental architectural advances, focusing on external optimization loops, grading automation, and experience consolidation mechanisms.",
-        "zh-Hans": "多个研究项目正在开发工程化更强能力AI智能体的互补外部机制。ADIAS引入问题导向优化，维护持久问题状态来指导修复进展[^candidate_13c6b5c4068aadbfbaa4b9dc]，而WebGrader创建程序化评分系统，自主推导交互流程并发现可重用验证技能[^candidate_36ceb5b8982b00a4be18b536]。微软的基础设施项目通过Orchard的可重用智能体训练评估框架[^candidate_b7821e4e183d8870d042655a]、Echoverse的计算机使用训练演进环境[^candidate_1d97ce9901e405acee5e79d3]，以及EvoLib的经验转化为演进知识系统[^candidate_edf74927e8bf18460382ac67]提供基础支持。这些方法代表了不同的工程策略而非根本性架构进步，专注于外部优化循环、评分自动化和经验整合机制。"
+        "zh-Hans": "多个研究项目正从不同方向完善 AI 智能体工程。ADIAS 以问题为中心组织优化过程，通过持续维护问题状态来指导修复[^candidate_13c6b5c4068aadbfbaa4b9dc]；WebGrader 则自动推导交互流程，并从离线残差分析中沉淀可复用的验证技能[^candidate_36ceb5b8982b00a4be18b536]。\n\n微软的几项基础设施研究提供了另一组支撑：Orchard 提供可复用的智能体训练与评测框架[^candidate_b7821e4e183d8870d042655a]，Echoverse 为计算机操作智能体构建随任务共同演化的训练环境[^candidate_1d97ce9901e405acee5e79d3]，EvoLib 则把经验整理为可持续更新的知识[^candidate_edf74927e8bf18460382ac67]。\n\n这些方法代表不同的工程路线，而非底层架构的根本突破。它们的共同点，是把优化循环、评分和经验沉淀放到模型之外的系统层来完成。"
       },
       "publishedAt": "2026-08-10T17:26:08.040Z",
-      "updatedAt": "2026-08-10T17:26:08.040Z",
+      "updatedAt": "2026-08-10T18:08:59.423Z",
       "topics": [
-        "agent optimization",
-        "automated systems",
-        "training infrastructure"
+        "agents_automation",
+        "products_developer_ecosystem",
+        "research_science"
       ],
       "claims": [
         {
@@ -135,9 +135,9 @@
       ],
       "editorialGate": {
         "status": "passed",
-        "checkedAt": "2026-08-10T17:26:08.040Z",
+        "checkedAt": "2026-08-10T18:08:59.423Z",
         "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
-        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "translationReview": "human_bilingual_editor_approved",
         "aiProseScreen": {
           "method": "heuristics-v1",
           "status": "passed",
