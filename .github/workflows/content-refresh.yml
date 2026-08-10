@@ -38,11 +38,11 @@ jobs:
         run: |
           count="$(node -e "const x=require('./content/drafts/ingested.json'); process.stdout.write(String(x.candidates?.length ?? 0))")"
           echo "count=$count" >> "$GITHUB_OUTPUT"
-          if [ "$count" -ge 3 ]; then
+          if [ "$count" -ge 1 ]; then
             echo "publish=true" >> "$GITHUB_OUTPUT"
           else
             echo "publish=false" >> "$GITHUB_OUTPUT"
-            echo "Only $count unseen current candidates; preserving existing timestamps and skipping publication."
+            echo "No unseen current candidates; preserving existing timestamps and skipping publication."
           fi
 
       - name: Generate bilingual feed items and a cited Insight

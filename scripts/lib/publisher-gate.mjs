@@ -12,13 +12,13 @@ const editorialView = (insight) => ({
 const markers = (body) => new Set([...String(body ?? '').matchAll(/\[\^([^\]]+)\]/g)].map((match) => match[1]));
 const numbers = (text) => [...String(text ?? '').matchAll(/\b\d[\d,.]*(?:%|\b)/g)].map((match) => match[0].replaceAll(',', ''));
 
-export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights, now = Date.now() }) {
+export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights, now = Date.now(), requireInsight = false }) {
   const errors = [];
   const oldFeed = new Map((baseFeed?.items ?? []).map((item) => [item.id, item]));
   const nextFeed = new Map((feed?.items ?? []).map((item) => [item.id, item]));
   const newFeed = (feed?.items ?? []).filter((item) => !oldFeed.has(item.id));
 
-  if (newFeed.length < 2) errors.push(`incremental publication requires at least 2 new feed items, found ${newFeed.length}`);
+  if (newFeed.length < 1) errors.push('incremental publication requires at least 1 new feed item');
   for (const [id, previous] of oldFeed) {
     const current = nextFeed.get(id);
     if (!current) continue; // Retention may remove the oldest records.
@@ -52,7 +52,7 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
       errors.push(`${insight.id}: timestamps changed without an editorial change`);
     }
   }
-  if (!changedInsights.length) errors.push('publication did not add or materially update an Insight');
+  if (requireInsight && !changedInsights.length) errors.push('daily publication requires a new or materially updated Insight');
 
   for (const insight of changedInsights) {
     const published = Date.parse(insight.publishedAt);

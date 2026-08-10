@@ -31,6 +31,16 @@ describe('incremental publisher gate', () => {
     expect(result.newFeed.map((item) => item.id)).toEqual(['new-1', 'new-2']);
   });
 
+  it('allows a feed-only hourly update when the daily Insight already exists', () => {
+    const result = verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first] }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now, requireInsight: false });
+    expect(result.newFeed).toHaveLength(1);
+    expect(result.changedInsights).toHaveLength(0);
+  });
+
+  it('rejects a feed-only update when the daily Insight is required', () => {
+    expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first] }, baseInsights: { items: [] }, insights: { items: [] }, now, requireInsight: true })).toThrow(/daily publication requires/);
+  });
+
   it('rejects timestamp-only Insight freshness', () => {
     const retimestamped = { ...insight, publishedAt: '2026-08-10T11:00:00Z', updatedAt: '2026-08-10T11:00:00Z' };
     expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [first, second] }, baseInsights: { items: [insight] }, insights: { items: [retimestamped] }, now })).toThrow(/timestamps changed without an editorial change/);

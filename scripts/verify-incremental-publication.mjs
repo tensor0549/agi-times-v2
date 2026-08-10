@@ -20,12 +20,11 @@ const parseJsonResponse = (raw) => {
 };
 
 const baseRef = process.env.PUBLISH_BASE_REF ?? 'HEAD';
-const result = verifyIncrementalUpdate({
-  baseFeed: fromGit(baseRef, 'content/feed.json'),
-  feed: read('content/feed.json'),
-  baseInsights: fromGit(baseRef, 'content/insights.json'),
-  insights: read('content/insights.json'),
-});
+const baseFeed = fromGit(baseRef, 'content/feed.json');
+const baseInsights = fromGit(baseRef, 'content/insights.json');
+const currentDay = new Date().toISOString().slice(0, 10);
+const requireInsight = !(baseInsights.items ?? []).some((item) => String(item.publishedAt).slice(0, 10) === currentDay);
+const result = verifyIncrementalUpdate({ baseFeed, feed: read('content/feed.json'), baseInsights, insights: read('content/insights.json'), requireInsight });
 
 if (process.env.PUBLISH_VERIFY_SKIP_MODEL === '1') {
   console.log(`Deterministic incremental gate passed for ${result.newFeed.length} feed items and ${result.changedInsights.length} Insight(s); model review skipped explicitly.`);
