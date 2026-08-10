@@ -163,7 +163,7 @@ export function App() {
       setSearchBusy(true);
       fetch(`/api/v1/search?q=${encodeURIComponent(needle)}&limit=50`, { signal: controller.signal })
         .then(async response => { if (!response.ok) throw new Error(`Search ${response.status}`); return response.json() as Promise<{ items?: Array<Record<string, any>> }>; })
-        .then(payload => { const matched = mapFeedItems(payload.items || []); setRemoteSearch({ query: needle, stories: matched }); track('search_performed', { query_length: needle.length, result_count: matched.length, provider: 'api' }); })
+        .then(payload => { const matched = mapFeedItems(payload.items || []); setRemoteSearch({ query: needle, stories: matched }); track('search_performed', { query_length: needle.length, remote_result_count: matched.length, provider: 'api' }); })
         .catch(error => { if (!(error instanceof Error && error.name === 'AbortError')) { setRemoteSearch(null); track('error_seen', { area: 'search_api', fallback: true }); } })
         .finally(() => { if (!controller.signal.aborted) setSearchBusy(false); });
     }, 180);
@@ -205,12 +205,16 @@ export function App() {
 
   const results = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    const baseStories = remoteSearch?.query === query.trim() ? remoteSearch.stories : stories;
-    return baseStories.filter((story) => {
-      const inCategory = category === 'all' || story.category === category;
+    const inCategory = (story: Story) => category === 'all' || story.category === category;
+    const localMatches = stories.filter((story) => {
       const haystack = `${story.title.zh} ${story.title.en} ${story.summary.zh} ${story.summary.en} ${story.source}`.toLowerCase();
-      return inCategory && haystack.includes(needle);
+      return inCategory(story) && haystack.includes(needle);
     });
+    if (remoteSearch?.query !== query.trim()) return localMatches;
+    const remoteMatches = remoteSearch.stories.filter(inCategory);
+    const remoteIds = new Set(remoteMatches.map(story => story.id));
+    const remoteUrls = new Set(remoteMatches.map(story => story.url));
+    return [...remoteMatches, ...localMatches.filter(story => !remoteIds.has(story.id) && !remoteUrls.has(story.url))];
   }, [category, query, remoteSearch, stories]);
   const featured = stories[0];
   const activeInsight = selectedInsight || insight;
