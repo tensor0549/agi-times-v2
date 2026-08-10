@@ -14,7 +14,7 @@ type Category = 'all' | 'models' | 'research' | 'products' | 'industry' | 'polic
 type Localized = { zh: string; en: string };
 type Story = {
   id: string; category: Exclude<Category, 'all'>; title: Localized; summary: Localized;
-  source: string; time: string; url: string; featured?: boolean; signal: Localized;
+  source: string; time: string; url: string; kind: string; featured?: boolean; signal: Localized;
 };
 
 type ContentLocale = { en: string; 'zh-Hans': string };
@@ -23,6 +23,14 @@ type InsightItem = { id: string; title: ContentLocale; dek: ContentLocale; body:
 type RegistrySource = { id: string; kind: 'organization' | 'media' | 'person' | 'project'; name: string; url: string; category: string; platform: string };
 
 const localized = (value: ContentLocale | { en: string; zh: string }): Localized => ({ en: value.en, zh: 'zh-Hans' in value ? value['zh-Hans'] : value.zh });
+const formatKind = (kind: string, lang: Lang) => {
+  const labels: Record<string, Localized> = {
+    paper: { zh: '研究论文', en: 'Research paper' }, release: { zh: '官方发布', en: 'Official release' },
+    article: { zh: '文章', en: 'Article' }, video: { zh: '视频', en: 'Video' }, repository: { zh: '代码项目', en: 'Repository' },
+    post: { zh: '动态', en: 'Post' }, interview: { zh: '访谈', en: 'Interview' }, report: { zh: '报告', en: 'Report' },
+  };
+  return (labels[kind] || { zh: '资讯', en: 'Update' })[lang];
+};
 const mapCategory = (value: string): Exclude<Category, 'all'> => {
   if (value.includes('model')) return 'models';
   if (value.includes('research') || value.includes('safety')) return 'research';
@@ -78,6 +86,7 @@ const mapFeedItems = (items: Array<Record<string, any>>): Story[] => items.map((
   summary: localized(item.summary as ContentLocale | { en: string; zh: string }),
   time: String(item.publishedAt),
   url: String(item.canonicalUrl || item.url),
+  kind: String(item.type || item.mediaType || 'article').toLowerCase(),
   signal: { zh: item.verification === 'verified_first_party' ? '一手来源已核验' : '来源已核验', en: item.verification === 'verified_first_party' ? 'Verified first party' : 'Source verified' },
 }));
 const bundledStories = mapFeedItems(feedData.items as unknown as Array<Record<string, any>>);
@@ -341,7 +350,7 @@ export function App() {
             {results.map(story => <article className="story-card" key={story.id}>
               <div className="story-rail"><span className="source-avatar">{story.source.charAt(0)}</span><span className="rail-line"/></div>
               <div className="story-content">
-                <div className="story-meta"><span>{story.source}</span><span>·</span><span>{formatDate(story.time, lang)}</span><span className="tag">{t[story.category]}</span></div>
+                <div className="story-meta"><span>{story.source}</span><span>·</span><span>{formatDate(story.time, lang)}</span><span className="type-tag">{formatKind(story.kind, lang)}</span><span className="tag">{t[story.category]}</span></div>
                 <h3><a href={story.url} target="_blank" rel="noreferrer" onClick={() => track('article_opened', { article_id: story.id, source: story.source })}><HighlightText text={story.title[lang]} query={query}/><ExternalLink className="external" size={14}/></a></h3>
                 <p><HighlightText text={story.summary[lang]} query={query}/></p>
                 <div className="story-bottom"><span className="story-signal"><Check size={12}/>{story.signal[lang]}</span><a href={story.url} target="_blank" rel="noreferrer" aria-label={`${t.read}: ${story.title[lang]}`}><ArrowRight size={16}/></a></div>
