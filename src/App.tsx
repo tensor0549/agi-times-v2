@@ -93,8 +93,8 @@ function useTheme() {
 export function App() {
   const [lang, setLang] = useState<Lang>(() => (localStorage.getItem('agi-lang') as Lang) || 'zh');
   const [theme, setTheme] = useTheme();
-  const [category, setCategory] = useState<Category>('all');
-  const [query, setQuery] = useState('');
+  const [category, setCategory] = useState<Category>(() => { const value = new URLSearchParams(location.search).get('category') as Category | null; return value && categories.includes(value) ? value : 'all'; });
+  const [query, setQuery] = useState(() => new URLSearchParams(location.search).get('q') || '');
   const [mobileOpen, setMobileOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [feedbackSent, setFeedbackSent] = useState(false);
@@ -111,6 +111,22 @@ export function App() {
   const t = copy[lang];
 
   useEffect(() => { document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en'; localStorage.setItem('agi-lang', lang); }, [lang]);
+  useEffect(() => {
+    const url = new URL(location.href);
+    query.trim() ? url.searchParams.set('q', query.trim()) : url.searchParams.delete('q');
+    category !== 'all' ? url.searchParams.set('category', category) : url.searchParams.delete('category');
+    history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+  }, [query, category]);
+  useEffect(() => {
+    const restoreDiscovery = () => {
+      const params = new URLSearchParams(location.search);
+      setQuery(params.get('q') || '');
+      const nextCategory = params.get('category') as Category | null;
+      setCategory(nextCategory && categories.includes(nextCategory) ? nextCategory : 'all');
+    };
+    addEventListener('popstate', restoreDiscovery);
+    return () => removeEventListener('popstate', restoreDiscovery);
+  }, []);
   useEffect(() => {
     const controller = new AbortController();
     Promise.allSettled([
