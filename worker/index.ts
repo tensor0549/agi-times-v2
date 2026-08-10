@@ -3,7 +3,8 @@ import { secureHeaders } from 'hono/secure-headers';
 import { timing } from 'hono/timing';
 import type { Bindings } from './types';
 import { apiError, boundedInt, latestTimestamp, parseJson, utcTimestamp } from './lib/http';
-import { capture, isAllowedEvent } from './lib/posthog';
+import { feedbackPostHogEvent, safeAnalyticsProperties } from './lib/analytics-properties';
+import { capture, isAllowedEvent, isOpaqueAnalyticsId } from './lib/posthog';
 import { isSameOriginPage, rateLimit } from './lib/rate-limit';
 import { orderForProminence, parseOffsetCursor } from './lib/diversity';
 import { escapeLike, hasHan } from './lib/search';
@@ -152,10 +153,10 @@ app.post('/api/v1/events', async (c) => {
   if (Number(c.req.header('content-length') ?? 0) > 16_384) return apiError(c, 413, 'PAYLOAD_TOO_LARGE', 'Payload is too large.');
   let body: { event?: string; distinctId?: string; properties?: Record<string, unknown> };
   try { body = await c.req.json(); } catch { return apiError(c, 400, 'INVALID_JSON', 'A valid JSON body is required.'); }
-  if (!body.event || !isAllowedEvent(body.event) || !body.distinctId) return apiError(c, 400, 'INVALID_EVENT', 'Event name or distinct ID is invalid.');
+  if (!body.event || !isAllowedEvent(body.event) || !body.distinctId || !isOpaqueAnalyticsId(body.distinctId)) return apiError(c, 400, 'INVALID_EVENT', 'Event name or distinct ID is invalid.');
   const limit = await rateLimit(c.env, c.req.raw, 'events', 120, 60, body.distinctId);
   if (!limit.allowed) { c.header('retry-after', String(limit.retryAfter)); return apiError(c, 429, 'RATE_LIMITED', 'Too many events. Please retry later.'); }
-  const properties = sanitizeProperties(body.properties);
+  const properties = safeAnalyticsProperties(body.event, body.properties);
   c.executionCtx.waitUntil(capture(c.env, { event: body.event, distinctId: body.distinctId, properties }, c.get('requestId')));
   return c.body(null, 202);
 });
@@ -179,8 +180,7 @@ app.post('/api/v1/feedback', async (c) => {
     await c.env.DB.prepare(`INSERT INTO feedback (id,rating,message,email,locale,page_url,content_id,context_json) VALUES (?,?,?,?,?,?,?,?)`)
       .bind(id, rating, message || null, typeof body.email === 'string' ? body.email.slice(0, 320) : null, locale, pageUrl, typeof body.contentId === 'string' ? body.contentId.slice(0, 128) : null, JSON.stringify(context)).run();
   } catch { return apiError(c, 503, 'FEEDBACK_UNAVAILABLE', 'Feedback could not be saved. Please try again.'); }
-  const distinctId = typeof body.distinctId === 'string' ? body.distinctId : id;
-  c.executionCtx.waitUntil(capture(c.env, { event: 'feedback_submitted', distinctId, properties: { feedback_id: id, rating, locale, page_url: pageUrl, content_id: body.contentId, ...context } }, c.get('requestId')));
+  c.executionCtx.waitUntil(capture(c.env, feedbackPostHogEvent(id,rating,locale,context,pageUrl), c.get('requestId')));
   return c.json({ id, status: 'received' }, 201);
 });
 
