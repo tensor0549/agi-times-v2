@@ -195,7 +195,7 @@ export function App() {
     <a className="skip-link" href="#main">{lang === 'zh' ? '跳至主要内容' : 'Skip to content'}</a>
     <header className="site-header">
       <div className="header-inner">
-        <a href="#top" className="wordmark" aria-label="AGI Times home"><span className="mark">A</span><span>AGI Times</span></a>
+        <a href="#top" className="wordmark" aria-label={lang === 'zh' ? 'AGI Times — 首页' : 'AGI Times — Home'}><span className="mark" aria-hidden="true">A</span><span>AGI Times</span></a>
         <nav className="desktop-nav" aria-label={lang === 'zh' ? '主导航' : 'Primary'}>
           {t.nav.map((item, i) => <a className={i === 0 ? 'active' : ''} href={i === 1 ? '#insight' : '#feed'} key={item}>{item}</a>)}
         </nav>
@@ -269,7 +269,7 @@ export function App() {
       </section>
     </main>
 
-    <footer><div className="container footer-inner"><div><div className="wordmark footer-mark"><span className="mark">A</span><span>AGI Times</span></div><p>{t.footer}</p></div><a className="footer-status" href="#source-index"><span className="live-dot"/>{lang === 'zh' ? `${registryTotal} 个来源已建立索引` : `${registryTotal} sources indexed`}</a><div className="footer-links"><a href="https://github.com/tensor0549/agi-times-v2" target="_blank" rel="noreferrer"><Code2 size={17}/>GitHub</a><button onClick={() => { setFeedbackOpen(true); track('feedback_opened', { placement: 'footer' }); }}><MessageSquareText size={17}/>{t.feedback}</button></div></div></footer>
+    <footer><div className="container footer-inner"><div><div className="wordmark footer-mark"><span className="mark" aria-hidden="true">A</span><span>AGI Times</span></div><p>{t.footer}</p></div><a className="footer-status" href="#source-index"><span className="live-dot"/>{lang === 'zh' ? `${registryTotal} 个来源已建立索引` : `${registryTotal} sources indexed`}</a><div className="footer-links"><a href="https://github.com/tensor0549/agi-times-v2" target="_blank" rel="noreferrer"><Code2 size={17}/>GitHub</a><button onClick={() => { setFeedbackOpen(true); track('feedback_opened', { placement: 'footer' }); }}><MessageSquareText size={17}/>{t.feedback}</button></div></div></footer>
 
     <button className="feedback-fab" aria-label={lang === 'zh' ? '提交反馈' : 'Send feedback'} onClick={() => { setFeedbackOpen(true); track('feedback_opened', { placement: 'floating_button' }); }}><MessageSquareText size={18}/><span>{t.feedback}</span></button>
 
