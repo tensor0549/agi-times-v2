@@ -13,7 +13,7 @@ describe('safe article enrichment fetch', () => {
     await expect(assertPublicHttps('https://[2001:db8::1]/post')).rejects.toThrow(/private|non-routable/);
     await expect(assertPublicHttps('https://198.51.100.8/post')).rejects.toThrow(/private|non-routable/);
     await expect(assertPublicHttps('https://203.0.113.8/post')).rejects.toThrow(/private|non-routable/);
-    for (const address of ['::a9fe:a9fe', '::7f00:1', '64:ff9b::a9fe:a9fe', '64:ff9b::7f00:1', '2002:a9fe:a9fe::', '2002:7f00:1::']) await expect(assertPublicHttps(`https://[${address}]/post`)).rejects.toThrow(/private|non-routable/);
+    for (const address of ['::a9fe:a9fe', '::127.0.0.1', '::7f00:1', '64:ff9b::a9fe:a9fe', '64:ff9b::7f00:1', '2002:a9fe:a9fe::', '2002:7f00:1::']) await expect(assertPublicHttps(`https://[${address}]/post`)).rejects.toThrow(/private|non-routable/);
     await expect(assertPublicHttps('https://evil.example/post', publicLookup, ['example.com'])).rejects.toThrow(/allowlist/);
   });
 
