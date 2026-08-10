@@ -12,7 +12,7 @@ GitHub cron is delayed occasionally; Cloudflare Cron provides independent 15-min
 Cloudflare Workers observability is enabled at 100% during launch. Every API response has `x-request-id`; unhandled failures emit structured logs without request bodies or credentials. The scheduled check emits `ops_check` JSON with feed age, last ingestion failure, and new feedback count. CI/deploy failures remain visible in GitHub Actions.
 
 ## Feedback triage
-Feedback is validated, size-bounded, stored in D1, and mirrored as the allowlisted `feedback_submitted` PostHog event with locale, page, content ID, viewport, and request ID. Email/message bodies are deliberately excluded from PostHog. Operators query D1 by `status='new'`; automation may use aggregate counts from scheduled logs. Any future automatic issue creation must redact email and free text before leaving D1.
+Feedback is validated, size-bounded, stored in D1, and mirrored as the allowlisted `feedback_submitted` PostHog event with locale, page, content ID, viewport, and request ID. Email/message bodies are deliberately excluded from PostHog. Optional email addresses are retained in D1 for at most 90 days and are automatically erased by the 15-minute maintenance Cron; feedback text remains available for product triage until the record is resolved/closed under the operational retention policy. Operators query D1 by `status='new'`; automation may use aggregate counts from scheduled logs. Any future automatic issue creation must redact email and free text before leaving D1.
 
 ## Secrets
 - Worker: `POSTHOG_API_KEY` (and future source/model credentials) via `wrangler secret put`.

@@ -10,6 +10,12 @@ type Variables = { requestId: string };
 const app = new Hono<{ Bindings: Bindings; Variables: Variables }>();
 
 app.use('*', async (c, next) => {
+  const requestUrl = new URL(c.req.url);
+  if (requestUrl.hostname === 'www.agitime.ai' || requestUrl.protocol !== 'https:') {
+    requestUrl.hostname = requestUrl.hostname === 'www.agitime.ai' ? 'agitime.ai' : requestUrl.hostname;
+    requestUrl.protocol = 'https:';
+    return c.redirect(requestUrl.toString(), 308);
+  }
   const requestId = crypto.randomUUID();
   c.set('requestId', requestId);
   await next();
@@ -54,7 +60,9 @@ app.get('/api/v1/feed', async (c) => {
   try {
     const result = await c.env.DB.prepare(`SELECT ci.*, s.name AS source_name, s.kind AS source_kind
       FROM content_items ci JOIN sources s ON s.id=ci.source_id
-      WHERE ${conditions.join(' AND ')} ORDER BY ci.featured DESC, ci.published_at DESC LIMIT ?`).bind(...values).all<Record<string, unknown>>();
+      WHERE ${conditions.join(' AND ')}
+      ORDER BY CASE WHEN ci.featured=1 AND ci.published_at >= datetime('now','-1 day') THEN 1 ELSE 0 END DESC,
+        ci.published_at DESC, ci.score DESC LIMIT ?`).bind(...values).all<Record<string, unknown>>();
     const rows = result.results;
     const hasMore = rows.length > limit;
     const items = rows.slice(0, limit).map(toContentItem);
@@ -149,7 +157,10 @@ async function scheduled(controller: ScheduledController, env: Bindings): Promis
       (SELECT COUNT(*) FROM feedback WHERE status='new') AS new_feedback,
       (SELECT COUNT(*) FROM ingestion_runs WHERE status='failed' AND started_at >= datetime('now','-1 day')) AS recent_failures`).first<Record<string, unknown>>();
     console.log(JSON.stringify({ level: 'info', event: 'ops_check', scheduledTime: controller.scheduledTime, checkedAt: now, ...stats }));
-    await env.DB.prepare('DELETE FROM api_rate_limits WHERE window_start < ?').bind(Math.floor(Date.now()/1000)-86400).run();
+    await env.DB.batch([
+      env.DB.prepare('DELETE FROM api_rate_limits WHERE window_start < ?').bind(Math.floor(Date.now()/1000)-86400),
+      env.DB.prepare("UPDATE feedback SET email=NULL WHERE email IS NOT NULL AND created_at < datetime('now','-90 day')"),
+    ]);
   } catch (error) {
     console.error(JSON.stringify({ level: 'error', event: 'ops_check_failed', checkedAt: now, message: error instanceof Error ? error.message : 'unknown' }));
     throw error;
