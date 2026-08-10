@@ -7,8 +7,107 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T20:08:00.000Z",
+  "generatedAt": "2026-08-10T20:25:00.000Z",
   "items": [
+    {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+        }
+      ]
+    },
     {
       "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
       "schemaVersion": "1.0.0",
