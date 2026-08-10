@@ -12,7 +12,7 @@ CREATE TABLE source_ingestion_health (
   latency_ms INTEGER,error_summary TEXT,updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) STRICT;
 INSERT INTO source_ingestion_health(ingestion_id,source_id,source_type,enabled,last_attempt_at,last_success_at,latest_item_at,last_status,http_status,error_count,consecutive_failures,backoff_until,items_seen,items_new,within_window,deduped_existing,enriched,latency_ms,error_summary,updated_at)
-SELECT source_id,source_id,source_type,enabled,last_attempt_at,last_success_at,latest_item_at,last_status,http_status,error_count,consecutive_failures,backoff_until,items_seen,items_new,within_window,deduped_existing,enriched,latency_ms,error_summary,updated_at FROM source_ingestion_health_v1;
+SELECT source_id,source_id,source_type,0,last_attempt_at,last_success_at,latest_item_at,last_status,http_status,error_count,consecutive_failures,backoff_until,items_seen,items_new,within_window,deduped_existing,enriched,latency_ms,error_summary,updated_at FROM source_ingestion_health_v1;
 DROP TABLE source_ingestion_health_v1;
 CREATE INDEX idx_source_health_source ON source_ingestion_health(source_id,enabled,last_status);
 CREATE INDEX idx_source_health_status ON source_ingestion_health(enabled,last_status,updated_at);

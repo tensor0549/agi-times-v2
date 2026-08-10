@@ -1,22 +1,14 @@
 import fs from 'node:fs';
-import os from 'node:os';
 import path from 'node:path';
+import os from 'node:os';
 import { spawnSync } from 'node:child_process';
+import { buildSourceHealthSql } from './lib/source-health-sql.mjs';
 
-const file = 'content/drafts/source-health.json';
-if (!fs.existsSync(file)) throw new Error('Source health draft is required');
+const root = path.resolve(import.meta.dirname, '..');
+const file = path.join(root, 'content/drafts/source-health.json');
+if (!fs.existsSync(file)) throw new Error('Missing source-health draft');
 const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-const quote = (value) => value == null ? 'NULL' : `'${String(value).replaceAll("'", "''")}'`;
-const number = (value) => Number.isFinite(Number(value)) ? Number(value) : 'NULL';
-const status = new Set(['healthy', 'degraded', 'failed', 'backoff']);
-let sql = 'BEGIN IMMEDIATE;\n';
-for (const row of data.sources ?? []) {
-  if (!/^ingest_[a-z0-9_]+$/.test(row.ingestionId) || !/^src_[a-z0-9-]+$/.test(row.sourceId) || !status.has(row.status) || !['feed', 'api'].includes(row.sourceType)) throw new Error(`Invalid source health row for ${row.sourceId ?? 'unknown'}`);
-  const summary = row.failureCode ?? (row.status === 'failed' ? 'fetch_or_parse_failed' : row.status === 'degraded' ? 'item_processing_degraded' : null);
-  const failed = row.status === 'failed' ? 1 : 0;
-  sql += `INSERT INTO source_ingestion_health(ingestion_id,source_id,source_type,enabled,last_attempt_at,last_success_at,latest_item_at,last_status,http_status,error_count,consecutive_failures,backoff_until,items_seen,items_new,within_window,deduped_existing,enriched,latency_ms,error_summary,updated_at) VALUES(${quote(row.ingestionId)},${quote(row.sourceId)},${quote(row.sourceType)},1,${quote(row.lastAttemptAt)},${quote(row.lastSuccessAt)},${quote(row.latestItemAt)},${quote(row.status)},${number(row.httpStatus)},${failed},${failed},${quote(row.backoffUntil)},${number(row.itemsSeen)},${number(row.itemsNew)},${number(row.withinWindow)},${number(row.dedupedExisting)},${number(row.enriched)},${number(row.latencyMs)},${quote(summary)},CURRENT_TIMESTAMP) ON CONFLICT(ingestion_id) DO UPDATE SET source_id=excluded.source_id,source_type=excluded.source_type,enabled=1,last_attempt_at=CASE WHEN excluded.last_attempt_at>=source_ingestion_health.last_attempt_at OR source_ingestion_health.last_attempt_at IS NULL THEN excluded.last_attempt_at ELSE source_ingestion_health.last_attempt_at END,last_success_at=COALESCE(excluded.last_success_at,source_ingestion_health.last_success_at),latest_item_at=CASE WHEN excluded.latest_item_at>COALESCE(source_ingestion_health.latest_item_at,'') THEN excluded.latest_item_at ELSE source_ingestion_health.latest_item_at END,last_status=CASE WHEN excluded.last_attempt_at>=COALESCE(source_ingestion_health.last_attempt_at,'') THEN excluded.last_status ELSE source_ingestion_health.last_status END,http_status=excluded.http_status,error_count=source_ingestion_health.error_count+CASE WHEN excluded.last_attempt_at>COALESCE(source_ingestion_health.last_attempt_at,'') AND excluded.last_status='failed' THEN 1 ELSE 0 END,consecutive_failures=CASE WHEN excluded.last_attempt_at<=COALESCE(source_ingestion_health.last_attempt_at,'') THEN source_ingestion_health.consecutive_failures WHEN excluded.last_status='failed' THEN source_ingestion_health.consecutive_failures+1 WHEN excluded.last_status='backoff' THEN source_ingestion_health.consecutive_failures ELSE 0 END,backoff_until=excluded.backoff_until,items_seen=excluded.items_seen,items_new=excluded.items_new,within_window=excluded.within_window,deduped_existing=excluded.deduped_existing,enriched=excluded.enriched,latency_ms=excluded.latency_ms,error_summary=excluded.error_summary,updated_at=CURRENT_TIMESTAMP;\n`;
-}
-sql += 'COMMIT;\n';
+const sql = buildSourceHealthSql(data);
 const temp = path.join(os.tmpdir(), `agi-source-health-${process.pid}.sql`);
 fs.writeFileSync(temp, sql, { mode: 0o600 });
 const remote = process.argv.includes('--remote') ? ['--remote'] : ['--local'];
