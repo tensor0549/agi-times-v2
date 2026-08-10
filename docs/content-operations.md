@@ -11,6 +11,7 @@ npm run content:validate              # structural contract
 npm run content:editorial-validate    # counts, dates, duplicates, citations, bilingual prose
 npm run content:links                 # same gates plus live checks of every published/cited item URL
 npm run insight:daily-check           # sourced bilingual Insight inside 26-hour window
+node scripts/audit-registry-links.mjs # full registry hard/soft-404 audit
 ```
 
 Registry inputs are `data/registry-candidates.json` plus the media/project lists in `scripts/build-content-registry.mjs`. Feed and Insight generators contain only reviewed first-party item URLs and exact source evidence snippets. Do not use `content:build` merely to refresh timestamps: update sources and editorial copy first.
@@ -24,6 +25,17 @@ Publication is blocked when any of these are true:
 - an Insight claim lacks one or more resolvable citation IDs, a citation has no item-level URL/evidence snippet, or editorial/prose screening metadata is not `passed`;
 - the daily Insight is older than 26 hours.
 
+## Selection, relevance and diversity
+
+Freshness is necessary but cannot override relevance or source diversity.
+
+- The first 10 feed positions may contain at most two records from one publisher/organization and at most three records with the same primary topic when alternatives exist.
+- A single autonomous publication batch may add at most two records from the same source and should represent at least three publishers when the candidate pool permits.
+- Academic repositories such as arXiv are distribution hosts, not independent asserting publishers. Capture paper authors/institutions and evaluate independence by research team.
+- Academic items require `agiRelevance >= 0.70` and importance `>= 70`. They must materially advance transferable foundation-model, agent, world-model/embodied, compute, evaluation, safety or governance capabilities.
+- Narrow vertical applications—such as one institution's degree planning or generic domain classification—do not qualify merely because they use an LLM or agent.
+- A newer low-relevance item must not displace a slightly older, authoritative frontier-model or safety development solely because of its date.
+
 ## Bilingual AI-like prose screen
 `validate-editorial-content.mjs` provides the reproducible heuristic layer. Editors additionally review:
 1. Does every sentence carry a fact, implication, transition, or necessary qualification?
@@ -35,6 +47,8 @@ Publication is blocked when any of these are true:
 The gate records `editorialGate.aiProseScreen`. Opaque detector scores are not treated as proof because false positives are common; they may be advisory only. Drafts and detector payloads are not published.
 
 ## Automation
-- `.github/workflows/content-refresh.yml`: hourly validation, editorial gate, D1 sync, production health check.
-- `.github/workflows/daily-insight.yml`: daily freshness/citation/localization gate.
-- The workflows intentionally deploy only an already-reviewed bundle. Future ingestion/model generation must write a draft bundle and pass the same gates before promotion.
+- `.github/workflows/content-refresh.yml`: hourly current-source ingestion and feed publication. It deploys the exact reviewed Git commit first, verifies the static bundle, then mutates D1 and verifies UI/API content-ID parity.
+- `.github/workflows/daily-insight.yml`: daily current-source Insight generation plus freshness/citation/localization gates.
+- Feed-only hourly runs must leave `insights.json` byte-identical when a current UTC-day Insight already exists.
+- Description-less RSS records may be enriched only from their exact item URL using captured metadata/article lead text.
+- A successful feed fetch with no diverse publishable candidates is a safe no-op: it must not change content timestamps.
