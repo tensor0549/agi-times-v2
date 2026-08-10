@@ -363,7 +363,7 @@ export function App() {
 
         <aside className="insight-card" id="insight">
           <div className="insight-head"><span><Sparkles size={15}/>{t.insight}</span><span>{formatDate(insight.publishedAt, lang)}</span></div>
-          <div className="insight-visual"><div className="orb orb-a"/><div className="orb orb-b"/><div className="orb-core"><span>∞</span><small>{lang === 'zh' ? '持续运行的安全控制' : 'continuous safety controls'}</small></div></div>
+          <div className="insight-visual" aria-hidden="true"><div className="orb orb-a"/><div className="orb orb-b"/><div className="orb-core"><span>AGI</span><small>{lang === 'zh' ? '趋势观察' : 'trend watch'}</small></div></div>
           <h2>{localized(insight.title)[lang]}</h2><p>{localized(insight.dek)[lang]}</p>
           <div className="evidence"><span className="mini-label">{t.evidence}</span><div className="insight-claim">{localized(insight.claims[0].text)[lang]}</div></div>
           <div className="citation-row"><BookOpen size={15}/><span>{t.sources}</span><span>{insight.sources.map((source, index) => <span key={source.id}>{index > 0 && ' · '}<a href={source.url} target="_blank" rel="noreferrer" onClick={() => track('source_link_clicked', { source: source.publisher, insight_id: insight.id })}>{source.publisher}</a></span>)}</span></div>
