@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { auditIngestionRun } from '../scripts/lib/ingestion-acceptance.mjs';
 
@@ -19,6 +20,10 @@ const makeFixture = () => {
 };
 
 describe('expanded ingestion acceptance', () => {
+  it('uses at least five minutes of operational backoff for a newly failed endpoint', () => {
+    const source = fs.readFileSync('scripts/ingest-expanded-sources.mjs', 'utf8');
+    expect(source).toContain('Math.max(5*60_000');
+  });
   it('accepts endpoint-complete health and registry floors', () => {
     const result = auditIngestionRun({ ...makeFixture(), now });
     expect(result.errors).toEqual([]);
@@ -52,6 +57,15 @@ describe('expanded ingestion acceptance', () => {
     expect(auditIngestionRun({ ...fixture, now }).errors).toContain('github: exhausted GitHub rate limit must enter backoff');
     health.status = 'backoff'; health.nextRetryAt = '2026-08-10T21:00:00Z';
     expect(auditIngestionRun({ ...fixture, now }).errors).toEqual([]);
+  });
+
+  it('accepts a failed-source retry after its attempt even when classification finishes later, while expired active backoff still fails', () => {
+    const fixture = makeFixture();
+    const health = fixture.health.sources[0];
+    health.status = 'failed'; health.lastAttemptAt = '2026-08-10T19:59:00Z'; health.nextRetryAt = '2026-08-10T19:59:05Z'; health.backoffUntil = health.nextRetryAt; health.failureCode = 'http_status'; health.consecutiveFailures = 1;
+    expect(auditIngestionRun({ ...fixture, now }).errors).toEqual([]);
+    health.status = 'backoff';
+    expect(auditIngestionRun({ ...fixture, now }).errors).toContain(`${health.ingestionId}: backed-off source requires a future nextRetryAt`);
   });
 
   it('rejects homepage candidates, missing classification, raw failures and incomplete community metrics', () => {

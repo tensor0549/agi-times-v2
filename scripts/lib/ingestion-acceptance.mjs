@@ -85,7 +85,8 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
     if (!Number.isFinite(row.latencyMs) || row.latencyMs < 0) errors.push(`${row.ingestionId ?? 'unknown'}: nonnegative latencyMs required`);
     if (!Number.isInteger(row.consecutiveFailures) || row.consecutiveFailures < 0) errors.push(`${row.ingestionId ?? 'unknown'}: consecutiveFailures must be a nonnegative integer`);
     const retryAt = parseTime(row.nextRetryAt ?? row.backoffUntil);
-    if (['failed', 'backoff'].includes(row.status) && (!retryAt || retryAt <= Math.max(now, attemptAt ?? 0))) errors.push(`${row.ingestionId ?? 'unknown'}: failed/backed-off source requires a future nextRetryAt`);
+    if (row.status === 'failed' && (!retryAt || retryAt <= (attemptAt ?? 0))) errors.push(`${row.ingestionId ?? 'unknown'}: failed source requires nextRetryAt after lastAttemptAt`);
+    if (row.status === 'backoff' && (!retryAt || retryAt <= now)) errors.push(`${row.ingestionId ?? 'unknown'}: backed-off source requires a future nextRetryAt`);
     if (row.nextRetryAt && row.backoffUntil && row.nextRetryAt !== row.backoffUntil) errors.push(`${row.ingestionId ?? 'unknown'}: nextRetryAt and backoffUntil must match`);
     if (configured?.kind === 'github_search_api') {
       if (!Number.isFinite(row.rateRemaining) || row.rateRemaining < 0) errors.push(`${row.ingestionId}: GitHub rateRemaining required`);

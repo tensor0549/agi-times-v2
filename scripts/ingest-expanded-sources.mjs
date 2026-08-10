@@ -217,7 +217,7 @@ for (const source of sources) {
     } else stats.consecutiveFailures = 0;
     if (failures.some((failure) => failure.ingestionId === source.id)) { stats.status = 'degraded'; stats.failureCode = 'item_processing_degraded'; }
   } catch (error) {
-    stats.status = 'failed'; stats.failureCode = errorCode(error); stats.consecutiveFailures = (Number(prior?.consecutive_failures) || 0) + 1; const delay=Math.min(6*3600_000,(Number(defaults.retry?.baseDelayMs)||1000)*2**Math.min(stats.consecutiveFailures,12)); stats.nextRetryAt=new Date(Date.now()+delay).toISOString(); stats.backoffUntil=stats.nextRetryAt; failures.push({ ingestionId: source.id, failureCode: stats.failureCode, stage: 'fetch' });
+    stats.status = 'failed'; stats.failureCode = errorCode(error); stats.consecutiveFailures = (Number(prior?.consecutive_failures) || 0) + 1; const delay=Math.min(6*3600_000,Math.max(5*60_000,(Number(defaults.retry?.baseDelayMs)||1000)*2**Math.min(stats.consecutiveFailures,12))); stats.nextRetryAt=new Date(Date.now()+delay).toISOString(); stats.backoffUntil=stats.nextRetryAt; failures.push({ ingestionId: source.id, failureCode: stats.failureCode, stage: 'fetch' });
   }
   stats.latencyMs = Date.now() - started;
   health.push(stats);
