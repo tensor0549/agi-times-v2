@@ -3,7 +3,7 @@ import type { Bindings } from '../types';
 const ALLOWED_EVENTS = new Set([
   'page_viewed', 'article_opened', 'insight_opened', 'search_performed',
   'filter_changed', 'language_changed', 'theme_changed', 'source_link_clicked',
-  'feedback_submitted', 'error_seen'
+  'feedback_opened', 'feedback_submitted', 'error_seen'
 ]);
 
 export type AnalyticsEvent = { event: string; distinctId: string; properties?: Record<string, unknown> };

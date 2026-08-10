@@ -1,0 +1,6982 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-10T16:48:06.855Z",
+  "counts": {
+    "organization": 127,
+    "media": 16,
+    "person": 128,
+    "project": 139
+  },
+  "sources": [
+    {
+      "id": "src_openai",
+      "kind": "organization",
+      "name": "OpenAI",
+      "url": "https://openai.com/news/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_anthropic",
+      "kind": "organization",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-deepmind",
+      "kind": "organization",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/discover/blog/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-research",
+      "kind": "organization",
+      "name": "Google Research",
+      "url": "https://research.google/blog/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-research",
+      "kind": "organization",
+      "name": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/blog/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-ai",
+      "kind": "organization",
+      "name": "Microsoft AI",
+      "url": "https://microsoft.ai/news/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_meta-ai",
+      "kind": "organization",
+      "name": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_xai",
+      "kind": "organization",
+      "name": "xAI",
+      "url": "https://x.ai/news",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mistral-ai",
+      "kind": "organization",
+      "name": "Mistral AI",
+      "url": "https://mistral.ai/news",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_cohere",
+      "kind": "organization",
+      "name": "Cohere",
+      "url": "https://cohere.com/blog",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ai21-labs",
+      "kind": "organization",
+      "name": "AI21 Labs",
+      "url": "https://www.ai21.com/blog/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_aleph-alpha",
+      "kind": "organization",
+      "name": "Aleph Alpha",
+      "url": "https://aleph-alpha.com/newsroom/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_inflection-ai",
+      "kind": "organization",
+      "name": "Inflection AI",
+      "url": "https://inflection.ai/news",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_safe-superintelligence",
+      "kind": "organization",
+      "name": "Safe Superintelligence Inc.",
+      "url": "https://ssi.inc/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_thinking-machines-lab",
+      "kind": "organization",
+      "name": "Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_world-labs",
+      "kind": "organization",
+      "name": "World Labs",
+      "url": "https://www.worldlabs.ai/blog",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_physical-intelligence",
+      "kind": "organization",
+      "name": "Physical Intelligence",
+      "url": "https://www.physicalintelligence.company/blog",
+      "category": "embodied-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sakana-ai",
+      "kind": "organization",
+      "name": "Sakana AI",
+      "url": "https://sakana.ai/blog/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_deepseek",
+      "kind": "organization",
+      "name": "DeepSeek",
+      "url": "https://www.deepseek.com/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_zhipu-ai",
+      "kind": "organization",
+      "name": "Zhipu AI",
+      "url": "https://www.zhipuai.cn/en/news",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_moonshot-ai",
+      "kind": "organization",
+      "name": "Moonshot AI",
+      "url": "https://www.moonshot.cn/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_baichuan-ai",
+      "kind": "organization",
+      "name": "Baichuan AI",
+      "url": "https://www.baichuan-ai.com/home",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_minimax",
+      "kind": "organization",
+      "name": "MiniMax",
+      "url": "https://www.minimax.io/news",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_01-ai",
+      "kind": "organization",
+      "name": "01.AI",
+      "url": "https://www.01.ai/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_qwen",
+      "kind": "organization",
+      "name": "Qwen",
+      "url": "https://qwenlm.github.io/blog/",
+      "category": "foundation-model-team",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stepfun",
+      "kind": "organization",
+      "name": "StepFun",
+      "url": "https://www.stepfun.com/",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nvidia-research",
+      "kind": "organization",
+      "name": "NVIDIA Research",
+      "url": "https://research.nvidia.com/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nvidia-ai",
+      "kind": "organization",
+      "name": "NVIDIA AI",
+      "url": "https://blogs.nvidia.com/blog/category/deep-learning/",
+      "category": "ai-compute-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_apple-machine-learning-research",
+      "kind": "organization",
+      "name": "Apple Machine Learning Research",
+      "url": "https://machinelearning.apple.com/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_amazon-science",
+      "kind": "organization",
+      "name": "Amazon Science",
+      "url": "https://www.amazon.science/blog",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ibm-research",
+      "kind": "organization",
+      "name": "IBM Research",
+      "url": "https://research.ibm.com/blog",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_salesforce-ai-research",
+      "kind": "organization",
+      "name": "Salesforce AI Research",
+      "url": "https://www.salesforceairesearch.com/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_adobe-research",
+      "kind": "organization",
+      "name": "Adobe Research",
+      "url": "https://research.adobe.com/news/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_intel-labs",
+      "kind": "organization",
+      "name": "Intel Labs",
+      "url": "https://www.intel.com/content/www/us/en/research/overview.html",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_samsung-ai",
+      "kind": "organization",
+      "name": "Samsung AI",
+      "url": "https://research.samsung.com/news",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sony-ai",
+      "kind": "organization",
+      "name": "Sony AI",
+      "url": "https://ai.sony/blog/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_uber-ai",
+      "kind": "organization",
+      "name": "Uber AI",
+      "url": "https://www.uber.com/blog/research/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_bytedance-research",
+      "kind": "organization",
+      "name": "ByteDance Research",
+      "url": "https://research.bytedance.com/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_tencent-ai-lab",
+      "kind": "organization",
+      "name": "Tencent AI Lab",
+      "url": "https://ai.tencent.com/ailab/en/news/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_baidu-research",
+      "kind": "organization",
+      "name": "Baidu Research",
+      "url": "https://research.baidu.com/Blog",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huawei-noahs-ark-lab",
+      "kind": "organization",
+      "name": "Huawei Noah's Ark Lab",
+      "url": "https://www.noahlab.com.hk/#/news",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_naver-ai-lab",
+      "kind": "organization",
+      "name": "NAVER AI Lab",
+      "url": "https://naver-ai.github.io/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_rakuten-institute-of-technology",
+      "kind": "organization",
+      "name": "Rakuten Institute of Technology",
+      "url": "https://rit.rakuten.com/",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_allen-institute-for-ai",
+      "kind": "organization",
+      "name": "Allen Institute for AI",
+      "url": "https://allenai.org/news",
+      "category": "nonprofit-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_eleutherai",
+      "kind": "organization",
+      "name": "EleutherAI",
+      "url": "https://blog.eleuther.ai/",
+      "category": "open-research-collective",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_laion",
+      "kind": "organization",
+      "name": "LAION",
+      "url": "https://laion.ai/blog/",
+      "category": "open-research-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_hugging-face",
+      "kind": "organization",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/blog",
+      "category": "open-ai-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stability-ai",
+      "kind": "organization",
+      "name": "Stability AI",
+      "url": "https://stability.ai/news",
+      "category": "generative-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_runway",
+      "kind": "organization",
+      "name": "Runway",
+      "url": "https://runwayml.com/news",
+      "category": "generative-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_midjourney",
+      "kind": "organization",
+      "name": "Midjourney",
+      "url": "https://www.midjourney.com/updates",
+      "category": "generative-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_black-forest-labs",
+      "kind": "organization",
+      "name": "Black Forest Labs",
+      "url": "https://bfl.ai/announcements",
+      "category": "generative-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ideogram",
+      "kind": "organization",
+      "name": "Ideogram",
+      "url": "https://about.ideogram.ai/updates",
+      "category": "generative-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_elevenlabs",
+      "kind": "organization",
+      "name": "ElevenLabs",
+      "url": "https://elevenlabs.io/blog",
+      "category": "generative-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_suno",
+      "kind": "organization",
+      "name": "Suno",
+      "url": "https://suno.com/blog",
+      "category": "generative-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_reka-ai",
+      "kind": "organization",
+      "name": "Reka AI",
+      "url": "https://www.reka.ai/news",
+      "category": "frontier-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_together-ai",
+      "kind": "organization",
+      "name": "Together AI",
+      "url": "https://www.together.ai/blog",
+      "category": "ai-infrastructure-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_groq",
+      "kind": "organization",
+      "name": "Groq",
+      "url": "https://groq.com/blog",
+      "category": "ai-compute-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_cerebras-systems",
+      "kind": "organization",
+      "name": "Cerebras Systems",
+      "url": "https://www.cerebras.ai/blog",
+      "category": "ai-compute-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sambanova-systems",
+      "kind": "organization",
+      "name": "SambaNova Systems",
+      "url": "https://sambanova.ai/blog",
+      "category": "ai-compute-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_graphcore",
+      "kind": "organization",
+      "name": "Graphcore",
+      "url": "https://www.graphcore.ai/posts",
+      "category": "ai-compute-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_tenstorrent",
+      "kind": "organization",
+      "name": "Tenstorrent",
+      "url": "https://tenstorrent.com/en/vision/blog",
+      "category": "ai-compute-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_coreweave",
+      "kind": "organization",
+      "name": "CoreWeave",
+      "url": "https://www.coreweave.com/blog",
+      "category": "ai-cloud-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lambda",
+      "kind": "organization",
+      "name": "Lambda",
+      "url": "https://lambda.ai/blog",
+      "category": "ai-cloud-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_scale-ai",
+      "kind": "organization",
+      "name": "Scale AI",
+      "url": "https://scale.com/blog",
+      "category": "ai-data-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_databricks-mosaic-research",
+      "kind": "organization",
+      "name": "Databricks Mosaic Research",
+      "url": "https://www.databricks.com/blog/category/engineering/machine-learning",
+      "category": "industry-research-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_snorkel-ai",
+      "kind": "organization",
+      "name": "Snorkel AI",
+      "url": "https://snorkel.ai/blog/",
+      "category": "ai-data-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_weights-and-biases",
+      "kind": "organization",
+      "name": "Weights & Biases",
+      "url": "https://wandb.ai/fully-connected",
+      "category": "ml-developer-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_langchain",
+      "kind": "organization",
+      "name": "LangChain",
+      "url": "https://blog.langchain.com/",
+      "category": "agent-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_llamaindex",
+      "kind": "organization",
+      "name": "LlamaIndex",
+      "url": "https://www.llamaindex.ai/blog",
+      "category": "agent-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_anyscale",
+      "kind": "organization",
+      "name": "Anyscale",
+      "url": "https://www.anyscale.com/blog",
+      "category": "ai-infrastructure-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_modal",
+      "kind": "organization",
+      "name": "Modal",
+      "url": "https://modal.com/blog",
+      "category": "ai-infrastructure-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_replicate",
+      "kind": "organization",
+      "name": "Replicate",
+      "url": "https://replicate.com/blog",
+      "category": "model-hosting-platform",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_pinecone",
+      "kind": "organization",
+      "name": "Pinecone",
+      "url": "https://www.pinecone.io/blog/",
+      "category": "vector-database",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_weaviate",
+      "kind": "organization",
+      "name": "Weaviate",
+      "url": "https://weaviate.io/blog",
+      "category": "vector-database",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_milvus",
+      "kind": "organization",
+      "name": "Milvus",
+      "url": "https://milvus.io/blog",
+      "category": "vector-database",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_adept-ai",
+      "kind": "organization",
+      "name": "Adept AI",
+      "url": "https://www.adept.ai/blog",
+      "category": "agentic-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_improbable",
+      "kind": "organization",
+      "name": "Improbable",
+      "url": "https://www.improbable.io/blog",
+      "category": "simulation-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_wayve",
+      "kind": "organization",
+      "name": "Wayve",
+      "url": "https://wayve.ai/thinking/",
+      "category": "embodied-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_waabi",
+      "kind": "organization",
+      "name": "Waabi",
+      "url": "https://waabi.ai/news/",
+      "category": "embodied-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_waymo",
+      "kind": "organization",
+      "name": "Waymo",
+      "url": "https://waymo.com/blog/",
+      "category": "autonomous-systems-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_cruise",
+      "kind": "organization",
+      "name": "Cruise",
+      "url": "https://www.getcruise.com/news/",
+      "category": "autonomous-systems-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_tesla-ai",
+      "kind": "organization",
+      "name": "Tesla AI",
+      "url": "https://www.tesla.com/AI",
+      "category": "embodied-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_boston-dynamics",
+      "kind": "organization",
+      "name": "Boston Dynamics",
+      "url": "https://bostondynamics.com/blog/",
+      "category": "robotics-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_figure-ai",
+      "kind": "organization",
+      "name": "Figure AI",
+      "url": "https://www.figure.ai/news",
+      "category": "robotics-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_agility-robotics",
+      "kind": "organization",
+      "name": "Agility Robotics",
+      "url": "https://www.agilityrobotics.com/news",
+      "category": "robotics-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sanctuary-ai",
+      "kind": "organization",
+      "name": "Sanctuary AI",
+      "url": "https://www.sanctuary.ai/blog",
+      "category": "robotics-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_1x-technologies",
+      "kind": "organization",
+      "name": "1X Technologies",
+      "url": "https://www.1x.tech/discover",
+      "category": "robotics-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_covariant",
+      "kind": "organization",
+      "name": "Covariant",
+      "url": "https://covariant.ai/insights/",
+      "category": "robotics-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_skild-ai",
+      "kind": "organization",
+      "name": "Skild AI",
+      "url": "https://www.skild.ai/blog",
+      "category": "robotics-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_field-ai",
+      "kind": "organization",
+      "name": "Field AI",
+      "url": "https://www.fieldai.com/news",
+      "category": "robotics-ai-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_open-robotics",
+      "kind": "organization",
+      "name": "Open Robotics",
+      "url": "https://www.openrobotics.org/blog",
+      "category": "robotics-foundation",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_future-of-life-institute",
+      "kind": "organization",
+      "name": "Future of Life Institute",
+      "url": "https://futureoflife.org/news/",
+      "category": "ai-governance-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_center-for-ai-safety",
+      "kind": "organization",
+      "name": "Center for AI Safety",
+      "url": "https://safe.ai/blog",
+      "category": "ai-safety-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_machine-intelligence-research-institute",
+      "kind": "organization",
+      "name": "Machine Intelligence Research Institute",
+      "url": "https://intelligence.org/research/",
+      "category": "ai-safety-research-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_alignment-research-center",
+      "kind": "organization",
+      "name": "Alignment Research Center",
+      "url": "https://www.alignment.org/blog/",
+      "category": "ai-safety-research-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_redwood-research",
+      "kind": "organization",
+      "name": "Redwood Research",
+      "url": "https://www.redwoodresearch.org/research",
+      "category": "ai-safety-research-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_apollo-research",
+      "kind": "organization",
+      "name": "Apollo Research",
+      "url": "https://www.apolloresearch.ai/blog",
+      "category": "ai-safety-research-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_far-ai",
+      "kind": "organization",
+      "name": "FAR.AI",
+      "url": "https://far.ai/news",
+      "category": "ai-safety-research-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_metr",
+      "kind": "organization",
+      "name": "METR",
+      "url": "https://metr.org/blog/",
+      "category": "ai-evaluation-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_epoch-ai",
+      "kind": "organization",
+      "name": "Epoch AI",
+      "url": "https://epoch.ai/blog",
+      "category": "ai-trends-research-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ai-now-institute",
+      "kind": "organization",
+      "name": "AI Now Institute",
+      "url": "https://ainowinstitute.org/news",
+      "category": "ai-policy-research-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_partnership-on-ai",
+      "kind": "organization",
+      "name": "Partnership on AI",
+      "url": "https://partnershiponai.org/news/",
+      "category": "ai-governance-nonprofit",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_center-for-security-and-emerging-technology",
+      "kind": "organization",
+      "name": "Center for Security and Emerging Technology",
+      "url": "https://cset.georgetown.edu/news/",
+      "category": "ai-policy-research-center",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stanford-hai",
+      "kind": "organization",
+      "name": "Stanford Institute for Human-Centered AI",
+      "url": "https://hai.stanford.edu/news",
+      "category": "university-ai-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stanford-ai-lab",
+      "kind": "organization",
+      "name": "Stanford Artificial Intelligence Laboratory",
+      "url": "https://ai.stanford.edu/blog/",
+      "category": "university-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_berkeley-ai-research",
+      "kind": "organization",
+      "name": "Berkeley Artificial Intelligence Research",
+      "url": "https://bair.berkeley.edu/blog/",
+      "category": "university-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mit-csail",
+      "kind": "organization",
+      "name": "MIT CSAIL",
+      "url": "https://www.csail.mit.edu/news",
+      "category": "university-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mit-quest-for-intelligence",
+      "kind": "organization",
+      "name": "MIT Quest for Intelligence",
+      "url": "https://quest.mit.edu/news/",
+      "category": "university-ai-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_carnegie-mellon-machine-learning",
+      "kind": "organization",
+      "name": "CMU Machine Learning Department",
+      "url": "https://www.ml.cmu.edu/news/index.html",
+      "category": "university-ai-department",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_princeton-ai-lab",
+      "kind": "organization",
+      "name": "Princeton AI Lab",
+      "url": "https://ai.princeton.edu/news",
+      "category": "university-ai-lab",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_harvard-kempner-institute",
+      "kind": "organization",
+      "name": "Kempner Institute for the Study of Natural and Artificial Intelligence",
+      "url": "https://kempnerinstitute.harvard.edu/news/",
+      "category": "university-ai-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nyu-center-for-data-science",
+      "kind": "organization",
+      "name": "NYU Center for Data Science",
+      "url": "https://cds.nyu.edu/news/",
+      "category": "university-ai-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_montreal-institute-for-learning-algorithms",
+      "kind": "organization",
+      "name": "Mila",
+      "url": "https://mila.quebec/en/news",
+      "category": "independent-ai-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_vector-institute",
+      "kind": "organization",
+      "name": "Vector Institute",
+      "url": "https://vectorinstitute.ai/news/",
+      "category": "independent-ai-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_amii",
+      "kind": "organization",
+      "name": "Alberta Machine Intelligence Institute",
+      "url": "https://www.amii.ca/latest-from-amii",
+      "category": "independent-ai-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ellis",
+      "kind": "organization",
+      "name": "ELLIS",
+      "url": "https://ellis.eu/news",
+      "category": "european-ai-network",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_tuebingen-ai-center",
+      "kind": "organization",
+      "name": "Tübingen AI Center",
+      "url": "https://tuebingen.ai/news",
+      "category": "university-ai-center",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_dfki",
+      "kind": "organization",
+      "name": "German Research Center for Artificial Intelligence",
+      "url": "https://www.dfki.de/en/web/news-media/news-events",
+      "category": "public-ai-research-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_inria",
+      "kind": "organization",
+      "name": "Inria",
+      "url": "https://www.inria.fr/en/news",
+      "category": "public-computer-science-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_riken-aip",
+      "kind": "organization",
+      "name": "RIKEN Center for Advanced Intelligence Project",
+      "url": "https://aip.riken.jp/news-list/?lang=en",
+      "category": "public-ai-research-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_turing-institute",
+      "kind": "organization",
+      "name": "Alan Turing Institute",
+      "url": "https://www.turing.ac.uk/news",
+      "category": "national-ai-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ai2-incubator",
+      "kind": "organization",
+      "name": "AI2 Incubator",
+      "url": "https://www.ai2incubator.com/news",
+      "category": "ai-startup-incubator",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_schmidt-sciences",
+      "kind": "organization",
+      "name": "Schmidt Sciences",
+      "url": "https://www.schmidtsciences.org/news/",
+      "category": "science-ai-philanthropy",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_arc-institute",
+      "kind": "organization",
+      "name": "Arc Institute",
+      "url": "https://arcinstitute.org/news",
+      "category": "ai-for-science-institute",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_isomorphic-labs",
+      "kind": "organization",
+      "name": "Isomorphic Labs",
+      "url": "https://www.isomorphiclabs.com/articles",
+      "category": "ai-for-science-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_insitro",
+      "kind": "organization",
+      "name": "insitro",
+      "url": "https://www.insitro.com/news",
+      "category": "ai-biotechnology-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_recursion",
+      "kind": "organization",
+      "name": "Recursion",
+      "url": "https://www.recursion.com/news",
+      "category": "ai-biotechnology-company",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.75,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_techcrunch-ai",
+      "kind": "media",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_the-verge-ai",
+      "kind": "media",
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_wired-ai",
+      "kind": "media",
+      "name": "WIRED AI",
+      "url": "https://www.wired.com/tag/artificial-intelligence/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mit-technology-review-ai",
+      "kind": "media",
+      "name": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ars-technica-ai",
+      "kind": "media",
+      "name": "Ars Technica AI",
+      "url": "https://arstechnica.com/ai/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_venturebeat-ai",
+      "kind": "media",
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_the-information-ai",
+      "kind": "media",
+      "name": "The Information AI",
+      "url": "https://www.theinformation.com/artificial-intelligence",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_semafor-ai",
+      "kind": "media",
+      "name": "Semafor AI",
+      "url": "https://www.semafor.com/topic/artificial-intelligence",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_financial-times-ai",
+      "kind": "media",
+      "name": "Financial Times AI",
+      "url": "https://www.ft.com/artificial-intelligence",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_reuters-ai",
+      "kind": "media",
+      "name": "Reuters AI",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_bloomberg-ai",
+      "kind": "media",
+      "name": "Bloomberg AI",
+      "url": "https://www.bloomberg.com/ai",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_axios-ai",
+      "kind": "media",
+      "name": "Axios AI+",
+      "url": "https://www.axios.com/technology/artificial-intelligence",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_404-media",
+      "kind": "media",
+      "name": "404 Media",
+      "url": "https://www.404media.co/tag/artificial-intelligence/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_platformer",
+      "kind": "media",
+      "name": "Platformer",
+      "url": "https://www.platformer.news/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_import-ai",
+      "kind": "media",
+      "name": "Import AI",
+      "url": "https://importai.substack.com/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_chinai",
+      "kind": "media",
+      "name": "ChinAI Newsletter",
+      "url": "https://chinai.substack.com/",
+      "category": "ai-news",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.68,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sam-altman",
+      "kind": "person",
+      "name": "Sam Altman",
+      "url": "https://blog.samaltman.com/",
+      "category": "ai-lab-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_greg-brockman",
+      "kind": "person",
+      "name": "Greg Brockman",
+      "url": "https://gregbrockman.com/",
+      "category": "ai-lab-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ilya-sutskever",
+      "kind": "person",
+      "name": "Ilya Sutskever",
+      "url": "https://www.cs.toronto.edu/~ilya/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_wojciech-zaremba",
+      "kind": "person",
+      "name": "Wojciech Zaremba",
+      "url": "https://openai.com/index/wojciech-zaremba/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_john-schulman",
+      "kind": "person",
+      "name": "John Schulman",
+      "url": "https://joschu.net/",
+      "category": "ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_andrej-karpathy",
+      "kind": "person",
+      "name": "Andrej Karpathy",
+      "url": "https://karpathy.ai/",
+      "category": "ai-researcher-educator",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_dario-amodei",
+      "kind": "person",
+      "name": "Dario Amodei",
+      "url": "https://www.anthropic.com/people/dario-amodei",
+      "category": "ai-lab-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_daniela-amodei",
+      "kind": "person",
+      "name": "Daniela Amodei",
+      "url": "https://www.anthropic.com/people/daniela-amodei",
+      "category": "ai-lab-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_chris-olah",
+      "kind": "person",
+      "name": "Chris Olah",
+      "url": "https://colah.github.io/",
+      "category": "interpretability-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jan-leike",
+      "kind": "person",
+      "name": "Jan Leike",
+      "url": "https://jan.leike.name/",
+      "category": "ai-safety-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jared-kaplan",
+      "kind": "person",
+      "name": "Jared Kaplan",
+      "url": "https://krieger.jhu.edu/physics/directory/jared-kaplan/",
+      "category": "ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jack-clark",
+      "kind": "person",
+      "name": "Jack Clark",
+      "url": "https://jack-clark.net/",
+      "category": "ai-policy-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_demis-hassabis",
+      "kind": "person",
+      "name": "Demis Hassabis",
+      "url": "https://deepmind.google/about/leadership/demis-hassabis/",
+      "category": "ai-lab-executive-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_shane-legg",
+      "kind": "person",
+      "name": "Shane Legg",
+      "url": "https://deepmind.google/about/leadership/shane-legg/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_koray-kavukcuoglu",
+      "kind": "person",
+      "name": "Koray Kavukcuoglu",
+      "url": "https://deepmind.google/about/leadership/koray-kavukcuoglu/",
+      "category": "ai-research-leader",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_david-silver",
+      "kind": "person",
+      "name": "David Silver",
+      "url": "https://www.davidsilver.uk/",
+      "category": "reinforcement-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_oriol-vinyals",
+      "kind": "person",
+      "name": "Oriol Vinyals",
+      "url": "https://vinyals.github.io/",
+      "category": "ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_raia-hadsell",
+      "kind": "person",
+      "name": "Raia Hadsell",
+      "url": "https://deepmind.google/about/leadership/raia-hadsell/",
+      "category": "robotics-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nando-de-freitas",
+      "kind": "person",
+      "name": "Nando de Freitas",
+      "url": "https://www.cs.ox.ac.uk/people/nando.defreitas/",
+      "category": "ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jeff-dean",
+      "kind": "person",
+      "name": "Jeff Dean",
+      "url": "https://research.google/people/jeff/",
+      "category": "ai-research-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_quoc-le",
+      "kind": "person",
+      "name": "Quoc V. Le",
+      "url": "https://research.google/people/quocvl/",
+      "category": "ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_blaise-aguera-y-arcas",
+      "kind": "person",
+      "name": "Blaise Agüera y Arcas",
+      "url": "https://research.google/people/blaisea/",
+      "category": "ai-researcher-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_noam-shazeer",
+      "kind": "person",
+      "name": "Noam Shazeer",
+      "url": "https://research.google/people/noamshazeer/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_yann-lecun",
+      "kind": "person",
+      "name": "Yann LeCun",
+      "url": "https://yann.lecun.com/",
+      "category": "ai-scientist-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_joelle-pineau",
+      "kind": "person",
+      "name": "Joelle Pineau",
+      "url": "https://www.cs.mcgill.ca/~jpineau/",
+      "category": "ai-researcher-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_rob-fergus",
+      "kind": "person",
+      "name": "Rob Fergus",
+      "url": "https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php",
+      "category": "computer-vision-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mark-zuckerberg",
+      "kind": "person",
+      "name": "Mark Zuckerberg",
+      "url": "https://about.meta.com/media-gallery/executives/mark-zuckerberg/",
+      "category": "technology-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_satya-nadella",
+      "kind": "person",
+      "name": "Satya Nadella",
+      "url": "https://news.microsoft.com/exec/satya-nadella/",
+      "category": "technology-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mustafa-suleyman",
+      "kind": "person",
+      "name": "Mustafa Suleyman",
+      "url": "https://mustafa-suleyman.ai/",
+      "category": "ai-lab-executive-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_kevin-scott",
+      "kind": "person",
+      "name": "Kevin Scott",
+      "url": "https://news.microsoft.com/exec/kevin-scott/",
+      "category": "ai-technology-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_peter-lee",
+      "kind": "person",
+      "name": "Peter Lee",
+      "url": "https://www.microsoft.com/en-us/research/people/peterlee/",
+      "category": "ai-research-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sebastien-bubeck",
+      "kind": "person",
+      "name": "Sébastien Bubeck",
+      "url": "https://www.microsoft.com/en-us/research/people/sebubeck/",
+      "category": "ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_elon-musk",
+      "kind": "person",
+      "name": "Elon Musk",
+      "url": "https://x.com/elonmusk",
+      "category": "ai-company-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_igor-babuschkin",
+      "kind": "person",
+      "name": "Igor Babuschkin",
+      "url": "https://www.linkedin.com/in/igor-babuschkin-9bb5bab6/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_arthur-mensch",
+      "kind": "person",
+      "name": "Arthur Mensch",
+      "url": "https://www.linkedin.com/in/arthur-mensch/",
+      "category": "ai-lab-executive-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_guillaume-lample",
+      "kind": "person",
+      "name": "Guillaume Lample",
+      "url": "https://fr.linkedin.com/in/guillaume-lample-7821095b",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_timothee-lacroix",
+      "kind": "person",
+      "name": "Timothée Lacroix",
+      "url": "https://fr.linkedin.com/in/timothee-lacroix-59517977",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_aidan-gomez",
+      "kind": "person",
+      "name": "Aidan Gomez",
+      "url": "https://aidangomez.ca/",
+      "category": "ai-lab-executive-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nick-frosst",
+      "kind": "person",
+      "name": "Nick Frosst",
+      "url": "https://nickfrosst.com/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ivan-zhang",
+      "kind": "person",
+      "name": "Ivan Zhang",
+      "url": "https://www.linkedin.com/in/1vnzh/",
+      "category": "ai-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_yoav-shoham",
+      "kind": "person",
+      "name": "Yoav Shoham",
+      "url": "https://ai.stanford.edu/~shoham/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_amnon-shashua",
+      "kind": "person",
+      "name": "Amnon Shashua",
+      "url": "https://www.cs.huji.ac.il/~shashua/",
+      "category": "ai-researcher-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_emad-mostaque",
+      "kind": "person",
+      "name": "Emad Mostaque",
+      "url": "https://emad.blog/",
+      "category": "generative-ai-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_david-holz",
+      "kind": "person",
+      "name": "David Holz",
+      "url": "https://www.midjourney.com/home",
+      "category": "generative-ai-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_cristobal-valenzuela",
+      "kind": "person",
+      "name": "Cristóbal Valenzuela",
+      "url": "https://runwayml.com/about",
+      "category": "generative-ai-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_alexandr-wang",
+      "kind": "person",
+      "name": "Alexandr Wang",
+      "url": "https://scale.com/leadership",
+      "category": "ai-infrastructure-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nat-friedman",
+      "kind": "person",
+      "name": "Nat Friedman",
+      "url": "https://nat.org/",
+      "category": "ai-investor-technologist",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_daniel-gross",
+      "kind": "person",
+      "name": "Daniel Gross",
+      "url": "https://dcgross.com/",
+      "category": "ai-investor-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_feifei-li",
+      "kind": "person",
+      "name": "Fei-Fei Li",
+      "url": "https://profiles.stanford.edu/fei-fei-li",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_justin-johnson",
+      "kind": "person",
+      "name": "Justin Johnson",
+      "url": "https://web.eecs.umich.edu/~justincj/",
+      "category": "computer-vision-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_pieter-abbeel",
+      "kind": "person",
+      "name": "Pieter Abbeel",
+      "url": "https://people.eecs.berkeley.edu/~pabbeel/",
+      "category": "robotics-ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sergey-levine",
+      "kind": "person",
+      "name": "Sergey Levine",
+      "url": "https://people.eecs.berkeley.edu/~svlevine/",
+      "category": "robotics-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_chelsea-finn",
+      "kind": "person",
+      "name": "Chelsea Finn",
+      "url": "https://ai.stanford.edu/~cbfinn/",
+      "category": "robotics-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_russell-tedrake",
+      "kind": "person",
+      "name": "Russ Tedrake",
+      "url": "https://groups.csail.mit.edu/robotics-center/people/tedrake.html",
+      "category": "robotics-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_rodney-brooks",
+      "kind": "person",
+      "name": "Rodney Brooks",
+      "url": "https://rodneybrooks.com/",
+      "category": "roboticist-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_raquel-urtasun",
+      "kind": "person",
+      "name": "Raquel Urtasun",
+      "url": "https://www.cs.toronto.edu/~urtasun/",
+      "category": "autonomous-systems-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_alex-kendall",
+      "kind": "person",
+      "name": "Alex Kendall",
+      "url": "https://wayve.ai/people/alex-kendall/",
+      "category": "autonomous-systems-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_daniela-rus",
+      "kind": "person",
+      "name": "Daniela Rus",
+      "url": "https://danielarus.csail.mit.edu/",
+      "category": "robotics-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jim-fan",
+      "kind": "person",
+      "name": "Jim Fan",
+      "url": "https://www.jimfan.me/",
+      "category": "embodied-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ashish-vaswani",
+      "kind": "person",
+      "name": "Ashish Vaswani",
+      "url": "https://www.ashishvaswani.com/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_noam-brown",
+      "kind": "person",
+      "name": "Noam Brown",
+      "url": "https://noambrown.github.io/",
+      "category": "ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jakob-uszkoreit",
+      "kind": "person",
+      "name": "Jakob Uszkoreit",
+      "url": "https://www.inceptive.life/team/jakob-uszkoreit",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lukasz-kaiser",
+      "kind": "person",
+      "name": "Lukasz Kaiser",
+      "url": "https://www.kasai.org/",
+      "category": "ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_david-ha",
+      "kind": "person",
+      "name": "David Ha",
+      "url": "https://otoro.net/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_shunyu-yao",
+      "kind": "person",
+      "name": "Shunyu Yao",
+      "url": "https://ysymyth.github.io/",
+      "category": "agentic-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_harrison-chase",
+      "kind": "person",
+      "name": "Harrison Chase",
+      "url": "https://www.langchain.com/about",
+      "category": "agent-platform-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jerry-liu",
+      "kind": "person",
+      "name": "Jerry Liu",
+      "url": "https://www.llamaindex.ai/about",
+      "category": "agent-platform-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_clem-delangue",
+      "kind": "person",
+      "name": "Clément Delangue",
+      "url": "https://huggingface.co/clem",
+      "category": "open-ai-platform-executive",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_thomas-wolf",
+      "kind": "person",
+      "name": "Thomas Wolf",
+      "url": "https://huggingface.co/ThomasWolf",
+      "category": "open-source-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_margaret-mitchell",
+      "kind": "person",
+      "name": "Margaret Mitchell",
+      "url": "https://huggingface.co/mmitchell",
+      "category": "responsible-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stella-biderman",
+      "kind": "person",
+      "name": "Stella Biderman",
+      "url": "https://www.stellabiderman.com/",
+      "category": "open-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lucile-saulnier",
+      "kind": "person",
+      "name": "Lucile Saulnier",
+      "url": "https://huggingface.co/lucile",
+      "category": "open-source-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jeremy-howard",
+      "kind": "person",
+      "name": "Jeremy Howard",
+      "url": "https://www.fast.ai/about/",
+      "category": "ai-educator-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sebastian-raschka",
+      "kind": "person",
+      "name": "Sebastian Raschka",
+      "url": "https://sebastianraschka.com/",
+      "category": "ai-researcher-educator",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_chip-huyen",
+      "kind": "person",
+      "name": "Chip Huyen",
+      "url": "https://huyenchip.com/",
+      "category": "ai-systems-author",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lilian-weng",
+      "kind": "person",
+      "name": "Lilian Weng",
+      "url": "https://lilianweng.github.io/",
+      "category": "ai-researcher-writer",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_eugene-yan",
+      "kind": "person",
+      "name": "Eugene Yan",
+      "url": "https://eugeneyan.com/",
+      "category": "machine-learning-engineer-writer",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_simon-willison",
+      "kind": "person",
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/",
+      "category": "ai-developer-writer",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_swyx",
+      "kind": "person",
+      "name": "Shawn Wang",
+      "url": "https://www.swyx.io/",
+      "category": "ai-engineer-writer",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ethan-mollick",
+      "kind": "person",
+      "name": "Ethan Mollick",
+      "url": "https://www.oneusefulthing.org/",
+      "category": "ai-and-work-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_gary-marcus",
+      "kind": "person",
+      "name": "Gary Marcus",
+      "url": "https://garymarcus.substack.com/",
+      "category": "cognitive-scientist-ai-critic",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_melanie-mitchell",
+      "kind": "person",
+      "name": "Melanie Mitchell",
+      "url": "https://melaniemitchell.me/",
+      "category": "complexity-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_geoffrey-hinton",
+      "kind": "person",
+      "name": "Geoffrey Hinton",
+      "url": "https://www.cs.toronto.edu/~hinton/",
+      "category": "deep-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_yoshua-bengio",
+      "kind": "person",
+      "name": "Yoshua Bengio",
+      "url": "https://yoshuabengio.org/",
+      "category": "deep-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_richard-sutton",
+      "kind": "person",
+      "name": "Richard Sutton",
+      "url": "http://incompleteideas.net/",
+      "category": "reinforcement-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jurgen-schmidhuber",
+      "kind": "person",
+      "name": "Jürgen Schmidhuber",
+      "url": "https://people.idsia.ch/~juergen/",
+      "category": "deep-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_judea-pearl",
+      "kind": "person",
+      "name": "Judea Pearl",
+      "url": "https://bayes.cs.ucla.edu/jp_home.html",
+      "category": "causal-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_michael-jordan",
+      "kind": "person",
+      "name": "Michael I. Jordan",
+      "url": "https://people.eecs.berkeley.edu/~jordan/",
+      "category": "machine-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_leslie-valiant",
+      "kind": "person",
+      "name": "Leslie Valiant",
+      "url": "https://people.seas.harvard.edu/~valiant/",
+      "category": "theoretical-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_daphne-koller",
+      "kind": "person",
+      "name": "Daphne Koller",
+      "url": "https://ai.stanford.edu/~koller/",
+      "category": "ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_andrew-ng",
+      "kind": "person",
+      "name": "Andrew Ng",
+      "url": "https://www.andrewng.org/",
+      "category": "ai-educator-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ian-goodfellow",
+      "kind": "person",
+      "name": "Ian Goodfellow",
+      "url": "https://www.iangoodfellow.com/",
+      "category": "deep-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_alex-graves",
+      "kind": "person",
+      "name": "Alex Graves",
+      "url": "https://www.cs.toronto.edu/~graves/",
+      "category": "deep-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_chris-bishop",
+      "kind": "person",
+      "name": "Christopher Bishop",
+      "url": "https://www.microsoft.com/en-us/research/people/cmbishop/",
+      "category": "machine-learning-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_david-mackay",
+      "kind": "person",
+      "name": "David MacKay",
+      "url": "https://www.inference.org.uk/mackay/",
+      "category": "machine-learning-scientist",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_max-tegmark",
+      "kind": "person",
+      "name": "Max Tegmark",
+      "url": "https://space.mit.edu/home/tegmark/",
+      "category": "ai-safety-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stuart-russell",
+      "kind": "person",
+      "name": "Stuart Russell",
+      "url": "https://people.eecs.berkeley.edu/~russell/",
+      "category": "ai-safety-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_roman-yampolskiy",
+      "kind": "person",
+      "name": "Roman Yampolskiy",
+      "url": "https://cecs.louisville.edu/ry/",
+      "category": "ai-safety-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_eliezar-yudkowsky",
+      "kind": "person",
+      "name": "Eliezer Yudkowsky",
+      "url": "https://www.yudkowsky.net/",
+      "category": "ai-safety-writer-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_paul-christiano",
+      "kind": "person",
+      "name": "Paul Christiano",
+      "url": "https://paulfchristiano.com/",
+      "category": "ai-alignment-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_holden-karnofsky",
+      "kind": "person",
+      "name": "Holden Karnofsky",
+      "url": "https://www.cold-takes.com/",
+      "category": "ai-governance-philanthropy",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ajeya-cotra",
+      "kind": "person",
+      "name": "Ajeya Cotra",
+      "url": "https://www.planned-obsolescence.org/",
+      "category": "ai-scenarios-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_rohin-shah",
+      "kind": "person",
+      "name": "Rohin Shah",
+      "url": "https://rohinshah.com/",
+      "category": "ai-safety-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_dylan-hadfield-menell",
+      "kind": "person",
+      "name": "Dylan Hadfield-Menell",
+      "url": "https://people.csail.mit.edu/dhm/",
+      "category": "ai-safety-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_david-krueger",
+      "kind": "person",
+      "name": "David Krueger",
+      "url": "https://www.davidscottkrueger.com/",
+      "category": "ai-safety-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_dan-hendrycks",
+      "kind": "person",
+      "name": "Dan Hendrycks",
+      "url": "https://danhendrycks.com/",
+      "category": "ai-safety-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_beth-barnes",
+      "kind": "person",
+      "name": "Beth Barnes",
+      "url": "https://metr.org/about",
+      "category": "ai-evaluation-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ben-garfinkel",
+      "kind": "person",
+      "name": "Ben Garfinkel",
+      "url": "https://www.governance.ai/about/ben-garfinkel",
+      "category": "ai-governance-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_allan-dafoe",
+      "kind": "person",
+      "name": "Allan Dafoe",
+      "url": "https://www.governance.ai/about/allan-dafoe",
+      "category": "ai-governance-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_helen-toner",
+      "kind": "person",
+      "name": "Helen Toner",
+      "url": "https://cset.georgetown.edu/staff/helen-toner/",
+      "category": "ai-policy-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_timnit-gebru",
+      "kind": "person",
+      "name": "Timnit Gebru",
+      "url": "https://www.dair-institute.org/team/",
+      "category": "responsible-ai-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_joy-buolamwini",
+      "kind": "person",
+      "name": "Joy Buolamwini",
+      "url": "https://www.poetofcode.com/",
+      "category": "algorithmic-accountability-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_meredith-whittaker",
+      "kind": "person",
+      "name": "Meredith Whittaker",
+      "url": "https://ainowinstitute.org/author/meredith-whittaker",
+      "category": "ai-policy-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_kate-crawford",
+      "kind": "person",
+      "name": "Kate Crawford",
+      "url": "https://katecrawford.net/",
+      "category": "ai-society-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_emily-bender",
+      "kind": "person",
+      "name": "Emily M. Bender",
+      "url": "https://faculty.washington.edu/ebender/",
+      "category": "computational-linguist-ai-critic",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_arvind-narayanan",
+      "kind": "person",
+      "name": "Arvind Narayanan",
+      "url": "https://www.cs.princeton.edu/~arvindn/",
+      "category": "ai-policy-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sayash-kapoor",
+      "kind": "person",
+      "name": "Sayash Kapoor",
+      "url": "https://www.sayashkapoor.com/",
+      "category": "ai-policy-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_percy-liang",
+      "kind": "person",
+      "name": "Percy Liang",
+      "url": "https://cs.stanford.edu/~pliang/",
+      "category": "foundation-model-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_chris-manning",
+      "kind": "person",
+      "name": "Christopher Manning",
+      "url": "https://nlp.stanford.edu/~manning/",
+      "category": "nlp-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_dan-jurafsky",
+      "kind": "person",
+      "name": "Dan Jurafsky",
+      "url": "https://web.stanford.edu/~jurafsky/",
+      "category": "nlp-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_yoav-goldberg",
+      "kind": "person",
+      "name": "Yoav Goldberg",
+      "url": "https://www.cs.biu.ac.il/~yogo/",
+      "category": "nlp-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_graham-neubig",
+      "kind": "person",
+      "name": "Graham Neubig",
+      "url": "https://www.phontron.com/",
+      "category": "nlp-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sasha-rush",
+      "kind": "person",
+      "name": "Sasha Rush",
+      "url": "https://rush-nlp.com/",
+      "category": "nlp-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_dawn-song",
+      "kind": "person",
+      "name": "Dawn Song",
+      "url": "https://people.eecs.berkeley.edu/~dawnsong/",
+      "category": "ai-security-researcher-founder",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_boaz-barak",
+      "kind": "person",
+      "name": "Boaz Barak",
+      "url": "https://www.boazbarak.org/",
+      "category": "theoretical-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_sanmi-koyejo",
+      "kind": "person",
+      "name": "Sanmi Koyejo",
+      "url": "https://sanmikoyejo.com/",
+      "category": "responsible-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_been-kim",
+      "kind": "person",
+      "name": "Been Kim",
+      "url": "https://beenkim.github.io/",
+      "category": "interpretability-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_finale-doshi-velez",
+      "kind": "person",
+      "name": "Finale Doshi-Velez",
+      "url": "https://finale.seas.harvard.edu/",
+      "category": "interpretable-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_openai-openai-python",
+      "kind": "project",
+      "name": "openai-python",
+      "url": "https://github.com/openai/openai-python",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_openai-openai-node",
+      "kind": "project",
+      "name": "openai-node",
+      "url": "https://github.com/openai/openai-node",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_openai-evals",
+      "kind": "project",
+      "name": "evals",
+      "url": "https://github.com/openai/evals",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_openai-tiktoken",
+      "kind": "project",
+      "name": "tiktoken",
+      "url": "https://github.com/openai/tiktoken",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_openai-whisper",
+      "kind": "project",
+      "name": "whisper",
+      "url": "https://github.com/openai/whisper",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_openai-gym",
+      "kind": "project",
+      "name": "gym",
+      "url": "https://github.com/openai/gym",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_anthropics-anthropic-sdk-python",
+      "kind": "project",
+      "name": "anthropic-sdk-python",
+      "url": "https://github.com/anthropics/anthropic-sdk-python",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_anthropics-anthropic-sdk-typescript",
+      "kind": "project",
+      "name": "anthropic-sdk-typescript",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_anthropics-courses",
+      "kind": "project",
+      "name": "courses",
+      "url": "https://github.com/anthropics/courses",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_anthropics-prompt-eng-interactive-tutorial",
+      "kind": "project",
+      "name": "prompt-eng-interactive-tutorial",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-transformers",
+      "kind": "project",
+      "name": "transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-diffusers",
+      "kind": "project",
+      "name": "diffusers",
+      "url": "https://github.com/huggingface/diffusers",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-peft",
+      "kind": "project",
+      "name": "peft",
+      "url": "https://github.com/huggingface/peft",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-accelerate",
+      "kind": "project",
+      "name": "accelerate",
+      "url": "https://github.com/huggingface/accelerate",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-trl",
+      "kind": "project",
+      "name": "trl",
+      "url": "https://github.com/huggingface/trl",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-text-generation-inference",
+      "kind": "project",
+      "name": "text-generation-inference",
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-safetensors",
+      "kind": "project",
+      "name": "safetensors",
+      "url": "https://github.com/huggingface/safetensors",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-tokenizers",
+      "kind": "project",
+      "name": "tokenizers",
+      "url": "https://github.com/huggingface/tokenizers",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-datasets",
+      "kind": "project",
+      "name": "datasets",
+      "url": "https://github.com/huggingface/datasets",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-hub-docs",
+      "kind": "project",
+      "name": "hub-docs",
+      "url": "https://github.com/huggingface/hub-docs",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_pytorch-pytorch",
+      "kind": "project",
+      "name": "pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_tensorflow-tensorflow",
+      "kind": "project",
+      "name": "tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jax-ml-jax",
+      "kind": "project",
+      "name": "jax",
+      "url": "https://github.com/jax-ml/jax",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_keras-team-keras",
+      "kind": "project",
+      "name": "keras",
+      "url": "https://github.com/keras-team/keras",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_vllm-project-vllm",
+      "kind": "project",
+      "name": "vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ggml-org-llama-cpp",
+      "kind": "project",
+      "name": "llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ggerganov-whisper-cpp",
+      "kind": "project",
+      "name": "whisper.cpp",
+      "url": "https://github.com/ggerganov/whisper.cpp",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ml-explore-mlx",
+      "kind": "project",
+      "name": "mlx",
+      "url": "https://github.com/ml-explore/mlx",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ml-explore-mlx-lm",
+      "kind": "project",
+      "name": "mlx-lm",
+      "url": "https://github.com/ml-explore/mlx-lm",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-deepspeed",
+      "kind": "project",
+      "name": "DeepSpeed",
+      "url": "https://github.com/microsoft/DeepSpeed",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-semantic-kernel",
+      "kind": "project",
+      "name": "semantic-kernel",
+      "url": "https://github.com/microsoft/semantic-kernel",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-autogen",
+      "kind": "project",
+      "name": "autogen",
+      "url": "https://github.com/microsoft/autogen",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-ai-for-beginners",
+      "kind": "project",
+      "name": "AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-graphrag",
+      "kind": "project",
+      "name": "graphrag",
+      "url": "https://github.com/microsoft/graphrag",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-generative-ai-for-beginners",
+      "kind": "project",
+      "name": "generative-ai-for-beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nvidia-megatron-lm",
+      "kind": "project",
+      "name": "Megatron-LM",
+      "url": "https://github.com/NVIDIA/Megatron-LM",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nvidia-tensorrt-llm",
+      "kind": "project",
+      "name": "TensorRT-LLM",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nvidia-nemo",
+      "kind": "project",
+      "name": "NeMo",
+      "url": "https://github.com/NVIDIA/NeMo",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nvidia-nemo-guardrails",
+      "kind": "project",
+      "name": "NeMo-Guardrails",
+      "url": "https://github.com/NVIDIA/NeMo-Guardrails",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nvidia-cutlass",
+      "kind": "project",
+      "name": "cutlass",
+      "url": "https://github.com/NVIDIA/cutlass",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ray-project-ray",
+      "kind": "project",
+      "name": "ray",
+      "url": "https://github.com/ray-project/ray",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_modal-labs-modal-client",
+      "kind": "project",
+      "name": "modal-client",
+      "url": "https://github.com/modal-labs/modal-client",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_replicatedhq-replicate-python",
+      "kind": "project",
+      "name": "replicate-python",
+      "url": "https://github.com/replicatedhq/replicate-python",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_langchain-ai-langchain",
+      "kind": "project",
+      "name": "langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_langchain-ai-langgraph",
+      "kind": "project",
+      "name": "langgraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_run-llama-llama_index",
+      "kind": "project",
+      "name": "llama_index",
+      "url": "https://github.com/run-llama/llama_index",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_crewaiinc-crewai",
+      "kind": "project",
+      "name": "crewAI",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-taskweaver",
+      "kind": "project",
+      "name": "TaskWeaver",
+      "url": "https://github.com/microsoft/TaskWeaver",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_microsoft-markitdown",
+      "kind": "project",
+      "name": "markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_all-hands-ai-openhands",
+      "kind": "project",
+      "name": "OpenHands",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_browser-use-browser-use",
+      "kind": "project",
+      "name": "browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_modelcontextprotocol-servers",
+      "kind": "project",
+      "name": "servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_berriai-litellm",
+      "kind": "project",
+      "name": "litellm",
+      "url": "https://github.com/BerriAI/litellm",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_open-webui-open-webui",
+      "kind": "project",
+      "name": "open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lobehub-lobe-chat",
+      "kind": "project",
+      "name": "lobe-chat",
+      "url": "https://github.com/lobehub/lobe-chat",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_chatgptnextweb-nextchat",
+      "kind": "project",
+      "name": "NextChat",
+      "url": "https://github.com/ChatGPTNextWeb/NextChat",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ollama-ollama",
+      "kind": "project",
+      "name": "ollama",
+      "url": "https://github.com/ollama/ollama",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lm-sys-fastchat",
+      "kind": "project",
+      "name": "FastChat",
+      "url": "https://github.com/lm-sys/FastChat",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lm-sys-routellm",
+      "kind": "project",
+      "name": "RouteLLM",
+      "url": "https://github.com/lm-sys/RouteLLM",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-chat-ui",
+      "kind": "project",
+      "name": "chat-ui",
+      "url": "https://github.com/huggingface/chat-ui",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stanfordnlp-dspy",
+      "kind": "project",
+      "name": "dspy",
+      "url": "https://github.com/stanfordnlp/dspy",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_guidance-ai-guidance",
+      "kind": "project",
+      "name": "guidance",
+      "url": "https://github.com/Guidance-ai/guidance",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_outlines-dev-outlines",
+      "kind": "project",
+      "name": "outlines",
+      "url": "https://github.com/outlines-dev/outlines",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_instructor-ai-instructor",
+      "kind": "project",
+      "name": "instructor",
+      "url": "https://github.com/instructor-ai/instructor",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_qdrant-qdrant",
+      "kind": "project",
+      "name": "qdrant",
+      "url": "https://github.com/qdrant/qdrant",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_milvus-io-milvus",
+      "kind": "project",
+      "name": "milvus",
+      "url": "https://github.com/milvus-io/milvus",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_weaviate-weaviate",
+      "kind": "project",
+      "name": "weaviate",
+      "url": "https://github.com/weaviate/weaviate",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_chroma-core-chroma",
+      "kind": "project",
+      "name": "chroma",
+      "url": "https://github.com/chroma-core/chroma",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_pgvector-pgvector",
+      "kind": "project",
+      "name": "pgvector",
+      "url": "https://github.com/pgvector/pgvector",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_facebookresearch-faiss",
+      "kind": "project",
+      "name": "faiss",
+      "url": "https://github.com/facebookresearch/faiss",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_facebookresearch-segment-anything",
+      "kind": "project",
+      "name": "segment-anything",
+      "url": "https://github.com/facebookresearch/segment-anything",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_facebookresearch-dinov2",
+      "kind": "project",
+      "name": "dinov2",
+      "url": "https://github.com/facebookresearch/dinov2",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_facebookresearch-llama-recipes",
+      "kind": "project",
+      "name": "llama-recipes",
+      "url": "https://github.com/facebookresearch/llama-recipes",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_facebookresearch-audiocraft",
+      "kind": "project",
+      "name": "audiocraft",
+      "url": "https://github.com/facebookresearch/audiocraft",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_facebookresearch-imagebind",
+      "kind": "project",
+      "name": "ImageBind",
+      "url": "https://github.com/facebookresearch/ImageBind",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_facebookresearch-detectron2",
+      "kind": "project",
+      "name": "detectron2",
+      "url": "https://github.com/facebookresearch/detectron2",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-deepmind-gemma",
+      "kind": "project",
+      "name": "gemma",
+      "url": "https://github.com/google-deepmind/gemma",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-deepmind-alphafold",
+      "kind": "project",
+      "name": "alphafold",
+      "url": "https://github.com/google-deepmind/alphafold",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-deepmind-mujoco",
+      "kind": "project",
+      "name": "mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-deepmind-open_spiel",
+      "kind": "project",
+      "name": "open_spiel",
+      "url": "https://github.com/google-deepmind/open_spiel",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-deepmind-graphcast",
+      "kind": "project",
+      "name": "graphcast",
+      "url": "https://github.com/google-deepmind/graphcast",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-gemini-generative-ai-python",
+      "kind": "project",
+      "name": "generative-ai-python",
+      "url": "https://github.com/google-gemini/generative-ai-python",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-gemini-cookbook",
+      "kind": "project",
+      "name": "cookbook",
+      "url": "https://github.com/google-gemini/cookbook",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-adk-python",
+      "kind": "project",
+      "name": "adk-python",
+      "url": "https://github.com/google/adk-python",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_google-adk-js",
+      "kind": "project",
+      "name": "adk-js",
+      "url": "https://github.com/google/adk-js",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_qwenlm-qwen2-5",
+      "kind": "project",
+      "name": "Qwen2.5",
+      "url": "https://github.com/QwenLM/Qwen2.5",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_qwenlm-qwen-agent",
+      "kind": "project",
+      "name": "Qwen-Agent",
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_qwenlm-qwen2-5-coder",
+      "kind": "project",
+      "name": "Qwen2.5-Coder",
+      "url": "https://github.com/QwenLM/Qwen2.5-Coder",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_qwenlm-qwen-vl",
+      "kind": "project",
+      "name": "Qwen-VL",
+      "url": "https://github.com/QwenLM/Qwen-VL",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mistralai-mistral-inference",
+      "kind": "project",
+      "name": "mistral-inference",
+      "url": "https://github.com/mistralai/mistral-inference",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mistralai-mistral-common",
+      "kind": "project",
+      "name": "mistral-common",
+      "url": "https://github.com/mistralai/mistral-common",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mistralai-cookbook",
+      "kind": "project",
+      "name": "cookbook",
+      "url": "https://github.com/mistralai/cookbook",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_deepseek-ai-deepseek-v3",
+      "kind": "project",
+      "name": "DeepSeek-V3",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_deepseek-ai-deepseek-r1",
+      "kind": "project",
+      "name": "DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_deepseek-ai-janus",
+      "kind": "project",
+      "name": "Janus",
+      "url": "https://github.com/deepseek-ai/Janus",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_deepseek-ai-deepseek-coder-v2",
+      "kind": "project",
+      "name": "DeepSeek-Coder-V2",
+      "url": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_thudm-chatglm3",
+      "kind": "project",
+      "name": "ChatGLM3",
+      "url": "https://github.com/THUDM/ChatGLM3",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_thudm-glm-4",
+      "kind": "project",
+      "name": "GLM-4",
+      "url": "https://github.com/THUDM/GLM-4",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_thudm-cogvideo",
+      "kind": "project",
+      "name": "CogVideo",
+      "url": "https://github.com/THUDM/CogVideo",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_01-ai-yi",
+      "kind": "project",
+      "name": "Yi",
+      "url": "https://github.com/01-ai/Yi",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_minimax-ai-minimax-text-01",
+      "kind": "project",
+      "name": "MiniMax-Text-01",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Text-01",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_moonshotai-kimi-audio",
+      "kind": "project",
+      "name": "Kimi-Audio",
+      "url": "https://github.com/moonshotai/Kimi-Audio",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stability-ai-generative-models",
+      "kind": "project",
+      "name": "generative-models",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stability-ai-stablediffusion",
+      "kind": "project",
+      "name": "stablediffusion",
+      "url": "https://github.com/Stability-AI/stablediffusion",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_stability-ai-stable-audio-tools",
+      "kind": "project",
+      "name": "stable-audio-tools",
+      "url": "https://github.com/Stability-AI/stable-audio-tools",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_black-forest-labs-flux",
+      "kind": "project",
+      "name": "flux",
+      "url": "https://github.com/black-forest-labs/flux",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_comfyorg-comfyui",
+      "kind": "project",
+      "name": "comfyui",
+      "url": "https://github.com/comfyorg/comfyui",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_automatic1111-stable-diffusion-webui",
+      "kind": "project",
+      "name": "stable-diffusion-webui",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_invoke-ai-invokeai",
+      "kind": "project",
+      "name": "InvokeAI",
+      "url": "https://github.com/invoke-ai/InvokeAI",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_ultralytics-ultralytics",
+      "kind": "project",
+      "name": "ultralytics",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_open-mmlab-mmdetection",
+      "kind": "project",
+      "name": "mmdetection",
+      "url": "https://github.com/open-mmlab/mmdetection",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_open-mmlab-mmengine",
+      "kind": "project",
+      "name": "mmengine",
+      "url": "https://github.com/open-mmlab/mmengine",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lightning-ai-pytorch-lightning",
+      "kind": "project",
+      "name": "pytorch-lightning",
+      "url": "https://github.com/Lightning-AI/pytorch-lightning",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_lightning-ai-litgpt",
+      "kind": "project",
+      "name": "litgpt",
+      "url": "https://github.com/Lightning-AI/litgpt",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_karpathy-nanogpt",
+      "kind": "project",
+      "name": "nanoGPT",
+      "url": "https://github.com/karpathy/nanoGPT",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_karpathy-llm-c",
+      "kind": "project",
+      "name": "llm.c",
+      "url": "https://github.com/karpathy/llm.c",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_eleutherai-gpt-neox",
+      "kind": "project",
+      "name": "gpt-neox",
+      "url": "https://github.com/EleutherAI/gpt-neox",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_eleutherai-lm-evaluation-harness",
+      "kind": "project",
+      "name": "lm-evaluation-harness",
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_eleutherai-pythia",
+      "kind": "project",
+      "name": "pythia",
+      "url": "https://github.com/EleutherAI/pythia",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_allenai-olmo",
+      "kind": "project",
+      "name": "OLMo",
+      "url": "https://github.com/allenai/OLMo",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_allenai-open-instruct",
+      "kind": "project",
+      "name": "open-instruct",
+      "url": "https://github.com/allenai/open-instruct",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_allenai-ai2-arc",
+      "kind": "project",
+      "name": "ai2-arc",
+      "url": "https://github.com/allenai/ai2-arc",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_laion-ai-open-assistant",
+      "kind": "project",
+      "name": "Open-Assistant",
+      "url": "https://github.com/LAION-AI/Open-Assistant",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_laion-ai-aesthetic-predictor",
+      "kind": "project",
+      "name": "aesthetic-predictor",
+      "url": "https://github.com/LAION-AI/aesthetic-predictor",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_openbmb-minicpm-v",
+      "kind": "project",
+      "name": "MiniCPM-V",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_openbmb-chatdev",
+      "kind": "project",
+      "name": "ChatDev",
+      "url": "https://github.com/OpenBMB/ChatDev",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_internlm-internlm-xcomposer",
+      "kind": "project",
+      "name": "InternLM-XComposer",
+      "url": "https://github.com/InternLM/InternLM-XComposer",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_paddlepaddle-paddlenlp",
+      "kind": "project",
+      "name": "PaddleNLP",
+      "url": "https://github.com/PaddlePaddle/PaddleNLP",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_paddlepaddle-paddleocr",
+      "kind": "project",
+      "name": "PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_pku-alignment-safe-rlhf",
+      "kind": "project",
+      "name": "safe-rlhf",
+      "url": "https://github.com/PKU-Alignment/safe-rlhf",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_huggingface-lerobot",
+      "kind": "project",
+      "name": "lerobot",
+      "url": "https://github.com/huggingface/lerobot",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_mozilla-ai-llamafile",
+      "kind": "project",
+      "name": "llamafile",
+      "url": "https://github.com/mozilla-ai/llamafile",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_bentoml-bentoml",
+      "kind": "project",
+      "name": "BentoML",
+      "url": "https://github.com/bentoml/BentoML",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_dagster-io-dagster",
+      "kind": "project",
+      "name": "dagster",
+      "url": "https://github.com/dagster-io/dagster",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_wandb-wandb",
+      "kind": "project",
+      "name": "wandb",
+      "url": "https://github.com/wandb/wandb",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_weights-biases-wandb-cookbook",
+      "kind": "project",
+      "name": "wandb-cookbook",
+      "url": "https://github.com/weights-biases/wandb-cookbook",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_explosion-spacy",
+      "kind": "project",
+      "name": "spaCy",
+      "url": "https://github.com/explosion/spaCy",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_scikit-learn-scikit-learn",
+      "kind": "project",
+      "name": "scikit-learn",
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_apache-arrow",
+      "kind": "project",
+      "name": "arrow",
+      "url": "https://github.com/apache/arrow",
+      "category": "github-project",
+      "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    }
+  ]
+}

@@ -239,3 +239,6 @@ All top-level fields are required. Within a citation, `feed_item_id` and `archiv
 13. `retracted` items are excluded from normal ranking but retain a public correction/retraction record. `disputed` and `unverified` items display status labels.
 14. Editorial boosts require a reason and future expiry (maximum 24 hours); they cannot override retraction or citation failures.
 15. Duplicate detection uses normalized canonical URL plus title/entity similarity. Duplicates either set `duplicate_of` or receive the penalty; prefer the primary or most evidential source.
+
+## Locale boundary rule
+Canonical content payloads use BCP47 keys `en` and `zh-Hans`, and declare `localeAliases: {"zh":"zh-Hans"}`. The database persists `zh-Hans` in `_zh` columns for compactness. Public API responses explicitly map `_zh` back to the UI compatibility key `zh`; missing canonical locales are a validation/import error rather than silently falling back.

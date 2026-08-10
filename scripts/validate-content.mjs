@@ -8,6 +8,9 @@ if (!existing.length) {
 }
 const read = (path) => JSON.parse(fs.readFileSync(path, 'utf8'));
 const errors = [];
+const now = Date.now();
+const futureToleranceMs = 5 * 60 * 1000;
+const localized = (value) => value?.en && value?.['zh-Hans'];
 for (const path of existing) {
   try {
     const data = read(path);
@@ -17,16 +20,24 @@ for (const path of existing) {
 }
 if (fs.existsSync('content/feed.json')) {
   for (const item of read('content/feed.json').items ?? []) {
-    if (!item.id || !item.url || !/^https:\/\//.test(item.url)) errors.push(`feed item ${item.id ?? '?'}: specific HTTPS URL required`);
-    if (!item.title?.en || !item.title?.zh || !item.summary?.en || !item.summary?.zh) errors.push(`feed item ${item.id ?? '?'}: bilingual title/summary required`);
+    if (!item.id || !(item.canonicalUrl ?? item.url) || !/^https:\/\//.test(item.canonicalUrl ?? item.url)) errors.push(`feed item ${item.id ?? '?'}: specific HTTPS URL required`);
+    if (!localized(item.title) || !localized(item.summary)) errors.push(`feed item ${item.id ?? '?'}: canonical en + zh-Hans title/summary required`);
     if (!item.publishedAt || Number.isNaN(Date.parse(item.publishedAt))) errors.push(`feed item ${item.id ?? '?'}: valid publishedAt required`);
+    else if (Date.parse(item.publishedAt) > now + futureToleranceMs) errors.push(`feed item ${item.id ?? '?'}: publishedAt is in the future`);
   }
 }
 if (fs.existsSync('content/insights.json')) {
   for (const insight of read('content/insights.json').items ?? []) {
-    if (!insight.title?.en || !insight.title?.zh || !insight.body?.en || !insight.body?.zh) errors.push(`insight ${insight.id ?? '?'}: bilingual title/body required`);
-    if (!(insight.sources?.length > 0)) errors.push(`insight ${insight.id ?? '?'}: at least one source required`);
-    for (const claim of insight.claims ?? []) if (!(claim.sourceIds?.length > 0)) errors.push(`insight ${insight.id ?? '?'}: every claim needs sourceIds`);
+    if (!insight.publishedAt || Number.isNaN(Date.parse(insight.publishedAt)) || Date.parse(insight.publishedAt) > now + futureToleranceMs) errors.push(`insight ${insight.id ?? '?'}: publishedAt is invalid or in the future`);
+    if (!localized(insight.title) || !localized(insight.body)) errors.push(`insight ${insight.id ?? '?'}: canonical en + zh-Hans title/body required`);
+    if (!((insight.sources ?? insight.citations)?.length > 0)) errors.push(`insight ${insight.id ?? '?'}: at least one source required`);
+    const sourceIds = new Set((insight.sources ?? insight.citations ?? []).map((source) => source.id));
+    for (const source of insight.sources ?? insight.citations ?? []) if (!/^https:\/\//.test(source.url ?? '')) errors.push(`insight ${insight.id ?? '?'}: source ${source.id ?? '?'} needs an HTTPS URL`);
+    for (const claim of insight.claims ?? []) {
+      const ids = claim.citationIds ?? claim.sourceIds ?? [];
+      if (!ids.length) errors.push(`insight ${insight.id ?? '?'}: every claim needs citationIds`);
+      for (const id of ids) if (!sourceIds.has(id)) errors.push(`insight ${insight.id ?? '?'}: claim references missing citation ${id}`);
+    }
   }
 }
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }

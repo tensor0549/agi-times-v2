@@ -1,0 +1,18 @@
+import fs from 'node:fs'; import path from 'node:path';
+const root=path.resolve(import.meta.dirname,'..');
+const feeds=[
+{sourceId:'src_hugging-face',publisher:'Hugging Face',url:'https://huggingface.co/blog/feed.xml',reliability:.9},
+{sourceId:'src_microsoft-research',publisher:'Microsoft Research',url:'https://www.microsoft.com/en-us/research/feed/',reliability:.92},
+{sourceId:'src_nvidia-ai',publisher:'NVIDIA AI',url:'https://blogs.nvidia.com/blog/category/deep-learning/feed/',reliability:.92},
+{sourceId:'src_google-research',publisher:'Google Research',url:'https://research.google/blog/rss/',reliability:.94},
+{sourceId:'src_arxiv-cs-ai',publisher:'arXiv cs.AI',url:'https://export.arxiv.org/rss/cs.AI',reliability:.86}
+];
+const clean=s=>String(s||'').replace(/<!\[CDATA\[|\]\]>/g,'').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'").replace(/\s+/g,' ').trim();
+const val=(block,names)=>{for(const n of names){const m=block.match(new RegExp(`<${n}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${n}>`,'i'));if(m)return clean(m[1])}return''};
+const canonical=u=>{try{const x=new URL(u);['utm_source','utm_medium','utm_campaign','utm_content','ref'].forEach(k=>x.searchParams.delete(k));return x.href}catch{return''}};
+const existing=fs.existsSync(path.join(root,'content/feed.json'))?new Set(JSON.parse(fs.readFileSync(path.join(root,'content/feed.json'),'utf8')).items.map(x=>x.url)):new Set();
+const candidates=[]; const failures=[]; const cutoff=Date.now()-14*864e5;
+for(const f of feeds){try{const r=await fetch(f.url,{redirect:'follow',signal:AbortSignal.timeout(20000),headers:{'user-agent':'AGITimesBot/1.0 (+https://agitime.ai)'}});if(!r.ok)throw new Error(`HTTP ${r.status}`);const xml=await r.text();const blocks=[...(xml.match(/<item\b[\s\S]*?<\/item>/gi)||[]),...(xml.match(/<entry\b[\s\S]*?<\/entry>/gi)||[])];for(const b of blocks.slice(0,20)){const title=val(b,['title']);let url=val(b,['link','guid']);if(!url){const m=b.match(/<link[^>]+href=["']([^"']+)/i);url=m?.[1]||''}url=canonical(url);const rawDate=val(b,['pubDate','published','updated','dc:date']);const t=Date.parse(rawDate);const snippet=val(b,['description','summary','content:encoded']);if(!title||!url||!Number.isFinite(t)||t> Date.now()+300000||t<cutoff||existing.has(url)||snippet.length<40)continue;candidates.push({id:`candidate_${Buffer.from(url).toString('base64url').slice(0,22).toLowerCase()}`,sourceId:f.sourceId,publisher:f.publisher,url,title,publishedAt:new Date(t).toISOString(),evidenceSnippet:snippet.slice(0,1200),sourceReliability:f.reliability,originalLanguage:'en'})}}catch(e){failures.push({feed:f.url,error:e.message})}}
+const unique=[...new Map(candidates.map(x=>[x.url,x])).values()].sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
+if(unique.length<3)throw new Error(`Fail closed: only ${unique.length} current candidates from ${feeds.length-failures.length} feeds; failures=${JSON.stringify(failures)}`);
+const out={schemaVersion:'1.0.0',generatedAt:new Date().toISOString(),windowDays:14,failures,candidates:unique.slice(0,40)};fs.mkdirSync(path.join(root,'content/drafts'),{recursive:true});fs.writeFileSync(path.join(root,'content/drafts/ingested.json'),JSON.stringify(out,null,2)+'\n');console.log(`Ingested ${out.candidates.length} current item-level candidates; ${failures.length} feed failures.`);

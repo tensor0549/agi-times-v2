@@ -1,0 +1,21 @@
+name: Daily Insight gate
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 1 * * *'
+permissions:
+  contents: read
+jobs:
+  verify-current-insight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run content:validate
+      - run: npm run content:editorial-validate
+      - run: npm run insight:daily-check
