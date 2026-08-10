@@ -1,4 +1,5 @@
 import { d1 } from './lib/d1-feedback.mjs';
+import { registeredProbe } from './lib/feedback-classification.mjs';
 import { canTransition } from './lib/feedback-verification.mjs';
 
 const args=Object.fromEntries(process.argv.slice(2).map((value,index,list)=>value.startsWith('--')?[value.slice(2),list[index+1]?.startsWith('--')?'true':list[index+1]]:null).filter(Boolean));
@@ -18,10 +19,11 @@ if(args.action==='claim'){
 }else if(args.action==='configure-probe'){
   if(!canTransition(current,'configure-probe')) throw new Error('Probe configuration requires reviewing status');
   if(!/^[0-9a-f]{40}$/i.test(args['fix-sha']??'')) throw new Error('--fix-sha must be a 40-character SHA');
-  const probePath=args['probe-path']; if(!probePath?.startsWith('/')||probePath.startsWith('//')) throw new Error('--probe-path must be same-origin relative');
-  const method=args['probe-method']==='GET'?'GET':'HEAD';
-  await d1(`UPDATE feedback_handoffs SET fix_sha=?,probe_method=?,probe_path=?,expected_status_min=?,expected_status_max=?,verification_ready=1,verified_at=NULL,deployed_sha=NULL,last_error=NULL,updated_at=CURRENT_TIMESTAMP WHERE feedback_id=? AND status='reviewing'`,[args['fix-sha'],method,probePath,Number(args.min??200),Number(args.max??399),id]);
-  await audit('reviewing','reviewing','probe_configured',{fixSha:args['fix-sha'],method,probePath});
+  const probeId=String(args['probe-id']??'');
+  const probe=registeredProbe(probeId);
+  if(!probe) throw new Error('--probe-id must name a registered probe');
+  await d1(`UPDATE feedback_handoffs SET fix_sha=?,probe_method=?,probe_path=?,expected_status_min=?,expected_status_max=?,verification_ready=1,verified_at=NULL,deployed_sha=NULL,last_error=NULL,updated_at=CURRENT_TIMESTAMP WHERE feedback_id=? AND status='reviewing'`,[args['fix-sha'],probe.method,probe.path,probe.min,probe.max,id]);
+  await audit('reviewing','reviewing','probe_configured',{fixSha:args['fix-sha'],probeId,method:probe.method,probePath:probe.path});
 }else if(args.action==='resolve'){
   if(current.status==='resolved'){console.log(JSON.stringify({event:'feedback_review_noop',opaqueId:id,action:'resolve'}));process.exit(0);}
   if(!canTransition(current,'resolve')) throw new Error('Resolution requires recorded successful canonical deploy and probe evidence for the fix SHA');

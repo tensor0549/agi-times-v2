@@ -16,12 +16,19 @@ const dependencies={
   },
   probe:async({path,method})=>{const response=await fetch(`https://agitime.ai${path}`,{method,redirect:'manual',signal:AbortSignal.timeout(15000)});return response.status;},
 };
+const configWhere=`feedback_id=? AND status='reviewing' AND verification_ready=1 AND fix_sha=? AND probe_method IS ? AND probe_path=? AND expected_status_min=? AND expected_status_max=?`;
+const configParams=(row)=>[row.feedback_id,row.fix_sha,row.probe_method,row.probe_path,row.expected_status_min,row.expected_status_max];
 for(const row of rows){
  try{
   const result=await verifyCandidate(row,dependencies);
-  if(!result.passed){await d1(`UPDATE feedback_handoffs SET attempt_count=attempt_count+1,last_probe_status=?,last_error=?,updated_at=CURRENT_TIMESTAMP WHERE feedback_id=?`,[result.status??null,result.error,row.feedback_id]);continue;}
-  const changed=await d1(`UPDATE feedback_handoffs SET deployed_sha=?,verified_at=CURRENT_TIMESTAMP,last_probe_status=?,last_error=NULL,attempt_count=attempt_count+1,updated_at=CURRENT_TIMESTAMP WHERE feedback_id=? AND status='reviewing' AND verified_at IS NULL RETURNING feedback_id`,[result.deployedSha,result.status,row.feedback_id]);
+  if(!result.passed){
+   await d1(`UPDATE feedback_handoffs SET attempt_count=attempt_count+1,last_probe_status=?,last_error=?,updated_at=CURRENT_TIMESTAMP WHERE ${configWhere}`,[result.status??null,result.error,...configParams(row)]);
+   continue;
+  }
+  const changed=await d1(`UPDATE feedback_handoffs SET deployed_sha=?,verified_at=CURRENT_TIMESTAMP,last_probe_status=?,last_error=NULL,attempt_count=attempt_count+1,updated_at=CURRENT_TIMESTAMP WHERE ${configWhere} AND verified_at IS NULL RETURNING feedback_id`,[result.deployedSha,result.status,...configParams(row)]);
   if(changed.length){await d1(`INSERT INTO feedback_handoff_audit(feedback_id,from_status,to_status,actor,event,evidence_json) VALUES(?,'reviewing','reviewing','feedback-verifier','deploy_probe_verified',?)`,[row.feedback_id,JSON.stringify({deployedSha:result.deployedSha,probeStatus:result.status})]);verified.push(row.feedback_id);}
- }catch(error){await d1(`UPDATE feedback_handoffs SET attempt_count=attempt_count+1,last_error=?,updated_at=CURRENT_TIMESTAMP WHERE feedback_id=?`,[error instanceof Error?error.message.slice(0,300):'unknown verifier error',row.feedback_id]);}
+ }catch(error){
+  await d1(`UPDATE feedback_handoffs SET attempt_count=attempt_count+1,last_error=?,updated_at=CURRENT_TIMESTAMP WHERE ${configWhere}`,[error instanceof Error?error.message.slice(0,300):'unknown verifier error',...configParams(row)]);
+ }
 }
 console.log(JSON.stringify(publicLog('feedback_verify_complete',verified)));

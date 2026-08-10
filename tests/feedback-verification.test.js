@@ -1,4 +1,4 @@
-import { describe,expect,it } from 'vitest';
+import { describe,expect,it,vi } from 'vitest';
 import { canTransition,isCanonicalDeploy,verifyCandidate } from '../scripts/lib/feedback-verification.mjs';
 const sha='a'.repeat(40);
 const canonical={head_sha:sha,event:'push',head_branch:'main',conclusion:'success',path:'.github/workflows/deploy.yml'};
@@ -12,7 +12,22 @@ describe('feedback fix verification',()=>{
   expect((await verifyCandidate(row,{listDeployRuns:async()=>[{...canonical,head_sha:'b'.repeat(40)}],probe:async()=>200})).passed).toBe(false);
   expect((await verifyCandidate(row,{listDeployRuns:async()=>[canonical],probe:async()=>500})).passed).toBe(false);
  });
- it('accepts only exact canonical deploy plus passing probe',async()=>{
+ it('rejects unregistered paths, methods, and caller-controlled expectations without probing',async()=>{
+  for(const mutation of [
+   {probe_path:'/private'},
+   {probe_path:'//evil.example/private'},
+   {probe_method:'HEAD'},
+   {probe_path:'/',probe_method:null,expected_status_min:200,expected_status_max:299},
+   {probe_path:'/',probe_method:'INVALID',expected_status_min:200,expected_status_max:299},
+   {expected_status_min:100},
+   {expected_status_max:599},
+  ]) {
+   const probe=vi.fn(async()=>200);
+   expect((await verifyCandidate({...row,...mutation},{listDeployRuns:async()=>[canonical],probe})).passed).toBe(false);
+   expect(probe).not.toHaveBeenCalled();
+  }
+ });
+ it('accepts only exact canonical deploy plus registered passing probe',async()=>{
   expect(await verifyCandidate(row,{listDeployRuns:async()=>[canonical],probe:async()=>204})).toEqual({passed:true,status:204,deployedSha:sha});
  });
  it('enforces conditional state transitions and manual resolution evidence',()=>{
