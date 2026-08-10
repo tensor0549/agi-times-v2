@@ -122,6 +122,10 @@ export function App() {
   const [insights, setInsights] = useState<InsightItem[]>(bundledInsights);
   const [selectedInsight, setSelectedInsight] = useState<InsightItem | null>(null);
   const [feedGeneratedAt, setFeedGeneratedAt] = useState(feedData.generatedAt);
+  const [feedNextCursor, setFeedNextCursor] = useState<string | null>(null);
+  const [feedPaginationKnown, setFeedPaginationKnown] = useState(false);
+  const [feedLoadingMore, setFeedLoadingMore] = useState(false);
+  const [feedMoreError, setFeedMoreError] = useState(false);
   const [remoteSearch, setRemoteSearch] = useState<{ query: string; stories: Story[] } | null>(null);
   const [searchBusy, setSearchBusy] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
@@ -147,12 +151,14 @@ export function App() {
   useEffect(() => {
     const controller = new AbortController();
     Promise.allSettled([
-      fetch('/api/v1/feed?limit=50', { signal: controller.signal }).then(async response => { if (!response.ok) throw new Error(`Feed ${response.status}`); return response.json() as Promise<{ items?: Array<Record<string, any>>; generatedAt?: string }>; }),
+      fetch('/api/v1/feed?limit=50', { signal: controller.signal }).then(async response => { if (!response.ok) throw new Error(`Feed ${response.status}`); return response.json() as Promise<{ items?: Array<Record<string, any>>; generatedAt?: string; nextCursor?: string | null }>; }),
       fetch('/api/v1/insights?limit=20', { signal: controller.signal }).then(async response => { if (!response.ok) throw new Error(`Insights ${response.status}`); return response.json() as Promise<{ items?: Array<Record<string, any>> }>; }),
     ]).then(([feedResult, insightResult]) => {
       if (feedResult.status === 'fulfilled') {
         if (feedResult.value.items?.length) setStories(mapFeedItems(feedResult.value.items));
         if (feedResult.value.generatedAt) setFeedGeneratedAt(feedResult.value.generatedAt);
+        setFeedNextCursor(feedResult.value.nextCursor || null);
+        setFeedPaginationKnown(true);
       }
       if (insightResult.status === 'fulfilled') {
         const currentItems = (insightResult.value.items || []).filter(item => item?.title && item?.dek && item?.body).map(normalizeInsight);
@@ -235,6 +241,23 @@ export function App() {
   useEffect(() => setSourceLimit(80), [sourceKind, sourceQuery]);
 
   const isNavActive = (index: number) => insightOpen ? index === 1 : sourcesOpen && sourceKind === 'project' ? index === 4 : index === 0 ? category === 'all' : index === 2 ? category === 'research' : index === 3 ? category === 'products' : false;
+  async function loadMoreFeed() {
+    if (!feedNextCursor || feedLoadingMore) return;
+    setFeedLoadingMore(true); setFeedMoreError(false);
+    try {
+      const response = await fetch(`/api/v1/feed?limit=50&cursor=${encodeURIComponent(feedNextCursor)}`);
+      if (!response.ok) throw new Error(`Feed ${response.status}`);
+      const payload = await response.json() as { items?: Array<Record<string, any>>; nextCursor?: string | null };
+      const incoming = mapFeedItems(payload.items || []);
+      setStories(current => {
+        const ids = new Set(current.map(story => story.id)); const urls = new Set(current.map(story => story.url));
+        return [...current, ...incoming.filter(story => !ids.has(story.id) && !urls.has(story.url))];
+      });
+      setFeedNextCursor(payload.nextCursor || null);
+    } catch { setFeedMoreError(true); track('error_seen', { area: 'feed_pagination' }); }
+    finally { setFeedLoadingMore(false); }
+  }
+
   function openFeedback(placement: 'footer' | 'floating_button') { setFeedbackSent(false); setFeedbackError(''); setFeedbackOpen(true); track('feedback_opened', { placement }); }
   function handlePrimaryNav(event: ReactMouseEvent<HTMLAnchorElement>, index: number) {
     if (index === 1) {
@@ -326,6 +349,7 @@ export function App() {
             </article>)}
             {results.length === 0 && <div className="empty-state"><Search size={28}/><h3>{t.empty}</h3><p>{t.emptySub}</p><button onClick={() => { setQuery(''); setCategory('all'); }}>{t.clear}</button></div>}
           </div>
+          {!query && feedPaginationKnown && <div className="feed-pagination" aria-live="polite">{feedNextCursor ? <><button onClick={loadMoreFeed} disabled={feedLoadingMore}>{feedLoadingMore ? <LoaderCircle className="search-spinner" size={16}/> : <ArrowRight size={16}/>}<span>{feedLoadingMore ? (lang === 'zh' ? '正在加载…' : 'Loading…') : (feedMoreError ? (lang === 'zh' ? '重试加载' : 'Try again') : (lang === 'zh' ? '加载更多资讯' : 'Load more intelligence'))}</span></button>{feedMoreError && <small role="alert">{lang === 'zh' ? '暂时无法加载，请重试。' : 'Could not load more. Please try again.'}</small>}</> : <span className="feed-complete"><Check size={14}/>{lang === 'zh' ? '已展示全部当前资讯' : 'All current intelligence is loaded'}</span>}</div>}
         </div>
 
         <aside className="insight-card" id="insight">
