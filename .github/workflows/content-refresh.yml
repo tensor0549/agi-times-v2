@@ -99,7 +99,7 @@ jobs:
           npm run content:editorial-validate
           npm run insight:daily-check
 
-      - name: Push bundle and trigger production deployment
+      - name: Push validated bundle
         if: steps.diff.outputs.changed == 'true'
         run: git push origin HEAD:main
 
