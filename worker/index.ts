@@ -7,6 +7,7 @@ import { capture, isAllowedEvent } from './lib/posthog';
 import { isSameOriginPage, rateLimit } from './lib/rate-limit';
 import { orderForProminence, parseOffsetCursor } from './lib/diversity';
 import { escapeLike, hasHan } from './lib/search';
+import { sourceHealthSql, sourceHealthSummary } from './lib/source-health';
 
 type Variables = { requestId: string };
 const app = new Hono<{ Bindings: Bindings; Variables: Variables }>();
@@ -41,11 +42,22 @@ app.use('*', timing());
 
 app.get('/api/v1/health', async (c) => {
   try {
-    const db = await c.env.DB.prepare('SELECT 1 AS ok').first<{ ok: number }>();
-    return c.json({ status: db?.ok === 1 ? 'ok' : 'degraded', service: 'agi-times-v2', environment: c.env.ENVIRONMENT });
+    const [db, sourceRow] = await Promise.all([
+      c.env.DB.prepare('SELECT 1 AS ok').first<{ ok: number }>(),
+      c.env.DB.prepare(sourceHealthSql).first<Record<string, unknown>>(),
+    ]);
+    return c.json({ status: db?.ok === 1 ? 'ok' : 'degraded', service: 'agi-times-v2', environment: c.env.ENVIRONMENT, sourceIngestion: sourceHealthSummary(sourceRow) });
   } catch {
     return apiError(c, 503, 'DATABASE_UNAVAILABLE', 'The service is temporarily unavailable.');
   }
+});
+
+app.get('/api/v1/ops/source-health', async (c) => {
+  try {
+    const row = await c.env.DB.prepare(sourceHealthSql).first<Record<string, unknown>>();
+    c.header('cache-control','public, max-age=60, stale-while-revalidate=300');
+    return c.json({ sourceIngestion: sourceHealthSummary(row) });
+  } catch { return apiError(c,503,'SOURCE_HEALTH_UNAVAILABLE','Source ingestion health is temporarily unavailable.'); }
 });
 
 app.get('/api/v1/feed', async (c) => {
