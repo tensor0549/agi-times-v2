@@ -22,7 +22,7 @@ type FeedItem = { id: string; canonicalUrl: string; publishedAt: string; title: 
 type InsightItem = { id: string; title: ContentLocale; dek: ContentLocale; body: ContentLocale; publishedAt: string; claims: Array<{ id: string; text: ContentLocale; citationIds: string[]; confidence: number }>; sources: Array<{ id: string; title: string; url: string; publisher: string; evidenceSnippet: string }> };
 type RegistrySource = { id: string; kind: 'organization' | 'media' | 'person' | 'project'; name: string; url: string; category: string; platform: string };
 
-const localized = (value: ContentLocale): Localized => ({ en: value.en, zh: value['zh-Hans'] });
+const localized = (value: ContentLocale | { en: string; zh: string }): Localized => ({ en: value.en, zh: 'zh-Hans' in value ? value['zh-Hans'] : value.zh });
 const mapCategory = (value: string): Exclude<Category, 'all'> => {
   if (value.includes('model')) return 'models';
   if (value.includes('research') || value.includes('safety')) return 'research';
@@ -63,19 +63,19 @@ const copy = {
   },
 } as const;
 
-const stories: Story[] = (feedData.items as FeedItem[]).map((item) => ({
-  id: item.id,
-  category: mapCategory(item.category),
-  featured: item.featured,
-  source: item.org || item.source.name,
-  title: localized(item.title),
-  summary: localized(item.summary),
-  time: item.publishedAt,
-  url: item.canonicalUrl,
+const mapFeedItems = (items: Array<Record<string, any>>): Story[] => items.map((item) => ({
+  id: String(item.id),
+  category: mapCategory(String(item.category || item.topics?.[0] || item.type || 'industry')),
+  featured: Boolean(item.featured),
+  source: String(item.org || item.source?.name || 'AGI Times'),
+  title: localized(item.title as ContentLocale | { en: string; zh: string }),
+  summary: localized(item.summary as ContentLocale | { en: string; zh: string }),
+  time: String(item.publishedAt),
+  url: String(item.canonicalUrl || item.url),
   signal: { zh: item.verification === 'verified_first_party' ? '一手来源已核验' : '来源已核验', en: item.verification === 'verified_first_party' ? 'Verified first party' : 'Source verified' },
 }));
-const insight = (insightData.items as InsightItem[])[0];
-const uniqueSourceCount = new Set(stories.map((story) => story.source)).size;
+const bundledStories = mapFeedItems(feedData.items as unknown as Array<Record<string, any>>);
+const bundledInsight = (insightData.items as InsightItem[])[0];
 const registryCounts = registryData.counts;
 const registryTotal = Object.values(registryCounts).reduce((sum, count) => sum + count, 0);
 
@@ -104,11 +104,53 @@ export function App() {
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const [sourceQuery, setSourceQuery] = useState('');
   const [sourceKind, setSourceKind] = useState<'all' | RegistrySource['kind']>('all');
+  const [stories, setStories] = useState<Story[]>(bundledStories);
+  const [insight, setInsight] = useState<InsightItem>(bundledInsight);
+  const [feedGeneratedAt, setFeedGeneratedAt] = useState(feedData.generatedAt);
   const searchRef = useRef<HTMLInputElement>(null);
   const t = copy[lang];
 
   useEffect(() => { document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en'; localStorage.setItem('agi-lang', lang); }, [lang]);
+  useEffect(() => {
+    const controller = new AbortController();
+    Promise.all([
+      fetch('/api/v1/feed?limit=50', { signal: controller.signal }).then(async response => response.ok ? response.json() as Promise<{ items?: Array<Record<string, any>>; generatedAt?: string }> : Promise.reject()),
+      fetch('/api/v1/insights?limit=1', { signal: controller.signal }).then(async response => response.ok ? response.json() as Promise<{ items?: Array<Record<string, any>> }> : Promise.reject()),
+    ]).then(([feed, insights]) => {
+      if (feed.items?.length) setStories(mapFeedItems(feed.items));
+      if (feed.generatedAt) setFeedGeneratedAt(feed.generatedAt);
+      const current = insights.items?.[0];
+      if (current?.title && current?.dek && current?.body) {
+        const toContentLocale = (value: Record<string, string>): ContentLocale => ({ en: value.en, 'zh-Hans': value['zh-Hans'] || value.zh });
+        setInsight({ ...current, title: toContentLocale(current.title), dek: toContentLocale(current.dek), body: toContentLocale(current.body), claims: (current.claims || []).map((claim: Record<string, any>) => ({ ...claim, text: toContentLocale(claim.text) })) } as InsightItem);
+      }
+    }).catch(error => { if (error instanceof Error && error.name !== 'AbortError') track('error_seen', { area: 'content_api', fallback: true }); });
+    return () => controller.abort();
+  }, []);
   useEffect(() => { track('page_viewed', { theme, language: lang }); }, []);
+  const modalOpen = feedbackOpen || insightOpen || sourcesOpen;
+  useEffect(() => {
+    if (!modalOpen) return;
+    const previous = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const frame = requestAnimationFrame(() => {
+      const dialog = document.querySelector<HTMLElement>('[role="dialog"]');
+      dialog?.querySelector<HTMLElement>('button, [href], input, textarea, [tabindex]:not([tabindex="-1"])')?.focus();
+    });
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const trapFocus = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const dialog = document.querySelector<HTMLElement>('[role="dialog"]');
+      if (!dialog) return;
+      const controls = [...dialog.querySelectorAll<HTMLElement>('button:not([disabled]), [href], input:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')].filter(control => control.offsetParent !== null);
+      if (!controls.length) return;
+      const first = controls[0]; const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    };
+    addEventListener('keydown', trapFocus);
+    return () => { cancelAnimationFrame(frame); removeEventListener('keydown', trapFocus); document.body.style.overflow = originalOverflow; previous?.focus(); };
+  }, [modalOpen]);
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
@@ -125,6 +167,7 @@ export function App() {
     return inCategory && haystack.includes(query.trim().toLowerCase());
   }), [category, query]);
   const featured = stories[0];
+  const uniqueSourceCount = new Set(stories.map((story) => story.source)).size;
   const visibleSources = useMemo(() => (registryData.sources as RegistrySource[]).filter((source) => {
     const matchesKind = sourceKind === 'all' || source.kind === sourceKind;
     const needle = sourceQuery.trim().toLowerCase();
@@ -176,14 +219,14 @@ export function App() {
             <div className="signal-top"><div><span className="mini-label">AGI PULSE</span><strong>{t.live}</strong></div><div className="pulse-orbit"><Sparkles size={22}/></div></div>
             <div className="signal-chart" aria-hidden="true"><svg viewBox="0 0 440 120" preserveAspectRatio="none"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="var(--accent)" stopOpacity=".32"/><stop offset="1" stopColor="var(--accent)" stopOpacity="0"/></linearGradient></defs><path className="chart-area" d="M0,102 C35,96 48,78 75,81 C112,86 121,63 153,67 C190,71 200,54 228,59 C267,65 280,29 315,38 C350,47 362,20 395,26 C417,29 428,14 440,9 L440,120 L0,120 Z"/><path className="chart-line" d="M0,102 C35,96 48,78 75,81 C112,86 121,63 153,67 C190,71 200,54 228,59 C267,65 280,29 315,38 C350,47 362,20 395,26 C417,29 428,14 440,9"/></svg></div>
             <div className="signal-stats"><div><b>{stories.length}</b><span>{lang === 'zh' ? '条当前更新' : 'current updates'}</span></div><div><b>{uniqueSourceCount}</b><span>{lang === 'zh' ? '个一手来源' : 'primary sources'}</span></div><div><b>100%</b><span>{lang === 'zh' ? '文章级链接' : 'item-level links'}</span></div></div>
-            <div className="signal-footer"><Clock3 size={14}/>{t.updated} {formatGeneratedAt(feedData.generatedAt, lang)}</div>
+            <div className="signal-footer"><Clock3 size={14}/>{t.updated} {formatGeneratedAt(feedGeneratedAt, lang)}</div>
           </div>
         </div>
       </section>
 
       <section className="discovery container" aria-label={lang === 'zh' ? '内容检索' : 'Content discovery'}>
         <div className="search-box"><Search size={20}/><input ref={searchRef} value={query} onChange={e => { setQuery(e.target.value); if (e.target.value.trim().length === 2) track('search_performed', { query_length: e.target.value.trim().length }); }} placeholder={t.search} aria-label={t.search}/>{query && <button onClick={() => setQuery('')} aria-label={lang === 'zh' ? '清除搜索' : 'Clear search'}><X size={17}/></button>}<span className="key-hint"><Command size={13}/> K</span></div>
-        <div className="category-row" role="group" aria-label="Categories">{categories.map(cat => <button key={cat} className={category === cat ? 'selected' : ''} onClick={() => { setCategory(cat); track('filter_changed', { category: cat }); }}>{t[cat]}</button>)}</div>
+        <div className="category-row" role="group" aria-label={lang === 'zh' ? '内容分类' : 'Categories'}>{categories.map(cat => <button key={cat} className={category === cat ? 'selected' : ''} onClick={() => { setCategory(cat); track('filter_changed', { category: cat }); }}>{t[cat]}</button>)}</div>
         <div className="coverage-strip" id="source-index" role="region" aria-label={lang === 'zh' ? '来源索引覆盖' : 'Source index coverage'}>
           <button className="coverage-entry" onClick={() => { setSourcesOpen(true); track('source_link_clicked', { target: 'source_directory' }); }}><strong>{registryTotal}</strong><span>{lang === 'zh' ? '浏览全部来源 →' : 'browse all sources →'}</span></button>
           <div><strong>{registryCounts.organization}</strong><span>{lang === 'zh' ? '机构' : 'organizations'}</span></div>
