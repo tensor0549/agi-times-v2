@@ -99,19 +99,26 @@ describe('expanded ingestion acceptance', () => {
     expect(errors).toContain('bad_chronology: GitHub creation and activity provenance required');
   });
 
-  it('accepts Hugging Face creation separately from current model activity', () => {
+  it('rejects routine modification of an established Hugging Face model as current publication', () => {
     const fixture = makeFixture();
     const source = fixture.config.sources.find((entry) => entry.id === 'hf-models');
-    fixture.ingested.candidates.push({ id: 'hf_ok', ingestionId: source.id, sourceId: source.sourceId, url: 'https://huggingface.co/owner/model', publishedAt: '2024-05-01T09:00:00Z', activityAt: '2026-08-10T17:00:00Z', classification: { relevant: true, confidence: 0.9, reasonCode: 'transferable_research' }, metrics: { likes: 50, downloads: 2000, trendingScore: 4, createdAt: '2024-05-01T09:00:00Z', lastModified: '2026-08-10T17:00:00Z' } });
+    fixture.ingested.candidates.push({ id: 'hf_maintenance', ingestionId: source.id, sourceId: source.sourceId, url: 'https://huggingface.co/owner/model', publishedAt: '2024-05-01T09:00:00Z', activityAt: '2026-08-10T17:00:00Z', classification: { relevant: true, confidence: 0.9, reasonCode: 'transferable_research' }, metrics: { likes: 50, downloads: 2000, trendingScore: 4, createdAt: '2024-05-01T09:00:00Z', lastModified: '2026-08-10T17:00:00Z' } });
     fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterDiversityCap: 1, afterRelevanceClassification: 1 };
-    expect(auditIngestionRun({ ...fixture, now }).errors).toEqual([]);
+    expect(auditIngestionRun({ ...fixture, now }).errors).toContain('hf_maintenance: routine Hugging Face modification is not publishable without a current creation event');
   });
 
-  it('accepts specific classified GitHub repository evidence with real trend timestamps', () => {
+  it('rejects routine pushes to an established GitHub repository as current publication', () => {
     const fixture = makeFixture();
     const github = fixture.config.sources.find((source) => source.id === 'github');
-    github.requiresAiClassification = true;
-    fixture.ingested.candidates.push({ id: 'candidate_ok', ingestionId: 'github', sourceId: github.sourceId, url: 'https://github.com/owner/new-ai-repo', publishedAt: '2025-01-15T10:00:00Z', activityAt: '2026-08-10T18:30:00Z', classification: { relevant: true, confidence: 0.91, reasonCode: 'core_ai' }, metrics: { stars: 250, forks: 20, createdAt: '2025-01-15T10:00:00Z', pushedAt: '2026-08-10T18:30:00Z' } });
+    fixture.ingested.candidates.push({ id: 'established_push', ingestionId: 'github', sourceId: github.sourceId, url: 'https://github.com/owner/established', publishedAt: '2025-01-15T10:00:00Z', activityAt: '2026-08-10T18:30:00Z', classification: { relevant: true, confidence: 0.91, reasonCode: 'core_ai' }, metrics: { stars: 2500, forks: 200, createdAt: '2025-01-15T10:00:00Z', pushedAt: '2026-08-10T18:30:00Z', query: 'active-established' } });
+    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterDiversityCap: 1, afterRelevanceClassification: 1 };
+    expect(auditIngestionRun({ ...fixture, now }).errors).toContain('established_push: routine GitHub activity is not publishable without a current creation event');
+  });
+
+  it('accepts a newly created classified GitHub repository with current activity', () => {
+    const fixture = makeFixture();
+    const github = fixture.config.sources.find((source) => source.id === 'github');
+    fixture.ingested.candidates.push({ id: 'candidate_ok', ingestionId: 'github', sourceId: github.sourceId, url: 'https://github.com/owner/new-ai-repo', publishedAt: '2026-08-03T10:00:00Z', activityAt: '2026-08-10T18:30:00Z', classification: { relevant: true, confidence: 0.91, reasonCode: 'core_ai' }, metrics: { stars: 250, forks: 20, createdAt: '2026-08-03T10:00:00Z', pushedAt: '2026-08-10T18:30:00Z', query: 'new-rising' } });
     fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterDiversityCap: 1, afterRelevanceClassification: 1 };
     expect(auditIngestionRun({ ...fixture, now }).errors).toEqual([]);
   });

@@ -126,11 +126,13 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
       const pushedAt = parseTime(candidate.metrics?.pushedAt);
       const createdAt = parseTime(candidate.metrics?.createdAt);
       if (!(Number.isFinite(candidate.metrics?.stars) && candidate.metrics.stars >= 0 && Number.isFinite(candidate.metrics?.forks) && candidate.metrics.forks >= 0 && pushedAt && createdAt && createdAt <= pushedAt && Math.abs(pushedAt - activityAt) <= 1_000 && Math.abs(createdAt - publishedAt) <= 1_000)) errors.push(`${candidate.id ?? 'candidate'}: GitHub creation and activity provenance required`);
+      if (candidate.metrics?.query !== 'new-rising' || !publishedAt || publishedAt < now - windowMs) errors.push(`${candidate.id ?? 'candidate'}: routine GitHub activity is not publishable without a current creation event`);
     }
     if (source.kind === 'huggingface_models_api') {
       const modifiedAt = parseTime(candidate.metrics?.lastModified);
       const createdAt = parseTime(candidate.metrics?.createdAt);
       if (!(Number.isFinite(candidate.metrics?.likes) && candidate.metrics.likes >= 0 && Number.isFinite(candidate.metrics?.downloads) && candidate.metrics.downloads >= 0 && Number.isFinite(candidate.metrics?.trendingScore) && candidate.metrics.trendingScore >= 0 && modifiedAt && createdAt && createdAt <= modifiedAt && Math.abs(modifiedAt - activityAt) <= 1_000 && Math.abs(createdAt - publishedAt) <= 1_000)) errors.push(`${candidate.id ?? 'candidate'}: Hugging Face creation and activity provenance required`);
+      if (!publishedAt || publishedAt < now - windowMs) errors.push(`${candidate.id ?? 'candidate'}: routine Hugging Face modification is not publishable without a current creation event`);
     }
   }
 
