@@ -4,7 +4,7 @@ type HealthRow = Record<string, unknown> | null;
 export function sourceHealthSummary(row: HealthRow) {
   const total=Number(row?.total ?? 0);
   return {
-    status: total === 0 ? 'pending' : Number(row?.failed ?? 0)>0 || Number(row?.stale ?? 0)>0 ? 'degraded' : 'healthy',
+    status: total === 0 ? 'pending' : Number(row?.degraded ?? 0)>0 || Number(row?.failed ?? 0)>0 || Number(row?.backoff ?? 0)>0 || Number(row?.stale ?? 0)>0 ? 'degraded' : 'healthy',
     configured: total,
     feeds: Number(row?.feeds ?? 0), apis: Number(row?.apis ?? 0),
     healthy: Number(row?.healthy ?? 0), degraded: Number(row?.degraded ?? 0), failed: Number(row?.failed ?? 0), backoff: Number(row?.backoff ?? 0), stale: Number(row?.stale ?? 0),
