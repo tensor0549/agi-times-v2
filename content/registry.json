@@ -5,7 +5,8 @@
     "organization": 127,
     "media": 16,
     "person": 128,
-    "project": 139
+    "project": 139,
+    "other": 1
   },
   "sources": [
     {
@@ -6968,6 +6969,23 @@
       "url": "https://github.com/apache/arrow",
       "category": "github-project",
       "platform": "github",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_arxiv-cs-ai",
+      "kind": "other",
+      "name": "arXiv cs.AI",
+      "url": "https://export.arxiv.org/rss/cs.AI",
+      "category": "academic-paper-feed",
+      "platform": "rss",
       "languages": [
         "en"
       ],
