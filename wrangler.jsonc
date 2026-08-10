@@ -12,10 +12,6 @@
     {
       "pattern": "agitime.ai",
       "custom_domain": true
-    },
-    {
-      "pattern": "www.agitime.ai",
-      "custom_domain": true
     }
   ],
   "assets": {

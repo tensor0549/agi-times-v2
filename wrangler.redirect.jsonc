@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "agi-times-v2-www-redirect",
+  "main": "worker/www-redirect.ts",
+  "compatibility_date": "2026-08-01",
+  "routes": [
+    { "pattern": "www.agitime.ai", "custom_domain": true }
+  ],
+  "workers_dev": true,
+  "observability": { "enabled": true }
+}
