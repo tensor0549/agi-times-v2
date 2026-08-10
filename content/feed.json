@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T17:26:08.040Z",
+  "generatedAt": "2026-08-10T18:14:09.163Z",
   "items": [
     {
       "id": "item_13c6b5c4068aadbfbaa4",
@@ -84,7 +84,7 @@
       "originalLanguage": "en",
       "title": {
         "en": "WebGrader Develops Programmatic Grading for Web Development Training",
-        "zh-Hans": "WebGrader为网页开发训练开发程序化评分系统"
+        "zh-Hans": "WebGrader 推出用于网页开发训练的程序化评分器"
       },
       "summary": {
         "en": "WebGrader autonomously derives interaction flows from website requests, represents them as executable Flow Contracts, and discovers reusable verifier skills through a residual-driven offline loop for RL training.",
@@ -324,7 +324,7 @@
       "originalLanguage": "en",
       "title": {
         "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
-        "zh-Hans": "微软发布Orchard框架支持可扩展智能体AI研究"
+        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
       },
       "summary": {
         "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
@@ -380,7 +380,7 @@
       "originalLanguage": "en",
       "title": {
         "en": "Echoverse Creates Evolving Environments for Computer-Use Agent Training",
-        "zh-Hans": "Echoverse为计算机使用智能体训练创建演进环境"
+        "zh-Hans": "Echoverse 为计算机操作智能体构建动态训练环境"
       },
       "summary": {
         "en": "Echoverse addresses computer-use AI agents' struggles with multi-step workflows by training them in realistic environments that evolve alongside tasks and tests, rather than simply providing more training tasks.",
@@ -414,62 +414,6 @@
           "publisher": "Microsoft Research",
           "publishedAt": "2026-07-30T17:00:00.000Z",
           "evidenceSnippet": "Computer-use AI agents struggle with multi-step workflows like email and customer support. Echoverse trains agents in realistic environments rather than simply providing more training tasks, helping them improve as the tasks, tests, and environments evolve. The post Echoverse: Deep, evolving environments for computer-use agents appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
-      "id": "item_edf74927e8bf18460382",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
-      "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
-      "publishedAt": "2026-07-30T16:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-07-30T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "EvoLib Transforms Experience Into Evolving Knowledge for LLMs",
-        "zh-Hans": "EvoLib将经验转化为大语言模型的演进知识"
-      },
-      "summary": {
-        "en": "EvoLib addresses the limitation that LLMs do not get smarter just by remembering more, instead turning experience into evolving knowledge through reusable skills and insights that help models adapt across tasks after deployment.",
-        "zh-Hans": "EvoLib解决了大语言模型仅通过记忆更多内容无法变得更智能的局限，通过可重用技能和洞察将经验转化为演进知识，帮助模型在部署后跨任务适应。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "knowledge evolution",
-        "reusable skills",
-        "experience learning"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Microsoft Research",
-      "org": "Microsoft Research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "freshnessScore": 8,
-      "importanceScore": 75,
-      "importance": 75,
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_edf74927e8bf18460382ac67",
-          "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-07-30T16:00:00.000Z",
-          "evidenceSnippet": "LLMs do not get smarter just by remembering more. EvoLib turns experience into evolving knowledge, taking reusable skills and insights that help models learn and adapt across tasks long after deployment. The post EvoLib: Turning experience into evolving knowledge appeared first on Microsoft Research ."
         }
       ]
     },
@@ -659,6 +603,62 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_edf74927e8bf18460382",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+      "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+      "publishedAt": "2026-07-30T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-07-30T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "EvoLib Transforms Experience Into Evolving Knowledge for LLMs",
+        "zh-Hans": "EvoLib 将经验沉淀为大语言模型可持续更新的知识"
+      },
+      "summary": {
+        "en": "EvoLib addresses the limitation that LLMs do not get smarter just by remembering more, instead turning experience into evolving knowledge through reusable skills and insights that help models adapt across tasks after deployment.",
+        "zh-Hans": "EvoLib解决了大语言模型仅通过记忆更多内容无法变得更智能的局限，通过可重用技能和洞察将经验转化为演进知识，帮助模型在部署后跨任务适应。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "knowledge evolution",
+        "reusable skills",
+        "experience learning"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 8,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_edf74927e8bf18460382ac67",
+          "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-07-30T16:00:00.000Z",
+          "evidenceSnippet": "LLMs do not get smarter just by remembering more. EvoLib turns experience into evolving knowledge, taking reusable skills and insights that help models learn and adapt across tasks long after deployment. The post EvoLib: Turning experience into evolving knowledge appeared first on Microsoft Research ."
+        }
+      ]
     },
     {
       "id": "release_mistral_ocr4_20260623",

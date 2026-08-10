@@ -26,6 +26,13 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
     if (allUrls.has(url)) errors.push(`${item.id}: duplicate canonical URL ${url}`); else allUrls.add(url);
   }
 
+  const topSourceCounts = new Map();
+  for (const item of (feed?.items ?? []).slice(0, 10)) {
+    const key = item.sourceId ?? item.source?.id ?? 'unknown';
+    topSourceCounts.set(key, (topSourceCounts.get(key) ?? 0) + 1);
+  }
+  for (const [sourceId, count] of topSourceCounts) if (count > 2) errors.push(`top 10 contains ${count} items from ${sourceId}; maximum is 2`);
+
   if (newFeed.length < 1) errors.push('incremental publication requires at least 1 new feed item');
   for (const [id, previous] of oldFeed) {
     const current = nextFeed.get(id);
@@ -45,6 +52,7 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
     if (!Number.isFinite(discovered) || discovered > now + 300_000) errors.push(`${item.id}: discovery date is future or invalid`);
     if (item.updatedAt !== item.publishedAt) errors.push(`${item.id}: updatedAt must preserve the source timestamp`);
     if (item.citations?.length !== 1 || item.citations[0].url !== url || !item.citations[0].evidenceSnippet) errors.push(`${item.id}: one exact item-level evidence citation is required`);
+    if (item.type === 'paper' && (Number(item.importanceScore) < 70 || Number(item.agiRelevanceScore) < 70)) errors.push(`${item.id}: academic items require importanceScore and agiRelevanceScore >= 70`);
   }
 
   const oldInsights = new Map((baseInsights?.items ?? []).map((item) => [item.id, item]));
