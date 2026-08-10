@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { boundedInt, latestTimestamp, parseJson, utcTimestamp } from '../worker/lib/http';
-import { isAllowedEvent } from '../worker/lib/posthog';
+import { isAllowedEvent, isOpaqueAnalyticsId } from '../worker/lib/posthog';
 import { isSameOriginPage } from '../worker/lib/rate-limit';
 
 describe('HTTP helpers', () => {
@@ -22,7 +22,10 @@ describe('HTTP helpers', () => {
   });
   it('only permits defined analytics events', () => {
     expect(isAllowedEvent('search_performed')).toBe(true);
+    expect(isAllowedEvent('feedback_submitted')).toBe(false);
     expect(isAllowedEvent('$identify')).toBe(false);
+    expect(isOpaqueAnalyticsId('7cc39c2b-5de9-4a55-9c1d-b05b77a21ef7')).toBe(true);
+    expect(isOpaqueAnalyticsId('person@example.com')).toBe(false);
   });
   it('accepts feedback context only from the request origin', () => {
     expect(isSameOriginPage('https://agitime.ai/story/1', 'https://agitime.ai/api/v1/feedback')).toBe(true);

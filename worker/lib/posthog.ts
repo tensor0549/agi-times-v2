@@ -1,17 +1,19 @@
 import type { Bindings } from '../types';
 
-const ALLOWED_EVENTS = new Set([
+const CAPTURE_EVENTS = new Set([
   'page_viewed', 'article_opened', 'insight_opened', 'search_performed',
   'filter_changed', 'language_changed', 'theme_changed', 'source_link_clicked',
   'feedback_opened', 'feedback_submitted', 'error_seen'
 ]);
+const PUBLIC_EVENTS = new Set([...CAPTURE_EVENTS].filter((event) => event !== 'feedback_submitted'));
 
 export type AnalyticsEvent = { event: string; distinctId: string; properties?: Record<string, unknown> };
 
-export function isAllowedEvent(event: string) { return ALLOWED_EVENTS.has(event); }
+export function isAllowedEvent(event: string) { return PUBLIC_EVENTS.has(event); }
+export function isOpaqueAnalyticsId(value: string) { return /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value); }
 
 export async function capture(env: Bindings, event: AnalyticsEvent, requestId: string): Promise<boolean> {
-  if (!env.POSTHOG_API_KEY || !isAllowedEvent(event.event)) return false;
+  if (!env.POSTHOG_API_KEY || !CAPTURE_EVENTS.has(event.event)) return false;
   const host = env.POSTHOG_HOST || 'https://us.i.posthog.com';
   const body = {
     api_key: env.POSTHOG_API_KEY,
