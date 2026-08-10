@@ -1,9 +1,9 @@
-import { classifyFeedback, publicLog } from './lib/feedback-classification.mjs';
+import { CLASSIFIER_VERSION, classifyFeedback, publicLog } from './lib/feedback-classification.mjs';
 import { boundedBatch, d1 } from './lib/d1-feedback.mjs';
 
 if (process.env.FEEDBACK_TRIAGE_ENABLED === 'false') { console.log(JSON.stringify(publicLog('feedback_triage_disabled', []))); process.exit(0); }
 const limit = boundedBatch(process.env.FEEDBACK_TRIAGE_BATCH);
-const feedback = await d1(`SELECT id,rating,message,locale,page_url,content_id,created_at FROM feedback WHERE status='new' ORDER BY created_at ASC LIMIT ?`, [limit]);
+const feedback = await d1(`SELECT id,rating,message,locale,page_url,content_id,context_json,created_at FROM feedback WHERE status='new' ORDER BY created_at ASC LIMIT ?`, [limit]);
 const handedOff = [];
 for (const item of feedback) {
   const result = classifyFeedback(item);
@@ -16,7 +16,7 @@ for (const item of feedback) {
   const updated = await d1(`UPDATE feedback SET status='reviewing',context_json=json_set(context_json,'$.triageStore','d1:feedback_handoffs','$.triagedAt',?)
     WHERE id=? AND status='new' AND EXISTS(SELECT 1 FROM feedback_handoffs WHERE feedback_id=?) RETURNING id`, [new Date().toISOString(),item.id,item.id]);
   if (updated.length) {
-    await d1(`INSERT INTO feedback_handoff_audit(feedback_id,from_status,to_status,actor,event,evidence_json) VALUES(?,NULL,'new','feedback-triage','handoff_created',?)`,[item.id,JSON.stringify({classifier:'deterministic-v1'})]);
+    await d1(`INSERT INTO feedback_handoff_audit(feedback_id,from_status,to_status,actor,event,evidence_json) VALUES(?,NULL,'new','feedback-triage','handoff_created',?)`,[item.id,JSON.stringify({classifier:CLASSIFIER_VERSION})]);
     handedOff.push(item.id);
   }
 }

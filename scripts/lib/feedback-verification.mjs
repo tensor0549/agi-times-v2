@@ -1,3 +1,5 @@
+import { registeredProbeForRequest } from './feedback-classification.mjs';
+
 export function isCanonicalDeploy(run, fixSha) {
   return run?.head_sha === fixSha && run?.event === 'push' && run?.head_branch === 'main' && run?.conclusion === 'success' && run?.path === '.github/workflows/deploy.yml';
 }
@@ -17,8 +19,13 @@ export async function verifyCandidate(row, dependencies) {
   const deploy = selectCanonicalDeploy(runs,row.fix_sha);
   if (!deploy) return { passed:false,error:'canonical successful production deploy not found' };
   const path=String(row.probe_path??'');
-  if (!path.startsWith('/')||path.startsWith('//')) return { passed:false,error:'unsafe probe path' };
-  const status=await dependencies.probe({path,method:row.probe_method==='GET'?'GET':'HEAD'});
-  const passed=status>=Number(row.expected_status_min)&&status<=Number(row.expected_status_max);
+  const method=['GET','HEAD'].includes(row.probe_method) ? row.probe_method : null;
+  if (!method) return { passed:false,error:'unregistered probe' };
+  const registered=registeredProbeForRequest(path,method);
+  if (!registered) return { passed:false,error:'unregistered probe' };
+  const probe=registered[1];
+  if (Number(row.expected_status_min)!==probe.min || Number(row.expected_status_max)!==probe.max) return { passed:false,error:'probe expectation mismatch' };
+  const status=await dependencies.probe({path:probe.path,method:probe.method});
+  const passed=status>=probe.min&&status<=probe.max;
   return passed?{passed:true,status,deployedSha:row.fix_sha}:{passed:false,status,error:'probe status outside expected range'};
 }
