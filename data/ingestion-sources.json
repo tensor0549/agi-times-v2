@@ -23,7 +23,7 @@
       "latestItemAt": "2026-08-10T17:00:00Z",
       "healthUrl": "https://openai.com/news/rss.xml",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.98
     },
     {
       "id": "ingest_google_deepmind",
@@ -35,7 +35,7 @@
       "latestItemAt": "2026-08-06T15:06:00Z",
       "healthUrl": "https://deepmind.google/blog/rss.xml",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.97
     },
     {
       "id": "ingest_google_research",
@@ -47,7 +47,7 @@
       "latestItemAt": "2026-07-30T20:36:36Z",
       "healthUrl": "https://research.google/blog/rss/",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.94
     },
     {
       "id": "ingest_microsoft_research",
@@ -59,7 +59,7 @@
       "latestItemAt": "2026-08-03T16:00:00Z",
       "healthUrl": "https://www.microsoft.com/en-us/research/blog/feed/",
       "language": "en",
-      "priority": 0.82
+      "priority": 0.93
     },
     {
       "id": "ingest_nvidia_ai",
@@ -71,7 +71,7 @@
       "latestItemAt": "2026-07-08T15:00:27Z",
       "healthUrl": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.92
     },
     {
       "id": "ingest_hugging_face_blog",
@@ -96,7 +96,7 @@
       "latestItemAt": "2026-08-07T00:00:00Z",
       "healthUrl": "https://machinelearning.apple.com/rss.xml",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.95
     },
     {
       "id": "ingest_bair",
@@ -109,7 +109,7 @@
       "latestItemAt": "2026-07-29T00:00:00Z",
       "healthUrl": "https://bair.berkeley.edu/blog/feed.xml",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.88
     },
     {
       "id": "ingest_allenai",
@@ -133,7 +133,7 @@
       "latestItemAt": "2026-07-13T00:00:00Z",
       "healthUrl": "https://blog.eleuther.ai/index.xml",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.87
     },
     {
       "id": "ingest_metr",
@@ -146,7 +146,7 @@
       "latestItemAt": "2026-07-28T00:00:00Z",
       "healthUrl": "https://metr.org/feed.xml",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.92
     },
     {
       "id": "ingest_fli",
@@ -158,7 +158,7 @@
       "latestItemAt": "2026-06-19T00:00:00Z",
       "healthUrl": "https://futureoflife.org/feed/",
       "language": "en",
-      "priority": 0.76
+      "priority": 0.82
     },
     {
       "id": "ingest_cset",
@@ -171,7 +171,7 @@
       "latestItemAt": "2026-08-10T00:00:00Z",
       "healthUrl": "https://cset.georgetown.edu/feed/",
       "language": "en",
-      "priority": 0.76
+      "priority": 0.87
     },
     {
       "id": "ingest_mila",
@@ -183,7 +183,7 @@
       "latestItemAt": "2026-07-28T00:00:00Z",
       "healthUrl": "https://mila.quebec/en/rss.xml",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.86
     },
     {
       "id": "ingest_vector",
@@ -196,7 +196,7 @@
       "latestItemAt": "2026-07-28T00:00:00Z",
       "healthUrl": "https://vectorinstitute.ai/feed/",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.86
     },
     {
       "id": "ingest_epoch",
@@ -208,7 +208,7 @@
       "latestItemAt": "2026-08-01T00:00:00Z",
       "healthUrl": "https://epochai.substack.com/feed",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.88
     },
     {
       "id": "ingest_techcrunch_ai",
@@ -220,7 +220,7 @@
       "latestItemAt": "2026-08-10T16:20:13Z",
       "healthUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.78
     },
     {
       "id": "ingest_verge_ai",
@@ -232,7 +232,7 @@
       "latestItemAt": "2026-08-10T15:40:12Z",
       "healthUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.8
     },
     {
       "id": "ingest_wired_ai",
@@ -244,7 +244,7 @@
       "latestItemAt": "2026-08-10T11:30:00Z",
       "healthUrl": "https://www.wired.com/feed/tag/ai/latest/rss",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.82
     },
     {
       "id": "ingest_mittr_ai",
@@ -256,7 +256,7 @@
       "latestItemAt": "2026-08-10T09:00:00Z",
       "healthUrl": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.86
     },
     {
       "id": "ingest_ars_ai",
@@ -268,7 +268,7 @@
       "latestItemAt": "2026-08-10T11:00:47Z",
       "healthUrl": "https://arstechnica.com/ai/feed/",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.8
     },
     {
       "id": "ingest_venturebeat",
@@ -281,7 +281,7 @@
       "latestItemAt": "2026-08-10T00:00:00Z",
       "healthUrl": "https://venturebeat.com/feed/",
       "language": "en",
-      "priority": 0.65
+      "priority": 0.7
     },
     {
       "id": "ingest_ft_ai",
@@ -293,7 +293,7 @@
       "latestItemAt": "2026-08-10T17:22:31Z",
       "healthUrl": "https://www.ft.com/artificial-intelligence?format=rss",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.84
     },
     {
       "id": "ingest_axios",
@@ -306,7 +306,7 @@
       "latestItemAt": "2026-08-10T18:09:24Z",
       "healthUrl": "https://api.axios.com/feed/",
       "language": "en",
-      "priority": 0.65
+      "priority": 0.72
     },
     {
       "id": "ingest_semafor",
@@ -320,7 +320,7 @@
       "latestItemAt": "2026-08-10T15:04:12Z",
       "healthUrl": "https://www.semafor.com/rss.xml",
       "language": "en",
-      "priority": 0.65
+      "priority": 0.7
     },
     {
       "id": "ingest_404_media",
@@ -333,7 +333,7 @@
       "latestItemAt": "2026-08-10T14:41:22Z",
       "healthUrl": "https://www.404media.co/rss/",
       "language": "en",
-      "priority": 0.65
+      "priority": 0.74
     },
     {
       "id": "ingest_platformer",
@@ -346,7 +346,7 @@
       "latestItemAt": "2026-08-07T00:52:17Z",
       "healthUrl": "https://www.platformer.news/rss/",
       "language": "en",
-      "priority": 0.65
+      "priority": 0.78
     },
     {
       "id": "ingest_import_ai",
@@ -358,7 +358,7 @@
       "latestItemAt": "2026-08-10T12:32:20Z",
       "healthUrl": "https://importai.substack.com/feed",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.86
     },
     {
       "id": "ingest_chinai",
@@ -370,7 +370,7 @@
       "latestItemAt": "2026-08-10T11:59:25Z",
       "healthUrl": "https://chinai.substack.com/feed",
       "language": "en",
-      "priority": 0.9
+      "priority": 0.84
     },
     {
       "id": "ingest_bloomberg_tech",
@@ -383,7 +383,7 @@
       "latestItemAt": "2026-08-10T18:01:21Z",
       "healthUrl": "https://feeds.bloomberg.com/technology/news.rss",
       "language": "en",
-      "priority": 0.65
+      "priority": 0.72
     },
     {
       "id": "ingest_github_trending",
@@ -418,7 +418,7 @@
       },
       "healthUrl": "https://huggingface.co/api/models",
       "language": "en",
-      "priority": 0.82
+      "priority": 0.86
     }
   ]
 }
