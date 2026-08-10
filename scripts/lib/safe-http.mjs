@@ -51,13 +51,13 @@ export function pinnedHttpsRequest(url, validatedAddress, options = {}) {
 }
 
 export async function safeFetchText(value, options = {}) {
-  const { maxBytes = 500_000, timeoutMs = 20_000, maxRedirects = 4, requestImpl, fetchImpl, lookupImpl = dns.lookup, allowedHosts, allowedContentTypes = ['text/html', 'application/xhtml+xml'], userAgent = 'AGITimesBot/1.0 (+https://agitime.ai)' } = options;
+  const { maxBytes = 500_000, timeoutMs = 20_000, maxRedirects = 4, requestImpl, fetchImpl, lookupImpl = dns.lookup, allowedHosts, allowedContentTypes = ['text/html', 'application/xhtml+xml'], headers = {}, userAgent = 'AGITimesBot/1.0 (+https://agitime.ai)' } = options;
   const deadlineAt = Date.now() + timeoutMs;
   let validated = await assertPublicHttps(value, lookupImpl, allowedHosts, deadlineAt);
   for (let redirects = 0; redirects <= maxRedirects; redirects++) {
     const remaining = deadlineAt - Date.now();
     if (remaining <= 0) throw new DOMException('Fetch exceeded end-to-end deadline', 'TimeoutError');
-    const requestOptions = { redirect: 'manual', signal: AbortSignal.timeout(remaining), headers: { 'user-agent': userAgent, accept: 'text/html,application/xhtml+xml' } };
+    const requestOptions = { redirect: 'manual', signal: AbortSignal.timeout(remaining), headers: { 'user-agent': userAgent, accept: allowedContentTypes.join(','), ...headers } };
     const responsePromise = requestImpl
       ? requestImpl(validated.url, validated.addresses[0], requestOptions)
       : fetchImpl
@@ -91,7 +91,7 @@ export async function safeFetchText(value, options = {}) {
     const bytes = new Uint8Array(total);
     let offset = 0;
     for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
-    return { url: response.url || validated.url.href, html: new TextDecoder().decode(bytes) };
+    return { url: response.url || validated.url.href, status: response.status, headers: response.headers, html: new TextDecoder().decode(bytes) };
   }
   throw new Error('Unreachable redirect state');
 }

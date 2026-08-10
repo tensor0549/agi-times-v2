@@ -112,7 +112,7 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
     newFeed,
     changedInsights,
     reviewPayload: {
-      feedItems: newFeed.map((item) => ({ id: item.id, type: item.type, category: item.category, title: item.title, summary: item.summary, importanceScore: item.importanceScore, agiRelevanceScore: item.agiRelevanceScore, relevanceReason: item.relevanceReason, evidence: item.citations[0].evidenceSnippet, url: item.url })),
+      feedItems: newFeed.map((item) => ({ id: item.id, type: item.type, category: item.category, title: item.title, summary: item.summary, importanceScore: item.importanceScore, agiRelevanceScore: item.agiRelevanceScore, relevanceReason: item.relevanceReason, sourcePriority: item.sourcePriority, metrics: item.metrics, classification: item.classification, evidence: item.citations[0].evidenceSnippet, url: item.url })),
       insights: changedInsights.map((item) => ({ id: item.id, title: item.title, dek: item.dek, body: item.body, claims: item.claims, sources: item.sources })),
     },
   };
