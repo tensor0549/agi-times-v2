@@ -11,6 +11,26 @@ describe('single-owner atomic content deployment workflow', () => {
     expect(deploy).toContain("github.event.head_commit.author.name != 'agi-times-publisher[bot]'");
   });
 
+  it('guards expanded ingestion and runs config, health, ingest, classify, acceptance, then exact health sync before writer input', () => {
+    expect(publisher).toContain('expanded_sources:');
+    expect(publisher).toContain("vars.EXPANDED_INGESTION_ENABLED == 'true'");
+    expect(publisher).toContain("OPENROUTER_CLASSIFIER_MODEL: ${{ vars.OPENROUTER_CLASSIFIER_MODEL || 'openai/gpt-4.1-mini' }}");
+    const configIndex = publisher.indexOf('content:config-validate');
+    const fetchHealthIndex = publisher.indexOf('source-health:fetch:remote');
+    const ingestIndex = publisher.indexOf('content:ingest:expanded');
+    const classifyIndex = publisher.indexOf('content:classify');
+    const acceptIndex = publisher.indexOf('content:ingest:accept');
+    const syncHealthIndex = publisher.indexOf('source-health:sync:remote');
+    const countIndex = publisher.indexOf('Count genuinely unseen candidates');
+    expect([configIndex, fetchHealthIndex, ingestIndex, classifyIndex, acceptIndex, syncHealthIndex, countIndex].every((index) => index > 0)).toBe(true);
+    expect(configIndex).toBeLessThan(fetchHealthIndex);
+    expect(fetchHealthIndex).toBeLessThan(ingestIndex);
+    expect(ingestIndex).toBeLessThan(classifyIndex);
+    expect(classifyIndex).toBeLessThan(acceptIndex);
+    expect(acceptIndex).toBeLessThan(syncHealthIndex);
+    expect(syncHealthIndex).toBeLessThan(countIndex);
+  });
+
   it('deploys and verifies static content before D1 sync without running migrations', () => {
     const deployIndex = publisher.indexOf('npx wrangler deploy');
     const staticIndex = publisher.indexOf('verify-production-content.mjs --static');

@@ -2,7 +2,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { safeFetchHtml, safeFetchText, safeFetchXml } from './lib/safe-http.mjs';
-import { compareByRecency } from './lib/content-recency.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'data/ingestion-sources.json'), 'utf8'));
@@ -149,18 +148,23 @@ async function ingestGithub(source, stats) {
     for (const repo of response.data.items ?? []) {
       stats.itemsSeen += 1;
 
-      if (seen.has(repo.id) || repo.fork || repo.archived || repo.disabled || Number(repo.stargazers_count) < Number(source.eligibility?.minimumStars ?? 25)) continue;
-      seen.add(repo.id);
-      if (query.id === 'new-rising' && source.eligibility?.requireLicenseForNewRising && !repo.license?.spdx_id) continue;
+      if (repo.fork || repo.archived || repo.disabled || Number(repo.stargazers_count) < Number(source.eligibility?.minimumStars ?? 25)) continue;
+      if (query.id === 'new-rising' && (seen.has(repo.id) || (source.eligibility?.requireLicenseForNewRising && !repo.license?.spdx_id))) continue;
       const activityAt = Date.parse(repo.pushed_at);
       const timestamp = Date.parse(repo.created_at);
       if (!isCurrent(activityAt) || !Number.isFinite(timestamp) || timestamp > now + 300_000) continue;
+      stats.withinWindow += 1;
+      stats.latestItemAt = !stats.latestItemAt || activityAt > Date.parse(stats.latestItemAt) ? new Date(activityAt).toISOString() : stats.latestItemAt;
+      // Established-project pushes are operational health signals only. Without
+      // release/tag provenance or persisted velocity history they are not news.
+      if (query.id !== 'new-rising' || !isCurrent(timestamp)) continue;
+      seen.add(repo.id);
       const text = `${repo.name} ${repo.description ?? ''} ${(repo.topics ?? []).join(' ')}`;
       if (!aiKeyword.test(text)) continue;
       const urlValue = canonical(repo.html_url);
       if (!urlValue || existing.has(urlValue)) continue;
       addCandidate(source, { url: urlValue, title: repo.full_name, timestamp, activityAt, evidenceSnippet: `${repo.description ?? 'AI repository'}. GitHub reports ${repo.stargazers_count} stars, ${repo.forks_count} forks, latest push ${repo.pushed_at}, license ${repo.license?.spdx_id ?? 'not specified'}.`, author: repo.owner?.login, metrics: { stars: repo.stargazers_count, forks: repo.forks_count, pushedAt: repo.pushed_at, createdAt: repo.created_at, query: query.id } });
-      stats.withinWindow += 1; stats.itemsNew += 1; stats.latestItemAt = new Date(activityAt).toISOString();
+      stats.itemsNew += 1;
     }
   }
   if (stats.backoffUntil && Date.parse(stats.backoffUntil) > Date.now()) stats.status = 'backoff';
@@ -184,7 +188,7 @@ async function ingestHuggingFace(source, stats) {
     if (baseModel) baseModels.add(baseModel);
     const timestamp = Date.parse(detail.createdAt);
     const activityAt = Date.parse(detail.lastModified ?? detail.createdAt);
-    if (!Number.isFinite(timestamp) || timestamp > now + 300_000 || !isCurrent(activityAt)) continue;
+    if (!isCurrent(timestamp) || !isCurrent(activityAt)) continue;
     const text = `${id} ${detail.cardData?.model_name ?? ''} ${detail.pipeline_tag ?? ''} ${tags.join(' ')}`;
     if (!aiKeyword.test(text)) continue;
     const urlValue = canonical(`https://huggingface.co/${id}`);
@@ -219,7 +223,7 @@ for (const source of sources) {
   health.push(stats);
 }
 
-const unique = [...new Map(candidates.map((candidate) => [candidate.url, candidate])).values()].sort(compareByRecency);
+const unique = [...new Map(candidates.map((candidate) => [candidate.url, candidate])).values()].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt) || b.sourcePriority - a.sourcePriority);
 const grouped = new Map(); for (const candidate of unique) { const items = grouped.get(candidate.sourceId) ?? []; items.push(candidate); grouped.set(candidate.sourceId, items); }
 const groups = [...grouped.entries()].map(([sourceId, items]) => ({ sourceId, priority: Math.max(...items.map((item) => item.sourcePriority)), items: items.slice(0, 12) })).sort((a, b) => b.priority - a.priority);
 const diverseCandidates = [];

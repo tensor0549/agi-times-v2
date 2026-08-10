@@ -429,8 +429,8 @@
         "requireAgIRelevanceReview": true
       },
       "ranking": {
-        "activeEstablished": "log1p(stars)*0.45 + log1p(forks)*0.15 + pushFreshness*0.25 + starDelta*0.15",
-        "newRising": "starVelocity*0.45 + pushFreshness*0.25 + maintainerSignals*0.10 + agiRelevance*0.20"
+        "activeEstablished": "health_only: stars + forks + pushed_at; excluded from publication without release/tag provenance or persisted velocity",
+        "newRising": "created_at within window; order by stars, forks, then created_at freshness; independent AGI relevance classification required"
       }
     },
     {
@@ -467,7 +467,7 @@
         "requireAgIRelevanceReview": true
       },
       "ranking": {
-        "formula": "trendingScore*0.35 + log1p(downloads)*0.15 + log1p(likes)*0.15 + updateFreshness*0.20 + agiRelevance*0.15"
+        "formula": "created_at within window; API trendingScore, likes, downloads, then creation freshness; independent AGI relevance classification required"
       }
     },
     {

@@ -55,10 +55,10 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
     const discovered = Date.parse(item.discoveredAt);
     if (oldUrls.has(url)) errors.push(`${item.id}: URL already existed in the base feed`);
     const activity = Date.parse(item.activityAt);
-    if (!Number.isFinite(published) || published > now + 300_000 || (item.type !== 'project' && published < now - 14 * DAY_MS)) errors.push(`${item.id}: source date is stale, future, or invalid`);
-    if (item.type === 'project' && (!Number.isFinite(activity) || activity > now + 300_000 || activity < now - 14 * DAY_MS)) errors.push(`${item.id}: project activity date is stale, future, or invalid`);
+    if (!Number.isFinite(published) || published > now + 300_000 || published < now - 14 * DAY_MS) errors.push(`${item.id}: source date is stale, future, or invalid`);
+    if (item.type === 'project' && (!Number.isFinite(activity) || activity > now + 300_000 || activity < published)) errors.push(`${item.id}: project activity date is before creation, future, or invalid`);
     if (!Number.isFinite(discovered) || discovered > now + 300_000) errors.push(`${item.id}: discovery date is future or invalid`);
-    if (item.updatedAt !== (item.type === 'project' ? item.activityAt : item.publishedAt)) errors.push(`${item.id}: updatedAt must preserve the source/activity timestamp`);
+    if (item.updatedAt !== item.publishedAt) errors.push(`${item.id}: updatedAt must preserve the publication timestamp`);
     if (item.citations?.length !== 1 || item.citations[0].url !== url || !item.citations[0].evidenceSnippet) errors.push(`${item.id}: one exact item-level evidence citation is required`);
     if (item.type === 'paper') {
       if (Number(item.importanceScore) < 70 || Number(item.agiRelevanceScore) < 70) errors.push(`${item.id}: academic items require importanceScore and agiRelevanceScore >= 70`);

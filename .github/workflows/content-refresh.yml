@@ -2,6 +2,12 @@ name: Current content publisher
 
 on:
   workflow_dispatch:
+    inputs:
+      expanded_sources:
+        description: 'Supervised run of the guarded 33-endpoint ingestion path'
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: '17 * * * *'
 
@@ -14,6 +20,7 @@ concurrency:
 
 env:
   NODE_VERSION: '22'
+  EXPANDED_INGESTION: ${{ (github.event_name == 'workflow_dispatch' && inputs.expanded_sources) || vars.EXPANDED_INGESTION_ENABLED == 'true' }}
 
 jobs:
   publish:
@@ -29,7 +36,43 @@ jobs:
           cache: npm
       - run: npm ci
 
-      - name: Fetch current item-level source records
+      - name: Validate the expanded endpoint configuration
+        if: env.EXPANDED_INGESTION == 'true'
+        run: npm run content:config-validate
+
+      - name: Fetch prior endpoint health for safe backoff
+        if: env.EXPANDED_INGESTION == 'true'
+        run: npm run source-health:fetch:remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Fetch 33 configured endpoints
+        if: env.EXPANDED_INGESTION == 'true'
+        run: npm run content:ingest:expanded
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Classify broad and community candidates
+        if: env.EXPANDED_INGESTION == 'true'
+        run: npm run content:classify
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_CLASSIFIER_MODEL: ${{ vars.OPENROUTER_CLASSIFIER_MODEL || 'openai/gpt-4.1-mini' }}
+
+      - name: Fail closed on expanded ingestion acceptance
+        if: env.EXPANDED_INGESTION == 'true'
+        run: npm run content:ingest:accept
+
+      - name: Atomically sync exact endpoint health
+        if: env.EXPANDED_INGESTION == 'true'
+        run: npm run source-health:sync:remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Fetch current five-feed records while expansion is disabled
+        if: env.EXPANDED_INGESTION != 'true'
         run: npm run content:ingest
 
       - name: Count genuinely unseen candidates
