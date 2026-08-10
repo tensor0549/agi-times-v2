@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { safeFetchHtml, safeFetchText, safeFetchXml } from './lib/safe-http.mjs';
+import { compareByRecency } from './lib/content-recency.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'data/ingestion-sources.json'), 'utf8'));
@@ -206,8 +207,10 @@ for (const source of sources) {
     else if (source.kind === 'huggingface_models_api') await ingestHuggingFace(source, stats);
     else throw new Error(`unsupported ingestion kind ${source.kind}`);
     stats.lastSuccessAt = new Date().toISOString();
-    if (stats.status === 'backoff') stats.consecutiveFailures = Number(prior?.consecutive_failures) || 0;
-    else stats.consecutiveFailures = 0;
+    if (stats.status === 'backoff') {
+      stats.consecutiveFailures = Number(prior?.consecutive_failures) || 0;
+      stats.nextRetryAt = stats.backoffUntil;
+    } else stats.consecutiveFailures = 0;
     if (failures.some((failure) => failure.ingestionId === source.id)) { stats.status = 'degraded'; stats.failureCode = 'item_processing_degraded'; }
   } catch (error) {
     stats.status = 'failed'; stats.failureCode = errorCode(error); stats.consecutiveFailures = (Number(prior?.consecutive_failures) || 0) + 1; const delay=Math.min(6*3600_000,(Number(defaults.retry?.baseDelayMs)||1000)*2**Math.min(stats.consecutiveFailures,12)); stats.nextRetryAt=new Date(Date.now()+delay).toISOString(); stats.backoffUntil=stats.nextRetryAt; failures.push({ ingestionId: source.id, failureCode: stats.failureCode, stage: 'fetch' });
@@ -216,7 +219,7 @@ for (const source of sources) {
   health.push(stats);
 }
 
-const unique = [...new Map(candidates.map((candidate) => [candidate.url, candidate])).values()].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt) || b.sourcePriority - a.sourcePriority);
+const unique = [...new Map(candidates.map((candidate) => [candidate.url, candidate])).values()].sort(compareByRecency);
 const grouped = new Map(); for (const candidate of unique) { const items = grouped.get(candidate.sourceId) ?? []; items.push(candidate); grouped.set(candidate.sourceId, items); }
 const groups = [...grouped.entries()].map(([sourceId, items]) => ({ sourceId, priority: Math.max(...items.map((item) => item.sourcePriority)), items: items.slice(0, 12) })).sort((a, b) => b.priority - a.priority);
 const diverseCandidates = [];
