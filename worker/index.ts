@@ -5,6 +5,7 @@ import type { Bindings } from './types';
 import { apiError, boundedInt, latestTimestamp, parseJson, utcTimestamp } from './lib/http';
 import { capture, isAllowedEvent } from './lib/posthog';
 import { isSameOriginPage, rateLimit } from './lib/rate-limit';
+import { orderForProminence, parseOffsetCursor } from './lib/diversity';
 
 type Variables = { requestId: string };
 const app = new Hono<{ Bindings: Bindings; Variables: Variables }>();
@@ -49,24 +50,30 @@ app.get('/api/v1/health', async (c) => {
 app.get('/api/v1/feed', async (c) => {
   const limit = boundedInt(c.req.query('limit'), 24, 1, 100);
   const cursor = c.req.query('cursor');
+  const offset = parseOffsetCursor(cursor) ?? 0;
   const kind = c.req.query('kind');
   const topic = c.req.query('topic');
   const conditions = ["ci.status = 'published'"];
   const values: unknown[] = [];
-  if (cursor) { conditions.push('ci.published_at < ?'); values.push(cursor); }
+  // Continue accepting legacy timestamp cursors while new clients use stable offsets.
+  if (cursor && parseOffsetCursor(cursor) === null) { conditions.push('ci.published_at < ?'); values.push(cursor); }
   if (kind) { conditions.push('ci.kind = ?'); values.push(kind); }
   if (topic) { conditions.push('ci.topics_json LIKE ?'); values.push(`%${topic.replace(/[%_]/g, '')}%`); }
-  values.push(limit + 1);
+  // The ingestion contract retains at most 250 feed items. Fetching the bounded
+  // set lets us deterministically build a diverse leading pool while keeping
+  // every deferred item available through offset pagination.
+  values.push(251);
   try {
     const result = await c.env.DB.prepare(`SELECT ci.*, s.name AS source_name, s.kind AS source_kind
       FROM content_items ci JOIN sources s ON s.id=ci.source_id
       WHERE ${conditions.join(' AND ')}
       ORDER BY CASE WHEN ci.featured=1 AND ci.published_at >= datetime('now','-1 day') THEN 1 ELSE 0 END DESC,
         ci.published_at DESC, ci.score DESC LIMIT ?`).bind(...values).all<Record<string, unknown>>();
-    const rows = result.results;
-    const hasMore = rows.length > limit;
-    const items = rows.slice(0, limit).map(toContentItem);
-    const nextCursor = hasMore ? String(rows[limit - 1]?.published_at) : null;
+    const rows = orderForProminence(result.results);
+    const page = rows.slice(offset, offset + limit);
+    const hasMore = offset + limit < rows.length;
+    const items = page.map(toContentItem);
+    const nextCursor = hasMore ? `o:${offset + limit}` : null;
     c.header('cache-control', 'public, max-age=60, stale-while-revalidate=300');
     return c.json({ items, nextCursor, generatedAt: latestTimestamp(rows.map((row) => row.discovered_at)) });
   } catch { return apiError(c, 503, 'FEED_UNAVAILABLE', 'The feed is temporarily unavailable.'); }
