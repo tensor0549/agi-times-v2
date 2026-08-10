@@ -11,10 +11,11 @@ npm run content:validate              # structural contract
 npm run content:editorial-validate    # counts, dates, duplicates, citations, bilingual prose
 npm run content:links                 # same gates plus live checks of every published/cited item URL
 npm run insight:daily-check           # sourced bilingual Insight inside 26-hour window
-node scripts/audit-registry-links.mjs # full registry hard/soft-404 audit
+node scripts/audit-registry-links.mjs       # full registry hard/soft-404 audit
+node scripts/validate-ingestion-sources.mjs # enabled-source coverage/freshness contract
 ```
 
-Registry inputs are `data/registry-candidates.json` plus the media/project lists in `scripts/build-content-registry.mjs`. Feed and Insight generators contain only reviewed first-party item URLs and exact source evidence snippets. Do not use `content:build` merely to refresh timestamps: update sources and editorial copy first.
+Registry inputs are `data/registry-candidates.json` plus the media/project lists in `scripts/build-content-registry.mjs`. Live-ingestion configuration is stored in `data/ingestion-sources.json`; its initial verified wave contains 30 enabled RSS/Atom endpoints and two community APIs (GitHub repository search and Hugging Face trending models). Feed and Insight generators contain only reviewed item URLs and exact captured evidence snippets. Do not use `content:build` merely to refresh timestamps: update sources and editorial copy first.
 
 ## Publication gate (fail closed)
 Publication is blocked when any of these are true:

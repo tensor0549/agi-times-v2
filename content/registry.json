@@ -6,7 +6,7 @@
     "media": 16,
     "person": 128,
     "project": 139,
-    "other": 1
+    "other": 2
   },
   "sources": [
     {
@@ -6987,6 +6987,23 @@
       "url": "https://export.arxiv.org/rss/cs.AI",
       "category": "academic-paper-feed",
       "platform": "rss",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.65,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_github-community",
+      "kind": "other",
+      "name": "GitHub AI Community",
+      "url": "https://github.com/topics/artificial-intelligence",
+      "category": "community-project-index",
+      "platform": "github",
       "languages": [
         "en"
       ],
