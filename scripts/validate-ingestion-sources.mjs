@@ -8,6 +8,9 @@ for(const source of config.sources??[]){
  if(!source.id||ids.has(source.id))errors.push(`duplicate/missing ingestion id ${source.id??'?'}`);else ids.add(source.id);
  if(!sourceIds.has(source.sourceId))errors.push(`${source.id}: unresolved registry sourceId ${source.sourceId}`);
  if(!/^https:\/\//.test(source.url??''))errors.push(`${source.id}: HTTPS endpoint required`);
+ if(source.healthUrl!==source.url)errors.push(`${source.id}: healthUrl must identify the exact configured endpoint`);
+ if(!/^[a-z]{2}(?:-[A-Z]{2})?$/.test(source.language??''))errors.push(`${source.id}: valid source language required`);
+ if(!Number.isFinite(source.priority)||source.priority<0||source.priority>1)errors.push(`${source.id}: priority must be 0..1`);
  const endpoint=`${source.kind}:${source.url}`;if(urls.has(endpoint))errors.push(`${source.id}: duplicate endpoint`);else urls.add(endpoint);
  if(source.enabled!==true)continue;
  if(['rss','atom'].includes(source.kind)){
