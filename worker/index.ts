@@ -6,6 +6,7 @@ import { apiError, boundedInt, latestTimestamp, parseJson, utcTimestamp } from '
 import { capture, isAllowedEvent } from './lib/posthog';
 import { isSameOriginPage, rateLimit } from './lib/rate-limit';
 import { orderForProminence, parseOffsetCursor } from './lib/diversity';
+import { escapeLike, hasHan } from './lib/search';
 
 type Variables = { requestId: string };
 const app = new Hono<{ Bindings: Bindings; Variables: Variables }>();
@@ -86,13 +87,28 @@ app.get('/api/v1/search', async (c) => {
   const tokens = query.replace(/["'():*+-]/g, ' ').split(/\s+/).filter(Boolean).slice(0, 10);
   if (!tokens.length) return c.json({ items: [], query });
   try {
-    const ftsQuery = tokens.map((token) => `"${token}"*`).join(' AND ');
-    const result = await c.env.DB.prepare(`SELECT ci.*, s.name AS source_name, s.kind AS source_kind, bm25(content_search) AS rank
-      FROM content_search JOIN content_items ci ON ci.id=content_search.id JOIN sources s ON s.id=ci.source_id
-      WHERE content_search MATCH ? AND ci.status='published' ORDER BY rank, ci.published_at DESC LIMIT ?`)
-      .bind(ftsQuery, limit).all<Record<string, unknown>>();
-    c.header('cache-control', 'public, max-age=30, stale-while-revalidate=120');
-    return c.json({ items: result.results.map(toContentItem), query });
+    let rows: Record<string, unknown>[];
+    if (hasHan(query)) {
+      const pattern = `%${escapeLike(query)}%`;
+      const result = await c.env.DB.prepare(`SELECT ci.*,s.name AS source_name,s.kind AS source_kind,
+        CASE WHEN ci.title_zh LIKE ? ESCAPE '\\' THEN 0 WHEN ci.summary_zh LIKE ? ESCAPE '\\' THEN 1
+          WHEN s.name LIKE ? ESCAPE '\\' THEN 2 WHEN ci.entities_json LIKE ? ESCAPE '\\' THEN 3 ELSE 4 END AS rank
+        FROM content_items ci JOIN sources s ON s.id=ci.source_id
+        WHERE ci.status='published' AND (ci.title_zh LIKE ? ESCAPE '\\' OR ci.summary_zh LIKE ? ESCAPE '\\'
+          OR s.name LIKE ? ESCAPE '\\' OR ci.entities_json LIKE ? ESCAPE '\\')
+        ORDER BY rank,ci.score DESC,ci.published_at DESC LIMIT ?`)
+        .bind(pattern,pattern,pattern,pattern,pattern,pattern,pattern,pattern,limit).all<Record<string, unknown>>();
+      rows=result.results;
+    } else {
+      const ftsQuery=tokens.map((token)=>`"${token}"*`).join(' AND ');
+      const result=await c.env.DB.prepare(`SELECT ci.*,s.name AS source_name,s.kind AS source_kind,bm25(content_search) AS rank
+        FROM content_search JOIN content_items ci ON ci.id=content_search.id JOIN sources s ON s.id=ci.source_id
+        WHERE content_search MATCH ? AND ci.status='published' ORDER BY rank,ci.published_at DESC LIMIT ?`)
+        .bind(ftsQuery,limit).all<Record<string, unknown>>();
+      rows=result.results;
+    }
+    c.header('cache-control','public, max-age=30, stale-while-revalidate=120');
+    return c.json({items:rows.map(toContentItem),query});
   } catch { return apiError(c, 503, 'SEARCH_UNAVAILABLE', 'Search is temporarily unavailable.'); }
 });
 
