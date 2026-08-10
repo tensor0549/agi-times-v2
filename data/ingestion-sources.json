@@ -470,5 +470,13 @@
         "formula": "trendingScore*0.35 + log1p(downloads)*0.15 + log1p(likes)*0.15 + updateFreshness*0.20 + agiRelevance*0.15"
       }
     }
-  ]
+  ],
+  "updatedAt": "2026-08-10T18:57:00Z",
+  "lastVerifiedAt": "2026-08-10T18:46:00Z",
+  "lastVerification": {
+    "attempted": 32,
+    "http200": 32,
+    "blocked": 0,
+    "failed": 0
+  }
 }
