@@ -53,3 +53,16 @@ The gate records `editorialGate.aiProseScreen`. Opaque detector scores are not t
 - Feed-only hourly runs must leave `insights.json` byte-identical when a current UTC-day Insight already exists.
 - Description-less RSS records may be enriched only from their exact item URL using captured metadata/article lead text.
 - A successful feed fetch with no diverse publishable candidates is a safe no-op: it must not change content timestamps.
+
+### Expanded-ingestion acceptance
+
+Before enabling a new source wave, a dry run must report:
+
+- configured, attempted, successful, degraded, backed-off and stale source counts;
+- per-source `lastAttemptAt`, `lastSuccessAt`, `latestItemAt`, HTTP/status, latency, consecutive failures and next retry;
+- candidate counts before and after canonical-URL dedupe and relevance filtering;
+- explicit classification evidence for every `requiresAiClassification` source;
+- GitHub/Hugging Face project metrics and a real source timestamp, never the request time;
+- no more than two candidates per source entering a publication batch.
+
+A source returning valid HTTP but zero parsed entries is degraded, not healthy. Broad feeds may not enter the writer prompt until AI relevance classification passes. Runtime health belongs in private D1/operational state; do not rewrite configuration timestamps to simulate success.
