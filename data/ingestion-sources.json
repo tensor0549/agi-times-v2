@@ -469,6 +469,19 @@
       "ranking": {
         "formula": "trendingScore*0.35 + log1p(downloads)*0.15 + log1p(likes)*0.15 + updateFreshness*0.20 + agiRelevance*0.15"
       }
+    },
+    {
+      "id": "ingest_arxiv_cs_ai",
+      "sourceId": "src_arxiv-cs-ai",
+      "kind": "rss",
+      "url": "https://export.arxiv.org/rss/cs.AI",
+      "scope": "ai_specific",
+      "enabled": true,
+      "language": "en",
+      "priority": 0.86,
+      "academic": true,
+      "healthUrl": "https://export.arxiv.org/rss/cs.AI",
+      "latestItemAt": "2026-08-10T04:00:00Z"
     }
   ],
   "updatedAt": "2026-08-10T18:57:00Z",

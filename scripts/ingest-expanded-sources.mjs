@@ -7,8 +7,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'data/ingestion-sources.json'), 'utf8'));
 const registry = JSON.parse(fs.readFileSync(path.join(root, 'content/registry.json'), 'utf8'));
 const registryById = new Map(registry.sources.map((source) => [source.id, source]));
-const fallbackArxiv = { id: 'ingest_arxiv_cs_ai', sourceId: 'src_arxiv-cs-ai', kind: 'rss', url: 'https://export.arxiv.org/rss/cs.AI', scope: 'ai_specific', enabled: true, language: 'en', priority: 0.86, academic: true };
-const sources = [...config.sources.filter((source) => source.enabled !== false), ...(config.sources.some((source) => source.sourceId === fallbackArxiv.sourceId) ? [] : [fallbackArxiv])];
+const sources = config.sources.filter((source) => source.enabled !== false);
 const defaults = config.defaults ?? {};
 const now = Date.now();
 const windowDays = Number(defaults.windowDays) || 14;
@@ -19,7 +18,8 @@ const candidates = [];
 const failures = [];
 const health = [];
 const priorHealthPath = path.join(root, 'content/drafts/source-health-prior.json');
-const priorHealth = fs.existsSync(priorHealthPath) ? new Map(JSON.parse(fs.readFileSync(priorHealthPath, 'utf8')).sources.map((row) => [row.source_id, row])) : new Map();
+const priorHealth = fs.existsSync(priorHealthPath) ? new Map(JSON.parse(fs.readFileSync(priorHealthPath, 'utf8')).sources.map((row) => [row.ingestion_id ?? row.ingestionId ?? row.source_id, row])) : new Map();
+const errorCode = (error) => { const text=String(error?.message??error).toLowerCase(); if(text.includes('timeout')||text.includes('deadline'))return 'timeout'; if(text.includes('http'))return 'http_status'; if(text.includes('0 rss')||text.includes('parse'))return 'parse_failed'; if(text.includes('allowlist')||text.includes('hostname')||text.includes('globally routable'))return 'host_rejected'; if(text.includes('rate'))return 'rate_limited'; return 'fetch_failed'; };
 
 const clean = (value) => String(value ?? '').replace(/<!\[CDATA\[|\]\]>/g, '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const valueOf = (block, names) => {
@@ -87,7 +87,7 @@ const enrichEvidence = async (source, url) => {
 const addCandidate = (source, record) => {
   const info = sourceInfo(source);
   candidates.push({
-    id: candidateId(record.url), sourceId: source.sourceId, publisher: info.publisher, author: record.author || info.publisher,
+    id: candidateId(record.url), ingestionId: source.id, sourceId: source.sourceId, publisher: info.publisher, author: record.author || info.publisher,
     independenceKey: source.academic ? `academic:${String(record.author || info.publisher).toLowerCase()}` : `publisher:${info.publisher.toLowerCase()}`,
     url: record.url, title: record.title, publishedAt: new Date(record.timestamp).toISOString(), evidenceSnippet: record.evidenceSnippet.slice(0, 1_200),
     sourceReliability: info.reliability, sourcePriority: Number(source.priority) || 0.5, originalLanguage: source.language ?? 'en', scope: source.scope,
@@ -116,7 +116,7 @@ async function ingestFeed(source, stats) {
     let evidenceSnippet = valueOf(block, ['description', 'summary', 'content:encoded']);
     if (evidenceSnippet.length < 40 && source.enrichMissingDescription) {
       try { evidenceSnippet = await enrichEvidence(source, url); if (evidenceSnippet.length >= 40) stats.enriched += 1; }
-      catch (error) { failures.push({ sourceId: source.sourceId, item: url, error: `enrichment: ${error.message}` }); }
+      catch (error) { failures.push({ ingestionId: source.id, sourceId: source.sourceId, itemId: candidateId(url), errorCode: errorCode(error) }); }
     }
     if (evidenceSnippet.length < 40 || !prefilterBroad(source, title, evidenceSnippet)) continue;
     addCandidate(source, { url, title, timestamp, evidenceSnippet, author: valueOf(block, ['dc:creator', 'creator', 'author']) });
@@ -191,10 +191,10 @@ async function ingestHuggingFace(source, stats) {
 
 for (const source of sources) {
   const started = Date.now();
-  const stats = { sourceId: source.sourceId, sourceType: source.kind.includes('api') ? 'api' : 'feed', status: 'healthy', lastAttemptAt: new Date().toISOString(), lastSuccessAt: null, latestItemAt: null, itemsSeen: 0, itemsNew: 0, withinWindow: 0, dedupedExisting: 0, enriched: 0, latencyMs: 0, httpStatus: null, rateRemaining: null, backoffUntil: null, error: null };
-  const prior = priorHealth.get(source.sourceId);
+  const stats = { ingestionId: source.id, sourceId: source.sourceId, sourceType: source.kind.includes('api') ? 'api' : 'feed', status: 'healthy', lastAttemptAt: new Date().toISOString(), lastSuccessAt: null, latestItemAt: null, itemsSeen: 0, itemsNew: 0, withinWindow: 0, dedupedExisting: 0, enriched: 0, latencyMs: 0, httpStatus: null, rateRemaining: null, backoffUntil: null, nextRetryAt: null, consecutiveFailures: 0, errorCode: null };
+  const prior = priorHealth.get(source.id);
   if (prior?.backoff_until && Date.parse(prior.backoff_until) > Date.now()) {
-    stats.status = 'backoff'; stats.backoffUntil = prior.backoff_until; stats.lastSuccessAt = prior.last_success_at; stats.latestItemAt = prior.latest_item_at; stats.latencyMs = Date.now() - started; health.push(stats); continue;
+    stats.status = 'backoff'; stats.backoffUntil = prior.backoff_until; stats.nextRetryAt = prior.backoff_until; stats.consecutiveFailures = Number(prior.consecutive_failures) || 0; stats.lastSuccessAt = prior.last_success_at; stats.latestItemAt = prior.latest_item_at; stats.latencyMs = Date.now() - started; health.push(stats); continue;
   }
   try {
     if (['rss', 'atom'].includes(source.kind)) await ingestFeed(source, stats);
@@ -202,9 +202,11 @@ for (const source of sources) {
     else if (source.kind === 'huggingface_models_api') await ingestHuggingFace(source, stats);
     else throw new Error(`unsupported ingestion kind ${source.kind}`);
     stats.lastSuccessAt = new Date().toISOString();
-    if (failures.some((failure) => failure.sourceId === source.sourceId)) stats.status = 'degraded';
+    if (stats.status === 'backoff') stats.consecutiveFailures = Number(prior?.consecutive_failures) || 0;
+    else stats.consecutiveFailures = 0;
+    if (failures.some((failure) => failure.ingestionId === source.id)) { stats.status = 'degraded'; stats.errorCode = 'item_processing_degraded'; }
   } catch (error) {
-    stats.status = 'failed'; stats.error = error.message; failures.push({ sourceId: source.sourceId, feed: source.url, error: error.message });
+    stats.status = 'failed'; stats.errorCode = errorCode(error); stats.consecutiveFailures = (Number(prior?.consecutive_failures) || 0) + 1; const delay=Math.min(6*3600_000,(Number(defaults.retry?.baseDelayMs)||1000)*2**Math.min(stats.consecutiveFailures,12)); stats.nextRetryAt=new Date(Date.now()+delay).toISOString(); stats.backoffUntil=stats.nextRetryAt; failures.push({ ingestionId: source.id, sourceId: source.sourceId, errorCode: stats.errorCode });
   }
   stats.latencyMs = Date.now() - started;
   health.push(stats);
@@ -214,29 +216,15 @@ const unique = [...new Map(candidates.map((candidate) => [candidate.url, candida
 const grouped = new Map(); for (const candidate of unique) { const items = grouped.get(candidate.sourceId) ?? []; items.push(candidate); grouped.set(candidate.sourceId, items); }
 const groups = [...grouped.entries()].map(([sourceId, items]) => ({ sourceId, priority: Math.max(...items.map((item) => item.sourcePriority)), items: items.slice(0, 12) })).sort((a, b) => b.priority - a.priority);
 const diverseCandidates = [];
-for (let index = 0; diverseCandidates.length < 120 && groups.some((group) => index < group.items.length); index++) for (const group of groups) if (group.items[index]) diverseCandidates.push(group.items[index]);
+for (let index = 0; diverseCandidates.length < 120 && groups.some((group) => index < group.items.length); index++) for (const group of groups) { if (diverseCandidates.length >= 120) break; if (group.items[index]) diverseCandidates.push(group.items[index]); }
 const successfulSources = health.filter((entry) => entry.status !== 'failed').length;
 if (successfulSources < 5) throw new Error(`Fail closed: only ${successfulSources} sources succeeded; failures=${JSON.stringify(failures)}`);
 const checkedAt = new Date().toISOString();
-const healthBySource = new Map();
-for (const row of health) {
-  const prior = healthBySource.get(row.sourceId);
-  if (!prior) { healthBySource.set(row.sourceId, { ...row }); continue; }
-  const statuses = new Set([prior.status, row.status]);
-  prior.sourceType = prior.sourceType === 'api' || row.sourceType === 'api' ? 'api' : 'feed';
-  prior.status = statuses.has('failed') ? (statuses.size > 1 ? 'degraded' : 'failed') : statuses.has('degraded') ? 'degraded' : statuses.has('backoff') ? 'backoff' : 'healthy';
-  prior.lastAttemptAt = prior.lastAttemptAt > row.lastAttemptAt ? prior.lastAttemptAt : row.lastAttemptAt;
-  prior.lastSuccessAt = [prior.lastSuccessAt, row.lastSuccessAt].filter(Boolean).sort().at(-1) ?? null;
-  prior.latestItemAt = [prior.latestItemAt, row.latestItemAt].filter(Boolean).sort().at(-1) ?? null;
-  for (const field of ['itemsSeen','itemsNew','withinWindow','dedupedExisting','enriched','latencyMs']) prior[field] += Number(row[field]) || 0;
-  prior.httpStatus = row.httpStatus ?? prior.httpStatus; prior.rateRemaining = row.rateRemaining ?? prior.rateRemaining; prior.backoffUntil = [prior.backoffUntil, row.backoffUntil].filter(Boolean).sort().at(-1) ?? null;
-  if (row.error) prior.error = prior.error ? 'multiple_endpoint_failures' : row.error;
-}
-const healthRows = [...healthBySource.values()];
+const healthRows = health;
 const out = { schemaVersion: '2.0.0', status: unique.length === 0 ? 'no_change' : 'candidates_ready', reason: unique.length === 0 ? 'No genuinely new current candidates after deduplication' : null, successfulSources, checkedAt, generatedAt: checkedAt, windowDays, failures, candidates: diverseCandidates };
 const drafts = path.join(root, 'content/drafts');
 fs.mkdirSync(drafts, { recursive: true });
 fs.writeFileSync(path.join(drafts, 'ingested.json'), `${JSON.stringify(out, null, 2)}\n`);
 fs.writeFileSync(path.join(drafts, 'source-health.json'), `${JSON.stringify({ schemaVersion: '1.0.0', checkedAt, sources: healthRows }, null, 2)}\n`);
 console.log(`Ingested ${out.candidates.length} candidates from ${successfulSources}/${sources.length} successful sources; ${health.reduce((sum, entry) => sum + entry.enriched, 0)} enriched excerpts.`);
-console.log(JSON.stringify(health.map(({ sourceId, sourceType, status, itemsSeen, itemsNew, withinWindow, dedupedExisting, enriched, latencyMs, latestItemAt, httpStatus, rateRemaining, backoffUntil }) => ({ sourceId, sourceType, status, itemsSeen, itemsNew, withinWindow, dedupedExisting, enriched, latencyMs, latestItemAt, httpStatus, rateRemaining, backoffUntil }))));
+console.log(JSON.stringify(health.map(({ ingestionId, sourceId, sourceType, status, itemsSeen, itemsNew, withinWindow, dedupedExisting, enriched, latencyMs, latestItemAt, httpStatus, rateRemaining, backoffUntil, consecutiveFailures, nextRetryAt, errorCode }) => ({ ingestionId, sourceId, sourceType, status, itemsSeen, itemsNew, withinWindow, dedupedExisting, enriched, latencyMs, latestItemAt, httpStatus, rateRemaining, backoffUntil, consecutiveFailures, nextRetryAt, errorCode }))));

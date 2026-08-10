@@ -18,21 +18,27 @@ const parse = (raw) => {
   if (!text.startsWith('{') || !text.endsWith('}')) throw new Error('Classifier returned no exact JSON object');
   return JSON.parse(text);
 };
-for (let offset = 0; offset < toClassify.length; offset += 30) {
-  const batch = toClassify.slice(offset, offset + 30);
+for (let offset = 0; offset < toClassify.length; offset += 15) {
+  const batch = toClassify.slice(offset, offset + 15);
   const records = batch.map((candidate) => ({ id: candidate.id, sourceId: candidate.sourceId, sourceKind: candidate.sourceKind, scope: candidate.scope, title: candidate.title, evidence: candidate.evidenceSnippet, metrics: candidate.metrics }));
-  const prompt = `Classify whether each record is materially relevant to digital AGI and the general AI industry. Use only the supplied title, evidence and metrics. Core model/agent architecture, training, inference, evaluation, safety, compute and material AI-industry developments may pass. Reject unrelated politics/business, generic software, narrow vertical applications (education planning, legal/labour apps, medicine-only, finance-only, molecular-only), mirrors and repositories whose AI relevance is merely a topic tag. When uncertain, relevant must be false. Return one decision for every exact ID and no others.\nRECORDS:\n${JSON.stringify(records)}`;
+  const prompt = `Classify whether each record is materially relevant to digital AGI and the general AI industry. Use only the supplied title, evidence and metrics. Core model/agent architecture, training, inference, evaluation, safety, compute and material AI-industry developments may pass. Reject unrelated politics/business, generic software, narrow vertical applications (education planning, legal/labour apps, medicine-only, finance-only, molecular-only), mirrors and repositories whose AI relevance is merely a topic tag. When uncertain, relevant must be false. Return exactly one unique decision for every exact ID and no others.\nRECORDS:\n${JSON.stringify(records)}`;
   const schema = { name: 'agi_candidate_classification', strict: true, schema: { type: 'object', additionalProperties: false, required: ['decisions'], properties: { decisions: { type: 'array', minItems: batch.length, maxItems: batch.length, items: { type: 'object', additionalProperties: false, required: ['id', 'relevant', 'confidence', 'reasonCode'], properties: { id: { type: 'string' }, relevant: { type: 'boolean' }, confidence: { type: 'number', minimum: 0, maximum: 1 }, reasonCode: { type: 'string', enum: ['core_ai','transferable_research','material_ai_industry','vertical_application','non_ai','uncertain'] } } } } } } };
-  const response = await fetch('https://openrouter.ai/api/v1/chat/completions', { method: 'POST', headers: { authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`, 'content-type': 'application/json', 'HTTP-Referer': 'https://agitime.ai', 'X-Title': 'AGI Times Candidate Classifier' }, body: JSON.stringify({ model, temperature: 0, max_tokens: 3_000, response_format: { type: 'json_schema', json_schema: schema }, messages: [{ role: 'user', content: prompt }] }), signal: AbortSignal.timeout(120_000) });
-  if (!response.ok) throw new Error(`OpenRouter classifier ${response.status}: ${(await response.text()).slice(0, 200)}`);
-  const verdict = parse(await response.json());
-  if (!verdict || Object.keys(verdict).length !== 1 || !Array.isArray(verdict.decisions) || verdict.decisions.length !== batch.length) throw new Error('Classifier response has invalid shape');
-  const expected = new Set(batch.map((candidate) => candidate.id));
-  for (const decision of verdict.decisions) {
-    const keys = Object.keys(decision).sort();
-    if (JSON.stringify(keys) !== JSON.stringify(['confidence','id','reasonCode','relevant']) || !expected.has(decision.id) || decisions.has(decision.id) || typeof decision.relevant !== 'boolean' || typeof decision.confidence !== 'number' || typeof decision.reasonCode !== 'string') throw new Error(`Invalid or duplicate classifier decision ${decision.id ?? 'unknown'}`);
-    decisions.set(decision.id, decision);
+  let validBatch;
+  for (let attempt = 1; attempt <= 2 && !validBatch; attempt++) {
+    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', { method: 'POST', headers: { authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`, 'content-type': 'application/json', 'HTTP-Referer': 'https://agitime.ai', 'X-Title': 'AGI Times Candidate Classifier' }, body: JSON.stringify({ model, temperature: 0, max_tokens: 3_000, response_format: { type: 'json_schema', json_schema: schema }, messages: [{ role: 'user', content: `${prompt}\nATTEMPT:${attempt}` }] }), signal: AbortSignal.timeout(120_000) });
+    if (!response.ok) throw new Error(`OpenRouter classifier ${response.status}: ${(await response.text()).slice(0, 200)}`);
+    const verdict = parse(await response.json());
+    const expected = new Set(batch.map((candidate) => candidate.id)), local = new Map();
+    if (verdict && Object.keys(verdict).length === 1 && Array.isArray(verdict.decisions) && verdict.decisions.length === batch.length) for (const decision of verdict.decisions) {
+      const keys = Object.keys(decision).sort();
+      const valid = JSON.stringify(keys) === JSON.stringify(['confidence','id','reasonCode','relevant']) && expected.has(decision.id) && !local.has(decision.id) && typeof decision.relevant === 'boolean' && typeof decision.confidence === 'number' && typeof decision.reasonCode === 'string';
+      if (!valid) { local.clear(); break; }
+      local.set(decision.id, decision);
+    }
+    if (local.size === batch.length) validBatch = local;
   }
+  if (!validBatch) throw new Error(`Classifier failed to return one exact unique decision for batch ${offset / 15 + 1}`);
+  for (const [id, decision] of validBatch) decisions.set(id, decision);
 }
 const rejected = [];
 const nextCandidates = candidates.filter((candidate) => {
