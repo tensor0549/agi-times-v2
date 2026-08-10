@@ -15,7 +15,7 @@ const makeFixture = () => {
   sources.push({ id: 'github', sourceId: 'project_0', kind: 'github_search_api', url: 'https://api.github.com/search/repositories', healthUrl: 'https://api.github.com/search/repositories', enabled: true });
   sources.push({ id: 'hf-models', sourceId: 'project_1', kind: 'huggingface_models_api', url: 'https://huggingface.co/api/models', healthUrl: 'https://huggingface.co/api/models', enabled: true });
   const health = sources.map((source) => ({ ingestionId: source.id, sourceId: source.sourceId, status: 'healthy', lastAttemptAt: '2026-08-10T19:59:02Z', lastSuccessAt: '2026-08-10T19:59:01Z', latestItemAt: '2026-08-10T18:00:00Z', itemsSeen: 1, httpStatus: 200, latencyMs: 25, consecutiveFailures: 0, ...(source.kind === 'github_search_api' ? { rateRemaining: 42 } : {}) }));
-  return { config: { defaults: { windowDays: 14 }, sources }, registry: { sources: registrySources }, ingested: { windowDays: 14, failures: [], candidateCounts: { beforeCanonicalDedupe: 0, afterCanonicalDedupe: 0, afterRelevanceClassification: 0 }, candidates: [] }, health: { sources: health } };
+  return { config: { defaults: { windowDays: 14 }, sources }, registry: { sources: registrySources }, ingested: { windowDays: 14, failures: [], candidateCounts: { beforeCanonicalDedupe: 0, afterCanonicalDedupe: 0, afterDiversityCap: 0, afterRelevanceClassification: 0 }, candidates: [] }, health: { sources: health } };
 };
 
 describe('expanded ingestion acceptance', () => {
@@ -59,7 +59,7 @@ describe('expanded ingestion acceptance', () => {
     const github = fixture.config.sources.find((source) => source.id === 'github');
     github.requiresAiClassification = true;
     fixture.ingested.candidates.push({ id: 'candidate_bad', ingestionId: 'github', sourceId: github.sourceId, url: 'https://github.com/example/project-0', publishedAt: '2026-08-10T19:00:00Z', metrics: { stars: 10 } });
-    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterRelevanceClassification: 1 };
+    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterDiversityCap: 1, afterRelevanceClassification: 1 };
     fixture.ingested.failures.push({ ingestionId: 'github', error: 'HTTP 500 at a private URL' });
     const result = auditIngestionRun({ ...fixture, now });
     expect(result.errors).toEqual(expect.arrayContaining([
@@ -80,7 +80,7 @@ describe('expanded ingestion acceptance', () => {
       { id: 'first', ingestionId: feed.id, sourceId: feed.sourceId, url: 'https://org0.example/story?utm_source=x', publishedAt: '2026-08-10T18:30:00Z' },
       { id: 'duplicate', ingestionId: feed.id, sourceId: feed.sourceId, url: 'https://org0.example/story', publishedAt: '2026-08-10T18:30:00Z' },
     );
-    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 3, afterCanonicalDedupe: 3, afterRelevanceClassification: 3 };
+    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 3, afterCanonicalDedupe: 3, afterDiversityCap: 3, afterRelevanceClassification: 3 };
     const result = auditIngestionRun({ ...fixture, now });
     expect(result.errors).toEqual(expect.arrayContaining([
       'off_domain: URL is not a specific HTTPS item on an allowed source host',
@@ -93,7 +93,7 @@ describe('expanded ingestion acceptance', () => {
     const fixture = makeFixture();
     const source = fixture.config.sources.find((entry) => entry.id === 'hf-models');
     fixture.ingested.candidates.push({ id: 'hf_ok', ingestionId: source.id, sourceId: source.sourceId, url: 'https://huggingface.co/owner/model', publishedAt: '2024-05-01T09:00:00Z', activityAt: '2026-08-10T17:00:00Z', classification: { relevant: true, confidence: 0.9, reasonCode: 'transferable_research' }, metrics: { likes: 50, downloads: 2000, trendingScore: 4, createdAt: '2024-05-01T09:00:00Z', lastModified: '2026-08-10T17:00:00Z' } });
-    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterRelevanceClassification: 1 };
+    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterDiversityCap: 1, afterRelevanceClassification: 1 };
     expect(auditIngestionRun({ ...fixture, now }).errors).toEqual([]);
   });
 
@@ -102,7 +102,7 @@ describe('expanded ingestion acceptance', () => {
     const github = fixture.config.sources.find((source) => source.id === 'github');
     github.requiresAiClassification = true;
     fixture.ingested.candidates.push({ id: 'candidate_ok', ingestionId: 'github', sourceId: github.sourceId, url: 'https://github.com/owner/new-ai-repo', publishedAt: '2025-01-15T10:00:00Z', activityAt: '2026-08-10T18:30:00Z', classification: { relevant: true, confidence: 0.91, reasonCode: 'core_ai' }, metrics: { stars: 250, forks: 20, createdAt: '2025-01-15T10:00:00Z', pushedAt: '2026-08-10T18:30:00Z' } });
-    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterRelevanceClassification: 1 };
+    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterDiversityCap: 1, afterRelevanceClassification: 1 };
     expect(auditIngestionRun({ ...fixture, now }).errors).toEqual([]);
   });
 });

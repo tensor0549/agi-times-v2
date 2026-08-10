@@ -93,10 +93,10 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
   for (const id of healthById.keys()) if (!ingestionIds.has(id)) errors.push(`${id}: health row is not configured/enabled`);
 
   const candidateCounts = ingested.candidateCounts;
-  for (const field of ['beforeCanonicalDedupe', 'afterCanonicalDedupe', 'afterRelevanceClassification']) {
+  for (const field of ['beforeCanonicalDedupe', 'afterCanonicalDedupe', 'afterDiversityCap', 'afterRelevanceClassification']) {
     if (!Number.isInteger(candidateCounts?.[field]) || candidateCounts[field] < 0) errors.push(`candidateCounts.${field} must be a nonnegative integer`);
   }
-  if (candidateCounts && (candidateCounts.beforeCanonicalDedupe < candidateCounts.afterCanonicalDedupe || candidateCounts.afterCanonicalDedupe < candidateCounts.afterRelevanceClassification)) errors.push('candidateCounts must be monotonically nonincreasing');
+  if (candidateCounts && (candidateCounts.beforeCanonicalDedupe < candidateCounts.afterCanonicalDedupe || candidateCounts.afterCanonicalDedupe < candidateCounts.afterDiversityCap || candidateCounts.afterDiversityCap < candidateCounts.afterRelevanceClassification)) errors.push('candidateCounts must be monotonically nonincreasing');
 
   const candidateUrls = new Set();
   for (const candidate of ingested.candidates ?? []) {
@@ -155,6 +155,7 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
     apis: apiCount,
     candidatesBeforeDedupe: candidateCounts?.beforeCanonicalDedupe ?? null,
     candidatesAfterDedupe: candidateCounts?.afterCanonicalDedupe ?? null,
+    candidatesAfterDiversityCap: candidateCounts?.afterDiversityCap ?? null,
     candidatesAfterDedupeAndClassification: candidateUrls.size,
   };
   if (attempted !== enabled.length) errors.push(`attempted source count mismatch: ${attempted}!=${enabled.length}`);
