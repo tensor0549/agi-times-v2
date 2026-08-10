@@ -32,3 +32,15 @@ SELECT feedback_id,category,severity,
 DROP TABLE feedback_handoffs_v1;
 CREATE INDEX idx_feedback_handoffs_status ON feedback_handoffs(status,created_at);
 CREATE INDEX idx_feedback_verify ON feedback_handoffs(status,verification_ready,fix_sha);
+
+CREATE TABLE feedback_handoff_audit (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  feedback_id TEXT NOT NULL REFERENCES feedback_handoffs(feedback_id) ON DELETE CASCADE,
+  from_status TEXT,
+  to_status TEXT NOT NULL,
+  actor TEXT NOT NULL,
+  event TEXT NOT NULL,
+  evidence_json TEXT NOT NULL DEFAULT '{}',
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+) STRICT;
+CREATE INDEX idx_feedback_audit_id ON feedback_handoff_audit(feedback_id,created_at);

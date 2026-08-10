@@ -15,6 +15,9 @@ for (const item of feedback) {
     [item.id,result.category,result.severity,result.fingerprint,JSON.stringify(result.diagnosis),result.probeMethod,result.probePath]);
   const updated = await d1(`UPDATE feedback SET status='reviewing',context_json=json_set(context_json,'$.triageStore','d1:feedback_handoffs','$.triagedAt',?)
     WHERE id=? AND status='new' AND EXISTS(SELECT 1 FROM feedback_handoffs WHERE feedback_id=?) RETURNING id`, [new Date().toISOString(),item.id,item.id]);
-  if (updated.length) handedOff.push(item.id);
+  if (updated.length) {
+    await d1(`INSERT INTO feedback_handoff_audit(feedback_id,from_status,to_status,actor,event,evidence_json) VALUES(?,NULL,'new','feedback-triage','handoff_created',?)`,[item.id,JSON.stringify({classifier:'deterministic-v1'})]);
+    handedOff.push(item.id);
+  }
 }
 console.log(JSON.stringify(publicLog('feedback_triage_complete', handedOff)));
