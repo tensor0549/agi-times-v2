@@ -24,7 +24,7 @@ const isSpecificItemUrl = (value, source, registrySource) => {
   try {
     const canonical = new URL(canonicalUrl(value));
     const generics = [source?.url, source?.healthUrl, registrySource?.url].filter(Boolean).map((url) => new URL(canonicalUrl(url)));
-    const allowedHosts = new Set(generics.map((url) => url.hostname));
+    const allowedHosts = new Set([...generics.map((url) => url.hostname), ...(source?.itemHosts ?? [])]);
     if (!allowedHosts.has(canonical.hostname)) return false;
     if (generics.some((generic) => canonical.href === generic.href)) return false;
     const segments = canonical.pathname.split('/').filter(Boolean);
@@ -50,6 +50,7 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
     ingestionIds.add(source.id);
     if (!registrySources.has(source.sourceId)) errors.push(`${source.id}: unresolved registry sourceId`);
     if (source.healthUrl !== source.url) errors.push(`${source.id}: healthUrl must equal the exact endpoint`);
+    if (source.itemHosts != null && (!Array.isArray(source.itemHosts) || source.itemHosts.some((host) => !/^(?:[a-z0-9-]+\.)+[a-z]{2,}$/i.test(host)))) errors.push(`${source.id}: itemHosts must contain bare DNS hostnames`);
   }
 
   const counts = {};
@@ -81,7 +82,11 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
     if (row.status === 'healthy' && (!Number.isInteger(row.httpStatus) || row.httpStatus < 200 || row.httpStatus >= 300)) errors.push(`${row.ingestionId ?? 'unknown'}: healthy source requires 2xx httpStatus`);
     if (!Number.isFinite(row.latencyMs) || row.latencyMs < 0) errors.push(`${row.ingestionId ?? 'unknown'}: nonnegative latencyMs required`);
     if (!Number.isInteger(row.consecutiveFailures) || row.consecutiveFailures < 0) errors.push(`${row.ingestionId ?? 'unknown'}: consecutiveFailures must be a nonnegative integer`);
-    if (row.status === 'backoff' && !parseTime(row.nextRetryAt ?? row.backoffUntil)) errors.push(`${row.ingestionId ?? 'unknown'}: backed-off source requires nextRetryAt`);
+    if (['failed', 'backoff'].includes(row.status) && !parseTime(row.nextRetryAt ?? row.backoffUntil)) errors.push(`${row.ingestionId ?? 'unknown'}: failed/backed-off source requires nextRetryAt`);
+    if (configured?.kind === 'github_search_api') {
+      if (!Number.isFinite(row.rateRemaining) || row.rateRemaining < 0) errors.push(`${row.ingestionId}: GitHub rateRemaining required`);
+      if (row.rateRemaining === 0 && row.status !== 'backoff') errors.push(`${row.ingestionId}: exhausted GitHub rate limit must enter backoff`);
+    }
     if (row.failureCode != null && !SAFE_FAILURE_CODES.test(row.failureCode)) errors.push(`${row.ingestionId ?? 'unknown'}: invalid failureCode`);
   }
   for (const source of enabled) if (!healthById.has(source.id)) errors.push(`${source.id}: missing endpoint-level health row`);
@@ -104,16 +109,23 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
     if (candidateUrls.has(canonicalCandidate)) errors.push(`${candidate.id ?? 'candidate'}: duplicate canonical URL`);
     candidateUrls.add(canonicalCandidate);
     const publishedAt = parseTime(candidate.publishedAt);
-    if (!publishedAt || publishedAt > now + 300_000 || publishedAt < now - (Number(ingested.windowDays ?? config.defaults?.windowDays ?? 14) * DAY_MS)) errors.push(`${candidate.id ?? 'candidate'}: stale/future/invalid source timestamp`);
+    const activityAt = parseTime(candidate.activityAt);
+    const windowMs = Number(ingested.windowDays ?? config.defaults?.windowDays ?? 14) * DAY_MS;
+    if (!publishedAt || publishedAt > now + 300_000) errors.push(`${candidate.id ?? 'candidate'}: future/invalid publication timestamp`);
+    if (['github_search_api', 'huggingface_models_api'].includes(source.kind)) {
+      if (!activityAt || activityAt > now + 300_000 || activityAt < now - windowMs) errors.push(`${candidate.id ?? 'candidate'}: stale/future/invalid project activity timestamp`);
+    } else if (publishedAt && publishedAt < now - windowMs) errors.push(`${candidate.id ?? 'candidate'}: stale feed publication timestamp`);
     const classificationRequired = source.requiresAiClassification || ['github_search_api', 'huggingface_models_api'].includes(source.kind);
     if (classificationRequired && !(candidate.classification?.relevant === true && candidate.classification?.confidence >= 0.8 && ACCEPTED_CLASSIFICATIONS.has(candidate.classification?.reasonCode))) errors.push(`${candidate.id ?? 'candidate'}: accepted broad/community classification evidence required`);
     if (source.kind === 'github_search_api') {
-      const metricAt = parseTime(candidate.metrics?.pushedAt);
-      if (!(Number.isFinite(candidate.metrics?.stars) && Number.isFinite(candidate.metrics?.forks) && metricAt && Math.abs(metricAt - publishedAt) <= 1_000 && metricAt <= now + 300_000)) errors.push(`${candidate.id ?? 'candidate'}: GitHub trend metrics and source timestamp required`);
+      const pushedAt = parseTime(candidate.metrics?.pushedAt);
+      const createdAt = parseTime(candidate.metrics?.createdAt);
+      if (!(Number.isFinite(candidate.metrics?.stars) && Number.isFinite(candidate.metrics?.forks) && pushedAt && createdAt && Math.abs(pushedAt - activityAt) <= 1_000 && Math.abs(createdAt - publishedAt) <= 1_000)) errors.push(`${candidate.id ?? 'candidate'}: GitHub creation and activity provenance required`);
     }
     if (source.kind === 'huggingface_models_api') {
-      const metricAt = parseTime(candidate.metrics?.lastModified);
-      if (!(Number.isFinite(candidate.metrics?.likes) && Number.isFinite(candidate.metrics?.downloads) && Number.isFinite(candidate.metrics?.trendingScore) && metricAt && Math.abs(metricAt - publishedAt) <= 1_000 && metricAt <= now + 300_000)) errors.push(`${candidate.id ?? 'candidate'}: Hugging Face trend metrics and source timestamp required`);
+      const modifiedAt = parseTime(candidate.metrics?.lastModified);
+      const createdAt = parseTime(candidate.metrics?.createdAt);
+      if (!(Number.isFinite(candidate.metrics?.likes) && Number.isFinite(candidate.metrics?.downloads) && Number.isFinite(candidate.metrics?.trendingScore) && modifiedAt && createdAt && Math.abs(modifiedAt - activityAt) <= 1_000 && Math.abs(createdAt - publishedAt) <= 1_000)) errors.push(`${candidate.id ?? 'candidate'}: Hugging Face creation and activity provenance required`);
     }
   }
 

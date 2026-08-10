@@ -481,6 +481,9 @@
       "priority": 0.86,
       "academic": true,
       "healthUrl": "https://export.arxiv.org/rss/cs.AI",
+      "itemHosts": [
+        "arxiv.org"
+      ],
       "latestItemAt": "2026-08-10T04:00:00Z"
     }
   ],
