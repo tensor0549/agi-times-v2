@@ -1,11 +1,10 @@
 import { Hono } from 'hono';
-import { compress } from 'hono/compress';
 import { secureHeaders } from 'hono/secure-headers';
 import { timing } from 'hono/timing';
 import type { Bindings } from './types';
 import { apiError, boundedInt, parseJson } from './lib/http';
 import { capture, isAllowedEvent } from './lib/posthog';
-import { isFirstPartyPage, rateLimit } from './lib/rate-limit';
+import { isSameOriginPage, rateLimit } from './lib/rate-limit';
 
 type Variables = { requestId: string };
 const app = new Hono<{ Bindings: Bindings; Variables: Variables }>();
@@ -16,7 +15,7 @@ app.use('*', async (c, next) => {
   await next();
   c.header('x-request-id', requestId);
   c.header('x-content-type-options', 'nosniff');
-  if (c.req.path.startsWith('/api/')) c.header('cache-control', 'no-store');
+  if (c.req.path.startsWith('/api/') && !c.res.headers.has('cache-control')) c.header('cache-control', 'no-store');
 });
 app.use('*', secureHeaders({
   contentSecurityPolicy: {
@@ -29,7 +28,8 @@ app.use('*', secureHeaders({
   strictTransportSecurity: 'max-age=31536000; includeSubDomains; preload',
 }));
 app.use('*', timing());
-app.use('*', compress());
+// Cloudflare performs edge compression; application-level compression caused
+// double-encoded bodies in the Workers runtime and is intentionally disabled.
 
 app.get('/api/v1/health', async (c) => {
   try {
@@ -126,7 +126,7 @@ app.post('/api/v1/feedback', async (c) => {
   const pageUrl = typeof body.pageUrl === 'string' ? body.pageUrl.slice(0, 2048) : '';
   const locale = body.locale === 'zh' ? 'zh' : 'en';
   if (!message && !rating) return apiError(c, 400, 'INVALID_FEEDBACK', 'A message or rating is required.');
-  if (!isFirstPartyPage(pageUrl) && c.env.ENVIRONMENT === 'production') return apiError(c, 400, 'INVALID_PAGE', 'Page URL must belong to AGI Times.');
+  if (!isSameOriginPage(pageUrl, c.req.url)) return apiError(c, 400, 'INVALID_PAGE', 'Page URL must match the AGI Times request origin.');
   const sessionId = typeof body.distinctId === 'string' ? body.distinctId : '';
   const limit = await rateLimit(c.env, c.req.raw, 'feedback', 5, 3600, sessionId);
   if (!limit.allowed) { c.header('retry-after', String(limit.retryAfter)); return apiError(c, 429, 'RATE_LIMITED', 'Too much feedback was submitted. Please retry later.'); }

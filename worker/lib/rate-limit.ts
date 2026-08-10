@@ -17,9 +17,10 @@ export async function rateLimit(env: Bindings, request: Request, scope: string, 
   return { allowed: (row?.count ?? max + 1) <= max, retryAfter: windowStart + windowSeconds - now };
 }
 
-export function isFirstPartyPage(raw: string): boolean {
+export function isSameOriginPage(raw: string, requestUrl: string): boolean {
   try {
-    const url = new URL(raw);
-    return url.protocol === 'https:' && (url.hostname === 'agitime.ai' || url.hostname === 'www.agitime.ai');
+    const page = new URL(raw);
+    const request = new URL(requestUrl);
+    return page.origin === request.origin && (page.protocol === 'https:' || page.hostname === 'localhost' || page.hostname === '127.0.0.1');
   } catch { return false; }
 }
