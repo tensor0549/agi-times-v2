@@ -9,20 +9,7 @@ const isGlobalV4 = (address) => {
   try { const parsed = ipaddr.parse(address); return parsed.kind() === 'ipv4' && parsed.range() === 'unicast'; }
   catch { return false; }
 };
-const embeddedV4 = (parts) => `${parts[6] >>> 8}.${parts[6] & 255}.${parts[7] >>> 8}.${parts[7] & 255}`;
-const isPrivateIp = (address) => {
-  const normalized = String(address).toLowerCase().split('%')[0];
-  try {
-    const parsed = ipaddr.parse(normalized);
-    if (parsed.kind() === 'ipv4') return !isGlobalV4(normalized);
-    const parts = parsed.parts;
-    if (parsed.isIPv4MappedAddress?.()) return !isGlobalV4(parsed.toIPv4Address().toString());
-    if (parsed.range() !== 'unicast') return true;
-    if (parts[0] === 0x2002) return !isGlobalV4(`${parts[1] >>> 8}.${parts[1] & 255}.${parts[2] >>> 8}.${parts[2] & 255}`);
-    if ((parts[0] === 0x64 && parts[1] === 0xff9b) || parts.slice(0, 6).every((part) => part === 0) || (parts.slice(0, 5).every((part) => part === 0) && parts[5] === 0xffff)) return !isGlobalV4(embeddedV4(parts));
-    return false;
-  } catch { return true; }
-};
+const isPrivateIp = (address) => !isGlobalV4(String(address));
 const withDeadline = async (promise, deadlineAt, label) => {
   const remaining = deadlineAt - Date.now();
   if (remaining <= 0) throw new DOMException(`${label} exceeded end-to-end deadline`, 'TimeoutError');
@@ -38,9 +25,12 @@ export async function assertPublicHttps(value, lookupImpl = dns.lookup, allowedH
   const hostname = url.hostname.toLowerCase().replace(/^\[|\]$/g, '').replace(/\.$/, '');
   if (!hostname || blockedHostnames.has(hostname) || hostname.endsWith('.localhost') || hostname.endsWith('.internal') || hostname.endsWith('.local')) throw new Error(`Blocked enrichment hostname: ${hostname}`);
   if (allowedHosts?.length && !allowedHosts.map((host) => host.toLowerCase().replace(/\.$/, '')).includes(hostname)) throw new Error(`Enrichment hostname is outside source allowlist: ${hostname}`);
-  const resolved = net.isIP(hostname) ? [{ address: hostname, family: net.isIP(hostname) }] : await withDeadline(Promise.resolve().then(() => lookupImpl(hostname, { all: true, verbatim: true })), deadlineAt, `DNS lookup for ${hostname}`);
-  if (!resolved.length || resolved.some(({ address }) => isPrivateIp(address))) throw new Error(`Blocked private or non-routable enrichment address for ${hostname}`);
-  return { url, addresses: resolved.map(({ address, family }) => ({ address, family: family || net.isIP(address) })) };
+  const literalFamily = net.isIP(hostname);
+  if (literalFamily === 6) throw new Error(`IPv6-only enrichment destinations are unsupported: ${hostname}`);
+  const resolved = literalFamily === 4 ? [{ address: hostname, family: 4 }] : await withDeadline(Promise.resolve().then(() => lookupImpl(hostname, { all: true, verbatim: true })), deadlineAt, `DNS lookup for ${hostname}`);
+  const publicV4 = resolved.filter(({ address, family }) => (family === 4 || net.isIP(address) === 4) && !isPrivateIp(address)).map(({ address }) => ({ address, family: 4 }));
+  if (!publicV4.length) throw new Error(`No globally routable IPv4 A record for ${hostname}`);
+  return { url, addresses: publicV4 };
 }
 
 export function pinnedHttpsRequest(url, validatedAddress, options = {}) {
