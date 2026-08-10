@@ -52,8 +52,12 @@ describe('incremental publisher gate', () => {
     const third = { ...feedItem('new-3', 'https://example.net/papers/three', 'A third supported result.'), sourceId: 'same-source' };
     const monopolized = [first, second, third].map((item) => ({ ...item, sourceId: 'same-source' }));
     expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: monopolized }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/maximum is 2/);
+    const topicHeavy = [first, second, third, feedItem('new-4', 'https://fourth.example/paper', 'A fourth supported result.')].map((item, index) => ({ ...item, sourceId: `source-${index}`, category: 'agents_automation' }));
+    expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: topicHeavy }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/maximum is 3/);
     const weakPaper = { ...first, type: 'paper', importanceScore: 80, agiRelevanceScore: 60 };
     expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [weakPaper] }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/academic items require/);
+    const verticalPaper = { ...first, type: 'paper', importanceScore: 85, agiRelevanceScore: 90, title: localized('Knowledge-driven degree planning agents', '知识驱动的学位规划智能体') };
+    expect(() => verifyIncrementalUpdate({ baseFeed: { items: [] }, feed: { items: [verticalPaper] }, baseInsights: { items: [insight] }, insights: { items: [insight] }, now })).toThrow(/excluded vertical/);
   });
 
   it('rejects timestamp-only Insight freshness', () => {
