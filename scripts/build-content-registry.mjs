@@ -50,7 +50,7 @@ const common = (id, kind, name, url, category, platform) => ({id:`src_${id}`,kin
 const sources = [
  ...candidates.organizations.map(x=>common(x.slug,'organization',x.name,x.url,x.category,'web')),
  ...media.map(([id,name,url])=>common(id,'media',name,url,'ai-news','web')),
- common('arxiv-cs-ai','other','arXiv cs.AI','https://export.arxiv.org/rss/cs.AI','academic-paper-feed','rss'),
+ common('arxiv-cs-ai','other','arXiv cs.AI','https://arxiv.org/list/cs.AI/recent','academic-paper-feed','rss'),
  common('github-community','other','GitHub AI Community','https://github.com/topics/artificial-intelligence','community-project-index','github'),
  ...candidates.people.map(x=>common(x.slug,'person',x.name,x.url,x.role,'web')),
  ...repos.map(repo=>common(repo.toLowerCase().replaceAll('/','-').replaceAll('.','-'),'project',repo.split('/').at(-1),`https://github.com/${repo}`,'github-project','github'))

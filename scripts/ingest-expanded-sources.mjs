@@ -89,7 +89,7 @@ const addCandidate = (source, record) => {
   candidates.push({
     id: candidateId(record.url), ingestionId: source.id, sourceId: source.sourceId, publisher: info.publisher, author: record.author || info.publisher,
     independenceKey: source.academic ? `academic:${String(record.author || info.publisher).toLowerCase()}` : `publisher:${info.publisher.toLowerCase()}`,
-    url: record.url, title: record.title, publishedAt: new Date(record.timestamp).toISOString(), evidenceSnippet: record.evidenceSnippet.slice(0, 1_200),
+    url: record.url, title: record.title, publishedAt: new Date(record.timestamp).toISOString(), activityAt: record.activityAt ? new Date(record.activityAt).toISOString() : null, evidenceSnippet: record.evidenceSnippet.slice(0, 1_200),
     sourceReliability: info.reliability, sourcePriority: Number(source.priority) || 0.5, originalLanguage: source.language ?? 'en', scope: source.scope,
     requiresAiClassification: Boolean(source.requiresAiClassification), sourceKind: source.kind,
     metrics: record.metrics ?? {},
@@ -109,14 +109,15 @@ async function ingestFeed(source, stats) {
     if (!url) url = block.match(/<link[^>]+href=["']([^"']+)/i)?.[1] ?? '';
     url = canonical(url);
     const timestamp = Date.parse(valueOf(block, ['pubDate', 'published', 'updated', 'dc:date']));
-    if (!title || !url || !isCurrent(timestamp)) continue;
-    stats.withinWindow += 1;
+    if (!title || !url || !Number.isFinite(timestamp) || timestamp > now + 300_000) continue;
     stats.latestItemAt = !stats.latestItemAt || timestamp > Date.parse(stats.latestItemAt) ? new Date(timestamp).toISOString() : stats.latestItemAt;
+    if (!isCurrent(timestamp)) continue;
+    stats.withinWindow += 1;
     if (existing.has(url)) { stats.dedupedExisting += 1; continue; }
     let evidenceSnippet = valueOf(block, ['description', 'summary', 'content:encoded']);
     if (evidenceSnippet.length < 40 && source.enrichMissingDescription) {
       try { evidenceSnippet = await enrichEvidence(source, url); if (evidenceSnippet.length >= 40) stats.enriched += 1; }
-      catch (error) { failures.push({ ingestionId: source.id, sourceId: source.sourceId, itemId: candidateId(url), errorCode: errorCode(error) }); }
+      catch (error) { failures.push({ ingestionId: source.id, failureCode: errorCode(error), stage: 'enrichment' }); }
     }
     if (evidenceSnippet.length < 40 || !prefilterBroad(source, title, evidenceSnippet)) continue;
     addCandidate(source, { url, title, timestamp, evidenceSnippet, author: valueOf(block, ['dc:creator', 'creator', 'author']) });
@@ -146,17 +147,19 @@ async function ingestGithub(source, stats) {
     else if (stats.rateRemaining === 0 && Number.isFinite(rateReset)) stats.backoffUntil = new Date(rateReset * 1000).toISOString();
     for (const repo of response.data.items ?? []) {
       stats.itemsSeen += 1;
+
       if (seen.has(repo.id) || repo.fork || repo.archived || repo.disabled || Number(repo.stargazers_count) < Number(source.eligibility?.minimumStars ?? 25)) continue;
       seen.add(repo.id);
       if (query.id === 'new-rising' && source.eligibility?.requireLicenseForNewRising && !repo.license?.spdx_id) continue;
-      const timestamp = Date.parse(repo.pushed_at);
-      if (!isCurrent(timestamp)) continue;
+      const activityAt = Date.parse(repo.pushed_at);
+      const timestamp = Date.parse(repo.created_at);
+      if (!isCurrent(activityAt) || !Number.isFinite(timestamp) || timestamp > now + 300_000) continue;
       const text = `${repo.name} ${repo.description ?? ''} ${(repo.topics ?? []).join(' ')}`;
       if (!aiKeyword.test(text)) continue;
       const urlValue = canonical(repo.html_url);
       if (!urlValue || existing.has(urlValue)) continue;
-      addCandidate(source, { url: urlValue, title: repo.full_name, timestamp, evidenceSnippet: `${repo.description ?? 'AI repository'}. GitHub reports ${repo.stargazers_count} stars, ${repo.forks_count} forks, latest push ${repo.pushed_at}, license ${repo.license?.spdx_id ?? 'not specified'}.`, author: repo.owner?.login, metrics: { stars: repo.stargazers_count, forks: repo.forks_count, pushedAt: repo.pushed_at, createdAt: repo.created_at, query: query.id } });
-      stats.withinWindow += 1; stats.itemsNew += 1; stats.latestItemAt = new Date(timestamp).toISOString();
+      addCandidate(source, { url: urlValue, title: repo.full_name, timestamp, activityAt, evidenceSnippet: `${repo.description ?? 'AI repository'}. GitHub reports ${repo.stargazers_count} stars, ${repo.forks_count} forks, latest push ${repo.pushed_at}, license ${repo.license?.spdx_id ?? 'not specified'}.`, author: repo.owner?.login, metrics: { stars: repo.stargazers_count, forks: repo.forks_count, pushedAt: repo.pushed_at, createdAt: repo.created_at, query: query.id } });
+      stats.withinWindow += 1; stats.itemsNew += 1; stats.latestItemAt = new Date(activityAt).toISOString();
     }
   }
   if (stats.backoffUntil && Date.parse(stats.backoffUntil) > Date.now()) stats.status = 'backoff';
@@ -178,20 +181,21 @@ async function ingestHuggingFace(source, stats) {
     const baseModel = tags.find((tag) => tag.startsWith('base_model:'))?.slice('base_model:'.length);
     if (baseModel && baseModels.has(baseModel)) continue;
     if (baseModel) baseModels.add(baseModel);
-    const timestamp = Date.parse(detail.lastModified ?? detail.createdAt);
-    if (!isCurrent(timestamp)) continue;
+    const timestamp = Date.parse(detail.createdAt);
+    const activityAt = Date.parse(detail.lastModified ?? detail.createdAt);
+    if (!Number.isFinite(timestamp) || timestamp > now + 300_000 || !isCurrent(activityAt)) continue;
     const text = `${id} ${detail.cardData?.model_name ?? ''} ${detail.pipeline_tag ?? ''} ${tags.join(' ')}`;
     if (!aiKeyword.test(text)) continue;
     const urlValue = canonical(`https://huggingface.co/${id}`);
     if (existing.has(urlValue)) continue;
-    addCandidate(source, { url: urlValue, title: id, timestamp, evidenceSnippet: `Hugging Face reports model ${id}, pipeline ${detail.pipeline_tag}, ${detail.likes ?? 0} likes, ${detail.downloads ?? 0} downloads, trending score ${summary.trendingScore ?? 0}, last modified ${detail.lastModified ?? detail.createdAt}.`, author: id.split('/')[0], metrics: { likes: detail.likes, downloads: detail.downloads, trendingScore: summary.trendingScore, pipelineTag: detail.pipeline_tag, lastModified: detail.lastModified, baseModel } });
-    stats.withinWindow += 1; stats.itemsNew += 1; stats.latestItemAt = new Date(timestamp).toISOString();
+    addCandidate(source, { url: urlValue, title: id, timestamp, activityAt, evidenceSnippet: `Hugging Face reports model ${id}, pipeline ${detail.pipeline_tag}, ${detail.likes ?? 0} likes, ${detail.downloads ?? 0} downloads, trending score ${summary.trendingScore ?? 0}, last modified ${detail.lastModified ?? detail.createdAt}.`, author: id.split('/')[0], metrics: { likes: detail.likes, downloads: detail.downloads, trendingScore: summary.trendingScore, pipelineTag: detail.pipeline_tag, lastModified: detail.lastModified, createdAt: detail.createdAt, baseModel } });
+    stats.withinWindow += 1; stats.itemsNew += 1; stats.latestItemAt = new Date(activityAt).toISOString();
   }
 }
 
 for (const source of sources) {
   const started = Date.now();
-  const stats = { ingestionId: source.id, sourceId: source.sourceId, sourceType: source.kind.includes('api') ? 'api' : 'feed', status: 'healthy', lastAttemptAt: new Date().toISOString(), lastSuccessAt: null, latestItemAt: null, itemsSeen: 0, itemsNew: 0, withinWindow: 0, dedupedExisting: 0, enriched: 0, latencyMs: 0, httpStatus: null, rateRemaining: null, backoffUntil: null, nextRetryAt: null, consecutiveFailures: 0, errorCode: null };
+  const stats = { ingestionId: source.id, sourceId: source.sourceId, sourceType: source.kind.includes('api') ? 'api' : 'feed', status: 'healthy', lastAttemptAt: new Date().toISOString(), lastSuccessAt: null, latestItemAt: null, itemsSeen: 0, itemsNew: 0, withinWindow: 0, dedupedExisting: 0, enriched: 0, latencyMs: 0, httpStatus: null, rateRemaining: null, backoffUntil: null, nextRetryAt: null, consecutiveFailures: 0, failureCode: null };
   const prior = priorHealth.get(source.id);
   if (prior?.backoff_until && Date.parse(prior.backoff_until) > Date.now()) {
     stats.status = 'backoff'; stats.backoffUntil = prior.backoff_until; stats.nextRetryAt = prior.backoff_until; stats.consecutiveFailures = Number(prior.consecutive_failures) || 0; stats.lastSuccessAt = prior.last_success_at; stats.latestItemAt = prior.latest_item_at; stats.latencyMs = Date.now() - started; health.push(stats); continue;
@@ -204,9 +208,9 @@ for (const source of sources) {
     stats.lastSuccessAt = new Date().toISOString();
     if (stats.status === 'backoff') stats.consecutiveFailures = Number(prior?.consecutive_failures) || 0;
     else stats.consecutiveFailures = 0;
-    if (failures.some((failure) => failure.ingestionId === source.id)) { stats.status = 'degraded'; stats.errorCode = 'item_processing_degraded'; }
+    if (failures.some((failure) => failure.ingestionId === source.id)) { stats.status = 'degraded'; stats.failureCode = 'item_processing_degraded'; }
   } catch (error) {
-    stats.status = 'failed'; stats.errorCode = errorCode(error); stats.consecutiveFailures = (Number(prior?.consecutive_failures) || 0) + 1; const delay=Math.min(6*3600_000,(Number(defaults.retry?.baseDelayMs)||1000)*2**Math.min(stats.consecutiveFailures,12)); stats.nextRetryAt=new Date(Date.now()+delay).toISOString(); stats.backoffUntil=stats.nextRetryAt; failures.push({ ingestionId: source.id, sourceId: source.sourceId, errorCode: stats.errorCode });
+    stats.status = 'failed'; stats.failureCode = errorCode(error); stats.consecutiveFailures = (Number(prior?.consecutive_failures) || 0) + 1; const delay=Math.min(6*3600_000,(Number(defaults.retry?.baseDelayMs)||1000)*2**Math.min(stats.consecutiveFailures,12)); stats.nextRetryAt=new Date(Date.now()+delay).toISOString(); stats.backoffUntil=stats.nextRetryAt; failures.push({ ingestionId: source.id, failureCode: stats.failureCode, stage: 'fetch' });
   }
   stats.latencyMs = Date.now() - started;
   health.push(stats);
@@ -221,10 +225,10 @@ const successfulSources = health.filter((entry) => entry.status !== 'failed').le
 if (successfulSources < 5) throw new Error(`Fail closed: only ${successfulSources} sources succeeded; failures=${JSON.stringify(failures)}`);
 const checkedAt = new Date().toISOString();
 const healthRows = health;
-const out = { schemaVersion: '2.0.0', status: unique.length === 0 ? 'no_change' : 'candidates_ready', reason: unique.length === 0 ? 'No genuinely new current candidates after deduplication' : null, successfulSources, checkedAt, generatedAt: checkedAt, windowDays, failures, candidates: diverseCandidates };
+const out = { schemaVersion: '2.0.0', status: unique.length === 0 ? 'no_change' : 'candidates_ready', candidateCounts: { beforeCanonicalDedupe: candidates.length, afterCanonicalDedupe: unique.length, afterDiversityCap: diverseCandidates.length, afterRelevanceClassification: diverseCandidates.length }, reason: unique.length === 0 ? 'No genuinely new current candidates after deduplication' : null, successfulSources, checkedAt, generatedAt: checkedAt, windowDays, failures, candidates: diverseCandidates };
 const drafts = path.join(root, 'content/drafts');
 fs.mkdirSync(drafts, { recursive: true });
 fs.writeFileSync(path.join(drafts, 'ingested.json'), `${JSON.stringify(out, null, 2)}\n`);
 fs.writeFileSync(path.join(drafts, 'source-health.json'), `${JSON.stringify({ schemaVersion: '1.0.0', checkedAt, sources: healthRows }, null, 2)}\n`);
 console.log(`Ingested ${out.candidates.length} candidates from ${successfulSources}/${sources.length} successful sources; ${health.reduce((sum, entry) => sum + entry.enriched, 0)} enriched excerpts.`);
-console.log(JSON.stringify(health.map(({ ingestionId, sourceId, sourceType, status, itemsSeen, itemsNew, withinWindow, dedupedExisting, enriched, latencyMs, latestItemAt, httpStatus, rateRemaining, backoffUntil, consecutiveFailures, nextRetryAt, errorCode }) => ({ ingestionId, sourceId, sourceType, status, itemsSeen, itemsNew, withinWindow, dedupedExisting, enriched, latencyMs, latestItemAt, httpStatus, rateRemaining, backoffUntil, consecutiveFailures, nextRetryAt, errorCode }))));
+console.log(JSON.stringify(health.map(({ ingestionId, sourceId, sourceType, status, itemsSeen, itemsNew, withinWindow, dedupedExisting, enriched, latencyMs, latestItemAt, httpStatus, rateRemaining, backoffUntil, consecutiveFailures, nextRetryAt, failureCode }) => ({ ingestionId, sourceId, sourceType, status, itemsSeen, itemsNew, withinWindow, dedupedExisting, enriched, latencyMs, latestItemAt, httpStatus, rateRemaining, backoffUntil, consecutiveFailures, nextRetryAt, failureCode }))));

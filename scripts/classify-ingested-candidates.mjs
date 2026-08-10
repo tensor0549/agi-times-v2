@@ -49,7 +49,7 @@ const nextCandidates = candidates.filter((candidate) => {
   else candidate.classification = { model, relevant: true, confidence: decision.confidence, reasonCode: decision.reasonCode };
   return approved;
 });
-const next = { ...draft, classification: { model, checkedAt: new Date().toISOString(), reviewed: toClassify.length, accepted: toClassify.length - rejected.length, rejected }, candidates: nextCandidates };
+const next = { ...draft, candidateCounts: { ...(draft.candidateCounts ?? {}), afterRelevanceClassification: nextCandidates.length }, classification: { model, checkedAt: new Date().toISOString(), reviewed: toClassify.length, accepted: toClassify.length - rejected.length, rejected }, candidates: nextCandidates };
 const temp = `${file}.tmp`;
 fs.writeFileSync(temp, `${JSON.stringify(next, null, 2)}\n`);
 fs.renameSync(temp, file);
