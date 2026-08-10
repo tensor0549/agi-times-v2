@@ -204,11 +204,12 @@
       "kind": "rss",
       "url": "https://epochai.substack.com/feed",
       "scope": "ai_specific",
-      "enabled": true,
+      "enabled": false,
       "latestItemAt": "2026-08-01T00:00:00Z",
       "healthUrl": "https://epochai.substack.com/feed",
       "language": "en",
-      "priority": 0.88
+      "priority": 0.88,
+      "disabledReason": "github_actions_http_403"
     },
     {
       "id": "ingest_techcrunch_ai",
@@ -352,11 +353,11 @@
       "id": "ingest_import_ai",
       "sourceId": "src_import-ai",
       "kind": "rss",
-      "url": "https://importai.substack.com/feed",
+      "url": "https://jack-clark.net/feed/",
       "scope": "ai_specific",
       "enabled": true,
       "latestItemAt": "2026-08-10T12:32:20Z",
-      "healthUrl": "https://importai.substack.com/feed",
+      "healthUrl": "https://jack-clark.net/feed/",
       "language": "en",
       "priority": 0.86
     },
@@ -366,11 +367,12 @@
       "kind": "rss",
       "url": "https://chinai.substack.com/feed",
       "scope": "ai_specific",
-      "enabled": true,
+      "enabled": false,
       "latestItemAt": "2026-08-10T11:59:25Z",
       "healthUrl": "https://chinai.substack.com/feed",
       "language": "en",
-      "priority": 0.84
+      "priority": 0.84,
+      "disabledReason": "github_actions_http_403"
     },
     {
       "id": "ingest_bloomberg_tech",
@@ -384,6 +386,31 @@
       "healthUrl": "https://feeds.bloomberg.com/technology/news.rss",
       "language": "en",
       "priority": 0.72
+    },
+    {
+      "id": "ingest_scott_aaronson",
+      "sourceId": "src_scott-aaronson",
+      "kind": "rss",
+      "url": "https://scottaaronson.blog/?feed=rss2",
+      "scope": "technology_broad",
+      "enabled": true,
+      "requiresAiClassification": true,
+      "latestItemAt": "2026-08-07T00:00:00Z",
+      "healthUrl": "https://scottaaronson.blog/?feed=rss2",
+      "language": "en",
+      "priority": 0.82
+    },
+    {
+      "id": "ingest_jacob_steinhardt",
+      "sourceId": "src_jacob-steinhardt",
+      "kind": "rss",
+      "url": "https://bounded-regret.ghost.io/rss/",
+      "scope": "ai_specific",
+      "enabled": true,
+      "latestItemAt": "2026-07-28T00:00:00Z",
+      "healthUrl": "https://bounded-regret.ghost.io/rss/",
+      "language": "en",
+      "priority": 0.86
     },
     {
       "id": "ingest_github_trending",
@@ -488,10 +515,10 @@
       "latestItemAt": "2026-08-10T04:00:00Z"
     }
   ],
-  "updatedAt": "2026-08-10T20:19:11Z",
-  "lastVerifiedAt": "2026-08-10T20:19:11Z",
+  "updatedAt": "2026-08-10T22:19:50.218Z",
+  "lastVerifiedAt": "2026-08-10T22:19:50.218Z",
   "lastVerification": {
-    "configDigest": "78215bdbde3e3d49f80e0c45c529ea8773a6b4c69e4e09091890ad58141596f1",
+    "configDigest": "50b80d49960b03114b525df348d1982bbaebfab93b108ccb482f250476db9fb4",
     "attempted": 33,
     "http200": 33,
     "blocked": 0,

@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-10T16:48:06.855Z",
+  "generatedAt": "2026-08-10T22:20:00Z",
   "counts": {
     "organization": 127,
     "media": 16,
-    "person": 128,
+    "person": 136,
     "project": 139,
     "other": 2
   },
@@ -2411,7 +2411,7 @@
       "id": "src_import-ai",
       "kind": "media",
       "name": "Import AI",
-      "url": "https://importai.substack.com/",
+      "url": "https://jack-clark.net/",
       "category": "ai-news",
       "platform": "web",
       "languages": [
@@ -4606,6 +4606,142 @@
       "name": "Finale Doshi-Velez",
       "url": "https://finale.seas.harvard.edu/",
       "category": "interpretable-ai-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nathan-lambert",
+      "kind": "person",
+      "name": "Nathan Lambert",
+      "url": "https://www.interconnects.ai/",
+      "category": "open-model-researcher-writer",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_dean-w-ball",
+      "kind": "person",
+      "name": "Dean W. Ball",
+      "url": "https://www.hyperdimensional.co/",
+      "category": "ai-policy-researcher-writer",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_miles-brundage",
+      "kind": "person",
+      "name": "Miles Brundage",
+      "url": "https://milesbrundage.substack.com/",
+      "category": "ai-policy-safety-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_jacob-steinhardt",
+      "kind": "person",
+      "name": "Jacob Steinhardt",
+      "url": "https://bounded-regret.ghost.io/",
+      "category": "ai-safety-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_scott-aaronson",
+      "kind": "person",
+      "name": "Scott Aaronson",
+      "url": "https://scottaaronson.blog/",
+      "category": "theoretical-computer-scientist-writer",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_hamel-husain",
+      "kind": "person",
+      "name": "Hamel Husain",
+      "url": "https://hamel.dev/",
+      "category": "ai-evaluation-engineer-writer",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_nicholas-carlini",
+      "kind": "person",
+      "name": "Nicholas Carlini",
+      "url": "https://nicholas.carlini.com/",
+      "category": "ai-security-researcher",
+      "platform": "web",
+      "languages": [
+        "en"
+      ],
+      "topics": [
+        "digital_agi"
+      ],
+      "priority": 0.62,
+      "active": true,
+      "reviewedAt": "2026-08-10T16:48:06.855Z"
+    },
+    {
+      "id": "src_eric-jang",
+      "kind": "person",
+      "name": "Eric Jang",
+      "url": "https://evjang.com/",
+      "category": "robotics-ai-researcher-writer",
       "platform": "web",
       "languages": [
         "en"
