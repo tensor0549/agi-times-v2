@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 import { secureHeaders } from 'hono/secure-headers';
 import { timing } from 'hono/timing';
 import type { Bindings } from './types';
-import { apiError, boundedInt, parseJson } from './lib/http';
+import { apiError, boundedInt, latestTimestamp, parseJson, utcTimestamp } from './lib/http';
 import { capture, isAllowedEvent } from './lib/posthog';
 import { isSameOriginPage, rateLimit } from './lib/rate-limit';
 
@@ -68,7 +68,7 @@ app.get('/api/v1/feed', async (c) => {
     const items = rows.slice(0, limit).map(toContentItem);
     const nextCursor = hasMore ? String(rows[limit - 1]?.published_at) : null;
     c.header('cache-control', 'public, max-age=60, stale-while-revalidate=300');
-    return c.json({ items, nextCursor, generatedAt: new Date().toISOString() });
+    return c.json({ items, nextCursor, generatedAt: latestTimestamp(rows.map((row) => row.discovered_at)) });
   } catch { return apiError(c, 503, 'FEED_UNAVAILABLE', 'The feed is temporarily unavailable.'); }
 });
 
@@ -97,10 +97,10 @@ app.get('/api/v1/insights', async (c) => {
       id: row.id, slug: row.slug, title: { en: row.title_en, zh: row.title_zh }, dek: { en: row.dek_en, zh: row.dek_zh },
       body: { en: row.body_en, zh: row.body_zh }, topics: parseJson(String(row.topics_json), []),
       claims: parseJson(String(row.claims_json), []), sources: parseJson(String(row.sources_json), []),
-      publishedAt: row.published_at, updatedAt: row.updated_at,
+      publishedAt: utcTimestamp(row.published_at), updatedAt: utcTimestamp(row.updated_at),
     }));
     c.header('cache-control', 'public, max-age=120, stale-while-revalidate=600');
-    return c.json({ items, generatedAt: new Date().toISOString() });
+    return c.json({ items, generatedAt: latestTimestamp(result.results.map((row) => row.updated_at)) });
   } catch { return apiError(c, 503, 'INSIGHTS_UNAVAILABLE', 'Insights are temporarily unavailable.'); }
 });
 
@@ -109,7 +109,7 @@ app.get('/api/v1/insights/:slug', async (c) => {
     const row = await c.env.DB.prepare(`SELECT * FROM insights WHERE slug=? AND status='published'`).bind(c.req.param('slug')).first<Record<string, unknown>>();
     if (!row) return apiError(c, 404, 'NOT_FOUND', 'Insight not found.');
     c.header('cache-control', 'public, max-age=120, stale-while-revalidate=600');
-    return c.json({ id: row.id, slug: row.slug, title: { en: row.title_en, zh: row.title_zh }, dek: { en: row.dek_en, zh: row.dek_zh }, body: { en: row.body_en, zh: row.body_zh }, topics: parseJson(String(row.topics_json), []), claims: parseJson(String(row.claims_json), []), sources: parseJson(String(row.sources_json), []), publishedAt: row.published_at, updatedAt: row.updated_at });
+    return c.json({ id: row.id, slug: row.slug, title: { en: row.title_en, zh: row.title_zh }, dek: { en: row.dek_en, zh: row.dek_zh }, body: { en: row.body_en, zh: row.body_zh }, topics: parseJson(String(row.topics_json), []), claims: parseJson(String(row.claims_json), []), sources: parseJson(String(row.sources_json), []), publishedAt: utcTimestamp(row.published_at), updatedAt: utcTimestamp(row.updated_at) });
   } catch { return apiError(c, 503, 'INSIGHT_UNAVAILABLE', 'The insight is temporarily unavailable.'); }
 });
 
@@ -176,7 +176,7 @@ function sanitizeProperties(input: Record<string, unknown> | undefined): Record<
 }
 
 function toContentItem(row: Record<string, unknown>) {
-  return { id: row.id, type: row.kind, url: row.canonical_url, title: { en: row.title_en, zh: row.title_zh }, summary: { en: row.summary_en, zh: row.summary_zh }, source: { id: row.source_id, name: row.source_name, kind: row.source_kind }, imageUrl: row.image_url, originalLanguage: row.original_language, publishedAt: row.published_at, discoveredAt: row.discovered_at, topics: parseJson(String(row.topics_json), []), entities: parseJson(String(row.entities_json), []), metrics: parseJson(String(row.metrics_json), {}), score: row.score, featured: Boolean(row.featured) };
+  return { id: row.id, type: row.kind, url: row.canonical_url, title: { en: row.title_en, zh: row.title_zh }, summary: { en: row.summary_en, zh: row.summary_zh }, source: { id: row.source_id, name: row.source_name, kind: row.source_kind }, imageUrl: row.image_url, originalLanguage: row.original_language, publishedAt: utcTimestamp(row.published_at), discoveredAt: utcTimestamp(row.discovered_at), topics: parseJson(String(row.topics_json), []), entities: parseJson(String(row.entities_json), []), metrics: parseJson(String(row.metrics_json), {}), score: row.score, featured: Boolean(row.featured) };
 }
 
 export default { fetch: app.fetch, scheduled };
