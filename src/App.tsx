@@ -1,7 +1,7 @@
 import { FormEvent, MouseEvent as ReactMouseEvent, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowRight, BookOpen, Check, ChevronRight, Clock3, Command, ExternalLink,
-  Code2, Globe2, Menu, MessageSquareText, Moon, Search, Sparkles, Sun, X,
+  Code2, Globe2, LoaderCircle, Menu, MessageSquareText, Moon, Search, Sparkles, Sun, X,
 } from 'lucide-react';
 import { submitFeedback, track } from './lib/analytics';
 import feedData from '../content/feed.json';
@@ -115,6 +115,8 @@ export function App() {
   const [insights, setInsights] = useState<InsightItem[]>(bundledInsights);
   const [selectedInsight, setSelectedInsight] = useState<InsightItem | null>(null);
   const [feedGeneratedAt, setFeedGeneratedAt] = useState(feedData.generatedAt);
+  const [remoteSearch, setRemoteSearch] = useState<{ query: string; stories: Story[] } | null>(null);
+  const [searchBusy, setSearchBusy] = useState(false);
   const searchRef = useRef<HTMLInputElement>(null);
   const t = copy[lang];
 
@@ -153,6 +155,20 @@ export function App() {
     });
     return () => controller.abort();
   }, []);
+  useEffect(() => {
+    const needle = query.trim();
+    if (needle.length < 2) { setRemoteSearch(null); setSearchBusy(false); return; }
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => {
+      setSearchBusy(true);
+      fetch(`/api/v1/search?q=${encodeURIComponent(needle)}&limit=50`, { signal: controller.signal })
+        .then(async response => { if (!response.ok) throw new Error(`Search ${response.status}`); return response.json() as Promise<{ items?: Array<Record<string, any>> }>; })
+        .then(payload => { const matched = mapFeedItems(payload.items || []); setRemoteSearch({ query: needle, stories: matched }); track('search_performed', { query_length: needle.length, result_count: matched.length, provider: 'api' }); })
+        .catch(error => { if (!(error instanceof Error && error.name === 'AbortError')) { setRemoteSearch(null); track('error_seen', { area: 'search_api', fallback: true }); } })
+        .finally(() => { if (!controller.signal.aborted) setSearchBusy(false); });
+    }, 180);
+    return () => { clearTimeout(timer); controller.abort(); };
+  }, [query]);
   useEffect(() => { track('page_viewed', { theme, language: lang }); }, []);
   const modalOpen = feedbackOpen || insightOpen || sourcesOpen;
   useEffect(() => {
@@ -187,11 +203,15 @@ export function App() {
     addEventListener('keydown', onKey); return () => removeEventListener('keydown', onKey);
   }, []);
 
-  const results = useMemo(() => stories.filter((story) => {
-    const inCategory = category === 'all' || story.category === category;
-    const haystack = `${story.title.zh} ${story.title.en} ${story.summary.zh} ${story.summary.en} ${story.source}`.toLowerCase();
-    return inCategory && haystack.includes(query.trim().toLowerCase());
-  }), [category, query]);
+  const results = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    const baseStories = remoteSearch?.query === query.trim() ? remoteSearch.stories : stories;
+    return baseStories.filter((story) => {
+      const inCategory = category === 'all' || story.category === category;
+      const haystack = `${story.title.zh} ${story.title.en} ${story.summary.zh} ${story.summary.en} ${story.source}`.toLowerCase();
+      return inCategory && haystack.includes(needle);
+    });
+  }, [category, query, remoteSearch, stories]);
   const featured = stories[0];
   const activeInsight = selectedInsight || insight;
   const uniqueSourceCount = new Set(stories.map((story) => story.source)).size;
@@ -268,7 +288,7 @@ export function App() {
       </section>
 
       <section className="discovery container" aria-label={lang === 'zh' ? '内容检索' : 'Content discovery'}>
-        <div className="search-box"><Search size={20}/><input ref={searchRef} value={query} onChange={e => { setQuery(e.target.value); if (e.target.value.trim().length === 2) track('search_performed', { query_length: e.target.value.trim().length }); }} placeholder={t.search} aria-label={t.search}/>{query && <button onClick={() => setQuery('')} aria-label={lang === 'zh' ? '清除搜索' : 'Clear search'}><X size={17}/></button>}<span className="key-hint"><Command size={13}/> K</span></div>
+        <div className="search-box"><Search size={20}/><input ref={searchRef} value={query} onChange={e => setQuery(e.target.value)} placeholder={t.search} aria-label={t.search}/>{searchBusy && <LoaderCircle className="search-spinner" size={17} aria-label={lang === 'zh' ? '正在搜索' : 'Searching'}/>} {query && <button onClick={() => setQuery('')} aria-label={lang === 'zh' ? '清除搜索' : 'Clear search'}><X size={17}/></button>}<span className="key-hint"><Command size={13}/> K</span></div>
         <div className="category-row" role="group" aria-label={lang === 'zh' ? '内容分类' : 'Categories'}>{categories.map(cat => <button key={cat} className={category === cat ? 'selected' : ''} onClick={() => { setCategory(cat); track('filter_changed', { category: cat }); }}>{t[cat]}</button>)}</div>
         <div className="coverage-strip" id="source-index" role="region" aria-label={lang === 'zh' ? '来源索引覆盖' : 'Source index coverage'}>
           <button className="coverage-entry" onClick={() => { setSourcesOpen(true); track('source_link_clicked', { target: 'source_directory' }); }}><strong>{registryTotal}</strong><span>{lang === 'zh' ? '浏览全部来源 →' : 'browse all sources →'}</span></button>
