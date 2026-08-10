@@ -1,12 +1,13 @@
 import fs from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { verifyIncrementalUpdate } from './lib/publisher-gate.mjs';
+import { validateReviewerVerdict } from './lib/reviewer-schema.mjs';
+import { restoreContentSnapshot } from './lib/atomic-content.mjs';
 
 const read = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
-const fromGit = (ref, file) => {
+const gitRaw = (ref, file) => {
   const result = spawnSync('git', ['show', `${ref}:${file}`], { encoding: 'utf8' });
-  if (result.status !== 0) return { items: [] };
-  return JSON.parse(result.stdout);
+  return result.status === 0 ? result.stdout : null;
 };
 const parseJsonResponse = (raw) => {
   const choice = raw?.choices?.[0];
@@ -14,14 +15,27 @@ const parseJsonResponse = (raw) => {
   let text = choice?.message?.content;
   if (Array.isArray(text)) text = text.map((part) => part.text ?? '').join('');
   if (text && typeof text === 'object') return text;
-  const match = String(text ?? '').match(/\{[\s\S]*\}/);
-  if (!match) throw new Error(`OpenRouter reviewer returned no JSON object (finish_reason=${choice?.finish_reason ?? 'missing'}, message_fields=${Object.keys(choice?.message ?? {}).join(',') || 'missing'})`);
-  return JSON.parse(match[0]);
+  const serialized = String(text ?? '').trim();
+  if (!serialized.startsWith('{') || !serialized.endsWith('}')) throw new Error(`OpenRouter reviewer returned no exact JSON object (finish_reason=${choice?.finish_reason ?? 'missing'}, message_fields=${Object.keys(choice?.message ?? {}).join(',') || 'missing'})`);
+  return JSON.parse(serialized);
 };
 
 const baseRef = process.env.PUBLISH_BASE_REF ?? 'HEAD';
-const baseFeed = fromGit(baseRef, 'content/feed.json');
-const baseInsights = fromGit(baseRef, 'content/insights.json');
+const baseFeedRaw = gitRaw(baseRef, 'content/feed.json');
+const baseInsightsRaw = gitRaw(baseRef, 'content/insights.json');
+const restoreBase = () => restoreContentSnapshot({ 'content/feed.json': baseFeedRaw, 'content/insights.json': baseInsightsRaw });
+let handlingFatal = false;
+const fatal = (error) => {
+  if (handlingFatal) process.exit(1);
+  handlingFatal = true;
+  try { restoreBase(); } catch (restoreError) { console.error(`Failed to restore base content: ${restoreError.message}`); }
+  console.error(error instanceof Error ? error.stack ?? error.message : error);
+  process.exit(1);
+};
+process.on('uncaughtException', fatal);
+process.on('unhandledRejection', fatal);
+const baseFeed = baseFeedRaw == null ? { items: [] } : JSON.parse(baseFeedRaw);
+const baseInsights = baseInsightsRaw == null ? { items: [] } : JSON.parse(baseInsightsRaw);
 const currentDay = new Date().toISOString().slice(0, 10);
 const requireInsight = !(baseInsights.items ?? []).some((item) => String(item.publishedAt).slice(0, 10) === currentDay);
 const result = verifyIncrementalUpdate({ baseFeed, feed: read('content/feed.json'), baseInsights, insights: read('content/insights.json'), requireInsight });
@@ -73,6 +87,7 @@ const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
 if (!response.ok) throw new Error(`OpenRouter reviewer ${response.status}: ${(await response.text()).slice(0, 500)}`);
 const verdict = parseJsonResponse(await response.json());
 const expectedIds = new Set([...result.newFeed, ...result.changedInsights].map((item) => item.id));
+validateReviewerVerdict(verdict, expectedIds);
 const seen = new Set();
 const structuralFailures = [];
 const rejected = new Map();
@@ -88,7 +103,6 @@ if (rejected.size) {
   if ([...rejected.keys()].some((id) => changedInsightIds.has(id)) || result.changedInsights.some((insight) => (insight.sources ?? []).some((source) => rejected.has(source.feedItemId)))) {
     throw new Error(`Fail closed: independent review rejected an Insight or its evidence\n${[...rejected].map(([id, reason]) => `${id}: ${reason}`).join('\n')}`);
   }
-  fs.writeFileSync('content/feed.json', `${JSON.stringify(baseFeed, null, 2)}\n`);
-  if (!result.changedInsights.length) fs.writeFileSync('content/insights.json', `${JSON.stringify(baseInsights, null, 2)}\n`);
+  restoreBase();
   console.log(`Independent ${model} rejected ${rejected.size} record(s); restored the complete base bundle as a safe no-op: ${[...rejected.keys()].join(', ')}`);
 } else console.log(`Independent ${model} gate passed ${result.newFeed.length} feed items and ${result.changedInsights.length} Insight(s).`);

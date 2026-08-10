@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { safeFetchHtml } from './lib/safe-http.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const feeds = [
@@ -32,9 +33,7 @@ const meta = (html, key) => {
     ?? html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+(?:name|property)=["']${escaped}["']`, 'i'))?.[1]);
 };
 const enrichEvidence = async (url) => {
-  const response = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(20_000), headers: { 'user-agent': 'AGITimesBot/1.0 (+https://agitime.ai)', accept: 'text/html' } });
-  if (!response.ok) throw new Error(`article HTTP ${response.status}`);
-  const html = (await response.text()).slice(0, 500_000);
+  const { html } = await safeFetchHtml(url, { maxBytes: 500_000, timeoutMs: 20_000, maxRedirects: 4 });
   let description = meta(html, 'description') || meta(html, 'og:description') || meta(html, 'twitter:description');
   if (/^(?:we.re on a journey|a blog post by)\b/i.test(description)) description = '';
   if (!description) {
