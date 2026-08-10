@@ -74,13 +74,21 @@ if (!response.ok) throw new Error(`OpenRouter reviewer ${response.status}: ${(aw
 const verdict = parseJsonResponse(await response.json());
 const expectedIds = new Set([...result.newFeed, ...result.changedInsights].map((item) => item.id));
 const seen = new Set();
-const failures = [];
+const structuralFailures = [];
+const rejected = new Map();
 for (const check of verdict.checks ?? []) {
-  if (!expectedIds.has(check.id) || seen.has(check.id)) failures.push(`unexpected or duplicate review result ${check.id}`);
+  if (!expectedIds.has(check.id) || seen.has(check.id)) structuralFailures.push(`unexpected or duplicate review result ${check.id}`);
   seen.add(check.id);
-  if (!check.supported || !check.agiRelevant || !check.englishNatural || !check.chineseNatural) failures.push(`${check.id}: ${check.reason}`);
+  if (!check.supported || !check.agiRelevant || !check.englishNatural || !check.chineseNatural) rejected.set(check.id, check.reason);
 }
-for (const id of expectedIds) if (!seen.has(id)) failures.push(`${id}: independent review result missing`);
-if (verdict.verdict !== 'pass') failures.push('independent reviewer returned a failing verdict');
-if (failures.length) throw new Error(`Fail closed: independent editorial review rejected publication\n${failures.join('\n')}`);
-console.log(`Independent ${model} gate passed ${result.newFeed.length} feed items and ${result.changedInsights.length} Insight(s).`);
+for (const id of expectedIds) if (!seen.has(id)) structuralFailures.push(`${id}: independent review result missing`);
+if (structuralFailures.length || (verdict.verdict !== 'pass' && !rejected.size)) throw new Error(`Fail closed: independent editorial review was structurally invalid\n${structuralFailures.join('\n')}`);
+if (rejected.size) {
+  const changedInsightIds = new Set(result.changedInsights.map((item) => item.id));
+  if ([...rejected.keys()].some((id) => changedInsightIds.has(id)) || result.changedInsights.some((insight) => (insight.sources ?? []).some((source) => rejected.has(source.feedItemId)))) {
+    throw new Error(`Fail closed: independent review rejected an Insight or its evidence\n${[...rejected].map(([id, reason]) => `${id}: ${reason}`).join('\n')}`);
+  }
+  fs.writeFileSync('content/feed.json', `${JSON.stringify(baseFeed, null, 2)}\n`);
+  if (!result.changedInsights.length) fs.writeFileSync('content/insights.json', `${JSON.stringify(baseInsights, null, 2)}\n`);
+  console.log(`Independent ${model} rejected ${rejected.size} record(s); restored the complete base bundle as a safe no-op: ${[...rejected.keys()].join(', ')}`);
+} else console.log(`Independent ${model} gate passed ${result.newFeed.length} feed items and ${result.changedInsights.length} Insight(s).`);
