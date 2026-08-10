@@ -32,6 +32,12 @@ const mapCategory = (value: string): Exclude<Category, 'all'> => {
   return 'industry';
 };
 const formatDate = (iso: string, lang: Lang) => new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(iso));
+function HighlightText({ text, query }: { text: string; query: string }) {
+  const needle = query.trim();
+  if (needle.length < 2) return <>{text}</>;
+  const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return <>{text.split(new RegExp(`(${escaped})`, 'ig')).map((part, index) => part.toLowerCase() === needle.toLowerCase() ? <mark key={index}>{part}</mark> : part)}</>;
+}
 const formatGeneratedAt = (iso: string, lang: Lang) => new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : 'en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'UTC', timeZoneName: 'short' }).format(new Date(iso));
 
 const copy = {
@@ -313,8 +319,8 @@ export function App() {
               <div className="story-rail"><span className="source-avatar">{story.source.charAt(0)}</span><span className="rail-line"/></div>
               <div className="story-content">
                 <div className="story-meta"><span>{story.source}</span><span>·</span><span>{formatDate(story.time, lang)}</span><span className="tag">{t[story.category]}</span></div>
-                <h3><a href={story.url} target="_blank" rel="noreferrer" onClick={() => track('article_opened', { article_id: story.id, source: story.source })}>{story.title[lang]}<ExternalLink className="external" size={14}/></a></h3>
-                <p>{story.summary[lang]}</p>
+                <h3><a href={story.url} target="_blank" rel="noreferrer" onClick={() => track('article_opened', { article_id: story.id, source: story.source })}><HighlightText text={story.title[lang]} query={query}/><ExternalLink className="external" size={14}/></a></h3>
+                <p><HighlightText text={story.summary[lang]} query={query}/></p>
                 <div className="story-bottom"><span className="story-signal"><Check size={12}/>{story.signal[lang]}</span><a href={story.url} target="_blank" rel="noreferrer" aria-label={`${t.read}: ${story.title[lang]}`}><ArrowRight size={16}/></a></div>
               </div>
             </article>)}
