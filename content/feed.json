@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T18:14:09.163Z",
+  "generatedAt": "2026-08-10T18:27:10.419Z",
   "items": [
     {
       "id": "item_13c6b5c4068aadbfbaa4",
@@ -90,14 +90,14 @@
         "en": "WebGrader autonomously derives interaction flows from website requests, represents them as executable Flow Contracts, and discovers reusable verifier skills through a residual-driven offline loop for RL training.",
         "zh-Hans": "WebGrader自主从网站需求中推导交互流程，将其表示为可执行流程契约，并通过残差驱动的离线循环发现可重用验证技能。"
       },
-      "category": "agents_automation",
+      "category": "products_developer_ecosystem",
       "tags": [
         "web development",
         "reinforcement learning",
         "programmatic grading"
       ],
       "topics": [
-        "agents_automation"
+        "products_developer_ecosystem"
       ],
       "entities": [],
       "mediaType": "article",
@@ -330,14 +330,14 @@
         "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
         "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
       },
-      "category": "agents_automation",
+      "category": "products_developer_ecosystem",
       "tags": [
         "framework",
         "scalable ai",
         "open source"
       ],
       "topics": [
-        "agents_automation"
+        "products_developer_ecosystem"
       ],
       "entities": [],
       "mediaType": "article",
@@ -493,7 +493,7 @@
         "en": "The multimodal reasoning model targets agentic work, computer use and coding, supports a one-million-token context window, and is available through Meta AI and the public-preview Meta Model API.",
         "zh-Hans": "这款多模态推理模型面向智能体任务、计算机操作与编程，支持 100 万 token 上下文，并已接入 Meta AI 与公开预览版 Meta Model API。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
         "agents",
         "computer-use",
@@ -501,7 +501,6 @@
         "multimodal"
       ],
       "topics": [
-        "agents_automation",
         "models_capabilities"
       ],
       "entities": [
@@ -629,14 +628,14 @@
         "en": "EvoLib addresses the limitation that LLMs do not get smarter just by remembering more, instead turning experience into evolving knowledge through reusable skills and insights that help models adapt across tasks after deployment.",
         "zh-Hans": "EvoLib解决了大语言模型仅通过记忆更多内容无法变得更智能的局限，通过可重用技能和洞察将经验转化为演进知识，帮助模型在部署后跨任务适应。"
       },
-      "category": "models_capabilities",
+      "category": "research_science",
       "tags": [
         "knowledge evolution",
         "reusable skills",
         "experience learning"
       ],
       "topics": [
-        "models_capabilities"
+        "research_science"
       ],
       "entities": [],
       "mediaType": "article",

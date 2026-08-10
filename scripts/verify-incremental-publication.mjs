@@ -42,17 +42,17 @@ const schema = {
       checks: {
         type: 'array', minItems: result.newFeed.length + result.changedInsights.length,
         items: {
-          type: 'object', additionalProperties: false, required: ['id', 'supported', 'englishNatural', 'chineseNatural', 'reason'],
+          type: 'object', additionalProperties: false, required: ['id', 'supported', 'agiRelevant', 'englishNatural', 'chineseNatural', 'reason'],
           properties: {
-            id: { type: 'string' }, supported: { type: 'boolean' }, englishNatural: { type: 'boolean' }, chineseNatural: { type: 'boolean' }, reason: { type: 'string' },
+            id: { type: 'string' }, supported: { type: 'boolean' }, agiRelevant: { type: 'boolean' }, englishNatural: { type: 'boolean' }, chineseNatural: { type: 'boolean' }, reason: { type: 'string' },
           },
         },
       },
     },
   },
 };
-const prompt = `Act as an independent publication gate, not the writer. Review only the supplied records. For each feed item, every factual clause in both titles and summaries must be directly supported by its evidence excerpt. For each Insight, every factual claim and analytical inference must be warranted by the cited source excerpts; inferences must not be presented as facts. English must read as concise edited English and Simplified Chinese as natural edited Chinese, not literal translation. Explicitly reject claims that tooling, external training infrastructure, reusable experience, agent-harness optimization, or benchmark gains prove 'self-improving AI', agents that 'evolve themselves', architecture self-redesign, an AGI characteristic, or a fundamental/major shift unless those exact propositions appear in the excerpts. Return fail if evidence is insufficient, a citation is misleading, either language is unnatural, or any record is missing. Do not repair the copy.\n\nRECORDS:\n${JSON.stringify(result.reviewPayload)}`;
-const model = process.env.OPENROUTER_REVIEW_MODEL ?? process.env.OPENROUTER_MODEL ?? 'anthropic/claude-sonnet-4';
+const prompt = `Act as an independent publication gate, not the writer. Review only the supplied records. For each feed item, every factual clause in both titles and summaries must be directly supported by its evidence excerpt. For each Insight, every factual claim and analytical inference must be warranted by the cited source excerpts; inferences must not be presented as facts. English must read as concise edited English and Simplified Chinese as natural edited Chinese, not literal translation. For every feed item, independently judge agiRelevant from its evidence and relevance reason: academic vertical applications such as degree/curriculum planning, generic community detection, molecular/polymer workflows, and narrow domain automation are not AGI-relevant unless the evidence demonstrates a transferable model or agent capability advance. Do not trust the writer's numeric score. Explicitly reject claims that tooling, external training infrastructure, reusable experience, agent-harness optimization, or benchmark gains prove 'self-improving AI', agents that 'evolve themselves', architecture self-redesign, an AGI characteristic, or a fundamental/major shift unless those exact propositions appear in the excerpts. Return fail if evidence is insufficient, a citation is misleading, either language is unnatural, or any record is missing. Do not repair the copy.\n\nRECORDS:\n${JSON.stringify(result.reviewPayload)}`;
+const model = process.env.OPENROUTER_REVIEW_MODEL ?? 'openai/gpt-4.1';
 const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
   method: 'POST',
   headers: {
@@ -78,7 +78,7 @@ const failures = [];
 for (const check of verdict.checks ?? []) {
   if (!expectedIds.has(check.id) || seen.has(check.id)) failures.push(`unexpected or duplicate review result ${check.id}`);
   seen.add(check.id);
-  if (!check.supported || !check.englishNatural || !check.chineseNatural) failures.push(`${check.id}: ${check.reason}`);
+  if (!check.supported || !check.agiRelevant || !check.englishNatural || !check.chineseNatural) failures.push(`${check.id}: ${check.reason}`);
 }
 for (const id of expectedIds) if (!seen.has(id)) failures.push(`${id}: independent review result missing`);
 if (verdict.verdict !== 'pass') failures.push('independent reviewer returned a failing verdict');

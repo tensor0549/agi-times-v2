@@ -1,18 +1,131 @@
-import fs from 'node:fs'; import path from 'node:path'; import crypto from 'node:crypto';
-const root=path.resolve(import.meta.dirname,'..');
-const feeds=[
-{sourceId:'src_hugging-face',publisher:'Hugging Face',url:'https://huggingface.co/blog/feed.xml',reliability:.9},
-{sourceId:'src_microsoft-research',publisher:'Microsoft Research',url:'https://www.microsoft.com/en-us/research/feed/',reliability:.92},
-{sourceId:'src_nvidia-ai',publisher:'NVIDIA AI',url:'https://blogs.nvidia.com/blog/category/deep-learning/feed/',reliability:.92},
-{sourceId:'src_google-research',publisher:'Google Research',url:'https://research.google/blog/rss/',reliability:.94},
-{sourceId:'src_arxiv-cs-ai',publisher:'arXiv cs.AI',url:'https://export.arxiv.org/rss/cs.AI',reliability:.86}
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+
+const root = path.resolve(import.meta.dirname, '..');
+const feeds = [
+  { sourceId: 'src_hugging-face', publisher: 'Hugging Face', url: 'https://huggingface.co/blog/feed.xml', reliability: 0.9 },
+  { sourceId: 'src_microsoft-research', publisher: 'Microsoft Research', url: 'https://www.microsoft.com/en-us/research/feed/', reliability: 0.92 },
+  { sourceId: 'src_nvidia-ai', publisher: 'NVIDIA AI', url: 'https://blogs.nvidia.com/blog/category/deep-learning/feed/', reliability: 0.92 },
+  { sourceId: 'src_google-research', publisher: 'Google Research', url: 'https://research.google/blog/rss/', reliability: 0.94 },
+  { sourceId: 'src_arxiv-cs-ai', publisher: 'arXiv cs.AI', url: 'https://export.arxiv.org/rss/cs.AI', reliability: 0.86, academic: true },
 ];
-const clean=s=>String(s||'').replace(/<!\[CDATA\[|\]\]>/g,'').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'").replace(/\s+/g,' ').trim();
-const val=(block,names)=>{for(const n of names){const m=block.match(new RegExp(`<${n}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${n}>`,'i'));if(m)return clean(m[1])}return''};
-const canonical=u=>{try{const x=new URL(u);['utm_source','utm_medium','utm_campaign','utm_content','ref'].forEach(k=>x.searchParams.delete(k));return x.href}catch{return''}};
-const existing=fs.existsSync(path.join(root,'content/feed.json'))?new Set(JSON.parse(fs.readFileSync(path.join(root,'content/feed.json'),'utf8')).items.map(x=>x.canonicalUrl??x.url)):new Set();
-const candidates=[]; const failures=[]; const cutoff=Date.now()-14*864e5;
-for(const f of feeds){try{const r=await fetch(f.url,{redirect:'follow',signal:AbortSignal.timeout(20000),headers:{'user-agent':'AGITimesBot/1.0 (+https://agitime.ai)'}});if(!r.ok)throw new Error(`HTTP ${r.status}`);const xml=await r.text();const blocks=[...(xml.match(/<item\b[\s\S]*?<\/item>/gi)||[]),...(xml.match(/<entry\b[\s\S]*?<\/entry>/gi)||[])];for(const b of blocks.slice(0,20)){const title=val(b,['title']);let url=val(b,['link','guid']);if(!url){const m=b.match(/<link[^>]+href=["']([^"']+)/i);url=m?.[1]||''}url=canonical(url);const rawDate=val(b,['pubDate','published','updated','dc:date']);const t=Date.parse(rawDate);const snippet=val(b,['description','summary','content:encoded']);if(!title||!url||!Number.isFinite(t)||t> Date.now()+300000||t<cutoff||existing.has(url)||snippet.length<40)continue;candidates.push({id:`candidate_${crypto.createHash('sha256').update(url).digest('hex').slice(0,24)}`,sourceId:f.sourceId,publisher:f.publisher,url,title,publishedAt:new Date(t).toISOString(),evidenceSnippet:snippet.slice(0,1200),sourceReliability:f.reliability,originalLanguage:'en'})}}catch(e){failures.push({feed:f.url,error:e.message})}}
-const unique=[...new Map(candidates.map(x=>[x.url,x])).values()].sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
-const successfulFeeds=feeds.length-failures.length;if(successfulFeeds<3)throw new Error(`Fail closed: only ${successfulFeeds} feeds succeeded; failures=${JSON.stringify(failures)}`);
-const checkedAt=new Date().toISOString();const out={schemaVersion:'1.0.0',status:unique.length===0?'no_change':'candidates_ready',reason:unique.length===0?'No genuinely new current candidates after deduplication':null,successfulFeeds,checkedAt,generatedAt:checkedAt,windowDays:14,failures,candidates:unique.slice(0,40)};fs.mkdirSync(path.join(root,'content/drafts'),{recursive:true});fs.writeFileSync(path.join(root,'content/drafts/ingested.json'),JSON.stringify(out,null,2)+'\n');console.log(out.status==='no_change'?`No publishable change: ${out.reason}; ${successfulFeeds} feeds checked successfully.`:`Ingested ${out.candidates.length} current item-level candidates; ${failures.length} feed failures.`);
+const clean = (value) => String(value ?? '').replace(/<!\[CDATA\[|\]\]>/g, '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+const valueOf = (block, names) => {
+  for (const name of names) {
+    const match = block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`, 'i'));
+    if (match) return clean(match[1]);
+  }
+  return '';
+};
+const canonical = (value) => {
+  try {
+    const url = new URL(value);
+    for (const key of [...url.searchParams.keys()]) if (key.startsWith('utm_') || key === 'ref') url.searchParams.delete(key);
+    url.hash = '';
+    return url.href;
+  } catch { return ''; }
+};
+const meta = (html, key) => {
+  const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return clean(html.match(new RegExp(`<meta[^>]+(?:name|property)=["']${escaped}["'][^>]+content=["']([^"']+)`, 'i'))?.[1]
+    ?? html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+(?:name|property)=["']${escaped}["']`, 'i'))?.[1]);
+};
+const enrichEvidence = async (url) => {
+  const response = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(20_000), headers: { 'user-agent': 'AGITimesBot/1.0 (+https://agitime.ai)', accept: 'text/html' } });
+  if (!response.ok) throw new Error(`article HTTP ${response.status}`);
+  const html = (await response.text()).slice(0, 500_000);
+  let description = meta(html, 'description') || meta(html, 'og:description') || meta(html, 'twitter:description');
+  if (/^(?:we.re on a journey|a blog post by)\b/i.test(description)) description = '';
+  if (!description) {
+    for (const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+      try {
+        const data = JSON.parse(match[1]);
+        const records = Array.isArray(data) ? data : data?.['@graph'] ?? [data];
+        description = clean(records.find((record) => record?.description)?.description);
+        if (description) break;
+      } catch { /* Ignore malformed publisher JSON-LD. */ }
+    }
+  }
+  if (!description) {
+    const heading = html.search(/<h1\b/i);
+    const articleHtml = heading >= 0 ? html.slice(heading) : html;
+    const paragraphs = [...articleHtml.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)].map((match) => clean(match[1])).filter((text) => text.length >= 30 && !/^(?:we.re on a journey|subscribe|sign up|discuss and provide feedback|run an?\b|extract text|share your)/i.test(text));
+    description = paragraphs.slice(0, 3).join(' ');
+  }
+  return description.slice(0, 1_200);
+};
+
+const feedPath = path.join(root, 'content/feed.json');
+const existing = fs.existsSync(feedPath) ? new Set(JSON.parse(fs.readFileSync(feedPath, 'utf8')).items.map((item) => item.canonicalUrl ?? item.url)) : new Set();
+const candidates = [];
+const failures = [];
+const feedStats = [];
+const cutoff = Date.now() - 14 * 86_400_000;
+
+for (const feed of feeds) {
+  const stats = { sourceId: feed.sourceId, entriesParsed: 0, withinWindow: 0, dedupedExisting: 0, enriched: 0, eligible: 0 };
+  try {
+    const response = await fetch(feed.url, { redirect: 'follow', signal: AbortSignal.timeout(20_000), headers: { 'user-agent': 'AGITimesBot/1.0 (+https://agitime.ai)' } });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const xml = await response.text();
+    const blocks = [...(xml.match(/<item\b[\s\S]*?<\/item>/gi) ?? []), ...(xml.match(/<entry\b[\s\S]*?<\/entry>/gi) ?? [])].slice(0, 20);
+    stats.entriesParsed = blocks.length;
+    if (!blocks.length) throw new Error('parsed 0 RSS/Atom entries');
+    for (const block of blocks) {
+      const title = valueOf(block, ['title']);
+      let url = valueOf(block, ['link', 'guid']);
+      if (!url) url = block.match(/<link[^>]+href=["']([^"']+)/i)?.[1] ?? '';
+      url = canonical(url);
+      const timestamp = Date.parse(valueOf(block, ['pubDate', 'published', 'updated', 'dc:date']));
+      if (!title || !url || !Number.isFinite(timestamp) || timestamp > Date.now() + 300_000 || timestamp < cutoff) continue;
+      stats.withinWindow += 1;
+      if (existing.has(url)) { stats.dedupedExisting += 1; continue; }
+      let evidenceSnippet = valueOf(block, ['description', 'summary', 'content:encoded']);
+      if (evidenceSnippet.length < 40) {
+        try { evidenceSnippet = await enrichEvidence(url); if (evidenceSnippet.length >= 40) stats.enriched += 1; }
+        catch (error) { failures.push({ feed: feed.url, item: url, error: `enrichment: ${error.message}` }); }
+      }
+      if (evidenceSnippet.length < 40) continue;
+      const author = valueOf(block, ['dc:creator', 'creator', 'author']) || feed.publisher;
+      candidates.push({
+        id: `candidate_${crypto.createHash('sha256').update(url).digest('hex').slice(0, 24)}`,
+        sourceId: feed.sourceId,
+        publisher: feed.publisher,
+        author,
+        independenceKey: feed.academic ? `academic:${author.toLowerCase()}` : `publisher:${feed.publisher.toLowerCase()}`,
+        url,
+        title,
+        publishedAt: new Date(timestamp).toISOString(),
+        evidenceSnippet: evidenceSnippet.slice(0, 1_200),
+        sourceReliability: feed.reliability,
+        originalLanguage: 'en',
+      });
+      stats.eligible += 1;
+    }
+  } catch (error) {
+    failures.push({ feed: feed.url, error: error.message });
+  }
+  feedStats.push(stats);
+}
+
+const unique = [...new Map(candidates.map((candidate) => [candidate.url, candidate])).values()].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+const successfulFeeds = feedStats.filter((stats) => stats.entriesParsed > 0).length;
+if (successfulFeeds < 3) throw new Error(`Fail closed: only ${successfulFeeds} feeds parsed entries; failures=${JSON.stringify(failures)}`);
+const checkedAt = new Date().toISOString();
+const out = {
+  schemaVersion: '1.1.0',
+  status: unique.length === 0 ? 'no_change' : 'candidates_ready',
+  reason: unique.length === 0 ? 'No genuinely new current candidates after deduplication' : null,
+  successfulFeeds,
+  checkedAt,
+  generatedAt: checkedAt,
+  windowDays: 14,
+  feedStats,
+  failures,
+  candidates: unique.slice(0, 40),
+};
+fs.mkdirSync(path.join(root, 'content/drafts'), { recursive: true });
+fs.writeFileSync(path.join(root, 'content/drafts/ingested.json'), `${JSON.stringify(out, null, 2)}\n`);
+console.log(out.status === 'no_change' ? `No publishable change: ${out.reason}; ${successfulFeeds} feeds parsed successfully.` : `Ingested ${out.candidates.length} current item-level candidates from ${successfulFeeds} parsed feeds; ${feedStats.reduce((sum, stats) => sum + stats.enriched, 0)} enriched article excerpts.`);
+console.log(JSON.stringify(feedStats));

@@ -27,11 +27,15 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
   }
 
   const topSourceCounts = new Map();
+  const topTopicCounts = new Map();
   for (const item of (feed?.items ?? []).slice(0, 10)) {
     const key = item.sourceId ?? item.source?.id ?? 'unknown';
+    const topic = item.category ?? item.topics?.[0] ?? 'unknown';
     topSourceCounts.set(key, (topSourceCounts.get(key) ?? 0) + 1);
+    topTopicCounts.set(topic, (topTopicCounts.get(topic) ?? 0) + 1);
   }
   for (const [sourceId, count] of topSourceCounts) if (count > 2) errors.push(`top 10 contains ${count} items from ${sourceId}; maximum is 2`);
+  for (const [topic, count] of topTopicCounts) if (count > 3) errors.push(`top 10 contains ${count} items for ${topic}; maximum is 3`);
 
   if (newFeed.length < 1) errors.push('incremental publication requires at least 1 new feed item');
   for (const [id, previous] of oldFeed) {
@@ -52,7 +56,10 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
     if (!Number.isFinite(discovered) || discovered > now + 300_000) errors.push(`${item.id}: discovery date is future or invalid`);
     if (item.updatedAt !== item.publishedAt) errors.push(`${item.id}: updatedAt must preserve the source timestamp`);
     if (item.citations?.length !== 1 || item.citations[0].url !== url || !item.citations[0].evidenceSnippet) errors.push(`${item.id}: one exact item-level evidence citation is required`);
-    if (item.type === 'paper' && (Number(item.importanceScore) < 70 || Number(item.agiRelevanceScore) < 70)) errors.push(`${item.id}: academic items require importanceScore and agiRelevanceScore >= 70`);
+    if (item.type === 'paper') {
+      if (Number(item.importanceScore) < 70 || Number(item.agiRelevanceScore) < 70) errors.push(`${item.id}: academic items require importanceScore and agiRelevanceScore >= 70`);
+      if (/\b(?:degree|curriculum|course pathway|community detection|molecular dynamics|polymer|student planning)\b/i.test(`${item.title?.en ?? ''} ${item.summary?.en ?? ''} ${item.citations?.[0]?.evidenceSnippet ?? ''}`)) errors.push(`${item.id}: excluded vertical academic application`);
+    }
   }
 
   const oldInsights = new Map((baseInsights?.items ?? []).map((item) => [item.id, item]));
@@ -103,7 +110,7 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
     newFeed,
     changedInsights,
     reviewPayload: {
-      feedItems: newFeed.map((item) => ({ id: item.id, title: item.title, summary: item.summary, evidence: item.citations[0].evidenceSnippet, url: item.url })),
+      feedItems: newFeed.map((item) => ({ id: item.id, type: item.type, category: item.category, title: item.title, summary: item.summary, importanceScore: item.importanceScore, agiRelevanceScore: item.agiRelevanceScore, relevanceReason: item.relevanceReason, evidence: item.citations[0].evidenceSnippet, url: item.url })),
       insights: changedInsights.map((item) => ({ id: item.id, title: item.title, dek: item.dek, body: item.body, claims: item.claims, sources: item.sources })),
     },
   };
