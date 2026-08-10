@@ -5,6 +5,7 @@ on:
     - cron: '7,22,37,52 * * * *'
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: feedback-triage
   cancel-in-progress: false
@@ -19,8 +20,19 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Create opaque durable handoffs in D1
+      - name: Create private deterministic diagnoses in D1
         run: node scripts/triage-feedback.mjs
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          FEEDBACK_TRIAGE_ENABLED: ${{ vars.FEEDBACK_TRIAGE_ENABLED || 'true' }}
+          FEEDBACK_TRIAGE_BATCH: '20'
+      - name: Verify fixes only after successful production deploy
+        run: node scripts/verify-feedback-fixes.mjs
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          FEEDBACK_VERIFY_ENABLED: ${{ vars.FEEDBACK_VERIFY_ENABLED || 'true' }}
+          FEEDBACK_VERIFY_BATCH: '10'
