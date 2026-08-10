@@ -84,7 +84,7 @@ const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
   }),
   signal: AbortSignal.timeout(120_000),
 });
-if (!response.ok) throw new Error(`OpenRouter reviewer ${response.status}: ${(await response.text()).slice(0, 500)}`);
+if (!response.ok) throw new Error(`OpenRouter reviewer request failed with status ${response.status}`);
 const verdict = parseJsonResponse(await response.json());
 const expectedIds = new Set([...result.newFeed, ...result.changedInsights].map((item) => item.id));
 validateReviewerVerdict(verdict, expectedIds);

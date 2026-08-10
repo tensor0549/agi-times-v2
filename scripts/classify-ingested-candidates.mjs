@@ -26,7 +26,7 @@ for (let offset = 0; offset < toClassify.length; offset += 15) {
   let validBatch;
   for (let attempt = 1; attempt <= 2 && !validBatch; attempt++) {
     const response = await fetch('https://openrouter.ai/api/v1/chat/completions', { method: 'POST', headers: { authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`, 'content-type': 'application/json', 'HTTP-Referer': 'https://agitime.ai', 'X-Title': 'AGI Times Candidate Classifier' }, body: JSON.stringify({ model, temperature: 0, max_tokens: 3_000, response_format: { type: 'json_schema', json_schema: schema }, messages: [{ role: 'user', content: `${prompt}\nATTEMPT:${attempt}` }] }), signal: AbortSignal.timeout(120_000) });
-    if (!response.ok) throw new Error(`OpenRouter classifier ${response.status}: ${(await response.text()).slice(0, 200)}`);
+    if (!response.ok) throw new Error(`OpenRouter classifier request failed with status ${response.status}`);
     const verdict = parse(await response.json());
     const expected = new Set(batch.map((candidate) => candidate.id)), local = new Map();
     if (verdict && Object.keys(verdict).length === 1 && Array.isArray(verdict.decisions) && verdict.decisions.length === batch.length) for (const decision of verdict.decisions) {
