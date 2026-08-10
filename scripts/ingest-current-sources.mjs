@@ -1,15 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { safeFetchHtml } from './lib/safe-http.mjs';
+import { safeFetchHtml, safeFetchXml } from './lib/safe-http.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const feeds = [
-  { sourceId: 'src_hugging-face', publisher: 'Hugging Face', url: 'https://huggingface.co/blog/feed.xml', reliability: 0.9 },
-  { sourceId: 'src_microsoft-research', publisher: 'Microsoft Research', url: 'https://www.microsoft.com/en-us/research/feed/', reliability: 0.92 },
-  { sourceId: 'src_nvidia-ai', publisher: 'NVIDIA AI', url: 'https://blogs.nvidia.com/blog/category/deep-learning/feed/', reliability: 0.92 },
-  { sourceId: 'src_google-research', publisher: 'Google Research', url: 'https://research.google/blog/rss/', reliability: 0.94 },
-  { sourceId: 'src_arxiv-cs-ai', publisher: 'arXiv cs.AI', url: 'https://export.arxiv.org/rss/cs.AI', reliability: 0.86, academic: true },
+  { sourceId: 'src_hugging-face', publisher: 'Hugging Face', url: 'https://huggingface.co/blog/feed.xml', reliability: 0.9, allowedHosts: ['huggingface.co'] },
+  { sourceId: 'src_microsoft-research', publisher: 'Microsoft Research', url: 'https://www.microsoft.com/en-us/research/feed/', reliability: 0.92, allowedHosts: ['www.microsoft.com'] },
+  { sourceId: 'src_nvidia-ai', publisher: 'NVIDIA AI', url: 'https://blogs.nvidia.com/blog/category/deep-learning/feed/', reliability: 0.92, allowedHosts: ['blogs.nvidia.com'] },
+  { sourceId: 'src_google-research', publisher: 'Google Research', url: 'https://research.google/blog/rss/', reliability: 0.94, allowedHosts: ['research.google'] },
+  { sourceId: 'src_arxiv-cs-ai', publisher: 'arXiv cs.AI', url: 'https://export.arxiv.org/rss/cs.AI', reliability: 0.86, academic: true, allowedHosts: ['export.arxiv.org'] },
 ];
 const clean = (value) => String(value ?? '').replace(/<!\[CDATA\[|\]\]>/g, '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const valueOf = (block, names) => {
@@ -32,8 +32,8 @@ const meta = (html, key) => {
   return clean(html.match(new RegExp(`<meta[^>]+(?:name|property)=["']${escaped}["'][^>]+content=["']([^"']+)`, 'i'))?.[1]
     ?? html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+(?:name|property)=["']${escaped}["']`, 'i'))?.[1]);
 };
-const enrichEvidence = async (url) => {
-  const { html } = await safeFetchHtml(url, { maxBytes: 500_000, timeoutMs: 20_000, maxRedirects: 4 });
+const enrichEvidence = async (url, allowedHosts) => {
+  const { html } = await safeFetchHtml(url, { maxBytes: 500_000, timeoutMs: 20_000, maxRedirects: 4, allowedHosts });
   let description = meta(html, 'description') || meta(html, 'og:description') || meta(html, 'twitter:description');
   if (/^(?:we.re on a journey|a blog post by)\b/i.test(description)) description = '';
   if (!description) {
@@ -65,9 +65,7 @@ const cutoff = Date.now() - 14 * 86_400_000;
 for (const feed of feeds) {
   const stats = { sourceId: feed.sourceId, entriesParsed: 0, withinWindow: 0, dedupedExisting: 0, enriched: 0, eligible: 0 };
   try {
-    const response = await fetch(feed.url, { redirect: 'follow', signal: AbortSignal.timeout(20_000), headers: { 'user-agent': 'AGITimesBot/1.0 (+https://agitime.ai)' } });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const xml = await response.text();
+    const { html: xml } = await safeFetchXml(feed.url, { maxBytes: 2_000_000, timeoutMs: 20_000, maxRedirects: 3, allowedHosts: feed.allowedHosts });
     const blocks = [...(xml.match(/<item\b[\s\S]*?<\/item>/gi) ?? []), ...(xml.match(/<entry\b[\s\S]*?<\/entry>/gi) ?? [])].slice(0, 20);
     stats.entriesParsed = blocks.length;
     if (!blocks.length) throw new Error('parsed 0 RSS/Atom entries');
@@ -82,7 +80,7 @@ for (const feed of feeds) {
       if (existing.has(url)) { stats.dedupedExisting += 1; continue; }
       let evidenceSnippet = valueOf(block, ['description', 'summary', 'content:encoded']);
       if (evidenceSnippet.length < 40) {
-        try { evidenceSnippet = await enrichEvidence(url); if (evidenceSnippet.length >= 40) stats.enriched += 1; }
+        try { evidenceSnippet = await enrichEvidence(url, feed.allowedHosts); if (evidenceSnippet.length >= 40) stats.enriched += 1; }
         catch (error) { failures.push({ feed: feed.url, item: url, error: `enrichment: ${error.message}` }); }
       }
       if (evidenceSnippet.length < 40) continue;
