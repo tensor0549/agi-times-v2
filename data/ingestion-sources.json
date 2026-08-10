@@ -418,7 +418,20 @@
         "forks_count",
         "pushed_at",
         "created_at"
-      ]
+      ],
+      "eligibility": {
+        "fork": false,
+        "archived": false,
+        "disabled": false,
+        "minimumStars": 25,
+        "requireLicenseForNewRising": true,
+        "maximumDaysSincePush": 14,
+        "requireAgIRelevanceReview": true
+      },
+      "ranking": {
+        "activeEstablished": "log1p(stars)*0.45 + log1p(forks)*0.15 + pushFreshness*0.25 + starDelta*0.15",
+        "newRising": "starVelocity*0.45 + pushFreshness*0.25 + maintainerSignals*0.10 + agiRelevance*0.20"
+      }
     },
     {
       "id": "ingest_huggingface_models",
@@ -446,7 +459,16 @@
       "dedupeBy": [
         "id",
         "base_model"
-      ]
+      ],
+      "eligibility": {
+        "private": false,
+        "minimumLikes": 20,
+        "requirePipelineTag": true,
+        "requireAgIRelevanceReview": true
+      },
+      "ranking": {
+        "formula": "trendingScore*0.35 + log1p(downloads)*0.15 + log1p(likes)*0.15 + updateFreshness*0.20 + agiRelevance*0.15"
+      }
     }
   ]
 }
