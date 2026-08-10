@@ -1,5 +1,5 @@
 const quote = (value) => value == null ? 'NULL' : `'${String(value).replaceAll("'", "''")}'`;
-const number = (value) => Number.isFinite(Number(value)) ? Number(value) : 'NULL';
+const number = (value) => value == null ? 'NULL' : Number.isFinite(Number(value)) ? Number(value) : 'NULL';
 const statuses = new Set(['healthy', 'degraded', 'failed', 'backoff']);
 
 export function buildSourceHealthSql(data, { transaction = true } = {}) {

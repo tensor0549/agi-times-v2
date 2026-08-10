@@ -56,5 +56,8 @@ describe('atomic source-health activation', () => {
     expect(sql).not.toMatch(/BEGIN|COMMIT|SAVEPOINT/);
     expect(sql.match(/INSERT INTO source_ingestion_health/g)).toHaveLength(33);
     expect(sql.indexOf('UPDATE source_ingestion_health SET enabled=0')).toBeLessThan(sql.indexOf('INSERT INTO source_ingestion_health'));
+    const withNullStatus = buildSourceHealthSql({ sources: [{ ...healthRow(0), httpStatus: null }] }, { transaction: false });
+    expect(withNullStatus).toContain("'healthy',NULL,0,0");
+    expect(withNullStatus).not.toContain("'healthy',0,0,0");
   });
 });

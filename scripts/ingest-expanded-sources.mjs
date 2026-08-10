@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { safeFetchHtml, safeFetchText, safeFetchXml } from './lib/safe-http.mjs';
+import { ingestionFailureCode, ingestionHttpStatus } from './lib/ingestion-errors.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'data/ingestion-sources.json'), 'utf8'));
@@ -19,7 +20,6 @@ const failures = [];
 const health = [];
 const priorHealthPath = path.join(root, 'content/drafts/source-health-prior.json');
 const priorHealth = fs.existsSync(priorHealthPath) ? new Map(JSON.parse(fs.readFileSync(priorHealthPath, 'utf8')).sources.map((row) => [row.ingestion_id ?? row.ingestionId ?? row.source_id, row])) : new Map();
-const errorCode = (error) => { const text=String(error?.message??error).toLowerCase(); if(text.includes('timeout')||text.includes('deadline'))return 'timeout'; if(text.includes('http'))return 'http_status'; if(text.includes('0 rss')||text.includes('parse'))return 'parse_failed'; if(text.includes('allowlist')||text.includes('hostname')||text.includes('globally routable'))return 'host_rejected'; if(text.includes('rate'))return 'rate_limited'; return 'fetch_failed'; };
 
 const clean = (value) => String(value ?? '').replace(/<!\[CDATA\[|\]\]>/g, '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const valueOf = (block, names) => {
@@ -117,7 +117,7 @@ async function ingestFeed(source, stats) {
     let evidenceSnippet = valueOf(block, ['description', 'summary', 'content:encoded']);
     if (evidenceSnippet.length < 40 && source.enrichMissingDescription) {
       try { evidenceSnippet = await enrichEvidence(source, url); if (evidenceSnippet.length >= 40) stats.enriched += 1; }
-      catch (error) { failures.push({ ingestionId: source.id, failureCode: errorCode(error), stage: 'enrichment' }); }
+      catch (error) { failures.push({ ingestionId: source.id, failureCode: ingestionFailureCode(error), stage: 'enrichment' }); }
     }
     if (evidenceSnippet.length < 40 || !prefilterBroad(source, title, evidenceSnippet)) continue;
     addCandidate(source, { url, title, timestamp, evidenceSnippet, author: valueOf(block, ['dc:creator', 'creator', 'author']) });
@@ -217,7 +217,7 @@ for (const source of sources) {
     } else stats.consecutiveFailures = 0;
     if (failures.some((failure) => failure.ingestionId === source.id)) { stats.status = 'degraded'; stats.failureCode = 'item_processing_degraded'; }
   } catch (error) {
-    stats.status = 'failed'; stats.failureCode = errorCode(error); stats.consecutiveFailures = (Number(prior?.consecutive_failures) || 0) + 1; const delay=Math.min(6*3600_000,Math.max(5*60_000,(Number(defaults.retry?.baseDelayMs)||1000)*2**Math.min(stats.consecutiveFailures,12))); stats.nextRetryAt=new Date(Date.now()+delay).toISOString(); stats.backoffUntil=stats.nextRetryAt; failures.push({ ingestionId: source.id, failureCode: stats.failureCode, stage: 'fetch' });
+    stats.status = 'failed'; stats.httpStatus = ingestionHttpStatus(error); stats.failureCode = ingestionFailureCode(error); stats.consecutiveFailures = (Number(prior?.consecutive_failures) || 0) + 1; const delay=Math.min(6*3600_000,Math.max(5*60_000,(Number(defaults.retry?.baseDelayMs)||1000)*2**Math.min(stats.consecutiveFailures,12))); stats.nextRetryAt=new Date(Date.now()+delay).toISOString(); stats.backoffUntil=stats.nextRetryAt; failures.push({ ingestionId: source.id, failureCode: stats.failureCode, stage: 'fetch' });
   }
   stats.latencyMs = Date.now() - started;
   health.push(stats);
