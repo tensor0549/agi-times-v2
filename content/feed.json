@@ -74,73 +74,6 @@
       ]
     },
     {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
-        }
-      ]
-    },
-    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -249,6 +182,73 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
+        }
+      ]
+    },
+    {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
       ]
     },
@@ -549,6 +549,62 @@
       ]
     },
     {
+      "id": "item_edf74927e8bf18460382",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+      "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+      "publishedAt": "2026-07-30T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-07-30T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "EvoLib Transforms Experience Into Evolving Knowledge for LLMs",
+        "zh-Hans": "EvoLib 将经验沉淀为大语言模型可持续更新的知识"
+      },
+      "summary": {
+        "en": "EvoLib addresses the limitation that LLMs do not get smarter just by remembering more, instead turning experience into evolving knowledge through reusable skills and insights that help models adapt across tasks after deployment.",
+        "zh-Hans": "EvoLib解决了大语言模型仅通过记忆更多内容无法变得更智能的局限，通过可重用技能和洞察将经验转化为演进知识，帮助模型在部署后跨任务适应。"
+      },
+      "category": "research_science",
+      "tags": [
+        "knowledge evolution",
+        "reusable skills",
+        "experience learning"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 8,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_edf74927e8bf18460382ac67",
+          "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-07-30T16:00:00.000Z",
+          "evidenceSnippet": "LLMs do not get smarter just by remembering more. EvoLib turns experience into evolving knowledge, taking reusable skills and insights that help models learn and adapt across tasks long after deployment. The post EvoLib: Turning experience into evolving knowledge appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
       "id": "release_anthropic_cyber_eval_incidents_20260730",
       "sourceId": "src_anthropic",
       "canonicalUrl": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
@@ -733,62 +789,6 @@
         }
       ],
       "mediaType": "article"
-    },
-    {
-      "id": "item_edf74927e8bf18460382",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
-      "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
-      "publishedAt": "2026-07-30T16:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-07-30T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "EvoLib Transforms Experience Into Evolving Knowledge for LLMs",
-        "zh-Hans": "EvoLib 将经验沉淀为大语言模型可持续更新的知识"
-      },
-      "summary": {
-        "en": "EvoLib addresses the limitation that LLMs do not get smarter just by remembering more, instead turning experience into evolving knowledge through reusable skills and insights that help models adapt across tasks after deployment.",
-        "zh-Hans": "EvoLib解决了大语言模型仅通过记忆更多内容无法变得更智能的局限，通过可重用技能和洞察将经验转化为演进知识，帮助模型在部署后跨任务适应。"
-      },
-      "category": "research_science",
-      "tags": [
-        "knowledge evolution",
-        "reusable skills",
-        "experience learning"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Microsoft Research",
-      "org": "Microsoft Research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "freshnessScore": 8,
-      "importanceScore": 75,
-      "importance": 75,
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_edf74927e8bf18460382ac67",
-          "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-07-30T16:00:00.000Z",
-          "evidenceSnippet": "LLMs do not get smarter just by remembering more. EvoLib turns experience into evolving knowledge, taking reusable skills and insights that help models learn and adapt across tasks long after deployment. The post EvoLib: Turning experience into evolving knowledge appeared first on Microsoft Research ."
-        }
-      ]
     },
     {
       "id": "release_mistral_ocr4_20260623",
