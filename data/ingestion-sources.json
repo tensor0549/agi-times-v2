@@ -393,16 +393,32 @@
       "scope": "community_projects",
       "enabled": true,
       "authEnv": "GITHUB_TOKEN",
-      "query": {
-        "q": "topic:artificial-intelligence pushed:>={windowStart}",
-        "sort": "stars",
-        "order": "desc",
-        "per_page": 100
-      },
       "rateLimitHeader": "x-ratelimit-remaining",
       "healthUrl": "https://api.github.com/search/repositories",
       "language": "en",
-      "priority": 0.82
+      "priority": 0.82,
+      "queries": [
+        {
+          "id": "active-established",
+          "q": "topic:artificial-intelligence pushed:>={windowStart} stars:>=500",
+          "sort": "stars",
+          "order": "desc",
+          "per_page": 100
+        },
+        {
+          "id": "new-rising",
+          "q": "topic:artificial-intelligence created:>={windowStart} stars:>=10",
+          "sort": "stars",
+          "order": "desc",
+          "per_page": 100
+        }
+      ],
+      "trendMetrics": [
+        "stargazers_count",
+        "forks_count",
+        "pushed_at",
+        "created_at"
+      ]
     },
     {
       "id": "ingest_huggingface_models",
@@ -418,7 +434,19 @@
       },
       "healthUrl": "https://huggingface.co/api/models",
       "language": "en",
-      "priority": 0.86
+      "priority": 0.86,
+      "detailUrlTemplate": "https://huggingface.co/api/models/{modelId}",
+      "trendMetrics": [
+        "trendingScore",
+        "likes",
+        "downloads",
+        "createdAt",
+        "lastModified"
+      ],
+      "dedupeBy": [
+        "id",
+        "base_model"
+      ]
     }
   ]
 }
