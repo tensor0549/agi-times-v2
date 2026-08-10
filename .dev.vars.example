@@ -1,0 +1,2 @@
+# Copy to .dev.vars for local Worker secrets. Never commit .dev.vars.
+POSTHOG_API_KEY=phc_replace_me
