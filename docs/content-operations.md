@@ -65,4 +65,6 @@ Before enabling a new source wave, a dry run must report:
 - GitHub/Hugging Face project metrics and a real source timestamp, never the request time;
 - no more than two candidates per source entering a publication batch.
 
+Run `npm run content:ingest:accept` after ingestion and broad/community classification. The acceptance gate keys health by the ingestion config `id`, not by registry `sourceId`: multiple endpoints may intentionally belong to one registry source (for example, a publisher blog and its community API), and collapsing them would hide endpoint failures. Health records must use safe failure codes rather than raw errors or item URLs.
+
 A source returning valid HTTP but zero parsed entries is degraded, not healthy. Broad feeds may not enter the writer prompt until AI relevance classification passes. Runtime health belongs in private D1/operational state; do not rewrite configuration timestamps to simulate success.
