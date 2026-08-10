@@ -22,7 +22,9 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
   for (const [id, previous] of oldFeed) {
     const current = nextFeed.get(id);
     if (!current) continue; // Retention may remove the oldest records.
-    if (stable(previous) !== stable(current)) errors.push(`${id}: existing feed item was mutated`);
+    const comparablePrevious = { ...previous };
+    if (previous.featured === true && (!previous.featuredUntil || Date.parse(previous.featuredUntil) <= now || Date.parse(previous.featuredUntil) > Date.parse(previous.publishedAt) + DAY_MS)) comparablePrevious.featured = false;
+    if (stable(comparablePrevious) !== stable(current)) errors.push(`${id}: existing feed item was mutated`);
   }
 
   const oldUrls = new Set((baseFeed?.items ?? []).map((item) => item.canonicalUrl ?? item.url));

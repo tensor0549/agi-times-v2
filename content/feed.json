@@ -7,8 +7,120 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T16:48:06.891Z",
+  "generatedAt": "2026-08-10T17:26:08.040Z",
   "items": [
+    {
+      "id": "item_13c6b5c4068aadbfbaa4",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06410",
+      "url": "https://arxiv.org/abs/2608.06410",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ADIAS Framework Automates Agent Design Through Issue-Centric Optimization",
+        "zh-Hans": "ADIAS框架通过问题导向优化实现智能体设计自动化"
+      },
+      "summary": {
+        "en": "ADIAS introduces issue-centric agent optimization that maintains persistent issue states to guide repair progress, outperforming baselines by 25.2% across five interactive benchmarks through focused full-code modification.",
+        "zh-Hans": "ADIAS引入问题导向的智能体优化方法，维护持久问题状态来指导修复进展，在五个交互基准测试中平均超越基线25.2%。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent design",
+        "automated optimization",
+        "interactive systems"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 88,
+      "importanceScore": 85,
+      "importance": 85,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_13c6b5c4068aadbfbaa4b9dc",
+          "url": "https://arxiv.org/abs/2608.06410",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06410v1 Announce Type: new Abstract: Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to guide optimization, rather than re-derived from candidate history in each round. We instantiate the formulation in ADIAS, a framework for automated full-code agent design with two mechanisms. A persistent issue state maintains stable issue identities, lifecycle status, supporting evidence, and intervention-outcome histories. Issue-guided optimization uses this state to jointly propose repair targets and revision directions for subsequent focused full-code modification. Across five interactive benchmarks, ADIAS outperforms the strongest baseline by 25.2% on average and achieves consistent gain"
+        }
+      ]
+    },
+    {
+      "id": "item_36ceb5b8982b00a4be18",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06474",
+      "url": "https://arxiv.org/abs/2608.06474",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "WebGrader Develops Programmatic Grading for Web Development Training",
+        "zh-Hans": "WebGrader为网页开发训练开发程序化评分系统"
+      },
+      "summary": {
+        "en": "WebGrader autonomously derives interaction flows from website requests, represents them as executable Flow Contracts, and discovers reusable verifier skills through a residual-driven offline loop for RL training.",
+        "zh-Hans": "WebGrader自主从网站需求中推导交互流程，将其表示为可执行流程契约，并通过残差驱动的离线循环发现可重用验证技能。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "web development",
+        "reinforcement learning",
+        "programmatic grading"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 88,
+      "importanceScore": 80,
+      "importance": 80,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_36ceb5b8982b00a4be18b536",
+          "url": "https://arxiv.org/abs/2608.06474",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
+        }
+      ]
+    },
     {
       "id": "release_anthropic_fable5_bio_safeguards_20260807",
       "sourceId": "src_anthropic",
@@ -194,6 +306,174 @@
       "mediaType": "article"
     },
     {
+      "id": "item_b7821e4e183d8870d042",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-03T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
+        "zh-Hans": "微软发布Orchard框架支持可扩展智能体AI研究"
+      },
+      "summary": {
+        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
+        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "framework",
+        "scalable ai",
+        "open source"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 20,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b7821e4e183d8870d042655a",
+          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-03T16:00:00.000Z",
+          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_1d97ce9901e405acee5e",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/echoverse-deep-evolving-environments-for-computer-use-agents/",
+      "url": "https://www.microsoft.com/en-us/research/blog/echoverse-deep-evolving-environments-for-computer-use-agents/",
+      "publishedAt": "2026-07-30T17:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-07-30T17:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Echoverse Creates Evolving Environments for Computer-Use Agent Training",
+        "zh-Hans": "Echoverse为计算机使用智能体训练创建演进环境"
+      },
+      "summary": {
+        "en": "Echoverse addresses computer-use AI agents' struggles with multi-step workflows by training them in realistic environments that evolve alongside tasks and tests, rather than simply providing more training tasks.",
+        "zh-Hans": "Echoverse通过在与任务和测试同步演进的真实环境中训练智能体，解决计算机使用AI智能体在多步骤工作流程中的困难。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "computer use",
+        "evolving environments",
+        "multi-step workflows"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 8,
+      "importanceScore": 70,
+      "importance": 70,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1d97ce9901e405acee5e79d3",
+          "url": "https://www.microsoft.com/en-us/research/blog/echoverse-deep-evolving-environments-for-computer-use-agents/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-07-30T17:00:00.000Z",
+          "evidenceSnippet": "Computer-use AI agents struggle with multi-step workflows like email and customer support. Echoverse trains agents in realistic environments rather than simply providing more training tasks, helping them improve as the tasks, tests, and environments evolve. The post Echoverse: Deep, evolving environments for computer-use agents appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_edf74927e8bf18460382",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+      "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+      "publishedAt": "2026-07-30T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-07-30T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "EvoLib Transforms Experience Into Evolving Knowledge for LLMs",
+        "zh-Hans": "EvoLib将经验转化为大语言模型的演进知识"
+      },
+      "summary": {
+        "en": "EvoLib addresses the limitation that LLMs do not get smarter just by remembering more, instead turning experience into evolving knowledge through reusable skills and insights that help models adapt across tasks after deployment.",
+        "zh-Hans": "EvoLib解决了大语言模型仅通过记忆更多内容无法变得更智能的局限，通过可重用技能和洞察将经验转化为演进知识，帮助模型在部署后跨任务适应。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "knowledge evolution",
+        "reusable skills",
+        "experience learning"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 8,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_edf74927e8bf18460382ac67",
+          "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-07-30T16:00:00.000Z",
+          "evidenceSnippet": "LLMs do not get smarter just by remembering more. EvoLib turns experience into evolving knowledge, taking reusable skills and insights that help models learn and adapt across tasks long after deployment. The post EvoLib: Turning experience into evolving knowledge appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
       "id": "release_anthropic_cyber_eval_incidents_20260730",
       "sourceId": "src_anthropic",
       "canonicalUrl": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
@@ -244,7 +524,7 @@
       "freshnessScore": 7,
       "importance": 97,
       "verification": "verified_first_party",
-      "featured": true,
+      "featured": false,
       "citations": [
         {
           "id": "cit_release_anthropic_cyber_eval_incidents_20260730",

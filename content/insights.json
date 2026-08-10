@@ -7,8 +7,149 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T16:48:06.925Z",
+  "generatedAt": "2026-08-10T17:26:08.040Z",
   "items": [
+    {
+      "id": "insight_agent-optimization-mechanisms-2026_20260810",
+      "slug": "agent-optimization-mechanisms-2026",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "Complementary Mechanisms Emerge for Engineering Adaptive AI Agents",
+        "zh-Hans": "工程化自适应AI智能体的互补机制涌现"
+      },
+      "dek": {
+        "en": "Recent projects demonstrate distinct external mechanisms for agent improvement through issue tracking, environment evolution, programmatic grading, and reusable experience systems.",
+        "zh-Hans": "最新项目展示了通过问题跟踪、环境演进、程序化评分和可重用经验系统改进智能体的不同外部机制。"
+      },
+      "body": {
+        "en": "Multiple research initiatives are developing complementary external mechanisms for engineering more capable AI agents. ADIAS introduces issue-centric optimization that maintains persistent issue states to guide repair progress [^candidate_13c6b5c4068aadbfbaa4b9dc], while WebGrader creates programmatic grading systems that autonomously derive interaction flows and discover reusable verifier skills [^candidate_36ceb5b8982b00a4be18b536]. Microsoft's infrastructure projects provide foundational support through Orchard's reusable framework for agent training and evaluation [^candidate_b7821e4e183d8870d042655a], Echoverse's evolving environments for computer-use training [^candidate_1d97ce9901e405acee5e79d3], and EvoLib's system for transforming experience into evolving knowledge [^candidate_edf74927e8bf18460382ac67]. These approaches represent distinct engineering strategies rather than fundamental architectural advances, focusing on external optimization loops, grading automation, and experience consolidation mechanisms.",
+        "zh-Hans": "多个研究项目正在开发工程化更强能力AI智能体的互补外部机制。ADIAS引入问题导向优化，维护持久问题状态来指导修复进展[^candidate_13c6b5c4068aadbfbaa4b9dc]，而WebGrader创建程序化评分系统，自主推导交互流程并发现可重用验证技能[^candidate_36ceb5b8982b00a4be18b536]。微软的基础设施项目通过Orchard的可重用智能体训练评估框架[^candidate_b7821e4e183d8870d042655a]、Echoverse的计算机使用训练演进环境[^candidate_1d97ce9901e405acee5e79d3]，以及EvoLib的经验转化为演进知识系统[^candidate_edf74927e8bf18460382ac67]提供基础支持。这些方法代表了不同的工程策略而非根本性架构进步，专注于外部优化循环、评分自动化和经验整合机制。"
+      },
+      "publishedAt": "2026-08-10T17:26:08.040Z",
+      "updatedAt": "2026-08-10T17:26:08.040Z",
+      "topics": [
+        "agent optimization",
+        "automated systems",
+        "training infrastructure"
+      ],
+      "claims": [
+        {
+          "id": "adias_issue_centric",
+          "type": "fact",
+          "text": {
+            "en": "ADIAS introduces issue-centric agent optimization that maintains persistent issue states to guide repair progress, outperforming baselines by 25.2% across five interactive benchmarks",
+            "zh-Hans": "ADIAS引入问题导向的智能体优化，维护持久问题状态来指导修复进展，在五个交互基准测试中超越基线25.2%"
+          },
+          "citationIds": [
+            "candidate_13c6b5c4068aadbfbaa4b9dc"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "webgrader_mechanisms",
+          "type": "fact",
+          "text": {
+            "en": "WebGrader autonomously derives interaction flows from website requests and discovers reusable verifier skills through a residual-driven offline loop",
+            "zh-Hans": "WebGrader自主从网站需求推导交互流程，并通过残差驱动的离线循环发现可重用验证技能"
+          },
+          "citationIds": [
+            "candidate_36ceb5b8982b00a4be18b536"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "microsoft_infrastructure",
+          "type": "fact",
+          "text": {
+            "en": "Microsoft's projects provide infrastructure through Orchard's reusable framework, Echoverse's evolving environments, and EvoLib's experience-to-knowledge transformation system",
+            "zh-Hans": "微软项目通过Orchard的可重用框架、Echoverse的演进环境和EvoLib的经验转知识系统提供基础设施"
+          },
+          "citationIds": [
+            "candidate_b7821e4e183d8870d042655a",
+            "candidate_1d97ce9901e405acee5e79d3",
+            "candidate_edf74927e8bf18460382ac67"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "engineering_strategies",
+          "type": "inference",
+          "text": {
+            "en": "These approaches represent distinct engineering strategies focusing on external optimization loops, grading automation, and experience consolidation mechanisms rather than fundamental architectural advances",
+            "zh-Hans": "这些方法代表了专注于外部优化循环、评分自动化和经验整合机制的不同工程策略，而非根本性架构进步"
+          },
+          "citationIds": [
+            "candidate_13c6b5c4068aadbfbaa4b9dc",
+            "candidate_36ceb5b8982b00a4be18b536",
+            "candidate_edf74927e8bf18460382ac67"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_13c6b5c4068aadbfbaa4b9dc",
+          "feedItemId": "item_13c6b5c4068aadbfbaa4",
+          "title": "ADIAS: Automated Design of Interactive Agentic Systems",
+          "url": "https://arxiv.org/abs/2608.06410",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06410v1 Announce Type: new Abstract: Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to guide optimization, rather than re-derived from candidate history in each round. We instantiate the formulation in ADIAS, a framework for automated full-code agent design with two mechanisms. A persistent issue state maintains stable issue identities, lifecycle status, supporting evidence, and intervention-outcome histories. Issue-guided optimization uses this state to jointly propose repair targets and revision directions for subsequent focused full-code modification. Across five interactive benchmarks, ADIAS outperforms the strongest baseline by 25.2% on average and achieves consistent gain"
+        },
+        {
+          "id": "candidate_36ceb5b8982b00a4be18b536",
+          "feedItemId": "item_36ceb5b8982b00a4be18",
+          "title": "WebGrader: Training LLMs for Web Development with Self-Evolving Programmatic Grader",
+          "url": "https://arxiv.org/abs/2608.06474",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
+        },
+        {
+          "id": "candidate_b7821e4e183d8870d042655a",
+          "feedItemId": "item_b7821e4e183d8870d042",
+          "title": "Orchard: An open framework for scalable agentic AI",
+          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-03T16:00:00.000Z",
+          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+        },
+        {
+          "id": "candidate_1d97ce9901e405acee5e79d3",
+          "feedItemId": "item_1d97ce9901e405acee5e",
+          "title": "Echoverse: Deep, evolving environments for computer-use agents",
+          "url": "https://www.microsoft.com/en-us/research/blog/echoverse-deep-evolving-environments-for-computer-use-agents/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-07-30T17:00:00.000Z",
+          "evidenceSnippet": "Computer-use AI agents struggle with multi-step workflows like email and customer support. Echoverse trains agents in realistic environments rather than simply providing more training tasks, helping them improve as the tasks, tests, and environments evolve. The post Echoverse: Deep, evolving environments for computer-use agents appeared first on Microsoft Research ."
+        },
+        {
+          "id": "candidate_edf74927e8bf18460382ac67",
+          "feedItemId": "item_edf74927e8bf18460382",
+          "title": "EvoLib: Turning experience into evolving knowledge",
+          "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-07-30T16:00:00.000Z",
+          "evidenceSnippet": "LLMs do not get smarter just by remembering more. EvoLib turns experience into evolving knowledge, taking reusable skills and insights that help models learn and adapt across tasks long after deployment. The post EvoLib: Turning experience into evolving knowledge appeared first on Microsoft Research ."
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-08-10T17:26:08.040Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-08-10T17:25:41.441Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_safety_moves_into_runtime_20260810",
       "slug": "frontier-safety-moves-into-the-runtime",

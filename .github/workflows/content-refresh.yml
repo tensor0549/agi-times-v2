@@ -1,0 +1,121 @@
+name: Current content publisher
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-publisher-main
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: '22'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+
+      - name: Fetch current item-level source records
+        run: npm run content:ingest
+
+      - name: Decide whether a new publication can be assembled
+        id: candidates
+        shell: bash
+        run: |
+          count="$(node -e "const x=require('./content/drafts/ingested.json'); process.stdout.write(String(x.candidates?.length ?? 0))")"
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          if [ "$count" -ge 3 ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            echo "Only $count unseen current candidates; preserving existing timestamps and skipping publication."
+          fi
+
+      - name: Generate bilingual feed items and a cited Insight
+        if: steps.candidates.outputs.publish == 'true'
+        run: npm run content:generate-current
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'anthropic/claude-sonnet-4' }}
+
+      - name: Reject non-incremental, unsupported, or unnatural output
+        if: steps.candidates.outputs.publish == 'true'
+        run: npm run content:verify-incremental
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'anthropic/claude-sonnet-4' }}
+          OPENROUTER_REVIEW_MODEL: ${{ vars.OPENROUTER_REVIEW_MODEL || 'openai/gpt-4.1' }}
+
+      - name: Run reproducible publication gates
+        if: steps.candidates.outputs.publish == 'true'
+        run: |
+          npm run content:validate
+          npm run content:editorial-validate
+          npm run content:links
+          npm run insight:daily-check
+          npm test
+          npm run build
+
+      - name: Ensure generator touched only publishable content files
+        if: steps.candidates.outputs.publish == 'true'
+        shell: bash
+        run: |
+          unexpected="$(git diff --name-only | grep -Ev '^(content/feed\.json|content/insights\.json)$' || true)"
+          if [ -n "$unexpected" ]; then
+            echo "Unexpected generated changes:"
+            echo "$unexpected"
+            exit 1
+          fi
+          git diff --quiet -- content/feed.json content/insights.json && {
+            echo "Generator reported work but produced no content diff."
+            exit 1
+          }
+
+      - name: Commit the validated bundle locally
+        if: steps.candidates.outputs.publish == 'true'
+        shell: bash
+        run: |
+          git config user.name "agi-times-publisher[bot]"
+          git config user.email "agi-times-publisher[bot]@users.noreply.github.com"
+          git add content/feed.json content/insights.json
+          git commit -m "content: publish current bilingual update $(date -u +%Y-%m-%dT%H:%MZ)"
+          git fetch origin main
+          git rebase origin/main
+          npm run content:validate
+          npm run content:editorial-validate
+          npm run insight:daily-check
+
+      - name: Apply the exact validated bundle to D1
+        if: steps.candidates.outputs.publish == 'true'
+        run: npm run content:sync:remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Push content commit and trigger production deployment
+        if: steps.candidates.outputs.publish == 'true'
+        run: git push origin HEAD:main
+
+      - name: Verify existing daily Insight on a no-op run
+        if: steps.candidates.outputs.publish != 'true'
+        run: |
+          npm run content:validate
+          npm run content:editorial-validate
+          npm run insight:daily-check
+
+      - name: Production health check
+        run: curl --fail --retry 5 --retry-delay 5 https://agitime.ai/api/v1/health
