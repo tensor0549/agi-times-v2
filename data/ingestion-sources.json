@@ -430,7 +430,7 @@
       },
       "ranking": {
         "activeEstablished": "health_only: stars + forks + pushed_at; excluded from publication without release/tag provenance or persisted velocity",
-        "newRising": "created_at within window; order by stars, forks, then created_at freshness; independent AGI relevance classification required"
+        "newRising": "created_at within window; publication order uses created_at freshness; stars and forks are retained as trend context; independent AGI relevance classification required"
       }
     },
     {
@@ -467,7 +467,7 @@
         "requireAgIRelevanceReview": true
       },
       "ranking": {
-        "formula": "created_at within window; API trendingScore, likes, downloads, then creation freshness; independent AGI relevance classification required"
+        "formula": "created_at within window; publication order uses creation freshness; API trendingScore, likes and downloads are retained as trend context; independent AGI relevance classification required"
       }
     },
     {
