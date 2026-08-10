@@ -11,6 +11,9 @@ describe('safe article enrichment fetch', () => {
     await expect(assertPublicHttps('https://[::ffff:7f00:1]/post')).rejects.toThrow(/private|non-routable/);
     await expect(assertPublicHttps('https://[ff02::1]/post')).rejects.toThrow(/private|non-routable/);
     await expect(assertPublicHttps('https://[2001:db8::1]/post')).rejects.toThrow(/private|non-routable/);
+    await expect(assertPublicHttps('https://198.51.100.8/post')).rejects.toThrow(/private|non-routable/);
+    await expect(assertPublicHttps('https://203.0.113.8/post')).rejects.toThrow(/private|non-routable/);
+    for (const address of ['::a9fe:a9fe', '::7f00:1', '64:ff9b::a9fe:a9fe', '64:ff9b::7f00:1', '2002:a9fe:a9fe::', '2002:7f00:1::']) await expect(assertPublicHttps(`https://[${address}]/post`)).rejects.toThrow(/private|non-routable/);
     await expect(assertPublicHttps('https://evil.example/post', publicLookup, ['example.com'])).rejects.toThrow(/allowlist/);
   });
 
@@ -41,8 +44,15 @@ describe('safe article enrichment fetch', () => {
     await expect(safeFetchHtml('https://example.com/post', { lookupImpl: publicLookup, fetchImpl: async () => new Response('{}', { headers: { 'content-type': 'application/json' } }) })).rejects.toThrow(/content type/);
   });
 
-  it('propagates timeout aborts from a stalled fetch', async () => {
-    const fetchImpl = (_url, options) => new Promise((_resolve, reject) => options.signal.addEventListener('abort', () => reject(options.signal.reason), { once: true }));
-    await expect(safeFetchHtml('https://example.com/post', { timeoutMs: 10, lookupImpl: publicLookup, fetchImpl })).rejects.toThrow();
+  it('uses one end-to-end deadline for initial DNS, redirect DNS, requests and body', async () => {
+    const stalledLookup = () => new Promise(() => {});
+    await expect(safeFetchHtml('https://example.com/post', { timeoutMs: 15, lookupImpl: stalledLookup, fetchImpl: vi.fn() })).rejects.toThrow(/deadline/);
+    let lookups = 0;
+    const redirectLookup = () => ++lookups === 1 ? Promise.resolve([{ address: '93.184.216.34', family: 4 }]) : new Promise(() => {});
+    await expect(safeFetchHtml('https://example.com/post', { timeoutMs: 20, lookupImpl: redirectLookup, allowedHosts: ['example.com'], fetchImpl: async () => new Response(null, { status: 302, headers: { location: '/next' } }) })).rejects.toThrow(/deadline/);
+    const slowRedirect = async () => { await new Promise((resolve) => setTimeout(resolve, 12)); return new Response(null, { status: 302, headers: { location: '/again' } }); };
+    await expect(safeFetchHtml('https://example.com/post', { timeoutMs: 25, maxRedirects: 5, lookupImpl: publicLookup, allowedHosts: ['example.com'], fetchImpl: slowRedirect })).rejects.toThrow(/deadline/);
+    const stalledBody = new ReadableStream({ start() {} });
+    await expect(safeFetchHtml('https://example.com/post', { timeoutMs: 15, lookupImpl: publicLookup, fetchImpl: async () => new Response(stalledBody, { headers: { 'content-type': 'text/html' } }) })).rejects.toThrow(/deadline/);
   });
 });
