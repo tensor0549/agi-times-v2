@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { assertPublicHttps, safeFetchHtml } from '../scripts/lib/safe-http.mjs';
+import { assertPublicHttps, safeFetchHtml, safeFetchXml } from '../scripts/lib/safe-http.mjs';
 
 const publicLookup = async () => [{ address: '93.184.216.34', family: 4 }];
 
@@ -42,6 +42,12 @@ describe('safe article enrichment fetch', () => {
     expect(lookups).toBe(1);
     const loop = async () => new Response(null, { status: 302, headers: { location: '/again' } });
     await expect(safeFetchHtml('https://example.com/post', { maxRedirects: 2, lookupImpl: publicLookup, fetchImpl: loop, allowedHosts: ['example.com'] })).rejects.toThrow(/Too many redirects/);
+  });
+
+  it('applies the same pinned transport and caps to RSS/Atom bodies', async () => {
+    const xml = '<rss><channel><item><title>Current item</title></item></channel></rss>';
+    await expect(safeFetchXml('https://example.com/feed.xml', { lookupImpl: publicLookup, fetchImpl: async () => new Response(xml, { headers: { 'content-type': 'application/rss+xml' } }) })).resolves.toMatchObject({ html: xml });
+    await expect(safeFetchXml('https://example.com/feed.xml', { maxBytes: 8, lookupImpl: publicLookup, fetchImpl: async () => new Response(xml, { headers: { 'content-type': 'application/rss+xml' } }) })).rejects.toThrow(/byte limit/);
   });
 
   it('enforces streamed and declared byte caps and HTML content types', async () => {
