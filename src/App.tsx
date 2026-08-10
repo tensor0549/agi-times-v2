@@ -19,7 +19,8 @@ type Story = {
 
 type ContentLocale = { en: string; 'zh-Hans': string };
 type FeedItem = { id: string; canonicalUrl: string; publishedAt: string; title: ContentLocale; summary: ContentLocale; category: string; org: string; source: { name: string }; featured?: boolean; verification?: string };
-type InsightItem = { id: string; title: ContentLocale; dek: ContentLocale; publishedAt: string; claims: Array<{ id: string; text: ContentLocale }>; sources: Array<{ id: string; title: string; url: string; publisher: string }> };
+type InsightItem = { id: string; title: ContentLocale; dek: ContentLocale; body: ContentLocale; publishedAt: string; claims: Array<{ id: string; text: ContentLocale; citationIds: string[]; confidence: number }>; sources: Array<{ id: string; title: string; url: string; publisher: string; evidenceSnippet: string }> };
+type RegistrySource = { id: string; kind: 'organization' | 'media' | 'person' | 'project'; name: string; url: string; category: string; platform: string };
 
 const localized = (value: ContentLocale): Localized => ({ en: value.en, zh: value['zh-Hans'] });
 const mapCategory = (value: string): Exclude<Category, 'all'> => {
@@ -99,6 +100,10 @@ export function App() {
   const [feedbackSent, setFeedbackSent] = useState(false);
   const [feedbackError, setFeedbackError] = useState('');
   const [feedbackBusy, setFeedbackBusy] = useState(false);
+  const [insightOpen, setInsightOpen] = useState(false);
+  const [sourcesOpen, setSourcesOpen] = useState(false);
+  const [sourceQuery, setSourceQuery] = useState('');
+  const [sourceKind, setSourceKind] = useState<'all' | RegistrySource['kind']>('all');
   const searchRef = useRef<HTMLInputElement>(null);
   const t = copy[lang];
 
@@ -109,7 +114,7 @@ export function App() {
       if (event.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
         event.preventDefault(); searchRef.current?.focus();
       }
-      if (event.key === 'Escape') { setFeedbackOpen(false); setMobileOpen(false); }
+      if (event.key === 'Escape') { setFeedbackOpen(false); setMobileOpen(false); setInsightOpen(false); setSourcesOpen(false); }
     };
     addEventListener('keydown', onKey); return () => removeEventListener('keydown', onKey);
   }, []);
@@ -120,6 +125,11 @@ export function App() {
     return inCategory && haystack.includes(query.trim().toLowerCase());
   }), [category, query]);
   const featured = stories[0];
+  const visibleSources = useMemo(() => (registryData.sources as RegistrySource[]).filter((source) => {
+    const matchesKind = sourceKind === 'all' || source.kind === sourceKind;
+    const needle = sourceQuery.trim().toLowerCase();
+    return matchesKind && (!needle || `${source.name} ${source.category} ${source.platform}`.toLowerCase().includes(needle));
+  }).slice(0, 80), [sourceKind, sourceQuery]);
 
   async function handleFeedback(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -138,17 +148,17 @@ export function App() {
     <header className="site-header">
       <div className="header-inner">
         <a href="#top" className="wordmark" aria-label="AGI Times home"><span className="mark">A</span><span>AGI Times</span></a>
-        <nav className="desktop-nav" aria-label="Primary">
+        <nav className="desktop-nav" aria-label={lang === 'zh' ? '主导航' : 'Primary'}>
           {t.nav.map((item, i) => <a className={i === 0 ? 'active' : ''} href={i === 1 ? '#insight' : '#feed'} key={item}>{item}</a>)}
         </nav>
         <div className="header-actions">
           <button className="icon-button search-trigger" onClick={() => searchRef.current?.focus()} aria-label={t.searchShort}><Search size={18}/></button>
           <button className="language-toggle" onClick={() => { const next = lang === 'zh' ? 'en' : 'zh'; setLang(next); track('language_changed', { from: lang, to: next }); }} aria-label={lang === 'zh' ? 'Switch to English' : '切换至中文'}><Globe2 size={16}/><span>{lang === 'zh' ? 'EN' : '中'}</span></button>
           <button className="icon-button" onClick={() => { const next = theme === 'light' ? 'dark' : 'light'; setTheme(next); track('theme_changed', { from: theme, to: next }); }} aria-label={lang === 'zh' ? `切换至${theme === 'light' ? '深色' : '浅色'}模式` : `Use ${theme === 'light' ? 'dark' : 'light'} theme`}>{theme === 'light' ? <Moon size={18}/> : <Sun size={18}/>}</button>
-          <button className="icon-button mobile-menu" onClick={() => setMobileOpen(!mobileOpen)} aria-expanded={mobileOpen} aria-controls="mobile-nav">{mobileOpen ? <X size={20}/> : <Menu size={20}/>}</button>
+          <button className="icon-button mobile-menu" onClick={() => setMobileOpen(!mobileOpen)} aria-label={lang === 'zh' ? (mobileOpen ? '关闭菜单' : '打开菜单') : (mobileOpen ? 'Close menu' : 'Open menu')} aria-expanded={mobileOpen} aria-controls="mobile-nav">{mobileOpen ? <X size={20}/> : <Menu size={20}/>}</button>
         </div>
       </div>
-      {mobileOpen && <nav id="mobile-nav" className="mobile-nav" aria-label="Mobile navigation">{t.nav.map((item, i) => <a onClick={() => setMobileOpen(false)} href={i === 1 ? '#insight' : '#feed'} key={item}>{item}<ChevronRight size={17}/></a>)}</nav>}
+      {mobileOpen && <nav id="mobile-nav" className="mobile-nav" aria-label={lang === 'zh' ? '移动导航' : 'Mobile navigation'}>{t.nav.map((item, i) => <a onClick={() => setMobileOpen(false)} href={i === 1 ? '#insight' : '#feed'} key={item}>{item}<ChevronRight size={17}/></a>)}</nav>}
     </header>
 
     <main id="main">
@@ -171,11 +181,11 @@ export function App() {
         </div>
       </section>
 
-      <section className="discovery container" aria-label="Content discovery">
-        <div className="search-box"><Search size={20}/><input ref={searchRef} value={query} onChange={e => { setQuery(e.target.value); if (e.target.value.trim().length === 2) track('search_performed', { query_length: e.target.value.trim().length }); }} placeholder={t.search} aria-label={t.search}/>{query && <button onClick={() => setQuery('')} aria-label="Clear search"><X size={17}/></button>}<span className="key-hint"><Command size={13}/> K</span></div>
+      <section className="discovery container" aria-label={lang === 'zh' ? '内容检索' : 'Content discovery'}>
+        <div className="search-box"><Search size={20}/><input ref={searchRef} value={query} onChange={e => { setQuery(e.target.value); if (e.target.value.trim().length === 2) track('search_performed', { query_length: e.target.value.trim().length }); }} placeholder={t.search} aria-label={t.search}/>{query && <button onClick={() => setQuery('')} aria-label={lang === 'zh' ? '清除搜索' : 'Clear search'}><X size={17}/></button>}<span className="key-hint"><Command size={13}/> K</span></div>
         <div className="category-row" role="group" aria-label="Categories">{categories.map(cat => <button key={cat} className={category === cat ? 'selected' : ''} onClick={() => { setCategory(cat); track('filter_changed', { category: cat }); }}>{t[cat]}</button>)}</div>
         <div className="coverage-strip" id="source-index" aria-label={lang === 'zh' ? '来源索引覆盖' : 'Source index coverage'}>
-          <div><strong>{registryTotal}</strong><span>{lang === 'zh' ? '已索引来源' : 'indexed sources'}</span></div>
+          <button className="coverage-entry" onClick={() => { setSourcesOpen(true); track('source_link_clicked', { target: 'source_directory' }); }}><strong>{registryTotal}</strong><span>{lang === 'zh' ? '浏览全部来源 →' : 'browse all sources →'}</span></button>
           <div><strong>{registryCounts.organization}</strong><span>{lang === 'zh' ? '机构' : 'organizations'}</span></div>
           <div><strong>{registryCounts.media}</strong><span>{lang === 'zh' ? '媒体' : 'media outlets'}</span></div>
           <div><strong>{registryCounts.person}</strong><span>{lang === 'zh' ? '行业人物' : 'people'}</span></div>
@@ -206,14 +216,19 @@ export function App() {
           <h2>{localized(insight.title)[lang]}</h2><p>{localized(insight.dek)[lang]}</p>
           <div className="evidence"><span className="mini-label">{t.evidence}</span><div className="insight-claim">{localized(insight.claims[0].text)[lang]}</div></div>
           <div className="citation-row"><BookOpen size={15}/><span>{t.sources}</span><span>{insight.sources.map((source, index) => <span key={source.id}>{index > 0 && ' · '}<a href={source.url} target="_blank" rel="noreferrer" onClick={() => track('source_link_clicked', { source: source.publisher, insight_id: insight.id })}>{source.publisher}</a></span>)}</span></div>
-          <a className="insight-link" href="#insight" onClick={() => track('insight_opened', { insight_id: insight.id })}>{t.readInsight}<ArrowRight size={16}/></a>
+          <button className="insight-link" onClick={() => { setInsightOpen(true); track('insight_opened', { insight_id: insight.id }); }}>{t.readInsight}<ArrowRight size={16}/></button>
         </aside>
       </section>
     </main>
 
-    <footer><div className="container footer-inner"><div><div className="wordmark footer-mark"><span className="mark">A</span><span>AGI Times</span></div><p>{t.footer}</p></div><a className="footer-status" href="#source-index"><span className="live-dot"/>{lang === 'zh' ? `${registryTotal} 个来源已建立索引` : `${registryTotal} sources indexed`}</a><div className="footer-links"><a href="#feed">RSS</a><a href="https://github.com" target="_blank" rel="noreferrer"><Code2 size={17}/>GitHub</a><button onClick={() => { setFeedbackOpen(true); track('feedback_opened', { placement: 'footer' }); }}><MessageSquareText size={17}/>{t.feedback}</button></div></div></footer>
+    <footer><div className="container footer-inner"><div><div className="wordmark footer-mark"><span className="mark">A</span><span>AGI Times</span></div><p>{t.footer}</p></div><a className="footer-status" href="#source-index"><span className="live-dot"/>{lang === 'zh' ? `${registryTotal} 个来源已建立索引` : `${registryTotal} sources indexed`}</a><div className="footer-links"><a href="https://github.com/tensor0549/agi-times-v2" target="_blank" rel="noreferrer"><Code2 size={17}/>GitHub</a><button onClick={() => { setFeedbackOpen(true); track('feedback_opened', { placement: 'footer' }); }}><MessageSquareText size={17}/>{t.feedback}</button></div></div></footer>
 
-    <button className="feedback-fab" onClick={() => { setFeedbackOpen(true); track('feedback_opened', { placement: 'floating_button' }); }}><MessageSquareText size={18}/><span>{t.feedback}</span></button>
+    <button className="feedback-fab" aria-label={lang === 'zh' ? '提交反馈' : 'Send feedback'} onClick={() => { setFeedbackOpen(true); track('feedback_opened', { placement: 'floating_button' }); }}><MessageSquareText size={18}/><span>{t.feedback}</span></button>
+
+    {insightOpen && <div className="detail-backdrop" onMouseDown={e => { if (e.currentTarget === e.target) setInsightOpen(false); }}><article className="detail-panel" role="dialog" aria-modal="true" aria-labelledby="insight-detail-title"><button className="detail-close" onClick={() => setInsightOpen(false)} aria-label={lang === 'zh' ? '关闭洞察' : 'Close insight'}><X size={20}/></button><div className="detail-kicker"><Sparkles size={15}/>{t.insight} · {formatDate(insight.publishedAt, lang)}</div><h2 id="insight-detail-title">{localized(insight.title)[lang]}</h2><p className="detail-dek">{localized(insight.dek)[lang]}</p><div className="insight-body">{localized(insight.body)[lang].split('\n\n').map((paragraph, index) => <p key={index}>{paragraph.replace(/\[\^[^\]]+\]/g, '').replace(/\*\*/g, '')}</p>)}</div><h3>{lang === 'zh' ? '逐条论据与来源' : 'Claims and supporting sources'}</h3><div className="claim-list">{insight.claims.map((claim, index) => <section className="claim-card" key={claim.id}><span>{String(index + 1).padStart(2, '0')}</span><p>{localized(claim.text)[lang]}</p><div>{claim.citationIds.map(citationId => { const source = insight.sources.find(item => item.id === citationId); return source ? <a key={source.id} href={source.url} target="_blank" rel="noreferrer" onClick={() => track('source_link_clicked', { source: source.publisher, claim_id: claim.id, insight_id: insight.id })}>{source.publisher} · {source.title}<ExternalLink size={12}/></a> : null; })}</div></section>)}</div></article></div>}
+
+    {sourcesOpen && <div className="detail-backdrop" onMouseDown={e => { if (e.currentTarget === e.target) setSourcesOpen(false); }}><section className="detail-panel source-panel" role="dialog" aria-modal="true" aria-labelledby="sources-title"><button className="detail-close" onClick={() => setSourcesOpen(false)} aria-label={lang === 'zh' ? '关闭来源目录' : 'Close source directory'}><X size={20}/></button><div className="detail-kicker"><BookOpen size={15}/>{registryTotal} {lang === 'zh' ? '个来源' : 'sources'}</div><h2 id="sources-title">{lang === 'zh' ? '来源目录' : 'Source directory'}</h2><p className="detail-dek">{lang === 'zh' ? '按机构、媒体、行业人物和开源项目浏览我们的信息源索引。' : 'Browse the intelligence index across organizations, media, people, and open-source projects.'}</p><div className="directory-tools"><div className="directory-search"><Search size={17}/><input value={sourceQuery} onChange={e => setSourceQuery(e.target.value)} placeholder={lang === 'zh' ? '搜索来源、分类或平台…' : 'Search sources, categories, or platforms…'}/></div><div className="directory-filters">{(['all','organization','media','person','project'] as const).map(kind => <button className={sourceKind === kind ? 'selected' : ''} key={kind} onClick={() => setSourceKind(kind)}>{lang === 'zh' ? ({all:'全部',organization:'机构',media:'媒体',person:'人物',project:'项目'} as const)[kind] : ({all:'All',organization:'Organizations',media:'Media',person:'People',project:'Projects'} as const)[kind]}</button>)}</div></div><div className="source-results" aria-live="polite">{visibleSources.map(source => <a href={source.url} target="_blank" rel="noreferrer" key={source.id} onClick={() => track('source_link_clicked', { source_id: source.id, source_kind: source.kind })}><span className="source-kind">{source.kind.slice(0,1).toUpperCase()}</span><span><strong>{source.name}</strong><small>{source.category.replaceAll('-', ' ')} · {source.platform}</small></span><ExternalLink size={14}/></a>)}</div><p className="directory-count">{lang === 'zh' ? `显示 ${visibleSources.length} 个匹配结果（为保证性能最多显示 80 个）` : `Showing ${visibleSources.length} matches (up to 80 for performance)`}</p></section></div>}
+
     {feedbackOpen && <div className="modal-backdrop" role="presentation" onMouseDown={e => { if (e.currentTarget === e.target) setFeedbackOpen(false); }}><div className="feedback-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-title"><button className="modal-close" onClick={() => setFeedbackOpen(false)} aria-label={lang === 'zh' ? '关闭' : 'Close'}><X size={19}/></button>{feedbackSent ? <div className="sent-state"><span><Check size={25}/></span><h2>{t.sent}</h2></div> : <><span className="modal-icon"><MessageSquareText size={20}/></span><h2 id="feedback-title">{t.feedbackTitle}</h2><p>{t.feedbackSub}</p><form onSubmit={handleFeedback}><textarea name="message" required autoFocus minLength={3} placeholder={t.feedbackPlaceholder}/><input name="email" type="email" placeholder={t.email}/>{feedbackError && <div className="form-error" role="alert">{feedbackError}</div>}<div className="form-actions"><button type="button" onClick={() => setFeedbackOpen(false)}>{t.cancel}</button><button className="submit-button" type="submit" disabled={feedbackBusy}>{feedbackBusy ? (lang === 'zh' ? '发送中…' : 'Sending…') : t.send}<ArrowRight size={15}/></button></div></form></>}</div></div>}
   </div>;
 }
