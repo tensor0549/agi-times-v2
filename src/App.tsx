@@ -113,18 +113,23 @@ export function App() {
   useEffect(() => { document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en'; localStorage.setItem('agi-lang', lang); }, [lang]);
   useEffect(() => {
     const controller = new AbortController();
-    Promise.all([
-      fetch('/api/v1/feed?limit=50', { signal: controller.signal }).then(async response => response.ok ? response.json() as Promise<{ items?: Array<Record<string, any>>; generatedAt?: string }> : Promise.reject()),
-      fetch('/api/v1/insights?limit=1', { signal: controller.signal }).then(async response => response.ok ? response.json() as Promise<{ items?: Array<Record<string, any>> }> : Promise.reject()),
-    ]).then(([feed, insights]) => {
-      if (feed.items?.length) setStories(mapFeedItems(feed.items));
-      if (feed.generatedAt) setFeedGeneratedAt(feed.generatedAt);
-      const current = insights.items?.[0];
-      if (current?.title && current?.dek && current?.body) {
-        const toContentLocale = (value: Record<string, string>): ContentLocale => ({ en: value.en, 'zh-Hans': value['zh-Hans'] || value.zh });
-        setInsight({ ...current, title: toContentLocale(current.title), dek: toContentLocale(current.dek), body: toContentLocale(current.body), claims: (current.claims || []).map((claim: Record<string, any>) => ({ ...claim, text: toContentLocale(claim.text) })) } as InsightItem);
+    Promise.allSettled([
+      fetch('/api/v1/feed?limit=50', { signal: controller.signal }).then(async response => { if (!response.ok) throw new Error(`Feed ${response.status}`); return response.json() as Promise<{ items?: Array<Record<string, any>>; generatedAt?: string }>; }),
+      fetch('/api/v1/insights?limit=1', { signal: controller.signal }).then(async response => { if (!response.ok) throw new Error(`Insights ${response.status}`); return response.json() as Promise<{ items?: Array<Record<string, any>> }>; }),
+    ]).then(([feedResult, insightResult]) => {
+      if (feedResult.status === 'fulfilled') {
+        if (feedResult.value.items?.length) setStories(mapFeedItems(feedResult.value.items));
+        if (feedResult.value.generatedAt) setFeedGeneratedAt(feedResult.value.generatedAt);
       }
-    }).catch(error => { if (error instanceof Error && error.name !== 'AbortError') track('error_seen', { area: 'content_api', fallback: true }); });
+      if (insightResult.status === 'fulfilled') {
+        const current = insightResult.value.items?.[0];
+        if (current?.title && current?.dek && current?.body) {
+          const toContentLocale = (value: Record<string, string>): ContentLocale => ({ en: value.en, 'zh-Hans': value['zh-Hans'] || value.zh });
+          setInsight({ ...current, title: toContentLocale(current.title), dek: toContentLocale(current.dek), body: toContentLocale(current.body), claims: (current.claims || []).map((claim: Record<string, any>) => ({ ...claim, text: toContentLocale(claim.text) })) } as InsightItem);
+        }
+      }
+      if ([feedResult, insightResult].some(result => result.status === 'rejected' && !(result.reason instanceof Error && result.reason.name === 'AbortError'))) track('error_seen', { area: 'content_api', fallback: true });
+    });
     return () => controller.abort();
   }, []);
   useEffect(() => { track('page_viewed', { theme, language: lang }); }, []);
