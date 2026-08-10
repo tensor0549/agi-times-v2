@@ -8,6 +8,11 @@ on:
         required: false
         default: false
         type: boolean
+      publish_expanded:
+        description: 'Explicit second-stage approval to let expanded candidates reach the writer'
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: '17 * * * *'
 
@@ -21,6 +26,7 @@ concurrency:
 env:
   NODE_VERSION: '22'
   EXPANDED_INGESTION: ${{ (github.event_name == 'workflow_dispatch' && inputs.expanded_sources) || vars.EXPANDED_INGESTION_ENABLED == 'true' }}
+  EXPANDED_PUBLICATION: ${{ (github.event_name == 'workflow_dispatch' && inputs.expanded_sources && inputs.publish_expanded) || (vars.EXPANDED_INGESTION_ENABLED == 'true' && vars.EXPANDED_PUBLICATION_ENABLED == 'true') }}
 
 jobs:
   publish:
@@ -71,11 +77,25 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
+      - name: Produce sanitized expanded-run evidence
+        if: env.EXPANDED_INGESTION == 'true'
+        run: node scripts/summarize-expanded-ingestion.mjs
+
+      - name: Upload sanitized expanded-run evidence
+        if: env.EXPANDED_INGESTION == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: expanded-ingestion-evidence-${{ github.run_id }}
+          path: content/drafts/expanded-run-summary.json
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Fetch current five-feed records while expansion is disabled
         if: env.EXPANDED_INGESTION != 'true'
         run: npm run content:ingest
 
       - name: Count genuinely unseen candidates
+        if: env.EXPANDED_INGESTION != 'true' || env.EXPANDED_PUBLICATION == 'true'
         id: candidates
         shell: bash
         run: |
@@ -84,14 +104,14 @@ jobs:
           if [ "$count" -ge 1 ]; then echo "publish=true" >> "$GITHUB_OUTPUT"; else echo "publish=false" >> "$GITHUB_OUTPUT"; fi
 
       - name: Generate bilingual current content
-        if: steps.candidates.outputs.publish == 'true'
+        if: steps.candidates.outputs.publish == 'true' && (env.EXPANDED_INGESTION != 'true' || env.EXPANDED_PUBLICATION == 'true')
         run: npm run content:generate-current
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'anthropic/claude-sonnet-4' }}
 
       - name: Reject non-incremental, duplicate, unsupported, or unnatural output
-        if: steps.candidates.outputs.publish == 'true'
+        if: steps.candidates.outputs.publish == 'true' && (env.EXPANDED_INGESTION != 'true' || env.EXPANDED_PUBLICATION == 'true')
         run: npm run content:verify-incremental
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -99,7 +119,7 @@ jobs:
           OPENROUTER_REVIEW_MODEL: ${{ vars.OPENROUTER_REVIEW_MODEL || 'openai/gpt-4.1' }}
 
       - name: Run reproducible publication gates
-        if: steps.candidates.outputs.publish == 'true'
+        if: steps.candidates.outputs.publish == 'true' && (env.EXPANDED_INGESTION != 'true' || env.EXPANDED_PUBLICATION == 'true')
         run: |
           npm run content:validate
           npm run content:editorial-validate
@@ -109,7 +129,7 @@ jobs:
           npm run build
 
       - name: Audit generated diff
-        if: steps.candidates.outputs.publish == 'true'
+        if: steps.candidates.outputs.publish == 'true' && (env.EXPANDED_INGESTION != 'true' || env.EXPANDED_PUBLICATION == 'true')
         id: diff
         shell: bash
         run: |
@@ -169,11 +189,12 @@ jobs:
         run: node scripts/verify-production-content.mjs
 
       - name: Verify existing daily Insight on a no-op run
-        if: steps.candidates.outputs.publish != 'true'
+        if: steps.candidates.outputs.publish != 'true' && (env.EXPANDED_INGESTION != 'true' || env.EXPANDED_PUBLICATION == 'true')
         run: |
           npm run content:validate
           npm run content:editorial-validate
           npm run insight:daily-check
 
       - name: Production health check
+        if: (env.EXPANDED_INGESTION != 'true' || env.EXPANDED_PUBLICATION == 'true')
         run: curl --fail --retry 5 --retry-delay 5 https://agitime.ai/api/v1/health
