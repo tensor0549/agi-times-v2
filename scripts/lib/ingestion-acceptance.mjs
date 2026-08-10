@@ -28,7 +28,8 @@ const isSpecificItemUrl = (value, source, registrySource) => {
     if (!allowedHosts.has(canonical.hostname)) return false;
     if (generics.some((generic) => canonical.href === generic.href)) return false;
     const segments = canonical.pathname.split('/').filter(Boolean);
-    if (segments.length === 0 || /^(?:news|blog|blogs|category|categories|search|tag|tags|topic|topics|articles?)$/i.test(segments.at(-1))) return false;
+    if (segments.length === 0 || /^(?:news|blog|blogs|category|categories|search|tag|tags|topic|topics|articles?|help|recent)$/i.test(segments.at(-1))) return false;
+    if (source?.itemPathPattern && !(new RegExp(source.itemPathPattern).test(canonical.pathname))) return false;
     return true;
   } catch {
     return false;
@@ -51,6 +52,7 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
     if (!registrySources.has(source.sourceId)) errors.push(`${source.id}: unresolved registry sourceId`);
     if (source.healthUrl !== source.url) errors.push(`${source.id}: healthUrl must equal the exact endpoint`);
     if (source.itemHosts != null && (!Array.isArray(source.itemHosts) || source.itemHosts.some((host) => !/^(?:[a-z0-9-]+\.)+[a-z]{2,}$/i.test(host)))) errors.push(`${source.id}: itemHosts must contain bare DNS hostnames`);
+    if (source.itemPathPattern != null) try { new RegExp(source.itemPathPattern); } catch { errors.push(`${source.id}: invalid itemPathPattern`); }
   }
 
   const counts = {};
@@ -82,7 +84,9 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
     if (row.status === 'healthy' && (!Number.isInteger(row.httpStatus) || row.httpStatus < 200 || row.httpStatus >= 300)) errors.push(`${row.ingestionId ?? 'unknown'}: healthy source requires 2xx httpStatus`);
     if (!Number.isFinite(row.latencyMs) || row.latencyMs < 0) errors.push(`${row.ingestionId ?? 'unknown'}: nonnegative latencyMs required`);
     if (!Number.isInteger(row.consecutiveFailures) || row.consecutiveFailures < 0) errors.push(`${row.ingestionId ?? 'unknown'}: consecutiveFailures must be a nonnegative integer`);
-    if (['failed', 'backoff'].includes(row.status) && !parseTime(row.nextRetryAt ?? row.backoffUntil)) errors.push(`${row.ingestionId ?? 'unknown'}: failed/backed-off source requires nextRetryAt`);
+    const retryAt = parseTime(row.nextRetryAt ?? row.backoffUntil);
+    if (['failed', 'backoff'].includes(row.status) && (!retryAt || retryAt <= Math.max(now, attemptAt ?? 0))) errors.push(`${row.ingestionId ?? 'unknown'}: failed/backed-off source requires a future nextRetryAt`);
+    if (row.nextRetryAt && row.backoffUntil && row.nextRetryAt !== row.backoffUntil) errors.push(`${row.ingestionId ?? 'unknown'}: nextRetryAt and backoffUntil must match`);
     if (configured?.kind === 'github_search_api') {
       if (!Number.isFinite(row.rateRemaining) || row.rateRemaining < 0) errors.push(`${row.ingestionId}: GitHub rateRemaining required`);
       if (row.rateRemaining === 0 && row.status !== 'backoff') errors.push(`${row.ingestionId}: exhausted GitHub rate limit must enter backoff`);
@@ -97,6 +101,7 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
     if (!Number.isInteger(candidateCounts?.[field]) || candidateCounts[field] < 0) errors.push(`candidateCounts.${field} must be a nonnegative integer`);
   }
   if (candidateCounts && (candidateCounts.beforeCanonicalDedupe < candidateCounts.afterCanonicalDedupe || candidateCounts.afterCanonicalDedupe < candidateCounts.afterDiversityCap || candidateCounts.afterDiversityCap < candidateCounts.afterRelevanceClassification)) errors.push('candidateCounts must be monotonically nonincreasing');
+  if (candidateCounts?.afterDiversityCap > 120) errors.push('candidateCounts.afterDiversityCap exceeds the supervised cap of 120');
 
   const candidateUrls = new Set();
   for (const candidate of ingested.candidates ?? []) {
@@ -116,16 +121,16 @@ export function auditIngestionRun({ config, registry, ingested, health, now = Da
       if (!activityAt || activityAt > now + 300_000 || activityAt < now - windowMs) errors.push(`${candidate.id ?? 'candidate'}: stale/future/invalid project activity timestamp`);
     } else if (publishedAt && publishedAt < now - windowMs) errors.push(`${candidate.id ?? 'candidate'}: stale feed publication timestamp`);
     const classificationRequired = source.requiresAiClassification || ['github_search_api', 'huggingface_models_api'].includes(source.kind);
-    if (classificationRequired && !(candidate.classification?.relevant === true && candidate.classification?.confidence >= 0.8 && ACCEPTED_CLASSIFICATIONS.has(candidate.classification?.reasonCode))) errors.push(`${candidate.id ?? 'candidate'}: accepted broad/community classification evidence required`);
+    if (classificationRequired && !(candidate.classification?.relevant === true && candidate.classification?.confidence >= 0.8 && candidate.classification?.confidence <= 1 && ACCEPTED_CLASSIFICATIONS.has(candidate.classification?.reasonCode))) errors.push(`${candidate.id ?? 'candidate'}: accepted broad/community classification evidence required`);
     if (source.kind === 'github_search_api') {
       const pushedAt = parseTime(candidate.metrics?.pushedAt);
       const createdAt = parseTime(candidate.metrics?.createdAt);
-      if (!(Number.isFinite(candidate.metrics?.stars) && Number.isFinite(candidate.metrics?.forks) && pushedAt && createdAt && Math.abs(pushedAt - activityAt) <= 1_000 && Math.abs(createdAt - publishedAt) <= 1_000)) errors.push(`${candidate.id ?? 'candidate'}: GitHub creation and activity provenance required`);
+      if (!(Number.isFinite(candidate.metrics?.stars) && candidate.metrics.stars >= 0 && Number.isFinite(candidate.metrics?.forks) && candidate.metrics.forks >= 0 && pushedAt && createdAt && createdAt <= pushedAt && Math.abs(pushedAt - activityAt) <= 1_000 && Math.abs(createdAt - publishedAt) <= 1_000)) errors.push(`${candidate.id ?? 'candidate'}: GitHub creation and activity provenance required`);
     }
     if (source.kind === 'huggingface_models_api') {
       const modifiedAt = parseTime(candidate.metrics?.lastModified);
       const createdAt = parseTime(candidate.metrics?.createdAt);
-      if (!(Number.isFinite(candidate.metrics?.likes) && Number.isFinite(candidate.metrics?.downloads) && Number.isFinite(candidate.metrics?.trendingScore) && modifiedAt && createdAt && Math.abs(modifiedAt - activityAt) <= 1_000 && Math.abs(createdAt - publishedAt) <= 1_000)) errors.push(`${candidate.id ?? 'candidate'}: Hugging Face creation and activity provenance required`);
+      if (!(Number.isFinite(candidate.metrics?.likes) && candidate.metrics.likes >= 0 && Number.isFinite(candidate.metrics?.downloads) && candidate.metrics.downloads >= 0 && Number.isFinite(candidate.metrics?.trendingScore) && candidate.metrics.trendingScore >= 0 && modifiedAt && createdAt && createdAt <= modifiedAt && Math.abs(modifiedAt - activityAt) <= 1_000 && Math.abs(createdAt - publishedAt) <= 1_000)) errors.push(`${candidate.id ?? 'candidate'}: Hugging Face creation and activity provenance required`);
     }
   }
 

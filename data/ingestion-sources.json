@@ -484,12 +484,14 @@
       "itemHosts": [
         "arxiv.org"
       ],
+      "itemPathPattern": "^/abs/[0-9]{4}\\.[0-9]{4,5}$",
       "latestItemAt": "2026-08-10T04:00:00Z"
     }
   ],
   "updatedAt": "2026-08-10T20:19:11Z",
   "lastVerifiedAt": "2026-08-10T20:19:11Z",
   "lastVerification": {
+    "configDigest": "78215bdbde3e3d49f80e0c45c529ea8773a6b4c69e4e09091890ad58141596f1",
     "attempted": 33,
     "http200": 33,
     "blocked": 0,

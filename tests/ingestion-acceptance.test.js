@@ -89,6 +89,16 @@ describe('expanded ingestion acceptance', () => {
     ]));
   });
 
+  it('rejects impossible project chronology and negative community metrics', () => {
+    const fixture = makeFixture();
+    const source = fixture.config.sources.find((entry) => entry.id === 'github');
+    fixture.ingested.candidates.push({ id: 'bad_chronology', ingestionId: source.id, sourceId: source.sourceId, url: 'https://github.com/owner/repo', publishedAt: '2026-08-10T19:00:00Z', activityAt: '2026-08-10T18:00:00Z', classification: { relevant: true, confidence: 2, reasonCode: 'core_ai' }, metrics: { stars: -1, forks: 2, createdAt: '2026-08-10T19:00:00Z', pushedAt: '2026-08-10T18:00:00Z' } });
+    fixture.ingested.candidateCounts = { beforeCanonicalDedupe: 1, afterCanonicalDedupe: 1, afterDiversityCap: 1, afterRelevanceClassification: 1 };
+    const errors = auditIngestionRun({ ...fixture, now }).errors;
+    expect(errors).toContain('bad_chronology: accepted broad/community classification evidence required');
+    expect(errors).toContain('bad_chronology: GitHub creation and activity provenance required');
+  });
+
   it('accepts Hugging Face creation separately from current model activity', () => {
     const fixture = makeFixture();
     const source = fixture.config.sources.find((entry) => entry.id === 'hf-models');

@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 const config=JSON.parse(fs.readFileSync('data/ingestion-sources.json','utf8'));
 const registry=JSON.parse(fs.readFileSync('content/registry.json','utf8'));
 const sourceIds=new Set(registry.sources.map(source=>source.id));
@@ -24,7 +25,9 @@ if(enabledFeeds<25)errors.push(`enabled feed floor not met: ${enabledFeeds}<25`)
 if(enabledApis<2)errors.push(`GitHub/Hugging Face API floor not met: ${enabledApis}<2`);
 const verification=config.lastVerification??{};const enabledTotal=enabledFeeds+enabledApis;
 if(verification.attempted!==enabledTotal)errors.push(`lastVerification attempted count does not cover enabled endpoints: ${verification.attempted??'missing'}!=${enabledTotal}`);
-if(!Number.isInteger(verification.http200)||!Number.isInteger(verification.blocked)||!Number.isInteger(verification.failed)||verification.http200+verification.blocked+verification.failed!==verification.attempted)errors.push('lastVerification outcome counts are incomplete/inconsistent');
-const verifiedAt=Date.parse(config.lastVerifiedAt);if(!Number.isFinite(verifiedAt)||verifiedAt>now+300000)errors.push('lastVerifiedAt is invalid/future');
+if(![verification.http200,verification.blocked,verification.failed].every(value=>Number.isInteger(value)&&value>=0)||verification.http200+verification.blocked+verification.failed!==verification.attempted)errors.push('lastVerification outcome counts are incomplete/inconsistent');
+const endpointDigest=crypto.createHash('sha256').update(JSON.stringify((config.sources??[]).filter(source=>source.enabled===true).map(({id,url})=>({id,url})).sort((a,b)=>a.id.localeCompare(b.id)))).digest('hex');
+if(verification.configDigest!==endpointDigest)errors.push('lastVerification does not match the enabled endpoint config');
+const verifiedAt=Date.parse(config.lastVerifiedAt),updatedAt=Date.parse(config.updatedAt);if(!Number.isFinite(verifiedAt)||verifiedAt>now+300000||!Number.isFinite(updatedAt)||verifiedAt<updatedAt)errors.push('lastVerifiedAt is invalid, future, or older than config');
 if(errors.length){console.error(errors.join('\n'));process.exit(1)}
 console.log(`Validated ${enabledFeeds} enabled RSS/Atom sources (${current14d} published within 14d; ${stale30d} older than 30d) plus ${enabledApis} community APIs; latest endpoint verification ${verification.http200}/${verification.attempted} HTTP 200.`);
