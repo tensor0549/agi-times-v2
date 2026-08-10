@@ -200,7 +200,7 @@
       "id": "src_aleph-alpha",
       "kind": "organization",
       "name": "Aleph Alpha",
-      "url": "https://aleph-alpha.com/newsroom/",
+      "url": "https://aleph-alpha.com/en/blog/",
       "category": "frontier-ai-lab",
       "platform": "web",
       "languages": [
@@ -217,7 +217,7 @@
       "id": "src_inflection-ai",
       "kind": "organization",
       "name": "Inflection AI",
-      "url": "https://inflection.ai/news",
+      "url": "https://inflection.ai/blog",
       "category": "frontier-ai-lab",
       "platform": "web",
       "languages": [
@@ -625,7 +625,7 @@
       "id": "src_uber-ai",
       "kind": "organization",
       "name": "Uber AI",
-      "url": "https://www.uber.com/blog/research/",
+      "url": "https://www.uber.com/us/en/blog/engineering/ai/",
       "category": "industry-research-lab",
       "platform": "web",
       "languages": [
@@ -710,7 +710,7 @@
       "id": "src_naver-ai-lab",
       "kind": "organization",
       "name": "NAVER AI Lab",
-      "url": "https://naver-ai.github.io/",
+      "url": "https://naver-career.github.io/en/publications/naver-ai-lab/",
       "category": "industry-research-lab",
       "platform": "web",
       "languages": [
@@ -880,7 +880,7 @@
       "id": "src_ideogram",
       "kind": "organization",
       "name": "Ideogram",
-      "url": "https://about.ideogram.ai/updates",
+      "url": "https://docs.ideogram.ai/about-ideogram/blog-posts",
       "category": "generative-ai-lab",
       "platform": "web",
       "languages": [
@@ -1305,7 +1305,7 @@
       "id": "src_improbable",
       "kind": "organization",
       "name": "Improbable",
-      "url": "https://www.improbable.io/blog",
+      "url": "https://www.improbable.io/news",
       "category": "simulation-ai-company",
       "platform": "web",
       "languages": [
@@ -1339,7 +1339,7 @@
       "id": "src_waabi",
       "kind": "organization",
       "name": "Waabi",
-      "url": "https://waabi.ai/news/",
+      "url": "https://waabi.ai/insights",
       "category": "embodied-ai-company",
       "platform": "web",
       "languages": [
@@ -1492,7 +1492,7 @@
       "id": "src_covariant",
       "kind": "organization",
       "name": "Covariant",
-      "url": "https://covariant.ai/insights/",
+      "url": "https://covariant.ai/",
       "category": "robotics-ai-company",
       "platform": "web",
       "languages": [
@@ -1502,14 +1502,15 @@
         "digital_agi"
       ],
       "priority": 0.75,
-      "active": true,
-      "reviewedAt": "2026-08-10T16:48:06.855Z"
+      "active": false,
+      "reviewedAt": "2026-08-10T16:48:06.855Z",
+      "disabledReason": "No surviving official content archive was found during the 2026-08-10 registry audit; retain the entity without crawling its homepage."
     },
     {
       "id": "src_skild-ai",
       "kind": "organization",
       "name": "Skild AI",
-      "url": "https://www.skild.ai/blog",
+      "url": "https://www.skild.ai/blogs",
       "category": "robotics-ai-company",
       "platform": "web",
       "languages": [
@@ -1560,7 +1561,7 @@
       "id": "src_future-of-life-institute",
       "kind": "organization",
       "name": "Future of Life Institute",
-      "url": "https://futureoflife.org/news/",
+      "url": "https://futureoflife.org/archive/",
       "category": "ai-governance-nonprofit",
       "platform": "web",
       "languages": [
@@ -2070,7 +2071,7 @@
       "id": "src_ai2-incubator",
       "kind": "organization",
       "name": "AI2 Incubator",
-      "url": "https://www.ai2incubator.com/news",
+      "url": "https://aihouse.vc/articles",
       "category": "ai-startup-incubator",
       "platform": "web",
       "languages": [
@@ -2121,7 +2122,7 @@
       "id": "src_isomorphic-labs",
       "kind": "organization",
       "name": "Isomorphic Labs",
-      "url": "https://www.isomorphiclabs.com/articles",
+      "url": "https://www.isomorphiclabs.com/news",
       "category": "ai-for-science-company",
       "platform": "web",
       "languages": [
@@ -2291,7 +2292,7 @@
       "id": "src_semafor-ai",
       "kind": "media",
       "name": "Semafor AI",
-      "url": "https://www.semafor.com/topic/artificial-intelligence",
+      "url": "https://www.semafor.com/vertical/tech",
       "category": "ai-news",
       "platform": "web",
       "languages": [
@@ -2546,7 +2547,7 @@
       "id": "src_dario-amodei",
       "kind": "person",
       "name": "Dario Amodei",
-      "url": "https://www.anthropic.com/people/dario-amodei",
+      "url": "https://darioamodei.com/",
       "category": "ai-lab-executive",
       "platform": "web",
       "languages": [
@@ -2563,7 +2564,7 @@
       "id": "src_daniela-amodei",
       "kind": "person",
       "name": "Daniela Amodei",
-      "url": "https://www.anthropic.com/people/daniela-amodei",
+      "url": "https://www.linkedin.com/in/daniela-amodei-790bb22a/",
       "category": "ai-lab-executive",
       "platform": "web",
       "languages": [
@@ -2648,7 +2649,7 @@
       "id": "src_demis-hassabis",
       "kind": "person",
       "name": "Demis Hassabis",
-      "url": "https://deepmind.google/about/leadership/demis-hassabis/",
+      "url": "https://blog.google/authors/demis-hassabis/",
       "category": "ai-lab-executive-researcher",
       "platform": "web",
       "languages": [
@@ -2665,7 +2666,7 @@
       "id": "src_shane-legg",
       "kind": "person",
       "name": "Shane Legg",
-      "url": "https://deepmind.google/about/leadership/shane-legg/",
+      "url": "https://www.linkedin.com/in/shanelegg/",
       "category": "ai-researcher-founder",
       "platform": "web",
       "languages": [
@@ -2682,7 +2683,7 @@
       "id": "src_koray-kavukcuoglu",
       "kind": "person",
       "name": "Koray Kavukcuoglu",
-      "url": "https://deepmind.google/about/leadership/koray-kavukcuoglu/",
+      "url": "https://blog.google/authors/koray-kavukcuoglu/",
       "category": "ai-research-leader",
       "platform": "web",
       "languages": [
@@ -2716,7 +2717,7 @@
       "id": "src_oriol-vinyals",
       "kind": "person",
       "name": "Oriol Vinyals",
-      "url": "https://vinyals.github.io/",
+      "url": "https://research.google/people/oriolvinyals/",
       "category": "ai-researcher",
       "platform": "web",
       "languages": [
@@ -2733,7 +2734,7 @@
       "id": "src_raia-hadsell",
       "kind": "person",
       "name": "Raia Hadsell",
-      "url": "https://deepmind.google/about/leadership/raia-hadsell/",
+      "url": "https://raiahadsell.com/index.html",
       "category": "robotics-ai-researcher",
       "platform": "web",
       "languages": [
@@ -2784,7 +2785,7 @@
       "id": "src_quoc-le",
       "kind": "person",
       "name": "Quoc V. Le",
-      "url": "https://research.google/people/quocvl/",
+      "url": "https://research.google/people/quocle/",
       "category": "ai-researcher",
       "platform": "web",
       "languages": [
@@ -2801,7 +2802,7 @@
       "id": "src_blaise-aguera-y-arcas",
       "kind": "person",
       "name": "Blaise Agüera y Arcas",
-      "url": "https://research.google/people/blaisea/",
+      "url": "https://research.google/people/106776/",
       "category": "ai-researcher-executive",
       "platform": "web",
       "languages": [
@@ -2818,7 +2819,7 @@
       "id": "src_noam-shazeer",
       "kind": "person",
       "name": "Noam Shazeer",
-      "url": "https://research.google/people/noamshazeer/",
+      "url": "https://www.noamshazeer.com/",
       "category": "ai-researcher-founder",
       "platform": "web",
       "languages": [
@@ -2954,7 +2955,7 @@
       "id": "src_peter-lee",
       "kind": "person",
       "name": "Peter Lee",
-      "url": "https://www.microsoft.com/en-us/research/people/peterlee/",
+      "url": "https://www.microsoft.com/en-us/research/people/petelee/",
       "category": "ai-research-executive",
       "platform": "web",
       "languages": [
@@ -3345,7 +3346,7 @@
       "id": "src_russell-tedrake",
       "kind": "person",
       "name": "Russ Tedrake",
-      "url": "https://groups.csail.mit.edu/robotics-center/people/tedrake.html",
+      "url": "https://www.eecs.mit.edu/people/russell-tedrake/",
       "category": "robotics-ai-researcher",
       "platform": "web",
       "languages": [
@@ -3396,7 +3397,7 @@
       "id": "src_alex-kendall",
       "kind": "person",
       "name": "Alex Kendall",
-      "url": "https://wayve.ai/people/alex-kendall/",
+      "url": "https://wayve.ai/company/leadership-team/alex-kendall/",
       "category": "autonomous-systems-founder",
       "platform": "web",
       "languages": [
@@ -3481,7 +3482,7 @@
       "id": "src_jakob-uszkoreit",
       "kind": "person",
       "name": "Jakob Uszkoreit",
-      "url": "https://www.inceptive.life/team/jakob-uszkoreit",
+      "url": "https://www.linkedin.com/in/jakob-uszkoreit-b238b51/",
       "category": "ai-researcher-founder",
       "platform": "web",
       "languages": [
@@ -3668,7 +3669,7 @@
       "id": "src_jeremy-howard",
       "kind": "person",
       "name": "Jeremy Howard",
-      "url": "https://www.fast.ai/about/",
+      "url": "https://jeremy.fast.ai/",
       "category": "ai-educator-researcher",
       "platform": "web",
       "languages": [
@@ -4059,7 +4060,7 @@
       "id": "src_max-tegmark",
       "kind": "person",
       "name": "Max Tegmark",
-      "url": "https://space.mit.edu/home/tegmark/",
+      "url": "https://physics.mit.edu/faculty/max-tegmark/",
       "category": "ai-safety-researcher-founder",
       "platform": "web",
       "languages": [
@@ -4263,7 +4264,7 @@
       "id": "src_ben-garfinkel",
       "kind": "person",
       "name": "Ben Garfinkel",
-      "url": "https://www.governance.ai/about/ben-garfinkel",
+      "url": "https://www.governance.ai/team/ben-garfinkel",
       "category": "ai-governance-researcher",
       "platform": "web",
       "languages": [
@@ -4280,7 +4281,7 @@
       "id": "src_allan-dafoe",
       "kind": "person",
       "name": "Allan Dafoe",
-      "url": "https://www.governance.ai/about/allan-dafoe",
+      "url": "https://www.allandafoe.com/",
       "category": "ai-governance-researcher",
       "platform": "web",
       "languages": [
@@ -4348,7 +4349,7 @@
       "id": "src_meredith-whittaker",
       "kind": "person",
       "name": "Meredith Whittaker",
-      "url": "https://ainowinstitute.org/author/meredith-whittaker",
+      "url": "https://ainowinstitute.org/contributor/meredith-whittaker",
       "category": "ai-policy-researcher",
       "platform": "web",
       "languages": [
@@ -5331,10 +5332,10 @@
       "reviewedAt": "2026-08-10T16:48:06.855Z"
     },
     {
-      "id": "src_replicatedhq-replicate-python",
+      "id": "src_replicate-replicate-python",
       "kind": "project",
       "name": "replicate-python",
-      "url": "https://github.com/replicatedhq/replicate-python",
+      "url": "https://github.com/replicate/replicate-python",
       "category": "github-project",
       "platform": "github",
       "languages": [
@@ -6317,10 +6318,10 @@
       "reviewedAt": "2026-08-10T16:48:06.855Z"
     },
     {
-      "id": "src_minimax-ai-minimax-text-01",
+      "id": "src_minimax-ai-minimax-01",
       "kind": "project",
-      "name": "MiniMax-Text-01",
-      "url": "https://github.com/MiniMax-AI/MiniMax-Text-01",
+      "name": "MiniMax-01",
+      "url": "https://github.com/MiniMax-AI/MiniMax-01",
       "category": "github-project",
       "platform": "github",
       "languages": [
@@ -6368,10 +6369,10 @@
       "reviewedAt": "2026-08-10T16:48:06.855Z"
     },
     {
-      "id": "src_stability-ai-stablediffusion",
+      "id": "src_stability-ai-sd3-5",
       "kind": "project",
-      "name": "stablediffusion",
-      "url": "https://github.com/Stability-AI/stablediffusion",
+      "name": "sd3.5",
+      "url": "https://github.com/Stability-AI/sd3.5",
       "category": "github-project",
       "platform": "github",
       "languages": [
@@ -6674,10 +6675,10 @@
       "reviewedAt": "2026-08-10T16:48:06.855Z"
     },
     {
-      "id": "src_allenai-ai2-arc",
+      "id": "src_allenai-arc-solvers",
       "kind": "project",
-      "name": "ai2-arc",
-      "url": "https://github.com/allenai/ai2-arc",
+      "name": "ARC-Solvers",
+      "url": "https://github.com/allenai/ARC-Solvers",
       "category": "github-project",
       "platform": "github",
       "languages": [
@@ -6912,10 +6913,10 @@
       "reviewedAt": "2026-08-10T16:48:06.855Z"
     },
     {
-      "id": "src_weights-biases-wandb-cookbook",
+      "id": "src_wandb-examples",
       "kind": "project",
-      "name": "wandb-cookbook",
-      "url": "https://github.com/weights-biases/wandb-cookbook",
+      "name": "examples",
+      "url": "https://github.com/wandb/examples",
       "category": "github-project",
       "platform": "github",
       "languages": [

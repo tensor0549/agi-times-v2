@@ -14,7 +14,7 @@ pytorch/pytorch tensorflow/tensorflow jax-ml/jax keras-team/keras
 vllm-project/vllm ggml-org/llama.cpp ggerganov/whisper.cpp ml-explore/mlx ml-explore/mlx-lm
 microsoft/DeepSpeed microsoft/semantic-kernel microsoft/autogen microsoft/AI-For-Beginners microsoft/graphrag microsoft/generative-ai-for-beginners
 NVIDIA/Megatron-LM NVIDIA/TensorRT-LLM NVIDIA/NeMo NVIDIA/NeMo-Guardrails NVIDIA/cutlass
-ray-project/ray modal-labs/modal-client replicatedhq/replicate-python
+ray-project/ray modal-labs/modal-client replicate/replicate-python
 langchain-ai/langchain langchain-ai/langgraph run-llama/llama_index crewAIInc/crewAI microsoft/TaskWeaver
 microsoft/markitdown All-Hands-AI/OpenHands browser-use/browser-use modelcontextprotocol/servers
 BerriAI/litellm open-webui/open-webui lobehub/lobe-chat ChatGPTNextWeb/NextChat
@@ -29,19 +29,19 @@ QwenLM/Qwen2.5 QwenLM/Qwen-Agent QwenLM/Qwen2.5-Coder QwenLM/Qwen-VL
 mistralai/mistral-inference mistralai/mistral-common mistralai/cookbook
 deepseek-ai/DeepSeek-V3 deepseek-ai/DeepSeek-R1 deepseek-ai/Janus deepseek-ai/DeepSeek-Coder-V2
 THUDM/ChatGLM3 THUDM/GLM-4 THUDM/CogVideo
-01-ai/Yi MiniMax-AI/MiniMax-Text-01 moonshotai/Kimi-Audio
-Stability-AI/generative-models Stability-AI/stablediffusion Stability-AI/stable-audio-tools
+01-ai/Yi MiniMax-AI/MiniMax-01 moonshotai/Kimi-Audio
+Stability-AI/generative-models Stability-AI/sd3.5 Stability-AI/stable-audio-tools
 black-forest-labs/flux comfyorg/comfyui AUTOMATIC1111/stable-diffusion-webui invoke-ai/InvokeAI
 ultralytics/ultralytics open-mmlab/mmdetection open-mmlab/mmengine
 Lightning-AI/pytorch-lightning Lightning-AI/litgpt karpathy/nanoGPT karpathy/llm.c
 EleutherAI/gpt-neox EleutherAI/lm-evaluation-harness EleutherAI/pythia
-allenai/OLMo allenai/open-instruct allenai/ai2-arc
+allenai/OLMo allenai/open-instruct allenai/ARC-Solvers
 LAION-AI/Open-Assistant LAION-AI/aesthetic-predictor
 OpenBMB/MiniCPM-V OpenBMB/ChatDev InternLM/InternLM-XComposer
 PaddlePaddle/PaddleNLP PaddlePaddle/PaddleOCR
 PKU-Alignment/safe-rlhf huggingface/lerobot
 mozilla-ai/llamafile bentoml/BentoML dagster-io/dagster
-wandb/wandb weights-biases/wandb-cookbook
+wandb/wandb wandb/examples
 explosion/spaCy scikit-learn/scikit-learn apache/arrow
 ` .trim().split(/\s+/);
 
@@ -54,6 +54,11 @@ const sources = [
  ...candidates.people.map(x=>common(x.slug,'person',x.name,x.url,x.role,'web')),
  ...repos.map(repo=>common(repo.toLowerCase().replaceAll('/','-').replaceAll('.','-'),'project',repo.split('/').at(-1),`https://github.com/${repo}`,'github-project','github'))
 ];
+const covariant = sources.find((source) => source.id === 'src_covariant');
+if (covariant) {
+ covariant.active = false;
+ covariant.disabledReason = 'No surviving official content archive was found during the 2026-08-10 registry audit; retain the entity without crawling its homepage.';
+}
 const counts = sources.reduce((a,s)=>(a[s.kind]=(a[s.kind]||0)+1,a),{});
 const payload={schemaVersion:'1.0.0',generatedAt:now,counts,sources};
 fs.mkdirSync(path.join(root,'content'),{recursive:true});

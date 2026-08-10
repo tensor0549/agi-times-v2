@@ -19,8 +19,15 @@ for (const path of existing) {
   } catch (error) { errors.push(`${path}: ${error.message}`); }
 }
 if (fs.existsSync('content/feed.json')) {
+  const feedIds = new Set();
+  const feedUrls = new Set();
+  const canonical = (value) => { try { const url = new URL(value); url.hash = ''; ['utm_source','utm_medium','utm_campaign','utm_content','ref'].forEach((key) => url.searchParams.delete(key)); return url.href.replace(/\/$/, ''); } catch { return value; } };
   for (const item of read('content/feed.json').items ?? []) {
-    if (!item.id || !(item.canonicalUrl ?? item.url) || !/^https:\/\//.test(item.canonicalUrl ?? item.url)) errors.push(`feed item ${item.id ?? '?'}: specific HTTPS URL required`);
+    const itemUrl = item.canonicalUrl ?? item.url;
+    if (!item.id || !itemUrl || !/^https:\/\//.test(itemUrl)) errors.push(`feed item ${item.id ?? '?'}: specific HTTPS URL required`);
+    if (feedIds.has(item.id)) errors.push(`feed item ${item.id ?? '?'}: duplicate ID`); else feedIds.add(item.id);
+    const normalizedUrl = canonical(itemUrl);
+    if (feedUrls.has(normalizedUrl)) errors.push(`feed item ${item.id ?? '?'}: duplicate canonical URL ${normalizedUrl}`); else feedUrls.add(normalizedUrl);
     if (!localized(item.title) || !localized(item.summary)) errors.push(`feed item ${item.id ?? '?'}: canonical en + zh-Hans title/summary required`);
     if (!item.publishedAt || Number.isNaN(Date.parse(item.publishedAt))) errors.push(`feed item ${item.id ?? '?'}: valid publishedAt required`);
     else if (Date.parse(item.publishedAt) > now + futureToleranceMs) errors.push(`feed item ${item.id ?? '?'}: publishedAt is in the future`);
