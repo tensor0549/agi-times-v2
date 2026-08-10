@@ -1,3 +1,5 @@
+import { isExcludedAcademicVertical } from './relevance-policy.mjs';
+
 const DAY_MS = 86_400_000;
 
 const stable = (value) => JSON.stringify(value);
@@ -58,7 +60,7 @@ export function verifyIncrementalUpdate({ baseFeed, feed, baseInsights, insights
     if (item.citations?.length !== 1 || item.citations[0].url !== url || !item.citations[0].evidenceSnippet) errors.push(`${item.id}: one exact item-level evidence citation is required`);
     if (item.type === 'paper') {
       if (Number(item.importanceScore) < 70 || Number(item.agiRelevanceScore) < 70) errors.push(`${item.id}: academic items require importanceScore and agiRelevanceScore >= 70`);
-      if (/\b(?:degree|curriculum|course pathway|community detection|molecular dynamics|polymer|student planning)\b/i.test(`${item.title?.en ?? ''} ${item.summary?.en ?? ''} ${item.citations?.[0]?.evidenceSnippet ?? ''}`)) errors.push(`${item.id}: excluded vertical academic application`);
+      if (isExcludedAcademicVertical(item.title?.en, item.summary?.en, item.citations?.[0]?.evidenceSnippet)) errors.push(`${item.id}: excluded vertical academic application`);
     }
   }
 
