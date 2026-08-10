@@ -19,24 +19,13 @@ export function safeContext(value) {
   return Object.fromEntries(allowed.filter((key) => ['string','number','boolean'].includes(typeof input[key])).map((key) => [key, redactText(String(input[key]), 200)]));
 }
 
-export function issueBody(feedback) {
-  const context = safeContext(feedback.context_json);
-  return [
-    '## Redacted user feedback',
-    '',
-    `- Rating: ${feedback.rating ?? 'not provided'}`,
-    `- Locale: ${feedback.locale ?? 'unknown'}`,
-    `- Page: ${safePageUrl(feedback.page_url)}`,
-    `- Created: ${feedback.created_at}`,
-    '',
-    '### Message (PII-redacted)',
-    redactText(feedback.message) || '_No text message._',
-    '',
-    '### Safe context',
-    '```json', JSON.stringify(context, null, 2), '```',
-    '',
-    `<!-- feedback-id:${feedback.id} -->`,
-    '',
-    '> Raw feedback and optional contact details remain only in D1 under the retention policy. Do not paste them into this issue.',
-  ].join('\n');
+export function severityFor(feedback) {
+  if (feedback.rating != null && Number(feedback.rating) <= 2) return 'high';
+  return 'normal';
+}
+
+// First-stage handoff is intentionally opaque. No user-authored text, contact
+// details, URLs, or browser context leave D1 before a separate review gate.
+export function handoffRecord(feedback) {
+  return { feedbackId: String(feedback.id), category: 'general-feedback', severity: severityFor(feedback) };
 }

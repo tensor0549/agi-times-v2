@@ -5,7 +5,6 @@ on:
     - cron: '7,22,37,52 * * * *'
 permissions:
   contents: read
-  issues: write
 concurrency:
   group: feedback-triage
   cancel-in-progress: false
@@ -20,10 +19,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Redact and hand off unprocessed feedback
+      - name: Create opaque durable handoffs in D1
         run: node scripts/triage-feedback.mjs
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          GITHUB_TOKEN: ${{ github.token }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
