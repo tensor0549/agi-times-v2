@@ -1,7 +1,7 @@
 export type AnalyticsEvent =
   | 'page_viewed' | 'article_opened' | 'insight_opened' | 'search_performed'
   | 'filter_changed' | 'language_changed' | 'theme_changed' | 'source_link_clicked'
-  | 'feedback_submitted' | 'error_seen';
+  | 'feedback_opened' | 'feedback_submitted' | 'error_seen';
 
 const STORAGE_KEY = 'agi_times_anon_id';
 function distinctId(): string {
