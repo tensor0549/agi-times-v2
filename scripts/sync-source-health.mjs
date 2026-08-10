@@ -8,10 +8,11 @@ const root = path.resolve(import.meta.dirname, '..');
 const file = path.join(root, 'content/drafts/source-health.json');
 if (!fs.existsSync(file)) throw new Error('Missing source-health draft');
 const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-const sql = buildSourceHealthSql(data);
+const isRemote = process.argv.includes('--remote');
+const sql = buildSourceHealthSql(data, { transaction: !isRemote });
 const temp = path.join(os.tmpdir(), `agi-source-health-${process.pid}.sql`);
 fs.writeFileSync(temp, sql, { mode: 0o600 });
-const remote = process.argv.includes('--remote') ? ['--remote'] : ['--local'];
+const remote = isRemote ? ['--remote'] : ['--local'];
 try {
   const result = spawnSync(process.platform === 'win32' ? 'npx.cmd' : 'npx', ['wrangler', 'd1', 'execute', 'agi-times-v2', ...remote, '--file', temp], { stdio: 'inherit' });
   if (result.status !== 0) process.exit(result.status ?? 1);

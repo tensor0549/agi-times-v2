@@ -36,7 +36,10 @@ describe('atomic source-health activation', () => {
     db.exec("INSERT INTO source_ingestion_health(ingestion_id,source_id,source_type,enabled,last_status) VALUES ('src_hugging-face','src_hugging-face','feed',1,'healthy'),('ingest_retired','src_retired','feed',1,'healthy');");
     const current = Array.from({ length: 33 }, (_, index) => healthRow(index));
 
-    db.exec(buildSourceHealthSql({ sources: current }));
+    const localSql = buildSourceHealthSql({ sources: current });
+    expect(localSql.startsWith('BEGIN IMMEDIATE;\nUPDATE source_ingestion_health SET enabled=0;\n')).toBe(true);
+    expect(localSql.endsWith('COMMIT;\n')).toBe(true);
+    db.exec(localSql);
 
     const enabled = db.prepare('SELECT ingestion_id FROM source_ingestion_health WHERE enabled=1 ORDER BY ingestion_id').all();
     expect(enabled.map((row) => row.ingestion_id)).toEqual(current.map((row) => row.ingestionId).sort());
@@ -44,5 +47,14 @@ describe('atomic source-health activation', () => {
     expect(db.prepare("SELECT enabled FROM source_ingestion_health WHERE ingestion_id='ingest_retired'").get()).toEqual({ enabled: 0 });
     expect(db.prepare('SELECT COUNT(*) AS count FROM source_ingestion_health WHERE enabled=1').get()).toEqual({ count: 33 });
     db.close();
+  });
+
+  it('emits a remote rollback-safe batch without explicit transactions', () => {
+    const current = Array.from({ length: 33 }, (_, index) => healthRow(index));
+    const sql = buildSourceHealthSql({ sources: current }, { transaction: false });
+    expect(sql.startsWith('UPDATE source_ingestion_health SET enabled=0;\n')).toBe(true);
+    expect(sql).not.toMatch(/BEGIN|COMMIT|SAVEPOINT/);
+    expect(sql.match(/INSERT INTO source_ingestion_health/g)).toHaveLength(33);
+    expect(sql.indexOf('UPDATE source_ingestion_health SET enabled=0')).toBeLessThan(sql.indexOf('INSERT INTO source_ingestion_health'));
   });
 });
