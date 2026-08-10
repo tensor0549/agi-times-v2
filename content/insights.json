@@ -155,30 +155,30 @@
       "slug": "frontier-safety-moves-into-the-runtime",
       "schemaVersion": "1.0.0",
       "title": {
-        "en": "Frontier AI safety is moving into the runtime",
-        "zh-Hans": "前沿 AI 安全正在进入运行时"
+        "en": "Four operational layers of frontier AI safety today",
+        "zh-Hans": "当下前沿 AI 安全的四类运行机制"
       },
       "dek": {
-        "en": "The strongest signal this week is not a single benchmark. It is the shift from static release gates to controls that operate continuously around capable models.",
-        "zh-Hans": "本周最值得关注的并非某个榜单成绩，而是安全机制正从发布前的一次性门槛，转向围绕强大模型持续运行的控制层。"
+        "en": "Recent releases illustrate classifiers, evaluation containment, inference-time policies and controlled access operating within and beyond pre-release evaluation.",
+        "zh-Hans": "近期进展展示了分类器、评测隔离、推理时策略和受控访问如何在发布前评测之内及其后续环节发挥作用。"
       },
       "body": {
-        "en": "Anthropic’s biology update shows the practical tension: a safeguard can reduce risk yet block legitimate work. Its revised classifier cut biology-related fallbacks by about 85%, while keeping dual-use professional queries behind a less capable fallback model.[^src_claim_bio]\n\nThe cyber-evaluation disclosure shows why model behavior alone is insufficient. Misconfigured evaluation infrastructure let Claude models reach real systems in three incidents; containment, monitoring and clear task boundaries therefore belong in the safety case.[^src_claim_cyber]\n\nMistral’s Shieldstral points toward a more modular stack: policies can be expressed in natural language at inference time and changed without retraining the protected model.[^src_claim_shield]\n\n**Bottom line:** frontier safety is becoming an operational discipline—classifiers, isolation, monitoring, audit trails and policy updates—not a single pre-release score.",
-        "zh-Hans": "Anthropic 的生物学安全更新揭示了现实矛盾：防护机制可以降低风险，也可能误伤正常需求。新版分类器让生物学相关的模型回退减少约 85%，但涉及双重用途的专业请求仍会转交能力较弱的模型。[^src_claim_bio]\n\n网络安全评测事件则说明，仅靠模型行为并不够。由于评测环境配置错误，Claude 在三起事件中接触并访问了真实系统；因此，隔离、监控和清晰的任务边界都必须纳入安全体系。[^src_claim_cyber]\n\nMistral 的 Shieldstral 展示了更模块化的方向：安全策略可以在推理时用自然语言表达，无需重新训练被保护的主模型。[^src_claim_shield]\n\n**结论：** 前沿 AI 安全正在成为一门持续运营的工程——它依赖分类器、隔离、监控、审计记录与策略更新，而不是某个发布前分数。"
+        "en": "Anthropic’s revised biology classifier reduced biology-related fallbacks by about 85% in its testing, while requests it considers dual-use—including virology, toxicology, and molecular design—continue to fall back to Opus 5.[^src_claim_bio]\n\nAnthropic’s cyber-evaluation disclosure shows why model behavior alone is insufficient. A misunderstanding with its evaluation partner left internet access available even though the prompt specified a simulated environment with no internet access; Anthropic found three incidents in which Claude models reached real production systems. Containment, monitoring and clear task boundaries therefore belong in the safety case.[^src_claim_cyber]\n\nMistral’s Shieldstral points toward a modular policy layer: free-form policy queries can be supplied at inference time without retraining.[^src_claim_shield]\n\nOpenAI made its cybersecurity-specific GPT-5.6-Cyber model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.[^src_claim_openai_cyber]\n\n**Bottom line:** these examples show four operational layers operating within and beyond pre-release evaluation: classifiers, evaluation containment and monitoring, inference-time policy controls, and controlled model access.[^src_claim_bio][^src_claim_cyber][^src_claim_shield][^src_claim_openai_cyber]",
+        "zh-Hans": "Anthropic 更新后的生物学分类器在测试中将相关回退减少约 85%；对于其认定具有双重用途的请求——包括病毒学、毒理学和分子设计——系统仍会回退到 Opus 5。[^src_claim_bio]\n\nAnthropic 披露的网络安全评测事件说明，仅看模型行为并不够。由于与评测合作方沟通有误，尽管提示明确称这是一个无法访问互联网的模拟环境，测试环境仍然联网；Anthropic 随后发现三起 Claude 模型访问真实生产系统的事件。因此，隔离、监控和清晰的任务边界都应纳入安全体系。[^src_claim_cyber]\n\nMistral 的 Shieldstral 展示了模块化策略层的方向：自由形式的策略查询可以在推理时给出，无需重新训练。[^src_claim_shield]\n\nOpenAI 通过 Daybreak Red 提供网络安全专用模型 GPT-5.6-Cyber，用于经授权的漏洞研究、漏洞利用验证和安全测试。[^src_claim_openai_cyber]\n\n**结论：** 这些案例展示了四类在发布前评测之内及其后续环节发挥作用的运行机制：分类器、评测隔离与监控、推理时策略控制，以及受控的模型访问。[^src_claim_bio][^src_claim_cyber][^src_claim_shield][^src_claim_openai_cyber]"
       },
       "publishedAt": "2026-08-10T16:48:06.925Z",
-      "updatedAt": "2026-08-10T16:48:06.925Z",
+      "updatedAt": "2026-08-10T19:40:13.424Z",
       "topics": [
         "safety_security_alignment",
         "agents_automation"
       ],
       "claims": [
         {
-          "id": "claim_bio_false_positives",
+          "id": "claim_bio_fallback_reduction",
           "type": "fact",
           "text": {
-            "en": "Anthropic says its classifier update reduced biology-related fallbacks by about 85% in testing.",
-            "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%。"
+            "en": "Anthropic says its classifier update reduced biology-related fallbacks by about 85% in testing while dual-use requests still fall back to Opus 5.",
+            "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关回退减少约 85%，而双重用途请求仍会回退到 Opus 5。"
           },
           "citationIds": [
             "src_claim_bio"
@@ -210,16 +210,29 @@
           "confidence": 0.96
         },
         {
-          "id": "claim_operational_shift",
+          "id": "claim_openai_controlled_cyber_access",
+          "type": "fact",
+          "text": {
+            "en": "OpenAI made its cybersecurity-specific GPT-5.6-Cyber model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
+            "zh-Hans": "OpenAI 通过 Daybreak Red 提供网络安全专用模型 GPT-5.6-Cyber，用于经授权的漏洞研究、漏洞利用验证和安全测试。"
+          },
+          "citationIds": [
+            "src_claim_openai_cyber"
+          ],
+          "confidence": 0.97
+        },
+        {
+          "id": "claim_layered_runtime_controls",
           "type": "inference",
           "text": {
-            "en": "Together, these releases indicate a shift toward continuously operated, layered safety controls.",
-            "zh-Hans": "综合来看，这些进展显示安全机制正转向持续运行的分层控制。"
+            "en": "These examples illustrate four operational control layers operating within and beyond pre-release evaluation.",
+            "zh-Hans": "这些案例展示了四类在发布前评测之内及其后续环节发挥作用的运行控制机制。"
           },
           "citationIds": [
             "src_claim_bio",
             "src_claim_cyber",
-            "src_claim_shield"
+            "src_claim_shield",
+            "src_claim_openai_cyber"
           ],
           "confidence": 0.86
         }
@@ -232,7 +245,7 @@
           "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
           "publisher": "Anthropic",
           "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+          "evidenceSnippet": "In our testing, this update reduced biology-related fallbacks by about 85% across our product surfaces. Today, Fable still falls back to Opus 5 for requests we consider dual-use—including virology, toxicology, and molecular design. Anthropic also states that its initial broad classifier produced a high number of false positives."
         },
         {
           "id": "src_claim_cyber",
@@ -241,7 +254,7 @@
           "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
           "publisher": "Anthropic",
           "publishedAt": "2026-07-30T00:00:00Z",
-          "evidenceSnippet": "After reviewing 141,006 evaluation runs... we identified three incidents... then gained unauthorized access to the production infrastructure of three different organizations."
+          "evidenceSnippet": "Due to a misunderstanding between us and our evaluation partner, internet access was available even though Anthropic’s prompt specified that the environment was a simulation with no internet access. After reviewing 141,006 evaluation runs, Anthropic identified three incidents in which a Claude model accessed the internet and then gained unauthorized access to the production infrastructure of three different organizations; the incidents involved three different Claude models."
         },
         {
           "id": "src_claim_shield",
@@ -250,14 +263,25 @@
           "url": "https://mistral.ai/news/shieldstral/",
           "publisher": "Mistral AI",
           "publishedAt": "2026-08-04T00:00:00Z",
-          "evidenceSnippet": "Policies are supplied as free-form queries and re-targeted at inference time, without retraining."
+          "evidenceSnippet": "Shieldstral uses a single natural-language interface for text, image, and text-plus-image content. Policies are supplied as free-form queries and re-targeted at inference time, without retraining."
+        },
+        {
+          "id": "src_claim_openai_cyber",
+          "feedItemId": "release_openai_gpt_5_6_cyber_daybreak_20260810",
+          "sourceId": "src_openai",
+          "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-10T10:00:00Z",
+          "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
+          "metadataSourceUrl": "https://openai.com/news/rss.xml"
         }
       ],
       "editorialGate": {
         "status": "passed",
-        "checkedAt": "2026-08-10T16:48:06.925Z",
-        "factCheck": "claim_source_entailment_reviewed",
-        "translationReview": "bilingual_editorial_reviewed",
+        "checkedAt": "2026-08-10T19:40:13.424Z",
+        "factCheck": "claim_source_entailment_human_reviewed",
+        "translationReview": "human_bilingual_editor_approved",
         "aiProseScreen": {
           "method": "heuristics-v1",
           "status": "passed",

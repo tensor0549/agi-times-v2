@@ -10,6 +10,70 @@
   "generatedAt": "2026-08-10T18:27:10.419Z",
   "items": [
     {
+      "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_openai",
+      "source": {
+        "id": "src_openai",
+        "name": "OpenAI"
+      },
+      "canonicalUrl": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "publishedAt": "2026-08-10T10:00:00Z",
+      "discoveredAt": "2026-08-10T19:24:50.674Z",
+      "updatedAt": "2026-08-10T10:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "OpenAI makes GPT-5.6-Cyber available for authorized cybersecurity research",
+        "zh-Hans": "OpenAI 推出 GPT-5.6-Cyber，用于经授权的网络安全研究"
+      },
+      "summary": {
+        "en": "OpenAI made its cybersecurity-specific GPT-5.6-Cyber model available through Daybreak Red for authorized vulnerability research, exploit validation and security testing.",
+        "zh-Hans": "OpenAI 通过 Daybreak Red 提供其网络安全专用模型 GPT-5.6-Cyber，用于开展经授权的漏洞研究、漏洞利用验证和安全测试。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "cybersecurity",
+        "authorized-access",
+        "model-release"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "OpenAI",
+        "GPT-5.6-Cyber",
+        "Daybreak Red"
+      ],
+      "mediaType": "article",
+      "author": "OpenAI",
+      "org": "OpenAI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 76,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 74,
+      "relevanceReason": "A frontier-lab cybersecurity-specific model release is materially relevant to advanced capability access and misuse controls, without implying general AGI progress.",
+      "verification": "verified_first_party_feed",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_openai_daybreak_cyber_20260810",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-10T10:00:00Z",
+          "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
+          "metadataSourceUrl": "https://openai.com/news/rss.xml",
+          "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
