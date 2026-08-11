@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-11T04:07:57.939Z",
+  "generatedAt": "2026-08-11T11:10:01.974Z",
   "items": [
     {
       "id": "item_c8c1b994b5e2824039f5",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "id": "item_0a13be19d8ced07cb695",
+      "id": "item_60eee8220e878d586086",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -80,56 +80,56 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.07473",
-      "url": "https://arxiv.org/abs/2608.07473",
+      "canonicalUrl": "https://arxiv.org/abs/2608.07476",
+      "url": "https://arxiv.org/abs/2608.07476",
       "publishedAt": "2026-08-11T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-11T04:07:32.583Z",
+      "discoveredAt": "2026-08-11T11:09:50.078Z",
       "updatedAt": "2026-08-11T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Argumentative Foundation for Evaluative AI Systems",
-        "zh-Hans": "评估性AI系统的论证基础"
+        "en": "Determinization in Structure Theories: A Unified Framework via Closure, Comparability, and Joint Admissibility",
+        "zh-Hans": "结构理论中的确定化：通过闭包、可比性和联合可接受性的统一框架"
       },
       "summary": {
-        "en": "Researchers propose computational argumentation as a formal foundation for Evaluative AI that presents competing hypotheses with evidence rather than single recommendations.",
-        "zh-Hans": "研究人员提出计算论证作为评估性AI的正式基础，该系统呈现带有证据的竞争假设而非单一建议。"
+        "en": "Develops formal framework for constructing canonical interpretations from plural structure theories, distinguishing epistemic and structural plurality types with canonicalization mechanisms.",
+        "zh-Hans": "开发了从复数结构理论构建规范解释的形式框架，区分认知和结构复数类型及其规范化机制。"
       },
       "category": "research_science",
       "tags": [
-        "argumentation",
-        "explainable ai",
-        "human-centered ai"
+        "formal methods",
+        "structure theory",
+        "canonicalization"
       ],
       "topics": [
         "research_science"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Xiang Yin, Tim Miller, Nico Potyka, Antonio Rago, Francesca Toni",
+      "author": "Hai Hai Fu",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:xiang yin, tim miller, nico potyka, antonio rago, francesca toni",
+      "independenceKey": "academic:hai hai fu",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 100,
+      "freshnessScore": 93,
       "importanceScore": 75,
       "importance": 75,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "advances explainable reasoning mechanisms for AI decision support systems",
+      "agiRelevanceScore": 72,
+      "relevanceReason": "formal framework for handling non-determinism and canonicalization in inference systems",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_0a13be19d8ced07cb69597a8",
-          "url": "https://arxiv.org/abs/2608.07473",
+          "id": "candidate_60eee8220e878d586086e587",
+          "url": "https://arxiv.org/abs/2608.07476",
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-11T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.07473v1 Announce Type: new Abstract: Evaluative AI (EAI) has been recently proposed as a way to support human decision-making, not by producing a single recommendation, but by presenting competing hypotheses together with evidence for and against each. In this position paper, we advocate (computational) argumentation as a particularly suitable paradigm to provide a formal, computable foundation for forms of EAI that are explainable and contestable, setting the ground for a long-term research agenda towards distributed and human-centred EAI systems."
+          "evidenceSnippet": "arXiv:2608.07476v1 Announce Type: new Abstract: We develop a formal framework for constructing canonical interpretations from plural structure theories. A structure theory is a triple T = ({\\Sigma}, A, I) consisting of a signature, axioms, and an inference policy, whose admissible interpretation family collects all globally consistent assignments of structural conclusions. We distinguish three levels of canonicalization: closure stabilization (per-seed convergence), global completion (seed-independent convergence), and determinization (a unique admissible interpretation). Non-determinism is classified into epistemic plurality (Type E) and structural plurality (Type S), with a refined Type S-strong subclass characterized by the absence of common upper bounds. Two canonicalization mechanisms arise: operator-based completion and selector-based construction. We provide sufficient structural conditions under which these mechanisms exist, and show that pure inference-based completion reduces to a saturated closure operator under positive, non-retractive rules with an additional soundness condition. For Type E theories, closure stabilization is established, while full determinization depe"
         }
       ]
     },
@@ -192,6 +192,68 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-08-10T16:25:36.000Z",
           "evidenceSnippet": "Voice AI Is Becoming Multilingual by Default One Open Model, Twelve Languages The Latency Your Users Actually Notice Optimized for Real-Time Speech Generation Faster Doesn't Matter If It Doesn't Sound Natural Why Open Weights Matter Build Complete Voice Agents — Not Just Better Speech Get Started Every voice interaction has a latency budget. By the time a user hears your application respond, you've already spent precious milliseconds capturing audio, transcribing speech, running an LLM, retrieving context, and generating a response. Text-to-speech (TTS) is the final step — and the one users notice most. If speech generation is slow, the whole experience feels slow."
+        }
+      ]
+    },
+    {
+      "id": "item_815edfe6383208a72cfe",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
+      "publishedAt": "2026-08-10T10:05:36.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T11:09:50.078Z",
+      "updatedAt": "2026-08-10T10:05:36.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Making Knowledge Distillation Cheap Enough to Run at Scale",
+        "zh-Hans": "让知识蒸馏足够便宜以大规模运行"
+      },
+      "summary": {
+        "en": "Addresses expensive distillation recovery in large language models, focusing on compressing trillion-parameter models while maintaining capabilities through optimized distillation processes.",
+        "zh-Hans": "解决大语言模型中昂贵的蒸馏恢复问题，专注于通过优化蒸馏过程压缩万亿参数模型同时保持能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "knowledge distillation",
+        "model compression",
+        "scaling"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 79,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "enables practical deployment of large models through efficient compression techniques",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_815edfe6383208a72cfe7f7d",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-10T10:05:36.000Z",
+          "evidenceSnippet": "Why distillation recovery is expensive Two systems changes What this changes in practice Scaling to long context lengths The resulting student Knowledge distillation , training a smaller student model to match the performance of a larger teacher, is a well-known technique in Machine Learning. With the recent wave of open-source Large Language Models, such as gpt-oss , Qwen , GLM , or Kimi , it has become a mainstream research topic again. Deploying these very large models is expensive: the recent Kimi-K3 model has 2.8 trillion parameters and needs roughly 3TB of VRAM just to load. Compressing them into smaller models and recovering the original capabilities through knowledge distillation has therefore become standard practice, with companies like Nvidia ( Nemotron 3 Puzzle 75B ) or Multiverse Computing ( Hypernova 60B ) recently releasing high-quality compressed models. The distillation step is what decides most of the final quality, but it's also usually the most expensive part of the pipeline. Keeping both the teacher and student loaded, and producing a probability distribution over the entire vocabulary for every token, requires enormous amounts of VRAM, typically feasible only "
         }
       ]
     },
@@ -605,64 +667,126 @@
       ]
     },
     {
-      "id": "item_0b46c3a73d060b7d84c1",
+      "id": "item_0a13be19d8ced07cb695",
       "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
-      "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
-      "publishedAt": "2026-07-30T20:36:36.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.07473",
+      "url": "https://arxiv.org/abs/2608.07473",
+      "publishedAt": "2026-08-11T04:00:00.000Z",
       "activityAt": null,
       "discoveredAt": "2026-08-11T04:07:32.583Z",
-      "updatedAt": "2026-07-30T20:36:36.000Z",
+      "updatedAt": "2026-08-11T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Google's Science One Framework for Verifiable AI Research",
-        "zh-Hans": "谷歌可验证AI研究的Science One框架"
+        "en": "Argumentative Foundation for Evaluative AI Systems",
+        "zh-Hans": "评估性AI系统的论证基础"
       },
       "summary": {
-        "en": "Google Research introduces experimental framework designed to eliminate hallucinations in autonomous research workflows through verifiable evidence chains.",
-        "zh-Hans": "谷歌研究推出实验性框架，旨在通过可验证证据链消除自主研究工作流程中的幻觉。"
+        "en": "Researchers propose computational argumentation as a formal foundation for Evaluative AI that presents competing hypotheses with evidence rather than single recommendations.",
+        "zh-Hans": "研究人员提出计算论证作为评估性AI的正式基础，该系统呈现带有证据的竞争假设而非单一建议。"
       },
       "category": "research_science",
       "tags": [
-        "autonomous research",
-        "verifiability",
-        "chain of evidence"
+        "argumentation",
+        "explainable ai",
+        "human-centered ai"
       ],
       "topics": [
         "research_science"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
+      "author": "Xiang Yin, Tim Miller, Nico Potyka, Antonio Rago, Francesca Toni",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:xiang yin, tim miller, nico potyka, antonio rago, francesca toni",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.94,
+      "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 7,
-      "importanceScore": 88,
-      "importance": 88,
-      "agiRelevanceScore": 92,
-      "relevanceReason": "addresses critical verifiability challenges in autonomous AI research systems",
+      "freshnessScore": 100,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances explainable reasoning mechanisms for AI decision support systems",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_0b46c3a73d060b7d84c16fb2",
-          "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-07-30T20:36:36.000Z",
-          "evidenceSnippet": "Rui Meng, Research Scientist, and Tomas Pfister, Director, Google Cloud Introducing the Science One Framework, an experimental research prototype designed to eliminate hallucinations by natively building verifiable evidence chains, and CoE Audit, an automated protocol to evaluate the integrity of AI-generated papers. Large language models (LLMs) are increasingly being deployed not just as coding assistants but as autonomous agents capable of conducting end-to-end scientific research workflows. Recent systems (e.g., Sakana’s AI-Scientist , AutoResearchClaw , DeepScientist , AI-Researcher ) can review literature, formulate hypotheses, execute experiments and write complete manuscripts that are comparable to human-authored papers. However, as the surface-level quality of these AI-generated manuscripts improves, a critical structural problem has emerged: verifiability. Because current autonomous research pipelines generate text iteratively, errors introduced at any stage are amplified. Some existing systems can generate non-existent citations , exhibit misalignments between the described methods and the actual code, and report experimental scores that are not fully reproducible from th"
+          "id": "candidate_0a13be19d8ced07cb69597a8",
+          "url": "https://arxiv.org/abs/2608.07473",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-11T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.07473v1 Announce Type: new Abstract: Evaluative AI (EAI) has been recently proposed as a way to support human decision-making, not by producing a single recommendation, but by presenting competing hypotheses together with evidence for and against each. In this position paper, we advocate (computational) argumentation as a particularly suitable paradigm to provide a formal, computable foundation for forms of EAI that are explainable and contestable, setting the ground for a long-term research agenda towards distributed and human-centred EAI systems."
+        }
+      ]
+    },
+    {
+      "id": "item_3e05e1d0d8b37841dfb0",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.07480",
+      "url": "https://arxiv.org/abs/2608.07480",
+      "publishedAt": "2026-08-11T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T11:09:50.078Z",
+      "updatedAt": "2026-08-11T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Emotion in an active inference model of human driving",
+        "zh-Hans": "人类驾驶主动推理模型中的情感"
+      },
+      "summary": {
+        "en": "Proposes expanded formulation of valence and arousal for active inference models with continuous states, conditioning affective estimates on current state and predicted future outcomes.",
+        "zh-Hans": "为连续状态的主动推理模型提出了效价和唤醒的扩展公式，基于当前状态和预测未来结果调节情感估计。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "active inference",
+        "emotion modeling",
+        "continuous states"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Julian F. Schumann, Johan Engstr\\\"om, Ran Wei, Jens Kober, Martijn Wisse, Arkady Zgonnikov",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:julian f. schumann, johan engstr\\\"om, ran wei, jens kober, martijn wisse, arkady zgonnikov",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "advances emotional modeling in continuous state active inference systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3e05e1d0d8b37841dfb05ed4",
+          "url": "https://arxiv.org/abs/2608.07480",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-11T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.07480v1 Announce Type: new Abstract: Active inference has emerged as a principled framework for modeling adaptive behavior by balancing goal-directed action with uncertainty reduction. It has been successfully applied across biological and artificial systems, including recent work on human driving. However, existing active inference models of driving have yet to address an important determinant of behavior in traffic: affective state, which significantly influences decision-making. Prior work in non-traffic domains has explored active inference agents in which emotions are represented along the axes of valence and arousal in the circumplex model. However, this work has been limited to simplified settings with discrete state spaces. In this work, we propose an expanded formulation of valence and arousal that can be extracted from a more complex active inference model of driving with continuous states. In particular, we condition affective estimates not only on the current state but also on predicted future outcomes. We evaluate the proposed approach in two interactive driving scenarios and show that the resulting emotion signals correspond to affective patterns reported i"
         }
       ]
     },
@@ -779,6 +903,68 @@
       ]
     },
     {
+      "id": "item_dfb586131bf3d3cb04b4",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/muse-glimmer",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "publishedAt": "2026-08-10T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T11:09:50.078Z",
+      "updatedAt": "2026-08-10T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+        "zh-Hans": "Meta推出Muse Glimmer：本地、智能体、多模态和开源"
+      },
+      "summary": {
+        "en": "Meta releases Muse Glimmer, a 30B parameter multimodal model distilled from Muse, designed for local agentic use cases with Apache 2.0 license and day-0 ecosystem support.",
+        "zh-Hans": "Meta发布Muse Glimmer，这是一个从Muse蒸馏的300亿参数多模态模型，专为本地智能体用例设计，采用Apache 2.0许可证并提供首日生态系统支持。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multimodal",
+        "local deployment",
+        "agentic systems"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 71,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "multimodal agent capabilities with local deployment for privacy-aware applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_dfb586131bf3d3cb04b45c44",
+          "url": "https://huggingface.co/blog/muse-glimmer",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-10T00:00:00.000Z",
+          "evidenceSnippet": "Benchmarks Architecture Text Decoder Perception Encoder Transformers Text-only Inference Prompting the model with images and text Video Inference Multimodal tool calling Object Detection Llama.cpp Speculative Decoding Speculative Decoding with transformers Speculative Decoding with llama.cpp Inference Endpoints Support for Muse Glimmer vLLM with transformers backend Fine-tuning with TRL Demos Connect OpenClaw to Muse Glimmer Hey Muse Glimmer, quantize yourself Hey Muse Glimmer, deploy yourself Hey Muse Glimmer, optimize yourself Hey Muse Glimmer, research the Hub Wrapping Up Great news from the OGs of open source LLMs! Muse Glimmer, released today, is Meta’s new multimodal model, especially designed for local agentic use cases. Distilled from Muse to 30B parameters, and released under the Apache 2.0 license , it’s ideal deploying locally for privacy, reducing costs, or just hacking around. It’s intended for privacy-aware applications such as coding, document analysis, personal assistants, Claw- or Hermes-like setups. To celebrate, we are shipping with Meta day-0 support in transformers , llama.cpp , vLLM , Inference Endpoints, and other libraries. We built a few cool things and exp"
+        }
+      ]
+    },
+    {
       "id": "release_mistral_shieldstral_20260804",
       "sourceId": "src_mistral-ai",
       "canonicalUrl": "https://mistral.ai/news/shieldstral/",
@@ -838,6 +1024,68 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_0b46c3a73d060b7d84c1",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+      "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+      "publishedAt": "2026-07-30T20:36:36.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T04:07:32.583Z",
+      "updatedAt": "2026-07-30T20:36:36.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google's Science One Framework for Verifiable AI Research",
+        "zh-Hans": "谷歌可验证AI研究的Science One框架"
+      },
+      "summary": {
+        "en": "Google Research introduces experimental framework designed to eliminate hallucinations in autonomous research workflows through verifiable evidence chains.",
+        "zh-Hans": "谷歌研究推出实验性框架，旨在通过可验证证据链消除自主研究工作流程中的幻觉。"
+      },
+      "category": "research_science",
+      "tags": [
+        "autonomous research",
+        "verifiability",
+        "chain of evidence"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 7,
+      "importanceScore": 88,
+      "importance": 88,
+      "agiRelevanceScore": 92,
+      "relevanceReason": "addresses critical verifiability challenges in autonomous AI research systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_0b46c3a73d060b7d84c16fb2",
+          "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-07-30T20:36:36.000Z",
+          "evidenceSnippet": "Rui Meng, Research Scientist, and Tomas Pfister, Director, Google Cloud Introducing the Science One Framework, an experimental research prototype designed to eliminate hallucinations by natively building verifiable evidence chains, and CoE Audit, an automated protocol to evaluate the integrity of AI-generated papers. Large language models (LLMs) are increasingly being deployed not just as coding assistants but as autonomous agents capable of conducting end-to-end scientific research workflows. Recent systems (e.g., Sakana’s AI-Scientist , AutoResearchClaw , DeepScientist , AI-Researcher ) can review literature, formulate hypotheses, execute experiments and write complete manuscripts that are comparable to human-authored papers. However, as the surface-level quality of these AI-generated manuscripts improves, a critical structural problem has emerged: verifiability. Because current autonomous research pipelines generate text iteratively, errors introduced at any stage are amplified. Some existing systems can generate non-existent citations , exhibit misalignments between the described methods and the actual code, and report experimental scores that are not fully reproducible from th"
+        }
+      ]
     },
     {
       "id": "item_1d97ce9901e405acee5e",
