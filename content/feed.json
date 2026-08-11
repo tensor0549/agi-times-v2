@@ -7,8 +7,194 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T20:25:00.000Z",
+  "generatedAt": "2026-08-11T04:07:57.939Z",
   "items": [
+    {
+      "id": "item_c8c1b994b5e2824039f5",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.07474",
+      "url": "https://arxiv.org/abs/2608.07474",
+      "publishedAt": "2026-08-11T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T04:07:32.583Z",
+      "updatedAt": "2026-08-11T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Flow-by-Flow Governance for High-Velocity AI Output",
+        "zh-Hans": "高速AI输出的流程化治理方法"
+      },
+      "summary": {
+        "en": "New governance paradigm addresses structural limits of human oversight when AI output velocity exceeds cognitive capacity, controlling supervisory load without content evaluation.",
+        "zh-Hans": "新治理范式解决了当AI输出速度超过认知能力时人类监督的结构性限制，在不评估内容的情况下控制监督负荷。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "ai governance",
+        "human oversight",
+        "cognitive load"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hiroki Naito",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:hiroki naito",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 100,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental scalability constraints in AI-human interaction systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_c8c1b994b5e2824039f575c4",
+          "url": "https://arxiv.org/abs/2608.07474",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-11T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.07474v1 Announce Type: new Abstract: Prior work showed that human-in-the-loop oversight becomes structurally untenable in high-loss domains when AI output velocity V exceeds human cognitive capacity C_max. The operative constraint, however, is not V alone but V x L, where L denotes per-item cognitive load. L consists of triage, judgment, and response, which respond asymmetrically to AI capability improvement. Triage cost does not decline as models become more capable, because semantic indeterminacy is inherent in general-purpose design. Response cost is invariant to accuracy improvements. Only judgment cost faces downward pressure, and this pressure often operates by inducing omission rather than genuine reduction. Capability improvement therefore restructures L rather than reducing it. Governance mechanisms based on evaluating whether AI output is correct either delegate that evaluation to AI and inherit hallucination risk, or delegate it to humans and face the V x L ceiling. We propose Flow-by-Flow, a governance paradigm that controls supervisory load without evaluating content. A cognitive cost score based on formal, countable features imposes nonlinear costs on high-"
+        }
+      ]
+    },
+    {
+      "id": "item_0a13be19d8ced07cb695",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.07473",
+      "url": "https://arxiv.org/abs/2608.07473",
+      "publishedAt": "2026-08-11T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T04:07:32.583Z",
+      "updatedAt": "2026-08-11T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Argumentative Foundation for Evaluative AI Systems",
+        "zh-Hans": "评估性AI系统的论证基础"
+      },
+      "summary": {
+        "en": "Researchers propose computational argumentation as a formal foundation for Evaluative AI that presents competing hypotheses with evidence rather than single recommendations.",
+        "zh-Hans": "研究人员提出计算论证作为评估性AI的正式基础，该系统呈现带有证据的竞争假设而非单一建议。"
+      },
+      "category": "research_science",
+      "tags": [
+        "argumentation",
+        "explainable ai",
+        "human-centered ai"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Xiang Yin, Tim Miller, Nico Potyka, Antonio Rago, Francesca Toni",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:xiang yin, tim miller, nico potyka, antonio rago, francesca toni",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 100,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances explainable reasoning mechanisms for AI decision support systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_0a13be19d8ced07cb69597a8",
+          "url": "https://arxiv.org/abs/2608.07473",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-11T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.07473v1 Announce Type: new Abstract: Evaluative AI (EAI) has been recently proposed as a way to support human decision-making, not by producing a single recommendation, but by presenting competing hypotheses together with evidence for and against each. In this position paper, we advocate (computational) argumentation as a particularly suitable paradigm to provide a formal, computable foundation for forms of EAI that are explainable and contestable, setting the ground for a long-term research agenda towards distributed and human-centred EAI systems."
+        }
+      ]
+    },
+    {
+      "id": "item_5890b1cfd4cc38aa3885",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "publishedAt": "2026-08-10T16:25:36.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T04:07:32.583Z",
+      "updatedAt": "2026-08-10T16:25:36.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "NVIDIA Magpie TTS for Low-Latency Voice Agents",
+        "zh-Hans": "NVIDIA Magpie TTS低延迟语音代理"
+      },
+      "summary": {
+        "en": "NVIDIA releases open-weight multilingual text-to-speech model optimized for real-time voice agent applications across twelve languages.",
+        "zh-Hans": "NVIDIA发布开放权重多语言文本转语音模型，针对十二种语言的实时语音代理应用进行优化。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "voice agents",
+        "multilingual ai",
+        "real-time processing"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "enables practical deployment of multilingual conversational agents",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5890b1cfd4cc38aa3885e02e",
+          "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-10T16:25:36.000Z",
+          "evidenceSnippet": "Voice AI Is Becoming Multilingual by Default One Open Model, Twelve Languages The Latency Your Users Actually Notice Optimized for Real-Time Speech Generation Faster Doesn't Matter If It Doesn't Sound Natural Why Open Weights Matter Build Complete Voice Agents — Not Just Better Speech Get Started Every voice interaction has a latency budget. By the time a user hears your application respond, you've already spent precious milliseconds capturing audio, transcribing speech, running an LLM, retrieving context, and generating a response. Text-to-speech (TTS) is the final step — and the one users notice most. If speech generation is slow, the whole experience feels slow."
+        }
+      ]
+    },
     {
       "id": "statement_meta_personal_superintelligence_20260810",
       "schemaVersion": "1.0.0",
@@ -169,118 +355,6 @@
           "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
           "metadataSourceUrl": "https://openai.com/news/rss.xml",
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
-        }
-      ]
-    },
-    {
-      "id": "item_13c6b5c4068aadbfbaa4",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.06410",
-      "url": "https://arxiv.org/abs/2608.06410",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-08-10T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "ADIAS Framework Automates Agent Design Through Issue-Centric Optimization",
-        "zh-Hans": "ADIAS框架通过问题导向优化实现智能体设计自动化"
-      },
-      "summary": {
-        "en": "ADIAS introduces issue-centric agent optimization that maintains persistent issue states to guide repair progress, outperforming baselines by 25.2% across five interactive benchmarks through focused full-code modification.",
-        "zh-Hans": "ADIAS引入问题导向的智能体优化方法，维护持久问题状态来指导修复进展，在五个交互基准测试中平均超越基线25.2%。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "agent design",
-        "automated optimization",
-        "interactive systems"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "arXiv cs.AI",
-      "org": "arXiv cs.AI",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "freshnessScore": 88,
-      "importanceScore": 85,
-      "importance": 85,
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_13c6b5c4068aadbfbaa4b9dc",
-          "url": "https://arxiv.org/abs/2608.06410",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-10T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.06410v1 Announce Type: new Abstract: Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to guide optimization, rather than re-derived from candidate history in each round. We instantiate the formulation in ADIAS, a framework for automated full-code agent design with two mechanisms. A persistent issue state maintains stable issue identities, lifecycle status, supporting evidence, and intervention-outcome histories. Issue-guided optimization uses this state to jointly propose repair targets and revision directions for subsequent focused full-code modification. Across five interactive benchmarks, ADIAS outperforms the strongest baseline by 25.2% on average and achieves consistent gain"
-        }
-      ]
-    },
-    {
-      "id": "item_36ceb5b8982b00a4be18",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.06474",
-      "url": "https://arxiv.org/abs/2608.06474",
-      "publishedAt": "2026-08-10T04:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-08-10T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "WebGrader Develops Programmatic Grading for Web Development Training",
-        "zh-Hans": "WebGrader 推出用于网页开发训练的程序化评分器"
-      },
-      "summary": {
-        "en": "WebGrader autonomously derives interaction flows from website requests, represents them as executable Flow Contracts, and discovers reusable verifier skills through a residual-driven offline loop for RL training.",
-        "zh-Hans": "WebGrader自主从网站需求中推导交互流程，将其表示为可执行流程契约，并通过残差驱动的离线循环发现可重用验证技能。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "web development",
-        "reinforcement learning",
-        "programmatic grading"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "arXiv cs.AI",
-      "org": "arXiv cs.AI",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "freshnessScore": 88,
-      "importanceScore": 80,
-      "importance": 80,
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_36ceb5b8982b00a4be18b536",
-          "url": "https://arxiv.org/abs/2608.06474",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-10T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
         }
       ]
     },
@@ -475,6 +549,236 @@
       "mediaType": "article"
     },
     {
+      "id": "item_b7821e4e183d8870d042",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-03T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
+        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
+      },
+      "summary": {
+        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
+        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "framework",
+        "scalable ai",
+        "open source"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 20,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b7821e4e183d8870d042655a",
+          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-03T16:00:00.000Z",
+          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_0b46c3a73d060b7d84c1",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+      "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+      "publishedAt": "2026-07-30T20:36:36.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T04:07:32.583Z",
+      "updatedAt": "2026-07-30T20:36:36.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google's Science One Framework for Verifiable AI Research",
+        "zh-Hans": "谷歌可验证AI研究的Science One框架"
+      },
+      "summary": {
+        "en": "Google Research introduces experimental framework designed to eliminate hallucinations in autonomous research workflows through verifiable evidence chains.",
+        "zh-Hans": "谷歌研究推出实验性框架，旨在通过可验证证据链消除自主研究工作流程中的幻觉。"
+      },
+      "category": "research_science",
+      "tags": [
+        "autonomous research",
+        "verifiability",
+        "chain of evidence"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 7,
+      "importanceScore": 88,
+      "importance": 88,
+      "agiRelevanceScore": 92,
+      "relevanceReason": "addresses critical verifiability challenges in autonomous AI research systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_0b46c3a73d060b7d84c16fb2",
+          "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-07-30T20:36:36.000Z",
+          "evidenceSnippet": "Rui Meng, Research Scientist, and Tomas Pfister, Director, Google Cloud Introducing the Science One Framework, an experimental research prototype designed to eliminate hallucinations by natively building verifiable evidence chains, and CoE Audit, an automated protocol to evaluate the integrity of AI-generated papers. Large language models (LLMs) are increasingly being deployed not just as coding assistants but as autonomous agents capable of conducting end-to-end scientific research workflows. Recent systems (e.g., Sakana’s AI-Scientist , AutoResearchClaw , DeepScientist , AI-Researcher ) can review literature, formulate hypotheses, execute experiments and write complete manuscripts that are comparable to human-authored papers. However, as the surface-level quality of these AI-generated manuscripts improves, a critical structural problem has emerged: verifiability. Because current autonomous research pipelines generate text iteratively, errors introduced at any stage are amplified. Some existing systems can generate non-existent citations , exhibit misalignments between the described methods and the actual code, and report experimental scores that are not fully reproducible from th"
+        }
+      ]
+    },
+    {
+      "id": "item_13c6b5c4068aadbfbaa4",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06410",
+      "url": "https://arxiv.org/abs/2608.06410",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ADIAS Framework Automates Agent Design Through Issue-Centric Optimization",
+        "zh-Hans": "ADIAS框架通过问题导向优化实现智能体设计自动化"
+      },
+      "summary": {
+        "en": "ADIAS introduces issue-centric agent optimization that maintains persistent issue states to guide repair progress, outperforming baselines by 25.2% across five interactive benchmarks through focused full-code modification.",
+        "zh-Hans": "ADIAS引入问题导向的智能体优化方法，维护持久问题状态来指导修复进展，在五个交互基准测试中平均超越基线25.2%。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent design",
+        "automated optimization",
+        "interactive systems"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 88,
+      "importanceScore": 85,
+      "importance": 85,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_13c6b5c4068aadbfbaa4b9dc",
+          "url": "https://arxiv.org/abs/2608.06410",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06410v1 Announce Type: new Abstract: Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to guide optimization, rather than re-derived from candidate history in each round. We instantiate the formulation in ADIAS, a framework for automated full-code agent design with two mechanisms. A persistent issue state maintains stable issue identities, lifecycle status, supporting evidence, and intervention-outcome histories. Issue-guided optimization uses this state to jointly propose repair targets and revision directions for subsequent focused full-code modification. Across five interactive benchmarks, ADIAS outperforms the strongest baseline by 25.2% on average and achieves consistent gain"
+        }
+      ]
+    },
+    {
+      "id": "item_36ceb5b8982b00a4be18",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.06474",
+      "url": "https://arxiv.org/abs/2608.06474",
+      "publishedAt": "2026-08-10T04:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "WebGrader Develops Programmatic Grading for Web Development Training",
+        "zh-Hans": "WebGrader 推出用于网页开发训练的程序化评分器"
+      },
+      "summary": {
+        "en": "WebGrader autonomously derives interaction flows from website requests, represents them as executable Flow Contracts, and discovers reusable verifier skills through a residual-driven offline loop for RL training.",
+        "zh-Hans": "WebGrader自主从网站需求中推导交互流程，将其表示为可执行流程契约，并通过残差驱动的离线循环发现可重用验证技能。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "web development",
+        "reinforcement learning",
+        "programmatic grading"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "arXiv cs.AI",
+      "org": "arXiv cs.AI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "freshnessScore": 88,
+      "importanceScore": 80,
+      "importance": 80,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_36ceb5b8982b00a4be18b536",
+          "url": "https://arxiv.org/abs/2608.06474",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
+        }
+      ]
+    },
+    {
       "id": "release_mistral_shieldstral_20260804",
       "sourceId": "src_mistral-ai",
       "canonicalUrl": "https://mistral.ai/news/shieldstral/",
@@ -534,62 +838,6 @@
         }
       ],
       "mediaType": "article"
-    },
-    {
-      "id": "item_b7821e4e183d8870d042",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "publishedAt": "2026-08-03T16:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-08-03T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
-        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
-      },
-      "summary": {
-        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
-        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "framework",
-        "scalable ai",
-        "open source"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Microsoft Research",
-      "org": "Microsoft Research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "freshnessScore": 20,
-      "importanceScore": 75,
-      "importance": 75,
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_b7821e4e183d8870d042655a",
-          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-03T16:00:00.000Z",
-          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
-        }
-      ]
     },
     {
       "id": "item_1d97ce9901e405acee5e",

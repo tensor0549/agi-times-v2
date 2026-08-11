@@ -7,8 +7,109 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-10T18:08:59.423Z",
+  "generatedAt": "2026-08-11T04:07:57.939Z",
   "items": [
+    {
+      "id": "insight_ai-systems-verifiability-governance-challenges_20260811",
+      "slug": "ai-systems-verifiability-governance-challenges",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "AI Systems Face Growing Verifiability and Governance Challenges",
+        "zh-Hans": "AI系统面临日益严峻的可验证性和治理挑战"
+      },
+      "dek": {
+        "en": "Recent research highlights structural problems in AI oversight as systems become more autonomous and high-velocity.",
+        "zh-Hans": "最新研究突显了AI系统变得更加自主和高速时监督方面的结构性问题。"
+      },
+      "body": {
+        "en": "As AI systems become more autonomous and generate output at increasing velocities, fundamental challenges in verifiability and human oversight are emerging. Google Research's Science One Framework addresses a critical structural problem in autonomous research systems: verifiability [^candidate_0b46c3a73d060b7d84c16fb2]. The framework is designed to eliminate hallucinations by building verifiable evidence chains, responding to issues where existing systems can generate non-existent citations and exhibit misalignments between described methods and actual code [^candidate_0b46c3a73d060b7d84c16fb2]. Simultaneously, researchers are identifying fundamental limits in human oversight capacity. The Flow-by-Flow governance paradigm recognizes that human oversight becomes structurally untenable when AI output velocity exceeds human cognitive capacity [^candidate_c8c1b994b5e2824039f575c4]. This constraint operates as velocity multiplied by cognitive load, where capability improvements restructure rather than reduce supervisory burden [^candidate_c8c1b994b5e2824039f575c4]. These developments suggest that as AI systems advance, traditional content-based evaluation approaches may require fundamental restructuring to maintain effective governance and verification.",
+        "zh-Hans": "随着AI系统变得更加自主并以越来越快的速度生成输出，可验证性和人类监督方面的根本性挑战正在出现。谷歌研究的Science One框架解决了自主研究系统中的一个关键结构性问题：可验证性 [^candidate_0b46c3a73d060b7d84c16fb2]。该框架旨在通过构建可验证的证据链来消除幻觉，以应对现有系统可能生成不存在的引用以及所描述方法与实际代码之间存在错位的问题 [^candidate_0b46c3a73d060b7d84c16fb2]。与此同时，研究人员正在识别人类监督能力的根本限制。流程化治理范式认识到，当AI输出速度超过人类认知能力时，人类监督在结构上变得不可持续 [^candidate_c8c1b994b5e2824039f575c4]。这种约束表现为速度乘以认知负荷，其中能力改进重构而非减少监督负担 [^candidate_c8c1b994b5e2824039f575c4]。这些发展表明，随着AI系统的进步，传统的基于内容的评估方法可能需要根本性重构以维持有效的治理和验证。"
+      },
+      "publishedAt": "2026-08-11T04:07:57.939Z",
+      "updatedAt": "2026-08-11T04:07:57.939Z",
+      "topics": [
+        "research_science",
+        "safety_security_alignment"
+      ],
+      "claims": [
+        {
+          "id": "verifiability_challenge",
+          "type": "fact",
+          "text": {
+            "en": "Google's Science One Framework addresses verifiability problems where existing autonomous research systems can generate non-existent citations and exhibit misalignments between described methods and actual code",
+            "zh-Hans": "谷歌的Science One框架解决了现有自主研究系统可能生成不存在引用以及所描述方法与实际代码之间存在错位的可验证性问题"
+          },
+          "citationIds": [
+            "candidate_0b46c3a73d060b7d84c16fb2"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "oversight_limits",
+          "type": "fact",
+          "text": {
+            "en": "Human oversight becomes structurally untenable when AI output velocity exceeds human cognitive capacity, with the constraint operating as velocity multiplied by cognitive load",
+            "zh-Hans": "当AI输出速度超过人类认知能力时，人类监督在结构上变得不可持续，约束表现为速度乘以认知负荷"
+          },
+          "citationIds": [
+            "candidate_c8c1b994b5e2824039f575c4"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "id": "capability_restructuring",
+          "type": "fact",
+          "text": {
+            "en": "AI capability improvements restructure supervisory burden rather than reducing it, as triage and response costs remain invariant while only judgment cost faces downward pressure",
+            "zh-Hans": "AI能力改进重构而非减少监督负担，因为分类和响应成本保持不变，只有判断成本面临下降压力"
+          },
+          "citationIds": [
+            "candidate_c8c1b994b5e2824039f575c4"
+          ],
+          "confidence": 0.88
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_0b46c3a73d060b7d84c16fb2",
+          "feedItemId": "item_0b46c3a73d060b7d84c1",
+          "title": "Science One Framework: A verifiable autonomous research framework via Chain-of-Evidence",
+          "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+          "publisher": "Google Research",
+          "author": "Google Research",
+          "independenceKey": "publisher:google research",
+          "publishedAt": "2026-07-30T20:36:36.000Z",
+          "evidenceSnippet": "Rui Meng, Research Scientist, and Tomas Pfister, Director, Google Cloud Introducing the Science One Framework, an experimental research prototype designed to eliminate hallucinations by natively building verifiable evidence chains, and CoE Audit, an automated protocol to evaluate the integrity of AI-generated papers. Large language models (LLMs) are increasingly being deployed not just as coding assistants but as autonomous agents capable of conducting end-to-end scientific research workflows. Recent systems (e.g., Sakana’s AI-Scientist , AutoResearchClaw , DeepScientist , AI-Researcher ) can review literature, formulate hypotheses, execute experiments and write complete manuscripts that are comparable to human-authored papers. However, as the surface-level quality of these AI-generated manuscripts improves, a critical structural problem has emerged: verifiability. Because current autonomous research pipelines generate text iteratively, errors introduced at any stage are amplified. Some existing systems can generate non-existent citations , exhibit misalignments between the described methods and the actual code, and report experimental scores that are not fully reproducible from th"
+        },
+        {
+          "id": "candidate_c8c1b994b5e2824039f575c4",
+          "feedItemId": "item_c8c1b994b5e2824039f5",
+          "title": "Flow-by-Flow:Content-Judgment Bypass for Governing AI Output in High-Loss Domains",
+          "url": "https://arxiv.org/abs/2608.07474",
+          "publisher": "arXiv cs.AI",
+          "author": "Hiroki Naito",
+          "independenceKey": "academic:hiroki naito",
+          "publishedAt": "2026-08-11T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.07474v1 Announce Type: new Abstract: Prior work showed that human-in-the-loop oversight becomes structurally untenable in high-loss domains when AI output velocity V exceeds human cognitive capacity C_max. The operative constraint, however, is not V alone but V x L, where L denotes per-item cognitive load. L consists of triage, judgment, and response, which respond asymmetrically to AI capability improvement. Triage cost does not decline as models become more capable, because semantic indeterminacy is inherent in general-purpose design. Response cost is invariant to accuracy improvements. Only judgment cost faces downward pressure, and this pressure often operates by inducing omission rather than genuine reduction. Capability improvement therefore restructures L rather than reducing it. Governance mechanisms based on evaluating whether AI output is correct either delegate that evaluation to AI and inherit hallucination risk, or delegate it to humans and face the V x L ceiling. We propose Flow-by-Flow, a governance paradigm that controls supervisory load without evaluating content. A cognitive cost score based on formal, countable features imposes nonlinear costs on high-"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-08-11T04:07:57.939Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-08-11T04:07:32.583Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_agent-optimization-mechanisms-2026_20260810",
       "slug": "agent-optimization-mechanisms-2026",
