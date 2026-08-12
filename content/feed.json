@@ -7,8 +7,70 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-12T18:12:59.395Z",
+  "generatedAt": "2026-08-12T23:24:57.250Z",
   "items": [
+    {
+      "id": "item_249a5e1ede4df4c07802",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "publishedAt": "2026-08-12T16:14:36.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T23:24:47.086Z",
+      "updatedAt": "2026-08-12T16:14:36.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "OlmoEarth Studio Releases Custom Embedding Exports for Earth Observation Analysis",
+        "zh-Hans": "OlmoEarth Studio发布地球观测分析自定义嵌入导出功能"
+      },
+      "summary": {
+        "en": "Allen Institute's OlmoEarth Studio now enables users to compute and export embedding vectors from open source Earth observation foundation models, supporting similarity search, segmentation, and change detection tasks.",
+        "zh-Hans": "艾伦研究所的OlmoEarth Studio现在支持用户从开源地球观测基础模型计算和导出嵌入向量，支持相似性搜索、分割和变化检测任务。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "embeddings",
+        "earth observation",
+        "foundation models"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Foundation model embeddings that enable transferable representation learning across Earth observation tasks",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_249a5e1ede4df4c078023a6f",
+          "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-12T16:14:36.000Z",
+          "evidenceSnippet": "Computing embeddings in Studio What you can do with OlmoEarth embeddings Similarity search: Finding \"more like this\" Few-shot segmentation: Labeling the landscape Change detection: Spotting what shifted Unsupervised exploration: Seeing what the model sees From export to insight Going further: fine-tuning Limitations 📄 Tech Report: https://allenai.org/papers/olmoearth | 📊 Documentation: https://docs.olmoearth.allenai.org/embeddings | 💻 Learn more about OlmoEarth: https://allenai.org/olmoearth OlmoEarth Studio , our platform for building Earth observation models, now lets you compute and export embedding vectors —compact numerical representations of Earth-observation data produced by our open source OlmoEarth foundation models. The source code and model weights are publicly available alongside the research paper , so the community can inspect exactly how these embeddings are generated. Embeddings are a fast, cost-effective entry point for leveraging OlmoEarth: they support a wide range of downstream tasks, from similarity search to segmentation to unsupervised exploration. Locations with similar surface characteristics end up with similar vectors; locations that differ land far ap"
+        }
+      ]
+    },
     {
       "id": "item_1a7704a62ecc3f65b10f",
       "schemaVersion": "1.0.0",
@@ -136,195 +198,69 @@
       ]
     },
     {
-      "id": "item_f8e28bf01720e2679e59",
+      "id": "item_5ce3911d7e5952b1a7e1",
       "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
-      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
-      "publishedAt": "2026-08-12T09:51:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.09949",
+      "url": "https://arxiv.org/abs/2608.09949",
+      "publishedAt": "2026-08-12T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T09:51:00.000Z",
+      "discoveredAt": "2026-08-12T23:24:47.086Z",
+      "updatedAt": "2026-08-12T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Google Research identifies recall as key bottleneck in LLM factual accuracy",
-        "zh-Hans": "谷歌研究发现召回是大语言模型事实准确性的关键瓶颈"
+        "en": "Closed-Loop LLM System Demonstrates Autonomous Agricultural Control",
+        "zh-Hans": "闭环LLM系统展示自主农业控制能力"
       },
       "summary": {
-        "en": "Research reveals frontier LLMs encode nearly all facts but struggle to recall them, suggesting factuality issues stem from retrieval rather than knowledge gaps.",
-        "zh-Hans": "研究显示前沿大语言模型几乎编码了所有事实，但难以召回它们，表明事实性问题源于检索而非知识缺口。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "factuality",
-        "knowledge",
-        "recall",
-        "llm"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 92,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 90,
-      "relevanceReason": "addresses fundamental knowledge retrieval mechanisms in large language models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_f8e28bf01720e2679e598c57",
-          "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-12T09:51:00.000Z",
-          "evidenceSnippet": "Nitay Calderon and Gal Yona, Research Scientists, Google Research When LLMs get facts wrong, is it because they never learned them or because they can't recall what they’ve already encoded? Our knowledge profiling framework reveals the latter: frontier LLMs encode nearly all facts, yet struggle to recall many of them. Factuality is essential for making Large Language Models (LLMs) reliable. When a model answers a factual question incorrectly, is it because the fact was never encoded, or because the fact is encoded but not accessible? Standard accuracy metrics collapse these cases together, even though they suggest very different limitations and very different interventions. Encoding failures call for scaling model size or expanding data coverage, while recall failures might also point to post-training and inference-time methods that help LLMs better utilize what they already encode."
-        }
-      ]
-    },
-    {
-      "id": "item_077b61a0fed02bcc2a08",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
-      "publishedAt": "2026-08-11T13:37:10.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T05:50:28.805Z",
-      "updatedAt": "2026-08-11T13:37:10.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "IBM's ALTK-Evolve enables agents to learn from trajectories with token-efficient delivery",
-        "zh-Hans": "IBM的ALTK-Evolve使智能体能够以高效令牌方式从轨迹中学习"
-      },
-      "summary": {
-        "en": "IBM Research introduces ALTK-Evolve for agentic memory, converting agent trajectories into reusable lessons for inference-time improvement without weight updates or human labels.",
-        "zh-Hans": "IBM研究院推出ALTK-Evolve智能体记忆系统，将智能体轨迹转换为可重用经验，在推理时改进性能而无需权重更新或人工标注。"
+        "en": "Research presents LLM framework that processes biophysical sensor data to autonomously control hardware actuators for microclimate optimization and phenotyping protocols, transitioning from human-in-the-loop to autonomous operation.",
+        "zh-Hans": "研究展示了LLM框架，可处理生物物理传感器数据以自主控制硬件执行器进行微气候优化和表型分析协议，从人在回路转向自主操作。"
       },
       "category": "agents_automation",
       "tags": [
-        "agent-memory",
-        "learning",
-        "trajectories",
-        "inference"
+        "autonomous control",
+        "closed-loop systems",
+        "agricultural ai"
       ],
       "topics": [
         "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 86,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "demonstrates agent learning from experience with reusable memory mechanisms for improved multi-step task performance",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_077b61a0fed02bcc2a083d29",
-          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-11T13:37:10.000Z",
-          "evidenceSnippet": "What we agree on Where we differ Why it matters Same lessons, different delivery Linked artifacts / references Method notes Reference tables ALTK-Evolve and ACE both let an agent learn from its own trajectories. The difference is what they do with what they learn — and that decides the token bill. Give an LLM agent a realistic multi-step task — split a bill, find a song, reconcile an order across nine simulated apps — and when it fails, it usually isn't for lack of knowledge. It mis-paginates an API, resolves the wrong person, or returns a value when none was asked for. The model knows the APIs; what it hasn't internalized is how to use them reliably . That's learnable from the agent's own history. Two recent systems do exactly this, on the same kind of agent: ACE (Agentic Context Engineering) and our ALTK-Evolve ( introduced here ). Both are a form of agentic memory — turning an agent's past trajectories into reusable lessons and feeding them back at inference time, no weight updates, no human labels. They even agree on the hard part. Where they part ways is delivery ."
-        }
-      ]
-    },
-    {
-      "id": "item_c8c1b994b5e2824039f5",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.07474",
-      "url": "https://arxiv.org/abs/2608.07474",
-      "publishedAt": "2026-08-11T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-11T04:07:32.583Z",
-      "updatedAt": "2026-08-11T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Flow-by-Flow Governance for High-Velocity AI Output",
-        "zh-Hans": "高速AI输出的流程化治理方法"
-      },
-      "summary": {
-        "en": "New governance paradigm addresses structural limits of human oversight when AI output velocity exceeds cognitive capacity, controlling supervisory load without content evaluation.",
-        "zh-Hans": "新治理范式解决了当AI输出速度超过认知能力时人类监督的结构性限制，在不评估内容的情况下控制监督负荷。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "ai governance",
-        "human oversight",
-        "cognitive load"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hiroki Naito",
+      "author": "Serge Kernbach",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:hiroki naito",
+      "independenceKey": "academic:serge kernbach",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 100,
+      "freshnessScore": 83,
       "importanceScore": 82,
       "importance": 82,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "addresses fundamental scalability constraints in AI-human interaction systems",
+      "agiRelevanceScore": 78,
+      "relevanceReason": "Demonstrates autonomous agent control of physical systems with closed-loop feedback mechanisms",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_c8c1b994b5e2824039f575c4",
-          "url": "https://arxiv.org/abs/2608.07474",
+          "id": "candidate_5ce3911d7e5952b1a7e18b72",
+          "url": "https://arxiv.org/abs/2608.09949",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-11T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.07474v1 Announce Type: new Abstract: Prior work showed that human-in-the-loop oversight becomes structurally untenable in high-loss domains when AI output velocity V exceeds human cognitive capacity C_max. The operative constraint, however, is not V alone but V x L, where L denotes per-item cognitive load. L consists of triage, judgment, and response, which respond asymmetrically to AI capability improvement. Triage cost does not decline as models become more capable, because semantic indeterminacy is inherent in general-purpose design. Response cost is invariant to accuracy improvements. Only judgment cost faces downward pressure, and this pressure often operates by inducing omission rather than genuine reduction. Capability improvement therefore restructures L rather than reducing it. Governance mechanisms based on evaluating whether AI output is correct either delegate that evaluation to AI and inherit hallucination risk, or delegate it to humans and face the V x L ceiling. We propose Flow-by-Flow, a governance paradigm that controls supervisory load without evaluating content. A cognitive cost score based on formal, countable features imposes nonlinear costs on high-"
+          "publishedAt": "2026-08-12T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.09949v1 Announce Type: new Abstract: This study evaluates the application of Large Language Models (LLMs) in complex biological systems, evolving from data analysis to autonomous, AI-guided experimentation. The framework is driven by data from a 49-channel phytosensor network, encompassing multispectral, electrochemical, and dielectric modalities. To enhance accessibility, the system provides real-time natural-language interpretation for both specialists and non-experts. However, its core advantage lies in the transition from human-in-the-loop analysis to autonomous control. Processing biophysical data, the LLM evaluates plant physiology and triggers hardware actuators to optimize microclimates, execute phenotyping protocols, or induce controlled stress scenarios. This closed-loop architecture establishes a direct AI-biology interface, enabling data-driven exploration of complex biosystems and ecologies. The framework was validated across three case studies, based on a vertical farm and a single-plant setup and deciphered complex micro- and macro-fluctuations in plant physiology. Agents in a production-scale deployment executed multi-parameter optimization, balancing bio"
         }
       ]
     },
     {
-      "id": "item_60eee8220e878d586086",
+      "id": "item_9405b1df607896a2e58f",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -332,56 +268,56 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.07476",
-      "url": "https://arxiv.org/abs/2608.07476",
-      "publishedAt": "2026-08-11T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.09967",
+      "url": "https://arxiv.org/abs/2608.09967",
+      "publishedAt": "2026-08-12T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-11T11:09:50.078Z",
-      "updatedAt": "2026-08-11T04:00:00.000Z",
+      "discoveredAt": "2026-08-12T23:24:47.086Z",
+      "updatedAt": "2026-08-12T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Determinization in Structure Theories: A Unified Framework via Closure, Comparability, and Joint Admissibility",
-        "zh-Hans": "结构理论中的确定化：通过闭包、可比性和联合可接受性的统一框架"
+        "en": "SPOT Framework Provides Tree-Based Interpretability for Deep RL Policies",
+        "zh-Hans": "SPOT框架为深度强化学习策略提供基于树的可解释性"
       },
       "summary": {
-        "en": "Develops formal framework for constructing canonical interpretations from plural structure theories, distinguishing epistemic and structural plurality types with canonicalization mechanisms.",
-        "zh-Hans": "开发了从复数结构理论构建规范解释的形式框架，区分认知和结构复数类型及其规范化机制。"
+        "en": "Researchers introduce SPOT, a sampling-based framework that constructs interpretable finite-horizon trees to explain deep reinforcement learning agent decisions with formal guarantees for policy recovery.",
+        "zh-Hans": "研究人员推出SPOT，这是一个基于采样的框架，构建可解释的有限视野树来解释深度强化学习智能体决策，并提供策略恢复的形式保证。"
       },
       "category": "research_science",
       "tags": [
-        "formal methods",
-        "structure theory",
-        "canonicalization"
+        "interpretability",
+        "reinforcement learning",
+        "policy analysis"
       ],
       "topics": [
         "research_science"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Hai Hai Fu",
+      "author": "Tamar Gozlan, Claudia V. Goldman",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:hai hai fu",
+      "independenceKey": "academic:tamar gozlan, claudia v. goldman",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 93,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "formal framework for handling non-determinism and canonicalization in inference systems",
+      "freshnessScore": 83,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Advances interpretability methods for complex agent decision-making with formal theoretical guarantees",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_60eee8220e878d586086e587",
-          "url": "https://arxiv.org/abs/2608.07476",
+          "id": "candidate_9405b1df607896a2e58f6fdb",
+          "url": "https://arxiv.org/abs/2608.09967",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-11T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.07476v1 Announce Type: new Abstract: We develop a formal framework for constructing canonical interpretations from plural structure theories. A structure theory is a triple T = ({\\Sigma}, A, I) consisting of a signature, axioms, and an inference policy, whose admissible interpretation family collects all globally consistent assignments of structural conclusions. We distinguish three levels of canonicalization: closure stabilization (per-seed convergence), global completion (seed-independent convergence), and determinization (a unique admissible interpretation). Non-determinism is classified into epistemic plurality (Type E) and structural plurality (Type S), with a refined Type S-strong subclass characterized by the absence of common upper bounds. Two canonicalization mechanisms arise: operator-based completion and selector-based construction. We provide sufficient structural conditions under which these mechanisms exist, and show that pure inference-based completion reduces to a saturated closure operator under positive, non-retractive rules with an additional soundness condition. For Type E theories, closure stabilization is established, while full determinization depe"
+          "publishedAt": "2026-08-12T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.09967v1 Announce Type: new Abstract: Deep reinforcement learning (DRL) agents achieve strong performance in complex environments, yet their decision-making processes remain difficult to interpret. We introduce SPOT (Sampling Policy Observation Tree), a novel model-agnostic, sampling-based framework for interpreting DRL policies. Given access to the policy and an environment simulator, SPOT constructs an interpretable finite-horizon tree by sampling actions and recursively simulating the resulting successor states. The tree provides an empirical representation of the policy's action preferences and their possible downstream evolution. We provide formal guarantees establishing SPOT's asymptotic recovery of the policy's unique most probable action and characterizing its disagreement behavior under high-entropy policies. We demonstrate SPOT in the SUMO-RL traffic-signal control domain. The case study illustrates how its tree-based representation can be used to inspect policy preferences, compare alternative future trajectories, and reveal downstream behaviors that are not visible through single-timestep feature-attribution methods."
         }
       ]
     },
@@ -678,6 +614,130 @@
       "mediaType": "article"
     },
     {
+      "id": "release_mistral_shieldstral_20260804",
+      "sourceId": "src_mistral-ai",
+      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
+      "publishedAt": "2026-08-04T00:00:00Z",
+      "title": {
+        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
+        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
+      },
+      "summary": {
+        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
+        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "open-weights",
+        "multimodal",
+        "moderation"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "products_developer_ecosystem"
+      ],
+      "entities": [
+        "Mistral AI",
+        "Shieldstral"
+      ],
+      "author": "Mistral",
+      "org": "Mistral AI",
+      "importanceScore": 83,
+      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "source": {
+        "id": "src_mistral-ai",
+        "name": "Mistral AI"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-04T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 21,
+      "importance": 83,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_mistral_shieldstral_20260804",
+          "url": "https://mistral.ai/news/shieldstral/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-04T00:00:00Z",
+          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "item_f8e28bf01720e2679e59",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+      "publishedAt": "2026-08-12T09:51:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T09:51:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research identifies recall as key bottleneck in LLM factual accuracy",
+        "zh-Hans": "谷歌研究发现召回是大语言模型事实准确性的关键瓶颈"
+      },
+      "summary": {
+        "en": "Research reveals frontier LLMs encode nearly all facts but struggle to recall them, suggesting factuality issues stem from retrieval rather than knowledge gaps.",
+        "zh-Hans": "研究显示前沿大语言模型几乎编码了所有事实，但难以召回它们，表明事实性问题源于检索而非知识缺口。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "factuality",
+        "knowledge",
+        "recall",
+        "llm"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 92,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 90,
+      "relevanceReason": "addresses fundamental knowledge retrieval mechanisms in large language models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f8e28bf01720e2679e598c57",
+          "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-12T09:51:00.000Z",
+          "evidenceSnippet": "Nitay Calderon and Gal Yona, Research Scientists, Google Research When LLMs get facts wrong, is it because they never learned them or because they can't recall what they’ve already encoded? Our knowledge profiling framework reveals the latter: frontier LLMs encode nearly all facts, yet struggle to recall many of them. Factuality is essential for making Large Language Models (LLMs) reliable. When a model answers a factual question incorrectly, is it because the fact was never encoded, or because the fact is encoded but not accessible? Standard accuracy metrics collapse these cases together, even though they suggest very different limitations and very different interventions. Encoding failures call for scaling model size or expanding data coverage, while recall failures might also point to post-training and inference-time methods that help LLMs better utilize what they already encode."
+        }
+      ]
+    },
+    {
       "id": "item_841e1b55054db5ab881b",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -800,6 +860,193 @@
           "publisher": "Microsoft Research",
           "publishedAt": "2026-08-11T16:00:00.000Z",
           "evidenceSnippet": "Radiology AI is evolving beyond report generation. CARE-X explores a unified approach that combines flexible reasoning, calibrated predictions, and measurement-based tools for chest X-ray interpretation. The post Introducing CARE-X: Towards Clinically Useful Radiology VLMs with Auxiliary Supervision, Reward-Aligned Learning, and Tool-Augmented Measurement appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_077b61a0fed02bcc2a08",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+      "publishedAt": "2026-08-11T13:37:10.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T05:50:28.805Z",
+      "updatedAt": "2026-08-11T13:37:10.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "IBM's ALTK-Evolve enables agents to learn from trajectories with token-efficient delivery",
+        "zh-Hans": "IBM的ALTK-Evolve使智能体能够以高效令牌方式从轨迹中学习"
+      },
+      "summary": {
+        "en": "IBM Research introduces ALTK-Evolve for agentic memory, converting agent trajectories into reusable lessons for inference-time improvement without weight updates or human labels.",
+        "zh-Hans": "IBM研究院推出ALTK-Evolve智能体记忆系统，将智能体轨迹转换为可重用经验，在推理时改进性能而无需权重更新或人工标注。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent-memory",
+        "learning",
+        "trajectories",
+        "inference"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "demonstrates agent learning from experience with reusable memory mechanisms for improved multi-step task performance",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_077b61a0fed02bcc2a083d29",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-11T13:37:10.000Z",
+          "evidenceSnippet": "What we agree on Where we differ Why it matters Same lessons, different delivery Linked artifacts / references Method notes Reference tables ALTK-Evolve and ACE both let an agent learn from its own trajectories. The difference is what they do with what they learn — and that decides the token bill. Give an LLM agent a realistic multi-step task — split a bill, find a song, reconcile an order across nine simulated apps — and when it fails, it usually isn't for lack of knowledge. It mis-paginates an API, resolves the wrong person, or returns a value when none was asked for. The model knows the APIs; what it hasn't internalized is how to use them reliably . That's learnable from the agent's own history. Two recent systems do exactly this, on the same kind of agent: ACE (Agentic Context Engineering) and our ALTK-Evolve ( introduced here ). Both are a form of agentic memory — turning an agent's past trajectories into reusable lessons and feeding them back at inference time, no weight updates, no human labels. They even agree on the hard part. Where they part ways is delivery ."
+        }
+      ]
+    },
+    {
+      "id": "item_c8c1b994b5e2824039f5",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.07474",
+      "url": "https://arxiv.org/abs/2608.07474",
+      "publishedAt": "2026-08-11T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T04:07:32.583Z",
+      "updatedAt": "2026-08-11T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Flow-by-Flow Governance for High-Velocity AI Output",
+        "zh-Hans": "高速AI输出的流程化治理方法"
+      },
+      "summary": {
+        "en": "New governance paradigm addresses structural limits of human oversight when AI output velocity exceeds cognitive capacity, controlling supervisory load without content evaluation.",
+        "zh-Hans": "新治理范式解决了当AI输出速度超过认知能力时人类监督的结构性限制，在不评估内容的情况下控制监督负荷。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "ai governance",
+        "human oversight",
+        "cognitive load"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hiroki Naito",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:hiroki naito",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 100,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental scalability constraints in AI-human interaction systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_c8c1b994b5e2824039f575c4",
+          "url": "https://arxiv.org/abs/2608.07474",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-11T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.07474v1 Announce Type: new Abstract: Prior work showed that human-in-the-loop oversight becomes structurally untenable in high-loss domains when AI output velocity V exceeds human cognitive capacity C_max. The operative constraint, however, is not V alone but V x L, where L denotes per-item cognitive load. L consists of triage, judgment, and response, which respond asymmetrically to AI capability improvement. Triage cost does not decline as models become more capable, because semantic indeterminacy is inherent in general-purpose design. Response cost is invariant to accuracy improvements. Only judgment cost faces downward pressure, and this pressure often operates by inducing omission rather than genuine reduction. Capability improvement therefore restructures L rather than reducing it. Governance mechanisms based on evaluating whether AI output is correct either delegate that evaluation to AI and inherit hallucination risk, or delegate it to humans and face the V x L ceiling. We propose Flow-by-Flow, a governance paradigm that controls supervisory load without evaluating content. A cognitive cost score based on formal, countable features imposes nonlinear costs on high-"
+        }
+      ]
+    },
+    {
+      "id": "item_60eee8220e878d586086",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.07476",
+      "url": "https://arxiv.org/abs/2608.07476",
+      "publishedAt": "2026-08-11T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T11:09:50.078Z",
+      "updatedAt": "2026-08-11T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Determinization in Structure Theories: A Unified Framework via Closure, Comparability, and Joint Admissibility",
+        "zh-Hans": "结构理论中的确定化：通过闭包、可比性和联合可接受性的统一框架"
+      },
+      "summary": {
+        "en": "Develops formal framework for constructing canonical interpretations from plural structure theories, distinguishing epistemic and structural plurality types with canonicalization mechanisms.",
+        "zh-Hans": "开发了从复数结构理论构建规范解释的形式框架，区分认知和结构复数类型及其规范化机制。"
+      },
+      "category": "research_science",
+      "tags": [
+        "formal methods",
+        "structure theory",
+        "canonicalization"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hai Hai Fu",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:hai hai fu",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "formal framework for handling non-determinism and canonicalization in inference systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_60eee8220e878d586086e587",
+          "url": "https://arxiv.org/abs/2608.07476",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-11T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.07476v1 Announce Type: new Abstract: We develop a formal framework for constructing canonical interpretations from plural structure theories. A structure theory is a triple T = ({\\Sigma}, A, I) consisting of a signature, axioms, and an inference policy, whose admissible interpretation family collects all globally consistent assignments of structural conclusions. We distinguish three levels of canonicalization: closure stabilization (per-seed convergence), global completion (seed-independent convergence), and determinization (a unique admissible interpretation). Non-determinism is classified into epistemic plurality (Type E) and structural plurality (Type S), with a refined Type S-strong subclass characterized by the absence of common upper bounds. Two canonicalization mechanisms arise: operator-based completion and selector-based construction. We provide sufficient structural conditions under which these mechanisms exist, and show that pure inference-based completion reduces to a saturated closure operator under positive, non-retractive rules with an additional soundness condition. For Type E theories, closure stabilization is established, while full determinization depe"
         }
       ]
     },
@@ -1345,67 +1592,6 @@
           "publisher": "Google",
           "publishedAt": "2026-08-07T00:00:00Z",
           "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
-        }
-      ],
-      "mediaType": "article"
-    },
-    {
-      "id": "release_mistral_shieldstral_20260804",
-      "sourceId": "src_mistral-ai",
-      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
-      "publishedAt": "2026-08-04T00:00:00Z",
-      "title": {
-        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
-        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
-      },
-      "summary": {
-        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
-        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "open-weights",
-        "multimodal",
-        "moderation"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "products_developer_ecosystem"
-      ],
-      "entities": [
-        "Mistral AI",
-        "Shieldstral"
-      ],
-      "author": "Mistral",
-      "org": "Mistral AI",
-      "importanceScore": 83,
-      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "source": {
-        "id": "src_mistral-ai",
-        "name": "Mistral AI"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-04T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 21,
-      "importance": 83,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_mistral_shieldstral_20260804",
-          "url": "https://mistral.ai/news/shieldstral/",
-          "publisher": "Mistral AI",
-          "publishedAt": "2026-08-04T00:00:00Z",
-          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
         }
       ],
       "mediaType": "article"
