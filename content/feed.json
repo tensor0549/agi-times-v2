@@ -7,10 +7,136 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-12T05:50:53.911Z",
+  "generatedAt": "2026-08-12T18:12:59.395Z",
   "items": [
     {
-      "id": "item_841e1b55054db5ab881b",
+      "id": "item_1a7704a62ecc3f65b10f",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
+        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
+      },
+      "summary": {
+        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
+        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "spatial reasoning",
+        "vision language models",
+        "benchmark",
+        "topology"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
+          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-12T16:00:00.000Z",
+          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_2c563947428818b93259",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+      "publishedAt": "2026-08-12T14:00:51.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T14:00:51.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Liquid AI releases LFM2.5-VL-3B vision-language model for edge deployment",
+        "zh-Hans": "Liquid AI发布LFM2.5-VL-3B视觉语言模型用于边缘部署"
+      },
+      "summary": {
+        "en": "3B parameter model understands documents and screens, grounds objects, calls tools, and provides fast responses for real-time on-device applications.",
+        "zh-Hans": "30亿参数模型理解文档和屏幕，定位对象，调用工具，为实时设备应用提供快速响应。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "vision language model",
+        "edge computing",
+        "multimodal",
+        "tool calling"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 96,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "demonstrates multimodal capabilities with tool calling for edge deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_2c563947428818b93259f9d0",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-12T14:00:51.000Z",
+          "evidenceSnippet": "How we trained our most capable vision-language model Benchmark results Inference speed on CPU and GPU How to use LFM2.5-VL-3B LFM2.5-VL-3B demo Get Started Citation LFM2.5-VL-3B is our most capable vision-language model you can run on your own hardware. It understands documents and screens alike, grounds objects, and can call tools. It answers directly instead of reasoning, so responses stay fast in real-time and on-device apps. LFM2.5-VL-3B extends the vision-language capabilities of our previous releases with four major improvements: LFM2.5-VL-3B pairs a SigLIP2 400M NaFlex vision encoder with the same pre-trained backbone as our LFM2.5-2.6B text model. It is pre-trained on about 34T tokens, with 4x more vision data than before, drawn from curated and synthetic image-caption, OCR, grounding, and instruction-following sets. To support non-Latin scripts, we doubled the vocabulary to 128K by extending the tokenizer in place rather than retraining from scratch."
+        }
+      ]
+    },
+    {
+      "id": "item_f8e28bf01720e2679e59",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_google-research",
@@ -18,29 +144,29 @@
         "id": "src_google-research",
         "name": "Google Research"
       },
-      "canonicalUrl": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
-      "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
-      "publishedAt": "2026-08-11T17:04:00.000Z",
+      "canonicalUrl": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+      "publishedAt": "2026-08-12T09:51:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-12T05:50:28.805Z",
-      "updatedAt": "2026-08-11T17:04:00.000Z",
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T09:51:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Google advances AMIE medical AI to real-time video consultations with expert-level performance",
-        "zh-Hans": "谷歌推进AMIE医疗AI系统实现专家级实时视频问诊"
+        "en": "Google Research identifies recall as key bottleneck in LLM factual accuracy",
+        "zh-Hans": "谷歌研究发现召回是大语言模型事实准确性的关键瓶颈"
       },
       "summary": {
-        "en": "Google Research demonstrates AMIE conducting real-time video consultations with expert-level performance in randomized controlled study, integrating visual and auditory cues for clinical diagnosis.",
-        "zh-Hans": "谷歌研究院展示AMIE在随机对照研究中实现专家级实时视频问诊，整合视觉和听觉线索进行临床诊断。"
+        "en": "Research reveals frontier LLMs encode nearly all facts but struggle to recall them, suggesting factuality issues stem from retrieval rather than knowledge gaps.",
+        "zh-Hans": "研究显示前沿大语言模型几乎编码了所有事实，但难以召回它们，表明事实性问题源于检索而非知识缺口。"
       },
       "category": "models_capabilities",
       "tags": [
-        "multimodal",
-        "healthcare",
-        "video",
-        "clinical"
+        "factuality",
+        "knowledge",
+        "recall",
+        "llm"
       ],
       "topics": [
         "models_capabilities"
@@ -55,83 +181,20 @@
       "sourceReliability": 0.94,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 88,
+      "freshnessScore": 92,
       "importanceScore": 85,
       "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "demonstrates advanced multimodal AI capabilities integrating real-time video, audio, and clinical reasoning for expert-level medical consultations",
+      "agiRelevanceScore": 90,
+      "relevanceReason": "addresses fundamental knowledge retrieval mechanisms in large language models",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_841e1b55054db5ab881be884",
-          "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+          "id": "candidate_f8e28bf01720e2679e598c57",
+          "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
           "publisher": "Google Research",
-          "publishedAt": "2026-08-11T17:04:00.000Z",
-          "evidenceSnippet": "Anil Palepu, Senior Research Scientist, and Mike Schaekermann, Research Lead, Google We advance AMIE, our research medical AI system, to conduct real-time video consultations, with a first-of-its-kind demonstration of expert-level performance in a randomized controlled study with simulated consultations. When a physician meets a patient, the consultation extends far beyond the words exchanged. The physician observes the patient's gait, registers visible signs of discomfort, notes their breathing, and guides the patient through physical examination maneuvers. This continuous stream of visual and auditory information is seamlessly integrated with the spoken clinical history. These non-verbal visual and auditory cues are central to effective diagnosis, patient trust, and clinical communication."
-        }
-      ]
-    },
-    {
-      "id": "item_0027655752f485505679",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement/",
-      "url": "https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement/",
-      "publishedAt": "2026-08-11T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T05:50:28.805Z",
-      "updatedAt": "2026-08-11T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft introduces CARE-X radiology VLM with tool-augmented measurement capabilities",
-        "zh-Hans": "微软推出CARE-X放射学视觉语言模型，具备工具增强测量能力"
-      },
-      "summary": {
-        "en": "Microsoft Research presents CARE-X, a unified vision-language model for chest X-ray interpretation combining flexible reasoning, calibrated predictions, and measurement-based tools.",
-        "zh-Hans": "微软研究院推出CARE-X，这是一个用于胸部X光解读的统一视觉语言模型，结合了灵活推理、校准预测和基于测量的工具。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "vision-language",
-        "healthcare",
-        "radiology",
-        "tool-augmented"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Mercy Ranjit, Nikhilesh E, Dr. Abhyuday Kumara Swamy, Tanuja Ganu",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 88,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "advances vision-language model capabilities with tool integration and calibrated reasoning for medical imaging tasks",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_0027655752f485505679840a",
-          "url": "https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-11T16:00:00.000Z",
-          "evidenceSnippet": "Radiology AI is evolving beyond report generation. CARE-X explores a unified approach that combines flexible reasoning, calibrated predictions, and measurement-based tools for chest X-ray interpretation. The post Introducing CARE-X: Towards Clinically Useful Radiology VLMs with Auxiliary Supervision, Reward-Aligned Learning, and Tool-Augmented Measurement appeared first on Microsoft Research ."
+          "publishedAt": "2026-08-12T09:51:00.000Z",
+          "evidenceSnippet": "Nitay Calderon and Gal Yona, Research Scientists, Google Research When LLMs get facts wrong, is it because they never learned them or because they can't recall what they’ve already encoded? Our knowledge profiling framework reveals the latter: frontier LLMs encode nearly all facts, yet struggle to recall many of them. Factuality is essential for making Large Language Models (LLMs) reliable. When a model answers a factual question incorrectly, is it because the fact was never encoded, or because the fact is encoded but not accessible? Standard accuracy metrics collapse these cases together, even though they suggest very different limitations and very different interventions. Encoding failures call for scaling model size or expanding data coverage, while recall failures might also point to post-training and inference-time methods that help LLMs better utilize what they already encode."
         }
       ]
     },
@@ -319,68 +382,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-11T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.07476v1 Announce Type: new Abstract: We develop a formal framework for constructing canonical interpretations from plural structure theories. A structure theory is a triple T = ({\\Sigma}, A, I) consisting of a signature, axioms, and an inference policy, whose admissible interpretation family collects all globally consistent assignments of structural conclusions. We distinguish three levels of canonicalization: closure stabilization (per-seed convergence), global completion (seed-independent convergence), and determinization (a unique admissible interpretation). Non-determinism is classified into epistemic plurality (Type E) and structural plurality (Type S), with a refined Type S-strong subclass characterized by the absence of common upper bounds. Two canonicalization mechanisms arise: operator-based completion and selector-based construction. We provide sufficient structural conditions under which these mechanisms exist, and show that pure inference-based completion reduces to a saturated closure operator under positive, non-retractive rules with an additional soundness condition. For Type E theories, closure stabilization is established, while full determinization depe"
-        }
-      ]
-    },
-    {
-      "id": "item_5890b1cfd4cc38aa3885",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
-      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
-      "publishedAt": "2026-08-10T16:25:36.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-11T04:07:32.583Z",
-      "updatedAt": "2026-08-10T16:25:36.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "NVIDIA Magpie TTS for Low-Latency Voice Agents",
-        "zh-Hans": "NVIDIA Magpie TTS低延迟语音代理"
-      },
-      "summary": {
-        "en": "NVIDIA releases open-weight multilingual text-to-speech model optimized for real-time voice agent applications across twelve languages.",
-        "zh-Hans": "NVIDIA发布开放权重多语言文本转语音模型，针对十二种语言的实时语音代理应用进行优化。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "voice agents",
-        "multilingual ai",
-        "real-time processing"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 89,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "enables practical deployment of multilingual conversational agents",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_5890b1cfd4cc38aa3885e02e",
-          "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-10T16:25:36.000Z",
-          "evidenceSnippet": "Voice AI Is Becoming Multilingual by Default One Open Model, Twelve Languages The Latency Your Users Actually Notice Optimized for Real-Time Speech Generation Faster Doesn't Matter If It Doesn't Sound Natural Why Open Weights Matter Build Complete Voice Agents — Not Just Better Speech Get Started Every voice interaction has a latency budget. By the time a user hears your application respond, you've already spent precious milliseconds capturing audio, transcribing speech, running an LLM, retrieving context, and generating a response. Text-to-speech (TTS) is the final step — and the one users notice most. If speech generation is slow, the whole experience feels slow."
         }
       ]
     },
@@ -677,6 +678,132 @@
       "mediaType": "article"
     },
     {
+      "id": "item_841e1b55054db5ab881b",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+      "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+      "publishedAt": "2026-08-11T17:04:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T05:50:28.805Z",
+      "updatedAt": "2026-08-11T17:04:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google advances AMIE medical AI to real-time video consultations with expert-level performance",
+        "zh-Hans": "谷歌推进AMIE医疗AI系统实现专家级实时视频问诊"
+      },
+      "summary": {
+        "en": "Google Research demonstrates AMIE conducting real-time video consultations with expert-level performance in randomized controlled study, integrating visual and auditory cues for clinical diagnosis.",
+        "zh-Hans": "谷歌研究院展示AMIE在随机对照研究中实现专家级实时视频问诊，整合视觉和听觉线索进行临床诊断。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "multimodal",
+        "healthcare",
+        "video",
+        "clinical"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates advanced multimodal AI capabilities integrating real-time video, audio, and clinical reasoning for expert-level medical consultations",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_841e1b55054db5ab881be884",
+          "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-11T17:04:00.000Z",
+          "evidenceSnippet": "Anil Palepu, Senior Research Scientist, and Mike Schaekermann, Research Lead, Google We advance AMIE, our research medical AI system, to conduct real-time video consultations, with a first-of-its-kind demonstration of expert-level performance in a randomized controlled study with simulated consultations. When a physician meets a patient, the consultation extends far beyond the words exchanged. The physician observes the patient's gait, registers visible signs of discomfort, notes their breathing, and guides the patient through physical examination maneuvers. This continuous stream of visual and auditory information is seamlessly integrated with the spoken clinical history. These non-verbal visual and auditory cues are central to effective diagnosis, patient trust, and clinical communication."
+        }
+      ]
+    },
+    {
+      "id": "item_0027655752f485505679",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement/",
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement/",
+      "publishedAt": "2026-08-11T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T05:50:28.805Z",
+      "updatedAt": "2026-08-11T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft introduces CARE-X radiology VLM with tool-augmented measurement capabilities",
+        "zh-Hans": "微软推出CARE-X放射学视觉语言模型，具备工具增强测量能力"
+      },
+      "summary": {
+        "en": "Microsoft Research presents CARE-X, a unified vision-language model for chest X-ray interpretation combining flexible reasoning, calibrated predictions, and measurement-based tools.",
+        "zh-Hans": "微软研究院推出CARE-X，这是一个用于胸部X光解读的统一视觉语言模型，结合了灵活推理、校准预测和基于测量的工具。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "vision-language",
+        "healthcare",
+        "radiology",
+        "tool-augmented"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Mercy Ranjit, Nikhilesh E, Dr. Abhyuday Kumara Swamy, Tanuja Ganu",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances vision-language model capabilities with tool integration and calibrated reasoning for medical imaging tasks",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_0027655752f485505679840a",
+          "url": "https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-11T16:00:00.000Z",
+          "evidenceSnippet": "Radiology AI is evolving beyond report generation. CARE-X explores a unified approach that combines flexible reasoning, calibrated predictions, and measurement-based tools for chest X-ray interpretation. The post Introducing CARE-X: Towards Clinically Useful Radiology VLMs with Auxiliary Supervision, Reward-Aligned Learning, and Tool-Augmented Measurement appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
       "id": "item_0a13be19d8ced07cb695",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -797,6 +924,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-11T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.07480v1 Announce Type: new Abstract: Active inference has emerged as a principled framework for modeling adaptive behavior by balancing goal-directed action with uncertainty reduction. It has been successfully applied across biological and artificial systems, including recent work on human driving. However, existing active inference models of driving have yet to address an important determinant of behavior in traffic: affective state, which significantly influences decision-making. Prior work in non-traffic domains has explored active inference agents in which emotions are represented along the axes of valence and arousal in the circumplex model. However, this work has been limited to simplified settings with discrete state spaces. In this work, we propose an expanded formulation of valence and arousal that can be extracted from a more complex active inference model of driving with continuous states. In particular, we condition affective estimates not only on the current state but also on predicted future outcomes. We evaluate the proposed approach in two interactive driving scenarios and show that the resulting emotion signals correspond to affective patterns reported i"
+        }
+      ]
+    },
+    {
+      "id": "item_5890b1cfd4cc38aa3885",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "publishedAt": "2026-08-10T16:25:36.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-11T04:07:32.583Z",
+      "updatedAt": "2026-08-10T16:25:36.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "NVIDIA Magpie TTS for Low-Latency Voice Agents",
+        "zh-Hans": "NVIDIA Magpie TTS低延迟语音代理"
+      },
+      "summary": {
+        "en": "NVIDIA releases open-weight multilingual text-to-speech model optimized for real-time voice agent applications across twelve languages.",
+        "zh-Hans": "NVIDIA发布开放权重多语言文本转语音模型，针对十二种语言的实时语音代理应用进行优化。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "voice agents",
+        "multilingual ai",
+        "real-time processing"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "enables practical deployment of multilingual conversational agents",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5890b1cfd4cc38aa3885e02e",
+          "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-10T16:25:36.000Z",
+          "evidenceSnippet": "Voice AI Is Becoming Multilingual by Default One Open Model, Twelve Languages The Latency Your Users Actually Notice Optimized for Real-Time Speech Generation Faster Doesn't Matter If It Doesn't Sound Natural Why Open Weights Matter Build Complete Voice Agents — Not Just Better Speech Get Started Every voice interaction has a latency budget. By the time a user hears your application respond, you've already spent precious milliseconds capturing audio, transcribing speech, running an LLM, retrieving context, and generating a response. Text-to-speech (TTS) is the final step — and the one users notice most. If speech generation is slow, the whole experience feels slow."
         }
       ]
     },
