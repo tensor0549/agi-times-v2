@@ -7,8 +7,71 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-13T05:53:36.171Z",
+  "generatedAt": "2026-08-13T09:50:55.487Z",
   "items": [
+    {
+      "id": "item_7d2338d698710129eeab",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.11211",
+      "url": "https://arxiv.org/abs/2608.11211",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-13T09:50:44.402Z",
+      "updatedAt": "2026-08-13T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Autonomous AI Research Agent Tackles Conway's 99-Graph Problem with Systematic Mathematical Approach",
+        "zh-Hans": "自主AI研究智能体系统性攻克康威99图问题"
+      },
+      "summary": {
+        "en": "Researchers report a systematic attack on Conway's 99-graph problem by an autonomous AI research agent, achieving verifiable mathematical contributions including exhaustive proofs and structural reductions with 69.43% constraint satisfaction.",
+        "zh-Hans": "研究人员报告了自主AI研究智能体对康威99图问题的系统性攻击，实现了可验证的数学贡献，包括穷举证明和结构化简，约束满足率达69.43%。"
+      },
+      "category": "research_science",
+      "tags": [
+        "autonomous ai",
+        "mathematical research",
+        "graph theory",
+        "reproducible research"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Aalok Thakkar",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:aalok thakkar",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates autonomous AI agent conducting systematic mathematical research with verifiable contributions",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_7d2338d698710129eeab8335",
+          "url": "https://arxiv.org/abs/2608.11211",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-13T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.11211v1 Announce Type: new Abstract: Conway's 99-graph problem asks whether a strongly regular graph with parameters $\\mathrm{srg}(99,14,1,2)$ exists. We report a systematic, fully reproducible attack by an autonomous AI research agent, scored under the track's partial-credit metric. Our verifiable contributions are: (1) an exhaustive proof that no circulant graph on $\\mathbb{Z}/99$ satisfies more than $3366/4950=68.0\\%$ of the constraints ($33$ of $49$ difference-classes), with the same ceiling for the other abelian group of order $99$; (2) a forced-structure reduction: $\\lambda=1$ makes each neighbourhood a perfect matching and $\\mu=2$ puts the outer vertices in bijection with non-matched neighbour-pairs, collapsing existence to a $12$-regular graph on $84$ vertices, encoded for CP-SAT and validated by recovering the unique $\\mathrm{srg}(9,4,1,2)$; (3) a validated prescribed-automorphism orbit-existence framework (fixed-point-free and single-fixed-point actions, checked on $\\mathrm{srg}(9,4,1,2)$ and the Paley graph $\\mathrm{srg}(13,6,2,3)$), and (4) a best verified artifact at $69.43\\%$, with evidence that this is a robust frontier (fourteen distinct methods, none exc"
+        }
+      ]
+    },
     {
       "id": "item_def6cd0740e50db5c360",
       "schemaVersion": "1.0.0",
@@ -69,69 +132,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-13T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.11207v1 Announce Type: new Abstract: When two LLM agents with structurally opposed objectives interact across multiple turns, the absence of a shared goal function produces not competition but collapse: the visitor capitulates, the site agent stops varying its approach, and the conversation terminates without achieving either agent's stated objective. This paper asks whether a control-theoretic governance layer can substitute for that missing goal function. The Experience Orchestrator (EO) addresses this in a simulated financial services environment where a site agent guides a visitor toward advisor contact while the visitor maintains psychologically realistic resistance. EO governs the joint trajectory through three mechanisms: a Contextual Bandit (CB) that selects content arms calibrated from real-world web analytics, a PID controller that enforces behavioral consistency via dynamic schema constraints, and a POMDP belief tracker that maintains a probabilistic model of visitor intent. Across 60,000 simulations, EO achieves a +32 percentage point lift in high-intent advisor contact rate (78.1% vs. 46.1% over a naive LLM control), with CB variant selection accounting for "
-        }
-      ]
-    },
-    {
-      "id": "item_30938271c337d8004877",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.11210",
-      "url": "https://arxiv.org/abs/2608.11210",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-13T05:53:14.969Z",
-      "updatedAt": "2026-08-13T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Distribird Automates Scientific Literature Analysis Through Multi-Agent Pipeline",
-        "zh-Hans": "Distribird通过多智能体管道自动化科学文献分析"
-      },
-      "summary": {
-        "en": "New agentic web application deploys multi-agent pipeline to automatically search literature, extract parameter values, and fit probability distributions for Bayesian model calibration.",
-        "zh-Hans": "新的智能体网络应用部署多智能体管道，自动搜索文献、提取参数值并为贝叶斯模型校准拟合概率分布。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "agentic-systems",
-        "literature-search",
-        "bayesian-calibration",
-        "multi-agent-pipeline"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Patrik P. S\\\"uli, Gy\\\"orgy Eigner, Roland Holl\\'os",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:patrik p. s\\\"uli, gy\\\"orgy eigner, roland holl\\'os",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "demonstrates automated scientific research capabilities through coordinated multi-agent literature processing",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_30938271c337d80048777473",
-          "url": "https://arxiv.org/abs/2608.11210",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-13T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.11210v1 Announce Type: new Abstract: Bayesian calibration of process-based models requires a prior distribution for each model parameter. Despite decades of methodological work, researchers almost always fall back on uniform priors. The main reason is that building informative priors from scientific literature is slow and needs both domain and statistical expertise. We present \\textbf{Distribird}, an agentic web application that automates this process. Given a parameter name, physical description, and domain context, Distribird deploys a multi-agent pipeline that searches the literature, extracts and weights reported values by domain relevance, and fits a probability distribution via AIC model selection. When no literature is available, the system falls back to sensible uninformative alternatives, and clearly reports both the evidence behind and the confidence level of every prior it produces. It is designed for the problems where the models have physically interpretable parameters, where domain knowledge exists in the published literature. We evaluate the tool on 24~parameters across 10 scientific domains comparing three open-weight models (Qwen3.6 27B, Gemma 4 31B, Mis"
         }
       ]
     },
@@ -487,6 +487,73 @@
       ]
     },
     {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
       "id": "release_anthropic_fable5_bio_safeguards_20260807",
       "sourceId": "src_anthropic",
       "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
@@ -610,58 +677,128 @@
       "mediaType": "article"
     },
     {
-      "id": "item_b7821e4e183d8870d042",
+      "id": "item_2a545423a7b097d174ba",
       "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "publishedAt": "2026-08-03T16:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-08-03T16:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.11212",
+      "url": "https://arxiv.org/abs/2608.11212",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-13T09:50:44.402Z",
+      "updatedAt": "2026-08-13T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
-        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
+        "en": "Route Flip Detection in Quantized Mixture-of-Experts Models Reveals Deployment Challenges",
+        "zh-Hans": "量化专家混合模型中的路由翻转检测揭示部署挑战"
       },
       "summary": {
-        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
-        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
+        "en": "Research on quantized Mixture-of-Experts models shows that numerical disturbances from 4-bit quantization cause routing flips, with about one-third of damage being routing-mediated, highlighting deployment robustness challenges.",
+        "zh-Hans": "对量化专家混合模型的研究显示，4位量化的数值扰动会导致路由翻转，约三分之一的损害由路由介导，突显了部署鲁棒性挑战。"
       },
-      "category": "products_developer_ecosystem",
+      "category": "models_capabilities",
       "tags": [
-        "framework",
-        "scalable ai",
-        "open source"
+        "mixture of experts",
+        "quantization",
+        "routing",
+        "model robustness"
       ],
       "topics": [
-        "products_developer_ecosystem"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Microsoft Research",
-      "org": "Microsoft Research",
+      "author": "Parvel Gu",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:parvel gu",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.92,
-      "freshnessScore": 20,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
       "importanceScore": 75,
       "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "addresses critical robustness issues in advanced model architectures for practical deployment",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_b7821e4e183d8870d042655a",
-          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-03T16:00:00.000Z",
-          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+          "id": "candidate_2a545423a7b097d174bae489",
+          "url": "https://arxiv.org/abs/2608.11212",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-13T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.11212v1 Announce Type: new Abstract: Top-k Mixture-of-Experts (MoE) routing is discontinuous, so a deployment-motivated numerical disturbance -- simulated 4-bit KV-cache quantization read by a protected BF16 gate -- pushes tokens across decision boundaries and flips which experts fire. This paper proposes no new mitigation; it supplies a causal apparatus, empirical findings, and a detection-limit result. A four-run apparatus prices the route-mediated fraction (RMF) of quantization damage, a token-level attribution decomposes it by mechanism, and pre-registered probes carry the findings across three architectures. On OLMoE-1B-7B at 4-bit KV (pilot), about a third of the damage is routing-mediated: RMF ~ 0.31 (discovery 0.31 [0.20, 0.41]; process-replicated mean 0.313 +/- 0.020; pre-registered re-execution 0.231). The deployable router margin detects that a flip occurred (AUC 0.772) but cannot tell a harmful flip from a helpful one (at chance): among the tested local, inference-observable router statistics we find no predictor of a flip's loss sign above chance -- an empirical benefit-detection barrier bounding selective repair restricted to this feature family. The signed"
+        }
+      ]
+    },
+    {
+      "id": "item_30938271c337d8004877",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.11210",
+      "url": "https://arxiv.org/abs/2608.11210",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-13T05:53:14.969Z",
+      "updatedAt": "2026-08-13T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Distribird Automates Scientific Literature Analysis Through Multi-Agent Pipeline",
+        "zh-Hans": "Distribird通过多智能体管道自动化科学文献分析"
+      },
+      "summary": {
+        "en": "New agentic web application deploys multi-agent pipeline to automatically search literature, extract parameter values, and fit probability distributions for Bayesian model calibration.",
+        "zh-Hans": "新的智能体网络应用部署多智能体管道，自动搜索文献、提取参数值并为贝叶斯模型校准拟合概率分布。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agentic-systems",
+        "literature-search",
+        "bayesian-calibration",
+        "multi-agent-pipeline"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Patrik P. S\\\"uli, Gy\\\"orgy Eigner, Roland Holl\\'os",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:patrik p. s\\\"uli, gy\\\"orgy eigner, roland holl\\'os",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "demonstrates automated scientific research capabilities through coordinated multi-agent literature processing",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_30938271c337d80048777473",
+          "url": "https://arxiv.org/abs/2608.11210",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-13T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.11210v1 Announce Type: new Abstract: Bayesian calibration of process-based models requires a prior distribution for each model parameter. Despite decades of methodological work, researchers almost always fall back on uniform priors. The main reason is that building informative priors from scientific literature is slow and needs both domain and statistical expertise. We present \\textbf{Distribird}, an agentic web application that automates this process. Given a parameter name, physical description, and domain context, Distribird deploys a multi-agent pipeline that searches the literature, extracts and weights reported values by domain relevance, and fits a probability distribution via AIC model selection. When no literature is available, the system falls back to sensible uninformative alternatives, and clearly reports both the evidence behind and the confidence level of every prior it produces. It is designed for the problems where the models have physically interpretable parameters, where domain knowledge exists in the published literature. We evaluate the tool on 24~parameters across 10 scientific domains comparing three open-weight models (Qwen3.6 27B, Gemma 4 31B, Mis"
         }
       ]
     },
@@ -1526,73 +1663,6 @@
       ]
     },
     {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
-        }
-      ]
-    },
-    {
       "id": "item_dfb586131bf3d3cb04b4",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -1777,6 +1847,62 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_b7821e4e183d8870d042",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-03T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
+        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
+      },
+      "summary": {
+        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
+        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "framework",
+        "scalable ai",
+        "open source"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 20,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b7821e4e183d8870d042655a",
+          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-03T16:00:00.000Z",
+          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+        }
+      ]
     },
     {
       "id": "item_0b46c3a73d060b7d84c1",
