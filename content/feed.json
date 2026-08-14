@@ -7,10 +7,10 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-13T09:50:55.487Z",
+  "generatedAt": "2026-08-14T05:20:07.740Z",
   "items": [
     {
-      "id": "item_7d2338d698710129eeab",
+      "id": "item_6573139a0d538e70ced7",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -18,125 +18,125 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.11211",
-      "url": "https://arxiv.org/abs/2608.11211",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.12345",
+      "url": "https://arxiv.org/abs/2608.12345",
+      "publishedAt": "2026-08-14T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-13T09:50:44.402Z",
-      "updatedAt": "2026-08-13T04:00:00.000Z",
+      "discoveredAt": "2026-08-14T05:19:39.331Z",
+      "updatedAt": "2026-08-14T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Autonomous AI Research Agent Tackles Conway's 99-Graph Problem with Systematic Mathematical Approach",
-        "zh-Hans": "自主AI研究智能体系统性攻克康威99图问题"
+        "en": "New benchmark reveals AI models fail integrity decisions under pressure",
+        "zh-Hans": "新基准测试显示AI模型在压力下做出错误的诚信决策"
       },
       "summary": {
-        "en": "Researchers report a systematic attack on Conway's 99-graph problem by an autonomous AI research agent, achieving verifiable mathematical contributions including exhaustive proofs and structural reductions with 69.43% constraint satisfaction.",
-        "zh-Hans": "研究人员报告了自主AI研究智能体对康威99图问题的系统性攻击，实现了可验证的数学贡献，包括穷举证明和结构化简，约束满足率达69.43%。"
+        "en": "IntegrityBench evaluation of 18 frontier models shows they fail roughly 1 in 3 integrity-critical decisions under peak pressure, with neither scale nor reasoning ability reliably mitigating research misconduct compliance.",
+        "zh-Hans": "IntegrityBench对18个前沿模型的评估显示，在高压力下它们在大约三分之一的诚信关键决策中失败，规模和推理能力都无法可靠缓解研究不当行为的合规性。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "research-integrity",
+        "evaluation",
+        "benchmark",
+        "ethics"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yash Tripathi, Silu Sharma, Sai Sidhanth Manoharan Jayanthi, Shivank Garg, Lin Li",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yash tripathi, silu sharma, sai sidhanth manoharan jayanthi, shivank garg, lin li",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 99,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "evaluates critical safety aspects of AI systems deployed as research collaborators",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6573139a0d538e70ced757f1",
+          "url": "https://arxiv.org/abs/2608.12345",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-14T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12345v1 Announce Type: new Abstract: Language models are increasingly deployed as co-scientists, yet their ability to uphold research integrity under institutional pressure remains unmeasured. We introduce IntegrityBench, a benchmark evaluating misconduct classification, ethical action reasoning and artifact-grounded decision making across 36 paired tasks under a 5-level implicit-explicit pressure protocol spanning 3 domains and 4 research stages. Evaluating 18 frontier model variants, we find that under peak pressure, models fail roughly 1 in 3 integrity-critical decisions, and neither scale nor reasoning ability reliably mitigates this. Explicit pressures induce compliance with misconduct, while implicit contextual reframing more often causes over-refusal of legitimate research tasks. Interestingly, models failing to classify research requests accurately perform equally or better on artifact-grounded decision making (85.7 vs. 79.4), suggesting the three facets are structurally dissociated and correct ethical action does not require accurate classification. Frontier models can thus appear helpful while harbouring integrity failures that create two distinct deployment ri"
+        }
+      ]
+    },
+    {
+      "id": "item_b7939c0a393e901645db",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.12325",
+      "url": "https://arxiv.org/abs/2608.12325",
+      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-14T05:19:39.331Z",
+      "updatedAt": "2026-08-14T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Researchers propose operational definitions for AI reasoning as learnable rule-based process",
+        "zh-Hans": "研究人员提出将AI推理定义为可学习的基于规则的过程"
+      },
+      "summary": {
+        "en": "New position paper argues that definitional ambiguity in reasoning evaluation undermines progress toward trustworthy autonomous reasoning, proposing operational definitions based on valid and sound reasoning as a learnable rule-based process.",
+        "zh-Hans": "新立场论文认为推理评估中的定义模糊性阻碍了可信自主推理的进展，提出基于有效和可靠推理的操作性定义作为可学习的基于规则的过程。"
       },
       "category": "research_science",
       "tags": [
-        "autonomous ai",
-        "mathematical research",
-        "graph theory",
-        "reproducible research"
+        "reasoning",
+        "symbolic-ai",
+        "generative-models",
+        "evaluation"
       ],
       "topics": [
         "research_science"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Aalok Thakkar",
+      "author": "Rachel Lawrence, Jacqueline Maasch",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:aalok thakkar",
+      "independenceKey": "academic:rachel lawrence, jacqueline maasch",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 95,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "demonstrates autonomous AI agent conducting systematic mathematical research with verifiable contributions",
+      "freshnessScore": 99,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental definitional challenges in autonomous reasoning evaluation for AI systems",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_7d2338d698710129eeab8335",
-          "url": "https://arxiv.org/abs/2608.11211",
+          "id": "candidate_b7939c0a393e901645db198a",
+          "url": "https://arxiv.org/abs/2608.12325",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-13T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.11211v1 Announce Type: new Abstract: Conway's 99-graph problem asks whether a strongly regular graph with parameters $\\mathrm{srg}(99,14,1,2)$ exists. We report a systematic, fully reproducible attack by an autonomous AI research agent, scored under the track's partial-credit metric. Our verifiable contributions are: (1) an exhaustive proof that no circulant graph on $\\mathbb{Z}/99$ satisfies more than $3366/4950=68.0\\%$ of the constraints ($33$ of $49$ difference-classes), with the same ceiling for the other abelian group of order $99$; (2) a forced-structure reduction: $\\lambda=1$ makes each neighbourhood a perfect matching and $\\mu=2$ puts the outer vertices in bijection with non-matched neighbour-pairs, collapsing existence to a $12$-regular graph on $84$ vertices, encoded for CP-SAT and validated by recovering the unique $\\mathrm{srg}(9,4,1,2)$; (3) a validated prescribed-automorphism orbit-existence framework (fixed-point-free and single-fixed-point actions, checked on $\\mathrm{srg}(9,4,1,2)$ and the Paley graph $\\mathrm{srg}(13,6,2,3)$), and (4) a best verified artifact at $69.43\\%$, with evidence that this is a robust frontier (fourteen distinct methods, none exc"
+          "publishedAt": "2026-08-14T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12325v1 Announce Type: new Abstract: Autonomous reasoning is among the most scientifically and economically motivating topics in AI today. Historically the purview of symbolic AI, recent advances have mainly emerged from deep probabilistic generative models. Despite immense interest and rapid progress, the generative AI community has not clearly converged on operational definitions for reasoning and often implicitly rejects the historical treatment of this topic in logic and verifiable automated reasoning. This position contends that definitional ambiguity leaves the construct validity of reasoning evaluation unverifiable, undermining quantifiable progress toward trustworthy autonomous reasoning. We also contend that this ambiguity is addressable. To that end, we provide (1) operational definitions based on a synthesis of the literature, positioning valid and sound reasoning as a learnable rule-based process; and (2) a checklist for best practices in the communication of AI reasoning research."
         }
       ]
     },
     {
-      "id": "item_def6cd0740e50db5c360",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.11207",
-      "url": "https://arxiv.org/abs/2608.11207",
-      "publishedAt": "2026-08-13T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-13T05:53:14.969Z",
-      "updatedAt": "2026-08-13T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Dynamic Governance System Prevents Multi-LLM Agent Collapse in Adversarial Conversations",
-        "zh-Hans": "动态治理系统防止多LLM智能体在对抗性对话中崩溃"
-      },
-      "summary": {
-        "en": "Researchers develop Experience Orchestrator using control theory to govern interactions between LLM agents with opposing objectives, achieving 32 percentage point improvement in task completion rates.",
-        "zh-Hans": "研究人员开发体验编排器，使用控制理论治理具有对立目标的LLM智能体间交互，任务完成率提升32个百分点。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "multi-agent",
-        "llm-agents",
-        "governance",
-        "control-theory"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Alexander Liss, Nicholas Desmond, Santiago Gil Gallego",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:alexander liss, nicholas desmond, santiago gil gallego",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "advances multi-agent coordination mechanisms through control-theoretic governance for complex adversarial interactions",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_def6cd0740e50db5c3603d92",
-          "url": "https://arxiv.org/abs/2608.11207",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-13T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.11207v1 Announce Type: new Abstract: When two LLM agents with structurally opposed objectives interact across multiple turns, the absence of a shared goal function produces not competition but collapse: the visitor capitulates, the site agent stops varying its approach, and the conversation terminates without achieving either agent's stated objective. This paper asks whether a control-theoretic governance layer can substitute for that missing goal function. The Experience Orchestrator (EO) addresses this in a simulated financial services environment where a site agent guides a visitor toward advisor contact while the visitor maintains psychologically realistic resistance. EO governs the joint trajectory through three mechanisms: a Contextual Bandit (CB) that selects content arms calibrated from real-world web analytics, a PID controller that enforces behavioral consistency via dynamic schema constraints, and a POMDP belief tracker that maintains a probabilistic model of visitor intent. Across 60,000 simulations, EO achieves a +32 percentage point lift in high-intent advisor contact rate (78.1% vs. 46.1% over a naive LLM control), with CB variant selection accounting for "
-        }
-      ]
-    },
-    {
-      "id": "item_249a5e1ede4df4c07802",
+      "id": "item_353217afc4f706b5339d",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -144,31 +144,32 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
-      "publishedAt": "2026-08-12T16:14:36.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "publishedAt": "2026-08-13T17:16:04.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-12T23:24:47.086Z",
-      "updatedAt": "2026-08-12T16:14:36.000Z",
+      "discoveredAt": "2026-08-14T05:19:39.331Z",
+      "updatedAt": "2026-08-13T17:16:04.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "OlmoEarth Studio Releases Custom Embedding Exports for Earth Observation Analysis",
-        "zh-Hans": "OlmoEarth Studio发布地球观测分析自定义嵌入导出功能"
+        "en": "Hugging Face introduces continuous robot learning pipeline with Strands Agents",
+        "zh-Hans": "Hugging Face推出基于Strands Agents的连续机器人学习管道"
       },
       "summary": {
-        "en": "Allen Institute's OlmoEarth Studio now enables users to compute and export embedding vectors from open source Earth observation foundation models, supporting similarity search, segmentation, and change detection tasks.",
-        "zh-Hans": "艾伦研究所的OlmoEarth Studio现在支持用户从开源地球观测基础模型计算和导出嵌入向量，支持相似性搜索、分割和变化检测任务。"
+        "en": "New streaming data loop enables robots to continuously record demonstrations, train policies on growing datasets, and deploy updated models back to hardware using LeRobot format throughout the process.",
+        "zh-Hans": "新的流数据循环使机器人能够持续记录演示，在不断增长的数据集上训练策略，并使用LeRobot格式将更新的模型部署回硬件。"
       },
-      "category": "models_capabilities",
+      "category": "robotics_embodied_ai",
       "tags": [
-        "embeddings",
-        "earth observation",
-        "foundation models"
+        "robotics",
+        "continuous-learning",
+        "data-loop",
+        "deployment"
       ],
       "topics": [
-        "models_capabilities"
+        "robotics_embodied_ai"
       ],
       "entities": [],
       "mediaType": "article",
@@ -180,20 +181,83 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 93,
-      "importanceScore": 75,
-      "importance": 75,
+      "freshnessScore": 89,
+      "importanceScore": 70,
+      "importance": 70,
       "agiRelevanceScore": 72,
-      "relevanceReason": "Foundation model embeddings that enable transferable representation learning across Earth observation tasks",
+      "relevanceReason": "demonstrates continuous learning and deployment mechanisms for embodied AI systems",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_249a5e1ede4df4c078023a6f",
-          "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+          "id": "candidate_353217afc4f706b5339de407",
+          "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-08-12T16:14:36.000Z",
-          "evidenceSnippet": "Computing embeddings in Studio What you can do with OlmoEarth embeddings Similarity search: Finding \"more like this\" Few-shot segmentation: Labeling the landscape Change detection: Spotting what shifted Unsupervised exploration: Seeing what the model sees From export to insight Going further: fine-tuning Limitations 📄 Tech Report: https://allenai.org/papers/olmoearth | 📊 Documentation: https://docs.olmoearth.allenai.org/embeddings | 💻 Learn more about OlmoEarth: https://allenai.org/olmoearth OlmoEarth Studio , our platform for building Earth observation models, now lets you compute and export embedding vectors —compact numerical representations of Earth-observation data produced by our open source OlmoEarth foundation models. The source code and model weights are publicly available alongside the research paper , so the community can inspect exactly how these embeddings are generated. Embeddings are a fast, cost-effective entry point for leveraging OlmoEarth: they support a wide range of downstream tasks, from similarity search to segmentation to unsupervised exploration. Locations with similar surface characteristics end up with similar vectors; locations that differ land far ap"
+          "publishedAt": "2026-08-13T17:16:04.000Z",
+          "evidenceSnippet": "What you'll build Prerequisites Step 1 - Record a demonstration into a bucket Step 2 - Store with byte-level deduplication Step 3 - Train by streaming from the Hub Step 4 - Deploy the policy and return data to the loop Try it using the sample application Security Considerations Clean up Where to go from here Resources A walkthrough of the streaming data loop in Strands Robots, one agent loop that records robot demonstrations, trains on them by reading straight from the Hub, and deploys the policy back to hardware, with the dataset in the same on-disk LeRobot format the whole way through. You have an agent that can already record a demonstration and push it to the Hugging Face Hub . Now you want to run that loop continuously: collect episodes through the day, train a policy on the growing dataset, deploy it, and pull the next batch back to improve it. Run that loop once and every piece works. Run it every day and you start paying for the same byte transfers over and over. The recordings you upload keep growing, each training run copies the whole dataset to the GPUs before it starts, and every new checkpoint ships out while the next batch of recordings comes back. The first post in t"
+        }
+      ]
+    },
+    {
+      "id": "item_57f8b7f378e9c39afee2",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "publishedAt": "2026-08-13T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-14T05:19:39.331Z",
+      "updatedAt": "2026-08-13T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Community reproduces 2,200 ICML papers using coding agents in 19-day hackathon",
+        "zh-Hans": "社区在19天黑客马拉松中使用编程代理复现了2200篇ICML论文"
+      },
+      "summary": {
+        "en": "Hugging Face hackathon saw 1,200 participants use coding agents to reproduce claims from 2,226 ICML papers, publishing 6,816 reproduction logbooks and highlighting questions about human roles in agent-driven research.",
+        "zh-Hans": "Hugging Face黑客马拉松有1200名参与者使用编程代理复现2226篇ICML论文的声明，发布了6816个复现日志，突出了代理驱动研究中人类角色的问题。"
+      },
+      "category": "research_science",
+      "tags": [
+        "reproducibility",
+        "research-agents",
+        "evaluation",
+        "scientific-process"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 75,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "demonstrates large-scale deployment of AI agents for scientific research validation and reproducibility",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_57f8b7f378e9c39afee2b695",
+          "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-13T00:00:00.000Z",
+          "evidenceSnippet": "More papers than anyone can review The hackathon (July 15 - August 2nd) What we found Reproductions done well Falsifications, and what happened when we checked them Talking to authors The role of humans Thank you Back in July, we ran a hackathon where more than 1,200 community members brought their own coding agents and tried to reproduce the papers published at ICML 2026, claim by claim. In 19 days, participants published 6,816 Trackio logbooks reproducing 2,226 papers, about a third of the conference 🤯 In this post, we're sharing what we learned from running this hackathon, and what it suggests about the role humans will play when agents are doing the research experiments. Questions about how reproducible AI research really is are older than the current AI wave. But these questions are exacerbated by scale. ICML 2026 received 23,918 submissions and accepted 6,352 papers , roughly double the previous year, continuing an exponential trend that is at least partly driven by AI agents making it faster to run experiments and write them up."
         }
       ]
     },
@@ -261,65 +325,128 @@
       ]
     },
     {
-      "id": "item_2c563947428818b93259",
+      "id": "item_f8e28bf01720e2679e59",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_hugging-face",
+      "sourceId": "src_google-research",
       "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
+        "id": "src_google-research",
+        "name": "Google Research"
       },
-      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
-      "publishedAt": "2026-08-12T14:00:51.000Z",
+      "canonicalUrl": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+      "publishedAt": "2026-08-12T09:51:00.000Z",
       "activityAt": null,
       "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T14:00:51.000Z",
+      "updatedAt": "2026-08-12T09:51:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Liquid AI releases LFM2.5-VL-3B vision-language model for edge deployment",
-        "zh-Hans": "Liquid AI发布LFM2.5-VL-3B视觉语言模型用于边缘部署"
+        "en": "Google Research identifies recall as key bottleneck in LLM factual accuracy",
+        "zh-Hans": "谷歌研究发现召回是大语言模型事实准确性的关键瓶颈"
       },
       "summary": {
-        "en": "3B parameter model understands documents and screens, grounds objects, calls tools, and provides fast responses for real-time on-device applications.",
-        "zh-Hans": "30亿参数模型理解文档和屏幕，定位对象，调用工具，为实时设备应用提供快速响应。"
+        "en": "Research reveals frontier LLMs encode nearly all facts but struggle to recall them, suggesting factuality issues stem from retrieval rather than knowledge gaps.",
+        "zh-Hans": "研究显示前沿大语言模型几乎编码了所有事实，但难以召回它们，表明事实性问题源于检索而非知识缺口。"
       },
       "category": "models_capabilities",
       "tags": [
-        "vision language model",
-        "edge computing",
-        "multimodal",
-        "tool calling"
+        "factuality",
+        "knowledge",
+        "recall",
+        "llm"
       ],
       "topics": [
         "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.9,
+      "sourceReliability": 0.94,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 96,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "demonstrates multimodal capabilities with tool calling for edge deployment",
+      "freshnessScore": 92,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 90,
+      "relevanceReason": "addresses fundamental knowledge retrieval mechanisms in large language models",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_2c563947428818b93259f9d0",
-          "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-12T14:00:51.000Z",
-          "evidenceSnippet": "How we trained our most capable vision-language model Benchmark results Inference speed on CPU and GPU How to use LFM2.5-VL-3B LFM2.5-VL-3B demo Get Started Citation LFM2.5-VL-3B is our most capable vision-language model you can run on your own hardware. It understands documents and screens alike, grounds objects, and can call tools. It answers directly instead of reasoning, so responses stay fast in real-time and on-device apps. LFM2.5-VL-3B extends the vision-language capabilities of our previous releases with four major improvements: LFM2.5-VL-3B pairs a SigLIP2 400M NaFlex vision encoder with the same pre-trained backbone as our LFM2.5-2.6B text model. It is pre-trained on about 34T tokens, with 4x more vision data than before, drawn from curated and synthetic image-caption, OCR, grounding, and instruction-following sets. To support non-Latin scripts, we doubled the vocabulary to 128K by extending the tokenizer in place rather than retraining from scratch."
+          "id": "candidate_f8e28bf01720e2679e598c57",
+          "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-12T09:51:00.000Z",
+          "evidenceSnippet": "Nitay Calderon and Gal Yona, Research Scientists, Google Research When LLMs get facts wrong, is it because they never learned them or because they can't recall what they’ve already encoded? Our knowledge profiling framework reveals the latter: frontier LLMs encode nearly all facts, yet struggle to recall many of them. Factuality is essential for making Large Language Models (LLMs) reliable. When a model answers a factual question incorrectly, is it because the fact was never encoded, or because the fact is encoded but not accessible? Standard accuracy metrics collapse these cases together, even though they suggest very different limitations and very different interventions. Encoding failures call for scaling model size or expanding data coverage, while recall failures might also point to post-training and inference-time methods that help LLMs better utilize what they already encode."
+        }
+      ]
+    },
+    {
+      "id": "item_841e1b55054db5ab881b",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+      "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+      "publishedAt": "2026-08-11T17:04:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T05:50:28.805Z",
+      "updatedAt": "2026-08-11T17:04:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google advances AMIE medical AI to real-time video consultations with expert-level performance",
+        "zh-Hans": "谷歌推进AMIE医疗AI系统实现专家级实时视频问诊"
+      },
+      "summary": {
+        "en": "Google Research demonstrates AMIE conducting real-time video consultations with expert-level performance in randomized controlled study, integrating visual and auditory cues for clinical diagnosis.",
+        "zh-Hans": "谷歌研究院展示AMIE在随机对照研究中实现专家级实时视频问诊，整合视觉和听觉线索进行临床诊断。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "multimodal",
+        "healthcare",
+        "video",
+        "clinical"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates advanced multimodal AI capabilities integrating real-time video, audio, and clinical reasoning for expert-level medical consultations",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_841e1b55054db5ab881be884",
+          "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-11T17:04:00.000Z",
+          "evidenceSnippet": "Anil Palepu, Senior Research Scientist, and Mike Schaekermann, Research Lead, Google We advance AMIE, our research medical AI system, to conduct real-time video consultations, with a first-of-its-kind demonstration of expert-level performance in a randomized controlled study with simulated consultations. When a physician meets a patient, the consultation extends far beyond the words exchanged. The physician observes the patient's gait, registers visible signs of discomfort, notes their breathing, and guides the patient through physical examination maneuvers. This continuous stream of visual and auditory information is seamlessly integrated with the spoken clinical history. These non-verbal visual and auditory cues are central to effective diagnosis, patient trust, and clinical communication."
         }
       ]
     },
@@ -554,127 +681,130 @@
       ]
     },
     {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "id": "item_7d2338d698710129eeab",
       "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.11211",
+      "url": "https://arxiv.org/abs/2608.11211",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-13T09:50:44.402Z",
+      "updatedAt": "2026-08-13T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
+      "title": {
+        "en": "Autonomous AI Research Agent Tackles Conway's 99-Graph Problem with Systematic Mathematical Approach",
+        "zh-Hans": "自主AI研究智能体系统性攻克康威99图问题"
+      },
+      "summary": {
+        "en": "Researchers report a systematic attack on Conway's 99-graph problem by an autonomous AI research agent, achieving verifiable mathematical contributions including exhaustive proofs and structural reductions with 69.43% constraint satisfaction.",
+        "zh-Hans": "研究人员报告了自主AI研究智能体对康威99图问题的系统性攻击，实现了可验证的数学贡献，包括穷举证明和结构化简，约束满足率达69.43%。"
+      },
+      "category": "research_science",
+      "tags": [
+        "autonomous ai",
+        "mathematical research",
+        "graph theory",
+        "reproducible research"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Aalok Thakkar",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:aalok thakkar",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates autonomous AI agent conducting systematic mathematical research with verifiable contributions",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+          "id": "candidate_7d2338d698710129eeab8335",
+          "url": "https://arxiv.org/abs/2608.11211",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-13T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.11211v1 Announce Type: new Abstract: Conway's 99-graph problem asks whether a strongly regular graph with parameters $\\mathrm{srg}(99,14,1,2)$ exists. We report a systematic, fully reproducible attack by an autonomous AI research agent, scored under the track's partial-credit metric. Our verifiable contributions are: (1) an exhaustive proof that no circulant graph on $\\mathbb{Z}/99$ satisfies more than $3366/4950=68.0\\%$ of the constraints ($33$ of $49$ difference-classes), with the same ceiling for the other abelian group of order $99$; (2) a forced-structure reduction: $\\lambda=1$ makes each neighbourhood a perfect matching and $\\mu=2$ puts the outer vertices in bijection with non-matched neighbour-pairs, collapsing existence to a $12$-regular graph on $84$ vertices, encoded for CP-SAT and validated by recovering the unique $\\mathrm{srg}(9,4,1,2)$; (3) a validated prescribed-automorphism orbit-existence framework (fixed-point-free and single-fixed-point actions, checked on $\\mathrm{srg}(9,4,1,2)$ and the Paley graph $\\mathrm{srg}(13,6,2,3)$), and (4) a best verified artifact at $69.43\\%$, with evidence that this is a robust frontier (fourteen distinct methods, none exc"
         }
-      ],
-      "mediaType": "article"
+      ]
     },
     {
-      "id": "release_mistral_shieldstral_20260804",
-      "sourceId": "src_mistral-ai",
-      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
-      "publishedAt": "2026-08-04T00:00:00Z",
-      "title": {
-        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
-        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
-      },
-      "summary": {
-        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
-        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "open-weights",
-        "multimodal",
-        "moderation"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "products_developer_ecosystem"
-      ],
-      "entities": [
-        "Mistral AI",
-        "Shieldstral"
-      ],
-      "author": "Mistral",
-      "org": "Mistral AI",
-      "importanceScore": 83,
-      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
+      "id": "item_def6cd0740e50db5c360",
       "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://mistral.ai/news/shieldstral/",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_mistral-ai",
-        "name": "Mistral AI"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-04T00:00:00Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.11207",
+      "url": "https://arxiv.org/abs/2608.11207",
+      "publishedAt": "2026-08-13T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-13T05:53:14.969Z",
+      "updatedAt": "2026-08-13T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
+      "title": {
+        "en": "Dynamic Governance System Prevents Multi-LLM Agent Collapse in Adversarial Conversations",
+        "zh-Hans": "动态治理系统防止多LLM智能体在对抗性对话中崩溃"
+      },
+      "summary": {
+        "en": "Researchers develop Experience Orchestrator using control theory to govern interactions between LLM agents with opposing objectives, achieving 32 percentage point improvement in task completion rates.",
+        "zh-Hans": "研究人员开发体验编排器，使用控制理论治理具有对立目标的LLM智能体间交互，任务完成率提升32个百分点。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multi-agent",
+        "llm-agents",
+        "governance",
+        "control-theory"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Alexander Liss, Nicholas Desmond, Santiago Gil Gallego",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:alexander liss, nicholas desmond, santiago gil gallego",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 21,
-      "importance": 83,
-      "verification": "verified_first_party",
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "advances multi-agent coordination mechanisms through control-theoretic governance for complex adversarial interactions",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_release_mistral_shieldstral_20260804",
-          "url": "https://mistral.ai/news/shieldstral/",
-          "publisher": "Mistral AI",
-          "publishedAt": "2026-08-04T00:00:00Z",
-          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
+          "id": "candidate_def6cd0740e50db5c3603d92",
+          "url": "https://arxiv.org/abs/2608.11207",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-13T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.11207v1 Announce Type: new Abstract: When two LLM agents with structurally opposed objectives interact across multiple turns, the absence of a shared goal function produces not competition but collapse: the visitor capitulates, the site agent stops varying its approach, and the conversation terminates without achieving either agent's stated objective. This paper asks whether a control-theoretic governance layer can substitute for that missing goal function. The Experience Orchestrator (EO) addresses this in a simulated financial services environment where a site agent guides a visitor toward advisor contact while the visitor maintains psychologically realistic resistance. EO governs the joint trajectory through three mechanisms: a Contextual Bandit (CB) that selects content arms calibrated from real-world web analytics, a PID controller that enforces behavioral consistency via dynamic schema constraints, and a POMDP belief tracker that maintains a probabilistic model of visitor intent. Across 60,000 simulations, EO achieves a +32 percentage point lift in high-intent advisor contact rate (78.1% vs. 46.1% over a naive LLM control), with CB variant selection accounting for "
         }
-      ],
-      "mediaType": "article"
+      ]
     },
     {
       "id": "item_2a545423a7b097d174ba",
@@ -803,65 +933,127 @@
       ]
     },
     {
-      "id": "item_f8e28bf01720e2679e59",
+      "id": "item_249a5e1ede4df4c07802",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_google-research",
+      "sourceId": "src_hugging-face",
       "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
       },
-      "canonicalUrl": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
-      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
-      "publishedAt": "2026-08-12T09:51:00.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "publishedAt": "2026-08-12T16:14:36.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T09:51:00.000Z",
+      "discoveredAt": "2026-08-12T23:24:47.086Z",
+      "updatedAt": "2026-08-12T16:14:36.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Google Research identifies recall as key bottleneck in LLM factual accuracy",
-        "zh-Hans": "谷歌研究发现召回是大语言模型事实准确性的关键瓶颈"
+        "en": "OlmoEarth Studio Releases Custom Embedding Exports for Earth Observation Analysis",
+        "zh-Hans": "OlmoEarth Studio发布地球观测分析自定义嵌入导出功能"
       },
       "summary": {
-        "en": "Research reveals frontier LLMs encode nearly all facts but struggle to recall them, suggesting factuality issues stem from retrieval rather than knowledge gaps.",
-        "zh-Hans": "研究显示前沿大语言模型几乎编码了所有事实，但难以召回它们，表明事实性问题源于检索而非知识缺口。"
+        "en": "Allen Institute's OlmoEarth Studio now enables users to compute and export embedding vectors from open source Earth observation foundation models, supporting similarity search, segmentation, and change detection tasks.",
+        "zh-Hans": "艾伦研究所的OlmoEarth Studio现在支持用户从开源地球观测基础模型计算和导出嵌入向量，支持相似性搜索、分割和变化检测任务。"
       },
       "category": "models_capabilities",
       "tags": [
-        "factuality",
-        "knowledge",
-        "recall",
-        "llm"
+        "embeddings",
+        "earth observation",
+        "foundation models"
       ],
       "topics": [
         "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.94,
+      "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 92,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 90,
-      "relevanceReason": "addresses fundamental knowledge retrieval mechanisms in large language models",
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Foundation model embeddings that enable transferable representation learning across Earth observation tasks",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_f8e28bf01720e2679e598c57",
-          "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-12T09:51:00.000Z",
-          "evidenceSnippet": "Nitay Calderon and Gal Yona, Research Scientists, Google Research When LLMs get facts wrong, is it because they never learned them or because they can't recall what they’ve already encoded? Our knowledge profiling framework reveals the latter: frontier LLMs encode nearly all facts, yet struggle to recall many of them. Factuality is essential for making Large Language Models (LLMs) reliable. When a model answers a factual question incorrectly, is it because the fact was never encoded, or because the fact is encoded but not accessible? Standard accuracy metrics collapse these cases together, even though they suggest very different limitations and very different interventions. Encoding failures call for scaling model size or expanding data coverage, while recall failures might also point to post-training and inference-time methods that help LLMs better utilize what they already encode."
+          "id": "candidate_249a5e1ede4df4c078023a6f",
+          "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-12T16:14:36.000Z",
+          "evidenceSnippet": "Computing embeddings in Studio What you can do with OlmoEarth embeddings Similarity search: Finding \"more like this\" Few-shot segmentation: Labeling the landscape Change detection: Spotting what shifted Unsupervised exploration: Seeing what the model sees From export to insight Going further: fine-tuning Limitations 📄 Tech Report: https://allenai.org/papers/olmoearth | 📊 Documentation: https://docs.olmoearth.allenai.org/embeddings | 💻 Learn more about OlmoEarth: https://allenai.org/olmoearth OlmoEarth Studio , our platform for building Earth observation models, now lets you compute and export embedding vectors —compact numerical representations of Earth-observation data produced by our open source OlmoEarth foundation models. The source code and model weights are publicly available alongside the research paper , so the community can inspect exactly how these embeddings are generated. Embeddings are a fast, cost-effective entry point for leveraging OlmoEarth: they support a wide range of downstream tasks, from similarity search to segmentation to unsupervised exploration. Locations with similar surface characteristics end up with similar vectors; locations that differ land far ap"
+        }
+      ]
+    },
+    {
+      "id": "item_2c563947428818b93259",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+      "publishedAt": "2026-08-12T14:00:51.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T14:00:51.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Liquid AI releases LFM2.5-VL-3B vision-language model for edge deployment",
+        "zh-Hans": "Liquid AI发布LFM2.5-VL-3B视觉语言模型用于边缘部署"
+      },
+      "summary": {
+        "en": "3B parameter model understands documents and screens, grounds objects, calls tools, and provides fast responses for real-time on-device applications.",
+        "zh-Hans": "30亿参数模型理解文档和屏幕，定位对象，调用工具，为实时设备应用提供快速响应。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "vision language model",
+        "edge computing",
+        "multimodal",
+        "tool calling"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 96,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "demonstrates multimodal capabilities with tool calling for edge deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_2c563947428818b93259f9d0",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-12T14:00:51.000Z",
+          "evidenceSnippet": "How we trained our most capable vision-language model Benchmark results Inference speed on CPU and GPU How to use LFM2.5-VL-3B LFM2.5-VL-3B demo Get Started Citation LFM2.5-VL-3B is our most capable vision-language model you can run on your own hardware. It understands documents and screens alike, grounds objects, and can call tools. It answers directly instead of reasoning, so responses stay fast in real-time and on-device apps. LFM2.5-VL-3B extends the vision-language capabilities of our previous releases with four major improvements: LFM2.5-VL-3B pairs a SigLIP2 400M NaFlex vision encoder with the same pre-trained backbone as our LFM2.5-2.6B text model. It is pre-trained on about 34T tokens, with 4x more vision data than before, drawn from curated and synthetic image-caption, OCR, grounding, and instruction-following sets. To support non-Latin scripts, we doubled the vocabulary to 128K by extending the tokenizer in place rather than retraining from scratch."
         }
       ]
     },
@@ -986,69 +1178,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-12T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.09967v1 Announce Type: new Abstract: Deep reinforcement learning (DRL) agents achieve strong performance in complex environments, yet their decision-making processes remain difficult to interpret. We introduce SPOT (Sampling Policy Observation Tree), a novel model-agnostic, sampling-based framework for interpreting DRL policies. Given access to the policy and an environment simulator, SPOT constructs an interpretable finite-horizon tree by sampling actions and recursively simulating the resulting successor states. The tree provides an empirical representation of the policy's action preferences and their possible downstream evolution. We provide formal guarantees establishing SPOT's asymptotic recovery of the policy's unique most probable action and characterizing its disagreement behavior under high-entropy policies. We demonstrate SPOT in the SUMO-RL traffic-signal control domain. The case study illustrates how its tree-based representation can be used to inspect policy preferences, compare alternative future trajectories, and reveal downstream behaviors that are not visible through single-timestep feature-attribution methods."
-        }
-      ]
-    },
-    {
-      "id": "item_841e1b55054db5ab881b",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
-      "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
-      "publishedAt": "2026-08-11T17:04:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T05:50:28.805Z",
-      "updatedAt": "2026-08-11T17:04:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google advances AMIE medical AI to real-time video consultations with expert-level performance",
-        "zh-Hans": "谷歌推进AMIE医疗AI系统实现专家级实时视频问诊"
-      },
-      "summary": {
-        "en": "Google Research demonstrates AMIE conducting real-time video consultations with expert-level performance in randomized controlled study, integrating visual and auditory cues for clinical diagnosis.",
-        "zh-Hans": "谷歌研究院展示AMIE在随机对照研究中实现专家级实时视频问诊，整合视觉和听觉线索进行临床诊断。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "multimodal",
-        "healthcare",
-        "video",
-        "clinical"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 88,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "demonstrates advanced multimodal AI capabilities integrating real-time video, audio, and clinical reasoning for expert-level medical consultations",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_841e1b55054db5ab881be884",
-          "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-11T17:04:00.000Z",
-          "evidenceSnippet": "Anil Palepu, Senior Research Scientist, and Mike Schaekermann, Research Lead, Google We advance AMIE, our research medical AI system, to conduct real-time video consultations, with a first-of-its-kind demonstration of expert-level performance in a randomized controlled study with simulated consultations. When a physician meets a patient, the consultation extends far beyond the words exchanged. The physician observes the patient's gait, registers visible signs of discomfort, notes their breathing, and guides the patient through physical examination maneuvers. This continuous stream of visual and auditory information is seamlessly integrated with the spoken clinical history. These non-verbal visual and auditory cues are central to effective diagnosis, patient trust, and clinical communication."
         }
       ]
     },
@@ -1788,6 +1917,68 @@
       ]
     },
     {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
       "id": "release_google_gemini_omni_builders_20260807",
       "sourceId": "src_google-deepmind",
       "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
@@ -1844,6 +2035,67 @@
           "publisher": "Google",
           "publishedAt": "2026-08-07T00:00:00Z",
           "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "release_mistral_shieldstral_20260804",
+      "sourceId": "src_mistral-ai",
+      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
+      "publishedAt": "2026-08-04T00:00:00Z",
+      "title": {
+        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
+        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
+      },
+      "summary": {
+        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
+        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "open-weights",
+        "multimodal",
+        "moderation"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "products_developer_ecosystem"
+      ],
+      "entities": [
+        "Mistral AI",
+        "Shieldstral"
+      ],
+      "author": "Mistral",
+      "org": "Mistral AI",
+      "importanceScore": 83,
+      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "source": {
+        "id": "src_mistral-ai",
+        "name": "Mistral AI"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-04T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 21,
+      "importance": 83,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_mistral_shieldstral_20260804",
+          "url": "https://mistral.ai/news/shieldstral/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-04T00:00:00Z",
+          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
         }
       ],
       "mediaType": "article"
