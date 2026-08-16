@@ -7,8 +7,121 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-14T05:20:07.740Z",
+  "generatedAt": "2026-08-16T03:29:36.470Z",
   "items": [
+    {
+      "id": "insight_agent-negotiation-alignment-convergence_20260816",
+      "slug": "agent-negotiation-alignment-convergence",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "Multi-Agent Systems Advance Through Enhanced Communication and Human-Aligned Reasoning",
+        "zh-Hans": "多智能体系统通过增强通信和人类对齐推理取得进展"
+      },
+      "dek": {
+        "en": "Recent developments show complementary advances in agent negotiation protocols and cognitive alignment methods as the ecosystem shifts toward agent-focused applications.",
+        "zh-Hans": "最新发展显示智能体协商协议和认知对齐方法的互补进步，生态系统正向以智能体为中心的应用转变。"
+      },
+      "body": {
+        "en": "Multi-agent systems are advancing through two complementary approaches that address core challenges in agent communication and human-AI interaction. The MAS-DecStream system demonstrates how LLM-enhanced negotiation protocols can enable sophisticated coordination between autonomous agents [^candidate_c8faa25c30539bf3c7ac344f]. Meanwhile, researchers emphasize the critical need for cognitive alignment to ensure AI systems reason similarly to their human users, particularly in high-stakes scenarios [^candidate_76c26deb7d6d04310327090b]. These technical advances align with broader ecosystem trends showing agents becoming the primary focus for developers and users [^candidate_bc290ba394fd0d9149bf5cc4].",
+        "zh-Hans": "多智能体系统正通过两种互补方法取得进展，解决智能体通信和人机交互的核心挑战。MAS-DecStream系统展示了LLM增强的协商协议如何实现自主智能体间的复杂协调 [^candidate_c8faa25c30539bf3c7ac344f]。同时，研究人员强调认知对齐的关键需求，确保AI系统推理方式与人类用户相似，特别是在高风险场景中 [^candidate_76c26deb7d6d04310327090b]。这些技术进步与更广泛的生态系统趋势一致，显示智能体正成为开发者和用户的主要关注点 [^candidate_bc290ba394fd0d9149bf5cc4]。"
+      },
+      "publishedAt": "2026-08-16T03:29:36.470Z",
+      "updatedAt": "2026-08-16T03:29:36.470Z",
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment",
+        "products_developer_ecosystem"
+      ],
+      "claims": [
+        {
+          "id": "llm_enhanced_negotiation",
+          "type": "fact",
+          "text": {
+            "en": "MAS-DecStream system uses LLM-MR-CNP protocol with semantic CFP formulation and multi-round proposal revision for agent negotiation",
+            "zh-Hans": "MAS-DecStream系统使用LLM-MR-CNP协议，具备语义CFP表述和多轮提案修订功能进行智能体协商"
+          },
+          "citationIds": [
+            "candidate_c8faa25c30539bf3c7ac344f"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "cognitive_alignment_necessity",
+          "type": "fact",
+          "text": {
+            "en": "Researchers argue cognitive alignment is essential for AI systems in high-stakes decision-making to reason similarly to users and communicate reasoning faithfully",
+            "zh-Hans": "研究人员认为认知对齐对于高风险决策中的AI系统至关重要，需要与用户相似的推理方式并忠实传达推理过程"
+          },
+          "citationIds": [
+            "candidate_76c26deb7d6d04310327090b"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "id": "agent_ecosystem_focus",
+          "type": "fact",
+          "text": {
+            "en": "Hugging Face observes agents becoming the new user focus in the open model ecosystem",
+            "zh-Hans": "Hugging Face观察到智能体正成为开放模型生态系统中用户的新关注点"
+          },
+          "citationIds": [
+            "candidate_bc290ba394fd0d9149bf5cc4"
+          ],
+          "confidence": 0.88
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_c8faa25c30539bf3c7ac344f",
+          "feedItemId": "item_c8faa25c30539bf3c7ac",
+          "title": "Multi-Agent Scheduling with LLM-Assisted Contract Net Negotiation for Stream Processing in Mobile Edge Computing",
+          "url": "https://arxiv.org/abs/2608.12371",
+          "publisher": "arXiv cs.AI",
+          "author": "Sabeur Lajili, Zaki Brahmi",
+          "independenceKey": "academic:sabeur lajili, zaki brahmi",
+          "publishedAt": "2026-08-15T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12371v1 Announce Type: new Abstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling. This paper proposes \\emph{MAS-DecStream}, whose main contribution is \\emph{LLM-MR-CNP}: an extension of the classical Contract Net Protocol with semantic CFP formulation, progressive context disclosure, multi-round proposal revision, negotiation memory, and deterministic validation. Edge-cluster agents refine natural-language offloading proposals from local observations, predicted resource states, and qualitative runtime context, while hard resource and QoS constraints remain deterministic. Experiments derived from the Alibaba ASI Trace evaluate the extension at three levels: single- versus multi-round CNP, rule-based versus LLM-assisted refinement, and fixed-model single- versus multi-round negotiation. Under the evaluated configurations, MAS-DecStream reduces latency violations to 3\\%, eliminates resource overcommitment, reaches a conflict-resolution rate of 0.91 with 20 agents, and improves util"
+        },
+        {
+          "id": "candidate_76c26deb7d6d04310327090b",
+          "feedItemId": "item_76c26deb7d6d04310327",
+          "title": "Position: We Need Practical AI Alignment Methods to Mirror Human Reasoning",
+          "url": "https://arxiv.org/abs/2608.12372",
+          "publisher": "arXiv cs.AI",
+          "author": "Vijay Keswani, Breanna K. Nguyen, Cyrus Cousins, Vincent Conitzer, Walter Sinnott-Armstrong, Jana Schaich Borg",
+          "independenceKey": "academic:vijay keswani, breanna k. nguyen, cyrus cousins, vincent conitzer, walter sinnott-armstrong, jana schaich borg",
+          "publishedAt": "2026-08-15T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12372v1 Announce Type: new Abstract: AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers. This position paper argues that in many settings, particularly high-stakes decision-making, we need accurate cognitively-aligned AI systems that reason similarly to their users, and faithfully communicate their reasoning. We review evidence that cognitive alignment improves understandability and trustworthiness, and provide new survey data showing that many users find cognitive alignment \"essential\" when an AI's rationale for a judgment or action is important to them. We outline the gaps between existing alignment methods and what is needed to achieve cognitive alignment, and present a research agenda to address these gaps. We argue that cognitive misalignment represents a likely impediment to AI adoption in many envisioned applications, and that addressing it is important for creating AI systems on which users are both willing and justified to rely."
+        },
+        {
+          "id": "candidate_bc290ba394fd0d9149bf5cc4",
+          "feedItemId": "item_bc290ba394fd0d9149bf",
+          "title": "State of Open Models: Summer 2026 Observations",
+          "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-08-14T00:00:00.000Z",
+          "evidenceSnippet": "2. Attention ≠ Adoption 3. Open weights shift where value accumulates 4. Qwen has become the community's base model 5. Small models remain the practical layer 6. Agents are the new user Looking forward Notes on method In the AI world, time feels compressed. A few months after our spring report in our biannual analysis worked through the ecosystem, there are quite a few findings that we have observed until this summer. This report lays out these observations from January to August 2026 and presents the data behind each one. Models and datasets on HF hub are growing on a daily basis. Public model repositories grew from 2.43 to 2.96 million over the period, datasets from 711,000 to 1 million, Spaces from 1.00 to 1.44 million. The distribution underneath stays extreme, roughly 85.6% of models have fewer than 200 lifetime downloads, and 1.5% of repositories account for 99.2% of all downloads. Everything below happens inside that shape. 1. The frontier is moving fast"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-08-16T03:29:36.470Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-08-16T03:29:17.285Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_ai-research-integrity-challenges_20260814",
       "slug": "ai-research-integrity-challenges",

@@ -7,10 +7,10 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-14T09:45:18.953Z",
+  "generatedAt": "2026-08-16T03:29:36.470Z",
   "items": [
     {
-      "id": "item_14bd425bd1c556eba4d8",
+      "id": "item_76c26deb7d6d04310327",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -18,62 +18,61 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.12346",
-      "url": "https://arxiv.org/abs/2608.12346",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.12372",
+      "url": "https://arxiv.org/abs/2608.12372",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-14T09:45:09.309Z",
-      "updatedAt": "2026-08-14T04:00:00.000Z",
+      "discoveredAt": "2026-08-16T03:29:17.285Z",
+      "updatedAt": "2026-08-15T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "AI Alignment Methods Pose Dual-Use Censorship Risk",
-        "zh-Hans": "AI对齐方法存在双重用途审查风险"
+        "en": "Cognitive Alignment: Making AI Reasoning Mirror Human Thought Processes",
+        "zh-Hans": "认知对齐：让AI推理过程与人类思维模式保持一致"
       },
       "summary": {
-        "en": "Researchers argue that modern AI alignment techniques designed to prevent harmful outputs could be misused by malicious actors for censorship and manipulation, creating an unintended toolkit for informational dominance.",
-        "zh-Hans": "研究人员认为，旨在防止有害输出的现代AI对齐技术可能被恶意行为者滥用于审查和操控，无意中创造了信息主导的工具包。"
+        "en": "Position paper argues for cognitively-aligned AI systems that reason similarly to users and faithfully communicate reasoning, particularly for high-stakes decision-making applications.",
+        "zh-Hans": "立场论文主张开发认知对齐的AI系统，使其推理方式与用户相似并忠实传达推理过程，特别适用于高风险决策应用。"
       },
       "category": "safety_security_alignment",
       "tags": [
-        "alignment",
-        "dual-use",
-        "censorship",
-        "safety"
+        "cognitive-alignment",
+        "human-reasoning",
+        "trustworthiness"
       ],
       "topics": [
         "safety_security_alignment"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Sarah Ball, Phil Hackemann",
+      "author": "Vijay Keswani, Breanna K. Nguyen, Cyrus Cousins, Vincent Conitzer, Walter Sinnott-Armstrong, Jana Schaich Borg",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:sarah ball, phil hackemann",
+      "independenceKey": "academic:vijay keswani, breanna k. nguyen, cyrus cousins, vincent conitzer, walter sinnott-armstrong, jana schaich borg",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 95,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 90,
-      "relevanceReason": "addresses fundamental dual-use concerns in AI alignment methods critical for AGI safety",
+      "freshnessScore": 80,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental alignment challenges for AI systems in decision-making roles with transferable reasoning alignment methods",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_14bd425bd1c556eba4d876f9",
-          "url": "https://arxiv.org/abs/2608.12346",
+          "id": "candidate_76c26deb7d6d04310327090b",
+          "url": "https://arxiv.org/abs/2608.12372",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-14T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.12346v1 Announce Type: new Abstract: This position paper argues that modern AI alignment methods - originally designed to prevent harmful output - are dual-use technologies that may easily be misused by malicious actors for censorship and manipulation. By mapping current alignment techniques to the possibility and actual cases of misuse, we show that the quest for a \"perfectly aligned\" model inadvertently also provides malicious actors with an ever-improving tool for informational dominance. We need to discuss this dual-use potential now, as its risk is exacerbated by rapid user adoption of AI as information provider, economic power asymmetries, and a political landscape that increasingly shifts towards authoritarianism. We conclude by urging the community to consider the intentional misuse of AI alignment mechanisms and propose mitigation strategies to safeguard against this dual-use potential."
+          "publishedAt": "2026-08-15T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12372v1 Announce Type: new Abstract: AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers. This position paper argues that in many settings, particularly high-stakes decision-making, we need accurate cognitively-aligned AI systems that reason similarly to their users, and faithfully communicate their reasoning. We review evidence that cognitive alignment improves understandability and trustworthiness, and provide new survey data showing that many users find cognitive alignment \"essential\" when an AI's rationale for a judgment or action is important to them. We outline the gaps between existing alignment methods and what is needed to achieve cognitive alignment, and present a research agenda to address these gaps. We argue that cognitive misalignment represents a likely impediment to AI adoption in many envisioned applications, and that addressing it is important for creating AI systems on which users are both willing and justified to rely."
         }
       ]
     },
     {
-      "id": "item_d6d452a64c5d2ce673a7",
+      "id": "item_c8faa25c30539bf3c7ac",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -81,57 +80,120 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.12368",
-      "url": "https://arxiv.org/abs/2608.12368",
-      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.12371",
+      "url": "https://arxiv.org/abs/2608.12371",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-14T09:45:09.309Z",
-      "updatedAt": "2026-08-14T04:00:00.000Z",
+      "discoveredAt": "2026-08-16T03:29:17.285Z",
+      "updatedAt": "2026-08-15T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Study Reveals Gap Between AI Agreement and True Alignment",
-        "zh-Hans": "研究揭示AI一致性与真正对齐之间的差距"
+        "en": "LLM-Enhanced Multi-Agent Negotiation for Edge Computing Scheduling",
+        "zh-Hans": "基于LLM增强的多智能体边缘计算调度协商"
       },
       "summary": {
-        "en": "Analysis of 500 ethical judgment cases shows that while LLMs often agree with human decisions, they rely on different moral reasoning, suggesting agreement-based evaluation may be misleadingly reassuring for alignment assessment.",
-        "zh-Hans": "对500个伦理判断案例的分析显示，虽然大语言模型经常与人类决策一致，但它们依赖不同的道德推理，表明基于一致性的评估可能对对齐评估产生误导性安慰。"
+        "en": "Researchers propose MAS-DecStream with LLM-MR-CNP protocol that enables edge-cluster agents to negotiate resource allocation using natural language proposals and multi-round refinement.",
+        "zh-Hans": "研究人员提出MAS-DecStream系统，采用LLM-MR-CNP协议让边缘集群智能体通过自然语言提案和多轮优化进行资源分配协商。"
       },
-      "category": "safety_security_alignment",
+      "category": "agents_automation",
       "tags": [
-        "alignment",
-        "ethics",
-        "evaluation",
-        "moral reasoning"
+        "multi-agent",
+        "llm",
+        "negotiation",
+        "edge-computing"
       ],
       "topics": [
-        "safety_security_alignment"
+        "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Octavian M. Machidon, Alina L. Machidon, Vojko Strahovnik, Mateja Centa Strahovnik, Jonas Miklav\\v{c}i\\v{c}, Marko Robnik \\v{S}ikonja",
+      "author": "Sabeur Lajili, Zaki Brahmi",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:octavian m. machidon, alina l. machidon, vojko strahovnik, mateja centa strahovnik, jonas miklav\\v{c}i\\v{c}, marko robnik \\v{s}ikonja",
+      "independenceKey": "academic:sabeur lajili, zaki brahmi",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 95,
-      "importanceScore": 80,
-      "importance": 80,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "reveals fundamental limitations in current alignment evaluation methods for advanced AI systems",
+      "freshnessScore": 80,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "demonstrates transferable LLM-assisted multi-agent negotiation capabilities with semantic communication and progressive context refinement",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_d6d452a64c5d2ce673a7b5ed",
-          "url": "https://arxiv.org/abs/2608.12368",
+          "id": "candidate_c8faa25c30539bf3c7ac344f",
+          "url": "https://arxiv.org/abs/2608.12371",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-14T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.12368v1 Announce Type: new Abstract: Agreement with human judgments is a common proxy for evaluating the alignment of large language models (LLMs). Yet agreement in final labels does not show that human annotators and models rely on the same moral grounds. Two agents may reach the same judgment while appealing to different principles, contextual assumptions, or interpretations of the situation. We test this distinction using a curated 500-item ETHICS-derived benchmark spanning five domains of moral judgment, with new human annotator and LLM annotations of both final labels and supporting rationales. Across frontier and open model families, agreement with human annotator majority labels is often high. However, rationale-level analysis reveals systematic divergence in the moral grounds expressed by human annotators and models. In particular, models redistribute attention across categories such as harm, respect, promise-keeping, justice, desert, and excuse relevance, even when their final labels match the human annotator majority. Our results show that agreement should not be treated as equivalent to alignment. Label-based evaluation can therefore be misleadingly reassuring"
+          "publishedAt": "2026-08-15T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12371v1 Announce Type: new Abstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling. This paper proposes \\emph{MAS-DecStream}, whose main contribution is \\emph{LLM-MR-CNP}: an extension of the classical Contract Net Protocol with semantic CFP formulation, progressive context disclosure, multi-round proposal revision, negotiation memory, and deterministic validation. Edge-cluster agents refine natural-language offloading proposals from local observations, predicted resource states, and qualitative runtime context, while hard resource and QoS constraints remain deterministic. Experiments derived from the Alibaba ASI Trace evaluate the extension at three levels: single- versus multi-round CNP, rule-based versus LLM-assisted refinement, and fixed-model single- versus multi-round negotiation. Under the evaluated configurations, MAS-DecStream reduces latency violations to 3\\%, eliminates resource overcommitment, reaches a conflict-resolution rate of 0.91 with 20 agents, and improves util"
+        }
+      ]
+    },
+    {
+      "id": "item_bc290ba394fd0d9149bf",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "publishedAt": "2026-08-14T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-16T03:29:17.285Z",
+      "updatedAt": "2026-08-14T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Open Model Ecosystem Shows Agent-Focused Development Trends",
+        "zh-Hans": "开放模型生态系统呈现以智能体为中心的发展趋势"
+      },
+      "summary": {
+        "en": "Hugging Face reports significant growth in model repositories to 2.96 million, with Qwen emerging as community base model and agents becoming the new user focus.",
+        "zh-Hans": "Hugging Face报告模型仓库大幅增长至296万个，Qwen成为社区基础模型，智能体成为新的用户关注焦点。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "open-models",
+        "community",
+        "adoption",
+        "agents"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 61,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 76,
+      "relevanceReason": "tracks ecosystem-wide adoption patterns showing shift toward agent-based applications and model accessibility",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_bc290ba394fd0d9149bf5cc4",
+          "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-14T00:00:00.000Z",
+          "evidenceSnippet": "2. Attention ≠ Adoption 3. Open weights shift where value accumulates 4. Qwen has become the community's base model 5. Small models remain the practical layer 6. Agents are the new user Looking forward Notes on method In the AI world, time feels compressed. A few months after our spring report in our biannual analysis worked through the ecosystem, there are quite a few findings that we have observed until this summer. This report lays out these observations from January to August 2026 and presents the data behind each one. Models and datasets on HF hub are growing on a daily basis. Public model repositories grew from 2.43 to 2.96 million over the period, datasets from 711,000 to 1 million, Spaces from 1.00 to 1.44 million. The distribution underneath stays extreme, roughly 85.6% of models have fewer than 200 lifetime downloads, and 1.5% of repositories account for 99.2% of all downloads. Everything below happens inside that shape. 1. The frontier is moving fast"
         }
       ]
     },
@@ -195,69 +257,6 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-08-13T17:16:04.000Z",
           "evidenceSnippet": "What you'll build Prerequisites Step 1 - Record a demonstration into a bucket Step 2 - Store with byte-level deduplication Step 3 - Train by streaming from the Hub Step 4 - Deploy the policy and return data to the loop Try it using the sample application Security Considerations Clean up Where to go from here Resources A walkthrough of the streaming data loop in Strands Robots, one agent loop that records robot demonstrations, trains on them by reading straight from the Hub, and deploys the policy back to hardware, with the dataset in the same on-disk LeRobot format the whole way through. You have an agent that can already record a demonstration and push it to the Hugging Face Hub . Now you want to run that loop continuously: collect episodes through the day, train a policy on the growing dataset, deploy it, and pull the next batch back to improve it. Run that loop once and every piece works. Run it every day and you start paying for the same byte transfers over and over. The recordings you upload keep growing, each training run copies the whole dataset to the GPUs before it starts, and every new checkpoint ships out while the next batch of recordings comes back. The first post in t"
-        }
-      ]
-    },
-    {
-      "id": "item_57f8b7f378e9c39afee2",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/icml-2026-open-reproductions",
-      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
-      "publishedAt": "2026-08-13T00:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-14T05:19:39.331Z",
-      "updatedAt": "2026-08-13T00:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Community reproduces 2,200 ICML papers using coding agents in 19-day hackathon",
-        "zh-Hans": "社区在19天黑客马拉松中使用编程代理复现了2200篇ICML论文"
-      },
-      "summary": {
-        "en": "Hugging Face hackathon saw 1,200 participants use coding agents to reproduce claims from 2,226 ICML papers, publishing 6,816 reproduction logbooks and highlighting questions about human roles in agent-driven research.",
-        "zh-Hans": "Hugging Face黑客马拉松有1200名参与者使用编程代理复现2226篇ICML论文的声明，发布了6816个复现日志，突出了代理驱动研究中人类角色的问题。"
-      },
-      "category": "research_science",
-      "tags": [
-        "reproducibility",
-        "research-agents",
-        "evaluation",
-        "scientific-process"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 75,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "demonstrates large-scale deployment of AI agents for scientific research validation and reproducibility",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_57f8b7f378e9c39afee2b695",
-          "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-13T00:00:00.000Z",
-          "evidenceSnippet": "More papers than anyone can review The hackathon (July 15 - August 2nd) What we found Reproductions done well Falsifications, and what happened when we checked them Talking to authors The role of humans Thank you Back in July, we ran a hackathon where more than 1,200 community members brought their own coding agents and tried to reproduce the papers published at ICML 2026, claim by claim. In 19 days, participants published 6,816 Trackio logbooks reproducing 2,226 papers, about a third of the conference 🤯 In this post, we're sharing what we learned from running this hackathon, and what it suggests about the role humans will play when agents are doing the research experiments. Questions about how reproducible AI research really is are older than the current AI wave. But these questions are exacerbated by scale. ICML 2026 received 23,918 submissions and accepted 6,352 papers , roughly double the previous year, continuing an exponential trend that is at least partly driven by AI agents making it faster to run experiments and write them up."
         }
       ]
     },
@@ -681,6 +680,132 @@
       ]
     },
     {
+      "id": "item_14bd425bd1c556eba4d8",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.12346",
+      "url": "https://arxiv.org/abs/2608.12346",
+      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-14T09:45:09.309Z",
+      "updatedAt": "2026-08-14T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AI Alignment Methods Pose Dual-Use Censorship Risk",
+        "zh-Hans": "AI对齐方法存在双重用途审查风险"
+      },
+      "summary": {
+        "en": "Researchers argue that modern AI alignment techniques designed to prevent harmful outputs could be misused by malicious actors for censorship and manipulation, creating an unintended toolkit for informational dominance.",
+        "zh-Hans": "研究人员认为，旨在防止有害输出的现代AI对齐技术可能被恶意行为者滥用于审查和操控，无意中创造了信息主导的工具包。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "alignment",
+        "dual-use",
+        "censorship",
+        "safety"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Sarah Ball, Phil Hackemann",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:sarah ball, phil hackemann",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 90,
+      "relevanceReason": "addresses fundamental dual-use concerns in AI alignment methods critical for AGI safety",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_14bd425bd1c556eba4d876f9",
+          "url": "https://arxiv.org/abs/2608.12346",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-14T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12346v1 Announce Type: new Abstract: This position paper argues that modern AI alignment methods - originally designed to prevent harmful output - are dual-use technologies that may easily be misused by malicious actors for censorship and manipulation. By mapping current alignment techniques to the possibility and actual cases of misuse, we show that the quest for a \"perfectly aligned\" model inadvertently also provides malicious actors with an ever-improving tool for informational dominance. We need to discuss this dual-use potential now, as its risk is exacerbated by rapid user adoption of AI as information provider, economic power asymmetries, and a political landscape that increasingly shifts towards authoritarianism. We conclude by urging the community to consider the intentional misuse of AI alignment mechanisms and propose mitigation strategies to safeguard against this dual-use potential."
+        }
+      ]
+    },
+    {
+      "id": "item_d6d452a64c5d2ce673a7",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.12368",
+      "url": "https://arxiv.org/abs/2608.12368",
+      "publishedAt": "2026-08-14T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-14T09:45:09.309Z",
+      "updatedAt": "2026-08-14T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Study Reveals Gap Between AI Agreement and True Alignment",
+        "zh-Hans": "研究揭示AI一致性与真正对齐之间的差距"
+      },
+      "summary": {
+        "en": "Analysis of 500 ethical judgment cases shows that while LLMs often agree with human decisions, they rely on different moral reasoning, suggesting agreement-based evaluation may be misleadingly reassuring for alignment assessment.",
+        "zh-Hans": "对500个伦理判断案例的分析显示，虽然大语言模型经常与人类决策一致，但它们依赖不同的道德推理，表明基于一致性的评估可能对对齐评估产生误导性安慰。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "alignment",
+        "ethics",
+        "evaluation",
+        "moral reasoning"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Octavian M. Machidon, Alina L. Machidon, Vojko Strahovnik, Mateja Centa Strahovnik, Jonas Miklav\\v{c}i\\v{c}, Marko Robnik \\v{S}ikonja",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:octavian m. machidon, alina l. machidon, vojko strahovnik, mateja centa strahovnik, jonas miklav\\v{c}i\\v{c}, marko robnik \\v{s}ikonja",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "reveals fundamental limitations in current alignment evaluation methods for advanced AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d6d452a64c5d2ce673a7b5ed",
+          "url": "https://arxiv.org/abs/2608.12368",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-14T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12368v1 Announce Type: new Abstract: Agreement with human judgments is a common proxy for evaluating the alignment of large language models (LLMs). Yet agreement in final labels does not show that human annotators and models rely on the same moral grounds. Two agents may reach the same judgment while appealing to different principles, contextual assumptions, or interpretations of the situation. We test this distinction using a curated 500-item ETHICS-derived benchmark spanning five domains of moral judgment, with new human annotator and LLM annotations of both final labels and supporting rationales. Across frontier and open model families, agreement with human annotator majority labels is often high. However, rationale-level analysis reveals systematic divergence in the moral grounds expressed by human annotators and models. In particular, models redistribute attention across categories such as harm, respect, promise-keeping, justice, desert, and excuse relevance, even when their final labels match the human annotator majority. Our results show that agreement should not be treated as equivalent to alignment. Label-based evaluation can therefore be misleadingly reassuring"
+        }
+      ]
+    },
+    {
       "id": "item_6573139a0d538e70ced7",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -1055,6 +1180,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-13T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.11210v1 Announce Type: new Abstract: Bayesian calibration of process-based models requires a prior distribution for each model parameter. Despite decades of methodological work, researchers almost always fall back on uniform priors. The main reason is that building informative priors from scientific literature is slow and needs both domain and statistical expertise. We present \\textbf{Distribird}, an agentic web application that automates this process. Given a parameter name, physical description, and domain context, Distribird deploys a multi-agent pipeline that searches the literature, extracts and weights reported values by domain relevance, and fits a probability distribution via AIC model selection. When no literature is available, the system falls back to sensible uninformative alternatives, and clearly reports both the evidence behind and the confidence level of every prior it produces. It is designed for the problems where the models have physically interpretable parameters, where domain knowledge exists in the published literature. We evaluate the tool on 24~parameters across 10 scientific domains comparing three open-weight models (Qwen3.6 27B, Gemma 4 31B, Mis"
+        }
+      ]
+    },
+    {
+      "id": "item_57f8b7f378e9c39afee2",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "publishedAt": "2026-08-13T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-14T05:19:39.331Z",
+      "updatedAt": "2026-08-13T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Community reproduces 2,200 ICML papers using coding agents in 19-day hackathon",
+        "zh-Hans": "社区在19天黑客马拉松中使用编程代理复现了2200篇ICML论文"
+      },
+      "summary": {
+        "en": "Hugging Face hackathon saw 1,200 participants use coding agents to reproduce claims from 2,226 ICML papers, publishing 6,816 reproduction logbooks and highlighting questions about human roles in agent-driven research.",
+        "zh-Hans": "Hugging Face黑客马拉松有1200名参与者使用编程代理复现2226篇ICML论文的声明，发布了6816个复现日志，突出了代理驱动研究中人类角色的问题。"
+      },
+      "category": "research_science",
+      "tags": [
+        "reproducibility",
+        "research-agents",
+        "evaluation",
+        "scientific-process"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 75,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "demonstrates large-scale deployment of AI agents for scientific research validation and reproducibility",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_57f8b7f378e9c39afee2b695",
+          "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-13T00:00:00.000Z",
+          "evidenceSnippet": "More papers than anyone can review The hackathon (July 15 - August 2nd) What we found Reproductions done well Falsifications, and what happened when we checked them Talking to authors The role of humans Thank you Back in July, we ran a hackathon where more than 1,200 community members brought their own coding agents and tried to reproduce the papers published at ICML 2026, claim by claim. In 19 days, participants published 6,816 Trackio logbooks reproducing 2,226 papers, about a third of the conference 🤯 In this post, we're sharing what we learned from running this hackathon, and what it suggests about the role humans will play when agents are doing the research experiments. Questions about how reproducible AI research really is are older than the current AI wave. But these questions are exacerbated by scale. ICML 2026 received 23,918 submissions and accepted 6,352 papers , roughly double the previous year, continuing an exponential trend that is at least partly driven by AI agents making it faster to run experiments and write them up."
         }
       ]
     },
