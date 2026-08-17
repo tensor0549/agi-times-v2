@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-17T22:00:58.725Z",
+  "generatedAt": "2026-08-17T23:01:01.538Z",
   "items": [
     {
       "id": "item_bf50ec5ce617ac83f0c8",
@@ -677,6 +677,69 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_6df4b4be97cf4ca6c79d",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.13573",
+      "url": "https://arxiv.org/abs/2608.13573",
+      "publishedAt": "2026-08-17T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-17T23:00:50.682Z",
+      "updatedAt": "2026-08-17T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Year-Long Study Reveals LLM Production Serving Patterns",
+        "zh-Hans": "年度研究揭示大语言模型生产服务模式"
+      },
+      "summary": {
+        "en": "Analysis of one-year production trace from Chutes provides comprehensive view of LLM serving workloads, capturing user-model interactions across popular and long-tail models to understand workload evolution over time.",
+        "zh-Hans": "对Chutes一年生产轨迹的分析提供了大语言模型服务工作负载的全面视图，捕获了热门和长尾模型的用户交互，以了解工作负载随时间的演变。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "llm serving",
+        "production workloads",
+        "caching",
+        "load balancing"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "William Nixon, Jon Durbin, Florian Standhartinger, Haryadi S. Gunawi, Juncheng Yang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:william nixon, jon durbin, florian standhartinger, haryadi s. gunawi, juncheng yang",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 83,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "provides critical infrastructure insights for scaling LLM deployment and optimization",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6df4b4be97cf4ca6c79dbd3e",
+          "url": "https://arxiv.org/abs/2608.13573",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-17T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.13573v1 Announce Type: new Abstract: Large Language Model (LLM) serving has become a critical cloud workload, and realistic traces are essential for motivating and benchmarking serving systems. However, existing LLM serving workload studies remain limited in scale and scope. They often observe short time periods and provide limited visibility into how users interact with models in production. As a result, they do not fully capture how LLM serving workloads evolve over time or how user-model interactions shape production traffic. In this work, we further the understanding of real-world LLM serving workloads through both a global characterization and a longitudinal study of a one-year production trace from Chutes. Unlike prior studies, our trace captures full production behavior across many models and users, including both popular and long-tail models. We analyze the workload from aggregate, temporal, model-level, and user-level perspectives, revealing workload evolution and user-model structure that are typically hidden behind aggregate views. To support future research, we will release the full one-year trace with the paper, enabling downstream studies of production beha"
+        }
+      ]
     },
     {
       "id": "item_76c26deb7d6d04310327",
