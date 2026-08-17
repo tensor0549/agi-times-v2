@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-17T23:01:01.538Z",
+  "generatedAt": "2026-08-17T23:58:10.843Z",
   "items": [
     {
       "id": "item_bf50ec5ce617ac83f0c8",
@@ -677,6 +677,68 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_cedf57bb6ac50ed24501",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.13574",
+      "url": "https://arxiv.org/abs/2608.13574",
+      "publishedAt": "2026-08-17T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-17T23:58:01.452Z",
+      "updatedAt": "2026-08-17T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Agentao Runtime Introduces Governance Framework for Tool-Using LLM Agents",
+        "zh-Hans": "Agentao运行时为工具使用型LLM智能体引入治理框架"
+      },
+      "summary": {
+        "en": "New local-first runtime system addresses agent security risks through layered architecture separating model action proposals from host execution, featuring permission-mediated tools and explicit governance abstractions.",
+        "zh-Hans": "新的本地优先运行时系统通过分层架构分离模型动作提议和主机执行，采用权限调节工具和显式治理抽象来解决智能体安全风险。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent runtime",
+        "governance",
+        "security"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Bo Jin, Qiang Jiao, Xin Tong",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:bo jin, qiang jiao, xin tong",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 83,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses critical governance and security challenges for autonomous agent systems with transferable runtime architecture",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_cedf57bb6ac50ed24501872e",
+          "url": "https://arxiv.org/abs/2608.13574",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-17T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.13574v1 Announce Type: new Abstract: LLM agents increasingly operate as execution systems that invoke tools, modify local state, use persistent memory, and interact with external protocols. These capabilities make agents useful, but they also introduce risks related to over-privileged actions, weak auditability, prompt injection, tool poisoning, and uncontrolled side effects. This paper presents Agentao, a governed local-first runtime for tool-using LLM agents. Agentao separates model-generated action proposals from host-authorized execution through a layered architecture consisting of host-facing surfaces, a host contract, a runtime core, a permission-mediated tool system, and supporting subsystems for memory, replay, plugins, skills, sub-agents, and protocol integration. We describe the motivation, threat model, design goals, governance model, execution pipeline, and structured event interface of the system. Agentao does not provide formal safety guarantees; rather, it demonstrates how permissions, state, protocol boundaries, and execution traces can be made explicit runtime abstractions for building agents that are more governable, inspectable, and suitable for host-c"
+        }
+      ]
     },
     {
       "id": "item_6df4b4be97cf4ca6c79d",
