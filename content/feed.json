@@ -7,72 +7,73 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-16T03:29:36.470Z",
+  "generatedAt": "2026-08-17T22:00:58.725Z",
   "items": [
     {
-      "id": "item_76c26deb7d6d04310327",
+      "id": "item_bf50ec5ce617ac83f0c8",
       "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
+      "type": "article",
+      "sourceId": "src_hugging-face",
       "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.12372",
-      "url": "https://arxiv.org/abs/2608.12372",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+      "publishedAt": "2026-08-17T19:46:21.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-16T03:29:17.285Z",
-      "updatedAt": "2026-08-15T04:00:00.000Z",
+      "discoveredAt": "2026-08-17T22:00:31.484Z",
+      "updatedAt": "2026-08-17T19:46:21.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Cognitive Alignment: Making AI Reasoning Mirror Human Thought Processes",
-        "zh-Hans": "认知对齐：让AI推理过程与人类思维模式保持一致"
+        "en": "Constraint-aware GPU allocator achieves 33% utilization gains over FIFO scheduling",
+        "zh-Hans": "约束感知GPU分配器相比FIFO调度实现33%利用率提升"
       },
       "summary": {
-        "en": "Position paper argues for cognitively-aligned AI systems that reason similarly to users and faithfully communicate reasoning, particularly for high-stakes decision-making applications.",
-        "zh-Hans": "立场论文主张开发认知对齐的AI系统，使其推理方式与用户相似并忠实传达推理过程，特别适用于高风险决策应用。"
+        "en": "Dharma AI's constraint-aware GPU allocator improved utilization by up to 33 percentage points and priority-weighted output by up to 105% over FIFO scheduling across seven benchmark scenarios on identical hardware.",
+        "zh-Hans": "Dharma AI的约束感知GPU分配器在相同硬件上的七个基准场景中，相比FIFO调度将利用率提升多达33个百分点，优先级加权输出提升多达105%。"
       },
-      "category": "safety_security_alignment",
+      "category": "compute_infrastructure",
       "tags": [
-        "cognitive-alignment",
-        "human-reasoning",
-        "trustworthiness"
+        "gpu",
+        "scheduling",
+        "utilization",
+        "enterprise"
       ],
       "topics": [
-        "safety_security_alignment"
+        "compute_infrastructure"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Vijay Keswani, Breanna K. Nguyen, Cyrus Cousins, Vincent Conitzer, Walter Sinnott-Armstrong, Jana Schaich Borg",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:vijay keswani, breanna k. nguyen, cyrus cousins, vincent conitzer, walter sinnott-armstrong, jana schaich borg",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.86,
+      "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 80,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "addresses fundamental alignment challenges for AI systems in decision-making roles with transferable reasoning alignment methods",
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "GPU scheduling optimization directly impacts model training and inference efficiency for AGI development",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_76c26deb7d6d04310327090b",
-          "url": "https://arxiv.org/abs/2608.12372",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-15T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.12372v1 Announce Type: new Abstract: AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers. This position paper argues that in many settings, particularly high-stakes decision-making, we need accurate cognitively-aligned AI systems that reason similarly to their users, and faithfully communicate their reasoning. We review evidence that cognitive alignment improves understandability and trustworthiness, and provide new survey data showing that many users find cognitive alignment \"essential\" when an AI's rationale for a judgment or action is important to them. We outline the gaps between existing alignment methods and what is needed to achieve cognitive alignment, and present a research agenda to address these gaps. We argue that cognitive misalignment represents a likely impediment to AI adoption in many envisioned applications, and that addressing it is important for creating AI systems on which users are both willing and justified to rely."
+          "id": "candidate_bf50ec5ce617ac83f0c8191a",
+          "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-17T19:46:21.000Z",
+          "evidenceSnippet": "The decision, stated precisely What FIFO costs under contention Utilization is necessary. Priority is what turns it into value. Writing the problem down The allocator that already knows the constraints Results None of it works if the demand numbers are wrong Optimize the day, commit the hour What this generalizes to Further Reading The previous post argued that utilization, not intelligence, is where the next real constraint in enterprise AI is forming, and it closed by noting that no playbook has emerged yet for what a mature GPU Management practice looks like. This is ours. We built a constraint-aware GPU allocator and benchmarked it against a FIFO scheduler across seven benchmark scenarios. On identical hardware, running identical workloads, GPU utilization rose by as much as 33 percentage points, and priority-weighted output rose in every one of them, by as much as 105%. Nothing about the hardware changed. What changed was the order in which allocation decisions get made. One note on measurement before the numbers start. Every gain below is expressed as improvement over the FIFO result on the same scenario. Utilization is reported in percentage points; value is reported as a pe"
         }
       ]
     },
     {
-      "id": "item_c8faa25c30539bf3c7ac",
+      "id": "item_2a126068ed5ab49fbfd1",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -80,57 +81,119 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.12371",
-      "url": "https://arxiv.org/abs/2608.12371",
-      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.13564",
+      "url": "https://arxiv.org/abs/2608.13564",
+      "publishedAt": "2026-08-17T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-16T03:29:17.285Z",
-      "updatedAt": "2026-08-15T04:00:00.000Z",
+      "discoveredAt": "2026-08-17T22:00:31.484Z",
+      "updatedAt": "2026-08-17T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "LLM-Enhanced Multi-Agent Negotiation for Edge Computing Scheduling",
-        "zh-Hans": "基于LLM增强的多智能体边缘计算调度协商"
+        "en": "RubricForge induces agent evaluation rubrics from ground-truth trajectories",
+        "zh-Hans": "RubricForge从真实轨迹中诱导智能体评估标准"
       },
       "summary": {
-        "en": "Researchers propose MAS-DecStream with LLM-MR-CNP protocol that enables edge-cluster agents to negotiate resource allocation using natural language proposals and multi-round refinement.",
-        "zh-Hans": "研究人员提出MAS-DecStream系统，采用LLM-MR-CNP协议让边缘集群智能体通过自然语言提案和多轮优化进行资源分配协商。"
+        "en": "Researchers present RubricForge, which evolves agent-judging rubrics through reflective evolution against labeled trajectories to maximize agreement with environment rewards, addressing over-crediting issues in automated agent evaluation.",
+        "zh-Hans": "研究人员提出RubricForge，通过对标记轨迹的反思演化来发展智能体评判标准，以最大化与环境奖励的一致性，解决自动化智能体评估中的过度评分问题。"
       },
       "category": "agents_automation",
       "tags": [
-        "multi-agent",
-        "llm",
-        "negotiation",
-        "edge-computing"
+        "evaluation",
+        "judging",
+        "rubrics",
+        "agents"
       ],
       "topics": [
         "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Sabeur Lajili, Zaki Brahmi",
+      "author": "Darragh Quinn, David Dylan, Roisin Healy, Fionn Carroll, Maeve Donnelly, Cormac Sheehan",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:sabeur lajili, zaki brahmi",
+      "independenceKey": "academic:darragh quinn, david dylan, roisin healy, fionn carroll, maeve donnelly, cormac sheehan",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 80,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "demonstrates transferable LLM-assisted multi-agent negotiation capabilities with semantic communication and progressive context refinement",
+      "freshnessScore": 84,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 90,
+      "relevanceReason": "Addresses critical challenge in agent evaluation methodology, essential for reliable AGI development",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_c8faa25c30539bf3c7ac344f",
-          "url": "https://arxiv.org/abs/2608.12371",
+          "id": "candidate_2a126068ed5ab49fbfd1425b",
+          "url": "https://arxiv.org/abs/2608.13564",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-15T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.12371v1 Announce Type: new Abstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling. This paper proposes \\emph{MAS-DecStream}, whose main contribution is \\emph{LLM-MR-CNP}: an extension of the classical Contract Net Protocol with semantic CFP formulation, progressive context disclosure, multi-round proposal revision, negotiation memory, and deterministic validation. Edge-cluster agents refine natural-language offloading proposals from local observations, predicted resource states, and qualitative runtime context, while hard resource and QoS constraints remain deterministic. Experiments derived from the Alibaba ASI Trace evaluate the extension at three levels: single- versus multi-round CNP, rule-based versus LLM-assisted refinement, and fixed-model single- versus multi-round negotiation. Under the evaluated configurations, MAS-DecStream reduces latency violations to 3\\%, eliminates resource overcommitment, reaches a conflict-resolution rate of 0.91 with 20 agents, and improves util"
+          "publishedAt": "2026-08-17T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.13564v1 Announce Type: new Abstract: Evaluating language-model agents at scale increasingly relies on a second language model as an automatic judge, because the gold signal, an executable environment reward, is expensive, slow, or unavailable at deployment time. Such a judge is a reward-free proxy whose value depends on whether it can be trusted, yet existing judges either hand-write the scoring rubric, as in G-Eval, or fine-tune the judge's weights, and both tend to credit fluent but unsuccessful trajectories as successes. We instead induce the text of an agent-judging rubric from a small set of ground-truth-labeled trajectories, grounding it in true outcomes. We present RubricForge, which evolves a judge rubric by reflective evolution against labeled trajectories to maximize agreement with the environment reward, freezes it, and applies it to held-out trajectories in one model call with no environment access. The optimized artifact is human-readable text, so every verdict is attributable to named criteria. Using one frozen 7B model as both agent and judge, on tau-bench (173 labeled trajectories drawn from 220 rollouts) and WebShop (160), the principal gain is faithfuln"
+        }
+      ]
+    },
+    {
+      "id": "item_03b3344dcc9ff8bb0d7b",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.13565",
+      "url": "https://arxiv.org/abs/2608.13565",
+      "publishedAt": "2026-08-17T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-17T22:00:31.484Z",
+      "updatedAt": "2026-08-17T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Layer sensitivity analysis reveals depth-dependent expert importance in MoE models",
+        "zh-Hans": "层敏感性分析揭示MoE模型中专家重要性的深度依赖性"
+      },
+      "summary": {
+        "en": "Study of Qwen3.6-35B-A3B model shows early and middle layers are fragile to expert masking while late layers tolerate aggressive masking, enabling targeted compression strategies for large MoE architectures.",
+        "zh-Hans": "对Qwen3.6-35B-A3B模型的研究显示，早期和中期层对专家掩码敏感，而后期层可容忍激进掩码，为大型MoE架构提供针对性压缩策略。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mixture-of-experts",
+        "model-compression",
+        "sensitivity-analysis"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Pradeep Kumar Sharma, Shantanu Godbole, Hritvik Shrivastava",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:pradeep kumar sharma, shantanu godbole, hritvik shrivastava",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 84,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Provides insights for optimizing large-scale MoE models critical for AGI development",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_03b3344dcc9ff8bb0d7b4af1",
+          "url": "https://arxiv.org/abs/2608.13565",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-17T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.13565v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) architectures scale large language models (LLMs) while preserving computational efficiency through sparse activation. Despite their widespread adoption, the relative importance of individual MoE layers remains insufficiently characterized, particularly for model compression. This paper presents a systematic layer-wise sensitivity analysis of the Qwen3.6-35B-A3B model (40 MoE layers, 256 experts per layer, top-8 routing) using magnitude-based expert masking on the XLCoST cross-lingual code translation benchmark. We conduct a multi-phase study spanning 100, 300, and 500 prompt evaluation scales across three H100 GPU servers. Our central finding is that layer sensitivity is strongly depth-dependent: early layers (0-9) and middle layers (10-29) are highly fragile to expert masking, while late layers (30-39), and especially very-late layers (35-39), tolerate aggressive masking of low-magnitude experts. Flat all-layer masking at 30% retains only 150/300 Good+Similar outputs at 300-prompt scale, whereas late-focused policies retain 249-255/300 while masking 640-1,145 experts. On a later 500-prompt held-out validation"
         }
       ]
     },
@@ -194,69 +257,6 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-08-14T00:00:00.000Z",
           "evidenceSnippet": "2. Attention ≠ Adoption 3. Open weights shift where value accumulates 4. Qwen has become the community's base model 5. Small models remain the practical layer 6. Agents are the new user Looking forward Notes on method In the AI world, time feels compressed. A few months after our spring report in our biannual analysis worked through the ecosystem, there are quite a few findings that we have observed until this summer. This report lays out these observations from January to August 2026 and presents the data behind each one. Models and datasets on HF hub are growing on a daily basis. Public model repositories grew from 2.43 to 2.96 million over the period, datasets from 711,000 to 1 million, Spaces from 1.00 to 1.44 million. The distribution underneath stays extreme, roughly 85.6% of models have fewer than 200 lifetime downloads, and 1.5% of repositories account for 99.2% of all downloads. Everything below happens inside that shape. 1. The frontier is moving fast"
-        }
-      ]
-    },
-    {
-      "id": "item_353217afc4f706b5339d",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
-      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
-      "publishedAt": "2026-08-13T17:16:04.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-14T05:19:39.331Z",
-      "updatedAt": "2026-08-13T17:16:04.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Hugging Face introduces continuous robot learning pipeline with Strands Agents",
-        "zh-Hans": "Hugging Face推出基于Strands Agents的连续机器人学习管道"
-      },
-      "summary": {
-        "en": "New streaming data loop enables robots to continuously record demonstrations, train policies on growing datasets, and deploy updated models back to hardware using LeRobot format throughout the process.",
-        "zh-Hans": "新的流数据循环使机器人能够持续记录演示，在不断增长的数据集上训练策略，并使用LeRobot格式将更新的模型部署回硬件。"
-      },
-      "category": "robotics_embodied_ai",
-      "tags": [
-        "robotics",
-        "continuous-learning",
-        "data-loop",
-        "deployment"
-      ],
-      "topics": [
-        "robotics_embodied_ai"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 89,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "demonstrates continuous learning and deployment mechanisms for embodied AI systems",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_353217afc4f706b5339de407",
-          "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-13T17:16:04.000Z",
-          "evidenceSnippet": "What you'll build Prerequisites Step 1 - Record a demonstration into a bucket Step 2 - Store with byte-level deduplication Step 3 - Train by streaming from the Hub Step 4 - Deploy the policy and return data to the loop Try it using the sample application Security Considerations Clean up Where to go from here Resources A walkthrough of the streaming data loop in Strands Robots, one agent loop that records robot demonstrations, trains on them by reading straight from the Hub, and deploys the policy back to hardware, with the dataset in the same on-disk LeRobot format the whole way through. You have an agent that can already record a demonstration and push it to the Hugging Face Hub . Now you want to run that loop continuously: collect episodes through the day, train a policy on the growing dataset, deploy it, and pull the next batch back to improve it. Run that loop once and every piece works. Run it every day and you start paying for the same byte transfers over and over. The recordings you upload keep growing, each training run copies the whole dataset to the GPUs before it starts, and every new checkpoint ships out while the next batch of recordings comes back. The first post in t"
         }
       ]
     },
@@ -383,69 +383,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-12T09:51:00.000Z",
           "evidenceSnippet": "Nitay Calderon and Gal Yona, Research Scientists, Google Research When LLMs get facts wrong, is it because they never learned them or because they can't recall what they’ve already encoded? Our knowledge profiling framework reveals the latter: frontier LLMs encode nearly all facts, yet struggle to recall many of them. Factuality is essential for making Large Language Models (LLMs) reliable. When a model answers a factual question incorrectly, is it because the fact was never encoded, or because the fact is encoded but not accessible? Standard accuracy metrics collapse these cases together, even though they suggest very different limitations and very different interventions. Encoding failures call for scaling model size or expanding data coverage, while recall failures might also point to post-training and inference-time methods that help LLMs better utilize what they already encode."
-        }
-      ]
-    },
-    {
-      "id": "item_841e1b55054db5ab881b",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
-      "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
-      "publishedAt": "2026-08-11T17:04:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T05:50:28.805Z",
-      "updatedAt": "2026-08-11T17:04:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google advances AMIE medical AI to real-time video consultations with expert-level performance",
-        "zh-Hans": "谷歌推进AMIE医疗AI系统实现专家级实时视频问诊"
-      },
-      "summary": {
-        "en": "Google Research demonstrates AMIE conducting real-time video consultations with expert-level performance in randomized controlled study, integrating visual and auditory cues for clinical diagnosis.",
-        "zh-Hans": "谷歌研究院展示AMIE在随机对照研究中实现专家级实时视频问诊，整合视觉和听觉线索进行临床诊断。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "multimodal",
-        "healthcare",
-        "video",
-        "clinical"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 88,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "demonstrates advanced multimodal AI capabilities integrating real-time video, audio, and clinical reasoning for expert-level medical consultations",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_841e1b55054db5ab881be884",
-          "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-11T17:04:00.000Z",
-          "evidenceSnippet": "Anil Palepu, Senior Research Scientist, and Mike Schaekermann, Research Lead, Google We advance AMIE, our research medical AI system, to conduct real-time video consultations, with a first-of-its-kind demonstration of expert-level performance in a randomized controlled study with simulated consultations. When a physician meets a patient, the consultation extends far beyond the words exchanged. The physician observes the patient's gait, registers visible signs of discomfort, notes their breathing, and guides the patient through physical examination maneuvers. This continuous stream of visual and auditory information is seamlessly integrated with the spoken clinical history. These non-verbal visual and auditory cues are central to effective diagnosis, patient trust, and clinical communication."
         }
       ]
     },
@@ -676,6 +613,193 @@
           "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
           "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
           "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "item_76c26deb7d6d04310327",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.12372",
+      "url": "https://arxiv.org/abs/2608.12372",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-16T03:29:17.285Z",
+      "updatedAt": "2026-08-15T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Cognitive Alignment: Making AI Reasoning Mirror Human Thought Processes",
+        "zh-Hans": "认知对齐：让AI推理过程与人类思维模式保持一致"
+      },
+      "summary": {
+        "en": "Position paper argues for cognitively-aligned AI systems that reason similarly to users and faithfully communicate reasoning, particularly for high-stakes decision-making applications.",
+        "zh-Hans": "立场论文主张开发认知对齐的AI系统，使其推理方式与用户相似并忠实传达推理过程，特别适用于高风险决策应用。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "cognitive-alignment",
+        "human-reasoning",
+        "trustworthiness"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Vijay Keswani, Breanna K. Nguyen, Cyrus Cousins, Vincent Conitzer, Walter Sinnott-Armstrong, Jana Schaich Borg",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:vijay keswani, breanna k. nguyen, cyrus cousins, vincent conitzer, walter sinnott-armstrong, jana schaich borg",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 80,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental alignment challenges for AI systems in decision-making roles with transferable reasoning alignment methods",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_76c26deb7d6d04310327090b",
+          "url": "https://arxiv.org/abs/2608.12372",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-15T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12372v1 Announce Type: new Abstract: AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers. This position paper argues that in many settings, particularly high-stakes decision-making, we need accurate cognitively-aligned AI systems that reason similarly to their users, and faithfully communicate their reasoning. We review evidence that cognitive alignment improves understandability and trustworthiness, and provide new survey data showing that many users find cognitive alignment \"essential\" when an AI's rationale for a judgment or action is important to them. We outline the gaps between existing alignment methods and what is needed to achieve cognitive alignment, and present a research agenda to address these gaps. We argue that cognitive misalignment represents a likely impediment to AI adoption in many envisioned applications, and that addressing it is important for creating AI systems on which users are both willing and justified to rely."
+        }
+      ]
+    },
+    {
+      "id": "item_c8faa25c30539bf3c7ac",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.12371",
+      "url": "https://arxiv.org/abs/2608.12371",
+      "publishedAt": "2026-08-15T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-16T03:29:17.285Z",
+      "updatedAt": "2026-08-15T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LLM-Enhanced Multi-Agent Negotiation for Edge Computing Scheduling",
+        "zh-Hans": "基于LLM增强的多智能体边缘计算调度协商"
+      },
+      "summary": {
+        "en": "Researchers propose MAS-DecStream with LLM-MR-CNP protocol that enables edge-cluster agents to negotiate resource allocation using natural language proposals and multi-round refinement.",
+        "zh-Hans": "研究人员提出MAS-DecStream系统，采用LLM-MR-CNP协议让边缘集群智能体通过自然语言提案和多轮优化进行资源分配协商。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multi-agent",
+        "llm",
+        "negotiation",
+        "edge-computing"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Sabeur Lajili, Zaki Brahmi",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:sabeur lajili, zaki brahmi",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 80,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "demonstrates transferable LLM-assisted multi-agent negotiation capabilities with semantic communication and progressive context refinement",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_c8faa25c30539bf3c7ac344f",
+          "url": "https://arxiv.org/abs/2608.12371",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-15T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.12371v1 Announce Type: new Abstract: Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling. This paper proposes \\emph{MAS-DecStream}, whose main contribution is \\emph{LLM-MR-CNP}: an extension of the classical Contract Net Protocol with semantic CFP formulation, progressive context disclosure, multi-round proposal revision, negotiation memory, and deterministic validation. Edge-cluster agents refine natural-language offloading proposals from local observations, predicted resource states, and qualitative runtime context, while hard resource and QoS constraints remain deterministic. Experiments derived from the Alibaba ASI Trace evaluate the extension at three levels: single- versus multi-round CNP, rule-based versus LLM-assisted refinement, and fixed-model single- versus multi-round negotiation. Under the evaluated configurations, MAS-DecStream reduces latency violations to 3\\%, eliminates resource overcommitment, reaches a conflict-resolution rate of 0.91 with 20 agents, and improves util"
         }
       ]
     },
@@ -928,6 +1052,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-14T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.12325v1 Announce Type: new Abstract: Autonomous reasoning is among the most scientifically and economically motivating topics in AI today. Historically the purview of symbolic AI, recent advances have mainly emerged from deep probabilistic generative models. Despite immense interest and rapid progress, the generative AI community has not clearly converged on operational definitions for reasoning and often implicitly rejects the historical treatment of this topic in logic and verifiable automated reasoning. This position contends that definitional ambiguity leaves the construct validity of reasoning evaluation unverifiable, undermining quantifiable progress toward trustworthy autonomous reasoning. We also contend that this ambiguity is addressable. To that end, we provide (1) operational definitions based on a synthesis of the literature, positioning valid and sound reasoning as a learnable rule-based process; and (2) a checklist for best practices in the communication of AI reasoning research."
+        }
+      ]
+    },
+    {
+      "id": "item_353217afc4f706b5339d",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "publishedAt": "2026-08-13T17:16:04.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-14T05:19:39.331Z",
+      "updatedAt": "2026-08-13T17:16:04.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Hugging Face introduces continuous robot learning pipeline with Strands Agents",
+        "zh-Hans": "Hugging Face推出基于Strands Agents的连续机器人学习管道"
+      },
+      "summary": {
+        "en": "New streaming data loop enables robots to continuously record demonstrations, train policies on growing datasets, and deploy updated models back to hardware using LeRobot format throughout the process.",
+        "zh-Hans": "新的流数据循环使机器人能够持续记录演示，在不断增长的数据集上训练策略，并使用LeRobot格式将更新的模型部署回硬件。"
+      },
+      "category": "robotics_embodied_ai",
+      "tags": [
+        "robotics",
+        "continuous-learning",
+        "data-loop",
+        "deployment"
+      ],
+      "topics": [
+        "robotics_embodied_ai"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "demonstrates continuous learning and deployment mechanisms for embodied AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_353217afc4f706b5339de407",
+          "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-13T17:16:04.000Z",
+          "evidenceSnippet": "What you'll build Prerequisites Step 1 - Record a demonstration into a bucket Step 2 - Store with byte-level deduplication Step 3 - Train by streaming from the Hub Step 4 - Deploy the policy and return data to the loop Try it using the sample application Security Considerations Clean up Where to go from here Resources A walkthrough of the streaming data loop in Strands Robots, one agent loop that records robot demonstrations, trains on them by reading straight from the Hub, and deploys the policy back to hardware, with the dataset in the same on-disk LeRobot format the whole way through. You have an agent that can already record a demonstration and push it to the Hugging Face Hub . Now you want to run that loop continuously: collect episodes through the day, train a policy on the growing dataset, deploy it, and pull the next batch back to improve it. Run that loop once and every piece works. Run it every day and you start paying for the same byte transfers over and over. The recordings you upload keep growing, each training run copies the whole dataset to the GPUs before it starts, and every new checkpoint ships out while the next batch of recordings comes back. The first post in t"
         }
       ]
     },
@@ -1492,6 +1679,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-12T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.09967v1 Announce Type: new Abstract: Deep reinforcement learning (DRL) agents achieve strong performance in complex environments, yet their decision-making processes remain difficult to interpret. We introduce SPOT (Sampling Policy Observation Tree), a novel model-agnostic, sampling-based framework for interpreting DRL policies. Given access to the policy and an environment simulator, SPOT constructs an interpretable finite-horizon tree by sampling actions and recursively simulating the resulting successor states. The tree provides an empirical representation of the policy's action preferences and their possible downstream evolution. We provide formal guarantees establishing SPOT's asymptotic recovery of the policy's unique most probable action and characterizing its disagreement behavior under high-entropy policies. We demonstrate SPOT in the SUMO-RL traffic-signal control domain. The case study illustrates how its tree-based representation can be used to inspect policy preferences, compare alternative future trajectories, and reveal downstream behaviors that are not visible through single-timestep feature-attribution methods."
+        }
+      ]
+    },
+    {
+      "id": "item_841e1b55054db5ab881b",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+      "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+      "publishedAt": "2026-08-11T17:04:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T05:50:28.805Z",
+      "updatedAt": "2026-08-11T17:04:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google advances AMIE medical AI to real-time video consultations with expert-level performance",
+        "zh-Hans": "谷歌推进AMIE医疗AI系统实现专家级实时视频问诊"
+      },
+      "summary": {
+        "en": "Google Research demonstrates AMIE conducting real-time video consultations with expert-level performance in randomized controlled study, integrating visual and auditory cues for clinical diagnosis.",
+        "zh-Hans": "谷歌研究院展示AMIE在随机对照研究中实现专家级实时视频问诊，整合视觉和听觉线索进行临床诊断。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "multimodal",
+        "healthcare",
+        "video",
+        "clinical"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates advanced multimodal AI capabilities integrating real-time video, audio, and clinical reasoning for expert-level medical consultations",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_841e1b55054db5ab881be884",
+          "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-11T17:04:00.000Z",
+          "evidenceSnippet": "Anil Palepu, Senior Research Scientist, and Mike Schaekermann, Research Lead, Google We advance AMIE, our research medical AI system, to conduct real-time video consultations, with a first-of-its-kind demonstration of expert-level performance in a randomized controlled study with simulated consultations. When a physician meets a patient, the consultation extends far beyond the words exchanged. The physician observes the patient's gait, registers visible signs of discomfort, notes their breathing, and guides the patient through physical examination maneuvers. This continuous stream of visual and auditory information is seamlessly integrated with the spoken clinical history. These non-verbal visual and auditory cues are central to effective diagnosis, patient trust, and clinical communication."
         }
       ]
     },
@@ -2229,68 +2479,6 @@
           "evidenceSnippet": "What makes a good tutor? How TutorMoments works Preliminary results Limitations and next steps 📄 Tech Report: https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf | 📊 Data: https://huggingface.co/datasets/allenai/tutormoments-preview | 💻 Code: https://github.com/allenai/tutormoments Today we're introducing a preview of TutorMoments , a framework to measure whether cutting-edge LLMs can balance one of the hardest trade-offs in education: when to step in and help a student and when to hold back and let the student do more of the work. TutorMoments is a replay-based evaluation built off real one-on-one math tutoring sessions. Experienced math teachers go through transcripts collected from a U.S. tutoring program and flag the moments where a tutor had to choose between making a problem easier to get started on and pushing the student to do more of the reasoning themselves. TutorMoments then takes the transcript up to that decision point, hands it to a language model, and has the model take over as the tutor in a simulated session – with the student played by another language model – to see what the LLM tutor does."
         }
       ]
-    },
-    {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
-        }
-      ],
-      "mediaType": "article"
     },
     {
       "id": "release_google_gemini_omni_builders_20260807",

@@ -7,8 +7,121 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-16T03:29:36.470Z",
+  "generatedAt": "2026-08-17T22:00:58.725Z",
   "items": [
+    {
+      "id": "insight_infrastructure-optimization-agent-evaluation_20260817",
+      "slug": "infrastructure-optimization-agent-evaluation",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "Infrastructure Optimization and Agent Evaluation Advances",
+        "zh-Hans": "基础设施优化与智能体评估进展"
+      },
+      "dek": {
+        "en": "Recent developments show complementary progress in GPU resource management and agent evaluation methodologies.",
+        "zh-Hans": "最新发展显示GPU资源管理和智能体评估方法学的互补进展。"
+      },
+      "body": {
+        "en": "Infrastructure efficiency gains are emerging through targeted optimization approaches. Constraint-aware GPU scheduling demonstrates substantial improvements over traditional methods, with utilization increases of up to 33 percentage points [^candidate_bf50ec5ce617ac83f0c8191a]. Similarly, model architecture analysis reveals depth-dependent sensitivity patterns in Mixture-of-Experts models, where late layers tolerate aggressive expert masking while early and middle layers remain fragile [^candidate_03b3344dcc9ff8bb0d7b4af1]. Complementing infrastructure advances, agent evaluation methodology is addressing reliability challenges through automated rubric generation that grounds scoring criteria in environment rewards rather than fluent but unsuccessful trajectories [^candidate_2a126068ed5ab49fbfd1425b]. These developments illustrate targeted engineering solutions for compute efficiency and evaluation reliability.",
+        "zh-Hans": "通过针对性优化方法实现基础设施效率提升。约束感知GPU调度相比传统方法显示出显著改进，利用率提升多达33个百分点[^candidate_bf50ec5ce617ac83f0c8191a]。同样，模型架构分析揭示了专家混合模型中的深度依赖敏感性模式，后期层可容忍激进的专家掩码而早期和中期层保持脆弱[^candidate_03b3344dcc9ff8bb0d7b4af1]。与基础设施进展相辅相成，智能体评估方法学通过自动化标准生成解决可靠性挑战，将评分标准建立在环境奖励而非流畅但不成功的轨迹上[^candidate_2a126068ed5ab49fbfd1425b]。这些发展展示了计算效率和评估可靠性的针对性工程解决方案。"
+      },
+      "publishedAt": "2026-08-17T22:00:58.725Z",
+      "updatedAt": "2026-08-17T22:00:58.725Z",
+      "topics": [
+        "compute_infrastructure",
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "claims": [
+        {
+          "id": "gpu_utilization_gains",
+          "type": "fact",
+          "text": {
+            "en": "Constraint-aware GPU allocator achieved utilization improvements of up to 33 percentage points over FIFO scheduling",
+            "zh-Hans": "约束感知GPU分配器相比FIFO调度实现了多达33个百分点的利用率改进"
+          },
+          "citationIds": [
+            "candidate_bf50ec5ce617ac83f0c8191a"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "moe_layer_sensitivity",
+          "type": "fact",
+          "text": {
+            "en": "Analysis of Qwen3.6-35B-A3B model shows early and middle layers are fragile to expert masking while late layers tolerate aggressive masking",
+            "zh-Hans": "对Qwen3.6-35B-A3B模型的分析显示早期和中期层对专家掩码敏感，而后期层可容忍激进掩码"
+          },
+          "citationIds": [
+            "candidate_03b3344dcc9ff8bb0d7b4af1"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "rubric_evolution_approach",
+          "type": "fact",
+          "text": {
+            "en": "RubricForge evolves agent-judging rubrics through reflective evolution against labeled trajectories to maximize agreement with environment rewards",
+            "zh-Hans": "RubricForge通过对标记轨迹的反思演化来发展智能体评判标准，以最大化与环境奖励的一致性"
+          },
+          "citationIds": [
+            "candidate_2a126068ed5ab49fbfd1425b"
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_bf50ec5ce617ac83f0c8191a",
+          "feedItemId": "item_bf50ec5ce617ac83f0c8",
+          "title": "Same Cluster, 33 Points More Utilization: What Changed Was the Order",
+          "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-08-17T19:46:21.000Z",
+          "evidenceSnippet": "The decision, stated precisely What FIFO costs under contention Utilization is necessary. Priority is what turns it into value. Writing the problem down The allocator that already knows the constraints Results None of it works if the demand numbers are wrong Optimize the day, commit the hour What this generalizes to Further Reading The previous post argued that utilization, not intelligence, is where the next real constraint in enterprise AI is forming, and it closed by noting that no playbook has emerged yet for what a mature GPU Management practice looks like. This is ours. We built a constraint-aware GPU allocator and benchmarked it against a FIFO scheduler across seven benchmark scenarios. On identical hardware, running identical workloads, GPU utilization rose by as much as 33 percentage points, and priority-weighted output rose in every one of them, by as much as 105%. Nothing about the hardware changed. What changed was the order in which allocation decisions get made. One note on measurement before the numbers start. Every gain below is expressed as improvement over the FIFO result on the same scenario. Utilization is reported in percentage points; value is reported as a pe"
+        },
+        {
+          "id": "candidate_03b3344dcc9ff8bb0d7b4af1",
+          "feedItemId": "item_03b3344dcc9ff8bb0d7b",
+          "title": "Depth-Aware Sensitivity Analysis of Mixture-of-Experts Models via Magnitude-Based Expert Masking",
+          "url": "https://arxiv.org/abs/2608.13565",
+          "publisher": "arXiv cs.AI",
+          "author": "Pradeep Kumar Sharma, Shantanu Godbole, Hritvik Shrivastava",
+          "independenceKey": "academic:pradeep kumar sharma, shantanu godbole, hritvik shrivastava",
+          "publishedAt": "2026-08-17T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.13565v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) architectures scale large language models (LLMs) while preserving computational efficiency through sparse activation. Despite their widespread adoption, the relative importance of individual MoE layers remains insufficiently characterized, particularly for model compression. This paper presents a systematic layer-wise sensitivity analysis of the Qwen3.6-35B-A3B model (40 MoE layers, 256 experts per layer, top-8 routing) using magnitude-based expert masking on the XLCoST cross-lingual code translation benchmark. We conduct a multi-phase study spanning 100, 300, and 500 prompt evaluation scales across three H100 GPU servers. Our central finding is that layer sensitivity is strongly depth-dependent: early layers (0-9) and middle layers (10-29) are highly fragile to expert masking, while late layers (30-39), and especially very-late layers (35-39), tolerate aggressive masking of low-magnitude experts. Flat all-layer masking at 30% retains only 150/300 Good+Similar outputs at 300-prompt scale, whereas late-focused policies retain 249-255/300 while masking 640-1,145 experts. On a later 500-prompt held-out validation"
+        },
+        {
+          "id": "candidate_2a126068ed5ab49fbfd1425b",
+          "feedItemId": "item_2a126068ed5ab49fbfd1",
+          "title": "Inducing Reward-Free Judging Rubrics that Reduce Over-Crediting in Agent Evaluation",
+          "url": "https://arxiv.org/abs/2608.13564",
+          "publisher": "arXiv cs.AI",
+          "author": "Darragh Quinn, David Dylan, Roisin Healy, Fionn Carroll, Maeve Donnelly, Cormac Sheehan",
+          "independenceKey": "academic:darragh quinn, david dylan, roisin healy, fionn carroll, maeve donnelly, cormac sheehan",
+          "publishedAt": "2026-08-17T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.13564v1 Announce Type: new Abstract: Evaluating language-model agents at scale increasingly relies on a second language model as an automatic judge, because the gold signal, an executable environment reward, is expensive, slow, or unavailable at deployment time. Such a judge is a reward-free proxy whose value depends on whether it can be trusted, yet existing judges either hand-write the scoring rubric, as in G-Eval, or fine-tune the judge's weights, and both tend to credit fluent but unsuccessful trajectories as successes. We instead induce the text of an agent-judging rubric from a small set of ground-truth-labeled trajectories, grounding it in true outcomes. We present RubricForge, which evolves a judge rubric by reflective evolution against labeled trajectories to maximize agreement with the environment reward, freezes it, and applies it to held-out trajectories in one model call with no environment access. The optimized artifact is human-readable text, so every verdict is attributable to named criteria. Using one frozen 7B model as both agent and judge, on tau-bench (173 labeled trajectories drawn from 220 rollouts) and WebShop (160), the principal gain is faithfuln"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-08-17T22:00:58.725Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-08-17T22:00:31.484Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_agent-negotiation-alignment-convergence_20260816",
       "slug": "agent-negotiation-alignment-convergence",
