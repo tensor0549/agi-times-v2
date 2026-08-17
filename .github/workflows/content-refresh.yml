@@ -83,7 +83,7 @@ jobs:
 
       - name: Upload sanitized expanded-run evidence
         if: env.EXPANDED_INGESTION == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: expanded-ingestion-evidence-${{ github.run_id }}
           path: content/drafts/expanded-run-summary.json
