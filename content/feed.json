@@ -7,10 +7,73 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-17T23:58:10.843Z",
+  "generatedAt": "2026-08-20T05:53:04.572Z",
   "items": [
     {
-      "id": "item_bf50ec5ce617ac83f0c8",
+      "id": "item_41b914407b7a3faed8c8",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.18078",
+      "url": "https://arxiv.org/abs/2608.18078",
+      "publishedAt": "2026-08-20T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T05:52:39.017Z",
+      "updatedAt": "2026-08-20T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AI Reasoning Agents Show Collusive Behavior in Economic Markets",
+        "zh-Hans": "AI推理智能体在经济市场中表现出串通行为"
+      },
+      "summary": {
+        "en": "Research reveals DeepSeek-R1 agents exhibit tacit collusion in pricing scenarios despite prompts not to collude, with reasoning traces that can be steered toward competitive or collusive behavior without semantic detection.",
+        "zh-Hans": "研究显示DeepSeek-R1智能体在定价场景中表现出默契串通，尽管被提示不要串通，其推理轨迹可被引导至竞争或串通行为而无法被语义检测。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "reasoning agents",
+        "collusion",
+        "certification",
+        "market behavior"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Matthew Riemer, Tommaso Tosato, Amin Memarian, Maximilian Puelma Touzel, Glen Berseth, Irina Rish, Guillaume Dumas",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:matthew riemer, tommaso tosato, amin memarian, maximilian puelma touzel, glen berseth, irina rish, guillaume dumas",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates emergent strategic behavior in reasoning agents with implications for AGI deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_41b914407b7a3faed8c8c25a",
+          "url": "https://arxiv.org/abs/2608.18078",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-20T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.18078v1 Announce Type: new Abstract: This position paper argues that AI agents with chain-of-thought reasoning capabilities are predisposed to exhibit collusive behavior and should be required to obtain behavioral certification before making decisions that affect economic markets. This is because integrating these agents into society could collapse the legal evidentiary distinction between competition and collusion among independent firms without eroding the economic harm distinction. Experiments with DeepSeek-R1 agents in the Bertrand oligopoly pricing domain reveal a tendency towards tacit collusion that persists even when humans prompt the agents not to collude. We further show that the chain-of-thought of these agents can be steered toward either extremely collusive or highly competitive behavior in a way that is not semantically detectable by another LLM analyzing the reasoning traces. As a result, deploying reasoning agents for market decisions leads to collusive economic outcomes without any evidence of conspiracy or intent. Thus, certification based on observed behavior in representative situations is necessary to prevent collusion. We provide preliminary evidenc"
+        }
+      ]
+    },
+    {
+      "id": "item_f56fb1ee13437f3d1c1d",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -18,32 +81,32 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
-      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
-      "publishedAt": "2026-08-17T19:46:21.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/qad",
+      "url": "https://huggingface.co/blog/LiquidAI/qad",
+      "publishedAt": "2026-08-19T13:48:49.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-17T22:00:31.484Z",
-      "updatedAt": "2026-08-17T19:46:21.000Z",
+      "discoveredAt": "2026-08-20T05:52:39.017Z",
+      "updatedAt": "2026-08-19T13:48:49.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Constraint-aware GPU allocator achieves 33% utilization gains over FIFO scheduling",
-        "zh-Hans": "约束感知GPU分配器相比FIFO调度实现33%利用率提升"
+        "en": "Quantization-Aware Distillation Maintains 96%+ Performance at 4-bit Precision",
+        "zh-Hans": "量化感知蒸馏在4位精度下保持96%以上性能"
       },
       "summary": {
-        "en": "Dharma AI's constraint-aware GPU allocator improved utilization by up to 33 percentage points and priority-weighted output by up to 105% over FIFO scheduling across seven benchmark scenarios on identical hardware.",
-        "zh-Hans": "Dharma AI的约束感知GPU分配器在相同硬件上的七个基准场景中，相比FIFO调度将利用率提升多达33个百分点，优先级加权输出提升多达105%。"
+        "en": "LFM2.5 models using quantization-aware distillation retain 96.5-97.4% of baseline performance when compressed to Q4_0, substantially outperforming post-training quantization across reasoning and agentic benchmarks.",
+        "zh-Hans": "使用量化感知蒸馏的LFM2.5模型在压缩至Q4_0时保持96.5-97.4%的基线性能，在推理和智能体基准测试中大幅优于训练后量化。"
       },
-      "category": "compute_infrastructure",
+      "category": "models_capabilities",
       "tags": [
-        "gpu",
-        "scheduling",
-        "utilization",
-        "enterprise"
+        "quantization",
+        "edge deployment",
+        "model compression",
+        "lfm2.5"
       ],
       "topics": [
-        "compute_infrastructure"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
@@ -55,20 +118,83 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 98,
+      "freshnessScore": 86,
       "importanceScore": 75,
       "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "GPU scheduling optimization directly impacts model training and inference efficiency for AGI development",
+      "agiRelevanceScore": 82,
+      "relevanceReason": "enables efficient deployment of reasoning and agentic capabilities on resource-constrained hardware",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_bf50ec5ce617ac83f0c8191a",
-          "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+          "id": "candidate_f56fb1ee13437f3d1c1d8f00",
+          "url": "https://huggingface.co/blog/LiquidAI/qad",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-08-17T19:46:21.000Z",
-          "evidenceSnippet": "The decision, stated precisely What FIFO costs under contention Utilization is necessary. Priority is what turns it into value. Writing the problem down The allocator that already knows the constraints Results None of it works if the demand numbers are wrong Optimize the day, commit the hour What this generalizes to Further Reading The previous post argued that utilization, not intelligence, is where the next real constraint in enterprise AI is forming, and it closed by noting that no playbook has emerged yet for what a mature GPU Management practice looks like. This is ours. We built a constraint-aware GPU allocator and benchmarked it against a FIFO scheduler across seven benchmark scenarios. On identical hardware, running identical workloads, GPU utilization rose by as much as 33 percentage points, and priority-weighted output rose in every one of them, by as much as 105%. Nothing about the hardware changed. What changed was the order in which allocation decisions get made. One note on measurement before the numbers start. Every gain below is expressed as improvement over the FIFO result on the same scenario. Utilization is reported in percentage points; value is reported as a pe"
+          "publishedAt": "2026-08-19T13:48:49.000Z",
+          "evidenceSnippet": "Benchmark results Speed and size on real edge hardware How to use QAD GGUFs Get Started with QAD GGUFs Citation Today, we release QAD Q4_0 GGUFs. These are updated 4-bit checkpoints for LFM2.5-230M, LFM2.5-350M, LFM2.5-1.2B-Instruct, and LFM2.5-2.6B. They allow developers to run LFM2.5 models at Q4_0 memory and speed without the usual quality drop: For all four models, we compare their released GGUFs produced with post-training quantization (PTQ) against the trained QAD Q4_0 checkpoints on a benchmark suite spanning reasoning, instruction-following, tool use, and agentic capabilities: GPQA Diamond, MMLU-Pro, IFEval, IFBench, Multi-IF, and BFCLv4. The BF16 GGUF serves as the in-format ceiling. We also add one scale-appropriate math evaluation: GSM8K for LFM2.5-230M and LFM2.5-350M, and AIME25 for LFM2.5-1.2B-Instruct and LFM2.5-2.6B. We report the mean across five repeats. Across all four models, QAD substantially improves the Q4_0 checkpoint. The QAD checkpoints retain 97.1%, 96.5%, 97.4%, and 96.6% of their respective BF16 baseline performance."
+        }
+      ]
+    },
+    {
+      "id": "item_5ba78b757300e8cc3ff5",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "publishedAt": "2026-08-18T18:09:38.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T05:52:39.017Z",
+      "updatedAt": "2026-08-18T18:09:38.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Agentic Memory Requires Model-Specific Calibration for Optimal Performance",
+        "zh-Hans": "智能体记忆需要针对模型的特定校准以获得最佳性能"
+      },
+      "summary": {
+        "en": "Evaluation across eight models shows agentic memory performance depends on calibrated dosage rather than simple accumulation, with optimal memory strategies varying significantly between model capabilities.",
+        "zh-Hans": "对八个模型的评估显示，智能体记忆性能取决于校准剂量而非简单积累，最佳记忆策略在不同模型能力间存在显著差异。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agentic memory",
+        "model calibration",
+        "experience distillation",
+        "altk-evolve"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 71,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "reveals fundamental principles for scaling agent memory systems across different model capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5ba78b757300e8cc3ff5b4c8",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-18T18:09:38.000Z",
+          "evidenceSnippet": "The Key Insight: Dosage Depends on Capability Learning happens around the model, not inside it Results Across the Spectrum The three configurations we compare The three patterns, in one view The Cheapest Memory Strategy Can Also Be the Best Memory Should Be Calibrated, Not Merely Accumulated What's Next Appendix: Understanding the Metrics In our previous post , we compared ALTK-Evolve with ACE and showed that how you deliver an agent's self-distilled guidelines — a few retrieved per task vs. the whole set injected — drives both accuracy and cost. This post steps back to the question that comes before it: how much should you give it? Equipping an agent with agentic memory sounds simple: distill lessons from its past work, put them back in context, and more experience should mean better performance. It doesn't always work that way. When we scaled the evaluation to eight models — from a 30B dense model to frontier proprietary systems — one finding stood out: Agentic memory is not a feature you switch on. It's a dose you calibrate to the model."
         }
       ]
     },
@@ -132,131 +258,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-17T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.13564v1 Announce Type: new Abstract: Evaluating language-model agents at scale increasingly relies on a second language model as an automatic judge, because the gold signal, an executable environment reward, is expensive, slow, or unavailable at deployment time. Such a judge is a reward-free proxy whose value depends on whether it can be trusted, yet existing judges either hand-write the scoring rubric, as in G-Eval, or fine-tune the judge's weights, and both tend to credit fluent but unsuccessful trajectories as successes. We instead induce the text of an agent-judging rubric from a small set of ground-truth-labeled trajectories, grounding it in true outcomes. We present RubricForge, which evolves a judge rubric by reflective evolution against labeled trajectories to maximize agreement with the environment reward, freezes it, and applies it to held-out trajectories in one model call with no environment access. The optimized artifact is human-readable text, so every verdict is attributable to named criteria. Using one frozen 7B model as both agent and judge, on tau-bench (173 labeled trajectories drawn from 220 rollouts) and WebShop (160), the principal gain is faithfuln"
-        }
-      ]
-    },
-    {
-      "id": "item_03b3344dcc9ff8bb0d7b",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.13565",
-      "url": "https://arxiv.org/abs/2608.13565",
-      "publishedAt": "2026-08-17T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-17T22:00:31.484Z",
-      "updatedAt": "2026-08-17T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Layer sensitivity analysis reveals depth-dependent expert importance in MoE models",
-        "zh-Hans": "层敏感性分析揭示MoE模型中专家重要性的深度依赖性"
-      },
-      "summary": {
-        "en": "Study of Qwen3.6-35B-A3B model shows early and middle layers are fragile to expert masking while late layers tolerate aggressive masking, enabling targeted compression strategies for large MoE architectures.",
-        "zh-Hans": "对Qwen3.6-35B-A3B模型的研究显示，早期和中期层对专家掩码敏感，而后期层可容忍激进掩码，为大型MoE架构提供针对性压缩策略。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "mixture-of-experts",
-        "model-compression",
-        "sensitivity-analysis"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Pradeep Kumar Sharma, Shantanu Godbole, Hritvik Shrivastava",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:pradeep kumar sharma, shantanu godbole, hritvik shrivastava",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 84,
-      "importanceScore": 80,
-      "importance": 80,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "Provides insights for optimizing large-scale MoE models critical for AGI development",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_03b3344dcc9ff8bb0d7b4af1",
-          "url": "https://arxiv.org/abs/2608.13565",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-17T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.13565v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) architectures scale large language models (LLMs) while preserving computational efficiency through sparse activation. Despite their widespread adoption, the relative importance of individual MoE layers remains insufficiently characterized, particularly for model compression. This paper presents a systematic layer-wise sensitivity analysis of the Qwen3.6-35B-A3B model (40 MoE layers, 256 experts per layer, top-8 routing) using magnitude-based expert masking on the XLCoST cross-lingual code translation benchmark. We conduct a multi-phase study spanning 100, 300, and 500 prompt evaluation scales across three H100 GPU servers. Our central finding is that layer sensitivity is strongly depth-dependent: early layers (0-9) and middle layers (10-29) are highly fragile to expert masking, while late layers (30-39), and especially very-late layers (35-39), tolerate aggressive masking of low-magnitude experts. Flat all-layer masking at 30% retains only 150/300 Good+Similar outputs at 300-prompt scale, whereas late-focused policies retain 249-255/300 while masking 640-1,145 experts. On a later 500-prompt held-out validation"
-        }
-      ]
-    },
-    {
-      "id": "item_bc290ba394fd0d9149bf",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/state-of-open-models-summer-2026",
-      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
-      "publishedAt": "2026-08-14T00:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-16T03:29:17.285Z",
-      "updatedAt": "2026-08-14T00:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Open Model Ecosystem Shows Agent-Focused Development Trends",
-        "zh-Hans": "开放模型生态系统呈现以智能体为中心的发展趋势"
-      },
-      "summary": {
-        "en": "Hugging Face reports significant growth in model repositories to 2.96 million, with Qwen emerging as community base model and agents becoming the new user focus.",
-        "zh-Hans": "Hugging Face报告模型仓库大幅增长至296万个，Qwen成为社区基础模型，智能体成为新的用户关注焦点。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "open-models",
-        "community",
-        "adoption",
-        "agents"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 61,
-      "importanceScore": 72,
-      "importance": 72,
-      "agiRelevanceScore": 76,
-      "relevanceReason": "tracks ecosystem-wide adoption patterns showing shift toward agent-based applications and model accessibility",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_bc290ba394fd0d9149bf5cc4",
-          "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-14T00:00:00.000Z",
-          "evidenceSnippet": "2. Attention ≠ Adoption 3. Open weights shift where value accumulates 4. Qwen has become the community's base model 5. Small models remain the practical layer 6. Agents are the new user Looking forward Notes on method In the AI world, time feels compressed. A few months after our spring report in our biannual analysis worked through the ecosystem, there are quite a few findings that we have observed until this summer. This report lays out these observations from January to August 2026 and presents the data behind each one. Models and datasets on HF hub are growing on a daily basis. Public model repositories grew from 2.43 to 2.96 million over the period, datasets from 711,000 to 1 million, Spaces from 1.00 to 1.44 million. The distribution underneath stays extreme, roughly 85.6% of models have fewer than 200 lifetime downloads, and 1.5% of repositories account for 99.2% of all downloads. Everything below happens inside that shape. 1. The frontier is moving fast"
         }
       ]
     },
@@ -550,73 +551,6 @@
       ]
     },
     {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
-        }
-      ]
-    },
-    {
       "id": "release_anthropic_fable5_bio_safeguards_20260807",
       "sourceId": "src_anthropic",
       "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
@@ -677,6 +611,187 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_b7821e4e183d8870d042",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-03T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
+        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
+      },
+      "summary": {
+        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
+        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "framework",
+        "scalable ai",
+        "open source"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 20,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b7821e4e183d8870d042655a",
+          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-03T16:00:00.000Z",
+          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_bf50ec5ce617ac83f0c8",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+      "publishedAt": "2026-08-17T19:46:21.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-17T22:00:31.484Z",
+      "updatedAt": "2026-08-17T19:46:21.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Constraint-aware GPU allocator achieves 33% utilization gains over FIFO scheduling",
+        "zh-Hans": "约束感知GPU分配器相比FIFO调度实现33%利用率提升"
+      },
+      "summary": {
+        "en": "Dharma AI's constraint-aware GPU allocator improved utilization by up to 33 percentage points and priority-weighted output by up to 105% over FIFO scheduling across seven benchmark scenarios on identical hardware.",
+        "zh-Hans": "Dharma AI的约束感知GPU分配器在相同硬件上的七个基准场景中，相比FIFO调度将利用率提升多达33个百分点，优先级加权输出提升多达105%。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "gpu",
+        "scheduling",
+        "utilization",
+        "enterprise"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "GPU scheduling optimization directly impacts model training and inference efficiency for AGI development",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_bf50ec5ce617ac83f0c8191a",
+          "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-17T19:46:21.000Z",
+          "evidenceSnippet": "The decision, stated precisely What FIFO costs under contention Utilization is necessary. Priority is what turns it into value. Writing the problem down The allocator that already knows the constraints Results None of it works if the demand numbers are wrong Optimize the day, commit the hour What this generalizes to Further Reading The previous post argued that utilization, not intelligence, is where the next real constraint in enterprise AI is forming, and it closed by noting that no playbook has emerged yet for what a mature GPU Management practice looks like. This is ours. We built a constraint-aware GPU allocator and benchmarked it against a FIFO scheduler across seven benchmark scenarios. On identical hardware, running identical workloads, GPU utilization rose by as much as 33 percentage points, and priority-weighted output rose in every one of them, by as much as 105%. Nothing about the hardware changed. What changed was the order in which allocation decisions get made. One note on measurement before the numbers start. Every gain below is expressed as improvement over the FIFO result on the same scenario. Utilization is reported in percentage points; value is reported as a pe"
+        }
+      ]
+    },
+    {
+      "id": "item_03b3344dcc9ff8bb0d7b",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.13565",
+      "url": "https://arxiv.org/abs/2608.13565",
+      "publishedAt": "2026-08-17T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-17T22:00:31.484Z",
+      "updatedAt": "2026-08-17T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Layer sensitivity analysis reveals depth-dependent expert importance in MoE models",
+        "zh-Hans": "层敏感性分析揭示MoE模型中专家重要性的深度依赖性"
+      },
+      "summary": {
+        "en": "Study of Qwen3.6-35B-A3B model shows early and middle layers are fragile to expert masking while late layers tolerate aggressive masking, enabling targeted compression strategies for large MoE architectures.",
+        "zh-Hans": "对Qwen3.6-35B-A3B模型的研究显示，早期和中期层对专家掩码敏感，而后期层可容忍激进掩码，为大型MoE架构提供针对性压缩策略。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mixture-of-experts",
+        "model-compression",
+        "sensitivity-analysis"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Pradeep Kumar Sharma, Shantanu Godbole, Hritvik Shrivastava",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:pradeep kumar sharma, shantanu godbole, hritvik shrivastava",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 84,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Provides insights for optimizing large-scale MoE models critical for AGI development",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_03b3344dcc9ff8bb0d7b4af1",
+          "url": "https://arxiv.org/abs/2608.13565",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-17T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.13565v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) architectures scale large language models (LLMs) while preserving computational efficiency through sparse activation. Despite their widespread adoption, the relative importance of individual MoE layers remains insufficiently characterized, particularly for model compression. This paper presents a systematic layer-wise sensitivity analysis of the Qwen3.6-35B-A3B model (40 MoE layers, 256 experts per layer, top-8 routing) using magnitude-based expert masking on the XLCoST cross-lingual code translation benchmark. We conduct a multi-phase study spanning 100, 300, and 500 prompt evaluation scales across three H100 GPU servers. Our central finding is that layer sensitivity is strongly depth-dependent: early layers (0-9) and middle layers (10-29) are highly fragile to expert masking, while late layers (30-39), and especially very-late layers (35-39), tolerate aggressive masking of low-magnitude experts. Flat all-layer masking at 30% retains only 150/300 Good+Similar outputs at 300-prompt scale, whereas late-focused policies retain 249-255/300 while masking 640-1,145 experts. On a later 500-prompt held-out validation"
+        }
+      ]
     },
     {
       "id": "item_cedf57bb6ac50ed24501",
@@ -1177,6 +1292,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-14T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.12325v1 Announce Type: new Abstract: Autonomous reasoning is among the most scientifically and economically motivating topics in AI today. Historically the purview of symbolic AI, recent advances have mainly emerged from deep probabilistic generative models. Despite immense interest and rapid progress, the generative AI community has not clearly converged on operational definitions for reasoning and often implicitly rejects the historical treatment of this topic in logic and verifiable automated reasoning. This position contends that definitional ambiguity leaves the construct validity of reasoning evaluation unverifiable, undermining quantifiable progress toward trustworthy autonomous reasoning. We also contend that this ambiguity is addressable. To that end, we provide (1) operational definitions based on a synthesis of the literature, positioning valid and sound reasoning as a learnable rule-based process; and (2) a checklist for best practices in the communication of AI reasoning research."
+        }
+      ]
+    },
+    {
+      "id": "item_bc290ba394fd0d9149bf",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "publishedAt": "2026-08-14T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-16T03:29:17.285Z",
+      "updatedAt": "2026-08-14T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Open Model Ecosystem Shows Agent-Focused Development Trends",
+        "zh-Hans": "开放模型生态系统呈现以智能体为中心的发展趋势"
+      },
+      "summary": {
+        "en": "Hugging Face reports significant growth in model repositories to 2.96 million, with Qwen emerging as community base model and agents becoming the new user focus.",
+        "zh-Hans": "Hugging Face报告模型仓库大幅增长至296万个，Qwen成为社区基础模型，智能体成为新的用户关注焦点。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "open-models",
+        "community",
+        "adoption",
+        "agents"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 61,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 76,
+      "relevanceReason": "tracks ecosystem-wide adoption patterns showing shift toward agent-based applications and model accessibility",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_bc290ba394fd0d9149bf5cc4",
+          "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-14T00:00:00.000Z",
+          "evidenceSnippet": "2. Attention ≠ Adoption 3. Open weights shift where value accumulates 4. Qwen has become the community's base model 5. Small models remain the practical layer 6. Agents are the new user Looking forward Notes on method In the AI world, time feels compressed. A few months after our spring report in our biannual analysis worked through the ecosystem, there are quite a few findings that we have observed until this summer. This report lays out these observations from January to August 2026 and presents the data behind each one. Models and datasets on HF hub are growing on a daily basis. Public model repositories grew from 2.43 to 2.96 million over the period, datasets from 711,000 to 1 million, Spaces from 1.00 to 1.44 million. The distribution underneath stays extreme, roughly 85.6% of models have fewer than 200 lifetime downloads, and 1.5% of repositories account for 99.2% of all downloads. Everything below happens inside that shape. 1. The frontier is moving fast"
         }
       ]
     },
@@ -2481,6 +2659,73 @@
       ]
     },
     {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
       "id": "item_dfb586131bf3d3cb04b4",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -2726,62 +2971,6 @@
         }
       ],
       "mediaType": "article"
-    },
-    {
-      "id": "item_b7821e4e183d8870d042",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "publishedAt": "2026-08-03T16:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-08-03T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
-        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
-      },
-      "summary": {
-        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
-        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "framework",
-        "scalable ai",
-        "open source"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Microsoft Research",
-      "org": "Microsoft Research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "freshnessScore": 20,
-      "importanceScore": 75,
-      "importance": 75,
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_b7821e4e183d8870d042655a",
-          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-03T16:00:00.000Z",
-          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
-        }
-      ]
     },
     {
       "id": "item_0b46c3a73d060b7d84c1",
