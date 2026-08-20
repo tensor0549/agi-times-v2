@@ -7,8 +7,70 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-20T14:21:11.877Z",
+  "generatedAt": "2026-08-20T19:18:29.457Z",
   "items": [
+    {
+      "id": "item_eab5285cfdebeb65a8ef",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "publishedAt": "2026-08-20T16:52:57.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T19:18:17.820Z",
+      "updatedAt": "2026-08-20T16:52:57.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LiquidAI releases DSpark speculative decoding for up to 3.2x faster LLM inference",
+        "zh-Hans": "LiquidAI发布DSpark推测解码技术，LLM推理速度提升最高3.2倍"
+      },
+      "summary": {
+        "en": "LiquidAI released DSpark draft model checkpoints for three LFM2.5 models, implementing speculative decoding that uses lightweight draft models to generate candidate tokens verified by target models in single forward passes, achieving significant speedup without quality loss.",
+        "zh-Hans": "LiquidAI发布三个LFM2.5模型的DSpark草稿检查点，实现推测解码技术，使用轻量级草稿模型生成候选token并由目标模型在单次前向传播中验证，在不损失质量的情况下显著提升速度。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "inference",
+        "speculative-decoding",
+        "optimization"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "Advances transferable inference optimization techniques applicable across language models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_eab5285cfdebeb65a8ef35d4",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-20T16:52:57.000Z",
+          "evidenceSnippet": "How does DSpark work Training and Architecture Quality parity Inference Speed Up on CPU and GPU How to use LFM2.5-DSpark Get Started Citation Today, we release DSpark draft model checkpoints for three models from our LFM2.5 family: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B. These add a speculative decoding path that trades a minimal memory increase for a large decoding speedup without changing output quality: The decode phase in LLM inference is traditionally memory-bound. Most latency comes from streaming weights from DRAM into SRAM, not from intense computation. Speculative decoding addresses this by using a lightweight draft model to produce candidate tokens, then having the target model verify them all in a single forward pass, sharing the cost of loading the weights across all tokens we verify. Over the years, multiple approaches of speculation have been proposed, with the most prominent being EAGLE-3 , DFlash , and, most recently, DSpark , which combines three components:"
+        }
+      ]
+    },
     {
       "id": "item_41b914407b7a3faed8c8",
       "schemaVersion": "1.0.0",
@@ -199,69 +261,6 @@
       ]
     },
     {
-      "id": "item_5ba78b757300e8cc3ff5",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
-      "publishedAt": "2026-08-18T18:09:38.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-20T05:52:39.017Z",
-      "updatedAt": "2026-08-18T18:09:38.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Agentic Memory Requires Model-Specific Calibration for Optimal Performance",
-        "zh-Hans": "智能体记忆需要针对模型的特定校准以获得最佳性能"
-      },
-      "summary": {
-        "en": "Evaluation across eight models shows agentic memory performance depends on calibrated dosage rather than simple accumulation, with optimal memory strategies varying significantly between model capabilities.",
-        "zh-Hans": "对八个模型的评估显示，智能体记忆性能取决于校准剂量而非简单积累，最佳记忆策略在不同模型能力间存在显著差异。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "agentic memory",
-        "model calibration",
-        "experience distillation",
-        "altk-evolve"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 71,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "reveals fundamental principles for scaling agent memory systems across different model capabilities",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_5ba78b757300e8cc3ff5b4c8",
-          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-18T18:09:38.000Z",
-          "evidenceSnippet": "The Key Insight: Dosage Depends on Capability Learning happens around the model, not inside it Results Across the Spectrum The three configurations we compare The three patterns, in one view The Cheapest Memory Strategy Can Also Be the Best Memory Should Be Calibrated, Not Merely Accumulated What's Next Appendix: Understanding the Metrics In our previous post , we compared ALTK-Evolve with ACE and showed that how you deliver an agent's self-distilled guidelines — a few retrieved per task vs. the whole set injected — drives both accuracy and cost. This post steps back to the question that comes before it: how much should you give it? Equipping an agent with agentic memory sounds simple: distill lessons from its past work, put them back in context, and more experience should mean better performance. It doesn't always work that way. When we scaled the evaluation to eight models — from a 30B dense model to frontier proprietary systems — one finding stood out: Agentic memory is not a feature you switch on. It's a dose you calibrate to the model."
-        }
-      ]
-    },
-    {
       "id": "item_3610856e0c1fd406f401",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -321,69 +320,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-17T10:34:00.000Z",
           "evidenceSnippet": "Cassie Zhou, Research Scientist, and Ahmed Metwally, Staff Research Scientist, Google Research We demonstrate the feasibility of PhotoScan, a deep learning approach estimating body composition from smartphone photos, to predict insulin resistance with accuracy comparable to DXA scans in a clinical research setting. Insulin resistance is one of the most critical yet underdiagnosed drivers of modern metabolic disease. Predating the clinical onset of type 2 diabetes by years, impaired insulin sensitivity stealthily impairs vascular health, liver function, and energy metabolism long before fasting blood sugar rises into diagnostic ranges. Homeostasis Model Assessment for Insulin Resistance (HOMA-IR) models the feedback loop between liver glucose production and insulin secretion under steady-state fasting conditions, and a HOMA-IR score greater than 2.9 is considered insulin resistant based on epidemiological reviews . Recent studies demonstrate that multimodal machine learning frameworks integrating wearable sensor data with routine lab tests can accurately predict HOMA-IR to flag early metabolic risk. Integrating objective measures of body composition offers a vital complement to wear"
-        }
-      ]
-    },
-    {
-      "id": "item_1a7704a62ecc3f65b10f",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "publishedAt": "2026-08-12T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
-        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
-      },
-      "summary": {
-        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
-        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "spatial reasoning",
-        "vision language models",
-        "benchmark",
-        "topology"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
-          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-12T16:00:00.000Z",
-          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
         }
       ]
     },
@@ -678,6 +614,187 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_b7821e4e183d8870d042",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-03T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
+        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
+      },
+      "summary": {
+        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
+        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "framework",
+        "scalable ai",
+        "open source"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 20,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b7821e4e183d8870d042655a",
+          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-03T16:00:00.000Z",
+          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_51c08c3240a5378cbfea",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.18081",
+      "url": "https://arxiv.org/abs/2608.18081",
+      "publishedAt": "2026-08-20T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T19:18:17.820Z",
+      "updatedAt": "2026-08-20T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Researchers propose behavioral testing framework for AI agent evaluation",
+        "zh-Hans": "研究人员提出AI智能体评估的行为测试框架"
+      },
+      "summary": {
+        "en": "MIT researchers argue that AI agents operating as behavioral systems require evaluation through systematic observation and perturbation of actions, proposing methods for recovering decision strategies and constructing environments that isolate behavioral differences.",
+        "zh-Hans": "MIT研究人员认为作为行为系统运行的AI智能体需要通过系统性观察和行为扰动进行评估，提出了恢复决策策略和构建隔离行为差异环境的方法。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "evaluation",
+        "behavioral-testing",
+        "agent-systems"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Manuel Cherep, Nikhil Singh, Pattie Maes",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:manuel cherep, nikhil singh, pattie maes",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Advances transferable methodologies for evaluating agent behavior and decision-making processes",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_51c08c3240a5378cbfea843f",
+          "url": "https://arxiv.org/abs/2608.18081",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-20T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.18081v1 Announce Type: new Abstract: Artificial agentic systems increasingly operate as behavioral systems by interacting with dynamic environments, pursuing goals, and adapting over time. Yet, current evaluation methods largely focus on performance outcomes, not the underlying behavioral processes that produce them. This paper argues that AI agents must be evaluated like other behavioral systems: through systematic observation, perturbation, and interpretation of their actions. We draw on lessons from the behavioral sciences to motivate this position, and propose a research agenda focused on developing rigorous behavioral tests. These include methods for recovering decision strategies from action sequences, constructing environments that isolate behavioral differences, and probing emergent dynamics in multi-agent systems. Taken together, these directions offer a roadmap for developing a science of AI behavior."
+        }
+      ]
+    },
+    {
+      "id": "item_5ba78b757300e8cc3ff5",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "publishedAt": "2026-08-18T18:09:38.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T05:52:39.017Z",
+      "updatedAt": "2026-08-18T18:09:38.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Agentic Memory Requires Model-Specific Calibration for Optimal Performance",
+        "zh-Hans": "智能体记忆需要针对模型的特定校准以获得最佳性能"
+      },
+      "summary": {
+        "en": "Evaluation across eight models shows agentic memory performance depends on calibrated dosage rather than simple accumulation, with optimal memory strategies varying significantly between model capabilities.",
+        "zh-Hans": "对八个模型的评估显示，智能体记忆性能取决于校准剂量而非简单积累，最佳记忆策略在不同模型能力间存在显著差异。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agentic memory",
+        "model calibration",
+        "experience distillation",
+        "altk-evolve"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 71,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "reveals fundamental principles for scaling agent memory systems across different model capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5ba78b757300e8cc3ff5b4c8",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-18T18:09:38.000Z",
+          "evidenceSnippet": "The Key Insight: Dosage Depends on Capability Learning happens around the model, not inside it Results Across the Spectrum The three configurations we compare The three patterns, in one view The Cheapest Memory Strategy Can Also Be the Best Memory Should Be Calibrated, Not Merely Accumulated What's Next Appendix: Understanding the Metrics In our previous post , we compared ALTK-Evolve with ACE and showed that how you deliver an agent's self-distilled guidelines — a few retrieved per task vs. the whole set injected — drives both accuracy and cost. This post steps back to the question that comes before it: how much should you give it? Equipping an agent with agentic memory sounds simple: distill lessons from its past work, put them back in context, and more experience should mean better performance. It doesn't always work that way. When we scaled the evaluation to eight models — from a 30B dense model to frontier proprietary systems — one finding stood out: Agentic memory is not a feature you switch on. It's a dose you calibrate to the model."
+        }
+      ]
     },
     {
       "id": "item_d9524ab76177d5beaf99",
@@ -1936,6 +2053,69 @@
       ]
     },
     {
+      "id": "item_1a7704a62ecc3f65b10f",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
+        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
+      },
+      "summary": {
+        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
+        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "spatial reasoning",
+        "vision language models",
+        "benchmark",
+        "topology"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
+          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-12T16:00:00.000Z",
+          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
       "id": "item_2c563947428818b93259",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -3104,62 +3284,6 @@
         }
       ],
       "mediaType": "article"
-    },
-    {
-      "id": "item_b7821e4e183d8870d042",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "publishedAt": "2026-08-03T16:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-08-03T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
-        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
-      },
-      "summary": {
-        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
-        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "framework",
-        "scalable ai",
-        "open source"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Microsoft Research",
-      "org": "Microsoft Research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "freshnessScore": 20,
-      "importanceScore": 75,
-      "importance": 75,
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_b7821e4e183d8870d042655a",
-          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-03T16:00:00.000Z",
-          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
-        }
-      ]
     },
     {
       "id": "item_0b46c3a73d060b7d84c1",
