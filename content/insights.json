@@ -7,8 +7,144 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-20T05:53:04.572Z",
+  "generatedAt": "2026-08-21T23:59:58.797Z",
   "items": [
+    {
+      "id": "insight_agent-frameworks-context-acquisition_20260821",
+      "slug": "agent-frameworks-context-acquisition",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "New Agent Frameworks Address Context Acquisition and Scientific Discovery",
+        "zh-Hans": "新智能体框架解决上下文获取和科学发现问题"
+      },
+      "dek": {
+        "en": "Recent research introduces principled approaches for agent decision-making and multi-agent scientific workflows while highlighting evaluation challenges.",
+        "zh-Hans": "最新研究为智能体决策和多智能体科学工作流引入原则性方法，同时突出评估挑战。"
+      },
+      "body": {
+        "en": "Researchers are developing more sophisticated frameworks for AI agent operation across scientific and interactive domains. Google Research introduced a multi-agent system for biomarker discovery that automates hypothesis generation, statistical analysis, and literature-grounded reasoning from wearable sensor data [^candidate_a21cee4b91bda9f5c68b571d]. Complementing this, academic researchers proposed an active inference framework that formalizes how agents should acquire context by balancing belief updates with action selection to minimize expected free energy under token costs [^candidate_1ab98cc8439557e10abda3bc]. Meanwhile, Google Research demonstrated advances in spatial-temporal understanding through mobility-informed models that capture dynamic activity rhythms of places to improve real-world predictions [^candidate_4f98c5029119950e7f82e09b]. However, Hugging Face research highlights ongoing evaluation challenges, showing how models can become optimized for benchmark-specific patterns rather than underlying task performance [^candidate_e3ddd7a65cd3a566e91c6025].",
+        "zh-Hans": "研究人员正在为科学和交互领域的AI智能体操作开发更复杂的框架。谷歌研究推出了一个用于生物标志物发现的多智能体系统，可从可穿戴传感器数据自动化假设生成、统计分析和文献推理 [^candidate_a21cee4b91bda9f5c68b571d]。与此同时，学术研究人员提出了主动推理框架，正式化了智能体如何通过平衡信念更新与动作选择来获取上下文，以在令牌成本约束下最小化预期自由能 [^candidate_1ab98cc8439557e10abda3bc]。谷歌研究还通过基于移动性的模型展示了时空理解的进展，该模型捕获地点的动态活动节律以改善现实世界预测 [^candidate_4f98c5029119950e7f82e09b]。然而，Hugging Face的研究突出了持续的评估挑战，显示模型如何针对基准特定模式而非底层任务性能进行优化 [^candidate_e3ddd7a65cd3a566e91c6025]。"
+      },
+      "publishedAt": "2026-08-21T23:59:58.797Z",
+      "updatedAt": "2026-08-21T23:59:58.797Z",
+      "topics": [
+        "agents_automation",
+        "models_capabilities",
+        "research_science"
+      ],
+      "claims": [
+        {
+          "id": "multi_agent_biomarker_discovery",
+          "type": "fact",
+          "text": {
+            "en": "Google Research introduced a multi-agent system that automates biomarker discovery through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning",
+            "zh-Hans": "谷歌研究推出了通过迭代假设生成、统计分析和文献推理自动化生物标志物发现的多智能体系统"
+          },
+          "citationIds": [
+            "candidate_a21cee4b91bda9f5c68b571d"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "active_inference_context_framework",
+          "type": "fact",
+          "text": {
+            "en": "Researchers proposed an active inference framework that formalizes context acquisition by balancing belief updates with action selection to minimize expected free energy under token costs",
+            "zh-Hans": "研究人员提出了主动推理框架，通过平衡信念更新与动作选择来正式化上下文获取，以在令牌成本下最小化预期自由能"
+          },
+          "citationIds": [
+            "candidate_1ab98cc8439557e10abda3bc"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "id": "mobility_informed_place_understanding",
+          "type": "fact",
+          "text": {
+            "en": "Google Research developed mobility-informed models that capture dynamic activity rhythms of places to improve real-world predictions about attributes like opening hours and busyness",
+            "zh-Hans": "谷歌研究开发了基于移动性的模型，捕获地点的动态活动节律以改善对营业时间和繁忙程度等属性的现实世界预测"
+          },
+          "citationIds": [
+            "candidate_4f98c5029119950e7f82e09b"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "benchmark_optimization_challenges",
+          "type": "fact",
+          "text": {
+            "en": "Hugging Face research demonstrates that models can become optimized for benchmark-specific patterns rather than underlying task performance",
+            "zh-Hans": "Hugging Face研究表明模型可能针对基准特定模式而非底层任务性能进行优化"
+          },
+          "citationIds": [
+            "candidate_e3ddd7a65cd3a566e91c6025"
+          ],
+          "confidence": 0.88
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_a21cee4b91bda9f5c68b571d",
+          "feedItemId": "item_a21cee4b91bda9f5c68b",
+          "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+          "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+          "publisher": "Google Research",
+          "author": "Google Research",
+          "independenceKey": "publisher:google research",
+          "publishedAt": "2026-08-21T17:02:24.000Z",
+          "evidenceSnippet": "We introduce the Biomarker Discovery Framework, a multi-agent system that supports the discovery of biomarker candidates from wearable sensor data through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning. Wearable devices capture continuous physiological signals at population scale. These streams, ranging from heart rate dynamics to sleep patterns, can reveal early physiological changes before symptoms appear. The bottleneck is no longer data collection, but turning these signals into reliable, clinically meaningful biomarkers. Existing language model-based agent systems automate parts of the scientific workflow, but can often break down on physiological time-series data. These systems optimize for predictive performance while overlooking statistical validity, leading to spurious correlations, leakage, and brittle features."
+        },
+        {
+          "id": "candidate_1ab98cc8439557e10abda3bc",
+          "feedItemId": "item_1ab98cc8439557e10abd",
+          "title": "Active Inference as Context Acquisition for AI Agents",
+          "url": "https://arxiv.org/abs/2608.19202",
+          "publisher": "arXiv cs.AI",
+          "author": "Sanchayan Dutta, Sai Niranjan Ramachandran, Suvrit Sra",
+          "independenceKey": "academic:sanchayan dutta, sai niranjan ramachandran, suvrit sra",
+          "publishedAt": "2026-08-21T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.19202v1 Announce Type: new Abstract: Interactive AI agents must acquire the right context as efficiently as possible. When a user omits a constraint, preference, file, or task variable, an agent can proceed with a default assumption or spend tokens on a clarifying question, retrieval call, tool call, or prompt trial. We formulate this tradeoff as active inference for context acquisition. An inner inference step updates beliefs over a latent task state, and an outer decision selects the next context action, task action, or stop action to minimize expected free energy under cost. In deterministic settings, the epistemic term reduces to expected information gain, optionally normalized by token cost. We instantiate the framework in Optimal Question Asking (OQA), with exact posteriors and a dynamic programming oracle, and benchmark frontier language models on binary and multiway categorical tasks from 25 to 300 candidates. We also study clarification before generation and automated prompt optimization under token budgets. The formulation is model-agnostic and views active inference as a design principle for the context-acquisition layer of AI agents."
+        },
+        {
+          "id": "candidate_4f98c5029119950e7f82e09b",
+          "feedItemId": "item_4f98c5029119950e7f82",
+          "title": "How mobility gives language models a deeper understanding of place",
+          "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+          "publisher": "Google Research",
+          "author": "Google Research",
+          "independenceKey": "publisher:google research",
+          "publishedAt": "2026-08-21T10:54:00.000Z",
+          "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
+        },
+        {
+          "id": "candidate_e3ddd7a65cd3a566e91c6025",
+          "feedItemId": "item_e3ddd7a65cd3a566e91c",
+          "title": "Measuring benchmark optimization in speech recognition",
+          "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-08-21T00:00:00.000Z",
+          "evidenceSnippet": "Reference disagreement (VoxPopuli case study) Masked Entity Retrieval Orthographic Switching Localizing the switches Conclusion Public voice AI benchmarks increasingly suggest that models are performing at human levels. Yet those scores don't always reflect how models work in the real-world. Since public benchmarks are open and widely used, models can also become optimized for the tests themselves. Their scores may improve because they have learned benchmark-specific patterns and not because they have become better at the underlying task. One reason is that traditional benchmarks overlook many of the conditions and qualities that make voice systems reliable, natural, contextually appropriate, and effective in practice. That's why we recently introduced held-out sets in Real World VoiceEQ , the Open-ASR Leaderboard , and the Far-field ASR Leaderboard : to measure more of what matters in real-world use. However, broader measurement alone does not solve the problem. This phenomenon, sometimes called benchmark optimization or \"benchmaxxing,\" is often discussed around machine learning, however, it has been difficult to measure in speech recognition."
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-08-21T23:59:58.797Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-08-21T23:59:34.409Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_agent-reasoning-deployment-challenges_20260820",
       "slug": "agent-reasoning-deployment-challenges",

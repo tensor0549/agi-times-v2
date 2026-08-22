@@ -7,8 +7,256 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-20T19:18:29.457Z",
+  "generatedAt": "2026-08-21T23:59:58.797Z",
   "items": [
+    {
+      "id": "item_a21cee4b91bda9f5c68b",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+      "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+      "publishedAt": "2026-08-21T17:02:24.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T17:02:24.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research introduces multi-agent biomarker discovery framework",
+        "zh-Hans": "谷歌研究推出多智能体生物标志物发现框架"
+      },
+      "summary": {
+        "en": "Framework automates biomarker discovery from wearable sensor data through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning.",
+        "zh-Hans": "该框架通过迭代假设生成、统计分析和文献推理自动化可穿戴传感器数据的生物标志物发现。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multi-agent",
+        "biomarker",
+        "scientific-workflow"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 94,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Multi-agent system with iterative reasoning capabilities for scientific discovery workflows",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a21cee4b91bda9f5c68b571d",
+          "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-21T17:02:24.000Z",
+          "evidenceSnippet": "We introduce the Biomarker Discovery Framework, a multi-agent system that supports the discovery of biomarker candidates from wearable sensor data through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning. Wearable devices capture continuous physiological signals at population scale. These streams, ranging from heart rate dynamics to sleep patterns, can reveal early physiological changes before symptoms appear. The bottleneck is no longer data collection, but turning these signals into reliable, clinically meaningful biomarkers. Existing language model-based agent systems automate parts of the scientific workflow, but can often break down on physiological time-series data. These systems optimize for predictive performance while overlooking statistical validity, leading to spurious correlations, leakage, and brittle features."
+        }
+      ]
+    },
+    {
+      "id": "item_4f98c5029119950e7f82",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "publishedAt": "2026-08-21T10:54:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T10:54:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research develops mobility-informed AI for place understanding",
+        "zh-Hans": "谷歌研究开发基于移动性的地点理解AI"
+      },
+      "summary": {
+        "en": "Dynamic framework enables AI models to understand temporal activity rhythms of places, improving predictions about real-world attributes like opening hours and busyness.",
+        "zh-Hans": "动态框架使AI模型能够理解地点的时间活动节律，改善对营业时间和繁忙程度等现实属性的预测。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mobility",
+        "spatial-understanding",
+        "temporal-modeling"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "Advances AI understanding of physical world dynamics through temporal-spatial modeling",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_4f98c5029119950e7f82e09b",
+          "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-21T10:54:00.000Z",
+          "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
+        }
+      ]
+    },
+    {
+      "id": "item_1ab98cc8439557e10abd",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.19202",
+      "url": "https://arxiv.org/abs/2608.19202",
+      "publishedAt": "2026-08-21T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Researchers propose active inference framework for AI agent context acquisition",
+        "zh-Hans": "研究人员提出AI智能体上下文获取的主动推理框架"
+      },
+      "summary": {
+        "en": "Framework formulates context acquisition as active inference, balancing belief updates with action selection to minimize expected free energy under token costs.",
+        "zh-Hans": "框架将上下文获取表述为主动推理，在令牌成本约束下平衡信念更新与动作选择以最小化预期自由能。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "active-inference",
+        "context-acquisition",
+        "decision-making"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Sanchayan Dutta, Sai Niranjan Ramachandran, Suvrit Sra",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:sanchayan dutta, sai niranjan ramachandran, suvrit sra",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 82,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Provides principled approach for agent decision-making under uncertainty with cost constraints",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1ab98cc8439557e10abda3bc",
+          "url": "https://arxiv.org/abs/2608.19202",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-21T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.19202v1 Announce Type: new Abstract: Interactive AI agents must acquire the right context as efficiently as possible. When a user omits a constraint, preference, file, or task variable, an agent can proceed with a default assumption or spend tokens on a clarifying question, retrieval call, tool call, or prompt trial. We formulate this tradeoff as active inference for context acquisition. An inner inference step updates beliefs over a latent task state, and an outer decision selects the next context action, task action, or stop action to minimize expected free energy under cost. In deterministic settings, the epistemic term reduces to expected information gain, optionally normalized by token cost. We instantiate the framework in Optimal Question Asking (OQA), with exact posteriors and a dynamic programming oracle, and benchmark frontier language models on binary and multiway categorical tasks from 25 to 300 candidates. We also study clarification before generation and automated prompt optimization under token budgets. The formulation is model-agnostic and views active inference as a design principle for the context-acquisition layer of AI agents."
+        }
+      ]
+    },
+    {
+      "id": "item_e3ddd7a65cd3a566e91c",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Hugging Face measures benchmark optimization effects in speech recognition",
+        "zh-Hans": "Hugging Face测量语音识别中的基准优化效应"
+      },
+      "summary": {
+        "en": "Study examines how models become optimized for benchmark-specific patterns rather than underlying tasks, introducing held-out sets to measure real-world performance.",
+        "zh-Hans": "研究检验模型如何针对基准特定模式而非底层任务进行优化，引入保留集来测量真实世界性能。"
+      },
+      "category": "research_science",
+      "tags": [
+        "benchmark-optimization",
+        "speech-recognition",
+        "evaluation"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 79,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Addresses fundamental evaluation challenges affecting AI model development and deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e3ddd7a65cd3a566e91c6025",
+          "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-21T00:00:00.000Z",
+          "evidenceSnippet": "Reference disagreement (VoxPopuli case study) Masked Entity Retrieval Orthographic Switching Localizing the switches Conclusion Public voice AI benchmarks increasingly suggest that models are performing at human levels. Yet those scores don't always reflect how models work in the real-world. Since public benchmarks are open and widely used, models can also become optimized for the tests themselves. Their scores may improve because they have learned benchmark-specific patterns and not because they have become better at the underlying task. One reason is that traditional benchmarks overlook many of the conditions and qualities that make voice systems reliable, natural, contextually appropriate, and effective in practice. That's why we recently introduced held-out sets in Real World VoiceEQ , the Open-ASR Leaderboard , and the Far-field ASR Leaderboard : to measure more of what matters in real-world use. However, broader measurement alone does not solve the problem. This phenomenon, sometimes called benchmark optimization or \"benchmaxxing,\" is often discussed around machine learning, however, it has been difficult to measure in speech recognition."
+        }
+      ]
+    },
     {
       "id": "item_eab5285cfdebeb65a8ef",
       "schemaVersion": "1.0.0",
@@ -135,191 +383,65 @@
       ]
     },
     {
-      "id": "item_6e78635f6d040ab88551",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.18079",
-      "url": "https://arxiv.org/abs/2608.18079",
-      "publishedAt": "2026-08-20T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-20T14:20:57.997Z",
-      "updatedAt": "2026-08-20T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Transition Complexity Profile for Game World Modeling and RL Benchmarks",
-        "zh-Hans": "游戏世界建模和强化学习基准的转换复杂度分析"
-      },
-      "summary": {
-        "en": "Researchers propose standardized metrics to quantify transition prediction difficulty in game environments, addressing the lack of comparable complexity measures in game world modeling and reinforcement learning research.",
-        "zh-Hans": "研究人员提出标准化指标来量化游戏环境中转换预测的难度，解决游戏世界建模和强化学习研究中缺乏可比较复杂度测量的问题。"
-      },
-      "category": "research_science",
-      "tags": [
-        "game world modeling",
-        "reinforcement learning",
-        "transition complexity",
-        "benchmarking"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Lele Cao",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:lele cao",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 91,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "standardized environment complexity measurement advances transferable RL and world modeling capabilities",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_6e78635f6d040ab88551ef25",
-          "url": "https://arxiv.org/abs/2608.18079",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-20T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.18079v1 Announce Type: new Abstract: Game world modeling (GWM) and reinforcement learning (RL) are often confounded because research papers rarely quantify how difficult the underlying transition prediction problem is at the declared interface (pixels/tokens/latents with finite history). We propose the Transition Complexity Profile (TCP): a small, reproducible set of metrics that characterizes an environment's (or gameplay dataset's) induced transition kernel by (i) intrinsic one-step branching, (ii) interaction-induced uncertainty and opponent influence when observable, and (iii) temporal/spatial dependency span via standardized probe curves. TCP is reported with an explicit reference distribution, protocol stochasticity, and a versioned measurement budget (sampling/resampling and fixed probe compute), enabling comparable numbers across benchmarks. We outline how common game families and modern \"neural game engine\" domains populate this landscape and call for TCP to become standard benchmark metadata and a required statistic in GWM and RL papers."
-        }
-      ]
-    },
-    {
-      "id": "item_f56fb1ee13437f3d1c1d",
+      "id": "item_1a7704a62ecc3f65b10f",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_hugging-face",
+      "sourceId": "src_microsoft-research",
       "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
       },
-      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/qad",
-      "url": "https://huggingface.co/blog/LiquidAI/qad",
-      "publishedAt": "2026-08-19T13:48:49.000Z",
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-20T05:52:39.017Z",
-      "updatedAt": "2026-08-19T13:48:49.000Z",
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T16:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Quantization-Aware Distillation Maintains 96%+ Performance at 4-bit Precision",
-        "zh-Hans": "量化感知蒸馏在4位精度下保持96%以上性能"
+        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
+        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
       },
       "summary": {
-        "en": "LFM2.5 models using quantization-aware distillation retain 96.5-97.4% of baseline performance when compressed to Q4_0, substantially outperforming post-training quantization across reasoning and agentic benchmarks.",
-        "zh-Hans": "使用量化感知蒸馏的LFM2.5模型在压缩至Q4_0时保持96.5-97.4%的基线性能，在推理和智能体基准测试中大幅优于训练后量化。"
+        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
+        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
       },
       "category": "models_capabilities",
       "tags": [
-        "quantization",
-        "edge deployment",
-        "model compression",
-        "lfm2.5"
+        "spatial reasoning",
+        "vision language models",
+        "benchmark",
+        "topology"
       ],
       "topics": [
         "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
+      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.9,
+      "sourceReliability": 0.92,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 86,
+      "freshnessScore": 98,
       "importanceScore": 75,
       "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "enables efficient deployment of reasoning and agentic capabilities on resource-constrained hardware",
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_f56fb1ee13437f3d1c1d8f00",
-          "url": "https://huggingface.co/blog/LiquidAI/qad",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-19T13:48:49.000Z",
-          "evidenceSnippet": "Benchmark results Speed and size on real edge hardware How to use QAD GGUFs Get Started with QAD GGUFs Citation Today, we release QAD Q4_0 GGUFs. These are updated 4-bit checkpoints for LFM2.5-230M, LFM2.5-350M, LFM2.5-1.2B-Instruct, and LFM2.5-2.6B. They allow developers to run LFM2.5 models at Q4_0 memory and speed without the usual quality drop: For all four models, we compare their released GGUFs produced with post-training quantization (PTQ) against the trained QAD Q4_0 checkpoints on a benchmark suite spanning reasoning, instruction-following, tool use, and agentic capabilities: GPQA Diamond, MMLU-Pro, IFEval, IFBench, Multi-IF, and BFCLv4. The BF16 GGUF serves as the in-format ceiling. We also add one scale-appropriate math evaluation: GSM8K for LFM2.5-230M and LFM2.5-350M, and AIME25 for LFM2.5-1.2B-Instruct and LFM2.5-2.6B. We report the mean across five repeats. Across all four models, QAD substantially improves the Q4_0 checkpoint. The QAD checkpoints retain 97.1%, 96.5%, 97.4%, and 96.6% of their respective BF16 baseline performance."
-        }
-      ]
-    },
-    {
-      "id": "item_3610856e0c1fd406f401",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
-      "url": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
-      "publishedAt": "2026-08-17T10:34:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-20T14:20:57.997Z",
-      "updatedAt": "2026-08-17T10:34:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "PhotoScan: Deep Learning Approach Estimates Body Composition from Smartphone Photos",
-        "zh-Hans": "PhotoScan：通过智能手机照片估算身体成分的深度学习方法"
-      },
-      "summary": {
-        "en": "Google Research demonstrates PhotoScan, a deep learning system that estimates body composition and predicts insulin resistance from smartphone photos with accuracy comparable to clinical DXA scans.",
-        "zh-Hans": "谷歌研究展示了PhotoScan，这是一个深度学习系统，能够从智能手机照片估算身体成分并预测胰岛素抗性，准确度可与临床DXA扫描相媲美。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "deep learning",
-        "smartphone imagery",
-        "body composition",
-        "multimodal"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 48,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "multimodal deep learning for medical assessment advances transferable computer vision capabilities",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_3610856e0c1fd406f4012cb6",
-          "url": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-17T10:34:00.000Z",
-          "evidenceSnippet": "Cassie Zhou, Research Scientist, and Ahmed Metwally, Staff Research Scientist, Google Research We demonstrate the feasibility of PhotoScan, a deep learning approach estimating body composition from smartphone photos, to predict insulin resistance with accuracy comparable to DXA scans in a clinical research setting. Insulin resistance is one of the most critical yet underdiagnosed drivers of modern metabolic disease. Predating the clinical onset of type 2 diabetes by years, impaired insulin sensitivity stealthily impairs vascular health, liver function, and energy metabolism long before fasting blood sugar rises into diagnostic ranges. Homeostasis Model Assessment for Insulin Resistance (HOMA-IR) models the feedback loop between liver glucose production and insulin secretion under steady-state fasting conditions, and a HOMA-IR score greater than 2.9 is considered insulin resistant based on epidemiological reviews . Recent studies demonstrate that multimodal machine learning frameworks integrating wearable sensor data with routine lab tests can accurately predict HOMA-IR to flag early metabolic risk. Integrating objective measures of body composition offers a vital complement to wear"
+          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
+          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-12T16:00:00.000Z",
+          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
         }
       ]
     },
@@ -487,73 +609,6 @@
       ]
     },
     {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
-        }
-      ]
-    },
-    {
       "id": "release_anthropic_fable5_bio_safeguards_20260807",
       "sourceId": "src_anthropic",
       "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
@@ -616,58 +671,65 @@
       "mediaType": "article"
     },
     {
-      "id": "item_b7821e4e183d8870d042",
+      "id": "item_6e78635f6d040ab88551",
       "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-      "publishedAt": "2026-08-03T16:00:00.000Z",
-      "discoveredAt": "2026-08-10T17:25:41.441Z",
-      "updatedAt": "2026-08-03T16:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.18079",
+      "url": "https://arxiv.org/abs/2608.18079",
+      "publishedAt": "2026-08-20T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T14:20:57.997Z",
+      "updatedAt": "2026-08-20T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
-        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
+        "en": "Transition Complexity Profile for Game World Modeling and RL Benchmarks",
+        "zh-Hans": "游戏世界建模和强化学习基准的转换复杂度分析"
       },
       "summary": {
-        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
-        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
+        "en": "Researchers propose standardized metrics to quantify transition prediction difficulty in game environments, addressing the lack of comparable complexity measures in game world modeling and reinforcement learning research.",
+        "zh-Hans": "研究人员提出标准化指标来量化游戏环境中转换预测的难度，解决游戏世界建模和强化学习研究中缺乏可比较复杂度测量的问题。"
       },
-      "category": "products_developer_ecosystem",
+      "category": "research_science",
       "tags": [
-        "framework",
-        "scalable ai",
-        "open source"
+        "game world modeling",
+        "reinforcement learning",
+        "transition complexity",
+        "benchmarking"
       ],
       "topics": [
-        "products_developer_ecosystem"
+        "research_science"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Microsoft Research",
-      "org": "Microsoft Research",
+      "author": "Lele Cao",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:lele cao",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.92,
-      "freshnessScore": 20,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
       "importanceScore": 75,
       "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "standardized environment complexity measurement advances transferable RL and world modeling capabilities",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_b7821e4e183d8870d042655a",
-          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-03T16:00:00.000Z",
-          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+          "id": "candidate_6e78635f6d040ab88551ef25",
+          "url": "https://arxiv.org/abs/2608.18079",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-20T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.18079v1 Announce Type: new Abstract: Game world modeling (GWM) and reinforcement learning (RL) are often confounded because research papers rarely quantify how difficult the underlying transition prediction problem is at the declared interface (pixels/tokens/latents with finite history). We propose the Transition Complexity Profile (TCP): a small, reproducible set of metrics that characterizes an environment's (or gameplay dataset's) induced transition kernel by (i) intrinsic one-step branching, (ii) interaction-induced uncertainty and opponent influence when observable, and (iii) temporal/spatial dependency span via standardized probe curves. TCP is reported with an explicit reference distribution, protocol stochasticity, and a versioned measurement budget (sampling/resampling and fixed probe compute), enabling comparable numbers across benchmarks. We outline how common game families and modern \"neural game engine\" domains populate this landscape and call for TCP to become standard benchmark metadata and a required statistic in GWM and RL papers."
         }
       ]
     },
@@ -730,6 +792,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-20T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.18081v1 Announce Type: new Abstract: Artificial agentic systems increasingly operate as behavioral systems by interacting with dynamic environments, pursuing goals, and adapting over time. Yet, current evaluation methods largely focus on performance outcomes, not the underlying behavioral processes that produce them. This paper argues that AI agents must be evaluated like other behavioral systems: through systematic observation, perturbation, and interpretation of their actions. We draw on lessons from the behavioral sciences to motivate this position, and propose a research agenda focused on developing rigorous behavioral tests. These include methods for recovering decision strategies from action sequences, constructing environments that isolate behavioral differences, and probing emergent dynamics in multi-agent systems. Taken together, these directions offer a roadmap for developing a science of AI behavior."
+        }
+      ]
+    },
+    {
+      "id": "item_f56fb1ee13437f3d1c1d",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/qad",
+      "url": "https://huggingface.co/blog/LiquidAI/qad",
+      "publishedAt": "2026-08-19T13:48:49.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T05:52:39.017Z",
+      "updatedAt": "2026-08-19T13:48:49.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Quantization-Aware Distillation Maintains 96%+ Performance at 4-bit Precision",
+        "zh-Hans": "量化感知蒸馏在4位精度下保持96%以上性能"
+      },
+      "summary": {
+        "en": "LFM2.5 models using quantization-aware distillation retain 96.5-97.4% of baseline performance when compressed to Q4_0, substantially outperforming post-training quantization across reasoning and agentic benchmarks.",
+        "zh-Hans": "使用量化感知蒸馏的LFM2.5模型在压缩至Q4_0时保持96.5-97.4%的基线性能，在推理和智能体基准测试中大幅优于训练后量化。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "quantization",
+        "edge deployment",
+        "model compression",
+        "lfm2.5"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "enables efficient deployment of reasoning and agentic capabilities on resource-constrained hardware",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f56fb1ee13437f3d1c1d8f00",
+          "url": "https://huggingface.co/blog/LiquidAI/qad",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-19T13:48:49.000Z",
+          "evidenceSnippet": "Benchmark results Speed and size on real edge hardware How to use QAD GGUFs Get Started with QAD GGUFs Citation Today, we release QAD Q4_0 GGUFs. These are updated 4-bit checkpoints for LFM2.5-230M, LFM2.5-350M, LFM2.5-1.2B-Instruct, and LFM2.5-2.6B. They allow developers to run LFM2.5 models at Q4_0 memory and speed without the usual quality drop: For all four models, we compare their released GGUFs produced with post-training quantization (PTQ) against the trained QAD Q4_0 checkpoints on a benchmark suite spanning reasoning, instruction-following, tool use, and agentic capabilities: GPQA Diamond, MMLU-Pro, IFEval, IFBench, Multi-IF, and BFCLv4. The BF16 GGUF serves as the in-format ceiling. We also add one scale-appropriate math evaluation: GSM8K for LFM2.5-230M and LFM2.5-350M, and AIME25 for LFM2.5-1.2B-Instruct and LFM2.5-2.6B. We report the mean across five repeats. Across all four models, QAD substantially improves the Q4_0 checkpoint. The QAD checkpoints retain 97.1%, 96.5%, 97.4%, and 96.6% of their respective BF16 baseline performance."
         }
       ]
     },
@@ -919,6 +1044,69 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-08-17T19:46:21.000Z",
           "evidenceSnippet": "The decision, stated precisely What FIFO costs under contention Utilization is necessary. Priority is what turns it into value. Writing the problem down The allocator that already knows the constraints Results None of it works if the demand numbers are wrong Optimize the day, commit the hour What this generalizes to Further Reading The previous post argued that utilization, not intelligence, is where the next real constraint in enterprise AI is forming, and it closed by noting that no playbook has emerged yet for what a mature GPU Management practice looks like. This is ours. We built a constraint-aware GPU allocator and benchmarked it against a FIFO scheduler across seven benchmark scenarios. On identical hardware, running identical workloads, GPU utilization rose by as much as 33 percentage points, and priority-weighted output rose in every one of them, by as much as 105%. Nothing about the hardware changed. What changed was the order in which allocation decisions get made. One note on measurement before the numbers start. Every gain below is expressed as improvement over the FIFO result on the same scenario. Utilization is reported in percentage points; value is reported as a pe"
+        }
+      ]
+    },
+    {
+      "id": "item_3610856e0c1fd406f401",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
+      "url": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
+      "publishedAt": "2026-08-17T10:34:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T14:20:57.997Z",
+      "updatedAt": "2026-08-17T10:34:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "PhotoScan: Deep Learning Approach Estimates Body Composition from Smartphone Photos",
+        "zh-Hans": "PhotoScan：通过智能手机照片估算身体成分的深度学习方法"
+      },
+      "summary": {
+        "en": "Google Research demonstrates PhotoScan, a deep learning system that estimates body composition and predicts insulin resistance from smartphone photos with accuracy comparable to clinical DXA scans.",
+        "zh-Hans": "谷歌研究展示了PhotoScan，这是一个深度学习系统，能够从智能手机照片估算身体成分并预测胰岛素抗性，准确度可与临床DXA扫描相媲美。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "deep learning",
+        "smartphone imagery",
+        "body composition",
+        "multimodal"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 48,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "multimodal deep learning for medical assessment advances transferable computer vision capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3610856e0c1fd406f4012cb6",
+          "url": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-17T10:34:00.000Z",
+          "evidenceSnippet": "Cassie Zhou, Research Scientist, and Ahmed Metwally, Staff Research Scientist, Google Research We demonstrate the feasibility of PhotoScan, a deep learning approach estimating body composition from smartphone photos, to predict insulin resistance with accuracy comparable to DXA scans in a clinical research setting. Insulin resistance is one of the most critical yet underdiagnosed drivers of modern metabolic disease. Predating the clinical onset of type 2 diabetes by years, impaired insulin sensitivity stealthily impairs vascular health, liver function, and energy metabolism long before fasting blood sugar rises into diagnostic ranges. Homeostasis Model Assessment for Insulin Resistance (HOMA-IR) models the feedback loop between liver glucose production and insulin secretion under steady-state fasting conditions, and a HOMA-IR score greater than 2.9 is considered insulin resistant based on epidemiological reviews . Recent studies demonstrate that multimodal machine learning frameworks integrating wearable sensor data with routine lab tests can accurately predict HOMA-IR to flag early metabolic risk. Integrating objective measures of body composition offers a vital complement to wear"
         }
       ]
     },
@@ -2053,69 +2241,6 @@
       ]
     },
     {
-      "id": "item_1a7704a62ecc3f65b10f",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "publishedAt": "2026-08-12T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
-        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
-      },
-      "summary": {
-        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
-        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "spatial reasoning",
-        "vision language models",
-        "benchmark",
-        "topology"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
-          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-12T16:00:00.000Z",
-          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
       "id": "item_2c563947428818b93259",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -3039,6 +3164,73 @@
       ]
     },
     {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
       "id": "item_dfb586131bf3d3cb04b4",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -3284,6 +3476,62 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_b7821e4e183d8870d042",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "discoveredAt": "2026-08-10T17:25:41.441Z",
+      "updatedAt": "2026-08-03T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Releases Orchard Framework for Scalable Agentic AI Research",
+        "zh-Hans": "微软发布 Orchard，支持可扩展的智能体研究"
+      },
+      "summary": {
+        "en": "Orchard provides an open-source framework enabling researchers to train and evaluate AI agents across task types while reducing complexity and supporting strong performance from smaller models through reusable infrastructure.",
+        "zh-Hans": "Orchard提供开源框架，使研究人员能够跨任务类型训练和评估AI智能体，同时通过可重用基础设施降低复杂性并支持小型模型的强劲性能。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "framework",
+        "scalable ai",
+        "open source"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Microsoft Research",
+      "org": "Microsoft Research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "freshnessScore": 20,
+      "importanceScore": 75,
+      "importance": 75,
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b7821e4e183d8870d042655a",
+          "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-03T16:00:00.000Z",
+          "evidenceSnippet": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research ."
+        }
+      ]
     },
     {
       "id": "item_0b46c3a73d060b7d84c1",
