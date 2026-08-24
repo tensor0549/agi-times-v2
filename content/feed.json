@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-24T23:04:04.568Z",
+  "generatedAt": "2026-08-24T23:57:23.135Z",
   "items": [
     {
       "id": "item_9cb8a13833c1c5c4ba1a",
@@ -670,6 +670,68 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_6942a5baf54d13aafa36",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20414",
+      "url": "https://arxiv.org/abs/2608.20414",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T23:57:12.259Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "StateSight Benchmark Reveals Vision-Language Model Limitations in Spatial Reasoning",
+        "zh-Hans": "StateSight基准测试揭示视觉语言模型空间推理局限性"
+      },
+      "summary": {
+        "en": "New benchmark StateSight tests vision-language models on spatial reconstruction tasks, with GPT-5.5 achieving 59.3% on cube-net reasoning while humans reached 80.8%, highlighting gaps in spatial understanding.",
+        "zh-Hans": "新基准测试StateSight评估视觉语言模型的空间重建任务，GPT-5.5在立方体网格推理上达到59.3%准确率，而人类达到80.8%，凸显空间理解差距。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "vision-language",
+        "spatial reasoning",
+        "benchmarking"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Michelle Lin",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:michelle lin",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 83,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Evaluates fundamental spatial reasoning capabilities in vision-language models, revealing specific limitations in latent spatial-state reconstruction that are core to general intelligence",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6942a5baf54d13aafa3622f3",
+          "url": "https://arxiv.org/abs/2608.20414",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20414v1 Announce Type: new Abstract: Vision-language models are increasingly used for multimodal question answering, yet their ability to reconstruct latent spatial structure from a single image remains difficult to isolate. Broad benchmarks often combine perception, optical character recognition, domain knowledge, linguistic priors, and reasoning in the same evaluation. We introduce StateSight, a procedurally generated benchmark for cube-net opposite-face reasoning, occluded cube-tower counting, and 4-neighbor connected-component counting. Each task family contains 300 single-image prompts with deterministic oracle labels and exact-match scoring. OpenAI GPT-5.5, using the API model identifier gpt-5.5, achieved 59.3%, 33.3%, and 28.3% accuracy across the three tasks, while Claude Sonnet 5 achieved 53.3%, 18.7%, and 7.3%. All final direct runs had zero format errors. A 30-participant human baseline on 60 items exceeded both models on every task, with mean accuracies of 80.8%, 68.8%, and 64.3%. Visible-derivation analysis identified recurring errors in image-state reconstruction and reasoning procedure. We also introduce StateSight-Steps, a companion dataset of 900 interle"
+        }
+      ]
     },
     {
       "id": "item_e845ffbc7ba2f0cd83cc",
