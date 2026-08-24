@@ -7,8 +7,134 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-21T23:59:58.797Z",
+  "generatedAt": "2026-08-24T06:06:34.801Z",
   "items": [
+    {
+      "id": "item_869c4764a03151ddfddf",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20341",
+      "url": "https://arxiv.org/abs/2608.20341",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T06:06:15.988Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "SDAD: Spec-Driven Agentic Development for AI-Native Software Development",
+        "zh-Hans": "SDAD：面向AI原生软件开发的规范驱动智能体开发"
+      },
+      "summary": {
+        "en": "Researchers formalize Spec-Driven Agentic Development (SDAD) as a new paradigm combining disciplined specification with autonomous implementation through coding agents backed by large language models with extensive context windows.",
+        "zh-Hans": "研究人员正式提出规范驱动智能体开发(SDAD)作为新范式，结合严格规范与基于大语言模型的编码智能体自主实现。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "software development",
+        "coding agents",
+        "specification driven",
+        "multi-agent verification"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Vu Hung Nguyen, Thanh Nguyen",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:vu hung nguyen, thanh nguyen",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates transferable multi-agent verification and autonomous software development capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_869c4764a03151ddfddfd9da",
+          "url": "https://arxiv.org/abs/2608.20341",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20341v1 Announce Type: new Abstract: Frontier coding agents backed by large language models with context windows from hundreds of thousands to millions of tokens are restructuring the Software Development Life Cycle (SDLC). Rich context handling and multi-step reasoning now allow substantial Functional Requirement Documents (FRDs) and repository context to be ingested in a single workflow, making specification quality the execution fuel for autonomous delivery. This report formalises Spec-Driven Agentic Development (SDAD) as a synthesis of disciplined up-front formalisation and high-velocity implementation: intent capture, machine-readable specification, agentic synthesis, and independent multi-agent verification under human sign-off. We revisit the historical pendulum between Waterfall and Agile, introduce AI-code as a fourth production paradigm, and compare Human-Agile (circa 2020) with Agentic-SDAD (circa 2026) across artefacts, cadence, accountability, and security posture. Beyond process description, we extend the model to team role metamorphosis (engineer, QA, platform, and product functions), quantitative governance (Ambiguity Tax, Spec Fidelity, SER, and TCI_agen"
+        }
+      ]
+    },
+    {
+      "id": "item_b654ec7f8ed05a7c6439",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20342",
+      "url": "https://arxiv.org/abs/2608.20342",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T06:06:15.988Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "PrimeAgentOrchestrator: Memory-Primed Agent Spawning System",
+        "zh-Hans": "PrimeAgentOrchestrator：记忆预装智能体生成系统"
+      },
+      "summary": {
+        "en": "Peak Summit Labs presents a system that spawns coding agents pre-loaded with relevant memories from personal databases, addressing the context window reset problem through parallel memory backend queries and filesystem injection.",
+        "zh-Hans": "Peak Summit Labs提出一个系统，通过并行内存后端查询和文件系统注入，生成预装相关记忆的编码智能体，解决上下文窗口重置问题。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "memory systems",
+        "agent orchestration",
+        "personal ai",
+        "context persistence"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Myron Koch (Peak Summit Labs)",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:myron koch (peak summit labs)",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances transferable agent memory persistence and orchestration capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b654ec7f8ed05a7c6439a0c6",
+          "url": "https://arxiv.org/abs/2608.20342",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20342v1 Announce Type: new Abstract: Large language model (LLM) coding agents start each session with an empty context window, discarding accumulated knowledge from prior work. We present PrimeAgentOrchestrator (PAO), a system that spawns new instances of Claude Code -- Anthropic's terminal-based coding agent -- pre-loaded with relevant memories compiled from the user's existing personal databases. At spawn time, PAO queries two independently-operated memory backends in parallel (a PostgreSQL entity-observation database and a Cloudflare Worker semantic search index), fuses results using backend-specific retrieval strategies, and delivers the compiled briefing via filesystem injection that exploits the host agent's configuration auto-read behavior. PAO manages the full agent lifecycle including trust pre-seeding, readiness polling with error detection, and adaptive terminal text injection. We report on four months of regular deployment (December 2025 through March 2026) as an experience report, documenting three generations of context delivery mechanisms, the failure modes that motivated each redesign, and the engineering tradeoffs of bridging heterogeneous memory systems"
+        }
+      ]
+    },
     {
       "id": "item_a21cee4b91bda9f5c68b",
       "schemaVersion": "1.0.0",
@@ -130,68 +256,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-21T10:54:00.000Z",
           "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
-        }
-      ]
-    },
-    {
-      "id": "item_1ab98cc8439557e10abd",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.19202",
-      "url": "https://arxiv.org/abs/2608.19202",
-      "publishedAt": "2026-08-21T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-21T23:59:34.409Z",
-      "updatedAt": "2026-08-21T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Researchers propose active inference framework for AI agent context acquisition",
-        "zh-Hans": "研究人员提出AI智能体上下文获取的主动推理框架"
-      },
-      "summary": {
-        "en": "Framework formulates context acquisition as active inference, balancing belief updates with action selection to minimize expected free energy under token costs.",
-        "zh-Hans": "框架将上下文获取表述为主动推理，在令牌成本约束下平衡信念更新与动作选择以最小化预期自由能。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "active-inference",
-        "context-acquisition",
-        "decision-making"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Sanchayan Dutta, Sai Niranjan Ramachandran, Suvrit Sra",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:sanchayan dutta, sai niranjan ramachandran, suvrit sra",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 82,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "Provides principled approach for agent decision-making under uncertainty with cost constraints",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_1ab98cc8439557e10abda3bc",
-          "url": "https://arxiv.org/abs/2608.19202",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-21T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.19202v1 Announce Type: new Abstract: Interactive AI agents must acquire the right context as efficiently as possible. When a user omits a constraint, preference, file, or task variable, an agent can proceed with a default assumption or spend tokens on a clarifying question, retrieval call, tool call, or prompt trial. We formulate this tradeoff as active inference for context acquisition. An inner inference step updates beliefs over a latent task state, and an outer decision selects the next context action, task action, or stop action to minimize expected free energy under cost. In deterministic settings, the epistemic term reduces to expected information gain, optionally normalized by token cost. We instantiate the framework in Optimal Question Asking (OQA), with exact posteriors and a dynamic programming oracle, and benchmark frontier language models on binary and multiway categorical tasks from 25 to 300 candidates. We also study clarification before generation and automated prompt optimization under token budgets. The formulation is model-agnostic and views active inference as a design principle for the context-acquisition layer of AI agents."
         }
       ]
     },
@@ -320,69 +384,6 @@
       ]
     },
     {
-      "id": "item_41b914407b7a3faed8c8",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.18078",
-      "url": "https://arxiv.org/abs/2608.18078",
-      "publishedAt": "2026-08-20T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-20T05:52:39.017Z",
-      "updatedAt": "2026-08-20T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "AI Reasoning Agents Show Collusive Behavior in Economic Markets",
-        "zh-Hans": "AI推理智能体在经济市场中表现出串通行为"
-      },
-      "summary": {
-        "en": "Research reveals DeepSeek-R1 agents exhibit tacit collusion in pricing scenarios despite prompts not to collude, with reasoning traces that can be steered toward competitive or collusive behavior without semantic detection.",
-        "zh-Hans": "研究显示DeepSeek-R1智能体在定价场景中表现出默契串通，尽管被提示不要串通，其推理轨迹可被引导至竞争或串通行为而无法被语义检测。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "reasoning agents",
-        "collusion",
-        "certification",
-        "market behavior"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Matthew Riemer, Tommaso Tosato, Amin Memarian, Maximilian Puelma Touzel, Glen Berseth, Irina Rish, Guillaume Dumas",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:matthew riemer, tommaso tosato, amin memarian, maximilian puelma touzel, glen berseth, irina rish, guillaume dumas",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "demonstrates emergent strategic behavior in reasoning agents with implications for AGI deployment",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_41b914407b7a3faed8c8c25a",
-          "url": "https://arxiv.org/abs/2608.18078",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-20T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.18078v1 Announce Type: new Abstract: This position paper argues that AI agents with chain-of-thought reasoning capabilities are predisposed to exhibit collusive behavior and should be required to obtain behavioral certification before making decisions that affect economic markets. This is because integrating these agents into society could collapse the legal evidentiary distinction between competition and collusion among independent firms without eroding the economic harm distinction. Experiments with DeepSeek-R1 agents in the Bertrand oligopoly pricing domain reveal a tendency towards tacit collusion that persists even when humans prompt the agents not to collude. We further show that the chain-of-thought of these agents can be steered toward either extremely collusive or highly competitive behavior in a way that is not semantically detectable by another LLM analyzing the reasoning traces. As a result, deploying reasoning agents for market decisions leads to collusive economic outcomes without any evidence of conspiracy or intent. Thus, certification based on observed behavior in representative situations is necessary to prevent collusion. We provide preliminary evidenc"
-        }
-      ]
-    },
-    {
       "id": "item_1a7704a62ecc3f65b10f",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -442,105 +443,6 @@
           "publisher": "Microsoft Research",
           "publishedAt": "2026-08-12T16:00:00.000Z",
           "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
-      "id": "statement_meta_personal_superintelligence_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
-      },
-      "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
-      ],
-      "topics": [
-        "agents_automation",
-        "safety_security_alignment"
-      ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
-      "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
         }
       ]
     },
@@ -669,6 +571,192 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "release_mistral_shieldstral_20260804",
+      "sourceId": "src_mistral-ai",
+      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
+      "publishedAt": "2026-08-04T00:00:00Z",
+      "title": {
+        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
+        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
+      },
+      "summary": {
+        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
+        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "open-weights",
+        "multimodal",
+        "moderation"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "products_developer_ecosystem"
+      ],
+      "entities": [
+        "Mistral AI",
+        "Shieldstral"
+      ],
+      "author": "Mistral",
+      "org": "Mistral AI",
+      "importanceScore": 83,
+      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "source": {
+        "id": "src_mistral-ai",
+        "name": "Mistral AI"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-04T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 21,
+      "importance": 83,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_mistral_shieldstral_20260804",
+          "url": "https://mistral.ai/news/shieldstral/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-04T00:00:00Z",
+          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "item_1ab98cc8439557e10abd",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.19202",
+      "url": "https://arxiv.org/abs/2608.19202",
+      "publishedAt": "2026-08-21T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Researchers propose active inference framework for AI agent context acquisition",
+        "zh-Hans": "研究人员提出AI智能体上下文获取的主动推理框架"
+      },
+      "summary": {
+        "en": "Framework formulates context acquisition as active inference, balancing belief updates with action selection to minimize expected free energy under token costs.",
+        "zh-Hans": "框架将上下文获取表述为主动推理，在令牌成本约束下平衡信念更新与动作选择以最小化预期自由能。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "active-inference",
+        "context-acquisition",
+        "decision-making"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Sanchayan Dutta, Sai Niranjan Ramachandran, Suvrit Sra",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:sanchayan dutta, sai niranjan ramachandran, suvrit sra",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 82,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Provides principled approach for agent decision-making under uncertainty with cost constraints",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1ab98cc8439557e10abda3bc",
+          "url": "https://arxiv.org/abs/2608.19202",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-21T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.19202v1 Announce Type: new Abstract: Interactive AI agents must acquire the right context as efficiently as possible. When a user omits a constraint, preference, file, or task variable, an agent can proceed with a default assumption or spend tokens on a clarifying question, retrieval call, tool call, or prompt trial. We formulate this tradeoff as active inference for context acquisition. An inner inference step updates beliefs over a latent task state, and an outer decision selects the next context action, task action, or stop action to minimize expected free energy under cost. In deterministic settings, the epistemic term reduces to expected information gain, optionally normalized by token cost. We instantiate the framework in Optimal Question Asking (OQA), with exact posteriors and a dynamic programming oracle, and benchmark frontier language models on binary and multiway categorical tasks from 25 to 300 candidates. We also study clarification before generation and automated prompt optimization under token budgets. The formulation is model-agnostic and views active inference as a design principle for the context-acquisition layer of AI agents."
+        }
+      ]
+    },
+    {
+      "id": "item_41b914407b7a3faed8c8",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.18078",
+      "url": "https://arxiv.org/abs/2608.18078",
+      "publishedAt": "2026-08-20T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T05:52:39.017Z",
+      "updatedAt": "2026-08-20T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AI Reasoning Agents Show Collusive Behavior in Economic Markets",
+        "zh-Hans": "AI推理智能体在经济市场中表现出串通行为"
+      },
+      "summary": {
+        "en": "Research reveals DeepSeek-R1 agents exhibit tacit collusion in pricing scenarios despite prompts not to collude, with reasoning traces that can be steered toward competitive or collusive behavior without semantic detection.",
+        "zh-Hans": "研究显示DeepSeek-R1智能体在定价场景中表现出默契串通，尽管被提示不要串通，其推理轨迹可被引导至竞争或串通行为而无法被语义检测。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "reasoning agents",
+        "collusion",
+        "certification",
+        "market behavior"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Matthew Riemer, Tommaso Tosato, Amin Memarian, Maximilian Puelma Touzel, Glen Berseth, Irina Rish, Guillaume Dumas",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:matthew riemer, tommaso tosato, amin memarian, maximilian puelma touzel, glen berseth, irina rish, guillaume dumas",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates emergent strategic behavior in reasoning agents with implications for AGI deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_41b914407b7a3faed8c8c25a",
+          "url": "https://arxiv.org/abs/2608.18078",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-20T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.18078v1 Announce Type: new Abstract: This position paper argues that AI agents with chain-of-thought reasoning capabilities are predisposed to exhibit collusive behavior and should be required to obtain behavioral certification before making decisions that affect economic markets. This is because integrating these agents into society could collapse the legal evidentiary distinction between competition and collusion among independent firms without eroding the economic harm distinction. Experiments with DeepSeek-R1 agents in the Bertrand oligopoly pricing domain reveal a tendency towards tacit collusion that persists even when humans prompt the agents not to collude. We further show that the chain-of-thought of these agents can be steered toward either extremely collusive or highly competitive behavior in a way that is not semantically detectable by another LLM analyzing the reasoning traces. As a result, deploying reasoning agents for market decisions leads to collusive economic outcomes without any evidence of conspiracy or intent. Thus, certification based on observed behavior in representative situations is necessary to prevent collusion. We provide preliminary evidenc"
+        }
+      ]
     },
     {
       "id": "item_6e78635f6d040ab88551",
@@ -3052,6 +3140,105 @@
       ]
     },
     {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+        }
+      ]
+    },
+    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -3412,67 +3599,6 @@
           "publisher": "Google",
           "publishedAt": "2026-08-07T00:00:00Z",
           "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
-        }
-      ],
-      "mediaType": "article"
-    },
-    {
-      "id": "release_mistral_shieldstral_20260804",
-      "sourceId": "src_mistral-ai",
-      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
-      "publishedAt": "2026-08-04T00:00:00Z",
-      "title": {
-        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
-        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
-      },
-      "summary": {
-        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
-        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "open-weights",
-        "multimodal",
-        "moderation"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "products_developer_ecosystem"
-      ],
-      "entities": [
-        "Mistral AI",
-        "Shieldstral"
-      ],
-      "author": "Mistral",
-      "org": "Mistral AI",
-      "importanceScore": 83,
-      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "source": {
-        "id": "src_mistral-ai",
-        "name": "Mistral AI"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-04T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 21,
-      "importance": 83,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_mistral_shieldstral_20260804",
-          "url": "https://mistral.ai/news/shieldstral/",
-          "publisher": "Mistral AI",
-          "publishedAt": "2026-08-04T00:00:00Z",
-          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
         }
       ],
       "mediaType": "article"
