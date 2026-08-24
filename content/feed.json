@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-24T21:48:38.799Z",
+  "generatedAt": "2026-08-24T23:04:04.568Z",
   "items": [
     {
       "id": "item_9cb8a13833c1c5c4ba1a",
@@ -670,6 +670,69 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_e845ffbc7ba2f0cd83cc",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20401",
+      "url": "https://arxiv.org/abs/2608.20401",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T23:03:54.070Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Canonical World Models for Environment, Agent and Joint Systems",
+        "zh-Hans": "环境、智能体和联合系统的规范世界模型"
+      },
+      "summary": {
+        "en": "Researchers propose a framework distinguishing three types of world models in reinforcement learning: environment channel, agent channel, and joint process models, using computational mechanics to define canonical predictive models.",
+        "zh-Hans": "研究人员提出了一个框架，区分强化学习中的三种世界模型：环境通道、智能体通道和联合过程模型，使用计算力学定义规范预测模型。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "world models",
+        "reinforcement learning",
+        "computational mechanics",
+        "agent modeling"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Manuel Baltieri, Filippo Torresan, Yivan Zhang, Alexander Boyd, Fernando E. Rosas",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:manuel baltieri, filippo torresan, yivan zhang, alexander boyd, fernando e. rosas",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 83,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances theoretical foundations for agent world modeling and predictive state representations",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e845ffbc7ba2f0cd83cc90b2",
+          "url": "https://arxiv.org/abs/2608.20401",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20401v1 Announce Type: new Abstract: World models are a central component of model-based reinforcement learning. They are usually discussed in terms of what variables they predict, such as observations, rewards, states, latent or information states. We argue that there is a prior distinction: which channel they model. We consider three cases: the environment channel $O_{:} \\mid A_{:}$, the agent channel $A_{:} \\mid O_{:}$, and the realised joint process $(A, O)_{:}$, equivalently viewed as a channel with no inputs. Using computational mechanics, we define canonical predictive models for these three cases as $\\epsilon$-transducers or $\\epsilon$-machines. Canonical environment models recover standard predictive state representations, while the other two give analogous notions of canonical models for the agent and the joint system. We then build canonical support-restricted environment and agent models induced by closed-loop coupling, whose predictive equivalences range over continuations supported by the realised interaction. The key structural result is that canonical support-restricted environment states factor through the canonical joint causal states, and their transit"
+        }
+      ]
     },
     {
       "id": "item_4d58800903afd1bab3f4",
