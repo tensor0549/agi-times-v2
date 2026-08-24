@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-24T16:06:32.295Z",
+  "generatedAt": "2026-08-24T19:48:59.000Z",
   "items": [
     {
       "id": "item_9cb8a13833c1c5c4ba1a",
@@ -922,6 +922,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-24T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.20342v1 Announce Type: new Abstract: Large language model (LLM) coding agents start each session with an empty context window, discarding accumulated knowledge from prior work. We present PrimeAgentOrchestrator (PAO), a system that spawns new instances of Claude Code -- Anthropic's terminal-based coding agent -- pre-loaded with relevant memories compiled from the user's existing personal databases. At spawn time, PAO queries two independently-operated memory backends in parallel (a PostgreSQL entity-observation database and a Cloudflare Worker semantic search index), fuses results using backend-specific retrieval strategies, and delivers the compiled briefing via filesystem injection that exploits the host agent's configuration auto-read behavior. PAO manages the full agent lifecycle including trust pre-seeding, readiness polling with error detection, and adaptive terminal text injection. We report on four months of regular deployment (December 2025 through March 2026) as an experience report, documenting three generations of context delivery mechanisms, the failure modes that motivated each redesign, and the engineering tradeoffs of bridging heterogeneous memory systems"
+        }
+      ]
+    },
+    {
+      "id": "item_18b4d53c9e2dac88af57",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20398",
+      "url": "https://arxiv.org/abs/2608.20398",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T19:48:48.141Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Environmental Slow AI Proposes Sustainability-Centered Design Principles",
+        "zh-Hans": "环境慢AI提出以可持续性为中心的设计原则"
+      },
+      "summary": {
+        "en": "Position paper articulates five design principles for generative AI systems prioritizing environmental sustainability over maximalist values, including restraint, sufficiency, and material visibility.",
+        "zh-Hans": "立场论文阐述生成式AI系统的五项设计原则，优先考虑环境可持续性而非最大化价值观，包括克制、充分性和材料可见性。"
+      },
+      "category": "policy_governance_law",
+      "tags": [
+        "environmental-sustainability",
+        "design-principles",
+        "generative-ai",
+        "slow-ai"
+      ],
+      "topics": [
+        "policy_governance_law"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Vanessa Utz",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:vanessa utz",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "proposes transferable design framework for sustainable generative AI system development",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_18b4d53c9e2dac88af5765d4",
+          "url": "https://arxiv.org/abs/2608.20398",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20398v1 Announce Type: new Abstract: Generative AI (genAI) systems produce cultural artefacts at scale, but they also reflect embedded cultural values through their design. Once identified, these values become open to deliberate reshaping. This position paper examines the maximalist values of current generative AI through an environmental humanities tradition and proposes design principles in which environmental sustainability serves as the core value instead. The principles are developed under the umbrella of Slow AI, a term that already circulates across several distinct research and practice programs. Five design principles are articulated (restraint, sufficiency, selectivity over retention, material visibility, and friction as affordance), each of them illustrated against the current design of widely deployed systems. Each principle operates at two levels: a design implementation, and an interpretive layer at which users and developers are prompted toward reflective engagement with the system. Together these principles extend human agency by restoring decisions that frictionless defaults have silently removed and do so by building interpretive reflection into design."
         }
       ]
     },
