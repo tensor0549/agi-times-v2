@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-24T11:03:59.246Z",
+  "generatedAt": "2026-08-24T14:05:22.665Z",
   "items": [
     {
       "id": "item_9cb8a13833c1c5c4ba1a",
@@ -670,6 +670,69 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_5e7a1c6cfddad775278a",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20389",
+      "url": "https://arxiv.org/abs/2608.20389",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T14:05:12.664Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Skill Discovery and Routing in Production Multimodal Agent Harness",
+        "zh-Hans": "生产级多模态智能体框架中的技能发现与路由"
+      },
+      "summary": {
+        "en": "Research examines how Tinycloud agent harness represents and selects skills from growing libraries, comparing tool-skills and workflow-skills across different exposure methods in system prompts.",
+        "zh-Hans": "研究探讨Tinycloud智能体框架如何表示和选择技能库中的技能，比较工具技能和工作流技能在系统提示中的不同暴露方法。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multimodal agents",
+        "skill discovery",
+        "agent harness",
+        "skill routing"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Kevin Dela Rosa",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:kevin dela rosa",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances transferable skill discovery and routing mechanisms for multimodal agent systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5e7a1c6cfddad775278a01ec",
+          "url": "https://arxiv.org/abs/2608.20389",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20389v1 Announce Type: new Abstract: A production agent harness must discover and rank, from a growing library of skills, the one most appropriate for a user's task. At small scale this selection happens in context: the LLM planner chooses among skill representations exposed in its system prompt, without an explicit embedding-based retrieval step. We treat this in-context selection as the small-N counterpart to embedding-based skill retrieval at scale, and present a case study of how Tinycloud, a production multimodal video agent harness, represents its skills for the planner. The harness ships skills under two recurring representations: tool-skills that wrap a single external API or system tool and serve as primitive vocabulary, and workflow-skills that orchestrate tool-skill calls plus a template render to produce one named deliverable. The harness exposes them via two surfaces in the system prompt: an inlined-body surface (full instructions, scripts, templates) for autoloaded skills, and a one-line listing for on-demand skills. A six-task selection ablation across three exposure regimes (all-on, default, all-off) shows that full autoload selects the gold skill on ever"
+        }
+      ]
     },
     {
       "id": "item_5d66e03fc73374fb7982",
