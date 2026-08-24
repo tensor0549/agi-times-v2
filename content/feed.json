@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-24T19:48:59.000Z",
+  "generatedAt": "2026-08-24T21:48:38.799Z",
   "items": [
     {
       "id": "item_9cb8a13833c1c5c4ba1a",
@@ -670,6 +670,69 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_4d58800903afd1bab3f4",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20400",
+      "url": "https://arxiv.org/abs/2608.20400",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T21:48:31.632Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Agentic Memory Retention Failure Before Retrieval Begins",
+        "zh-Hans": "智能体记忆在检索前的保留失效问题"
+      },
+      "summary": {
+        "en": "Research identifies a pre-retrieval failure mode in agentic memory systems where necessary evidence is discarded during budget-constrained retention, proposing dependency-aware garbage collection to improve retention rates from 0.03 to 0.90.",
+        "zh-Hans": "研究发现智能体记忆系统在预算约束下会在检索前丢弃必要证据，提出依赖感知垃圾回收方法将保留率从0.03提升至0.90。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "memory",
+        "retrieval",
+        "budget",
+        "eviction"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Minkyu Song",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:minkyu song",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 84,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental memory management challenges in agentic systems with transferable solutions for retention optimization",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_4d58800903afd1bab3f41f6e",
+          "url": "https://arxiv.org/abs/2608.20400",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20400v1 Announce Type: new Abstract: Agentic memory under a fixed budget involves two stages: retention and retrieval. Existing retrieval-centered paradigms implicitly assume necessary evidence survives eviction, but we challenge this by isolating a pre-retrieval failure mode: structurally indirect prerequisite eviction, in which upstream blocks weakly aligned with the query are discarded under budget pressure. We provide an operational definition of this failure, a reproducible deterministic benchmark, and per-seed trace diagnostics. Finally, we evaluate Dependency-aware Semantic Garbage Collection (DSGC), a one-hop graph-aware rule. In our main suite, DSGC improves full-chain retention from 0.03 to 0.90 under a lexical encoder and from 0.23 to 1.00 under a sentence encoder. Robustness checks then identify the budget and scaling regimes where the one-hop rule holds or degrades. Our released pipeline and failure postmortem support mechanistic analysis of retention before retrieval as a distinct failure boundary."
+        }
+      ]
     },
     {
       "id": "item_2932499a49844f1b2c73",
