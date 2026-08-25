@@ -7,10 +7,134 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-24T23:57:23.135Z",
+  "generatedAt": "2026-08-25T19:17:30.550Z",
   "items": [
     {
-      "id": "item_9cb8a13833c1c5c4ba1a",
+      "id": "item_d21068479952e4038366",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "publishedAt": "2026-08-25T15:14:14.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-25T19:17:02.222Z",
+      "updatedAt": "2026-08-25T15:14:14.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Granite 4.2: Multi-Stage RL Training for Reasoning Models",
+        "zh-Hans": "Granite 4.2：推理模型的多阶段强化学习训练"
+      },
+      "summary": {
+        "en": "IBM releases Granite 4.2 reasoning model family (3B, 8B, 30B) with multi-stage RL pipeline including foundational skills and agentic training phases.",
+        "zh-Hans": "IBM发布Granite 4.2推理模型系列（3B、8B、30B），采用包含基础技能和智能体训练阶段的多阶段强化学习管道。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "reasoning",
+        "reinforcement-learning",
+        "multi-stage-training"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 96,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "Multi-stage RL training methodology for reasoning capabilities with transferable agentic training approach",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d21068479952e40383665c65",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-25T15:14:14.000Z",
+          "evidenceSnippet": "Overview Model Architecture Pre-Training SFT: Data Preparation & Quality Control Data Quality Control SFT Training Details Phase 2 SFT for the 30B Model Reinforcement Learning: A Multi-Stage, Multi-Environment Pipeline Training Methodology The Staged Curriculum Reward Signals Foundational RL: Build the Skills Agentic RL: Learning to Act (8B / 30B) Alignment: RLHF How the Three Sizes Differ Agentic AI Infrastructure for Scalable RL Results Quantization FP8 FP4 GGUF Infrastructure Hardware Software Stack Getting Started (Transformers) Installation Basic Inference (Thinking Mode) Non-Thinking Mode Low-Effort Thinking Tool Calling Basic Tool Calling Multi-Turn with Tool Response Multi-Turn Conversations History Thinking Truncation Parsing Thinking vs. Final Answer Using with Agentic Coding Harnesses OpenCode Pi OpenHands A technical walkthrough of how we built the Granite 4.2 reasoning model family. TL;DR: Granite 4.2 is our first family of dense, decoder-only reasoning LLMs, released in three sizes: 3B, 8B, and 30B . Each model is pre-trained from scratch on roughly 15T tokens with a five-phase strategy that extends the context window to 512K tokens, supervised fine-tuned on chain-of-"
+        }
+      ]
+    },
+    {
+      "id": "item_f1c76f23a788b6884a28",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "publishedAt": "2026-08-25T11:39:24.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-25T19:17:02.222Z",
+      "updatedAt": "2026-08-25T11:39:24.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Quantization-Aware Healing for 4-bit Model Recovery",
+        "zh-Hans": "量化感知修复技术用于4位模型恢复"
+      },
+      "summary": {
+        "en": "New approach recovers compressed 4-bit models to outperform full-precision originals, addressing degradation in reasoning and code generation.",
+        "zh-Hans": "新方法恢复压缩的4位模型，使其性能超越全精度原始模型，解决推理和代码生成能力退化问题。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "quantization",
+        "model-compression",
+        "efficiency"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Enables efficient deployment of reasoning models while maintaining capabilities critical for AGI applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f1c76f23a788b6884a2877cd",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-25T11:39:24.000Z",
+          "evidenceSnippet": "Why the usual healing methods fall short here Our approach Results QAH against QAT, head to head What this changes in practice Making a large language model smaller almost always comes with a cost. The now-standard recipe for efficient deployment is to compress the architecture first, cutting the parameter count by removing layers, heads, or neurons, and then quantize the remaining weights down to 4 bits to shrink memory and compute further. Both steps save a lot, but together they systematically degrade the capabilities people actually care about: reasoning, mathematical problem-solving, and code generation. Because of this, serious deployment pipelines add a recovery step, usually called healing, before the model goes into production. Recent open-weight releases such as gpt-oss , NVIDIA's Nemotron family, and our own Hypernova 60B all rely on some version of this compress-then-heal approach. Our latest paper, Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs , asks a question that the field has mostly left open: once a model has already been through structural compression, not just quantization, how well does that recovery step actually work, an"
+        }
+      ]
+    },
+    {
+      "id": "item_b749ed6ae3aff6159a71",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -18,62 +142,61 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.20378",
-      "url": "https://arxiv.org/abs/2608.20378",
-      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.21363",
+      "url": "https://arxiv.org/abs/2608.21363",
+      "publishedAt": "2026-08-25T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-24T11:03:47.423Z",
-      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "discoveredAt": "2026-08-25T19:17:02.222Z",
+      "updatedAt": "2026-08-25T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Researchers identify vulnerability in LLM safety mechanisms through latent intent analysis",
-        "zh-Hans": "研究人员通过潜在意图分析发现大语言模型安全机制漏洞"
+        "en": "AIREP Protocol for AI Runtime Decision Recording",
+        "zh-Hans": "AIREP协议用于AI运行时决策记录"
       },
       "summary": {
-        "en": "Study reveals that LLM safety alignment is superficial, with harmful intent detectable in early layers despite late-layer camouflage that bypasses guardrails in models like Phi-3, Qwen2.5, and Gemma-2b.",
-        "zh-Hans": "研究揭示大语言模型安全对齐机制表面化，有害意图在早期层中可检测，尽管后期层伪装能绕过Phi-3、Qwen2.5和Gemma-2b等模型的防护机制。"
+        "en": "Protocol records AI runtime governance decisions as signed objects with hash chains for tamper detection and offline verification.",
+        "zh-Hans": "协议将AI运行时治理决策记录为带有哈希链的签名对象，用于篡改检测和离线验证。"
       },
       "category": "safety_security_alignment",
       "tags": [
-        "safety alignment",
-        "adversarial attacks",
-        "semantic camouflage",
-        "latent representations"
+        "governance",
+        "runtime-monitoring",
+        "decision-recording"
       ],
       "topics": [
         "safety_security_alignment"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Md. Hasib Ur Rahman",
+      "author": "Ali Toygar Abak",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:md. hasib ur rahman",
+      "independenceKey": "academic:ali toygar abak",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 93,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "Identifies fundamental architectural vulnerabilities in LLM safety mechanisms with implications for AGI alignment",
+      "freshnessScore": 86,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Provides governance framework for automated AI decision-making systems critical for AGI deployment",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_9cb8a13833c1c5c4ba1a5f1c",
-          "url": "https://arxiv.org/abs/2608.20378",
+          "id": "candidate_b749ed6ae3aff6159a71db9b",
+          "url": "https://arxiv.org/abs/2608.21363",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-24T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.20378v1 Announce Type: new Abstract: Safety alignment in Large Language Models (LLMs) is often superficial, relying on refusal mechanisms that trigger only at the final stages of generation without erasing the foundational knowledge of harmful concepts acquired during pretraining. This study demonstrates that this architectural disconnect leaves models vulnerable to Semantic Camouflage -- adversarial attacks that wrap harmful intent in benign narrative contexts (e.g., creative writing), effectively bypassing standard input and output guardrails. By analyzing the latent activation trajectories of three distinct Small Language Model (SLM) families (Phi-3, Qwen2.5, and Gemma-2b) under adversarial stress, this research identifies a universal ``Intent Horizon'' -- a critical depth (typically 15--20\\% of total layers) where the model's distinct, pre-trained representation of harmful intent collapses as it contextualizes the query into a ``safe'' narrative. Results indicate that while late-layer representations of camouflaged attacks are mathematically indistinguishable from safe queries (Detection Rate $&lt; 20\\%$), early-layer representations retain a distinct, detectable ``h"
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21363v1 Announce Type: new Abstract: A protocol is presented for recording the governance decisions of automated AI runtimes. When a runtime releases, blocks, defers, redacts, or escalates an individual output, AIREP records that decision as a single signed object that any party can check offline, independent of the runtime that produced it. A record carries the decision as one of a closed set of verbs under a stated policy basis, references its input, output, and evidence by hash rather than by value, and declares both what its evidence covers and what it does not. Records form a SHA-256 hash chain that binds each record to its position, so that tampering and gaps are detectable by recomputation. Vendor-, model-, and domain-specific content is confined to a single optional namespace, and a mechanical neutrality test keeps the shared format free of it. A reference implementation and a two-language conformance kit are described. Some implementation issues are considered, and problems such as alignment of the canonical form across implementations, freshness witnesses, and multi-runtime chains are exposed. The format is offered for adoption by any AI runtime that records go"
         }
       ]
     },
     {
-      "id": "item_869c4764a03151ddfddf",
+      "id": "item_1af13a997ccd1b8bc60a",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -81,57 +204,56 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.20341",
-      "url": "https://arxiv.org/abs/2608.20341",
-      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.21362",
+      "url": "https://arxiv.org/abs/2608.21362",
+      "publishedAt": "2026-08-25T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-24T06:06:15.988Z",
-      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "discoveredAt": "2026-08-25T19:17:02.222Z",
+      "updatedAt": "2026-08-25T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "SDAD: Spec-Driven Agentic Development for AI-Native Software Development",
-        "zh-Hans": "SDAD：面向AI原生软件开发的规范驱动智能体开发"
+        "en": "KVBoost: Chunk-Level Cache Reuse for LLM Inference",
+        "zh-Hans": "KVBoost：大语言模型推理的块级缓存复用"
       },
       "summary": {
-        "en": "Researchers formalize Spec-Driven Agentic Development (SDAD) as a new paradigm combining disciplined specification with autonomous implementation through coding agents backed by large language models with extensive context windows.",
-        "zh-Hans": "研究人员正式提出规范驱动智能体开发(SDAD)作为新范式，结合严格规范与基于大语言模型的编码智能体自主实现。"
+        "en": "System enables KV cache reuse regardless of content position through dual-hash keying and boundary repair strategies for transformer models.",
+        "zh-Hans": "系统通过双哈希键控和边界修复策略，实现变换器模型中与内容位置无关的键值缓存复用。"
       },
-      "category": "agents_automation",
+      "category": "compute_infrastructure",
       "tags": [
-        "software development",
-        "coding agents",
-        "specification driven",
-        "multi-agent verification"
+        "key-value-cache",
+        "inference-optimization",
+        "transformer-efficiency"
       ],
       "topics": [
-        "agents_automation"
+        "compute_infrastructure"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Vu Hung Nguyen, Thanh Nguyen",
+      "author": "Srihari Unnikrishnan",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:vu hung nguyen, thanh nguyen",
+      "independenceKey": "academic:srihari unnikrishnan",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "demonstrates transferable multi-agent verification and autonomous software development capabilities",
+      "freshnessScore": 86,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Reduces inference latency for transformer-based models, enabling more efficient AGI system deployment",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_869c4764a03151ddfddfd9da",
-          "url": "https://arxiv.org/abs/2608.20341",
+          "id": "candidate_1af13a997ccd1b8bc60ab816",
+          "url": "https://arxiv.org/abs/2608.21362",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-24T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.20341v1 Announce Type: new Abstract: Frontier coding agents backed by large language models with context windows from hundreds of thousands to millions of tokens are restructuring the Software Development Life Cycle (SDLC). Rich context handling and multi-step reasoning now allow substantial Functional Requirement Documents (FRDs) and repository context to be ingested in a single workflow, making specification quality the execution fuel for autonomous delivery. This report formalises Spec-Driven Agentic Development (SDAD) as a synthesis of disciplined up-front formalisation and high-velocity implementation: intent capture, machine-readable specification, agentic synthesis, and independent multi-agent verification under human sign-off. We revisit the historical pendulum between Waterfall and Agile, introduce AI-code as a fourth production paradigm, and compare Human-Agile (circa 2020) with Agentic-SDAD (circa 2026) across artefacts, cadence, accountability, and security posture. Beyond process description, we extend the model to team role metamorphosis (engineer, QA, platform, and product functions), quantitative governance (Ambiguity Tax, Spec Fidelity, SER, and TCI_agen"
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21362v1 Announce Type: new Abstract: Transformer-based large language models (LLMs) incur high prefill latency because key-value (KV) tensors must be recomputed for each request. Existing prefix-caching systems reduce this cost but require prompts to share a leading contiguous prefix, limiting effectiveness when shared content appears at arbitrary positions. We present KVBoost, a chunk-level KV cache reuse system for HuggingFace-compatible decoder models that enables reuse regardless of content position. KVBoost introduces a dual-hash keying scheme that separates positional identity (prefix hash) from content identity (content hash), supporting both exact and approximate cache matches. To address attention boundary errors from independently cached chunks, KVBoost employs two repair strategies: SelectiveRecompute, which re-encodes boundary regions, and CacheBlendRecompute, which identifies and recomputes high-deviation tokens after a probe pass. The system further incorporates asymmetric KV quantization (int8/int4), adaptive chunk boundary splitting, and importance-weighted eviction under a fixed memory budget. Evaluated on Qwen/Qwen2.5-3B over 1,000 bug-localization samp"
         }
       ]
     },
@@ -256,130 +378,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-21T10:54:00.000Z",
           "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
-        }
-      ]
-    },
-    {
-      "id": "item_e3ddd7a65cd3a566e91c",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/asr-benchmark-optimization",
-      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
-      "publishedAt": "2026-08-21T00:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-21T23:59:34.409Z",
-      "updatedAt": "2026-08-21T00:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Hugging Face measures benchmark optimization effects in speech recognition",
-        "zh-Hans": "Hugging Face测量语音识别中的基准优化效应"
-      },
-      "summary": {
-        "en": "Study examines how models become optimized for benchmark-specific patterns rather than underlying tasks, introducing held-out sets to measure real-world performance.",
-        "zh-Hans": "研究检验模型如何针对基准特定模式而非底层任务进行优化，引入保留集来测量真实世界性能。"
-      },
-      "category": "research_science",
-      "tags": [
-        "benchmark-optimization",
-        "speech-recognition",
-        "evaluation"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 79,
-      "importanceScore": 72,
-      "importance": 72,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Addresses fundamental evaluation challenges affecting AI model development and deployment",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_e3ddd7a65cd3a566e91c6025",
-          "url": "https://huggingface.co/blog/asr-benchmark-optimization",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-21T00:00:00.000Z",
-          "evidenceSnippet": "Reference disagreement (VoxPopuli case study) Masked Entity Retrieval Orthographic Switching Localizing the switches Conclusion Public voice AI benchmarks increasingly suggest that models are performing at human levels. Yet those scores don't always reflect how models work in the real-world. Since public benchmarks are open and widely used, models can also become optimized for the tests themselves. Their scores may improve because they have learned benchmark-specific patterns and not because they have become better at the underlying task. One reason is that traditional benchmarks overlook many of the conditions and qualities that make voice systems reliable, natural, contextually appropriate, and effective in practice. That's why we recently introduced held-out sets in Real World VoiceEQ , the Open-ASR Leaderboard , and the Far-field ASR Leaderboard : to measure more of what matters in real-world use. However, broader measurement alone does not solve the problem. This phenomenon, sometimes called benchmark optimization or \"benchmaxxing,\" is often discussed around machine learning, however, it has been difficult to measure in speech recognition."
-        }
-      ]
-    },
-    {
-      "id": "item_eab5285cfdebeb65a8ef",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "publishedAt": "2026-08-20T16:52:57.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-20T19:18:17.820Z",
-      "updatedAt": "2026-08-20T16:52:57.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "LiquidAI releases DSpark speculative decoding for up to 3.2x faster LLM inference",
-        "zh-Hans": "LiquidAI发布DSpark推测解码技术，LLM推理速度提升最高3.2倍"
-      },
-      "summary": {
-        "en": "LiquidAI released DSpark draft model checkpoints for three LFM2.5 models, implementing speculative decoding that uses lightweight draft models to generate candidate tokens verified by target models in single forward passes, achieving significant speedup without quality loss.",
-        "zh-Hans": "LiquidAI发布三个LFM2.5模型的DSpark草稿检查点，实现推测解码技术，使用轻量级草稿模型生成候选token并由目标模型在单次前向传播中验证，在不损失质量的情况下显著提升速度。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "inference",
-        "speculative-decoding",
-        "optimization"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "Advances transferable inference optimization techniques applicable across language models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_eab5285cfdebeb65a8ef35d4",
-          "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-20T16:52:57.000Z",
-          "evidenceSnippet": "How does DSpark work Training and Architecture Quality parity Inference Speed Up on CPU and GPU How to use LFM2.5-DSpark Get Started Citation Today, we release DSpark draft model checkpoints for three models from our LFM2.5 family: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B. These add a speculative decoding path that trades a minimal memory increase for a large decoding speedup without changing output quality: The decode phase in LLM inference is traditionally memory-bound. Most latency comes from streaming weights from DRAM into SRAM, not from intense computation. Speculative decoding addresses this by using a lightweight draft model to produce candidate tokens, then having the target model verify them all in a single forward pass, sharing the cost of loading the weights across all tokens we verify. Over the years, multiple approaches of speculation have been proposed, with the most prominent being EAGLE-3 , DFlash , and, most recently, DSpark , which combines three components:"
         }
       ]
     },
@@ -610,66 +608,197 @@
       ]
     },
     {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "id": "release_meta_muse_glimmer_30b_20260810",
       "schemaVersion": "1.0.0",
       "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "sourceId": "src_meta-ai",
       "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
+        "id": "src_meta-ai",
+        "name": "Meta"
       },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
       "verification": "verified_first_party",
       "featured": false,
       "citations": [
         {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
+      ]
+    },
+    {
+      "id": "item_9cb8a13833c1c5c4ba1a",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20378",
+      "url": "https://arxiv.org/abs/2608.20378",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T11:03:47.423Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Researchers identify vulnerability in LLM safety mechanisms through latent intent analysis",
+        "zh-Hans": "研究人员通过潜在意图分析发现大语言模型安全机制漏洞"
+      },
+      "summary": {
+        "en": "Study reveals that LLM safety alignment is superficial, with harmful intent detectable in early layers despite late-layer camouflage that bypasses guardrails in models like Phi-3, Qwen2.5, and Gemma-2b.",
+        "zh-Hans": "研究揭示大语言模型安全对齐机制表面化，有害意图在早期层中可检测，尽管后期层伪装能绕过Phi-3、Qwen2.5和Gemma-2b等模型的防护机制。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "safety alignment",
+        "adversarial attacks",
+        "semantic camouflage",
+        "latent representations"
       ],
-      "mediaType": "article"
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Md. Hasib Ur Rahman",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:md. hasib ur rahman",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "Identifies fundamental architectural vulnerabilities in LLM safety mechanisms with implications for AGI alignment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_9cb8a13833c1c5c4ba1a5f1c",
+          "url": "https://arxiv.org/abs/2608.20378",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20378v1 Announce Type: new Abstract: Safety alignment in Large Language Models (LLMs) is often superficial, relying on refusal mechanisms that trigger only at the final stages of generation without erasing the foundational knowledge of harmful concepts acquired during pretraining. This study demonstrates that this architectural disconnect leaves models vulnerable to Semantic Camouflage -- adversarial attacks that wrap harmful intent in benign narrative contexts (e.g., creative writing), effectively bypassing standard input and output guardrails. By analyzing the latent activation trajectories of three distinct Small Language Model (SLM) families (Phi-3, Qwen2.5, and Gemma-2b) under adversarial stress, this research identifies a universal ``Intent Horizon'' -- a critical depth (typically 15--20\\% of total layers) where the model's distinct, pre-trained representation of harmful intent collapses as it contextualizes the query into a ``safe'' narrative. Results indicate that while late-layer representations of camouflaged attacks are mathematically indistinguishable from safe queries (Detection Rate $&lt; 20\\%$), early-layer representations retain a distinct, detectable ``h"
+        }
+      ]
+    },
+    {
+      "id": "item_869c4764a03151ddfddf",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.20341",
+      "url": "https://arxiv.org/abs/2608.20341",
+      "publishedAt": "2026-08-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-24T06:06:15.988Z",
+      "updatedAt": "2026-08-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "SDAD: Spec-Driven Agentic Development for AI-Native Software Development",
+        "zh-Hans": "SDAD：面向AI原生软件开发的规范驱动智能体开发"
+      },
+      "summary": {
+        "en": "Researchers formalize Spec-Driven Agentic Development (SDAD) as a new paradigm combining disciplined specification with autonomous implementation through coding agents backed by large language models with extensive context windows.",
+        "zh-Hans": "研究人员正式提出规范驱动智能体开发(SDAD)作为新范式，结合严格规范与基于大语言模型的编码智能体自主实现。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "software development",
+        "coding agents",
+        "specification driven",
+        "multi-agent verification"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Vu Hung Nguyen, Thanh Nguyen",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:vu hung nguyen, thanh nguyen",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates transferable multi-agent verification and autonomous software development capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_869c4764a03151ddfddfd9da",
+          "url": "https://arxiv.org/abs/2608.20341",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.20341v1 Announce Type: new Abstract: Frontier coding agents backed by large language models with context windows from hundreds of thousands to millions of tokens are restructuring the Software Development Life Cycle (SDLC). Rich context handling and multi-step reasoning now allow substantial Functional Requirement Documents (FRDs) and repository context to be ingested in a single workflow, making specification quality the execution fuel for autonomous delivery. This report formalises Spec-Driven Agentic Development (SDAD) as a synthesis of disciplined up-front formalisation and high-velocity implementation: intent capture, machine-readable specification, agentic synthesis, and independent multi-agent verification under human sign-off. We revisit the historical pendulum between Waterfall and Agile, introduce AI-code as a fourth production paradigm, and compare Human-Agile (circa 2020) with Agentic-SDAD (circa 2026) across artefacts, cadence, accountability, and security posture. Beyond process description, we extend the model to team role metamorphosis (engineer, QA, platform, and product functions), quantitative governance (Ambiguity Tax, Spec Fidelity, SER, and TCI_agen"
+        }
+      ]
     },
     {
       "id": "item_6942a5baf54d13aafa36",
@@ -1235,6 +1364,130 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-21T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.19202v1 Announce Type: new Abstract: Interactive AI agents must acquire the right context as efficiently as possible. When a user omits a constraint, preference, file, or task variable, an agent can proceed with a default assumption or spend tokens on a clarifying question, retrieval call, tool call, or prompt trial. We formulate this tradeoff as active inference for context acquisition. An inner inference step updates beliefs over a latent task state, and an outer decision selects the next context action, task action, or stop action to minimize expected free energy under cost. In deterministic settings, the epistemic term reduces to expected information gain, optionally normalized by token cost. We instantiate the framework in Optimal Question Asking (OQA), with exact posteriors and a dynamic programming oracle, and benchmark frontier language models on binary and multiway categorical tasks from 25 to 300 candidates. We also study clarification before generation and automated prompt optimization under token budgets. The formulation is model-agnostic and views active inference as a design principle for the context-acquisition layer of AI agents."
+        }
+      ]
+    },
+    {
+      "id": "item_e3ddd7a65cd3a566e91c",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Hugging Face measures benchmark optimization effects in speech recognition",
+        "zh-Hans": "Hugging Face测量语音识别中的基准优化效应"
+      },
+      "summary": {
+        "en": "Study examines how models become optimized for benchmark-specific patterns rather than underlying tasks, introducing held-out sets to measure real-world performance.",
+        "zh-Hans": "研究检验模型如何针对基准特定模式而非底层任务进行优化，引入保留集来测量真实世界性能。"
+      },
+      "category": "research_science",
+      "tags": [
+        "benchmark-optimization",
+        "speech-recognition",
+        "evaluation"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 79,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Addresses fundamental evaluation challenges affecting AI model development and deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e3ddd7a65cd3a566e91c6025",
+          "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-21T00:00:00.000Z",
+          "evidenceSnippet": "Reference disagreement (VoxPopuli case study) Masked Entity Retrieval Orthographic Switching Localizing the switches Conclusion Public voice AI benchmarks increasingly suggest that models are performing at human levels. Yet those scores don't always reflect how models work in the real-world. Since public benchmarks are open and widely used, models can also become optimized for the tests themselves. Their scores may improve because they have learned benchmark-specific patterns and not because they have become better at the underlying task. One reason is that traditional benchmarks overlook many of the conditions and qualities that make voice systems reliable, natural, contextually appropriate, and effective in practice. That's why we recently introduced held-out sets in Real World VoiceEQ , the Open-ASR Leaderboard , and the Far-field ASR Leaderboard : to measure more of what matters in real-world use. However, broader measurement alone does not solve the problem. This phenomenon, sometimes called benchmark optimization or \"benchmaxxing,\" is often discussed around machine learning, however, it has been difficult to measure in speech recognition."
+        }
+      ]
+    },
+    {
+      "id": "item_eab5285cfdebeb65a8ef",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "publishedAt": "2026-08-20T16:52:57.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-20T19:18:17.820Z",
+      "updatedAt": "2026-08-20T16:52:57.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LiquidAI releases DSpark speculative decoding for up to 3.2x faster LLM inference",
+        "zh-Hans": "LiquidAI发布DSpark推测解码技术，LLM推理速度提升最高3.2倍"
+      },
+      "summary": {
+        "en": "LiquidAI released DSpark draft model checkpoints for three LFM2.5 models, implementing speculative decoding that uses lightweight draft models to generate candidate tokens verified by target models in single forward passes, achieving significant speedup without quality loss.",
+        "zh-Hans": "LiquidAI发布三个LFM2.5模型的DSpark草稿检查点，实现推测解码技术，使用轻量级草稿模型生成候选token并由目标模型在单次前向传播中验证，在不损失质量的情况下显著提升速度。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "inference",
+        "speculative-decoding",
+        "optimization"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "Advances transferable inference optimization techniques applicable across language models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_eab5285cfdebeb65a8ef35d4",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-20T16:52:57.000Z",
+          "evidenceSnippet": "How does DSpark work Training and Architecture Quality parity Inference Speed Up on CPU and GPU How to use LFM2.5-DSpark Get Started Citation Today, we release DSpark draft model checkpoints for three models from our LFM2.5 family: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B. These add a speculative decoding path that trades a minimal memory increase for a large decoding speedup without changing output quality: The decode phase in LLM inference is traditionally memory-bound. Most latency comes from streaming weights from DRAM into SRAM, not from intense computation. Speculative decoding addresses this by using a lightweight draft model to produce candidate tokens, then having the target model verify them all in a single forward pass, sharing the cost of loading the weights across all tokens we verify. Over the years, multiple approaches of speculation have been proposed, with the most prominent being EAGLE-3 , DFlash , and, most recently, DSpark , which combines three components:"
         }
       ]
     },
@@ -3795,73 +4048,6 @@
       ]
     },
     {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
-        }
-      ]
-    },
-    {
       "id": "item_dfb586131bf3d3cb04b4",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -3985,6 +4171,68 @@
           "evidenceSnippet": "What makes a good tutor? How TutorMoments works Preliminary results Limitations and next steps 📄 Tech Report: https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf | 📊 Data: https://huggingface.co/datasets/allenai/tutormoments-preview | 💻 Code: https://github.com/allenai/tutormoments Today we're introducing a preview of TutorMoments , a framework to measure whether cutting-edge LLMs can balance one of the hardest trade-offs in education: when to step in and help a student and when to hold back and let the student do more of the work. TutorMoments is a replay-based evaluation built off real one-on-one math tutoring sessions. Experienced math teachers go through transcripts collected from a U.S. tutoring program and flag the moments where a tutor had to choose between making a problem easier to get started on and pushing the student to do more of the reasoning themselves. TutorMoments then takes the transcript up to that decision point, hands it to a language model, and has the model take over as the tutor in a simulated session – with the student played by another language model – to see what the LLM tutor does."
         }
       ]
+    },
+    {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
     },
     {
       "id": "release_google_gemini_omni_builders_20260807",

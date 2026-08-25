@@ -7,8 +7,159 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-24T06:06:34.801Z",
+  "generatedAt": "2026-08-25T19:17:30.550Z",
   "items": [
+    {
+      "id": "insight_agi-infrastructure-advances-august-2026_20260825",
+      "slug": "agi-infrastructure-advances-august-2026",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "AGI Infrastructure Advances: Training, Efficiency, and Governance",
+        "zh-Hans": "AGI基础设施进展：训练、效率与治理"
+      },
+      "dek": {
+        "en": "Recent developments showcase complementary advances in reasoning model training, deployment efficiency, and runtime governance for AGI systems.",
+        "zh-Hans": "最新发展展示了AGI系统在推理模型训练、部署效率和运行时治理方面的互补性进展。"
+      },
+      "body": {
+        "en": "Recent technical advances illustrate complementary infrastructure developments for AGI systems across training methodologies, deployment efficiency, and governance frameworks. IBM's Granite 4.2 demonstrates structured approaches to reasoning capability development through multi-stage reinforcement learning [^candidate_d21068479952e40383665c65]. The training pipeline separates foundational skill building from agentic behavior learning, with dedicated phases for different model sizes [^candidate_d21068479952e40383665c65]. Deployment efficiency gains emerge from quantization-aware healing techniques that enable 4-bit compressed models to outperform their full-precision counterparts [^candidate_f1c76f23a788b6884a2877cd]. This addresses systematic degradation in reasoning and code generation that typically accompanies compression [^candidate_f1c76f23a788b6884a2877cd]. Infrastructure optimization extends to inference through KVBoost's chunk-level cache reuse system, which reduces prefill latency by enabling cache reuse regardless of content position [^candidate_1af13a997ccd1b8bc60ab816]. For governance, the AIREP protocol provides standardized recording of AI runtime decisions through signed objects with hash chain verification [^candidate_b749ed6ae3aff6159a71db9b]. These developments represent distinct technical solutions addressing training scalability, deployment constraints, and oversight requirements for advanced AI systems.",
+        "zh-Hans": "最新技术进展展示了AGI系统在训练方法、部署效率和治理框架方面的互补性基础设施发展。IBM的Granite 4.2通过多阶段强化学习展示了推理能力开发的结构化方法[^candidate_d21068479952e40383665c65]。训练管道将基础技能构建与智能体行为学习分离，为不同模型规模设置专门阶段[^candidate_d21068479952e40383665c65]。量化感知修复技术带来部署效率提升，使4位压缩模型性能超越全精度对应模型[^candidate_f1c76f23a788b6884a2877cd]。这解决了压缩过程中推理和代码生成能力系统性退化问题[^candidate_f1c76f23a788b6884a2877cd]。基础设施优化延伸到推理层面，KVBoost的块级缓存复用系统通过实现与内容位置无关的缓存复用来减少预填充延迟[^candidate_1af13a997ccd1b8bc60ab816]。在治理方面，AIREP协议通过带有哈希链验证的签名对象提供AI运行时决策的标准化记录[^candidate_b749ed6ae3aff6159a71db9b]。这些发展代表了解决高级AI系统训练可扩展性、部署约束和监督要求的不同技术解决方案。"
+      },
+      "publishedAt": "2026-08-25T19:17:30.550Z",
+      "updatedAt": "2026-08-25T19:17:30.550Z",
+      "topics": [
+        "models_capabilities",
+        "compute_infrastructure",
+        "safety_security_alignment"
+      ],
+      "claims": [
+        {
+          "id": "granite_multi_stage_rl",
+          "type": "fact",
+          "text": {
+            "en": "Granite 4.2 uses multi-stage reinforcement learning with separate foundational skill building and agentic training phases",
+            "zh-Hans": "Granite 4.2采用多阶段强化学习，包含独立的基础技能构建和智能体训练阶段"
+          },
+          "citationIds": [
+            "candidate_d21068479952e40383665c65"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "quantization_healing_performance",
+          "type": "fact",
+          "text": {
+            "en": "Quantization-aware healing enables 4-bit compressed models to outperform full-precision originals while addressing reasoning degradation",
+            "zh-Hans": "量化感知修复使4位压缩模型性能超越全精度原始模型，同时解决推理能力退化问题"
+          },
+          "citationIds": [
+            "candidate_f1c76f23a788b6884a2877cd"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "id": "kvboost_cache_reuse",
+          "type": "fact",
+          "text": {
+            "en": "KVBoost enables key-value cache reuse regardless of content position through dual-hash keying and boundary repair strategies",
+            "zh-Hans": "KVBoost通过双哈希键控和边界修复策略实现与内容位置无关的键值缓存复用"
+          },
+          "citationIds": [
+            "candidate_1af13a997ccd1b8bc60ab816"
+          ],
+          "confidence": 0.93
+        },
+        {
+          "id": "airep_governance_protocol",
+          "type": "fact",
+          "text": {
+            "en": "AIREP protocol records AI runtime governance decisions as signed objects with hash chain verification for tamper detection",
+            "zh-Hans": "AIREP协议将AI运行时治理决策记录为带有哈希链验证的签名对象，用于篡改检测"
+          },
+          "citationIds": [
+            "candidate_b749ed6ae3aff6159a71db9b"
+          ],
+          "confidence": 0.94
+        },
+        {
+          "id": "complementary_infrastructure_development",
+          "type": "inference",
+          "text": {
+            "en": "These developments represent complementary technical solutions addressing distinct AGI infrastructure challenges in training, deployment, and governance",
+            "zh-Hans": "这些发展代表了解决AGI基础设施在训练、部署和治理方面不同挑战的互补技术解决方案"
+          },
+          "citationIds": [
+            "candidate_d21068479952e40383665c65",
+            "candidate_f1c76f23a788b6884a2877cd",
+            "candidate_1af13a997ccd1b8bc60ab816",
+            "candidate_b749ed6ae3aff6159a71db9b"
+          ],
+          "confidence": 0.88
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_d21068479952e40383665c65",
+          "feedItemId": "item_d21068479952e4038366",
+          "title": "Granite 4.2 LLMs: How They're Built",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-08-25T15:14:14.000Z",
+          "evidenceSnippet": "Overview Model Architecture Pre-Training SFT: Data Preparation & Quality Control Data Quality Control SFT Training Details Phase 2 SFT for the 30B Model Reinforcement Learning: A Multi-Stage, Multi-Environment Pipeline Training Methodology The Staged Curriculum Reward Signals Foundational RL: Build the Skills Agentic RL: Learning to Act (8B / 30B) Alignment: RLHF How the Three Sizes Differ Agentic AI Infrastructure for Scalable RL Results Quantization FP8 FP4 GGUF Infrastructure Hardware Software Stack Getting Started (Transformers) Installation Basic Inference (Thinking Mode) Non-Thinking Mode Low-Effort Thinking Tool Calling Basic Tool Calling Multi-Turn with Tool Response Multi-Turn Conversations History Thinking Truncation Parsing Thinking vs. Final Answer Using with Agentic Coding Harnesses OpenCode Pi OpenHands A technical walkthrough of how we built the Granite 4.2 reasoning model family. TL;DR: Granite 4.2 is our first family of dense, decoder-only reasoning LLMs, released in three sizes: 3B, 8B, and 30B . Each model is pre-trained from scratch on roughly 15T tokens with a five-phase strategy that extends the context window to 512K tokens, supervised fine-tuned on chain-of-"
+        },
+        {
+          "id": "candidate_f1c76f23a788b6884a2877cd",
+          "feedItemId": "item_f1c76f23a788b6884a28",
+          "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-08-25T11:39:24.000Z",
+          "evidenceSnippet": "Why the usual healing methods fall short here Our approach Results QAH against QAT, head to head What this changes in practice Making a large language model smaller almost always comes with a cost. The now-standard recipe for efficient deployment is to compress the architecture first, cutting the parameter count by removing layers, heads, or neurons, and then quantize the remaining weights down to 4 bits to shrink memory and compute further. Both steps save a lot, but together they systematically degrade the capabilities people actually care about: reasoning, mathematical problem-solving, and code generation. Because of this, serious deployment pipelines add a recovery step, usually called healing, before the model goes into production. Recent open-weight releases such as gpt-oss , NVIDIA's Nemotron family, and our own Hypernova 60B all rely on some version of this compress-then-heal approach. Our latest paper, Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs , asks a question that the field has mostly left open: once a model has already been through structural compression, not just quantization, how well does that recovery step actually work, an"
+        },
+        {
+          "id": "candidate_1af13a997ccd1b8bc60ab816",
+          "feedItemId": "item_1af13a997ccd1b8bc60a",
+          "title": "KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference",
+          "url": "https://arxiv.org/abs/2608.21362",
+          "publisher": "arXiv cs.AI",
+          "author": "Srihari Unnikrishnan",
+          "independenceKey": "academic:srihari unnikrishnan",
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21362v1 Announce Type: new Abstract: Transformer-based large language models (LLMs) incur high prefill latency because key-value (KV) tensors must be recomputed for each request. Existing prefix-caching systems reduce this cost but require prompts to share a leading contiguous prefix, limiting effectiveness when shared content appears at arbitrary positions. We present KVBoost, a chunk-level KV cache reuse system for HuggingFace-compatible decoder models that enables reuse regardless of content position. KVBoost introduces a dual-hash keying scheme that separates positional identity (prefix hash) from content identity (content hash), supporting both exact and approximate cache matches. To address attention boundary errors from independently cached chunks, KVBoost employs two repair strategies: SelectiveRecompute, which re-encodes boundary regions, and CacheBlendRecompute, which identifies and recomputes high-deviation tokens after a probe pass. The system further incorporates asymmetric KV quantization (int8/int4), adaptive chunk boundary splitting, and importance-weighted eviction under a fixed memory budget. Evaluated on Qwen/Qwen2.5-3B over 1,000 bug-localization samp"
+        },
+        {
+          "id": "candidate_b749ed6ae3aff6159a71db9b",
+          "feedItemId": "item_b749ed6ae3aff6159a71",
+          "title": "AIREP: A Protocol for Per-Decision Evidence in AI Runtime Governance",
+          "url": "https://arxiv.org/abs/2608.21363",
+          "publisher": "arXiv cs.AI",
+          "author": "Ali Toygar Abak",
+          "independenceKey": "academic:ali toygar abak",
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21363v1 Announce Type: new Abstract: A protocol is presented for recording the governance decisions of automated AI runtimes. When a runtime releases, blocks, defers, redacts, or escalates an individual output, AIREP records that decision as a single signed object that any party can check offline, independent of the runtime that produced it. A record carries the decision as one of a closed set of verbs under a stated policy basis, references its input, output, and evidence by hash rather than by value, and declares both what its evidence covers and what it does not. Records form a SHA-256 hash chain that binds each record to its position, so that tampering and gaps are detectable by recomputation. Vendor-, model-, and domain-specific content is confined to a single optional namespace, and a mechanical neutrality test keeps the shared format free of it. A reference implementation and a two-language conformance kit are described. Some implementation issues are considered, and problems such as alignment of the canonical form across implementations, freshness witnesses, and multi-runtime chains are exposed. The format is offered for adoption by any AI runtime that records go"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-08-25T19:17:30.550Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-08-25T19:17:02.222Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_agent-orchestration-memory-systems_20260824",
       "slug": "agent-orchestration-memory-systems",
