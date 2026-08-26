@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-25T19:17:30.550Z",
+  "generatedAt": "2026-08-26T03:40:08.307Z",
   "items": [
     {
       "id": "item_d21068479952e4038366",
@@ -134,6 +134,69 @@
       ]
     },
     {
+      "id": "item_3285dfc4bc0ea89d79d3",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.21366",
+      "url": "https://arxiv.org/abs/2608.21366",
+      "publishedAt": "2026-08-25T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T03:39:45.260Z",
+      "updatedAt": "2026-08-25T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Model Collapse and Countermeasures in AI Training",
+        "zh-Hans": "AI训练中的模型坍塌与对策"
+      },
+      "summary": {
+        "en": "Review examines model collapse phenomenon when AI models are trained on synthetic data in self-consuming cycles, consolidating countermeasures across applications.",
+        "zh-Hans": "综述研究了AI模型在自消费循环中使用合成数据训练时的模型坍塌现象，整合了各应用场景的对策。"
+      },
+      "category": "research_science",
+      "tags": [
+        "model collapse",
+        "synthetic data",
+        "generative ai",
+        "training"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Xihao Xie, Beichen Hu",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:xihao xie, beichen hu",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 80,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 90,
+      "relevanceReason": "addresses fundamental training stability for next-generation AI models using synthetic data",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3285dfc4bc0ea89d79d32028",
+          "url": "https://arxiv.org/abs/2608.21366",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21366v1 Announce Type: new Abstract: Driven by massive amounts of web-scale data, generative AI (GenAI) has achieved remarkable progress, enabling various applications in diverse sectors. The advances of GenAI have actuated practitioners to use AI-synthesized data for training next-generation AI models. Undeniably, using synthetic data has alleviated the increasing stringent demand for data supply. Unfortunately, it also introduces a new critical issue: in a self-consuming cycle between model and data, the model ultimately collapse, raising more trustworthiness concerns to GenAI. In recent years, increasingly more studies have investigated the phenomenon of model collapse (MC) and explored potential solutions to mitigate it. However, the review of the phenomenon of MC still remains blank. To fill this gap, this paper provides an up-to-date overview of these studies for consolidating and reviewing the progress of MC in different application scenarios and countermeasures for mitigating MC. We also highlight challenges and future research opportunities."
+        }
+      ]
+    },
+    {
       "id": "item_b749ed6ae3aff6159a71",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -192,68 +255,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-25T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.21363v1 Announce Type: new Abstract: A protocol is presented for recording the governance decisions of automated AI runtimes. When a runtime releases, blocks, defers, redacts, or escalates an individual output, AIREP records that decision as a single signed object that any party can check offline, independent of the runtime that produced it. A record carries the decision as one of a closed set of verbs under a stated policy basis, references its input, output, and evidence by hash rather than by value, and declares both what its evidence covers and what it does not. Records form a SHA-256 hash chain that binds each record to its position, so that tampering and gaps are detectable by recomputation. Vendor-, model-, and domain-specific content is confined to a single optional namespace, and a mechanical neutrality test keeps the shared format free of it. A reference implementation and a two-language conformance kit are described. Some implementation issues are considered, and problems such as alignment of the canonical form across implementations, freshness witnesses, and multi-runtime chains are exposed. The format is offered for adoption by any AI runtime that records go"
-        }
-      ]
-    },
-    {
-      "id": "item_1af13a997ccd1b8bc60a",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.21362",
-      "url": "https://arxiv.org/abs/2608.21362",
-      "publishedAt": "2026-08-25T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-25T19:17:02.222Z",
-      "updatedAt": "2026-08-25T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "KVBoost: Chunk-Level Cache Reuse for LLM Inference",
-        "zh-Hans": "KVBoost：大语言模型推理的块级缓存复用"
-      },
-      "summary": {
-        "en": "System enables KV cache reuse regardless of content position through dual-hash keying and boundary repair strategies for transformer models.",
-        "zh-Hans": "系统通过双哈希键控和边界修复策略，实现变换器模型中与内容位置无关的键值缓存复用。"
-      },
-      "category": "compute_infrastructure",
-      "tags": [
-        "key-value-cache",
-        "inference-optimization",
-        "transformer-efficiency"
-      ],
-      "topics": [
-        "compute_infrastructure"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Srihari Unnikrishnan",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:srihari unnikrishnan",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 86,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Reduces inference latency for transformer-based models, enabling more efficient AGI system deployment",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_1af13a997ccd1b8bc60ab816",
-          "url": "https://arxiv.org/abs/2608.21362",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-25T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.21362v1 Announce Type: new Abstract: Transformer-based large language models (LLMs) incur high prefill latency because key-value (KV) tensors must be recomputed for each request. Existing prefix-caching systems reduce this cost but require prompts to share a leading contiguous prefix, limiting effectiveness when shared content appears at arbitrary positions. We present KVBoost, a chunk-level KV cache reuse system for HuggingFace-compatible decoder models that enables reuse regardless of content position. KVBoost introduces a dual-hash keying scheme that separates positional identity (prefix hash) from content identity (content hash), supporting both exact and approximate cache matches. To address attention boundary errors from independently cached chunks, KVBoost employs two repair strategies: SelectiveRecompute, which re-encodes boundary regions, and CacheBlendRecompute, which identifies and recomputes high-deviation tokens after a probe pass. The system further incorporates asymmetric KV quantization (int8/int4), adaptive chunk boundary splitting, and importance-weighted eviction under a fixed memory budget. Evaluated on Qwen/Qwen2.5-3B over 1,000 bug-localization samp"
         }
       ]
     },
@@ -671,6 +672,194 @@
           "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
           "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
           "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
+      "id": "item_0ba70592f452ab1442e1",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.21372",
+      "url": "https://arxiv.org/abs/2608.21372",
+      "publishedAt": "2026-08-25T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T03:39:45.260Z",
+      "updatedAt": "2026-08-25T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AI Rule Inference and Transfer Learning Framework",
+        "zh-Hans": "AI规则推理与迁移学习框架"
+      },
+      "summary": {
+        "en": "Transformer-based reinforcement learning agents trained to infer hidden rules through trial-and-error, with analysis of transfer learning and generalization capabilities.",
+        "zh-Hans": "基于Transformer的强化学习智能体通过试错推理隐藏规则，分析迁移学习和泛化能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "reinforcement learning",
+        "rule inference",
+        "transfer learning",
+        "transformer"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Christo Mathew, Wentian Wang, Jacob Feldman, Lazaros K. Gallos, Paul B. Kantor, Vladimir Menkov, Hao Wang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:christo mathew, wentian wang, jacob feldman, lazaros k. gallos, paul b. kantor, vladimir menkov, hao wang",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 80,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "demonstrates transferable rule inference and generalization mechanisms for agent learning",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_0ba70592f452ab1442e1f203",
+          "url": "https://arxiv.org/abs/2608.21372",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21372v1 Announce Type: new Abstract: This report summarizes the work conducted on the Game of Hidden Rules (GOHR), focusing on reinforcement learning agents trained to infer hidden rules from trial-and-error feedback, representation design, rule difficulty analysis, transfer learning, generalization, and pseudo-bot-assisted human learning analysis. The report focuses on the Transformer-based A2C framework, Feature-Centric and Object-Centric representations, experimental findings, and classification of human learning data."
+        }
+      ]
+    },
+    {
+      "id": "item_1af13a997ccd1b8bc60a",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.21362",
+      "url": "https://arxiv.org/abs/2608.21362",
+      "publishedAt": "2026-08-25T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-25T19:17:02.222Z",
+      "updatedAt": "2026-08-25T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "KVBoost: Chunk-Level Cache Reuse for LLM Inference",
+        "zh-Hans": "KVBoost：大语言模型推理的块级缓存复用"
+      },
+      "summary": {
+        "en": "System enables KV cache reuse regardless of content position through dual-hash keying and boundary repair strategies for transformer models.",
+        "zh-Hans": "系统通过双哈希键控和边界修复策略，实现变换器模型中与内容位置无关的键值缓存复用。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "key-value-cache",
+        "inference-optimization",
+        "transformer-efficiency"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Srihari Unnikrishnan",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:srihari unnikrishnan",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Reduces inference latency for transformer-based models, enabling more efficient AGI system deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1af13a997ccd1b8bc60ab816",
+          "url": "https://arxiv.org/abs/2608.21362",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21362v1 Announce Type: new Abstract: Transformer-based large language models (LLMs) incur high prefill latency because key-value (KV) tensors must be recomputed for each request. Existing prefix-caching systems reduce this cost but require prompts to share a leading contiguous prefix, limiting effectiveness when shared content appears at arbitrary positions. We present KVBoost, a chunk-level KV cache reuse system for HuggingFace-compatible decoder models that enables reuse regardless of content position. KVBoost introduces a dual-hash keying scheme that separates positional identity (prefix hash) from content identity (content hash), supporting both exact and approximate cache matches. To address attention boundary errors from independently cached chunks, KVBoost employs two repair strategies: SelectiveRecompute, which re-encodes boundary regions, and CacheBlendRecompute, which identifies and recomputes high-deviation tokens after a probe pass. The system further incorporates asymmetric KV quantization (int8/int4), adaptive chunk boundary splitting, and importance-weighted eviction under a fixed memory budget. Evaluated on Qwen/Qwen2.5-3B over 1,000 bug-localization samp"
+        }
+      ]
+    },
+    {
+      "id": "item_9b54a38fa1b1a3f1fc1f",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/gradio-workflow-guide",
+      "url": "https://huggingface.co/blog/gradio-workflow-guide",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T03:39:45.260Z",
+      "updatedAt": "2026-08-25T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Visual AI Workflow Pipeline Framework",
+        "zh-Hans": "可视化AI工作流管道框架"
+      },
+      "summary": {
+        "en": "Gradio workflow system enables drag-and-drop AI pipeline construction with typed nodes, making complex multi-step AI applications more accessible through visual interfaces.",
+        "zh-Hans": "Gradio工作流系统支持拖拽式AI管道构建，通过可视化界面使复杂的多步骤AI应用更易访问。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "workflows",
+        "pipelines",
+        "gradio",
+        "deployment"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 77,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "facilitates complex multi-model agent workflows and pipeline orchestration",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_9b54a38fa1b1a3f1fc1fd60d",
+          "url": "https://huggingface.co/blog/gradio-workflow-guide",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-25T00:00:00.000Z",
+          "evidenceSnippet": "Edit an Image Chain real models into a media studio Fan-out image generation in parallel Profile a Hugging Face dataset Run your own GPU model How it works, in a nutshell Call it from code Build your own Most interesting AI apps are pipelines. You generate an image, then cut out its background if you want to, or edit it into something new. You write a script, then generate a voice for it, or swap the voice while keeping the script the same. We usually wire these steps together in Python, and the moment something looks off we go back to print-debugging to find which step produced the odd value. gr.Workflow , built right into Gradio, makes the pipeline the interface . You describe your steps as a graph of typed nodes, and Gradio serves a drag-and-drop canvas where every node is runnable and every intermediate result is visible. The same graph is also a REST API and a one-command deploy to Hugging Face Spaces. The best way to get the idea is to see a few workflows in action. Every app below is a live Huggingface Space you can open, run, and duplicate."
         }
       ]
     },
