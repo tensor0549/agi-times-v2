@@ -7,8 +7,134 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-26T03:40:08.307Z",
+  "generatedAt": "2026-08-26T05:59:52.177Z",
   "items": [
+    {
+      "id": "item_3d3c764cfe0d83001140",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.23568",
+      "url": "https://arxiv.org/abs/2608.23568",
+      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T05:59:39.069Z",
+      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "RENDER: New Benchmark Controls Memory Format Impact in LLM Evaluation",
+        "zh-Hans": "RENDER：新基准控制LLM评估中的记忆格式影响"
+      },
+      "summary": {
+        "en": "Researchers introduce RENDER benchmark showing memory format significantly affects LLM performance, with structured entries outperforming raw dialogue by 42-72 points across nine models on 500 questions.",
+        "zh-Hans": "研究人员推出RENDER基准，显示记忆格式显著影响LLM性能，结构化条目在500个问题上比原始对话高出42-72分。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "memory",
+        "rag",
+        "evaluation",
+        "benchmarks"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yuan Si, Simeng Han, Daming Li, Jialu Zhang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yuan si, simeng han, daming li, jialu zhang",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Demonstrates systematic evaluation methodology for memory systems critical to advanced AI agents",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3d3c764cfe0d83001140dda9",
+          "url": "https://arxiv.org/abs/2608.23568",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-26T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23568v1 Announce Type: new Abstract: Memory and RAG evaluations often treat the answering model's input as an implementation detail, even though systems may render the same history as a memory entry, summary, typed record, or raw excerpt. We introduce RENDER, a benchmark control that fixes the conversation while varying the reader-facing artifact. RENDER combines a five-level packet ladder, localizing when answer-bearing content enters the input, with deterministic templates approximating ChatGPT-style entries, LangChain summaries, MemGPT-style typed records, and raw conversation. On 500 LongMemEval questions and nine models, matched-budget resolved packets beat recency-truncated raw dialogue by 42.4-72.6 points. In deployed-style templates, best-worst spread is 24.6-48.8 points per model; under the primary scorer, ChatGPT-style entries have higher point estimates than raw conversation on 7 of 9 models. Judge rescoring preserves the positive aggregate effect, but model-specific significance is mixed. Three models scoring 0 percent on formal ledger packets answer the same facts from natural-language entries at 45.4-53.4 percent. The effect persists under retrieval noise a"
+        }
+      ]
+    },
+    {
+      "id": "item_782e7aab683b12404f77",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.23569",
+      "url": "https://arxiv.org/abs/2608.23569",
+      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T05:59:39.069Z",
+      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ESQ-Bench Reveals Enterprise Database Challenges for NL2SQL Models",
+        "zh-Hans": "ESQ-Bench揭示NL2SQL模型面临的企业数据库挑战"
+      },
+      "summary": {
+        "en": "New Oracle-first benchmark with 465 enterprise tables shows GPT-4o execution accuracy drops from 79.8% to 57.2% across complexity tiers, revealing gaps between academic and real-world performance.",
+        "zh-Hans": "基于Oracle的新基准包含465个企业表，显示GPT-4o执行准确率从79.8%降至57.2%，揭示学术与实际性能差距。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "nl2sql",
+        "enterprise",
+        "benchmarks",
+        "evaluation"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Sanjay Mishra, Divya Chukkapalli, Ganesh R. Naik",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:sanjay mishra, divya chukkapalli, ganesh r. naik",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Exposes critical gaps in enterprise database interaction capabilities for AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_782e7aab683b12404f77746c",
+          "url": "https://arxiv.org/abs/2608.23569",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-26T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23569v1 Announce Type: new Abstract: State-of-the-art Natural Language to SQL (NL2SQL) models report execution accuracy exceeding 89 percent on established benchmarks such as Spider and BIRD. However, these benchmarks rely on simplified academic schemas and open-source SQL dialects that do not reflect the complexity of enterprise database environments. We introduce ESQ-Bench, an Oracle-first NL2SQL benchmark with systematic complexity tiers and silent-divergence evaluation across three enterprise schema complexity tiers. We constructed and released six populated schemas (465 tables, 164,682 rows, zero empty tables) with identical seed data on Oracle, PostgreSQL, MySQL, and SQL Server, a four-metric evaluation harness (EM, EX, SR, SD), and 550 gold-validated question-query pairs (Tier-1: 95; Tier-2: 228; Tier-3: 227). Schema-linked prompting with GPT-4o shows monotonic execution-match degradation across tiers: 79.8, 60.3, and 57.2 percent EX on executed queries (June 2026), versus 75.6, 80.4, and 95.8 percent on an earlier 142-question pilot slice. EM stays below 7 percent tier-wide; operational silent-divergence reaches 73 to 99 percent among EX-passing queries. Failure "
+        }
+      ]
+    },
     {
       "id": "item_d21068479952e4038366",
       "schemaVersion": "1.0.0",
@@ -134,131 +260,6 @@
       ]
     },
     {
-      "id": "item_3285dfc4bc0ea89d79d3",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.21366",
-      "url": "https://arxiv.org/abs/2608.21366",
-      "publishedAt": "2026-08-25T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-26T03:39:45.260Z",
-      "updatedAt": "2026-08-25T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Model Collapse and Countermeasures in AI Training",
-        "zh-Hans": "AI训练中的模型坍塌与对策"
-      },
-      "summary": {
-        "en": "Review examines model collapse phenomenon when AI models are trained on synthetic data in self-consuming cycles, consolidating countermeasures across applications.",
-        "zh-Hans": "综述研究了AI模型在自消费循环中使用合成数据训练时的模型坍塌现象，整合了各应用场景的对策。"
-      },
-      "category": "research_science",
-      "tags": [
-        "model collapse",
-        "synthetic data",
-        "generative ai",
-        "training"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Xihao Xie, Beichen Hu",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:xihao xie, beichen hu",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 80,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 90,
-      "relevanceReason": "addresses fundamental training stability for next-generation AI models using synthetic data",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_3285dfc4bc0ea89d79d32028",
-          "url": "https://arxiv.org/abs/2608.21366",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-25T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.21366v1 Announce Type: new Abstract: Driven by massive amounts of web-scale data, generative AI (GenAI) has achieved remarkable progress, enabling various applications in diverse sectors. The advances of GenAI have actuated practitioners to use AI-synthesized data for training next-generation AI models. Undeniably, using synthetic data has alleviated the increasing stringent demand for data supply. Unfortunately, it also introduces a new critical issue: in a self-consuming cycle between model and data, the model ultimately collapse, raising more trustworthiness concerns to GenAI. In recent years, increasingly more studies have investigated the phenomenon of model collapse (MC) and explored potential solutions to mitigate it. However, the review of the phenomenon of MC still remains blank. To fill this gap, this paper provides an up-to-date overview of these studies for consolidating and reviewing the progress of MC in different application scenarios and countermeasures for mitigating MC. We also highlight challenges and future research opportunities."
-        }
-      ]
-    },
-    {
-      "id": "item_b749ed6ae3aff6159a71",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.21363",
-      "url": "https://arxiv.org/abs/2608.21363",
-      "publishedAt": "2026-08-25T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-25T19:17:02.222Z",
-      "updatedAt": "2026-08-25T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "AIREP Protocol for AI Runtime Decision Recording",
-        "zh-Hans": "AIREP协议用于AI运行时决策记录"
-      },
-      "summary": {
-        "en": "Protocol records AI runtime governance decisions as signed objects with hash chains for tamper detection and offline verification.",
-        "zh-Hans": "协议将AI运行时治理决策记录为带有哈希链的签名对象，用于篡改检测和离线验证。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "governance",
-        "runtime-monitoring",
-        "decision-recording"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Ali Toygar Abak",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:ali toygar abak",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 86,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "Provides governance framework for automated AI decision-making systems critical for AGI deployment",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_b749ed6ae3aff6159a71db9b",
-          "url": "https://arxiv.org/abs/2608.21363",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-25T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.21363v1 Announce Type: new Abstract: A protocol is presented for recording the governance decisions of automated AI runtimes. When a runtime releases, blocks, defers, redacts, or escalates an individual output, AIREP records that decision as a single signed object that any party can check offline, independent of the runtime that produced it. A record carries the decision as one of a closed set of verbs under a stated policy basis, references its input, output, and evidence by hash rather than by value, and declares both what its evidence covers and what it does not. Records form a SHA-256 hash chain that binds each record to its position, so that tampering and gaps are detectable by recomputation. Vendor-, model-, and domain-specific content is confined to a single optional namespace, and a mechanical neutrality test keeps the shared format free of it. A reference implementation and a two-language conformance kit are described. Some implementation issues are considered, and problems such as alignment of the canonical form across implementations, freshness witnesses, and multi-runtime chains are exposed. The format is offered for adoption by any AI runtime that records go"
-        }
-      ]
-    },
-    {
       "id": "item_a21cee4b91bda9f5c68b",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -317,131 +318,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-21T17:02:24.000Z",
           "evidenceSnippet": "We introduce the Biomarker Discovery Framework, a multi-agent system that supports the discovery of biomarker candidates from wearable sensor data through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning. Wearable devices capture continuous physiological signals at population scale. These streams, ranging from heart rate dynamics to sleep patterns, can reveal early physiological changes before symptoms appear. The bottleneck is no longer data collection, but turning these signals into reliable, clinically meaningful biomarkers. Existing language model-based agent systems automate parts of the scientific workflow, but can often break down on physiological time-series data. These systems optimize for predictive performance while overlooking statistical validity, leading to spurious correlations, leakage, and brittle features."
-        }
-      ]
-    },
-    {
-      "id": "item_4f98c5029119950e7f82",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-      "publishedAt": "2026-08-21T10:54:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-21T23:59:34.409Z",
-      "updatedAt": "2026-08-21T10:54:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research develops mobility-informed AI for place understanding",
-        "zh-Hans": "谷歌研究开发基于移动性的地点理解AI"
-      },
-      "summary": {
-        "en": "Dynamic framework enables AI models to understand temporal activity rhythms of places, improving predictions about real-world attributes like opening hours and busyness.",
-        "zh-Hans": "动态框架使AI模型能够理解地点的时间活动节律，改善对营业时间和繁忙程度等现实属性的预测。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "mobility",
-        "spatial-understanding",
-        "temporal-modeling"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 88,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "Advances AI understanding of physical world dynamics through temporal-spatial modeling",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_4f98c5029119950e7f82e09b",
-          "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-21T10:54:00.000Z",
-          "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
-        }
-      ]
-    },
-    {
-      "id": "item_1a7704a62ecc3f65b10f",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "publishedAt": "2026-08-12T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
-        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
-      },
-      "summary": {
-        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
-        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "spatial reasoning",
-        "vision language models",
-        "benchmark",
-        "topology"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
-          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-12T16:00:00.000Z",
-          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
         }
       ]
     },
@@ -672,6 +548,254 @@
           "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
           "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
           "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "release_mistral_shieldstral_20260804",
+      "sourceId": "src_mistral-ai",
+      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
+      "publishedAt": "2026-08-04T00:00:00Z",
+      "title": {
+        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
+        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
+      },
+      "summary": {
+        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
+        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "open-weights",
+        "multimodal",
+        "moderation"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "products_developer_ecosystem"
+      ],
+      "entities": [
+        "Mistral AI",
+        "Shieldstral"
+      ],
+      "author": "Mistral",
+      "org": "Mistral AI",
+      "importanceScore": 83,
+      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "source": {
+        "id": "src_mistral-ai",
+        "name": "Mistral AI"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-04T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 21,
+      "importance": 83,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_mistral_shieldstral_20260804",
+          "url": "https://mistral.ai/news/shieldstral/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-04T00:00:00Z",
+          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "item_3285dfc4bc0ea89d79d3",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.21366",
+      "url": "https://arxiv.org/abs/2608.21366",
+      "publishedAt": "2026-08-25T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T03:39:45.260Z",
+      "updatedAt": "2026-08-25T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Model Collapse and Countermeasures in AI Training",
+        "zh-Hans": "AI训练中的模型坍塌与对策"
+      },
+      "summary": {
+        "en": "Review examines model collapse phenomenon when AI models are trained on synthetic data in self-consuming cycles, consolidating countermeasures across applications.",
+        "zh-Hans": "综述研究了AI模型在自消费循环中使用合成数据训练时的模型坍塌现象，整合了各应用场景的对策。"
+      },
+      "category": "research_science",
+      "tags": [
+        "model collapse",
+        "synthetic data",
+        "generative ai",
+        "training"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Xihao Xie, Beichen Hu",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:xihao xie, beichen hu",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 80,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 90,
+      "relevanceReason": "addresses fundamental training stability for next-generation AI models using synthetic data",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3285dfc4bc0ea89d79d32028",
+          "url": "https://arxiv.org/abs/2608.21366",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21366v1 Announce Type: new Abstract: Driven by massive amounts of web-scale data, generative AI (GenAI) has achieved remarkable progress, enabling various applications in diverse sectors. The advances of GenAI have actuated practitioners to use AI-synthesized data for training next-generation AI models. Undeniably, using synthetic data has alleviated the increasing stringent demand for data supply. Unfortunately, it also introduces a new critical issue: in a self-consuming cycle between model and data, the model ultimately collapse, raising more trustworthiness concerns to GenAI. In recent years, increasingly more studies have investigated the phenomenon of model collapse (MC) and explored potential solutions to mitigate it. However, the review of the phenomenon of MC still remains blank. To fill this gap, this paper provides an up-to-date overview of these studies for consolidating and reviewing the progress of MC in different application scenarios and countermeasures for mitigating MC. We also highlight challenges and future research opportunities."
+        }
+      ]
+    },
+    {
+      "id": "item_b749ed6ae3aff6159a71",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.21363",
+      "url": "https://arxiv.org/abs/2608.21363",
+      "publishedAt": "2026-08-25T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-25T19:17:02.222Z",
+      "updatedAt": "2026-08-25T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AIREP Protocol for AI Runtime Decision Recording",
+        "zh-Hans": "AIREP协议用于AI运行时决策记录"
+      },
+      "summary": {
+        "en": "Protocol records AI runtime governance decisions as signed objects with hash chains for tamper detection and offline verification.",
+        "zh-Hans": "协议将AI运行时治理决策记录为带有哈希链的签名对象，用于篡改检测和离线验证。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "governance",
+        "runtime-monitoring",
+        "decision-recording"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Ali Toygar Abak",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:ali toygar abak",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Provides governance framework for automated AI decision-making systems critical for AGI deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b749ed6ae3aff6159a71db9b",
+          "url": "https://arxiv.org/abs/2608.21363",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.21363v1 Announce Type: new Abstract: A protocol is presented for recording the governance decisions of automated AI runtimes. When a runtime releases, blocks, defers, redacts, or escalates an individual output, AIREP records that decision as a single signed object that any party can check offline, independent of the runtime that produced it. A record carries the decision as one of a closed set of verbs under a stated policy basis, references its input, output, and evidence by hash rather than by value, and declares both what its evidence covers and what it does not. Records form a SHA-256 hash chain that binds each record to its position, so that tampering and gaps are detectable by recomputation. Vendor-, model-, and domain-specific content is confined to a single optional namespace, and a mechanical neutrality test keeps the shared format free of it. A reference implementation and a two-language conformance kit are described. Some implementation issues are considered, and problems such as alignment of the canonical form across implementations, freshness witnesses, and multi-runtime chains are exposed. The format is offered for adoption by any AI runtime that records go"
         }
       ]
     },
@@ -1491,6 +1615,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-24T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.20398v1 Announce Type: new Abstract: Generative AI (genAI) systems produce cultural artefacts at scale, but they also reflect embedded cultural values through their design. Once identified, these values become open to deliberate reshaping. This position paper examines the maximalist values of current generative AI through an environmental humanities tradition and proposes design principles in which environmental sustainability serves as the core value instead. The principles are developed under the umbrella of Slow AI, a term that already circulates across several distinct research and practice programs. Five design principles are articulated (restraint, sufficiency, selectivity over retention, material visibility, and friction as affordance), each of them illustrated against the current design of widely deployed systems. Each principle operates at two levels: a design implementation, and an interpretive layer at which users and developers are prompted toward reflective engagement with the system. Together these principles extend human agency by restoring decisions that frictionless defaults have silently removed and do so by building interpretive reflection into design."
+        }
+      ]
+    },
+    {
+      "id": "item_4f98c5029119950e7f82",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "publishedAt": "2026-08-21T10:54:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T10:54:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research develops mobility-informed AI for place understanding",
+        "zh-Hans": "谷歌研究开发基于移动性的地点理解AI"
+      },
+      "summary": {
+        "en": "Dynamic framework enables AI models to understand temporal activity rhythms of places, improving predictions about real-world attributes like opening hours and busyness.",
+        "zh-Hans": "动态框架使AI模型能够理解地点的时间活动节律，改善对营业时间和繁忙程度等现实属性的预测。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mobility",
+        "spatial-understanding",
+        "temporal-modeling"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "Advances AI understanding of physical world dynamics through temporal-spatial modeling",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_4f98c5029119950e7f82e09b",
+          "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-21T10:54:00.000Z",
+          "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
         }
       ]
     },
@@ -3314,6 +3500,69 @@
       ]
     },
     {
+      "id": "item_1a7704a62ecc3f65b10f",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
+        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
+      },
+      "summary": {
+        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
+        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "spatial reasoning",
+        "vision language models",
+        "benchmark",
+        "topology"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
+          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-12T16:00:00.000Z",
+          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
       "id": "item_2c563947428818b93259",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -4362,68 +4611,6 @@
       ]
     },
     {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
-        }
-      ],
-      "mediaType": "article"
-    },
-    {
       "id": "release_google_gemini_omni_builders_20260807",
       "sourceId": "src_google-deepmind",
       "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
@@ -4480,67 +4667,6 @@
           "publisher": "Google",
           "publishedAt": "2026-08-07T00:00:00Z",
           "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
-        }
-      ],
-      "mediaType": "article"
-    },
-    {
-      "id": "release_mistral_shieldstral_20260804",
-      "sourceId": "src_mistral-ai",
-      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
-      "publishedAt": "2026-08-04T00:00:00Z",
-      "title": {
-        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
-        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
-      },
-      "summary": {
-        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
-        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "open-weights",
-        "multimodal",
-        "moderation"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "products_developer_ecosystem"
-      ],
-      "entities": [
-        "Mistral AI",
-        "Shieldstral"
-      ],
-      "author": "Mistral",
-      "org": "Mistral AI",
-      "importanceScore": 83,
-      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "source": {
-        "id": "src_mistral-ai",
-        "name": "Mistral AI"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-04T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 21,
-      "importance": 83,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_mistral_shieldstral_20260804",
-          "url": "https://mistral.ai/news/shieldstral/",
-          "publisher": "Mistral AI",
-          "publishedAt": "2026-08-04T00:00:00Z",
-          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
         }
       ],
       "mediaType": "article"
