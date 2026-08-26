@@ -7,8 +7,72 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-26T05:59:52.177Z",
+  "generatedAt": "2026-08-26T11:04:21.742Z",
   "items": [
+    {
+      "id": "item_fd16a058ee8e16ad048c",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.23622",
+      "url": "https://arxiv.org/abs/2608.23622",
+      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T11:04:08.120Z",
+      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LLM Agents Perform Controlled Experiments Using Simulation Models",
+        "zh-Hans": "大语言模型智能体使用仿真模型进行对照实验"
+      },
+      "summary": {
+        "en": "Researchers propose a multi-agent framework enabling LLM agents to conduct controlled experiments with scientific simulation models for pharmaceutical process design, supporting reasoning through intervention and observation.",
+        "zh-Hans": "研究人员提出多智能体框架，使大语言模型智能体能够使用科学仿真模型进行对照实验，用于药物工艺设计，支持通过干预和观察进行推理。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "llm agents",
+        "controlled experiments",
+        "simulation",
+        "pharmaceutical",
+        "multi-agent"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yuchen Xia, Michael Weyrich, Nasser Jazdi, Johannes St\\\"umpfle, Johannes Sigel, Akshay Narla, Gavin K. Reynolds, Anna Jawor-Baczynska, Pol Llopart",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yuchen xia, michael weyrich, nasser jazdi, johannes st\\\"umpfle, johannes sigel, akshay narla, gavin k. reynolds, anna jawor-baczynska, pol llopart",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "demonstrates transferable agent capability for scientific experimentation and causal reasoning through simulation interaction",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_fd16a058ee8e16ad048cfe77",
+          "url": "https://arxiv.org/abs/2608.23622",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-26T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23622v1 Announce Type: new Abstract: Large language models (LLMs) have shown strong capabilities in reasoning, planning, and tool use, but many scientific and engineering tasks require more than plausible text and code generation. They require understanding how a system responds to intervention, which in practice depends on controlled experimentation. In this work, we propose a multi-agent framework that enables LLM agents to conduct controlled experiments with scientific simulation models for pharmaceutical process design. Given a user query and a baseline configuration, the system constructs a structured task representation, designs experiments, executes comparative simulation, interprets the resulting outcomes, and synthesizes evidence-based recommendations for process parameter optimization. By coupling language models with high-fidelity simulation models in an interactive agent framework, the proposed system supports reasoning through intervention, comparison, and observation. As a result, it produces more specific and actionable outputs than language-only reasoning. In an industrial application setting, this advantage is reflected in higher output specificity as we"
+        }
+      ]
+    },
     {
       "id": "item_3d3c764cfe0d83001140",
       "schemaVersion": "1.0.0",
@@ -69,69 +133,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-26T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.23568v1 Announce Type: new Abstract: Memory and RAG evaluations often treat the answering model's input as an implementation detail, even though systems may render the same history as a memory entry, summary, typed record, or raw excerpt. We introduce RENDER, a benchmark control that fixes the conversation while varying the reader-facing artifact. RENDER combines a five-level packet ladder, localizing when answer-bearing content enters the input, with deterministic templates approximating ChatGPT-style entries, LangChain summaries, MemGPT-style typed records, and raw conversation. On 500 LongMemEval questions and nine models, matched-budget resolved packets beat recency-truncated raw dialogue by 42.4-72.6 points. In deployed-style templates, best-worst spread is 24.6-48.8 points per model; under the primary scorer, ChatGPT-style entries have higher point estimates than raw conversation on 7 of 9 models. Judge rescoring preserves the positive aggregate effect, but model-specific significance is mixed. Three models scoring 0 percent on formal ledger packets answer the same facts from natural-language entries at 45.4-53.4 percent. The effect persists under retrieval noise a"
-        }
-      ]
-    },
-    {
-      "id": "item_782e7aab683b12404f77",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2608.23569",
-      "url": "https://arxiv.org/abs/2608.23569",
-      "publishedAt": "2026-08-26T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-26T05:59:39.069Z",
-      "updatedAt": "2026-08-26T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "ESQ-Bench Reveals Enterprise Database Challenges for NL2SQL Models",
-        "zh-Hans": "ESQ-Bench揭示NL2SQL模型面临的企业数据库挑战"
-      },
-      "summary": {
-        "en": "New Oracle-first benchmark with 465 enterprise tables shows GPT-4o execution accuracy drops from 79.8% to 57.2% across complexity tiers, revealing gaps between academic and real-world performance.",
-        "zh-Hans": "基于Oracle的新基准包含465个企业表，显示GPT-4o执行准确率从79.8%降至57.2%，揭示学术与实际性能差距。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "nl2sql",
-        "enterprise",
-        "benchmarks",
-        "evaluation"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Sanjay Mishra, Divya Chukkapalli, Ganesh R. Naik",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:sanjay mishra, divya chukkapalli, ganesh r. naik",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Exposes critical gaps in enterprise database interaction capabilities for AI systems",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_782e7aab683b12404f77746c",
-          "url": "https://arxiv.org/abs/2608.23569",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-26T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.23569v1 Announce Type: new Abstract: State-of-the-art Natural Language to SQL (NL2SQL) models report execution accuracy exceeding 89 percent on established benchmarks such as Spider and BIRD. However, these benchmarks rely on simplified academic schemas and open-source SQL dialects that do not reflect the complexity of enterprise database environments. We introduce ESQ-Bench, an Oracle-first NL2SQL benchmark with systematic complexity tiers and silent-divergence evaluation across three enterprise schema complexity tiers. We constructed and released six populated schemas (465 tables, 164,682 rows, zero empty tables) with identical seed data on Oracle, PostgreSQL, MySQL, and SQL Server, a four-metric evaluation harness (EM, EX, SR, SD), and 550 gold-validated question-query pairs (Tier-1: 95; Tier-2: 228; Tier-3: 227). Schema-linked prompting with GPT-4o shows monotonic execution-match degradation across tiers: 79.8, 60.3, and 57.2 percent EX on executed queries (June 2026), versus 75.6, 80.4, and 95.8 percent on an earlier 142-question pilot slice. EM stays below 7 percent tier-wide; operational silent-divergence reaches 73 to 99 percent among EX-passing queries. Failure "
         }
       ]
     },
@@ -322,6 +323,68 @@
       ]
     },
     {
+      "id": "item_4f98c5029119950e7f82",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "publishedAt": "2026-08-21T10:54:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T10:54:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research develops mobility-informed AI for place understanding",
+        "zh-Hans": "谷歌研究开发基于移动性的地点理解AI"
+      },
+      "summary": {
+        "en": "Dynamic framework enables AI models to understand temporal activity rhythms of places, improving predictions about real-world attributes like opening hours and busyness.",
+        "zh-Hans": "动态框架使AI模型能够理解地点的时间活动节律，改善对营业时间和繁忙程度等现实属性的预测。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mobility",
+        "spatial-understanding",
+        "temporal-modeling"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "Advances AI understanding of physical world dynamics through temporal-spatial modeling",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_4f98c5029119950e7f82e09b",
+          "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-21T10:54:00.000Z",
+          "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
+        }
+      ]
+    },
+    {
       "id": "statement_meta_personal_superintelligence_20260810",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -485,73 +548,6 @@
       ]
     },
     {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
-        }
-      ]
-    },
-    {
       "id": "release_anthropic_fable5_bio_safeguards_20260807",
       "sourceId": "src_anthropic",
       "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
@@ -673,6 +669,133 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_3fcba86f0c2cae9d4873",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.23626",
+      "url": "https://arxiv.org/abs/2608.23626",
+      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T11:04:08.120Z",
+      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Survey Detection Channel Overrides Pixels in Astronomical Foundation Model",
+        "zh-Hans": "天文基础模型中巡天检测通道覆盖像素信息"
+      },
+      "summary": {
+        "en": "Study audits AION-1, a 39-modality transformer trained on 200+ million astronomical objects, revealing systematic biases where detection metadata overrides actual image content in model predictions.",
+        "zh-Hans": "研究审计了AION-1这一在2亿多天文对象上训练的39模态变换器，发现检测元数据在模型预测中系统性地覆盖了实际图像内容。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "foundation models",
+        "astronomy",
+        "multimodal",
+        "transformer",
+        "bias detection"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Ihor Kendiukhov",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:ihor kendiukhov",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "demonstrates multimodal foundation model behavior and systematic bias patterns relevant to general AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3fcba86f0c2cae9d4873ee5d",
+          "url": "https://arxiv.org/abs/2608.23626",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-26T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23626v1 Announce Type: new Abstract: Foundation models for astronomy are trained on survey pixels together with the catalogue products derived from those pixels. Those catalogues are incomplete at a measurable rate, and a model trained on both inherits that incompleteness as a systematic. We audit AION-1, a 39-modality transformer trained on more than 200 million objects, using causal interventions on its inputs. Holding the image tokens byte-identical and editing only the survey segmentation map changes every quantity the model reports -- flux, size, ellipticity, redshift -- by 110-4400 times a matched placebo. The mechanism is detection gating, presence at the field centre (r = 0.47), not the light the mask encloses (r = 0.30); across 322 real blends the model ignores how the pipeline partitioned the light (R = -0.006). Nor is the preference specific to that channel: contradicted catalogue photometry leaves the model nine times worse than supplying no metadata at all. The Legacy Survey pipeline leaves 3.68% of targets with no segment covering their position. Propagating that rate, with a miss represented by the fields the pipeline actually returns, shifts tomographic m"
+        }
+      ]
+    },
+    {
+      "id": "item_782e7aab683b12404f77",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.23569",
+      "url": "https://arxiv.org/abs/2608.23569",
+      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T05:59:39.069Z",
+      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ESQ-Bench Reveals Enterprise Database Challenges for NL2SQL Models",
+        "zh-Hans": "ESQ-Bench揭示NL2SQL模型面临的企业数据库挑战"
+      },
+      "summary": {
+        "en": "New Oracle-first benchmark with 465 enterprise tables shows GPT-4o execution accuracy drops from 79.8% to 57.2% across complexity tiers, revealing gaps between academic and real-world performance.",
+        "zh-Hans": "基于Oracle的新基准包含465个企业表，显示GPT-4o执行准确率从79.8%降至57.2%，揭示学术与实际性能差距。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "nl2sql",
+        "enterprise",
+        "benchmarks",
+        "evaluation"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Sanjay Mishra, Divya Chukkapalli, Ganesh R. Naik",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:sanjay mishra, divya chukkapalli, ganesh r. naik",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Exposes critical gaps in enterprise database interaction capabilities for AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_782e7aab683b12404f77746c",
+          "url": "https://arxiv.org/abs/2608.23569",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-26T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23569v1 Announce Type: new Abstract: State-of-the-art Natural Language to SQL (NL2SQL) models report execution accuracy exceeding 89 percent on established benchmarks such as Spider and BIRD. However, these benchmarks rely on simplified academic schemas and open-source SQL dialects that do not reflect the complexity of enterprise database environments. We introduce ESQ-Bench, an Oracle-first NL2SQL benchmark with systematic complexity tiers and silent-divergence evaluation across three enterprise schema complexity tiers. We constructed and released six populated schemas (465 tables, 164,682 rows, zero empty tables) with identical seed data on Oracle, PostgreSQL, MySQL, and SQL Server, a four-metric evaluation harness (EM, EX, SR, SD), and 550 gold-validated question-query pairs (Tier-1: 95; Tier-2: 228; Tier-3: 227). Schema-linked prompting with GPT-4o shows monotonic execution-match degradation across tiers: 79.8, 60.3, and 57.2 percent EX on executed queries (June 2026), versus 75.6, 80.4, and 95.8 percent on an earlier 142-question pilot slice. EM stays below 7 percent tier-wide; operational silent-divergence reaches 73 to 99 percent among EX-passing queries. Failure "
+        }
+      ]
     },
     {
       "id": "item_3285dfc4bc0ea89d79d3",
@@ -1615,68 +1738,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-24T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.20398v1 Announce Type: new Abstract: Generative AI (genAI) systems produce cultural artefacts at scale, but they also reflect embedded cultural values through their design. Once identified, these values become open to deliberate reshaping. This position paper examines the maximalist values of current generative AI through an environmental humanities tradition and proposes design principles in which environmental sustainability serves as the core value instead. The principles are developed under the umbrella of Slow AI, a term that already circulates across several distinct research and practice programs. Five design principles are articulated (restraint, sufficiency, selectivity over retention, material visibility, and friction as affordance), each of them illustrated against the current design of widely deployed systems. Each principle operates at two levels: a design implementation, and an interpretive layer at which users and developers are prompted toward reflective engagement with the system. Together these principles extend human agency by restoring decisions that frictionless defaults have silently removed and do so by building interpretive reflection into design."
-        }
-      ]
-    },
-    {
-      "id": "item_4f98c5029119950e7f82",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-      "publishedAt": "2026-08-21T10:54:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-21T23:59:34.409Z",
-      "updatedAt": "2026-08-21T10:54:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research develops mobility-informed AI for place understanding",
-        "zh-Hans": "谷歌研究开发基于移动性的地点理解AI"
-      },
-      "summary": {
-        "en": "Dynamic framework enables AI models to understand temporal activity rhythms of places, improving predictions about real-world attributes like opening hours and busyness.",
-        "zh-Hans": "动态框架使AI模型能够理解地点的时间活动节律，改善对营业时间和繁忙程度等现实属性的预测。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "mobility",
-        "spatial-understanding",
-        "temporal-modeling"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 88,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "Advances AI understanding of physical world dynamics through temporal-spatial modeling",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_4f98c5029119950e7f82e09b",
-          "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-21T10:54:00.000Z",
-          "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
         }
       ]
     },
@@ -4482,6 +4543,73 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
+        }
+      ]
+    },
+    {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
       ]
     },
