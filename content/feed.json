@@ -7,74 +7,72 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-26T11:04:21.742Z",
+  "generatedAt": "2026-08-28T01:33:24.612Z",
   "items": [
     {
-      "id": "item_fd16a058ee8e16ad048c",
+      "id": "item_d4c4006fefc6f64193fc",
       "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
+      "type": "article",
+      "sourceId": "src_google-research",
       "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
+        "id": "src_google-research",
+        "name": "Google Research"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.23622",
-      "url": "https://arxiv.org/abs/2608.23622",
-      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "canonicalUrl": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+      "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+      "publishedAt": "2026-08-27T17:37:20.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-26T11:04:08.120Z",
-      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "discoveredAt": "2026-08-28T01:32:55.432Z",
+      "updatedAt": "2026-08-27T17:37:20.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "LLM Agents Perform Controlled Experiments Using Simulation Models",
-        "zh-Hans": "大语言模型智能体使用仿真模型进行对照实验"
+        "en": "Google introduces planetary prediction engine for autonomous geospatial modeling",
+        "zh-Hans": "谷歌推出行星预测引擎实现自主地理空间建模"
       },
       "summary": {
-        "en": "Researchers propose a multi-agent framework enabling LLM agents to conduct controlled experiments with scientific simulation models for pharmaceutical process design, supporting reasoning through intervention and observation.",
-        "zh-Hans": "研究人员提出多智能体框架，使大语言模型智能体能够使用科学仿真模型进行对照实验，用于药物工艺设计，支持通过干预和观察进行推理。"
+        "en": "Google Research's planetary prediction engine autonomously executes full geospatial modeling workflows from data discovery to model training, addressing limitations of existing AutoML and LLM-based agents in handling specialized spatial data.",
+        "zh-Hans": "谷歌研究院的行星预测引擎可自主执行从数据发现到模型训练的完整地理空间建模工作流，解决现有AutoML和基于LLM的智能体在处理专业空间数据方面的局限性。"
       },
       "category": "agents_automation",
       "tags": [
-        "llm agents",
-        "controlled experiments",
-        "simulation",
-        "pharmaceutical",
-        "multi-agent"
+        "geospatial",
+        "automl",
+        "workflow automation"
       ],
       "topics": [
         "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Yuchen Xia, Michael Weyrich, Nasser Jazdi, Johannes St\\\"umpfle, Johannes Sigel, Akshay Narla, Gavin K. Reynolds, Anna Jawor-Baczynska, Pol Llopart",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:yuchen xia, michael weyrich, nasser jazdi, johannes st\\\"umpfle, johannes sigel, akshay narla, gavin k. reynolds, anna jawor-baczynska, pol llopart",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.86,
+      "sourceReliability": 0.94,
       "metrics": {},
       "classification": null,
       "freshnessScore": 93,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "demonstrates transferable agent capability for scientific experimentation and causal reasoning through simulation interaction",
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "autonomous workflow execution across specialized domain with data discovery and model training capabilities",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_fd16a058ee8e16ad048cfe77",
-          "url": "https://arxiv.org/abs/2608.23622",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-26T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.23622v1 Announce Type: new Abstract: Large language models (LLMs) have shown strong capabilities in reasoning, planning, and tool use, but many scientific and engineering tasks require more than plausible text and code generation. They require understanding how a system responds to intervention, which in practice depends on controlled experimentation. In this work, we propose a multi-agent framework that enables LLM agents to conduct controlled experiments with scientific simulation models for pharmaceutical process design. Given a user query and a baseline configuration, the system constructs a structured task representation, designs experiments, executes comparative simulation, interprets the resulting outcomes, and synthesizes evidence-based recommendations for process parameter optimization. By coupling language models with high-fidelity simulation models in an interactive agent framework, the proposed system supports reasoning through intervention, comparison, and observation. As a result, it produces more specific and actionable outputs than language-only reasoning. In an industrial application setting, this advantage is reflected in higher output specificity as we"
+          "id": "candidate_d4c4006fefc6f64193fc4bf3",
+          "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-27T17:37:20.000Z",
+          "evidenceSnippet": "Rama Pasumarthi, Staff Software Engineer, and Shravya Shetty, Distinguished Engineer, Google Research As part of Google Earth AI , we introduce the planetary prediction engine (PPE), an experimental research capability that autonomously executes the full geospatial modeling workflow — from data discovery to model training — achieving improvements across diverse prediction tasks in public health, food security, environmental risk, and socioeconomics. Addressing humanity's most pressing global challenges — from forecasting regional food security and environmental disaster risks to tracking real-time disease outbreaks and mapping socio-economic vulnerability — requires high-fidelity geospatial modeling. However, building these models is hindered by a fragmented data ecosystem that requires specialized teams to spend weeks on manual data curation, feature engineering, and specialized spatial validation. While existing AutoML and LLM-based agents effectively automate standard machine learning pipelines, they rely on pre-curated tabular data and lack the specialized capabilities needed to autonomously handle geospatial workflows. Consequently, planetary-scale analytics remains a signific"
         }
       ]
     },
     {
-      "id": "item_3d3c764cfe0d83001140",
+      "id": "item_fa2f004f22f59c039080",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -82,57 +80,118 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2608.23568",
-      "url": "https://arxiv.org/abs/2608.23568",
-      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2608.23631",
+      "url": "https://arxiv.org/abs/2608.23631",
+      "publishedAt": "2026-08-27T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-26T05:59:39.069Z",
-      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "discoveredAt": "2026-08-28T01:32:55.432Z",
+      "updatedAt": "2026-08-27T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "RENDER: New Benchmark Controls Memory Format Impact in LLM Evaluation",
-        "zh-Hans": "RENDER：新基准控制LLM评估中的记忆格式影响"
+        "en": "TRACE framework improves LLM agents for materials discovery through transition-aware control",
+        "zh-Hans": "TRACE框架通过转换感知控制改进材料发现LLM智能体"
       },
       "summary": {
-        "en": "Researchers introduce RENDER benchmark showing memory format significantly affects LLM performance, with structured entries outperforming raw dialogue by 42-72 points across nine models on 500 questions.",
-        "zh-Hans": "研究人员推出RENDER基准，显示记忆格式显著影响LLM性能，结构化条目在500个问题上比原始对话高出42-72分。"
+        "en": "TRACE treats evaluated edits as feedback units, recording parent-edit-child transitions to estimate reusable edit effects, improving hit rates from 18.13% to 25.96% over LLEMA baseline in multi-objective materials discovery.",
+        "zh-Hans": "TRACE将评估的编辑作为反馈单元，记录父-编辑-子转换以估计可重用编辑效果，在多目标材料发现中将命中率从18.13%提升至25.96%，超越LLEMA基线。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "materials discovery",
+        "multi-objective optimization",
+        "transition learning"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Kang Zhou, Yujia Tong, Yong Tao, Jingling Yuan",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:kang zhou, yujia tong, yong tao, jingling yuan",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 81,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "transferable learning mechanism for agent refinement across competing objectives",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_fa2f004f22f59c0390805713",
+          "url": "https://arxiv.org/abs/2608.23631",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-27T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23631v1 Announce Type: new Abstract: Multi-objective materials discovery with LLM agents is often limited not only by how many candidates can be proposed, but by how effectively each costly property evaluation informs the next search step. Existing agents mainly store evaluated candidates and their scores, so they know which materials succeeded but not which executable edits caused useful property changes. This makes local refinement difficult when objectives compete and an edit that improves one property may damage another. We propose TRACE, a transition-aware residual control framework that treats evaluated edits as the basic unit of feedback. TRACE records each local refinement as a parent-edit-child transition with observed property deltas, aggregates transition evidence to estimate reusable edit effects, and ranks future edits by their predicted ability to reduce the current candidate's remaining constraint violations while avoiding damage to already satisfied objectives. In a controlled same-backbone comparison, TRACE improves over LLEMA, the state-of-the-art LLM-agent baseline, raising macro-average hit rate from 18.13\\% to 25.96\\%."
+        }
+      ]
+    },
+    {
+      "id": "item_af56b2ee53845e43099a",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.23632",
+      "url": "https://arxiv.org/abs/2608.23632",
+      "publishedAt": "2026-08-27T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-28T01:32:55.432Z",
+      "updatedAt": "2026-08-27T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "STEP-KTODER framework advances code generation through function-level execution feedback",
+        "zh-Hans": "STEP-KTODER框架通过函数级执行反馈推进代码生成"
+      },
+      "summary": {
+        "en": "STEP-KTODER defines steps as module-level functions with binary correctness labels via unit tests, combining function-level process supervision with outcome-level feedback, outperforming outcome-only methods on multiple benchmarks.",
+        "zh-Hans": "STEP-KTODER将步骤定义为模块级函数，通过单元测试提供二进制正确性标签，结合函数级过程监督和结果级反馈，在多个基准测试中超越仅结果方法。"
       },
       "category": "models_capabilities",
       "tags": [
-        "memory",
-        "rag",
-        "evaluation",
-        "benchmarks"
+        "code generation",
+        "process supervision",
+        "preference optimization"
       ],
       "topics": [
         "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Yuan Si, Simeng Han, Daming Li, Jialu Zhang",
+      "author": "Idris Nechnech, Sehwan Kim, Jimin Seo, Yeongoon Kim, Minhae Oh, Sangwoo Hong, Jungwoo Lee",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:yuan si, simeng han, daming li, jialu zhang",
+      "independenceKey": "academic:idris nechnech, sehwan kim, jimin seo, yeongoon kim, minhae oh, sangwoo hong, jungwoo lee",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "Demonstrates systematic evaluation methodology for memory systems critical to advanced AI agents",
+      "freshnessScore": 81,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "structured process supervision approach for code generation with transferable step definitions",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_3d3c764cfe0d83001140dda9",
-          "url": "https://arxiv.org/abs/2608.23568",
+          "id": "candidate_af56b2ee53845e43099abbbd",
+          "url": "https://arxiv.org/abs/2608.23632",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-08-26T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2608.23568v1 Announce Type: new Abstract: Memory and RAG evaluations often treat the answering model's input as an implementation detail, even though systems may render the same history as a memory entry, summary, typed record, or raw excerpt. We introduce RENDER, a benchmark control that fixes the conversation while varying the reader-facing artifact. RENDER combines a five-level packet ladder, localizing when answer-bearing content enters the input, with deterministic templates approximating ChatGPT-style entries, LangChain summaries, MemGPT-style typed records, and raw conversation. On 500 LongMemEval questions and nine models, matched-budget resolved packets beat recency-truncated raw dialogue by 42.4-72.6 points. In deployed-style templates, best-worst spread is 24.6-48.8 points per model; under the primary scorer, ChatGPT-style entries have higher point estimates than raw conversation on 7 of 9 models. Judge rescoring preserves the positive aggregate effect, but model-specific significance is mixed. Three models scoring 0 percent on formal ledger packets answer the same facts from natural-language entries at 45.4-53.4 percent. The effect persists under retrieval noise a"
+          "publishedAt": "2026-08-27T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23632v1 Announce Type: new Abstract: Process supervision has improved mathematical reasoning, where intermediate steps are naturally expressed as chains of thought. In code generation, however, process supervision remains underexplored because there is no standard notion of a step. Supervision can target lines, reasoning traces, or program states, making it unclear what to label and optimize. We propose STEP-KTODER, a framework for code preference optimization that defines steps as module-level functions in decomposed multi-function programs and assigns binary correctness labels via automatically generated unit tests. Our method provides a code-specific instantiation of stepwise KTO, combining function-level process supervision with outcome-level feedback on the full program. We evaluate on HumanEval(+), MBPP(+), BigCodeBench, and LiveCodeBench, showing that STEP-KTODER improves over outcome-only KTO and DPO. Further analysis shows that execution-based labels are essential: LLM-as-a-judge annotations systematically over-predict function failures, corrupt positive step labels, and degrade downstream preference optimization. Code is available at: https://github.com/inechne"
         }
       ]
     },
@@ -323,163 +382,65 @@
       ]
     },
     {
-      "id": "item_4f98c5029119950e7f82",
+      "id": "item_1a7704a62ecc3f65b10f",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_google-research",
+      "sourceId": "src_microsoft-research",
       "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
       },
-      "canonicalUrl": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-      "publishedAt": "2026-08-21T10:54:00.000Z",
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-21T23:59:34.409Z",
-      "updatedAt": "2026-08-21T10:54:00.000Z",
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T16:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Google Research develops mobility-informed AI for place understanding",
-        "zh-Hans": "谷歌研究开发基于移动性的地点理解AI"
+        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
+        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
       },
       "summary": {
-        "en": "Dynamic framework enables AI models to understand temporal activity rhythms of places, improving predictions about real-world attributes like opening hours and busyness.",
-        "zh-Hans": "动态框架使AI模型能够理解地点的时间活动节律，改善对营业时间和繁忙程度等现实属性的预测。"
+        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
+        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
       },
       "category": "models_capabilities",
       "tags": [
-        "mobility",
-        "spatial-understanding",
-        "temporal-modeling"
+        "spatial reasoning",
+        "vision language models",
+        "benchmark",
+        "topology"
       ],
       "topics": [
         "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
+      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.94,
+      "sourceReliability": 0.92,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 88,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "Advances AI understanding of physical world dynamics through temporal-spatial modeling",
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_4f98c5029119950e7f82e09b",
-          "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-21T10:54:00.000Z",
-          "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
-        }
-      ]
-    },
-    {
-      "id": "statement_meta_personal_superintelligence_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
-      },
-      "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
-      ],
-      "topics": [
-        "agents_automation",
-        "safety_security_alignment"
-      ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
-      "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
+          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-12T16:00:00.000Z",
+          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
         }
       ]
     },
@@ -669,6 +630,133 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_fd16a058ee8e16ad048c",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.23622",
+      "url": "https://arxiv.org/abs/2608.23622",
+      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T11:04:08.120Z",
+      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LLM Agents Perform Controlled Experiments Using Simulation Models",
+        "zh-Hans": "大语言模型智能体使用仿真模型进行对照实验"
+      },
+      "summary": {
+        "en": "Researchers propose a multi-agent framework enabling LLM agents to conduct controlled experiments with scientific simulation models for pharmaceutical process design, supporting reasoning through intervention and observation.",
+        "zh-Hans": "研究人员提出多智能体框架，使大语言模型智能体能够使用科学仿真模型进行对照实验，用于药物工艺设计，支持通过干预和观察进行推理。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "llm agents",
+        "controlled experiments",
+        "simulation",
+        "pharmaceutical",
+        "multi-agent"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yuchen Xia, Michael Weyrich, Nasser Jazdi, Johannes St\\\"umpfle, Johannes Sigel, Akshay Narla, Gavin K. Reynolds, Anna Jawor-Baczynska, Pol Llopart",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yuchen xia, michael weyrich, nasser jazdi, johannes st\\\"umpfle, johannes sigel, akshay narla, gavin k. reynolds, anna jawor-baczynska, pol llopart",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "demonstrates transferable agent capability for scientific experimentation and causal reasoning through simulation interaction",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_fd16a058ee8e16ad048cfe77",
+          "url": "https://arxiv.org/abs/2608.23622",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-26T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23622v1 Announce Type: new Abstract: Large language models (LLMs) have shown strong capabilities in reasoning, planning, and tool use, but many scientific and engineering tasks require more than plausible text and code generation. They require understanding how a system responds to intervention, which in practice depends on controlled experimentation. In this work, we propose a multi-agent framework that enables LLM agents to conduct controlled experiments with scientific simulation models for pharmaceutical process design. Given a user query and a baseline configuration, the system constructs a structured task representation, designs experiments, executes comparative simulation, interprets the resulting outcomes, and synthesizes evidence-based recommendations for process parameter optimization. By coupling language models with high-fidelity simulation models in an interactive agent framework, the proposed system supports reasoning through intervention, comparison, and observation. As a result, it produces more specific and actionable outputs than language-only reasoning. In an industrial application setting, this advantage is reflected in higher output specificity as we"
+        }
+      ]
+    },
+    {
+      "id": "item_3d3c764cfe0d83001140",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2608.23568",
+      "url": "https://arxiv.org/abs/2608.23568",
+      "publishedAt": "2026-08-26T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-26T05:59:39.069Z",
+      "updatedAt": "2026-08-26T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "RENDER: New Benchmark Controls Memory Format Impact in LLM Evaluation",
+        "zh-Hans": "RENDER：新基准控制LLM评估中的记忆格式影响"
+      },
+      "summary": {
+        "en": "Researchers introduce RENDER benchmark showing memory format significantly affects LLM performance, with structured entries outperforming raw dialogue by 42-72 points across nine models on 500 questions.",
+        "zh-Hans": "研究人员推出RENDER基准，显示记忆格式显著影响LLM性能，结构化条目在500个问题上比原始对话高出42-72分。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "memory",
+        "rag",
+        "evaluation",
+        "benchmarks"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yuan Si, Simeng Han, Daming Li, Jialu Zhang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yuan si, simeng han, daming li, jialu zhang",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Demonstrates systematic evaluation methodology for memory systems critical to advanced AI agents",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3d3c764cfe0d83001140dda9",
+          "url": "https://arxiv.org/abs/2608.23568",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-08-26T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2608.23568v1 Announce Type: new Abstract: Memory and RAG evaluations often treat the answering model's input as an implementation detail, even though systems may render the same history as a memory entry, summary, typed record, or raw excerpt. We introduce RENDER, a benchmark control that fixes the conversation while varying the reader-facing artifact. RENDER combines a five-level packet ladder, localizing when answer-bearing content enters the input, with deterministic templates approximating ChatGPT-style entries, LangChain summaries, MemGPT-style typed records, and raw conversation. On 500 LongMemEval questions and nine models, matched-budget resolved packets beat recency-truncated raw dialogue by 42.4-72.6 points. In deployed-style templates, best-worst spread is 24.6-48.8 points per model; under the primary scorer, ChatGPT-style entries have higher point estimates than raw conversation on 7 of 9 models. Judge rescoring preserves the positive aggregate effect, but model-specific significance is mixed. Three models scoring 0 percent on formal ledger packets answer the same facts from natural-language entries at 45.4-53.4 percent. The effect persists under retrieval noise a"
+        }
+      ]
     },
     {
       "id": "item_3fcba86f0c2cae9d4873",
@@ -1738,6 +1826,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-24T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.20398v1 Announce Type: new Abstract: Generative AI (genAI) systems produce cultural artefacts at scale, but they also reflect embedded cultural values through their design. Once identified, these values become open to deliberate reshaping. This position paper examines the maximalist values of current generative AI through an environmental humanities tradition and proposes design principles in which environmental sustainability serves as the core value instead. The principles are developed under the umbrella of Slow AI, a term that already circulates across several distinct research and practice programs. Five design principles are articulated (restraint, sufficiency, selectivity over retention, material visibility, and friction as affordance), each of them illustrated against the current design of widely deployed systems. Each principle operates at two levels: a design implementation, and an interpretive layer at which users and developers are prompted toward reflective engagement with the system. Together these principles extend human agency by restoring decisions that frictionless defaults have silently removed and do so by building interpretive reflection into design."
+        }
+      ]
+    },
+    {
+      "id": "item_4f98c5029119950e7f82",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "publishedAt": "2026-08-21T10:54:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T10:54:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research develops mobility-informed AI for place understanding",
+        "zh-Hans": "谷歌研究开发基于移动性的地点理解AI"
+      },
+      "summary": {
+        "en": "Dynamic framework enables AI models to understand temporal activity rhythms of places, improving predictions about real-world attributes like opening hours and busyness.",
+        "zh-Hans": "动态框架使AI模型能够理解地点的时间活动节律，改善对营业时间和繁忙程度等现实属性的预测。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mobility",
+        "spatial-understanding",
+        "temporal-modeling"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "Advances AI understanding of physical world dynamics through temporal-spatial modeling",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_4f98c5029119950e7f82e09b",
+          "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-21T10:54:00.000Z",
+          "evidenceSnippet": "Maria Despoina Siampou and Shushman Choudhury, Research Scientists, Google Research We introduce a dynamic, mobility-informed framework that allows AI models to understand the temporal activity rhythms of places over time, and, in doing so, significantly improve predictions about real-world attributes like opening hours, price levels, and busyness. Artificial intelligence has made incredible progress in understanding the world through text. However, to build AI models that truly understand the physical world, they must comprehend more than just words: they need to capture the dynamic, real-world functionality of the built environment. Every place has two distinct signatures: its identity on paper, and its actual functional rhythm."
         }
       ]
     },
@@ -3561,69 +3711,6 @@
       ]
     },
     {
-      "id": "item_1a7704a62ecc3f65b10f",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "publishedAt": "2026-08-12T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
-        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
-      },
-      "summary": {
-        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
-        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "spatial reasoning",
-        "vision language models",
-        "benchmark",
-        "topology"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
-          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-12T16:00:00.000Z",
-          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
       "id": "item_2c563947428818b93259",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -4431,6 +4518,105 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-08-10T10:05:36.000Z",
           "evidenceSnippet": "Why distillation recovery is expensive Two systems changes What this changes in practice Scaling to long context lengths The resulting student Knowledge distillation , training a smaller student model to match the performance of a larger teacher, is a well-known technique in Machine Learning. With the recent wave of open-source Large Language Models, such as gpt-oss , Qwen , GLM , or Kimi , it has become a mainstream research topic again. Deploying these very large models is expensive: the recent Kimi-K3 model has 2.8 trillion parameters and needs roughly 3TB of VRAM just to load. Compressing them into smaller models and recovering the original capabilities through knowledge distillation has therefore become standard practice, with companies like Nvidia ( Nemotron 3 Puzzle 75B ) or Multiverse Computing ( Hypernova 60B ) recently releasing high-quality compressed models. The distillation step is what decides most of the final quality, but it's also usually the most expensive part of the pipeline. Keeping both the teacher and student loaded, and producing a probability distribution over the entire vocabulary for every token, requires enormous amounts of VRAM, typically feasible only "
+        }
+      ]
+    },
+    {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
         }
       ]
     },
