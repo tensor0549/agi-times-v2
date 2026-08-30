@@ -7,8 +7,71 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-28T01:33:24.612Z",
+  "generatedAt": "2026-08-30T15:25:26.629Z",
   "items": [
+    {
+      "id": "item_4d3b17a749f42c957e92",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+      "publishedAt": "2026-08-28T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-30T15:25:03.038Z",
+      "updatedAt": "2026-08-28T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Open ASR Leaderboard Expands to Hindi and Indian English",
+        "zh-Hans": "开放ASR排行榜扩展至印地语和印度英语"
+      },
+      "summary": {
+        "en": "Voice Arena and Hugging Face partner to launch ASR evaluation for Hindi and Indian English, addressing demographic disparities in speech recognition systems.",
+        "zh-Hans": "Voice Arena与Hugging Face合作推出印地语和印度英语ASR评估，解决语音识别系统中的人口统计差异问题。"
+      },
+      "category": "research_science",
+      "tags": [
+        "speech recognition",
+        "evaluation",
+        "bias",
+        "global south"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 54,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "advances transferable speech recognition capabilities across diverse populations",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_4d3b17a749f42c957e926aa5",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-28T00:00:00.000Z",
+          "evidenceSnippet": "Design of the collection Dataset composition Speaker coverage Metadata fields Collection and quality control Regional variation Orthographic variation in Hindi Getting evaluated What comes next Voice Arena and Hugging Face partner to launch open ASR evaluation for Hindi and Indian English Benchmarks decide what gets built. A model that scores well on the Open ASR Leaderboard gets adopted and iterated on, while capabilities the leaderboard does not measure tend not to improve. Much of the recent work on the leaderboard has gone into making the evaluation metrics more trustworthy: All of that makes one number (WER) harder to game. It is still one number. A long line of work has shown that ASR error rates are not evenly distributed across the people using them. Racial disparities in automated speech recognition found commercial systems roughly twice as bad for Black speakers as for white speakers, and Quantifying Bias in Automatic Speech Recognition found further differences by gender, age and accent. None of that is visible on a leaderboard, and not because the leaderboard is hiding it. The test sets it runs on record what was said and almost nothing about who said it."
+        }
+      ]
+    },
     {
       "id": "item_d4c4006fefc6f64193fc",
       "schemaVersion": "1.0.0",
@@ -196,131 +259,7 @@
       ]
     },
     {
-      "id": "item_d21068479952e4038366",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "publishedAt": "2026-08-25T15:14:14.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-25T19:17:02.222Z",
-      "updatedAt": "2026-08-25T15:14:14.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Granite 4.2: Multi-Stage RL Training for Reasoning Models",
-        "zh-Hans": "Granite 4.2：推理模型的多阶段强化学习训练"
-      },
-      "summary": {
-        "en": "IBM releases Granite 4.2 reasoning model family (3B, 8B, 30B) with multi-stage RL pipeline including foundational skills and agentic training phases.",
-        "zh-Hans": "IBM发布Granite 4.2推理模型系列（3B、8B、30B），采用包含基础技能和智能体训练阶段的多阶段强化学习管道。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "reasoning",
-        "reinforcement-learning",
-        "multi-stage-training"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 96,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "Multi-stage RL training methodology for reasoning capabilities with transferable agentic training approach",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_d21068479952e40383665c65",
-          "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-25T15:14:14.000Z",
-          "evidenceSnippet": "Overview Model Architecture Pre-Training SFT: Data Preparation & Quality Control Data Quality Control SFT Training Details Phase 2 SFT for the 30B Model Reinforcement Learning: A Multi-Stage, Multi-Environment Pipeline Training Methodology The Staged Curriculum Reward Signals Foundational RL: Build the Skills Agentic RL: Learning to Act (8B / 30B) Alignment: RLHF How the Three Sizes Differ Agentic AI Infrastructure for Scalable RL Results Quantization FP8 FP4 GGUF Infrastructure Hardware Software Stack Getting Started (Transformers) Installation Basic Inference (Thinking Mode) Non-Thinking Mode Low-Effort Thinking Tool Calling Basic Tool Calling Multi-Turn with Tool Response Multi-Turn Conversations History Thinking Truncation Parsing Thinking vs. Final Answer Using with Agentic Coding Harnesses OpenCode Pi OpenHands A technical walkthrough of how we built the Granite 4.2 reasoning model family. TL;DR: Granite 4.2 is our first family of dense, decoder-only reasoning LLMs, released in three sizes: 3B, 8B, and 30B . Each model is pre-trained from scratch on roughly 15T tokens with a five-phase strategy that extends the context window to 512K tokens, supervised fine-tuned on chain-of-"
-        }
-      ]
-    },
-    {
-      "id": "item_f1c76f23a788b6884a28",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-      "publishedAt": "2026-08-25T11:39:24.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-25T19:17:02.222Z",
-      "updatedAt": "2026-08-25T11:39:24.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Quantization-Aware Healing for 4-bit Model Recovery",
-        "zh-Hans": "量化感知修复技术用于4位模型恢复"
-      },
-      "summary": {
-        "en": "New approach recovers compressed 4-bit models to outperform full-precision originals, addressing degradation in reasoning and code generation.",
-        "zh-Hans": "新方法恢复压缩的4位模型，使其性能超越全精度原始模型，解决推理和代码生成能力退化问题。"
-      },
-      "category": "compute_infrastructure",
-      "tags": [
-        "quantization",
-        "model-compression",
-        "efficiency"
-      ],
-      "topics": [
-        "compute_infrastructure"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 93,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "Enables efficient deployment of reasoning models while maintaining capabilities critical for AGI applications",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_f1c76f23a788b6884a2877cd",
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-08-25T11:39:24.000Z",
-          "evidenceSnippet": "Why the usual healing methods fall short here Our approach Results QAH against QAT, head to head What this changes in practice Making a large language model smaller almost always comes with a cost. The now-standard recipe for efficient deployment is to compress the architecture first, cutting the parameter count by removing layers, heads, or neurons, and then quantize the remaining weights down to 4 bits to shrink memory and compute further. Both steps save a lot, but together they systematically degrade the capabilities people actually care about: reasoning, mathematical problem-solving, and code generation. Because of this, serious deployment pipelines add a recovery step, usually called healing, before the model goes into production. Recent open-weight releases such as gpt-oss , NVIDIA's Nemotron family, and our own Hypernova 60B all rely on some version of this compress-then-heal approach. Our latest paper, Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs , asks a question that the field has mostly left open: once a model has already been through structural compression, not just quantization, how well does that recovery step actually work, an"
-        }
-      ]
-    },
-    {
-      "id": "item_a21cee4b91bda9f5c68b",
+      "id": "item_8b2ec93c5681d86c13bb",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_google-research",
@@ -328,31 +267,32 @@
         "id": "src_google-research",
         "name": "Google Research"
       },
-      "canonicalUrl": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
-      "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
-      "publishedAt": "2026-08-21T17:02:24.000Z",
+      "canonicalUrl": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+      "publishedAt": "2026-08-26T18:42:43.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-21T23:59:34.409Z",
-      "updatedAt": "2026-08-21T17:02:24.000Z",
+      "discoveredAt": "2026-08-30T15:25:03.038Z",
+      "updatedAt": "2026-08-26T18:42:43.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Google Research introduces multi-agent biomarker discovery framework",
-        "zh-Hans": "谷歌研究推出多智能体生物标志物发现框架"
+        "en": "GlucoFM: Self-Supervised Foundation Model for Glucose Monitoring",
+        "zh-Hans": "GlucoFM：用于血糖监测的自监督基础模型"
       },
       "summary": {
-        "en": "Framework automates biomarker discovery from wearable sensor data through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning.",
-        "zh-Hans": "该框架通过迭代假设生成、统计分析和文献推理自动化可穿戴传感器数据的生物标志物发现。"
+        "en": "Google Research introduces GlucoFM, a lightweight foundation model that processes continuous glucose data through separate streams for trends and deviations.",
+        "zh-Hans": "谷歌研究推出GlucoFM，这是一个轻量级基础模型，通过独立流处理连续血糖数据的趋势和偏差。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
-        "multi-agent",
-        "biomarker",
-        "scientific-workflow"
+        "foundation model",
+        "healthcare",
+        "glucose monitoring",
+        "self-supervised"
       ],
       "topics": [
-        "agents_automation"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
@@ -364,25 +304,88 @@
       "sourceReliability": 0.94,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 94,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "Multi-agent system with iterative reasoning capabilities for scientific discovery workflows",
+      "freshnessScore": 41,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "demonstrates transferable self-supervised learning approach for physiological time series",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_a21cee4b91bda9f5c68b571d",
-          "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+          "id": "candidate_8b2ec93c5681d86c13bb2036",
+          "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
           "publisher": "Google Research",
-          "publishedAt": "2026-08-21T17:02:24.000Z",
-          "evidenceSnippet": "We introduce the Biomarker Discovery Framework, a multi-agent system that supports the discovery of biomarker candidates from wearable sensor data through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning. Wearable devices capture continuous physiological signals at population scale. These streams, ranging from heart rate dynamics to sleep patterns, can reveal early physiological changes before symptoms appear. The bottleneck is no longer data collection, but turning these signals into reliable, clinically meaningful biomarkers. Existing language model-based agent systems automate parts of the scientific workflow, but can often break down on physiological time-series data. These systems optimize for predictive performance while overlooking statistical validity, leading to spurious correlations, leakage, and brittle features."
+          "publishedAt": "2026-08-26T18:42:43.000Z",
+          "evidenceSnippet": "Ahmed A. Metwally, Staff Research Scientist, and Zechen Li, Student Researcher, Google Research GlucoFM is a lightweight, self-supervised CGM foundation model that models slower glucose trends and short-term deviations in separate streams, producing transferable representations and setting new performance standards across diverse metabolic prediction tasks, including diabetes risk assessment, insulin resistance, beta-cell dysfunction, and post-prandial glycemic response. Consumer wearables use motion and physiological sensors to estimate activity and sleep, but these signals provide only an indirect view of glucose regulation. Continuous glucose monitors (CGM) complement these measurements by tracking interstitial glucose every few minutes through a small sensor inserted under the skin, capturing fasting, overnight, and post-meal patterns. Yet making sense of these traces remains challenging, especially when high-quality clinical labels that help interpret them are sparse and costly to obtain."
         }
       ]
     },
     {
-      "id": "item_1a7704a62ecc3f65b10f",
+      "id": "item_17177c100c9150295f9a",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/train-multi-vector-encoder",
+      "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-30T15:25:03.038Z",
+      "updatedAt": "2026-08-26T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Sentence Transformers v6.0 Introduces Multi-Vector Training",
+        "zh-Hans": "Sentence Transformers v6.0引入多向量训练"
+      },
+      "summary": {
+        "en": "Hugging Face releases training capabilities for ColBERT-style multi-vector encoders, enabling fine-tuning for retrieval augmented generation applications.",
+        "zh-Hans": "Hugging Face发布ColBERT风格多向量编码器的训练功能，支持检索增强生成应用的微调。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "embedding models",
+        "retrieval",
+        "colbert",
+        "sentence transformers"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 34,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances transferable retrieval capabilities essential for knowledge-grounded AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_17177c100c9150295f9a783a",
+          "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-26T00:00:00.000Z",
+          "evidenceSnippet": "Table of Contents What are Multi-Vector models? Why Finetune? Training Components Model Finetuning an existing multi-vector model Building one from a base transformer Which starting point should you pick? Dataset Data on the Hugging Face Hub Local Data Dataset Format Loss Function Training Arguments Evaluator Trainer Callbacks Multi-Dataset Training Evaluation Optimizing the index Acknowledgements Additional Resources Training Examples Documentation Sentence Transformers is a Python library for using and training embedding and reranker models for a wide range of applications, such as retrieval augmented generation, semantic search, semantic textual similarity, and more. Its v6.0 update introduces a fourth model type: MultiVectorEncoder , for ColBERT-style late interaction retrieval, alongside a complete training approach for it. In this blogpost, I'll show you how to use it to finetune a multi-vector model that outperforms general-purpose retrievers on your data. This method can also train strong new multi-vector models from scratch. Everything below runs on pip install -U \"sentence-transformers[train]\" . Finetuning multi-vector models involves several components: the model itself,"
+        }
+      ]
+    },
+    {
+      "id": "item_287b43296ed988c826b3",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_microsoft-research",
@@ -390,36 +393,35 @@
         "id": "src_microsoft-research",
         "name": "Microsoft Research"
       },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
+      "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
+      "publishedAt": "2026-08-20T16:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T16:00:00.000Z",
+      "discoveredAt": "2026-08-30T15:25:03.038Z",
+      "updatedAt": "2026-08-20T16:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
-        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
+        "en": "Microsoft Research Releases Skala 1.1 for Predictive DFT",
+        "zh-Hans": "微软研究院发布Skala 1.1用于预测性DFT"
       },
       "summary": {
-        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
-        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
+        "en": "Updated deep-learning exchange-correlation functional provides greater accuracy and expanded accessibility across computational chemistry ecosystem.",
+        "zh-Hans": "更新的深度学习交换相关泛函在计算化学生态系统中提供更高精度和更广泛的可访问性。"
       },
-      "category": "models_capabilities",
+      "category": "research_science",
       "tags": [
-        "spatial reasoning",
-        "vision language models",
-        "benchmark",
-        "topology"
+        "density functional theory",
+        "computational chemistry",
+        "deep learning"
       ],
       "topics": [
-        "models_capabilities"
+        "research_science"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "author": "Sebastian Ehlert, Stefano Battaglia, Thijs Vogels, Jan Hermann, Jens Wehner, Giulia Luise, Klaas Giesbertz, Chin-Wei Huang, Aaron Kaplan, Kate Milton, Stephanie Marisa Lanius, Derk Kooi, P. Bern&aacute;t Szab&oacute;, Gregor Simm, Rianne van den Berg, Paola Gori Giorgi",
       "org": "Microsoft Research",
       "independenceKey": "publisher:microsoft research",
       "image": null,
@@ -427,20 +429,119 @@
       "sourceReliability": 0.92,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
+      "freshnessScore": 10,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "advances transferable deep learning methods for scientific computation",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
-          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "id": "candidate_287b43296ed988c826b3e582",
+          "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
           "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-12T16:00:00.000Z",
-          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
+          "publishedAt": "2026-08-20T16:00:00.000Z",
+          "evidenceSnippet": "Skala 1.1, the updated deep-learning exchange-correlation functional from Microsoft Research, provides greater accuracy, expanded accessibility across the computational chemistry ecosystem, and a living benchmark to track computational performance. The post Broadening access to Skala creates a faster path to predictive DFT appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
         }
       ]
     },
@@ -566,67 +667,6 @@
           "publisher": "Anthropic",
           "publishedAt": "2026-08-07T00:00:00Z",
           "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
-        }
-      ],
-      "mediaType": "article"
-    },
-    {
-      "id": "release_mistral_shieldstral_20260804",
-      "sourceId": "src_mistral-ai",
-      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
-      "publishedAt": "2026-08-04T00:00:00Z",
-      "title": {
-        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
-        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
-      },
-      "summary": {
-        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
-        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "open-weights",
-        "multimodal",
-        "moderation"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "products_developer_ecosystem"
-      ],
-      "entities": [
-        "Mistral AI",
-        "Shieldstral"
-      ],
-      "author": "Mistral",
-      "org": "Mistral AI",
-      "importanceScore": 83,
-      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://mistral.ai/news/shieldstral/",
-      "source": {
-        "id": "src_mistral-ai",
-        "name": "Mistral AI"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-04T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 21,
-      "importance": 83,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_mistral_shieldstral_20260804",
-          "url": "https://mistral.ai/news/shieldstral/",
-          "publisher": "Mistral AI",
-          "publishedAt": "2026-08-04T00:00:00Z",
-          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
         }
       ],
       "mediaType": "article"
@@ -882,6 +922,130 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-26T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.23569v1 Announce Type: new Abstract: State-of-the-art Natural Language to SQL (NL2SQL) models report execution accuracy exceeding 89 percent on established benchmarks such as Spider and BIRD. However, these benchmarks rely on simplified academic schemas and open-source SQL dialects that do not reflect the complexity of enterprise database environments. We introduce ESQ-Bench, an Oracle-first NL2SQL benchmark with systematic complexity tiers and silent-divergence evaluation across three enterprise schema complexity tiers. We constructed and released six populated schemas (465 tables, 164,682 rows, zero empty tables) with identical seed data on Oracle, PostgreSQL, MySQL, and SQL Server, a four-metric evaluation harness (EM, EX, SR, SD), and 550 gold-validated question-query pairs (Tier-1: 95; Tier-2: 228; Tier-3: 227). Schema-linked prompting with GPT-4o shows monotonic execution-match degradation across tiers: 79.8, 60.3, and 57.2 percent EX on executed queries (June 2026), versus 75.6, 80.4, and 95.8 percent on an earlier 142-question pilot slice. EM stays below 7 percent tier-wide; operational silent-divergence reaches 73 to 99 percent among EX-passing queries. Failure "
+        }
+      ]
+    },
+    {
+      "id": "item_d21068479952e4038366",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "publishedAt": "2026-08-25T15:14:14.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-25T19:17:02.222Z",
+      "updatedAt": "2026-08-25T15:14:14.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Granite 4.2: Multi-Stage RL Training for Reasoning Models",
+        "zh-Hans": "Granite 4.2：推理模型的多阶段强化学习训练"
+      },
+      "summary": {
+        "en": "IBM releases Granite 4.2 reasoning model family (3B, 8B, 30B) with multi-stage RL pipeline including foundational skills and agentic training phases.",
+        "zh-Hans": "IBM发布Granite 4.2推理模型系列（3B、8B、30B），采用包含基础技能和智能体训练阶段的多阶段强化学习管道。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "reasoning",
+        "reinforcement-learning",
+        "multi-stage-training"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 96,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "Multi-stage RL training methodology for reasoning capabilities with transferable agentic training approach",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d21068479952e40383665c65",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-25T15:14:14.000Z",
+          "evidenceSnippet": "Overview Model Architecture Pre-Training SFT: Data Preparation & Quality Control Data Quality Control SFT Training Details Phase 2 SFT for the 30B Model Reinforcement Learning: A Multi-Stage, Multi-Environment Pipeline Training Methodology The Staged Curriculum Reward Signals Foundational RL: Build the Skills Agentic RL: Learning to Act (8B / 30B) Alignment: RLHF How the Three Sizes Differ Agentic AI Infrastructure for Scalable RL Results Quantization FP8 FP4 GGUF Infrastructure Hardware Software Stack Getting Started (Transformers) Installation Basic Inference (Thinking Mode) Non-Thinking Mode Low-Effort Thinking Tool Calling Basic Tool Calling Multi-Turn with Tool Response Multi-Turn Conversations History Thinking Truncation Parsing Thinking vs. Final Answer Using with Agentic Coding Harnesses OpenCode Pi OpenHands A technical walkthrough of how we built the Granite 4.2 reasoning model family. TL;DR: Granite 4.2 is our first family of dense, decoder-only reasoning LLMs, released in three sizes: 3B, 8B, and 30B . Each model is pre-trained from scratch on roughly 15T tokens with a five-phase strategy that extends the context window to 512K tokens, supervised fine-tuned on chain-of-"
+        }
+      ]
+    },
+    {
+      "id": "item_f1c76f23a788b6884a28",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "publishedAt": "2026-08-25T11:39:24.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-25T19:17:02.222Z",
+      "updatedAt": "2026-08-25T11:39:24.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Quantization-Aware Healing for 4-bit Model Recovery",
+        "zh-Hans": "量化感知修复技术用于4位模型恢复"
+      },
+      "summary": {
+        "en": "New approach recovers compressed 4-bit models to outperform full-precision originals, addressing degradation in reasoning and code generation.",
+        "zh-Hans": "新方法恢复压缩的4位模型，使其性能超越全精度原始模型，解决推理和代码生成能力退化问题。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "quantization",
+        "model-compression",
+        "efficiency"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Enables efficient deployment of reasoning models while maintaining capabilities critical for AGI applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f1c76f23a788b6884a2877cd",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-08-25T11:39:24.000Z",
+          "evidenceSnippet": "Why the usual healing methods fall short here Our approach Results QAH against QAT, head to head What this changes in practice Making a large language model smaller almost always comes with a cost. The now-standard recipe for efficient deployment is to compress the architecture first, cutting the parameter count by removing layers, heads, or neurons, and then quantize the remaining weights down to 4 bits to shrink memory and compute further. Both steps save a lot, but together they systematically degrade the capabilities people actually care about: reasoning, mathematical problem-solving, and code generation. Because of this, serious deployment pipelines add a recovery step, usually called healing, before the model goes into production. Recent open-weight releases such as gpt-oss , NVIDIA's Nemotron family, and our own Hypernova 60B all rely on some version of this compress-then-heal approach. Our latest paper, Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs , asks a question that the field has mostly left open: once a model has already been through structural compression, not just quantization, how well does that recovery step actually work, an"
         }
       ]
     },
@@ -1826,6 +1990,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-24T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.20398v1 Announce Type: new Abstract: Generative AI (genAI) systems produce cultural artefacts at scale, but they also reflect embedded cultural values through their design. Once identified, these values become open to deliberate reshaping. This position paper examines the maximalist values of current generative AI through an environmental humanities tradition and proposes design principles in which environmental sustainability serves as the core value instead. The principles are developed under the umbrella of Slow AI, a term that already circulates across several distinct research and practice programs. Five design principles are articulated (restraint, sufficiency, selectivity over retention, material visibility, and friction as affordance), each of them illustrated against the current design of widely deployed systems. Each principle operates at two levels: a design implementation, and an interpretive layer at which users and developers are prompted toward reflective engagement with the system. Together these principles extend human agency by restoring decisions that frictionless defaults have silently removed and do so by building interpretive reflection into design."
+        }
+      ]
+    },
+    {
+      "id": "item_a21cee4b91bda9f5c68b",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+      "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+      "publishedAt": "2026-08-21T17:02:24.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-21T23:59:34.409Z",
+      "updatedAt": "2026-08-21T17:02:24.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research introduces multi-agent biomarker discovery framework",
+        "zh-Hans": "谷歌研究推出多智能体生物标志物发现框架"
+      },
+      "summary": {
+        "en": "Framework automates biomarker discovery from wearable sensor data through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning.",
+        "zh-Hans": "该框架通过迭代假设生成、统计分析和文献推理自动化可穿戴传感器数据的生物标志物发现。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multi-agent",
+        "biomarker",
+        "scientific-workflow"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 94,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Multi-agent system with iterative reasoning capabilities for scientific discovery workflows",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a21cee4b91bda9f5c68b571d",
+          "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-21T17:02:24.000Z",
+          "evidenceSnippet": "We introduce the Biomarker Discovery Framework, a multi-agent system that supports the discovery of biomarker candidates from wearable sensor data through iterative hypothesis generation, statistical analysis, and literature-grounded reasoning. Wearable devices capture continuous physiological signals at population scale. These streams, ranging from heart rate dynamics to sleep patterns, can reveal early physiological changes before symptoms appear. The bottleneck is no longer data collection, but turning these signals into reliable, clinically meaningful biomarkers. Existing language model-based agent systems automate parts of the scientific workflow, but can often break down on physiological time-series data. These systems optimize for predictive performance while overlooking statistical validity, leading to spurious correlations, leakage, and brittle features."
         }
       ]
     },
@@ -3711,6 +3937,69 @@
       ]
     },
     {
+      "id": "item_1a7704a62ecc3f65b10f",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
+        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
+      },
+      "summary": {
+        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
+        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "spatial reasoning",
+        "vision language models",
+        "benchmark",
+        "topology"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
+          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-12T16:00:00.000Z",
+          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
       "id": "item_2c563947428818b93259",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -4522,105 +4811,6 @@
       ]
     },
     {
-      "id": "statement_meta_personal_superintelligence_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
-      },
-      "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
-      ],
-      "topics": [
-        "agents_automation",
-        "safety_security_alignment"
-      ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
-      "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
-        }
-      ]
-    },
-    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -4981,6 +5171,67 @@
           "publisher": "Google",
           "publishedAt": "2026-08-07T00:00:00Z",
           "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "release_mistral_shieldstral_20260804",
+      "sourceId": "src_mistral-ai",
+      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
+      "publishedAt": "2026-08-04T00:00:00Z",
+      "title": {
+        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
+        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
+      },
+      "summary": {
+        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
+        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "open-weights",
+        "multimodal",
+        "moderation"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "products_developer_ecosystem"
+      ],
+      "entities": [
+        "Mistral AI",
+        "Shieldstral"
+      ],
+      "author": "Mistral",
+      "org": "Mistral AI",
+      "importanceScore": 83,
+      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "source": {
+        "id": "src_mistral-ai",
+        "name": "Mistral AI"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-04T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 21,
+      "importance": 83,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_mistral_shieldstral_20260804",
+          "url": "https://mistral.ai/news/shieldstral/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-04T00:00:00Z",
+          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
         }
       ],
       "mediaType": "article"

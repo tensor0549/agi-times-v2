@@ -7,8 +7,143 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-08-28T01:33:24.612Z",
+  "generatedAt": "2026-08-30T15:25:26.629Z",
   "items": [
+    {
+      "id": "insight_foundation-models-specialized-domains_20260830",
+      "slug": "foundation-models-specialized-domains",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "Foundation Models Expand Into Specialized Scientific and Multilingual Domains",
+        "zh-Hans": "基础模型扩展至专业科学和多语言领域"
+      },
+      "dek": {
+        "en": "Recent releases demonstrate foundation model architectures adapting to physiological monitoring, multilingual speech recognition, and scientific computation.",
+        "zh-Hans": "最新发布展示了基础模型架构适应生理监测、多语言语音识别和科学计算的能力。"
+      },
+      "body": {
+        "en": "Foundation models are expanding beyond general language tasks into specialized domains requiring domain-specific architectures and training approaches. Google Research's GlucoFM demonstrates a lightweight, self-supervised approach that models glucose trends and short-term deviations in separate streams, producing transferable representations for metabolic prediction tasks [^candidate_8b2ec93c5681d86c13bb2036]. Meanwhile, Hugging Face's Sentence Transformers v6.0 introduces MultiVectorEncoder capabilities for ColBERT-style late interaction retrieval, enabling fine-tuning that outperforms general-purpose retrievers on specific datasets [^candidate_17177c100c9150295f9a783a]. The expansion of evaluation frameworks also reflects growing attention to underserved populations, as Voice Arena and Hugging Face partner to launch ASR evaluation for Hindi and Indian English, addressing known demographic disparities in speech recognition systems [^candidate_4d3b17a749f42c957e926aa5]. In computational science, Microsoft Research's Skala 1.1 provides an updated deep-learning exchange-correlation functional for density functional theory with greater accuracy and expanded accessibility [^candidate_287b43296ed988c826b3e582]. These developments illustrate complementary approaches to domain specialization—architectural separation of data streams, task-specific fine-tuning methods, inclusive evaluation frameworks, and scientific computation integration.",
+        "zh-Hans": "基础模型正从通用语言任务扩展到需要特定领域架构和训练方法的专业领域。谷歌研究的GlucoFM展示了一种轻量级自监督方法，在独立流中建模血糖趋势和短期偏差，为代谢预测任务产生可转移的表示 [^candidate_8b2ec93c5681d86c13bb2036]。同时，Hugging Face的Sentence Transformers v6.0引入了ColBERT风格后期交互检索的MultiVectorEncoder功能，支持在特定数据集上超越通用检索器的微调 [^candidate_17177c100c9150295f9a783a]。评估框架的扩展也反映了对服务不足人群的日益关注，Voice Arena和Hugging Face合作推出印地语和印度英语ASR评估，解决语音识别系统中已知的人口统计差异 [^candidate_4d3b17a749f42c957e926aa5]。在计算科学领域，微软研究院的Skala 1.1为密度泛函理论提供了更新的深度学习交换相关泛函，具有更高精度和更广泛的可访问性 [^candidate_287b43296ed988c826b3e582]。这些发展说明了领域专业化的互补方法——数据流的架构分离、任务特定的微调方法、包容性评估框架和科学计算集成。"
+      },
+      "publishedAt": "2026-08-30T15:25:26.629Z",
+      "updatedAt": "2026-08-30T15:25:26.629Z",
+      "topics": [
+        "models_capabilities",
+        "research_science"
+      ],
+      "claims": [
+        {
+          "id": "glucofm_architecture",
+          "type": "fact",
+          "text": {
+            "en": "GlucoFM uses a lightweight, self-supervised approach that models glucose trends and short-term deviations in separate streams",
+            "zh-Hans": "GlucoFM使用轻量级自监督方法，在独立流中建模血糖趋势和短期偏差"
+          },
+          "citationIds": [
+            "candidate_8b2ec93c5681d86c13bb2036"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "sentence_transformers_multivector",
+          "type": "fact",
+          "text": {
+            "en": "Sentence Transformers v6.0 introduces MultiVectorEncoder for ColBERT-style late interaction retrieval with fine-tuning capabilities",
+            "zh-Hans": "Sentence Transformers v6.0引入了ColBERT风格后期交互检索的MultiVectorEncoder及微调功能"
+          },
+          "citationIds": [
+            "candidate_17177c100c9150295f9a783a"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "asr_hindi_expansion",
+          "type": "fact",
+          "text": {
+            "en": "Voice Arena and Hugging Face partner to launch ASR evaluation for Hindi and Indian English to address demographic disparities",
+            "zh-Hans": "Voice Arena和Hugging Face合作推出印地语和印度英语ASR评估以解决人口统计差异"
+          },
+          "citationIds": [
+            "candidate_4d3b17a749f42c957e926aa5"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "skala_dft_update",
+          "type": "fact",
+          "text": {
+            "en": "Skala 1.1 provides an updated deep-learning exchange-correlation functional for density functional theory with greater accuracy",
+            "zh-Hans": "Skala 1.1为密度泛函理论提供了更新的深度学习交换相关泛函，具有更高精度"
+          },
+          "citationIds": [
+            "candidate_287b43296ed988c826b3e582"
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_8b2ec93c5681d86c13bb2036",
+          "feedItemId": "item_8b2ec93c5681d86c13bb",
+          "title": "GlucoFM: Foundation model for continuous glucose monitoring",
+          "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+          "publisher": "Google Research",
+          "author": "Google Research",
+          "independenceKey": "publisher:google research",
+          "publishedAt": "2026-08-26T18:42:43.000Z",
+          "evidenceSnippet": "Ahmed A. Metwally, Staff Research Scientist, and Zechen Li, Student Researcher, Google Research GlucoFM is a lightweight, self-supervised CGM foundation model that models slower glucose trends and short-term deviations in separate streams, producing transferable representations and setting new performance standards across diverse metabolic prediction tasks, including diabetes risk assessment, insulin resistance, beta-cell dysfunction, and post-prandial glycemic response. Consumer wearables use motion and physiological sensors to estimate activity and sleep, but these signals provide only an indirect view of glucose regulation. Continuous glucose monitors (CGM) complement these measurements by tracking interstitial glucose every few minutes through a small sensor inserted under the skin, capturing fasting, overnight, and post-meal patterns. Yet making sense of these traces remains challenging, especially when high-quality clinical labels that help interpret them are sparse and costly to obtain."
+        },
+        {
+          "id": "candidate_17177c100c9150295f9a783a",
+          "feedItemId": "item_17177c100c9150295f9a",
+          "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+          "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-08-26T00:00:00.000Z",
+          "evidenceSnippet": "Table of Contents What are Multi-Vector models? Why Finetune? Training Components Model Finetuning an existing multi-vector model Building one from a base transformer Which starting point should you pick? Dataset Data on the Hugging Face Hub Local Data Dataset Format Loss Function Training Arguments Evaluator Trainer Callbacks Multi-Dataset Training Evaluation Optimizing the index Acknowledgements Additional Resources Training Examples Documentation Sentence Transformers is a Python library for using and training embedding and reranker models for a wide range of applications, such as retrieval augmented generation, semantic search, semantic textual similarity, and more. Its v6.0 update introduces a fourth model type: MultiVectorEncoder , for ColBERT-style late interaction retrieval, alongside a complete training approach for it. In this blogpost, I'll show you how to use it to finetune a multi-vector model that outperforms general-purpose retrievers on your data. This method can also train strong new multi-vector models from scratch. Everything below runs on pip install -U \"sentence-transformers[train]\" . Finetuning multi-vector models involves several components: the model itself,"
+        },
+        {
+          "id": "candidate_4d3b17a749f42c957e926aa5",
+          "feedItemId": "item_4d3b17a749f42c957e92",
+          "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-08-28T00:00:00.000Z",
+          "evidenceSnippet": "Design of the collection Dataset composition Speaker coverage Metadata fields Collection and quality control Regional variation Orthographic variation in Hindi Getting evaluated What comes next Voice Arena and Hugging Face partner to launch open ASR evaluation for Hindi and Indian English Benchmarks decide what gets built. A model that scores well on the Open ASR Leaderboard gets adopted and iterated on, while capabilities the leaderboard does not measure tend not to improve. Much of the recent work on the leaderboard has gone into making the evaluation metrics more trustworthy: All of that makes one number (WER) harder to game. It is still one number. A long line of work has shown that ASR error rates are not evenly distributed across the people using them. Racial disparities in automated speech recognition found commercial systems roughly twice as bad for Black speakers as for white speakers, and Quantifying Bias in Automatic Speech Recognition found further differences by gender, age and accent. None of that is visible on a leaderboard, and not because the leaderboard is hiding it. The test sets it runs on record what was said and almost nothing about who said it."
+        },
+        {
+          "id": "candidate_287b43296ed988c826b3e582",
+          "feedItemId": "item_287b43296ed988c826b3",
+          "title": "Broadening access to Skala creates a faster path to predictive DFT",
+          "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
+          "publisher": "Microsoft Research",
+          "author": "Sebastian Ehlert, Stefano Battaglia, Thijs Vogels, Jan Hermann, Jens Wehner, Giulia Luise, Klaas Giesbertz, Chin-Wei Huang, Aaron Kaplan, Kate Milton, Stephanie Marisa Lanius, Derk Kooi, P. Bern&aacute;t Szab&oacute;, Gregor Simm, Rianne van den Berg, Paola Gori Giorgi",
+          "independenceKey": "publisher:microsoft research",
+          "publishedAt": "2026-08-20T16:00:00.000Z",
+          "evidenceSnippet": "Skala 1.1, the updated deep-learning exchange-correlation functional from Microsoft Research, provides greater accuracy, expanded accessibility across the computational chemistry ecosystem, and a living benchmark to track computational performance. The post Broadening access to Skala creates a faster path to predictive DFT appeared first on Microsoft Research ."
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-08-30T15:25:26.629Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-08-30T15:25:03.038Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_specialized-agent-architectures-emerge_20260828",
       "slug": "specialized-agent-architectures-emerge",
