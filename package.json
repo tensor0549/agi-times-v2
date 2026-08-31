@@ -34,11 +34,11 @@
     "content:sync:remote": "node scripts/sync-content.mjs --remote"
   },
   "dependencies": {
-    "@cloudflare/vite-plugin": "1.51.1",
-    "@posthog/react": "1.10.3",
-    "hono": "4.13.1",
-    "lucide-react": "1.31.0",
-    "posthog-js": "1.415.1",
+    "@cloudflare/vite-plugin": "1.54.1",
+    "@posthog/react": "1.10.5",
+    "hono": "4.13.5",
+    "lucide-react": "1.35.0",
+    "posthog-js": "1.422.2",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
