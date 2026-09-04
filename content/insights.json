@@ -7,8 +7,96 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-03T19:54:36.903Z",
+  "generatedAt": "2026-09-04T16:27:00.768Z",
   "items": [
+    {
+      "id": "insight_agent-governance-memory-systems_20260904",
+      "slug": "agent-governance-memory-systems",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "Agent Governance and Memory: Engineering Reliable AI Systems",
+        "zh-Hans": "智能体治理与记忆：工程化可靠AI系统"
+      },
+      "dek": {
+        "en": "Recent research reveals complementary approaches to agent reliability through policy governance and persistent memory systems.",
+        "zh-Hans": "最新研究揭示通过策略治理和持久记忆系统实现智能体可靠性的互补方法。"
+      },
+      "body": {
+        "en": "Recent developments illustrate distinct engineering approaches to agent reliability and continuity. Research on enterprise analytics demonstrates that policy-governed systems can achieve perfect compliance where runtime planning fails [^candidate_eab80780abedb3a0adcbd43c]. Meanwhile, memory systems address agent continuity by preserving reasoning across sessions through structured trace indexing [^candidate_cdd1118267ee925c63286ac8]. These complementary mechanisms—governance constraints and persistent memory—represent specific solutions to fundamental agent engineering challenges rather than indicating broader field momentum.",
+        "zh-Hans": "最新发展展示了智能体可靠性和连续性的不同工程方法。企业分析研究表明，策略治理系统在运行时规划失败的地方能实现完美合规 [^candidate_eab80780abedb3a0adcbd43c]。同时，记忆系统通过结构化轨迹索引保持跨会话推理来解决智能体连续性问题 [^candidate_cdd1118267ee925c63286ac8]。这些互补机制——治理约束和持久记忆——代表了基础智能体工程挑战的具体解决方案，而非表明更广泛的领域发展趋势。"
+      },
+      "publishedAt": "2026-09-04T16:27:00.768Z",
+      "updatedAt": "2026-09-04T16:27:00.768Z",
+      "topics": [
+        "agents_automation"
+      ],
+      "claims": [
+        {
+          "id": "policy_governance_reliability",
+          "type": "fact",
+          "text": {
+            "en": "Policy-executed analytics achieved perfect compliance (110 of 110) while three 8B models with runtime planning matched zero of 330 episodes across test datasets",
+            "zh-Hans": "策略执行分析实现完美合规（110/110），而三个具有运行时规划的8B模型在测试数据集上330个回合中匹配为零"
+          },
+          "citationIds": [
+            "candidate_eab80780abedb3a0adcbd43c"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "agent_memory_continuity",
+          "type": "fact",
+          "text": {
+            "en": "Coding agents lose reasoning from previous sessions, with each new agent starting from zero, while memory systems preserve traces through indexing, retrieval, ranking, and provenance",
+            "zh-Hans": "编程智能体失去先前会话的推理，每个新智能体从零开始，而记忆系统通过索引、检索、排序和溯源保持轨迹"
+          },
+          "citationIds": [
+            "candidate_cdd1118267ee925c63286ac8"
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_eab80780abedb3a0adcbd43c",
+          "feedItemId": "item_eab80780abedb3a0adcb",
+          "title": "MasterControl Seventeen Every Time",
+          "url": "https://arxiv.org/abs/2609.03209",
+          "publisher": "arXiv cs.AI",
+          "author": "MasterControl AI Lab",
+          "independenceKey": "academic:mastercontrol ai lab",
+          "publishedAt": "2026-09-04T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
+        },
+        {
+          "id": "candidate_cdd1118267ee925c63286ac8",
+          "feedItemId": "item_cdd1118267ee925c6328",
+          "title": "Give Your Coding Agents a Memory You Own",
+          "url": "https://huggingface.co/blog/funes",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-03T00:00:00.000Z",
+          "evidenceSnippet": "Add memory to the agent you already use A memory is a dataset, not a service Ask first, wire later Switching agents without losing the thread The cheapest way out of a long session Stop starting from zero Built on open source I work across several machines, and I switch coding agents depending on the task. Every one of them meets my projects as a stranger. The reasoning from “last Tuesday” disappears when the session ends. Each new agent, on each new host, starts from zero. Earlier this year, Software Forgets: Agent Traces Are the Memory made the case that coding agents already produce the record we keep losing. As they search a codebase, try approaches, hit errors, read documentation, and change direction, they leave behind a dense account of not just what changed, but why . While the diagnosis is correct, traces are only potential memory. The session logs of an agent are still just an archive. You cannot grep your way to “why did we move off the streaming parser?” across ten thousand turns. For an agent to use those traces while it works, they need indexing, retrieval, ranking, and exact provenance."
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-09-04T16:27:00.768Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-09-04T16:26:32.840Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_multimodal-architectures-evaluation-challenges_20260903",
       "slug": "multimodal-architectures-evaluation-challenges",

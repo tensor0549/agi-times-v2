@@ -7,8 +7,70 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-03T19:54:36.903Z",
+  "generatedAt": "2026-09-04T16:27:00.768Z",
   "items": [
+    {
+      "id": "item_eab80780abedb3a0adcb",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.03209",
+      "url": "https://arxiv.org/abs/2609.03209",
+      "publishedAt": "2026-09-04T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-04T16:26:32.840Z",
+      "updatedAt": "2026-09-04T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Policy-Governed Enterprise Analytics vs Runtime Agent Planning",
+        "zh-Hans": "策略治理的企业分析与运行时智能体规划对比"
+      },
+      "summary": {
+        "en": "Research comparing policy-executed analytics with runtime agent planning found that while three 8B models failed to match answer-and-evidence contracts across test datasets, policy-executed systems achieved perfect compliance in controlled enterprise settings.",
+        "zh-Hans": "研究对比策略执行分析与运行时智能体规划，发现三个8B模型在测试数据集上无法满足答案-证据契约，而策略执行系统在受控企业环境中实现完美合规。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "enterprise analytics",
+        "policy execution",
+        "language models"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "MasterControl AI Lab",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:mastercontrol ai lab",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "demonstrates systematic approach to agent reliability and governance in enterprise applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_eab80780abedb3a0adcbd43c",
+          "url": "https://arxiv.org/abs/2609.03209",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-04T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
+        }
+      ]
+    },
     {
       "id": "item_fffbcba03b0b217e4893",
       "schemaVersion": "1.0.0",
@@ -136,70 +198,7 @@
       ]
     },
     {
-      "id": "item_accfcc158cb08f7d8f8f",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.01685",
-      "url": "https://arxiv.org/abs/2609.01685",
-      "publishedAt": "2026-09-03T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-03T19:54:05.413Z",
-      "updatedAt": "2026-09-03T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Framework for meta-ethical questions in AI systems with moral reasoning capabilities",
-        "zh-Hans": "具备道德推理能力的AI系统元伦理问题框架"
-      },
-      "summary": {
-        "en": "Academic paper proposes conditional framework for meta-ethical questions that would arise if AI systems develop integrated capacities for moral reasoning, moral intentionality, and moral reflection, distinguishing AI's own ethics from human-imposed principles.",
-        "zh-Hans": "学术论文提出条件性框架，用于处理AI系统发展出道德推理、道德意向性和道德反思综合能力时可能出现的元伦理问题，区分AI自身伦理与人类强加原则。"
-      },
-      "category": "agi_forecasting_debate",
-      "tags": [
-        "meta-ethics",
-        "ai ethics",
-        "moral reasoning",
-        "philosophy"
-      ],
-      "topics": [
-        "agi_forecasting_debate"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Shang Lu",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:shang lu",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 86,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "addresses fundamental questions about moral reasoning in advanced AI systems",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_accfcc158cb08f7d8f8f5d81",
-          "url": "https://arxiv.org/abs/2609.01685",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-03T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.01685v1 Announce Type: new Abstract: With the development of artificial intelligence (AI), the landscape of meta-ethics, which has largely centred on human ethics, faces pressures that may significantly reconfigure it. In particular, if future AI systems were to exhibit sufficiently integrated capacities for moral reasoning, moral intentionality, and moral reflection, novel meta-ethical questions would arise concerning what I call \"AI's own ethics\", as distinct from ethical principles merely imposed on AI by human designers. This paper offers a conditional and methodological framework for identifying the questions that would emerge if such AI systems were to arise. On that basis, the paper distinguishes four domains of meta-ethical inquiry in the era of AI: questions about the nature of human ethics from the human perspective; questions about the nature of AI's own ethics from the human perspective; questions about the nature of human ethics from the AI perspective; and questions about the nature of AI's own ethics from the AI perspective. The paper then considers how some existing mainstream meta-ethical theories (such as cognitivism and non-cognitivism, error theory an"
-        }
-      ]
-    },
-    {
-      "id": "item_a139f80b159295ada71d",
+      "id": "item_cdd1118267ee925c6328",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -207,32 +206,31 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
-      "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "canonicalUrl": "https://huggingface.co/blog/funes",
+      "url": "https://huggingface.co/blog/funes",
       "publishedAt": "2026-09-03T00:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-03T19:54:05.413Z",
+      "discoveredAt": "2026-09-04T16:26:32.840Z",
       "updatedAt": "2026-09-03T00:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "GRPO fine-tuning improves structured output compliance in 350M parameter model",
-        "zh-Hans": "GRPO微调提升3.5亿参数模型的结构化输出合规性"
+        "en": "Persistent Memory Systems for Coding Agents Using Session Traces",
+        "zh-Hans": "基于会话轨迹的编程智能体持久记忆系统"
       },
       "summary": {
-        "en": "Hugging Face demonstrates Group Relative Policy Optimization fine-tuning of LFM2.5-350M model, improving IFStruct benchmark performance from 22.6% to 29.7% in just 100 training steps for better structured output compliance.",
-        "zh-Hans": "Hugging Face展示对LFM2.5-350M模型的群体相对策略优化微调，仅用100个训练步骤将IFStruct基准性能从22.6%提升至29.7%，改善结构化输出合规性。"
+        "en": "Hugging Face introduces memory systems for coding agents that preserve reasoning across sessions by indexing agent traces with retrieval, ranking, and provenance tracking, addressing the problem of agents starting from zero each session.",
+        "zh-Hans": "Hugging Face推出编程智能体记忆系统，通过索引、检索、排序和溯源跟踪智能体轨迹，保持跨会话推理，解决智能体每次从零开始的问题。"
       },
-      "category": "models_capabilities",
+      "category": "agents_automation",
       "tags": [
-        "fine-tuning",
-        "structured output",
-        "grpo",
-        "optimization"
+        "coding agents",
+        "memory systems",
+        "agent traces"
       ],
       "topics": [
-        "models_capabilities"
+        "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
@@ -244,20 +242,20 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 83,
+      "freshnessScore": 68,
       "importanceScore": 70,
       "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "efficient optimization method for improving model output structure compliance",
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental agent continuity through structured memory and trace utilization",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_a139f80b159295ada71d0ef0",
-          "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+          "id": "candidate_cdd1118267ee925c63286ac8",
+          "url": "https://huggingface.co/blog/funes",
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-03T00:00:00.000Z",
-          "evidenceSnippet": "Prerequisites IFStruct Evaluation on LFM2.5-350M (Base model) GRPO Fine-tuning with TRL on Structured Outputs Training data Model and LoRA Reward functions Training Merging and saving the model IFStruct Evaluation on GRPO Tuned LFM2.5-350M Conclusion This guide is a fully public, inexpensive recipe for making a small model substantially better at structured-output compliance. We fine-tune LFM2.5-350M with Group Relative Policy Optimization (GRPO) using the TRL library and evaluate it on the IFStruct benchmark . The full run takes around 500 samples and 100 training steps, small enough for a free-tier Colab or Kaggle GPU, and is available on GitHub . The results show that even a light fine-tuning procedure improves performance from 22.6% to 29.7% on the IFStruct benchmark. Structured output is one of the most common real-world tasks for LLMs, yet most benchmarks fold it into broader reasoning or extraction scores rather than measuring it on its own. Whether a model reliably returns valid, parseable output in the requested format and shape — schema compliance — is often what decides whether it can be wired into a downstream system at all. Note that the training pipeline described her"
+          "evidenceSnippet": "Add memory to the agent you already use A memory is a dataset, not a service Ask first, wire later Switching agents without losing the thread The cheapest way out of a long session Stop starting from zero Built on open source I work across several machines, and I switch coding agents depending on the task. Every one of them meets my projects as a stranger. The reasoning from “last Tuesday” disappears when the session ends. Each new agent, on each new host, starts from zero. Earlier this year, Software Forgets: Agent Traces Are the Memory made the case that coding agents already produce the record we keep losing. As they search a codebase, try approaches, hit errors, read documentation, and change direction, they leave behind a dense account of not just what changed, but why . While the diagnosis is correct, traces are only potential memory. The session logs of an agent are still just an archive. You cannot grep your way to “why did we move off the streaming parser?” across ten thousand turns. For an agent to use those traces while it works, they need indexing, retrieval, ranking, and exact provenance."
         }
       ]
     },
@@ -449,101 +447,65 @@
       ]
     },
     {
-      "id": "statement_meta_personal_superintelligence_20260810",
+      "id": "item_1a7704a62ecc3f65b10f",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_meta-ai",
+      "sourceId": "src_microsoft-research",
       "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
       },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T16:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
+        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
       },
       "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
+        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
+        "spatial reasoning",
+        "vision language models",
+        "benchmark",
+        "topology"
       ],
       "topics": [
-        "agents_automation",
-        "safety_security_alignment"
+        "models_capabilities"
       ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
+      "entities": [],
       "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
+      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
+          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-12T16:00:00.000Z",
+          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
         }
       ]
     },
@@ -612,69 +574,190 @@
       ]
     },
     {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
       "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
       },
       "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
       },
-      "category": "agents_automation",
+      "category": "safety_security_alignment",
       "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
+        "model-safety",
+        "biology",
+        "classifiers"
       ],
       "topics": [
-        "agents_automation",
+        "safety_security_alignment",
         "models_capabilities"
       ],
       "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
       ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
       "verification": "verified_first_party",
       "featured": false,
       "citations": [
         {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "item_accfcc158cb08f7d8f8f",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.01685",
+      "url": "https://arxiv.org/abs/2609.01685",
+      "publishedAt": "2026-09-03T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-03T19:54:05.413Z",
+      "updatedAt": "2026-09-03T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Framework for meta-ethical questions in AI systems with moral reasoning capabilities",
+        "zh-Hans": "具备道德推理能力的AI系统元伦理问题框架"
+      },
+      "summary": {
+        "en": "Academic paper proposes conditional framework for meta-ethical questions that would arise if AI systems develop integrated capacities for moral reasoning, moral intentionality, and moral reflection, distinguishing AI's own ethics from human-imposed principles.",
+        "zh-Hans": "学术论文提出条件性框架，用于处理AI系统发展出道德推理、道德意向性和道德反思综合能力时可能出现的元伦理问题，区分AI自身伦理与人类强加原则。"
+      },
+      "category": "agi_forecasting_debate",
+      "tags": [
+        "meta-ethics",
+        "ai ethics",
+        "moral reasoning",
+        "philosophy"
+      ],
+      "topics": [
+        "agi_forecasting_debate"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Shang Lu",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:shang lu",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental questions about moral reasoning in advanced AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_accfcc158cb08f7d8f8f5d81",
+          "url": "https://arxiv.org/abs/2609.01685",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-03T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.01685v1 Announce Type: new Abstract: With the development of artificial intelligence (AI), the landscape of meta-ethics, which has largely centred on human ethics, faces pressures that may significantly reconfigure it. In particular, if future AI systems were to exhibit sufficiently integrated capacities for moral reasoning, moral intentionality, and moral reflection, novel meta-ethical questions would arise concerning what I call \"AI's own ethics\", as distinct from ethical principles merely imposed on AI by human designers. This paper offers a conditional and methodological framework for identifying the questions that would emerge if such AI systems were to arise. On that basis, the paper distinguishes four domains of meta-ethical inquiry in the era of AI: questions about the nature of human ethics from the human perspective; questions about the nature of AI's own ethics from the human perspective; questions about the nature of human ethics from the AI perspective; and questions about the nature of AI's own ethics from the AI perspective. The paper then considers how some existing mainstream meta-ethical theories (such as cognitivism and non-cognitivism, error theory an"
+        }
+      ]
+    },
+    {
+      "id": "item_a139f80b159295ada71d",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-03T19:54:05.413Z",
+      "updatedAt": "2026-09-03T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "GRPO fine-tuning improves structured output compliance in 350M parameter model",
+        "zh-Hans": "GRPO微调提升3.5亿参数模型的结构化输出合规性"
+      },
+      "summary": {
+        "en": "Hugging Face demonstrates Group Relative Policy Optimization fine-tuning of LFM2.5-350M model, improving IFStruct benchmark performance from 22.6% to 29.7% in just 100 training steps for better structured output compliance.",
+        "zh-Hans": "Hugging Face展示对LFM2.5-350M模型的群体相对策略优化微调，仅用100个训练步骤将IFStruct基准性能从22.6%提升至29.7%，改善结构化输出合规性。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "fine-tuning",
+        "structured output",
+        "grpo",
+        "optimization"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 83,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "efficient optimization method for improving model output structure compliance",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a139f80b159295ada71d0ef0",
+          "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-03T00:00:00.000Z",
+          "evidenceSnippet": "Prerequisites IFStruct Evaluation on LFM2.5-350M (Base model) GRPO Fine-tuning with TRL on Structured Outputs Training data Model and LoRA Reward functions Training Merging and saving the model IFStruct Evaluation on GRPO Tuned LFM2.5-350M Conclusion This guide is a fully public, inexpensive recipe for making a small model substantially better at structured-output compliance. We fine-tune LFM2.5-350M with Group Relative Policy Optimization (GRPO) using the TRL library and evaluate it on the IFStruct benchmark . The full run takes around 500 samples and 100 training steps, small enough for a free-tier Colab or Kaggle GPU, and is available on GitHub . The results show that even a light fine-tuning procedure improves performance from 22.6% to 29.7% on the IFStruct benchmark. Structured output is one of the most common real-world tasks for LLMs, yet most benchmarks fold it into broader reasoning or extraction scores rather than measuring it on its own. Whether a model reliably returns valid, parseable output in the requested format and shape — schema compliance — is often what decides whether it can be wired into a downstream system at all. Note that the training pipeline described her"
         }
       ]
     },
@@ -4194,69 +4277,6 @@
       ]
     },
     {
-      "id": "item_1a7704a62ecc3f65b10f",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "publishedAt": "2026-08-12T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
-        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
-      },
-      "summary": {
-        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
-        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "spatial reasoning",
-        "vision language models",
-        "benchmark",
-        "topology"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
-          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-12T16:00:00.000Z",
-          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
       "id": "item_2c563947428818b93259",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -5068,6 +5088,105 @@
       ]
     },
     {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+        }
+      ]
+    },
+    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -5176,6 +5295,73 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
+        }
+      ]
+    },
+    {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
       ]
     },
@@ -5303,68 +5489,6 @@
           "evidenceSnippet": "What makes a good tutor? How TutorMoments works Preliminary results Limitations and next steps 📄 Tech Report: https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf | 📊 Data: https://huggingface.co/datasets/allenai/tutormoments-preview | 💻 Code: https://github.com/allenai/tutormoments Today we're introducing a preview of TutorMoments , a framework to measure whether cutting-edge LLMs can balance one of the hardest trade-offs in education: when to step in and help a student and when to hold back and let the student do more of the work. TutorMoments is a replay-based evaluation built off real one-on-one math tutoring sessions. Experienced math teachers go through transcripts collected from a U.S. tutoring program and flag the moments where a tutor had to choose between making a problem easier to get started on and pushing the student to do more of the reasoning themselves. TutorMoments then takes the transcript up to that decision point, hands it to a language model, and has the model take over as the tutor in a simulated session – with the student played by another language model – to see what the LLM tutor does."
         }
       ]
-    },
-    {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
-        }
-      ],
-      "mediaType": "article"
     },
     {
       "id": "release_google_gemini_omni_builders_20260807",
