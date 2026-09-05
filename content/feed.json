@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-05T13:53:58.174Z",
+  "generatedAt": "2026-09-05T16:51:37.990Z",
   "items": [
     {
       "id": "item_eab80780abedb3a0adcb",
@@ -921,6 +921,133 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-02T13:49:14.000Z",
           "evidenceSnippet": "Time series intelligence meets real-time context with zero configuration, built-in governance and efficiency A complementary portfolio of time series foundation models, matched to the decision you are making Where the value lands: forecasting, anomaly detection, optimization and semantic intelligence Forecasting and planning Anomaly detection Production optimization Semantic intelligence Become an innovation partner and get started with time series models on Confluent Foundation models transformed how enterprises unlock value from unstructured data. The bigger prize is streaming data, where the mission-critical decisions live: how much to order, which payment to stop, when the pump will fail, how hard to run the line, what happened the last time it looked like this. IBM and Confluent are now bringing that unlock stream-native, and the models are live in Early Access on Confluent Cloud, running where the data already moves, with Confluent Platform next. Until now, those decisions have run on outdated economics: one bespoke model at a time and months of expert work on each. So teams model the few hundred series where the money is and cover the rest with safety margins, extra inventor"
+        }
+      ]
+    },
+    {
+      "id": "item_ad90e6779ea3045b3b9f",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/allenai/benchmirt",
+      "url": "https://huggingface.co/blog/allenai/benchmirt",
+      "publishedAt": "2026-09-01T21:39:07.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-05T16:51:28.446Z",
+      "updatedAt": "2026-09-01T21:39:07.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "BenchMIRT: What are LLM benchmarks actually measuring?",
+        "zh-Hans": "BenchMIRT：大语言模型基准测试实际在测量什么？"
+      },
+      "summary": {
+        "en": "Hugging Face introduces BenchMIRT, a new method for auditing LLM benchmarks at the individual prompt level to reveal what abilities benchmarks actually measure beyond their stated goals.",
+        "zh-Hans": "Hugging Face推出BenchMIRT，这是一种在单个提示级别审计大语言模型基准测试的新方法，揭示基准测试除了既定目标外实际测量的能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "llm",
+        "benchmarking",
+        "evaluation",
+        "methodology"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 42,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation methodology for language models by analyzing individual prompts to understand what capabilities benchmarks actually measure",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_ad90e6779ea3045b3b9ff330",
+          "url": "https://huggingface.co/blog/allenai/benchmirt",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-01T21:39:07.000Z",
+          "evidenceSnippet": "Finding the signals inside a benchmark What BenchMIRT reveals about existing benchmarks Doing more with fewer questions What this could mean for LLM evaluation 📄 Tech Report: http://allenai.org/papers/benchmirt | 📊 Data: https://huggingface.co/collections/allenai/benchmirt | 💻 Code: https://github.com/allenai/BenchMIRT Today we’re introducing BenchMIRT, a new method for auditing LLM benchmarks at the level of individual prompts—the questions and tasks a model is scored on. A benchmark is usually designed to measure a particular ability, such as safety, general reasoning, or instruction following. But the individual tasks inside it may depend on more than that stated goal. Take BBQ, a benchmark designed to test whether models rely on social stereotypes. One question asks about a grandson and grandfather trying to book an Uber. It probes age bias, but also requires the model to track who’s who and reason from the evidence provided rather than assumptions."
+        }
+      ]
+    },
+    {
+      "id": "item_91dad0068ec24e5bcea7",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/webgpu-kernels",
+      "url": "https://huggingface.co/blog/webgpu-kernels",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-05T16:51:28.446Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+        "zh-Hans": "推出@huggingface/kernels：200多个用于本地AI的WebGPU内核"
+      },
+      "summary": {
+        "en": "Hugging Face releases a library of 207 optimized WebGPU kernels for browser-based AI inference, providing GPU operations for machine learning architectures with versioned packages on the Hub.",
+        "zh-Hans": "Hugging Face发布了包含207个优化WebGPU内核的库，用于基于浏览器的AI推理，为机器学习架构提供GPU操作，并在Hub上提供版本化包。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "webgpu",
+        "kernels",
+        "browser",
+        "inference",
+        "optimization"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 34,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "provides foundational compute infrastructure for efficient browser-based AI model inference across diverse architectures",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_91dad0068ec24e5bcea7adc0",
+          "url": "https://huggingface.co/blog/webgpu-kernels",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-01T00:00:00.000Z",
+          "evidenceSnippet": "TL;DR Why start with kernels? A kernel repository, not just a shader Loading a kernel from the Hub How fast are the kernels? From one device to a fleet Building a shared foundation for WebAI One of our biggest goals on the WebAI team at Hugging Face is to make browser inference as fast and as user-friendly as possible. Getting there is a multi-layer effort: models need browser-friendly representations, runtimes need to build efficient execution plans, and the individual GPU operations at the bottom of the stack need to make the most of many different devices and browser implementations. Today, we are releasing the first layer of that effort: @huggingface/kernels , a minimal library for loading and running optimized WebGPU kernels from the Hugging Face Hub, together with an initial collection of 207 kernels at huggingface.co/webgpu-kernels . The collection covers operations used across a wide variety of machine learning architectures and workloads. More importantly, each kernel is published as a complete, versioned package: its interface, shader templates, correctness cases, benchmark cases, and usage instructions all live together on the Hub."
         }
       ]
     },
