@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-04T16:27:00.768Z",
+  "generatedAt": "2026-09-05T13:53:58.174Z",
   "items": [
     {
       "id": "item_eab80780abedb3a0adcb",
@@ -68,6 +68,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-04T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
+        }
+      ]
+    },
+    {
+      "id": "item_8b075fa7888e4c355356",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+      "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+      "publishedAt": "2026-09-03T16:00:03.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-05T13:53:37.347Z",
+      "updatedAt": "2026-09-03T16:00:03.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Complete male fruit fly brain mapped using AI",
+        "zh-Hans": "利用AI绘制完整雄性果蝇大脑图谱"
+      },
+      "summary": {
+        "en": "Google Research partnered with HHMI Janelia to create the largest brain map to date, mapping the complete male fruit fly brain and central nervous system using AI to understand neural mechanics.",
+        "zh-Hans": "谷歌研究与HHMI Janelia合作，利用AI技术绘制了迄今最大的大脑图谱，完整映射雄性果蝇大脑和中枢神经系统以理解神经机制。"
+      },
+      "category": "research_science",
+      "tags": [
+        "connectomics",
+        "brain mapping",
+        "ai",
+        "neuroscience"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 64,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "AI-driven brain mapping advances understanding of neural computation and information processing",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8b075fa7888e4c355356e3c3",
+          "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-03T16:00:03.000Z",
+          "evidenceSnippet": "Michał Januszewski and Viren Jain, Research Scientists, Google Research We partnered with HHMI Janelia and collaborators to publish a complete map of the male fruit fly’s brain and central nervous system, creating the largest brain map to date. Together with ongoing research on other species, such as fish and mice, these wiring maps begin to reveal the mechanics of how all brains work. The common fruit fly, Drosophila melanogaster , has been central to scientific research leading to multiple Nobel Prizes . Fruit flies have been a fundamental model organism in genetics , thanks to their stereotypical behavior and short life cycle, and promise to do the same for neuroscience. While the thoughts of this fruit-loving insect might seem far removed from human cognition, the brains of vastly different species share many similarities. Because mapping the 86 billion neurons in a human brain is not yet possible, scientists are using AI to map the brains of smaller organisms, like fruit flies. This will help us decipher how animal nervous systems perceive the world, react to stimuli, and how damaged neural pathways might one day be repaired."
         }
       ]
     },
@@ -198,7 +261,7 @@
       ]
     },
     {
-      "id": "item_cdd1118267ee925c6328",
+      "id": "item_b5500bc6503561c622e2",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -206,31 +269,32 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/funes",
-      "url": "https://huggingface.co/blog/funes",
+      "canonicalUrl": "https://huggingface.co/blog/train-to-paint-with-code",
+      "url": "https://huggingface.co/blog/train-to-paint-with-code",
       "publishedAt": "2026-09-03T00:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-04T16:26:32.840Z",
+      "discoveredAt": "2026-09-05T13:53:37.347Z",
       "updatedAt": "2026-09-03T00:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Persistent Memory Systems for Coding Agents Using Session Traces",
-        "zh-Hans": "基于会话轨迹的编程智能体持久记忆系统"
+        "en": "Language model trained to paint watercolors through code generation",
+        "zh-Hans": "通过代码生成训练语言模型绘制水彩画"
       },
       "summary": {
-        "en": "Hugging Face introduces memory systems for coding agents that preserve reasoning across sessions by indexing agent traces with retrieval, ranking, and provenance tracking, addressing the problem of agents starting from zero each session.",
-        "zh-Hans": "Hugging Face推出编程智能体记忆系统，通过索引、检索、排序和溯源跟踪智能体轨迹，保持跨会话推理，解决智能体每次从零开始的问题。"
+        "en": "Reproduction of viral project training language models to create watercolor paintings by generating JavaScript code using reinforcement learning and p5.brush library.",
+        "zh-Hans": "复现病毒式传播项目，使用强化学习和p5.brush库训练语言模型通过生成JavaScript代码创作水彩画。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
-        "coding agents",
-        "memory systems",
-        "agent traces"
+        "reinforcement learning",
+        "code generation",
+        "creative ai",
+        "multimodal"
       ],
       "topics": [
-        "agents_automation"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
@@ -242,20 +306,20 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 68,
+      "freshnessScore": 55,
       "importanceScore": 70,
       "importance": 70,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "addresses fundamental agent continuity through structured memory and trace utilization",
+      "agiRelevanceScore": 80,
+      "relevanceReason": "Demonstrates cross-modal capability combining code generation with visual creativity through RL",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_cdd1118267ee925c63286ac8",
-          "url": "https://huggingface.co/blog/funes",
+          "id": "candidate_b5500bc6503561c622e234c7",
+          "url": "https://huggingface.co/blog/train-to-paint-with-code",
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-03T00:00:00.000Z",
-          "evidenceSnippet": "Add memory to the agent you already use A memory is a dataset, not a service Ask first, wire later Switching agents without losing the thread The cheapest way out of a long session Stop starting from zero Built on open source I work across several machines, and I switch coding agents depending on the task. Every one of them meets my projects as a stranger. The reasoning from “last Tuesday” disappears when the session ends. Each new agent, on each new host, starts from zero. Earlier this year, Software Forgets: Agent Traces Are the Memory made the case that coding agents already produce the record we keep losing. As they search a codebase, try approaches, hit errors, read documentation, and change direction, they leave behind a dense account of not just what changed, but why . While the diagnosis is correct, traces are only potential memory. The session logs of an agent are still just an archive. You cannot grep your way to “why did we move off the streaming parser?” across ten thousand turns. For an agent to use those traces while it works, they need indexing, retrieval, ranking, and exact provenance."
+          "evidenceSnippet": "Why people loved it RL over taste The RL environment you need to build The pool is the reward function Just one more yolo run What it actually learned Infra is hard What it costs What I would try next What I changed from the original Everything is published On 23 August, Surya Narreddi posted a beautiful video of watercolours painted by a language model. The model writes JavaScript through p5.brush , a library that \"adds natural drawing tools to p5.js\". The video went viral fast, over 1.5M views at the time of writing. The video came with a blog post explaining the training behind an earlier and narrower stage of the project, close-up flowers rather than the full compositions in the video, sadly without open artifacts yet. His site says a full technical report is coming, so ensure you follow him. The original idea is his, coming from the art and design side, where his skills are way beyond mine . My attempt is on the engineering side, reproducing the recipe in the open with every piece published."
         }
       ]
     },
@@ -318,69 +382,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-27T17:37:20.000Z",
           "evidenceSnippet": "Rama Pasumarthi, Staff Software Engineer, and Shravya Shetty, Distinguished Engineer, Google Research As part of Google Earth AI , we introduce the planetary prediction engine (PPE), an experimental research capability that autonomously executes the full geospatial modeling workflow — from data discovery to model training — achieving improvements across diverse prediction tasks in public health, food security, environmental risk, and socioeconomics. Addressing humanity's most pressing global challenges — from forecasting regional food security and environmental disaster risks to tracking real-time disease outbreaks and mapping socio-economic vulnerability — requires high-fidelity geospatial modeling. However, building these models is hindered by a fragmented data ecosystem that requires specialized teams to spend weeks on manual data curation, feature engineering, and specialized spatial validation. While existing AutoML and LLM-based agents effectively automate standard machine learning pipelines, they rely on pre-curated tabular data and lack the specialized capabilities needed to autonomously handle geospatial workflows. Consequently, planetary-scale analytics remains a signific"
-        }
-      ]
-    },
-    {
-      "id": "item_8b2ec93c5681d86c13bb",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
-      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
-      "publishedAt": "2026-08-26T18:42:43.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-30T15:25:03.038Z",
-      "updatedAt": "2026-08-26T18:42:43.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "GlucoFM: Self-Supervised Foundation Model for Glucose Monitoring",
-        "zh-Hans": "GlucoFM：用于血糖监测的自监督基础模型"
-      },
-      "summary": {
-        "en": "Google Research introduces GlucoFM, a lightweight foundation model that processes continuous glucose data through separate streams for trends and deviations.",
-        "zh-Hans": "谷歌研究推出GlucoFM，这是一个轻量级基础模型，通过独立流处理连续血糖数据的趋势和偏差。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "foundation model",
-        "healthcare",
-        "glucose monitoring",
-        "self-supervised"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 41,
-      "importanceScore": 80,
-      "importance": 80,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "demonstrates transferable self-supervised learning approach for physiological time series",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_8b2ec93c5681d86c13bb2036",
-          "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-26T18:42:43.000Z",
-          "evidenceSnippet": "Ahmed A. Metwally, Staff Research Scientist, and Zechen Li, Student Researcher, Google Research GlucoFM is a lightweight, self-supervised CGM foundation model that models slower glucose trends and short-term deviations in separate streams, producing transferable representations and setting new performance standards across diverse metabolic prediction tasks, including diabetes risk assessment, insulin resistance, beta-cell dysfunction, and post-prandial glycemic response. Consumer wearables use motion and physiological sensors to estimate activity and sleep, but these signals provide only an indirect view of glucose regulation. Continuous glucose monitors (CGM) complement these measurements by tracking interstitial glucose every few minutes through a small sensor inserted under the skin, capturing fasting, overnight, and post-meal patterns. Yet making sense of these traces remains challenging, especially when high-quality clinical labels that help interpret them are sparse and costly to obtain."
         }
       ]
     },
@@ -510,6 +511,105 @@
       ]
     },
     {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+        }
+      ]
+    },
+    {
       "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
       "schemaVersion": "1.0.0",
       "type": "release",
@@ -572,68 +672,6 @@
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
         }
       ]
-    },
-    {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
-        }
-      ],
-      "mediaType": "article"
     },
     {
       "id": "item_accfcc158cb08f7d8f8f",
@@ -699,6 +737,68 @@
       ]
     },
     {
+      "id": "item_cdd1118267ee925c6328",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/funes",
+      "url": "https://huggingface.co/blog/funes",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-04T16:26:32.840Z",
+      "updatedAt": "2026-09-03T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Persistent Memory Systems for Coding Agents Using Session Traces",
+        "zh-Hans": "基于会话轨迹的编程智能体持久记忆系统"
+      },
+      "summary": {
+        "en": "Hugging Face introduces memory systems for coding agents that preserve reasoning across sessions by indexing agent traces with retrieval, ranking, and provenance tracking, addressing the problem of agents starting from zero each session.",
+        "zh-Hans": "Hugging Face推出编程智能体记忆系统，通过索引、检索、排序和溯源跟踪智能体轨迹，保持跨会话推理，解决智能体每次从零开始的问题。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "coding agents",
+        "memory systems",
+        "agent traces"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 68,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses fundamental agent continuity through structured memory and trace utilization",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_cdd1118267ee925c63286ac8",
+          "url": "https://huggingface.co/blog/funes",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-03T00:00:00.000Z",
+          "evidenceSnippet": "Add memory to the agent you already use A memory is a dataset, not a service Ask first, wire later Switching agents without losing the thread The cheapest way out of a long session Stop starting from zero Built on open source I work across several machines, and I switch coding agents depending on the task. Every one of them meets my projects as a stranger. The reasoning from “last Tuesday” disappears when the session ends. Each new agent, on each new host, starts from zero. Earlier this year, Software Forgets: Agent Traces Are the Memory made the case that coding agents already produce the record we keep losing. As they search a codebase, try approaches, hit errors, read documentation, and change direction, they leave behind a dense account of not just what changed, but why . While the diagnosis is correct, traces are only potential memory. The session logs of an agent are still just an archive. You cannot grep your way to “why did we move off the streaming parser?” across ten thousand turns. For an agent to use those traces while it works, they need indexing, retrieval, ranking, and exact provenance."
+        }
+      ]
+    },
+    {
       "id": "item_a139f80b159295ada71d",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -758,6 +858,69 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-03T00:00:00.000Z",
           "evidenceSnippet": "Prerequisites IFStruct Evaluation on LFM2.5-350M (Base model) GRPO Fine-tuning with TRL on Structured Outputs Training data Model and LoRA Reward functions Training Merging and saving the model IFStruct Evaluation on GRPO Tuned LFM2.5-350M Conclusion This guide is a fully public, inexpensive recipe for making a small model substantially better at structured-output compliance. We fine-tune LFM2.5-350M with Group Relative Policy Optimization (GRPO) using the TRL library and evaluate it on the IFStruct benchmark . The full run takes around 500 samples and 100 training steps, small enough for a free-tier Colab or Kaggle GPU, and is available on GitHub . The results show that even a light fine-tuning procedure improves performance from 22.6% to 29.7% on the IFStruct benchmark. Structured output is one of the most common real-world tasks for LLMs, yet most benchmarks fold it into broader reasoning or extraction scores rather than measuring it on its own. Whether a model reliably returns valid, parseable output in the requested format and shape — schema compliance — is often what decides whether it can be wired into a downstream system at all. Note that the training pipeline described her"
+        }
+      ]
+    },
+    {
+      "id": "item_8c10bd00da2e478d246d",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+      "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+      "publishedAt": "2026-09-02T13:49:14.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-05T13:53:37.347Z",
+      "updatedAt": "2026-09-02T13:49:14.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "IBM time series foundation models deployed on Confluent platform",
+        "zh-Hans": "IBM时间序列基础模型部署在Confluent平台"
+      },
+      "summary": {
+        "en": "IBM and Confluent launch time series foundation models for real-time streaming data decisions, covering forecasting, anomaly detection, optimization and semantic intelligence applications.",
+        "zh-Hans": "IBM和Confluent推出用于实时流数据决策的时间序列基础模型，涵盖预测、异常检测、优化和语义智能应用。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "time series",
+        "foundation models",
+        "real-time",
+        "enterprise"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 50,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Foundation models for temporal reasoning and real-time decision making across multiple domains",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8c10bd00da2e478d246d8a5e",
+          "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-02T13:49:14.000Z",
+          "evidenceSnippet": "Time series intelligence meets real-time context with zero configuration, built-in governance and efficiency A complementary portfolio of time series foundation models, matched to the decision you are making Where the value lands: forecasting, anomaly detection, optimization and semantic intelligence Forecasting and planning Anomaly detection Production optimization Semantic intelligence Become an innovation partner and get started with time series models on Confluent Foundation models transformed how enterprises unlock value from unstructured data. The bigger prize is streaming data, where the mission-critical decisions live: how much to order, which payment to stop, when the pump will fail, how hard to run the line, what happened the last time it looked like this. IBM and Confluent are now bringing that unlock stream-native, and the models are live in Early Access on Confluent Cloud, running where the data already moves, with Confluent Platform next. Until now, those decisions have run on outdated economics: one bespoke model at a time and months of expert work on each. So teams model the few hundred series where the money is and cover the rest with safety margins, extra inventor"
         }
       ]
     },
@@ -945,6 +1108,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-27T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.23632v1 Announce Type: new Abstract: Process supervision has improved mathematical reasoning, where intermediate steps are naturally expressed as chains of thought. In code generation, however, process supervision remains underexplored because there is no standard notion of a step. Supervision can target lines, reasoning traces, or program states, making it unclear what to label and optimize. We propose STEP-KTODER, a framework for code preference optimization that defines steps as module-level functions in decomposed multi-function programs and assigns binary correctness labels via automatically generated unit tests. Our method provides a code-specific instantiation of stepwise KTO, combining function-level process supervision with outcome-level feedback on the full program. We evaluate on HumanEval(+), MBPP(+), BigCodeBench, and LiveCodeBench, showing that STEP-KTODER improves over outcome-only KTO and DPO. Further analysis shows that execution-based labels are essential: LLM-as-a-judge annotations systematically over-predict function failures, corrupt positive step labels, and degrade downstream preference optimization. Code is available at: https://github.com/inechne"
+        }
+      ]
+    },
+    {
+      "id": "item_8b2ec93c5681d86c13bb",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+      "publishedAt": "2026-08-26T18:42:43.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-30T15:25:03.038Z",
+      "updatedAt": "2026-08-26T18:42:43.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "GlucoFM: Self-Supervised Foundation Model for Glucose Monitoring",
+        "zh-Hans": "GlucoFM：用于血糖监测的自监督基础模型"
+      },
+      "summary": {
+        "en": "Google Research introduces GlucoFM, a lightweight foundation model that processes continuous glucose data through separate streams for trends and deviations.",
+        "zh-Hans": "谷歌研究推出GlucoFM，这是一个轻量级基础模型，通过独立流处理连续血糖数据的趋势和偏差。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "foundation model",
+        "healthcare",
+        "glucose monitoring",
+        "self-supervised"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 41,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "demonstrates transferable self-supervised learning approach for physiological time series",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8b2ec93c5681d86c13bb2036",
+          "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-26T18:42:43.000Z",
+          "evidenceSnippet": "Ahmed A. Metwally, Staff Research Scientist, and Zechen Li, Student Researcher, Google Research GlucoFM is a lightweight, self-supervised CGM foundation model that models slower glucose trends and short-term deviations in separate streams, producing transferable representations and setting new performance standards across diverse metabolic prediction tasks, including diabetes risk assessment, insulin resistance, beta-cell dysfunction, and post-prandial glycemic response. Consumer wearables use motion and physiological sensors to estimate activity and sleep, but these signals provide only an indirect view of glucose regulation. Continuous glucose monitors (CGM) complement these measurements by tracking interstitial glucose every few minutes through a small sensor inserted under the skin, capturing fasting, overnight, and post-meal patterns. Yet making sense of these traces remains challenging, especially when high-quality clinical labels that help interpret them are sparse and costly to obtain."
         }
       ]
     },
@@ -5088,105 +5314,6 @@
       ]
     },
     {
-      "id": "statement_meta_personal_superintelligence_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
-      },
-      "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
-      ],
-      "topics": [
-        "agents_automation",
-        "safety_security_alignment"
-      ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
-      "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
-        }
-      ]
-    },
-    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -5489,6 +5616,68 @@
           "evidenceSnippet": "What makes a good tutor? How TutorMoments works Preliminary results Limitations and next steps 📄 Tech Report: https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf | 📊 Data: https://huggingface.co/datasets/allenai/tutormoments-preview | 💻 Code: https://github.com/allenai/tutormoments Today we're introducing a preview of TutorMoments , a framework to measure whether cutting-edge LLMs can balance one of the hardest trade-offs in education: when to step in and help a student and when to hold back and let the student do more of the work. TutorMoments is a replay-based evaluation built off real one-on-one math tutoring sessions. Experienced math teachers go through transcripts collected from a U.S. tutoring program and flag the moments where a tutor had to choose between making a problem easier to get started on and pushing the student to do more of the reasoning themselves. TutorMoments then takes the transcript up to that decision point, hands it to a language model, and has the model take over as the tutor in a simulated session – with the student played by another language model – to see what the LLM tutor does."
         }
       ]
+    },
+    {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
     },
     {
       "id": "release_google_gemini_omni_builders_20260807",

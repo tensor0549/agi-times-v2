@@ -7,8 +7,133 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-04T16:27:00.768Z",
+  "generatedAt": "2026-09-05T13:53:58.174Z",
   "items": [
+    {
+      "id": "insight_ai-advances-neural-mapping-creative-coding-temporal-intelligence_20260905",
+      "slug": "ai-advances-neural-mapping-creative-coding-temporal-intelligence",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "AI Advances Span Neural Mapping, Creative Coding, and Temporal Intelligence",
+        "zh-Hans": "AI进展涵盖神经映射、创意编程和时间智能"
+      },
+      "dek": {
+        "en": "Recent developments showcase AI's expanding capabilities across biological understanding, creative expression, and real-time decision making.",
+        "zh-Hans": "最新发展展示了AI在生物理解、创意表达和实时决策方面不断扩展的能力。"
+      },
+      "body": {
+        "en": "Three recent developments illustrate AI's expanding reach across diverse domains of intelligence. Google Research's collaboration with HHMI Janelia produced the largest brain map to date by using AI to map the complete male fruit fly brain and central nervous system [^candidate_8b075fa7888e4c355356e3c3]. This connectomics milestone advances understanding of neural computation by revealing how brains process information and react to stimuli [^candidate_8b075fa7888e4c355356e3c3]. In creative applications, researchers successfully trained language models to generate watercolor paintings through code, using reinforcement learning to produce JavaScript that creates visual art via the p5.brush library [^candidate_b5500bc6503561c622e234c7]. Meanwhile, IBM and Confluent deployed time series foundation models for real-time streaming data analysis, enabling automated forecasting, anomaly detection, and optimization decisions [^candidate_8c10bd00da2e478d246d8a5e]. These projects demonstrate complementary advances in biological modeling, creative synthesis, and temporal reasoning capabilities.",
+        "zh-Hans": "三项最新发展展示了AI在不同智能领域的扩展。谷歌研究与HHMI Janelia合作，利用AI技术绘制完整雄性果蝇大脑和中枢神经系统，创造了迄今最大的大脑图谱 [^candidate_8b075fa7888e4c355356e3c3]。这一连接组学里程碑通过揭示大脑如何处理信息和对刺激做出反应，推进了对神经计算的理解 [^candidate_8b075fa7888e4c355356e3c3]。在创意应用方面，研究人员成功训练语言模型通过代码生成水彩画，使用强化学习产生通过p5.brush库创作视觉艺术的JavaScript代码 [^candidate_b5500bc6503561c622e234c7]。同时，IBM和Confluent部署了用于实时流数据分析的时间序列基础模型，实现自动预测、异常检测和优化决策 [^candidate_8c10bd00da2e478d246d8a5e]。这些项目展示了在生物建模、创意合成和时间推理能力方面的互补性进展。"
+      },
+      "publishedAt": "2026-09-05T13:53:58.174Z",
+      "updatedAt": "2026-09-05T13:53:58.174Z",
+      "topics": [
+        "research_science",
+        "models_capabilities",
+        "products_developer_ecosystem"
+      ],
+      "claims": [
+        {
+          "id": "brain_mapping_milestone",
+          "type": "fact",
+          "text": {
+            "en": "Google Research partnered with HHMI Janelia to create the largest brain map to date by mapping the complete male fruit fly brain and central nervous system using AI",
+            "zh-Hans": "谷歌研究与HHMI Janelia合作，利用AI技术绘制完整雄性果蝇大脑和中枢神经系统，创造了迄今最大的大脑图谱"
+          },
+          "citationIds": [
+            "candidate_8b075fa7888e4c355356e3c3"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "neural_computation_understanding",
+          "type": "inference",
+          "text": {
+            "en": "This connectomics work advances understanding of neural computation by revealing how brains process information and react to stimuli",
+            "zh-Hans": "这项连接组学工作通过揭示大脑如何处理信息和对刺激做出反应，推进了对神经计算的理解"
+          },
+          "citationIds": [
+            "candidate_8b075fa7888e4c355356e3c3"
+          ],
+          "confidence": 0.85
+        },
+        {
+          "id": "creative_code_generation",
+          "type": "fact",
+          "text": {
+            "en": "Language models were trained to generate watercolor paintings through code using reinforcement learning to produce JavaScript via the p5.brush library",
+            "zh-Hans": "语言模型被训练通过代码生成水彩画，使用强化学习通过p5.brush库产生JavaScript代码"
+          },
+          "citationIds": [
+            "candidate_b5500bc6503561c622e234c7"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "time_series_deployment",
+          "type": "fact",
+          "text": {
+            "en": "IBM and Confluent deployed time series foundation models for real-time streaming data analysis enabling forecasting, anomaly detection, and optimization decisions",
+            "zh-Hans": "IBM和Confluent部署了用于实时流数据分析的时间序列基础模型，实现预测、异常检测和优化决策"
+          },
+          "citationIds": [
+            "candidate_8c10bd00da2e478d246d8a5e"
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_8b075fa7888e4c355356e3c3",
+          "feedItemId": "item_8b075fa7888e4c355356",
+          "title": "A connectomics milestone: Mapping the complete male fruit fly brain",
+          "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+          "publisher": "Google Research",
+          "author": "Google Research",
+          "independenceKey": "publisher:google research",
+          "publishedAt": "2026-09-03T16:00:03.000Z",
+          "evidenceSnippet": "Michał Januszewski and Viren Jain, Research Scientists, Google Research We partnered with HHMI Janelia and collaborators to publish a complete map of the male fruit fly’s brain and central nervous system, creating the largest brain map to date. Together with ongoing research on other species, such as fish and mice, these wiring maps begin to reveal the mechanics of how all brains work. The common fruit fly, Drosophila melanogaster , has been central to scientific research leading to multiple Nobel Prizes . Fruit flies have been a fundamental model organism in genetics , thanks to their stereotypical behavior and short life cycle, and promise to do the same for neuroscience. While the thoughts of this fruit-loving insect might seem far removed from human cognition, the brains of vastly different species share many similarities. Because mapping the 86 billion neurons in a human brain is not yet possible, scientists are using AI to map the brains of smaller organisms, like fruit flies. This will help us decipher how animal nervous systems perceive the world, react to stimuli, and how damaged neural pathways might one day be repaired."
+        },
+        {
+          "id": "candidate_b5500bc6503561c622e234c7",
+          "feedItemId": "item_b5500bc6503561c622e2",
+          "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+          "url": "https://huggingface.co/blog/train-to-paint-with-code",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-03T00:00:00.000Z",
+          "evidenceSnippet": "Why people loved it RL over taste The RL environment you need to build The pool is the reward function Just one more yolo run What it actually learned Infra is hard What it costs What I would try next What I changed from the original Everything is published On 23 August, Surya Narreddi posted a beautiful video of watercolours painted by a language model. The model writes JavaScript through p5.brush , a library that \"adds natural drawing tools to p5.js\". The video went viral fast, over 1.5M views at the time of writing. The video came with a blog post explaining the training behind an earlier and narrower stage of the project, close-up flowers rather than the full compositions in the video, sadly without open artifacts yet. His site says a full technical report is coming, so ensure you follow him. The original idea is his, coming from the art and design side, where his skills are way beyond mine . My attempt is on the engineering side, reproducing the recipe in the open with every piece published."
+        },
+        {
+          "id": "candidate_8c10bd00da2e478d246d8a5e",
+          "feedItemId": "item_8c10bd00da2e478d246d",
+          "title": "Real-Time Intelligence with IBM Time Series Models on Confluent",
+          "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-02T13:49:14.000Z",
+          "evidenceSnippet": "Time series intelligence meets real-time context with zero configuration, built-in governance and efficiency A complementary portfolio of time series foundation models, matched to the decision you are making Where the value lands: forecasting, anomaly detection, optimization and semantic intelligence Forecasting and planning Anomaly detection Production optimization Semantic intelligence Become an innovation partner and get started with time series models on Confluent Foundation models transformed how enterprises unlock value from unstructured data. The bigger prize is streaming data, where the mission-critical decisions live: how much to order, which payment to stop, when the pump will fail, how hard to run the line, what happened the last time it looked like this. IBM and Confluent are now bringing that unlock stream-native, and the models are live in Early Access on Confluent Cloud, running where the data already moves, with Confluent Platform next. Until now, those decisions have run on outdated economics: one bespoke model at a time and months of expert work on each. So teams model the few hundred series where the money is and cover the rest with safety margins, extra inventor"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-09-05T13:53:58.174Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-09-05T13:53:37.347Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_agent-governance-memory-systems_20260904",
       "slug": "agent-governance-memory-systems",
