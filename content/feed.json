@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-05T16:51:37.990Z",
+  "generatedAt": "2026-09-06T04:46:53.044Z",
   "items": [
     {
       "id": "item_eab80780abedb3a0adcb",
@@ -68,6 +68,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-04T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
+        }
+      ]
+    },
+    {
+      "id": "item_8d723f6dece8e3e64bae",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+      "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+      "publishedAt": "2026-09-03T18:20:31.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-06T04:46:34.200Z",
+      "updatedAt": "2026-09-03T18:20:31.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Transfer learning shows mixed results for genomic prediction across populations",
+        "zh-Hans": "迁移学习在跨人群基因组预测中显示混合结果"
+      },
+      "summary": {
+        "en": "Google Research finds transfer learning from European genetic cohorts improves prediction in small underrepresented populations but degrades accuracy as target cohort sizes grow, particularly for population-specific genetic traits.",
+        "zh-Hans": "谷歌研究发现，从欧洲遗传队列的迁移学习可改善小型代表性不足人群的预测，但随着目标队列规模增长，准确性会下降，特别是对于人群特异性遗传特征。"
+      },
+      "category": "research_science",
+      "tags": [
+        "transfer learning",
+        "genomics",
+        "population genetics"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 57,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "demonstrates transferable machine learning methodology for cross-population genetic prediction with clear performance boundaries",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8d723f6dece8e3e64bae5486",
+          "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-03T18:20:31.000Z",
+          "evidenceSnippet": "Joey Poomarin Phloyphisut, Software Engineer, and Cory McLean, Senior Staff Software Engineer, Google Research We evaluate ways to improve cross-population genetic risk prediction and find that while transfer learning from European cohorts improves prediction in small underrepresented populations, it degrades accuracy once target cohort sample sizes grow, especially for traits with population-specific genetic architectures. Polygenic risk scores (PRSs) are used to predict disease risk from genetic variants. They usually incorporate the influence of hundreds to millions of genetic variants. However, their adoption for clinical decision making is currently low, partly because historical genome-wide association studies (GWASs) have overwhelmingly evaluated European cohorts , resulting in severe accuracy drops when applied to non-European populations. These accuracy differences arise because of cross-population differences in genetic architectures, population structure, and variant allele frequencies ."
         }
       ]
     },
@@ -324,64 +386,64 @@
       ]
     },
     {
-      "id": "item_d4c4006fefc6f64193fc",
+      "id": "item_b1b4ad0d4a36bbd2e7dc",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_google-research",
+      "sourceId": "src_microsoft-research",
       "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
       },
-      "canonicalUrl": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
-      "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
-      "publishedAt": "2026-08-27T17:37:20.000Z",
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "publishedAt": "2026-08-31T16:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-08-28T01:32:55.432Z",
-      "updatedAt": "2026-08-27T17:37:20.000Z",
+      "discoveredAt": "2026-09-06T04:46:34.200Z",
+      "updatedAt": "2026-08-31T16:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Google introduces planetary prediction engine for autonomous geospatial modeling",
-        "zh-Hans": "谷歌推出行星预测引擎实现自主地理空间建模"
+        "en": "Microsoft releases efficient pathology foundation models for population-scale studies",
+        "zh-Hans": "微软发布用于人群规模研究的高效病理学基础模型"
       },
       "summary": {
-        "en": "Google Research's planetary prediction engine autonomously executes full geospatial modeling workflows from data discovery to model training, addressing limitations of existing AutoML and LLM-based agents in handling specialized spatial data.",
-        "zh-Hans": "谷歌研究院的行星预测引擎可自主执行从数据发现到模型训练的完整地理空间建模工作流，解决现有AutoML和基于LLM的智能体在处理专业空间数据方面的局限性。"
+        "en": "GigaPath-Flash and GigaTIME-Flash reduce computational demands while maintaining performance in pathology analysis, enabling larger-scale medical studies and broader research exploration.",
+        "zh-Hans": "GigaPath-Flash和GigaTIME-Flash在保持病理学分析性能的同时降低计算需求，使更大规模的医学研究和更广泛的研究探索成为可能。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
-        "geospatial",
-        "automl",
-        "workflow automation"
+        "foundation models",
+        "pathology",
+        "computational efficiency"
       ],
       "topics": [
-        "agents_automation"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
+      "author": "Naoto Usuyama, Jeya Maria Jose Valanarasu, Tristan Naumann",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.94,
+      "sourceReliability": 0.92,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 93,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "autonomous workflow execution across specialized domain with data discovery and model training capabilities",
+      "freshnessScore": 28,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances efficient foundation model architectures with maintained performance for specialized domain applications",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_d4c4006fefc6f64193fc4bf3",
-          "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-08-27T17:37:20.000Z",
-          "evidenceSnippet": "Rama Pasumarthi, Staff Software Engineer, and Shravya Shetty, Distinguished Engineer, Google Research As part of Google Earth AI , we introduce the planetary prediction engine (PPE), an experimental research capability that autonomously executes the full geospatial modeling workflow — from data discovery to model training — achieving improvements across diverse prediction tasks in public health, food security, environmental risk, and socioeconomics. Addressing humanity's most pressing global challenges — from forecasting regional food security and environmental disaster risks to tracking real-time disease outbreaks and mapping socio-economic vulnerability — requires high-fidelity geospatial modeling. However, building these models is hindered by a fragmented data ecosystem that requires specialized teams to spend weeks on manual data curation, feature engineering, and specialized spatial validation. While existing AutoML and LLM-based agents effectively automate standard machine learning pipelines, they rely on pre-curated tabular data and lack the specialized capabilities needed to autonomously handle geospatial workflows. Consequently, planetary-scale analytics remains a signific"
+          "id": "candidate_b1b4ad0d4a36bbd2e7dc0477",
+          "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-31T16:00:00.000Z",
+          "evidenceSnippet": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash cut computational demands while maintaining strong performance, opening the door to larger studies and broader exploration. The post GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models appeared first on Microsoft Research ."
         }
       ]
     },
@@ -444,69 +506,6 @@
           "publisher": "Microsoft Research",
           "publishedAt": "2026-08-20T16:00:00.000Z",
           "evidenceSnippet": "Skala 1.1, the updated deep-learning exchange-correlation functional from Microsoft Research, provides greater accuracy, expanded accessibility across the computational chemistry ecosystem, and a living benchmark to track computational performance. The post Broadening access to Skala creates a faster path to predictive DFT appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
-      "id": "item_1a7704a62ecc3f65b10f",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-      "publishedAt": "2026-08-12T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-12T18:12:45.923Z",
-      "updatedAt": "2026-08-12T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
-        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
-      },
-      "summary": {
-        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
-        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "spatial reasoning",
-        "vision language models",
-        "benchmark",
-        "topology"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
-          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-12T16:00:00.000Z",
-          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
         }
       ]
     },
@@ -988,6 +987,68 @@
       ]
     },
     {
+      "id": "item_62800b7caea9d8447ca2",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+      "url": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+      "publishedAt": "2026-09-01T18:40:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-06T04:46:34.200Z",
+      "updatedAt": "2026-09-01T18:40:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Deep learning framework automates global methane emission detection from satellite data",
+        "zh-Hans": "深度学习框架自动化卫星数据全球甲烷排放检测"
+      },
+      "summary": {
+        "en": "Google Research's Methane Analysis and Plume Localization with EMIT model uses deep learning to automatically detect, quantify, and estimate sources of methane plumes from raw satellite data for climate monitoring.",
+        "zh-Hans": "谷歌研究的EMIT甲烷分析和羽流定位模型使用深度学习自动检测、量化和估计来自原始卫星数据的甲烷羽流源，用于气候监测。"
+      },
+      "category": "research_science",
+      "tags": [
+        "deep learning",
+        "satellite imagery",
+        "environmental monitoring"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 36,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "demonstrates transferable deep learning framework for automated detection and quantification from complex satellite imagery",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_62800b7caea9d8447ca2f5e5",
+          "url": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-01T18:40:00.000Z",
+          "evidenceSnippet": "Vishal Batchu, Research Engineer, and Michelangelo Conserva, Research Scientist, Google Research The Methane Analysis and Plume Localization with EMIT model is a deep-learning framework that automates the detection, enhancement quantification, and source estimation of methane plumes globally, turning raw satellite data into scalable climate action. Methane is a potent greenhouse gas; over a 100-year timeframe, its warming potential is 30 times greater than that of carbon dioxide. In fact, it has driven approximately 25% of human-induced warming since the start of the industrial era. Because methane has a relatively short atmospheric lifespan, promptly reducing these emissions offers a critical \"fast-action\" pathway to mitigating global temperature rise."
+        }
+      ]
+    },
+    {
       "id": "item_91dad0068ec24e5bcea7",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -1111,6 +1172,68 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-08-28T00:00:00.000Z",
           "evidenceSnippet": "Design of the collection Dataset composition Speaker coverage Metadata fields Collection and quality control Regional variation Orthographic variation in Hindi Getting evaluated What comes next Voice Arena and Hugging Face partner to launch open ASR evaluation for Hindi and Indian English Benchmarks decide what gets built. A model that scores well on the Open ASR Leaderboard gets adopted and iterated on, while capabilities the leaderboard does not measure tend not to improve. Much of the recent work on the leaderboard has gone into making the evaluation metrics more trustworthy: All of that makes one number (WER) harder to game. It is still one number. A long line of work has shown that ASR error rates are not evenly distributed across the people using them. Racial disparities in automated speech recognition found commercial systems roughly twice as bad for Black speakers as for white speakers, and Quantifying Bias in Automatic Speech Recognition found further differences by gender, age and accent. None of that is visible on a leaderboard, and not because the leaderboard is hiding it. The test sets it runs on record what was said and almost nothing about who said it."
+        }
+      ]
+    },
+    {
+      "id": "item_d4c4006fefc6f64193fc",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+      "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+      "publishedAt": "2026-08-27T17:37:20.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-28T01:32:55.432Z",
+      "updatedAt": "2026-08-27T17:37:20.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google introduces planetary prediction engine for autonomous geospatial modeling",
+        "zh-Hans": "谷歌推出行星预测引擎实现自主地理空间建模"
+      },
+      "summary": {
+        "en": "Google Research's planetary prediction engine autonomously executes full geospatial modeling workflows from data discovery to model training, addressing limitations of existing AutoML and LLM-based agents in handling specialized spatial data.",
+        "zh-Hans": "谷歌研究院的行星预测引擎可自主执行从数据发现到模型训练的完整地理空间建模工作流，解决现有AutoML和基于LLM的智能体在处理专业空间数据方面的局限性。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "geospatial",
+        "automl",
+        "workflow automation"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "autonomous workflow execution across specialized domain with data discovery and model training capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d4c4006fefc6f64193fc4bf3",
+          "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-27T17:37:20.000Z",
+          "evidenceSnippet": "Rama Pasumarthi, Staff Software Engineer, and Shravya Shetty, Distinguished Engineer, Google Research As part of Google Earth AI , we introduce the planetary prediction engine (PPE), an experimental research capability that autonomously executes the full geospatial modeling workflow — from data discovery to model training — achieving improvements across diverse prediction tasks in public health, food security, environmental risk, and socioeconomics. Addressing humanity's most pressing global challenges — from forecasting regional food security and environmental disaster risks to tracking real-time disease outbreaks and mapping socio-economic vulnerability — requires high-fidelity geospatial modeling. However, building these models is hindered by a fragmented data ecosystem that requires specialized teams to spend weeks on manual data curation, feature engineering, and specialized spatial validation. While existing AutoML and LLM-based agents effectively automate standard machine learning pipelines, they rely on pre-curated tabular data and lack the specialized capabilities needed to autonomously handle geospatial workflows. Consequently, planetary-scale analytics remains a signific"
         }
       ]
     },
@@ -4626,6 +4749,69 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-08-12T16:14:36.000Z",
           "evidenceSnippet": "Computing embeddings in Studio What you can do with OlmoEarth embeddings Similarity search: Finding \"more like this\" Few-shot segmentation: Labeling the landscape Change detection: Spotting what shifted Unsupervised exploration: Seeing what the model sees From export to insight Going further: fine-tuning Limitations 📄 Tech Report: https://allenai.org/papers/olmoearth | 📊 Documentation: https://docs.olmoearth.allenai.org/embeddings | 💻 Learn more about OlmoEarth: https://allenai.org/olmoearth OlmoEarth Studio , our platform for building Earth observation models, now lets you compute and export embedding vectors —compact numerical representations of Earth-observation data produced by our open source OlmoEarth foundation models. The source code and model weights are publicly available alongside the research paper , so the community can inspect exactly how these embeddings are generated. Embeddings are a fast, cost-effective entry point for leveraging OlmoEarth: they support a wide range of downstream tasks, from similarity search to segmentation to unsupervised exploration. Locations with similar surface characteristics end up with similar vectors; locations that differ land far ap"
+        }
+      ]
+    },
+    {
+      "id": "item_1a7704a62ecc3f65b10f",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-12T18:12:45.923Z",
+      "updatedAt": "2026-08-12T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft introduces MindTopo benchmark for vision-language model spatial reasoning",
+        "zh-Hans": "微软推出MindTopo基准测试视觉语言模型空间推理能力"
+      },
+      "summary": {
+        "en": "New benchmark tests AI understanding of topological relationships including paths, fences, and knots to evaluate spatial reasoning and planning capabilities.",
+        "zh-Hans": "新基准测试AI对拓扑关系的理解，包括路径、围栏和结点，以评估空间推理和规划能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "spatial reasoning",
+        "vision language models",
+        "benchmark",
+        "topology"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yunfei Ge, Anbang Liu, Qineng Wang, Johnalbert Garnica, Zihan Wang, Reuben Tan, Jianfeng Gao, Ruohan Zhang, Yining Hong, Jiajun Wu, Manling Li",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances evaluation of spatial reasoning capabilities in vision-language models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1a7704a62ecc3f65b10f9dd0",
+          "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-12T16:00:00.000Z",
+          "evidenceSnippet": "A path, a fence, a knot. MindTopo sets a new benchmark for testing how AI understands topological relationships and highlights new opportunities to strengthen spatial reasoning and planning. The post MindTopo reveals VLMs&#8217; spatial reasoning abilities appeared first on Microsoft Research ."
         }
       ]
     },
