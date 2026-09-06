@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-06T04:46:53.044Z",
+  "generatedAt": "2026-09-06T13:42:34.686Z",
   "items": [
     {
       "id": "item_eab80780abedb3a0adcb",
@@ -1109,6 +1109,69 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-01T00:00:00.000Z",
           "evidenceSnippet": "TL;DR Why start with kernels? A kernel repository, not just a shader Loading a kernel from the Hub How fast are the kernels? From one device to a fleet Building a shared foundation for WebAI One of our biggest goals on the WebAI team at Hugging Face is to make browser inference as fast and as user-friendly as possible. Getting there is a multi-layer effort: models need browser-friendly representations, runtimes need to build efficient execution plans, and the individual GPU operations at the bottom of the stack need to make the most of many different devices and browser implementations. Today, we are releasing the first layer of that effort: @huggingface/kernels , a minimal library for loading and running optimized WebGPU kernels from the Hugging Face Hub, together with an initial collection of 207 kernels at huggingface.co/webgpu-kernels . The collection covers operations used across a wide variety of machine learning architectures and workloads. More importantly, each kernel is published as a complete, versioned package: its interface, shader templates, correctness cases, benchmark cases, and usage instructions all live together on the Hub."
+        }
+      ]
+    },
+    {
+      "id": "item_e61516fc5f0a08ab1185",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+      "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+      "publishedAt": "2026-08-31T17:19:40.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-06T13:42:30.940Z",
+      "updatedAt": "2026-08-31T17:19:40.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "TimesFM-3: Zero-shot foundation model for multivariate forecasting",
+        "zh-Hans": "TimesFM-3：多变量预测的零样本基础模型"
+      },
+      "summary": {
+        "en": "Google Research introduces TimesFM-3, a time series foundation model that performs multivariate forecasting in a single forward pass, outperforming other models across major benchmarks.",
+        "zh-Hans": "谷歌研究推出TimesFM-3，这是一个时间序列基础模型，可在单次前向传播中执行多变量预测，在主要基准测试中优于其他模型。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "time-series",
+        "forecasting",
+        "foundation-model",
+        "multivariate"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 26,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Foundation model architecture with zero-shot capabilities transferable across multiple domains including finance, healthcare, and manufacturing",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e61516fc5f0a08ab118571c6",
+          "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-08-31T17:19:40.000Z",
+          "evidenceSnippet": "Ayush Jain and Rajat Sen, Research Scientists, Google Research We introduce TimesFM-3, a state-of-the-art time series foundation model that enables highly accurate multivariate time series forecasting in a single forward pass, significantly outperforming other forecasting models across major benchmarks. Since the debut of TimesFM in 2024, we’ve seen the adoption of time-series foundation models for real-world time-series forecasting tasks across multiple domains, such as retail, finance, observability, manufacturing, healthcare and natural sciences ."
         }
       ]
     },
