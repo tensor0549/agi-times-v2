@@ -7,10 +7,10 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-06T13:42:34.686Z",
+  "generatedAt": "2026-09-07T04:50:32.934Z",
   "items": [
     {
-      "id": "item_eab80780abedb3a0adcb",
+      "id": "item_d194bd04836e625acb10",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -18,56 +18,120 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2609.03209",
-      "url": "https://arxiv.org/abs/2609.03209",
-      "publishedAt": "2026-09-04T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2609.04286",
+      "url": "https://arxiv.org/abs/2609.04286",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-04T16:26:32.840Z",
-      "updatedAt": "2026-09-04T04:00:00.000Z",
+      "discoveredAt": "2026-09-07T04:50:17.154Z",
+      "updatedAt": "2026-09-07T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Policy-Governed Enterprise Analytics vs Runtime Agent Planning",
-        "zh-Hans": "策略治理的企业分析与运行时智能体规划对比"
+        "en": "Evolution from Matching Models to Tool-Using Recruiting Agents",
+        "zh-Hans": "从匹配模型到工具使用招聘代理的演进"
       },
       "summary": {
-        "en": "Research comparing policy-executed analytics with runtime agent planning found that while three 8B models failed to match answer-and-evidence contracts across test datasets, policy-executed systems achieved perfect compliance in controlled enterprise settings.",
-        "zh-Hans": "研究对比策略执行分析与运行时智能体规划，发现三个8B模型在测试数据集上无法满足答案-证据契约，而策略执行系统在受控企业环境中实现完美合规。"
+        "en": "Review traces AI recruitment evolution from bilateral retrieval to multi-stage workflows with tool-using recruiting agents that retrieve evidence and execute actions.",
+        "zh-Hans": "综述追踪了AI招聘从双边检索到多阶段工作流程的演进，包括检索证据和执行操作的工具使用招聘代理。"
       },
       "category": "agents_automation",
       "tags": [
-        "enterprise analytics",
-        "policy execution",
-        "language models"
+        "recruiting agents",
+        "multi-stage workflows",
+        "llm components",
+        "tool-using agents"
       ],
       "topics": [
         "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "MasterControl AI Lab",
+      "author": "Ziyi Zhao, Guanzheng Wei",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:mastercontrol ai lab",
+      "independenceKey": "academic:ziyi zhao, guanzheng wei",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 89,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "demonstrates systematic approach to agent reliability and governance in enterprise applications",
+      "freshnessScore": 99,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "documents transition to multi-stage agent workflows with evidence retrieval and action execution capabilities",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_eab80780abedb3a0adcbd43c",
-          "url": "https://arxiv.org/abs/2609.03209",
+          "id": "candidate_d194bd04836e625acb1045eb",
+          "url": "https://arxiv.org/abs/2609.04286",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-04T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
+          "publishedAt": "2026-09-07T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.04286v1 Announce Type: new Abstract: Artificial intelligence in recruitment has shifted the object being automated from profile pairs and ranked lists to multi-stage workflows that retrieve evidence, compare candidates, and support or execute actions. This systematized narrative review traces that development from bilateral retrieval and behavioral ranking through neural person--job matching, large language model (LLM) components, and tool-using recruiting agents. Using a purposive search and coding protocol updated through 23 July 2026, plus targeted updates through 2 September 2026, we organize 40 representative works with supporting industrial and legal sources. This synthesis is not a prevalence estimate. We analyze three coupled transitions: from similarity to reciprocal suitability, from a model to a compound workflow, and from offline prediction to evidence- and productivity-aligned evaluation. Across document understanding, retrieval, ranking, assessment, interviewing, sourcing, and human handoff, we distinguish field-, pair-, list-, case-, trajectory-, and outcome-level evidence. Persistent gaps arise because behavioral labels confound exposure, preference, and "
+        }
+      ]
+    },
+    {
+      "id": "item_85ec8233e9b09723f766",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.04239",
+      "url": "https://arxiv.org/abs/2609.04239",
+      "publishedAt": "2026-09-07T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-07T04:50:17.154Z",
+      "updatedAt": "2026-09-07T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "EXAONE Finance: Attention-Free Foundation Model for Financial Time Series",
+        "zh-Hans": "EXAONE Finance：用于金融时间序列的无注意力基础模型"
+      },
+      "summary": {
+        "en": "Researchers present EXAONE Finance, a financial time series foundation model using attention-free architecture with causal convolution and group-aware pooling for computational efficiency.",
+        "zh-Hans": "研究人员提出EXAONE Finance，这是一个使用无注意力架构的金融时间序列基础模型，采用因果卷积和组感知池化以提高计算效率。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "financial modeling",
+        "time series",
+        "foundation models",
+        "attention-free architecture"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Seunghan Lee, Jaehoon Lee, Jun Seo, Tae Yoon Lim, Dongwan Kang, Hwanil Choi, Minjae Kim, Sungdong Yoo, Junhyeok Kang, Sangjun Han, Soonyoung Lee, Wonbin Ahn",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:seunghan lee, jaehoon lee, jun seo, tae yoon lim, dongwan kang, hwanil choi, minjae kim, sungdong yoo, junhyeok kang, sangjun han, soonyoung lee, wonbin ahn",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 99,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "demonstrates transferable attention-free architecture for foundation models with linear-time operators",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_85ec8233e9b09723f7667ac0",
+          "url": "https://arxiv.org/abs/2609.04239",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-07T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.04239v1 Announce Type: new Abstract: This technical report presents EXAONE Forecast for Finance (EXAONE Finance), a financial time series (TS) foundation model (TSFM) tailored to financial forecasting. Recent TSFMs achieve strong zero-shot performance through large-scale pretraining. However, they are primarily developed for general-domain TS and largely rely on self-attention backbones whose computational cost grows quadratically with sequence length and variate count. Moreover, they assume fully observed inputs and are pretrained on corpora that fail to capture the unique dynamics of financial markets. These limitations hinder their applicability to finance, where long, many-channel, intermittently observed panels are common. To address these challenges, EXAONE Finance adopts an attention-free architecture, replacing self-attention with two simple yet effective linear-time operators: 1) a causal 1D convolution for temporal mixing and 2) a group-aware pooling multi-layer perceptron (MLP) for variate mixing. Furthermore, a masked context augmentation exposes the model to contiguous missing spans during training, improving robustness to the missingness pervasive in financ"
         }
       ]
     },
@@ -260,69 +324,6 @@
       ]
     },
     {
-      "id": "item_065b1d2ffdbed293832e",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.01611",
-      "url": "https://arxiv.org/abs/2609.01611",
-      "publishedAt": "2026-09-03T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-03T19:54:05.413Z",
-      "updatedAt": "2026-09-03T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "EvalDetectBench: Measuring evaluation awareness in frontier language models",
-        "zh-Hans": "EvalDetectBench：测量前沿语言模型的评估感知能力"
-      },
-      "summary": {
-        "en": "Researchers introduce benchmark for measuring evaluation awareness in frontier LLMs, finding that models can recognize when being evaluated, which undermines evaluation validity for AI safety frameworks.",
-        "zh-Hans": "研究人员推出测量前沿大语言模型评估感知的基准，发现模型能识别何时被评估，这削弱了AI安全框架中评估的有效性。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "evaluation",
-        "awareness",
-        "benchmark",
-        "frontier models"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Xinning Li, Kemunto Ochwang'i, Aryasomayajula Ram Bharadwaj, Alexandra Souly, Robert Kirk",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:xinning li, kemunto ochwang'i, aryasomayajula ram bharadwaj, alexandra souly, robert kirk",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 86,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "evaluation awareness in frontier models directly impacts AGI safety assessment methods",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_065b1d2ffdbed293832efe4f",
-          "url": "https://arxiv.org/abs/2609.01611",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-03T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.01611v1 Announce Type: new Abstract: Frontier large language models can often recognize when they are being evaluated, a capability known as evaluation awareness. If models behave differently in evaluations than in deployment, this undermines the validity of evaluation results, which are a crucial component of current AI safety frameworks. We introduce EvalDetectBench, an open pipeline and benchmark for measuring evaluation awareness that works with any Inspect-compatible evaluation, allowing practitioners to test against current and future benchmarks. EvalDetectBench ships with a newly curated transcript suite covering current frontier system-card evaluations and diverse deployment sources. The benchmark serves two purposes: measuring how reliably frontier LLMs recognize that they are being evaluated, and assessing how detectable individual benchmarks are as evaluations. We identify two methodological choices in the existing literature that introduce systematic bias: the identity of the model that generated the deployment transcripts accounts for 11.25% of measurement variance and can reorder model rankings; and elicitation prompts selected for high performance on one m"
-        }
-      ]
-    },
-    {
       "id": "item_b5500bc6503561c622e2",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -382,68 +383,6 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-03T00:00:00.000Z",
           "evidenceSnippet": "Why people loved it RL over taste The RL environment you need to build The pool is the reward function Just one more yolo run What it actually learned Infra is hard What it costs What I would try next What I changed from the original Everything is published On 23 August, Surya Narreddi posted a beautiful video of watercolours painted by a language model. The model writes JavaScript through p5.brush , a library that \"adds natural drawing tools to p5.js\". The video went viral fast, over 1.5M views at the time of writing. The video came with a blog post explaining the training behind an earlier and narrower stage of the project, close-up flowers rather than the full compositions in the video, sadly without open artifacts yet. His site says a full technical report is coming, so ensure you follow him. The original idea is his, coming from the art and design side, where his skills are way beyond mine . My attempt is on the engineering side, reproducing the recipe in the open with every piece published."
-        }
-      ]
-    },
-    {
-      "id": "item_b1b4ad0d4a36bbd2e7dc",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-      "publishedAt": "2026-08-31T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-06T04:46:34.200Z",
-      "updatedAt": "2026-08-31T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft releases efficient pathology foundation models for population-scale studies",
-        "zh-Hans": "微软发布用于人群规模研究的高效病理学基础模型"
-      },
-      "summary": {
-        "en": "GigaPath-Flash and GigaTIME-Flash reduce computational demands while maintaining performance in pathology analysis, enabling larger-scale medical studies and broader research exploration.",
-        "zh-Hans": "GigaPath-Flash和GigaTIME-Flash在保持病理学分析性能的同时降低计算需求，使更大规模的医学研究和更广泛的研究探索成为可能。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "foundation models",
-        "pathology",
-        "computational efficiency"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Naoto Usuyama, Jeya Maria Jose Valanarasu, Tristan Naumann",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 28,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances efficient foundation model architectures with maintained performance for specialized domain applications",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_b1b4ad0d4a36bbd2e7dc0477",
-          "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-31T16:00:00.000Z",
-          "evidenceSnippet": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash cut computational demands while maintaining strong performance, opening the door to larger studies and broader exploration. The post GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models appeared first on Microsoft Research ."
         }
       ]
     },
@@ -669,6 +608,198 @@
           "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
           "metadataSourceUrl": "https://openai.com/news/rss.xml",
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
+      "id": "item_eab80780abedb3a0adcb",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.03209",
+      "url": "https://arxiv.org/abs/2609.03209",
+      "publishedAt": "2026-09-04T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-04T16:26:32.840Z",
+      "updatedAt": "2026-09-04T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Policy-Governed Enterprise Analytics vs Runtime Agent Planning",
+        "zh-Hans": "策略治理的企业分析与运行时智能体规划对比"
+      },
+      "summary": {
+        "en": "Research comparing policy-executed analytics with runtime agent planning found that while three 8B models failed to match answer-and-evidence contracts across test datasets, policy-executed systems achieved perfect compliance in controlled enterprise settings.",
+        "zh-Hans": "研究对比策略执行分析与运行时智能体规划，发现三个8B模型在测试数据集上无法满足答案-证据契约，而策略执行系统在受控企业环境中实现完美合规。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "enterprise analytics",
+        "policy execution",
+        "language models"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "MasterControl AI Lab",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:mastercontrol ai lab",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "demonstrates systematic approach to agent reliability and governance in enterprise applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_eab80780abedb3a0adcbd43c",
+          "url": "https://arxiv.org/abs/2609.03209",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-04T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
+        }
+      ]
+    },
+    {
+      "id": "item_065b1d2ffdbed293832e",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.01611",
+      "url": "https://arxiv.org/abs/2609.01611",
+      "publishedAt": "2026-09-03T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-03T19:54:05.413Z",
+      "updatedAt": "2026-09-03T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "EvalDetectBench: Measuring evaluation awareness in frontier language models",
+        "zh-Hans": "EvalDetectBench：测量前沿语言模型的评估感知能力"
+      },
+      "summary": {
+        "en": "Researchers introduce benchmark for measuring evaluation awareness in frontier LLMs, finding that models can recognize when being evaluated, which undermines evaluation validity for AI safety frameworks.",
+        "zh-Hans": "研究人员推出测量前沿大语言模型评估感知的基准，发现模型能识别何时被评估，这削弱了AI安全框架中评估的有效性。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "evaluation",
+        "awareness",
+        "benchmark",
+        "frontier models"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Xinning Li, Kemunto Ochwang'i, Aryasomayajula Ram Bharadwaj, Alexandra Souly, Robert Kirk",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:xinning li, kemunto ochwang'i, aryasomayajula ram bharadwaj, alexandra souly, robert kirk",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "evaluation awareness in frontier models directly impacts AGI safety assessment methods",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_065b1d2ffdbed293832efe4f",
+          "url": "https://arxiv.org/abs/2609.01611",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-03T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.01611v1 Announce Type: new Abstract: Frontier large language models can often recognize when they are being evaluated, a capability known as evaluation awareness. If models behave differently in evaluations than in deployment, this undermines the validity of evaluation results, which are a crucial component of current AI safety frameworks. We introduce EvalDetectBench, an open pipeline and benchmark for measuring evaluation awareness that works with any Inspect-compatible evaluation, allowing practitioners to test against current and future benchmarks. EvalDetectBench ships with a newly curated transcript suite covering current frontier system-card evaluations and diverse deployment sources. The benchmark serves two purposes: measuring how reliably frontier LLMs recognize that they are being evaluated, and assessing how detectable individual benchmarks are as evaluations. We identify two methodological choices in the existing literature that introduce systematic bias: the identity of the model that generated the deployment transcripts accounts for 11.25% of measurement variance and can reorder model rankings; and elicitation prompts selected for high performance on one m"
         }
       ]
     },
@@ -1172,6 +1303,68 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-31T17:19:40.000Z",
           "evidenceSnippet": "Ayush Jain and Rajat Sen, Research Scientists, Google Research We introduce TimesFM-3, a state-of-the-art time series foundation model that enables highly accurate multivariate time series forecasting in a single forward pass, significantly outperforming other forecasting models across major benchmarks. Since the debut of TimesFM in 2024, we’ve seen the adoption of time-series foundation models for real-world time-series forecasting tasks across multiple domains, such as retail, finance, observability, manufacturing, healthcare and natural sciences ."
+        }
+      ]
+    },
+    {
+      "id": "item_b1b4ad0d4a36bbd2e7dc",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "publishedAt": "2026-08-31T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-06T04:46:34.200Z",
+      "updatedAt": "2026-08-31T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft releases efficient pathology foundation models for population-scale studies",
+        "zh-Hans": "微软发布用于人群规模研究的高效病理学基础模型"
+      },
+      "summary": {
+        "en": "GigaPath-Flash and GigaTIME-Flash reduce computational demands while maintaining performance in pathology analysis, enabling larger-scale medical studies and broader research exploration.",
+        "zh-Hans": "GigaPath-Flash和GigaTIME-Flash在保持病理学分析性能的同时降低计算需求，使更大规模的医学研究和更广泛的研究探索成为可能。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "foundation models",
+        "pathology",
+        "computational efficiency"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Naoto Usuyama, Jeya Maria Jose Valanarasu, Tristan Naumann",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 28,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances efficient foundation model architectures with maintained performance for specialized domain applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b1b4ad0d4a36bbd2e7dc0477",
+          "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-31T16:00:00.000Z",
+          "evidenceSnippet": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash cut computational demands while maintaining strong performance, opening the door to larger studies and broader exploration. The post GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models appeared first on Microsoft Research ."
         }
       ]
     },
@@ -5798,73 +5991,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
-        }
-      ]
-    },
-    {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
       ]
     },
