@@ -7,8 +7,120 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-07T04:50:32.934Z",
+  "generatedAt": "2026-09-10T06:02:54.488Z",
   "items": [
+    {
+      "id": "insight_llm-evaluation-alignment-advances_20260910",
+      "slug": "llm-evaluation-alignment-advances",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "New Frameworks Address LLM Evaluation and Alignment Gaps",
+        "zh-Hans": "新框架解决大语言模型评估和对齐差距"
+      },
+      "dek": {
+        "en": "Recent research reveals significant gaps in how models handle social reasoning and safety alignment, while introducing mechanisms for more nuanced evaluation and improvement.",
+        "zh-Hans": "最新研究揭示了模型在社会推理和安全对齐方面的重大差距，同时引入了更细致评估和改进的机制。"
+      },
+      "body": {
+        "en": "Three recent developments highlight critical challenges in large language model evaluation and alignment. Research on metanorm reasoning reveals that current LLMs demonstrate systematically harsher social judgment than humans, overpredicting negative sanctions where humans expect inaction [^candidate_6901f2f7ec344c98c095ed1c]. This gap widens as social distance increases, suggesting fundamental limitations in models' understanding of nuanced social dynamics.\n\nSimultaneously, the CriticGen framework addresses evaluation limitations by generating instance-specific criteria and actionable refinement suggestions, achieving strong correlation scores of 0.9556 Pearson and 0.9560 Spearman [^candidate_91d599edde19a6ce7d4b0bde]. This approach enables models to diagnose flaws and perform targeted improvements through rubric-conditioned refinement processes.\n\nThese technical advances occur alongside recognition that current safety alignment approaches may be fundamentally misaligned with deployment realities. Topic-level safety guards like LlamaGuard-3 cannot handle context-specific requirements where the same model needs different behavioral boundaries across deployment settings [^candidate_5cbcf08e288841ac31de1b5b]. These findings collectively suggest that advancing toward more capable AI systems requires both better evaluation mechanisms and more sophisticated approaches to social reasoning and contextual safety alignment.",
+        "zh-Hans": "三项最新发展突出了大语言模型评估和对齐的关键挑战。元规范推理研究显示，当前大语言模型表现出比人类更严厉的社会判断，在人类预期无行动的情况下过度预测负面制裁 [^candidate_6901f2f7ec344c98c095ed1c]。这种差距随着社会距离增加而扩大，表明模型在理解细致社会动态方面存在根本局限。\n\n同时，CriticGen框架通过生成实例特定标准和可执行改进建议来解决评估局限性，达到0.9556皮尔逊和0.9560斯皮尔曼的强相关分数 [^candidate_91d599edde19a6ce7d4b0bde]。这种方法使模型能够诊断缺陷并通过评分标准条件化改进过程执行针对性改进。\n\n这些技术进展伴随着对当前安全对齐方法可能与部署现实根本不符的认识。像LlamaGuard-3这样的主题级安全防护无法处理上下文特定需求，即同一模型在不同部署环境需要不同行为边界 [^candidate_5cbcf08e288841ac31de1b5b]。这些发现共同表明，向更强大AI系统发展需要更好的评估机制以及更复杂的社会推理和上下文安全对齐方法。"
+      },
+      "publishedAt": "2026-09-10T06:02:54.488Z",
+      "updatedAt": "2026-09-10T06:02:54.488Z",
+      "topics": [
+        "models_capabilities",
+        "safety_security_alignment"
+      ],
+      "claims": [
+        {
+          "id": "harsh_social_judgment",
+          "type": "fact",
+          "text": {
+            "en": "Current LLMs overpredict negative sanctions where humans would expect inaction, with alignment deteriorating as social distance increases",
+            "zh-Hans": "当前大语言模型在人类预期无行动的情况下过度预测负面制裁，随着社会距离增加对齐性恶化"
+          },
+          "citationIds": [
+            "candidate_6901f2f7ec344c98c095ed1c"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "criticgen_performance",
+          "type": "fact",
+          "text": {
+            "en": "CriticGen achieves 0.9556 Pearson and 0.9560 Spearman correlation scores while enabling targeted answer improvement through rubric-conditioned refinement",
+            "zh-Hans": "CriticGen达到0.9556皮尔逊和0.9560斯皮尔曼相关分数，同时通过评分标准条件化改进实现针对性答案改进"
+          },
+          "citationIds": [
+            "candidate_91d599edde19a6ce7d4b0bde"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "topic_level_limitations",
+          "type": "fact",
+          "text": {
+            "en": "Topic-level safety guards like LlamaGuard-3 cannot express context-specific boundaries needed for different deployment settings",
+            "zh-Hans": "像LlamaGuard-3这样的主题级安全防护无法表达不同部署环境所需的上下文特定边界"
+          },
+          "citationIds": [
+            "candidate_5cbcf08e288841ac31de1b5b"
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_6901f2f7ec344c98c095ed1c",
+          "feedItemId": "item_6901f2f7ec344c98c095",
+          "title": "Beyond Right and Wrong: Evaluating Second-order Social Reasoning in Large Language Models",
+          "url": "https://arxiv.org/abs/2609.05437",
+          "publisher": "arXiv cs.AI",
+          "author": "Sunny Rai, Jinyi Kuang, Reyhan Jamalova, Annie Lou, Cristina Bicchieri, Niyati Malhotra, Victor Hugo Orozco-Olvera, Ana Maria Munoz-Boudet, Lyle H Ungar, Sharath C Guntuku",
+          "independenceKey": "academic:sunny rai, jinyi kuang, reyhan jamalova, annie lou, cristina bicchieri, niyati malhotra, victor hugo orozco-olvera, ana maria munoz-boudet, lyle h ungar, sharath c guntuku",
+          "publishedAt": "2026-09-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.05437v1 Announce Type: new Abstract: Previous AI alignment efforts have focused primarily on first-order social norms -- teaching models what is socially acceptable or unacceptable (e.g., `do not steal'). However, social intelligence depends not only on norm recognition, but also on anticipating who will enforce it and how (e.g., public shame or even imprisonment). These second-order expectations, known as metanorms, govern how people respond when social rules are broken. We introduce a novel framework for evaluating metanorm reasoning in Large Language Models (LLMs) along two dimensions: emotional appraisal and behavioral response, and propose new classification tasks, namely, predicting self-regulation in violators, and other-regulation in observers. We release a multi-perspective dataset, NormReact, of 450 norm violation scenarios, hand-annotated for emotions and behavioral responses across norm violators' gender and observers' social closeness. Current LLMs portray a harsher social world: across six models, they overpredict negative sanctions where humans would expect inaction, and alignment with human judgments deteriorates as social distance increases. These findin"
+        },
+        {
+          "id": "candidate_91d599edde19a6ce7d4b0bde",
+          "feedItemId": "item_91d599edde19a6ce7d4b",
+          "title": "CriticGen: Generation-Aware Evaluation as Actionable Feedback",
+          "url": "https://arxiv.org/abs/2609.05439",
+          "publisher": "arXiv cs.AI",
+          "author": "Huifang Du, Zecheng Zuo, Sen Wang, Chenghao Fan, Haofen Wang, Yehui Yang",
+          "independenceKey": "academic:huifang du, zecheng zuo, sen wang, chenghao fan, haofen wang, yehui yang",
+          "publishedAt": "2026-09-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.05439v1 Announce Type: new Abstract: Current evaluation methods for large language models are coarse-grained and decoupled from generation, producing generic explanations that fail to provide actionable feedback for model improvement. We propose CriticGen, a fine-grained, generation-aware evaluation framework that turns evaluation into actionable control for answer improvement. CriticGen first generates sample-specific evaluation dimensions and scoring criteria under high-level categories such as subjective, objective, and self-derived constraints. These criteria then serve as a dynamic rubric for jointly producing a score, a reason, an executable refinement suggestion, and a refined answer. This rubric-conditioned refinement process enables models to diagnose flaws and perform targeted answer improvement. Experimental results show that fine-grained evaluation should be both instance-specific and actionable. CriticGen induces higher-quality rubrics, improving relevance/coverage from 3.33/4.03 to 3.97/4.24. CriticGen also achieves the best score correlations, with 0.9556 Pearson and 0.9560 Spearman, and raises the F1 of criterion-grounded reasons and executable suggestion"
+        },
+        {
+          "id": "candidate_5cbcf08e288841ac31de1b5b",
+          "feedItemId": "item_5cbcf08e288841ac31de",
+          "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-08T14:23:07.000Z",
+          "evidenceSnippet": "Narrow-boundary safety Where self-generated safety tuning breaks The trade-off, and a trap it hides What this changes Most safety alignment work treats harm as a property of a topic. A prompt is unsafe because it falls into a general category such as weapons, fraud, or self-harm, and guard models like LlamaGuard-3 encode exactly this kind of topic-level taxonomy. Benchmarks like XSTest and OR-Bench then probe the failure mode this creates, models that refuse safe prompts because they contain a dangerous-looking word, and refusal-calibration work tries to pull that number back down. Real deployments rarely fit the topic-level picture. The same base model may be adapted for a general assistant, an educational product, an enterprise system, or a public-sector service, and each setting needs different boundaries within the same topic. A civics tutor and a public-sector assistant can share a model yet require opposite behaviour on politics: both should answer factual questions about an election, but only one may need to refuse a request to write targeted political manipulation. A topic-level guard cannot express that split. LlamaGuard-3, for example, covers elections only as \"factually "
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-09-10T06:02:54.488Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-09-10T06:02:29.420Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_architectural-efficiency-agent-workflows_20260907",
       "slug": "architectural-efficiency-agent-workflows",
