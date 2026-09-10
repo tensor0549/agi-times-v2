@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-10T16:29:53.302Z",
+  "generatedAt": "2026-09-10T19:46:04.021Z",
   "items": [
     {
       "id": "item_a48349e5bebabb509d45",
@@ -132,6 +132,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.05439v1 Announce Type: new Abstract: Current evaluation methods for large language models are coarse-grained and decoupled from generation, producing generic explanations that fail to provide actionable feedback for model improvement. We propose CriticGen, a fine-grained, generation-aware evaluation framework that turns evaluation into actionable control for answer improvement. CriticGen first generates sample-specific evaluation dimensions and scoring criteria under high-level categories such as subjective, objective, and self-derived constraints. These criteria then serve as a dynamic rubric for jointly producing a score, a reason, an executable refinement suggestion, and a refined answer. This rubric-conditioned refinement process enables models to diagnose flaws and perform targeted answer improvement. Experimental results show that fine-grained evaluation should be both instance-specific and actionable. CriticGen induces higher-quality rubrics, improving relevance/coverage from 3.33/4.03 to 3.97/4.24. CriticGen also achieves the best score correlations, with 0.9556 Pearson and 0.9560 Spearman, and raises the F1 of criterion-grounded reasons and executable suggestion"
+        }
+      ]
+    },
+    {
+      "id": "item_46660cb2ea4362f69cbd",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "publishedAt": "2026-09-09T15:36:24.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-10T19:45:42.431Z",
+      "updatedAt": "2026-09-09T15:36:24.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model",
+        "zh-Hans": "IBM发布SOTA Granite时间序列PatchTST-FM-r2模型"
+      },
+      "summary": {
+        "en": "IBM releases Granite Time Series PatchTST-FM-r2, a 385M-parameter foundation model with updated architecture, larger pretraining corpus, and strong zero-shot forecasting performance with commercial-friendly licensing.",
+        "zh-Hans": "IBM发布Granite时间序列PatchTST-FM-r2，这是一个3.85亿参数的基础模型，具有更新的架构、更大的预训练语料库和强大的零样本预测性能，采用商业友好许可。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "time series",
+        "foundation model",
+        "forecasting",
+        "granite"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 76,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Advances foundation model capabilities for temporal reasoning and zero-shot generalization",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_46660cb2ea4362f69cbd737e",
+          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-09T15:36:24.000Z",
+          "evidenceSnippet": "TL;DR Strong zero-shot forecasting on GIFT-Eval Competitive even against models allowed to use benchmark training data Architecture: What changed from PatchTST-FM-r1? Training data Open for research experimentation — and for commercial use Try PatchTST-FM-r2 in a few lines of Python From notebooks to streaming time series High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting systems are built. Instead of training and maintaining a separate model for every dataset, users can use a pretrained model and generate forecasts zero-shot. IBM has released Granite Time Series PatchTST-FM-r2 , the latest model in the Granite TSFM family ( github , blog ). PatchTST-FM-r2, a new version of its predecessor PatchTST-FM-r1 , combines an updated architecture, a larger pretraining corpus, probabilistic forecasting, support for imputation of missing values, and strong zero-shot performance in a ~ 385M-parameter model."
         }
       ]
     },
@@ -319,69 +382,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-09-03T16:00:03.000Z",
           "evidenceSnippet": "Michał Januszewski and Viren Jain, Research Scientists, Google Research We partnered with HHMI Janelia and collaborators to publish a complete map of the male fruit fly’s brain and central nervous system, creating the largest brain map to date. Together with ongoing research on other species, such as fish and mice, these wiring maps begin to reveal the mechanics of how all brains work. The common fruit fly, Drosophila melanogaster , has been central to scientific research leading to multiple Nobel Prizes . Fruit flies have been a fundamental model organism in genetics , thanks to their stereotypical behavior and short life cycle, and promise to do the same for neuroscience. While the thoughts of this fruit-loving insect might seem far removed from human cognition, the brains of vastly different species share many similarities. Because mapping the 86 billion neurons in a human brain is not yet possible, scientists are using AI to map the brains of smaller organisms, like fruit flies. This will help us decipher how animal nervous systems perceive the world, react to stimuli, and how damaged neural pathways might one day be repaired."
-        }
-      ]
-    },
-    {
-      "id": "item_fffbcba03b0b217e4893",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/Hcompany/neomme",
-      "url": "https://huggingface.co/blog/Hcompany/neomme",
-      "publishedAt": "2026-09-03T13:13:48.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-03T19:54:05.413Z",
-      "updatedAt": "2026-09-03T13:13:48.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "NeoMME: Unified multimodal encoder processes text and images in single transformer",
-        "zh-Hans": "NeoMME：统一多模态编码器在单个transformer中处理文本和图像"
-      },
-      "summary": {
-        "en": "Hugging Face introduces NeoMME family of 260M and 800M multimodal encoders that use a single bidirectional Transformer to process both text tokens and raw image patches, trained from scratch with masked discrete-diffusion objective.",
-        "zh-Hans": "Hugging Face推出NeoMME系列260M和800M多模态编码器，使用单个双向Transformer处理文本标记和原始图像块，采用掩码离散扩散目标从头训练。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "multimodal",
-        "encoder",
-        "transformer",
-        "retrieval"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 94,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "unified architecture for multimodal processing advances transferable encoder capabilities",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_fffbcba03b0b217e48932bf1",
-          "url": "https://huggingface.co/blog/Hcompany/neomme",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-09-03T13:13:48.000Z",
-          "evidenceSnippet": "TL;DR Why another multimodal encoder? NeoMME encoder backbone One Transformer for images and text Learning from images through masked text NeoMME -Retriever A dual-head design for dense and late-interaction retrieval Competitive retrieval at compact model sizes Making high-resolution retrieval practical for late-interaction Try NeoMME -Retriever yourself! Fine-tuning with Sentence Transformers From retrieval to visual RAG Conclusion Acknowledgements Citation We introduce NeoMME , a family of 260M and 800M multilingual multimodal encoders. Unlike many generative visual language models, NeoMME does not use a separate pretrained vision tower or a causal language model. A single bidirectional Transformer processes both text tokens and raw image patches, and we train the entire model from scratch with a masked discrete-diffusion objective. We fine-tuned NeoMME for visual document retrieval using ColPali's page-image approach. NeoMME -Retriever returns dense and late-interaction embeddings in one forward pass. Both model sizes lie on the ViDoRe v3 Pareto frontier for nDCG@10 and model size. At a matched 2048×2048 image input size on an NVIDIA L40S GPU, the 260M model encodes about 51 pag"
         }
       ]
     },
@@ -673,6 +673,69 @@
       ]
     },
     {
+      "id": "item_fcb10012639a09078d29",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.05448",
+      "url": "https://arxiv.org/abs/2609.05448",
+      "publishedAt": "2026-09-10T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-10T19:45:42.431Z",
+      "updatedAt": "2026-09-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Damage-Aware Bandit Pruning for Vision and Language Transformers",
+        "zh-Hans": "视觉和语言Transformer的损伤感知老虎机剪枝方法"
+      },
+      "summary": {
+        "en": "Researchers formulate structured transformer pruning as a multi-armed bandit problem, using UCB-style policies to select attention heads and MLP units for removal while minimizing performance degradation across GPT-2, OPT, Pythia, Qwen2.5, and vision models.",
+        "zh-Hans": "研究人员将结构化Transformer剪枝建模为多臂老虎机问题，使用UCB策略选择注意力头和MLP单元进行移除，在GPT-2、OPT、Pythia、Qwen2.5等模型上最小化性能损失。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "transformer",
+        "pruning",
+        "optimization",
+        "bandit"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Salem Ameen, Sunil Vadera",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:salem ameen, sunil vadera",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "Advances transferable optimization methods for transformer architectures across language and vision domains",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_fcb10012639a09078d29570f",
+          "url": "https://arxiv.org/abs/2609.05448",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.05448v1 Announce Type: new Abstract: Structured post-training pruning of transformers requires selecting complete functional units whose suppression causes limited degradation. We formulate structured-unit selection for language and vision transformers as a damage-aware multi-armed bandit problem under a fixed candidate-evaluation budget. Attention heads and MLP channel groups are temporarily masked on calibration batches. Paired damage is the masked loss minus the base loss on the same batch, reducing batch-to-batch variation. A smooth bounded reward drives either a UCB-style policy or fractional-Beta Thompson Sampling, and the final mask is constructed sequentially by adding one unit at each step. The selected units are functionally zeroed in the original dense checkpoint; therefore, the reported parameter effects represent effective structural suppression rather than physical compression or measured speedup. Experiments on WikiText-2, LAMBADA, and Imagenette cover GPT-2, OPT, Pythia, Qwen2.5, SmolLM2, ViT-B/16, DeiT-Tiny, and Swin-Tiny, with comparisons against random, magnitude, static-saliency, and budgeted-greedy selection. Across five seeds, the bandit methods usu"
+        }
+      ]
+    },
+    {
       "id": "item_e53e3ce9460e9ed3cc4f",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -795,6 +858,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.05437v1 Announce Type: new Abstract: Previous AI alignment efforts have focused primarily on first-order social norms -- teaching models what is socially acceptable or unacceptable (e.g., `do not steal'). However, social intelligence depends not only on norm recognition, but also on anticipating who will enforce it and how (e.g., public shame or even imprisonment). These second-order expectations, known as metanorms, govern how people respond when social rules are broken. We introduce a novel framework for evaluating metanorm reasoning in Large Language Models (LLMs) along two dimensions: emotional appraisal and behavioral response, and propose new classification tasks, namely, predicting self-regulation in violators, and other-regulation in observers. We release a multi-perspective dataset, NormReact, of 450 norm violation scenarios, hand-annotated for emotions and behavioral responses across norm violators' gender and observers' social closeness. Current LLMs portray a harsher social world: across six models, they overpredict negative sanctions where humans would expect inaction, and alignment with human judgments deteriorates as social distance increases. These findin"
+        }
+      ]
+    },
+    {
+      "id": "item_fb3b02d0c57d7ec3d7a6",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.05459",
+      "url": "https://arxiv.org/abs/2609.05459",
+      "publishedAt": "2026-09-10T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-10T19:45:42.431Z",
+      "updatedAt": "2026-09-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Compiling VGDL into Causal Models",
+        "zh-Hans": "将VGDL编译为因果模型"
+      },
+      "summary": {
+        "en": "A deterministic framework translates Video Game Description Language specifications into Dynamic Structural Causal Models, mapping sprite dynamics and interaction rules into explicit structural equations to guarantee causal fidelity to game mechanics.",
+        "zh-Hans": "一个确定性框架将视频游戏描述语言规范转换为动态结构因果模型，将精灵动态和交互规则映射为显式结构方程，保证对游戏机制的因果保真度。"
+      },
+      "category": "research_science",
+      "tags": [
+        "causal models",
+        "reinforcement learning",
+        "game environments",
+        "interpretability"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Mohit Jiwatode, Bodo Rosenhahn, Alexander Dockhorn",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:mohit jiwatode, bodo rosenhahn, alexander dockhorn",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 74,
+      "relevanceReason": "Develops transferable methodology for grounding causal reasoning in structured environments",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_fb3b02d0c57d7ec3d7a63375",
+          "url": "https://arxiv.org/abs/2609.05459",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.05459v1 Announce Type: new Abstract: Reinforcement learning and large language models often struggle to accurately capture the causal mechanics of game environments. Standard reinforcement learning agents tend to rely on spurious correlations, while large language models are prone to hallucinating game rules. Although causal reinforcement learning improves interpretability, there is currently no formal methodology to map complex game mechanics directly into causal models. To address this, we propose a deterministic framework that compiles games specified in the Video Game Description Language into Dynamic Structural Causal Models. Rather than inferring causal structures from gameplay traces or noisy large language models' outputs, our methodology directly translates game components, including sprite dynamics, interaction rules, and termination conditions, into explicit structural equations. Each game tick represents a causal transition from state variables at time $t$ to $t+1$. By establishing this grounded mapping, the approach guarantees absolute causal fidelity to the ground-truth game mechanics. The resulting models offer transparent causal pathways that support coun"
         }
       ]
     },
@@ -983,6 +1109,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-04T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
+        }
+      ]
+    },
+    {
+      "id": "item_fffbcba03b0b217e4893",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/Hcompany/neomme",
+      "url": "https://huggingface.co/blog/Hcompany/neomme",
+      "publishedAt": "2026-09-03T13:13:48.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-03T19:54:05.413Z",
+      "updatedAt": "2026-09-03T13:13:48.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "NeoMME: Unified multimodal encoder processes text and images in single transformer",
+        "zh-Hans": "NeoMME：统一多模态编码器在单个transformer中处理文本和图像"
+      },
+      "summary": {
+        "en": "Hugging Face introduces NeoMME family of 260M and 800M multimodal encoders that use a single bidirectional Transformer to process both text tokens and raw image patches, trained from scratch with masked discrete-diffusion objective.",
+        "zh-Hans": "Hugging Face推出NeoMME系列260M和800M多模态编码器，使用单个双向Transformer处理文本标记和原始图像块，采用掩码离散扩散目标从头训练。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "multimodal",
+        "encoder",
+        "transformer",
+        "retrieval"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 94,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "unified architecture for multimodal processing advances transferable encoder capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_fffbcba03b0b217e48932bf1",
+          "url": "https://huggingface.co/blog/Hcompany/neomme",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-03T13:13:48.000Z",
+          "evidenceSnippet": "TL;DR Why another multimodal encoder? NeoMME encoder backbone One Transformer for images and text Learning from images through masked text NeoMME -Retriever A dual-head design for dense and late-interaction retrieval Competitive retrieval at compact model sizes Making high-resolution retrieval practical for late-interaction Try NeoMME -Retriever yourself! Fine-tuning with Sentence Transformers From retrieval to visual RAG Conclusion Acknowledgements Citation We introduce NeoMME , a family of 260M and 800M multilingual multimodal encoders. Unlike many generative visual language models, NeoMME does not use a separate pretrained vision tower or a causal language model. A single bidirectional Transformer processes both text tokens and raw image patches, and we train the entire model from scratch with a masked discrete-diffusion objective. We fine-tuned NeoMME for visual document retrieval using ColPali's page-image approach. NeoMME -Retriever returns dense and late-interaction embeddings in one forward pass. Both model sizes lie on the ViDoRe v3 Pareto frontier for nDCG@10 and model size. At a matched 2048×2048 image input size on an NVIDIA L40S GPU, the 260M model encodes about 51 pag"
         }
       ]
     },
