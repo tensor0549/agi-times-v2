@@ -7,8 +7,71 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-10T06:02:54.488Z",
+  "generatedAt": "2026-09-10T16:29:53.302Z",
   "items": [
+    {
+      "id": "item_a48349e5bebabb509d45",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.05446",
+      "url": "https://arxiv.org/abs/2609.05446",
+      "publishedAt": "2026-09-10T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-10T16:29:33.712Z",
+      "updatedAt": "2026-09-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AutoFyn adapts frozen models through persistent state updates across task rounds",
+        "zh-Hans": "AutoFyn通过跨任务轮次的持久状态更新来适应冻结模型"
+      },
+      "summary": {
+        "en": "AutoFyn harness uses expert iteration with persistent memory and verification to improve agent performance across rounds without updating model weights, demonstrating gains on olympiad mathematics and other domains.",
+        "zh-Hans": "AutoFyn框架使用专家迭代与持久记忆和验证机制，在不更新模型权重的情况下跨轮次提升智能体性能，在奥数等领域展现改进效果。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "expert-iteration",
+        "verification",
+        "persistent-state",
+        "multi-round"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Adib Hasan, Daniel Schaffield, Akashnil Dutta, Tarik Adnan Moon",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:adib hasan, daniel schaffield, akashnil dutta, tarik adnan moon",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "Novel approach to agent improvement through external state management and verification rather than parameter updates",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a48349e5bebabb509d45dcd0",
+          "url": "https://arxiv.org/abs/2609.05446",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.05446v1 Announce Type: new Abstract: We introduce AutoFyn, an agent harness inspired by the Expert Iteration algorithm, adapting a frozen model across many rounds by updating persistent state from verified reward signals rather than model weights. Each round begins from a fresh model session, and durable information is reintroduced only through explicit interfaces such as persistent memory files, reports, and repository state. Within a round, an orchestrator explores, plans and builds many alternative approaches with specialized agents, while a task-grounded verifier verifies the work and supplies an objective reward for measuring progress. This reward is distilled back into the persistent state, which updates the effective policy for the next round. In this technical report, we formalize this loop and describe its persistent state and verification interfaces. We then demonstrate its use in three domains, namely olympiad mathematics, data science, and cybersecurity. On the six fresh problems of the 2026 International Mathematical Olympiad, every model with room to improve scores higher under AutoFyn than in its provider's own coding agent. AutoFyn also built the top-rank"
+        }
+      ]
+    },
     {
       "id": "item_91d599edde19a6ce7d4b",
       "schemaVersion": "1.0.0",
@@ -69,69 +132,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.05439v1 Announce Type: new Abstract: Current evaluation methods for large language models are coarse-grained and decoupled from generation, producing generic explanations that fail to provide actionable feedback for model improvement. We propose CriticGen, a fine-grained, generation-aware evaluation framework that turns evaluation into actionable control for answer improvement. CriticGen first generates sample-specific evaluation dimensions and scoring criteria under high-level categories such as subjective, objective, and self-derived constraints. These criteria then serve as a dynamic rubric for jointly producing a score, a reason, an executable refinement suggestion, and a refined answer. This rubric-conditioned refinement process enables models to diagnose flaws and perform targeted answer improvement. Experimental results show that fine-grained evaluation should be both instance-specific and actionable. CriticGen induces higher-quality rubrics, improving relevance/coverage from 3.33/4.03 to 3.97/4.24. CriticGen also achieves the best score correlations, with 0.9556 Pearson and 0.9560 Spearman, and raises the F1 of criterion-grounded reasons and executable suggestion"
-        }
-      ]
-    },
-    {
-      "id": "item_6901f2f7ec344c98c095",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.05437",
-      "url": "https://arxiv.org/abs/2609.05437",
-      "publishedAt": "2026-09-10T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-10T06:02:29.420Z",
-      "updatedAt": "2026-09-10T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "LLMs Show Harsher Social Judgment Than Humans in Metanorm Reasoning Study",
-        "zh-Hans": "研究显示大语言模型在元规范推理中比人类更严厉"
-      },
-      "summary": {
-        "en": "Research introduces framework for evaluating second-order social reasoning in LLMs, finding models overpredict negative sanctions and struggle with social distance nuances compared to human judgment.",
-        "zh-Hans": "研究引入评估大语言模型二阶社会推理的框架，发现模型过度预测负面制裁，在社会距离细节处理上不如人类判断。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "social reasoning",
-        "metanorms",
-        "alignment",
-        "evaluation"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Sunny Rai, Jinyi Kuang, Reyhan Jamalova, Annie Lou, Cristina Bicchieri, Niyati Malhotra, Victor Hugo Orozco-Olvera, Ana Maria Munoz-Boudet, Lyle H Ungar, Sharath C Guntuku",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:sunny rai, jinyi kuang, reyhan jamalova, annie lou, cristina bicchieri, niyati malhotra, victor hugo orozco-olvera, ana maria munoz-boudet, lyle h ungar, sharath c guntuku",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "advances social reasoning capabilities essential for AGI through novel metanorm evaluation framework",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_6901f2f7ec344c98c095ed1c",
-          "url": "https://arxiv.org/abs/2609.05437",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-10T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.05437v1 Announce Type: new Abstract: Previous AI alignment efforts have focused primarily on first-order social norms -- teaching models what is socially acceptable or unacceptable (e.g., `do not steal'). However, social intelligence depends not only on norm recognition, but also on anticipating who will enforce it and how (e.g., public shame or even imprisonment). These second-order expectations, known as metanorms, govern how people respond when social rules are broken. We introduce a novel framework for evaluating metanorm reasoning in Large Language Models (LLMs) along two dimensions: emotional appraisal and behavioral response, and propose new classification tasks, namely, predicting self-regulation in violators, and other-regulation in observers. We release a multi-perspective dataset, NormReact, of 450 norm violation scenarios, hand-annotated for emotions and behavioral responses across norm violators' gender and observers' social closeness. Current LLMs portray a harsher social world: across six models, they overpredict negative sanctions where humans would expect inaction, and alignment with human judgments deteriorates as social distance increases. These findin"
         }
       ]
     },
@@ -669,6 +669,132 @@
           "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
           "metadataSourceUrl": "https://openai.com/news/rss.xml",
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
+      "id": "item_e53e3ce9460e9ed3cc4f",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.05441",
+      "url": "https://arxiv.org/abs/2609.05441",
+      "publishedAt": "2026-09-10T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-10T16:29:33.712Z",
+      "updatedAt": "2026-09-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "New benchmark measures when memory actually helps tool-using AI agents",
+        "zh-Hans": "新基准测试衡量记忆何时真正帮助使用工具的AI智能体"
+      },
+      "summary": {
+        "en": "MERIT benchmark evaluates memory utility in task-executing agents with cost accounting, finding memory improves success rates from 0.00 to 0.55-1.00 on dependent tasks, though retrieval reliability varies significantly across models.",
+        "zh-Hans": "MERIT基准通过成本核算评估任务执行智能体中的记忆效用，发现记忆将依赖任务的成功率从0.00提升至0.55-1.00，但检索可靠性在不同模型间差异显著。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "memory",
+        "evaluation",
+        "tool-use",
+        "benchmarks"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Shweta Mishra, Shashank Mishra",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:shweta mishra, shashank mishra",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Advances agent memory evaluation methodology with practical task-based metrics rather than conversational recall",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e53e3ce9460e9ed3cc4f8466",
+          "url": "https://arxiv.org/abs/2609.05441",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.05441v1 Announce Type: new Abstract: Long-term memory for LLM agents is evaluated today by conversational recall benchmarks (LoCoMo, LongMemEval), which measure question answering over dialogue history, not whether remembered facts change what a tool-using agent does. We present MERIT (Memory Evaluation for Realistic Instrumented Tasks), a benchmark and harness that measures the marginal utility of memory for task-executing agents under explicit cost accounting. MERIT provides episodic tool-use tasks in three domains whose dependence on earlier-episode facts is verified by an automated leak check; a difficulty ladder ending in updated-fact recall; controlled memory corruption; and full token and dollar metering of every memory operation. Across 23,440 scored episodes ($42.57), a two-generation pilot on gpt-4.1-mini and a preregistered 3-model x 3-seed grid (GPT-4.1, Claude Haiku 4.5; memory side held fixed), memory lifts dependent-task success from a leak-verified floor of 0.00 to 0.55-1.00. On updated facts, embedding retrieval collapses unpredictably (0.30-0.95 across models; max seed gap 0.45), and agents act on a correctly retrieved value only 55% of the time, while "
+        }
+      ]
+    },
+    {
+      "id": "item_6901f2f7ec344c98c095",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.05437",
+      "url": "https://arxiv.org/abs/2609.05437",
+      "publishedAt": "2026-09-10T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-10T06:02:29.420Z",
+      "updatedAt": "2026-09-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LLMs Show Harsher Social Judgment Than Humans in Metanorm Reasoning Study",
+        "zh-Hans": "研究显示大语言模型在元规范推理中比人类更严厉"
+      },
+      "summary": {
+        "en": "Research introduces framework for evaluating second-order social reasoning in LLMs, finding models overpredict negative sanctions and struggle with social distance nuances compared to human judgment.",
+        "zh-Hans": "研究引入评估大语言模型二阶社会推理的框架，发现模型过度预测负面制裁，在社会距离细节处理上不如人类判断。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "social reasoning",
+        "metanorms",
+        "alignment",
+        "evaluation"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Sunny Rai, Jinyi Kuang, Reyhan Jamalova, Annie Lou, Cristina Bicchieri, Niyati Malhotra, Victor Hugo Orozco-Olvera, Ana Maria Munoz-Boudet, Lyle H Ungar, Sharath C Guntuku",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:sunny rai, jinyi kuang, reyhan jamalova, annie lou, cristina bicchieri, niyati malhotra, victor hugo orozco-olvera, ana maria munoz-boudet, lyle h ungar, sharath c guntuku",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances social reasoning capabilities essential for AGI through novel metanorm evaluation framework",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6901f2f7ec344c98c095ed1c",
+          "url": "https://arxiv.org/abs/2609.05437",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.05437v1 Announce Type: new Abstract: Previous AI alignment efforts have focused primarily on first-order social norms -- teaching models what is socially acceptable or unacceptable (e.g., `do not steal'). However, social intelligence depends not only on norm recognition, but also on anticipating who will enforce it and how (e.g., public shame or even imprisonment). These second-order expectations, known as metanorms, govern how people respond when social rules are broken. We introduce a novel framework for evaluating metanorm reasoning in Large Language Models (LLMs) along two dimensions: emotional appraisal and behavioral response, and propose new classification tasks, namely, predicting self-regulation in violators, and other-regulation in observers. We release a multi-perspective dataset, NormReact, of 450 norm violation scenarios, hand-annotated for emotions and behavioral responses across norm violators' gender and observers' social closeness. Current LLMs portray a harsher social world: across six models, they overpredict negative sanctions where humans would expect inaction, and alignment with human judgments deteriorates as social distance increases. These findin"
         }
       ]
     },
