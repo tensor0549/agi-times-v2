@@ -34,21 +34,21 @@
     "content:sync:remote": "node scripts/sync-content.mjs --remote"
   },
   "dependencies": {
-    "@cloudflare/vite-plugin": "1.51.1",
-    "@posthog/react": "1.10.3",
-    "hono": "4.13.1",
-    "lucide-react": "1.31.0",
-    "posthog-js": "1.415.1",
-    "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "@cloudflare/vite-plugin": "1.54.7",
+    "@posthog/react": "1.10.6",
+    "hono": "4.13.7",
+    "lucide-react": "1.45.0",
+    "posthog-js": "1.430.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "5.20260810.1",
     "@testing-library/jest-dom": "7.0.1",
     "@testing-library/react": "16.3.2",
     "@types/node": "26.2.0",
-    "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.0.5",
     "ipaddr.js": "^2.2.0",
     "jsdom": "30.0.1",
