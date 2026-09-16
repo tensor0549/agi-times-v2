@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-16T11:44:50.561Z",
+  "generatedAt": "2026-09-16T17:05:38.055Z",
   "items": [
     {
       "id": "item_84f79990de66e4ccd0da",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "id": "item_8454aa15bfb528550874",
+      "id": "item_fba1d648794c5b2e180e",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -80,57 +80,57 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2609.16129",
-      "url": "https://arxiv.org/abs/2609.16129",
+      "canonicalUrl": "https://arxiv.org/abs/2609.16189",
+      "url": "https://arxiv.org/abs/2609.16189",
       "publishedAt": "2026-09-16T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-16T11:44:35.839Z",
+      "discoveredAt": "2026-09-16T17:05:22.687Z",
       "updatedAt": "2026-09-16T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Fisher Information Geodesic Distance Method for Neural Network Pruning",
-        "zh-Hans": "基于Fisher信息测地距离的神经网络剪枝方法"
+        "en": "AI Not Ready for Strategic Conflicts: Wargame Safety Framework",
+        "zh-Hans": "AI尚未准备好应对战略冲突：兵棋推演安全框架"
       },
       "summary": {
-        "en": "Researchers introduce a differential-geometric approach to neural network pruning using Fisher information metric to compute optimal geodesic distances in model space, outperforming traditional magnitude-based methods across architectures.",
-        "zh-Hans": "研究人员提出基于Fisher信息度量的微分几何神经网络剪枝方法，通过计算模型空间中的最优测地距离，在各种架构上优于传统的幅度剪枝方法。"
+        "en": "Researchers argue language models pose risks in strategic wargames through decision laundering, role collapse, and escalation failures, proposing stress-testing over policy use.",
+        "zh-Hans": "研究人员认为语言模型在战略兵棋推演中存在决策洗白、角色崩溃和升级失败等风险，建议进行压力测试而非政策应用。"
       },
-      "category": "models_capabilities",
+      "category": "safety_security_alignment",
       "tags": [
-        "neural networks",
-        "pruning",
-        "optimization",
-        "fisher information"
+        "strategic simulation",
+        "wargames",
+        "safety evaluation",
+        "stress testing"
       ],
       "topics": [
-        "models_capabilities"
+        "safety_security_alignment"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "David S. Berman, Yen-Yu Fu, Edward Hirst, Thelma Chiwete Obirai",
+      "author": "Mark Riedl, Glenn Matlin",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:david s. berman, yen-yu fu, edward hirst, thelma chiwete obirai",
+      "independenceKey": "academic:mark riedl, glenn matlin",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 93,
+      "freshnessScore": 88,
       "importanceScore": 75,
       "importance": 75,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "advances transferable neural network optimization through principled geometric pruning methodology applicable across architectures",
+      "agiRelevanceScore": 80,
+      "relevanceReason": "addresses safety challenges for AI agents in high-stakes strategic simulation environments",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_8454aa15bfb528550874f2cf",
-          "url": "https://arxiv.org/abs/2609.16129",
+          "id": "candidate_fba1d648794c5b2e180ed624",
+          "url": "https://arxiv.org/abs/2609.16189",
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-16T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.16129v1 Announce Type: new Abstract: A new scheme for parameter pruning is introduced, derived from the differential-geometric distance in model space. Pruning a parameter sets its value to zero, representing a displacement of the model to the hypersurface on which that parameter vanishes. The minimal distance from the unpruned model to this hypersurface is naturally computed via the geodesic distance in the model space as determined by the Fisher information metric. This distance determines the true change in the model, and its performance, under pruning. By analysing progressively more faithful approximations of this geodesic distance a natural hierarchy of optimality for pruning methods is determined. This starts with the traditional magnitude pruning, then develops into new more sophisticated and effective pruning schemes. The method is demonstrated for both fully-connected networks and vision transformers, on MNIST and CIFAR-10, over the complete $0$-$100\\%$ pruning range and across five random seeds. It outperforms pruning by parameter magnitude and by the local Fisher information alone in every architecture and dataset combination considered, on both accuracy and "
+          "evidenceSnippet": "arXiv:2609.16189v1 Announce Type: new Abstract: Open-ended strategic wargames are high-stakes LM-based social simulations: they model adversaries, institutions, escalation, plan brittleness, doctrine, and crisis response. Language models (LMs) are attractive because they can play agents, generate scenario branches, adjudicate ambiguous actions, and summarize lessons, but the same affordances make open-ended roles dangerous: model language determines both what an actor attempts and what becomes simulated reality. This position paper argues that no LM-enabled wargame should inform planning, doctrine, policy, or crisis response without an auditable safety case, and that the proper use of open-ended wargames today is to stress-test decision-influencing LM agents. We identify five failure modes: decision laundering, adjudication opacity, role collapse, escalation-through-adjudication, and failure of strategic imagination. Ordinary benchmarks cannot establish safety for these settings. Wargames can expose failures as stress tests; they are not themselves safety cases for consequential use."
         }
       ]
     },
@@ -321,7 +321,7 @@
       ]
     },
     {
-      "id": "item_5cbcf08e288841ac31de",
+      "id": "item_46660cb2ea4362f69cbd",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -329,31 +329,32 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-      "publishedAt": "2026-09-08T14:23:07.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "publishedAt": "2026-09-09T15:36:24.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-10T06:02:29.420Z",
-      "updatedAt": "2026-09-08T14:23:07.000Z",
+      "discoveredAt": "2026-09-10T19:45:42.431Z",
+      "updatedAt": "2026-09-09T15:36:24.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Context-Specific Safety Alignment Challenges Topic-Level Harm Classification",
-        "zh-Hans": "上下文特定安全对齐挑战主题级危害分类"
+        "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model",
+        "zh-Hans": "IBM发布SOTA Granite时间序列PatchTST-FM-r2模型"
       },
       "summary": {
-        "en": "Analysis reveals limitations of topic-level safety guards like LlamaGuard-3, showing need for context-specific boundaries where same model requires different behavior across deployment settings.",
-        "zh-Hans": "分析揭示了LlamaGuard-3等主题级安全防护的局限性，显示需要上下文特定边界，同一模型在不同部署环境需要不同行为。"
+        "en": "IBM releases Granite Time Series PatchTST-FM-r2, a 385M-parameter foundation model with updated architecture, larger pretraining corpus, and strong zero-shot forecasting performance with commercial-friendly licensing.",
+        "zh-Hans": "IBM发布Granite时间序列PatchTST-FM-r2，这是一个3.85亿参数的基础模型，具有更新的架构、更大的预训练语料库和强大的零样本预测性能，采用商业友好许可。"
       },
-      "category": "safety_security_alignment",
+      "category": "models_capabilities",
       "tags": [
-        "safety alignment",
-        "refusal calibration",
-        "context-specific"
+        "time series",
+        "foundation model",
+        "forecasting",
+        "granite"
       ],
       "topics": [
-        "safety_security_alignment"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
@@ -365,20 +366,20 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 68,
-      "importanceScore": 72,
-      "importance": 72,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "addresses fundamental challenge in AGI safety through context-aware alignment mechanisms",
+      "freshnessScore": 76,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Advances foundation model capabilities for temporal reasoning and zero-shot generalization",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_5cbcf08e288841ac31de1b5b",
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+          "id": "candidate_46660cb2ea4362f69cbd737e",
+          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-09-08T14:23:07.000Z",
-          "evidenceSnippet": "Narrow-boundary safety Where self-generated safety tuning breaks The trade-off, and a trap it hides What this changes Most safety alignment work treats harm as a property of a topic. A prompt is unsafe because it falls into a general category such as weapons, fraud, or self-harm, and guard models like LlamaGuard-3 encode exactly this kind of topic-level taxonomy. Benchmarks like XSTest and OR-Bench then probe the failure mode this creates, models that refuse safe prompts because they contain a dangerous-looking word, and refusal-calibration work tries to pull that number back down. Real deployments rarely fit the topic-level picture. The same base model may be adapted for a general assistant, an educational product, an enterprise system, or a public-sector service, and each setting needs different boundaries within the same topic. A civics tutor and a public-sector assistant can share a model yet require opposite behaviour on politics: both should answer factual questions about an election, but only one may need to refuse a request to write targeted political manipulation. A topic-level guard cannot express that split. LlamaGuard-3, for example, covers elections only as \"factually "
+          "publishedAt": "2026-09-09T15:36:24.000Z",
+          "evidenceSnippet": "TL;DR Strong zero-shot forecasting on GIFT-Eval Competitive even against models allowed to use benchmark training data Architecture: What changed from PatchTST-FM-r1? Training data Open for research experimentation — and for commercial use Try PatchTST-FM-r2 in a few lines of Python From notebooks to streaming time series High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting systems are built. Instead of training and maintaining a separate model for every dataset, users can use a pretrained model and generate forecasts zero-shot. IBM has released Granite Time Series PatchTST-FM-r2 , the latest model in the Granite TSFM family ( github , blog ). PatchTST-FM-r2, a new version of its predecessor PatchTST-FM-r1 , combines an updated architecture, a larger pretraining corpus, probabilistic forecasting, support for imputation of missing values, and strong zero-shot performance in a ~ 385M-parameter model."
         }
       ]
     },
@@ -668,6 +669,69 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_8454aa15bfb528550874",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.16129",
+      "url": "https://arxiv.org/abs/2609.16129",
+      "publishedAt": "2026-09-16T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T11:44:35.839Z",
+      "updatedAt": "2026-09-16T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Fisher Information Geodesic Distance Method for Neural Network Pruning",
+        "zh-Hans": "基于Fisher信息测地距离的神经网络剪枝方法"
+      },
+      "summary": {
+        "en": "Researchers introduce a differential-geometric approach to neural network pruning using Fisher information metric to compute optimal geodesic distances in model space, outperforming traditional magnitude-based methods across architectures.",
+        "zh-Hans": "研究人员提出基于Fisher信息度量的微分几何神经网络剪枝方法，通过计算模型空间中的最优测地距离，在各种架构上优于传统的幅度剪枝方法。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "neural networks",
+        "pruning",
+        "optimization",
+        "fisher information"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "David S. Berman, Yen-Yu Fu, Edward Hirst, Thelma Chiwete Obirai",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:david s. berman, yen-yu fu, edward hirst, thelma chiwete obirai",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances transferable neural network optimization through principled geometric pruning methodology applicable across architectures",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8454aa15bfb528550874f2cf",
+          "url": "https://arxiv.org/abs/2609.16129",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16129v1 Announce Type: new Abstract: A new scheme for parameter pruning is introduced, derived from the differential-geometric distance in model space. Pruning a parameter sets its value to zero, representing a displacement of the model to the hypersurface on which that parameter vanishes. The minimal distance from the unpruned model to this hypersurface is naturally computed via the geodesic distance in the model space as determined by the Fisher information metric. This distance determines the true change in the model, and its performance, under pruning. By analysing progressively more faithful approximations of this geodesic distance a natural hierarchy of optimality for pruning methods is determined. This starts with the traditional magnitude pruning, then develops into new more sophisticated and effective pruning schemes. The method is demonstrated for both fully-connected networks and vision transformers, on MNIST and CIFAR-10, over the complete $0$-$100\\%$ pruning range and across five random seeds. It outperforms pruning by parameter magnitude and by the local Fisher information alone in every architecture and dataset combination considered, on both accuracy and "
+        }
+      ]
     },
     {
       "id": "item_e1d8c979505bd048858b",
@@ -1111,7 +1175,7 @@
       ]
     },
     {
-      "id": "item_46660cb2ea4362f69cbd",
+      "id": "item_5cbcf08e288841ac31de",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -1119,32 +1183,31 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "publishedAt": "2026-09-09T15:36:24.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "publishedAt": "2026-09-08T14:23:07.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-10T19:45:42.431Z",
-      "updatedAt": "2026-09-09T15:36:24.000Z",
+      "discoveredAt": "2026-09-10T06:02:29.420Z",
+      "updatedAt": "2026-09-08T14:23:07.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model",
-        "zh-Hans": "IBM发布SOTA Granite时间序列PatchTST-FM-r2模型"
+        "en": "Context-Specific Safety Alignment Challenges Topic-Level Harm Classification",
+        "zh-Hans": "上下文特定安全对齐挑战主题级危害分类"
       },
       "summary": {
-        "en": "IBM releases Granite Time Series PatchTST-FM-r2, a 385M-parameter foundation model with updated architecture, larger pretraining corpus, and strong zero-shot forecasting performance with commercial-friendly licensing.",
-        "zh-Hans": "IBM发布Granite时间序列PatchTST-FM-r2，这是一个3.85亿参数的基础模型，具有更新的架构、更大的预训练语料库和强大的零样本预测性能，采用商业友好许可。"
+        "en": "Analysis reveals limitations of topic-level safety guards like LlamaGuard-3, showing need for context-specific boundaries where same model requires different behavior across deployment settings.",
+        "zh-Hans": "分析揭示了LlamaGuard-3等主题级安全防护的局限性，显示需要上下文特定边界，同一模型在不同部署环境需要不同行为。"
       },
-      "category": "models_capabilities",
+      "category": "safety_security_alignment",
       "tags": [
-        "time series",
-        "foundation model",
-        "forecasting",
-        "granite"
+        "safety alignment",
+        "refusal calibration",
+        "context-specific"
       ],
       "topics": [
-        "models_capabilities"
+        "safety_security_alignment"
       ],
       "entities": [],
       "mediaType": "article",
@@ -1156,20 +1219,20 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 76,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "Advances foundation model capabilities for temporal reasoning and zero-shot generalization",
+      "freshnessScore": 68,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "addresses fundamental challenge in AGI safety through context-aware alignment mechanisms",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_46660cb2ea4362f69cbd737e",
-          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+          "id": "candidate_5cbcf08e288841ac31de1b5b",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-09-09T15:36:24.000Z",
-          "evidenceSnippet": "TL;DR Strong zero-shot forecasting on GIFT-Eval Competitive even against models allowed to use benchmark training data Architecture: What changed from PatchTST-FM-r1? Training data Open for research experimentation — and for commercial use Try PatchTST-FM-r2 in a few lines of Python From notebooks to streaming time series High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting systems are built. Instead of training and maintaining a separate model for every dataset, users can use a pretrained model and generate forecasts zero-shot. IBM has released Granite Time Series PatchTST-FM-r2 , the latest model in the Granite TSFM family ( github , blog ). PatchTST-FM-r2, a new version of its predecessor PatchTST-FM-r1 , combines an updated architecture, a larger pretraining corpus, probabilistic forecasting, support for imputation of missing values, and strong zero-shot performance in a ~ 385M-parameter model."
+          "publishedAt": "2026-09-08T14:23:07.000Z",
+          "evidenceSnippet": "Narrow-boundary safety Where self-generated safety tuning breaks The trade-off, and a trap it hides What this changes Most safety alignment work treats harm as a property of a topic. A prompt is unsafe because it falls into a general category such as weapons, fraud, or self-harm, and guard models like LlamaGuard-3 encode exactly this kind of topic-level taxonomy. Benchmarks like XSTest and OR-Bench then probe the failure mode this creates, models that refuse safe prompts because they contain a dangerous-looking word, and refusal-calibration work tries to pull that number back down. Real deployments rarely fit the topic-level picture. The same base model may be adapted for a general assistant, an educational product, an enterprise system, or a public-sector service, and each setting needs different boundaries within the same topic. A civics tutor and a public-sector assistant can share a model yet require opposite behaviour on politics: both should answer factual questions about an election, but only one may need to refuse a request to write targeted political manipulation. A topic-level guard cannot express that split. LlamaGuard-3, for example, covers elections only as \"factually "
         }
       ]
     },
