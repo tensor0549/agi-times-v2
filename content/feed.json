@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-16T06:07:27.600Z",
+  "generatedAt": "2026-09-16T11:44:50.561Z",
   "items": [
     {
       "id": "item_84f79990de66e4ccd0da",
@@ -68,6 +68,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-16T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.16145v1 Announce Type: new Abstract: We study a practical question: can a small correction module fix errors in a frozen language model's outputs without degrading its base capabilities? We propose CRN v2, a lightweight logit-level correction module (~34M trainable parameters, 0.73% of the 4.65B text module) that sits atop a fully frozen Gemma 4 E2B model. The base model is never updated; only the correction module learns, via supervised fine-tuning followed by reference-free DPO on 83,400 error-correction pairs. On a 60-question domain exam (CEHRI: Certified Human-Robot Intelligence, covering facts, arithmetic, and implicit-goal reasoning), CRN v2 corrects 53.3% of base-model errors (reworded variant: 43.3%) while showing no degradation on tested capability benchmarks (MMLU/BoolQ N=200; car-wash N=8). A LoRA baseline at the matched CRN v1 budget (6.6M params, rank 19) achieves 83.3% correction but suffers 30-75% capability loss on the same benchmarks -- the correction-capability tradeoff. An ablation shows that the KL preservation term (lambda=0.1) is critical: lowering it to 0.01 degrades correction to 35.0%. A hidden-state injection variant at earlier layers (1.6M par"
+        }
+      ]
+    },
+    {
+      "id": "item_8454aa15bfb528550874",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.16129",
+      "url": "https://arxiv.org/abs/2609.16129",
+      "publishedAt": "2026-09-16T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T11:44:35.839Z",
+      "updatedAt": "2026-09-16T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Fisher Information Geodesic Distance Method for Neural Network Pruning",
+        "zh-Hans": "基于Fisher信息测地距离的神经网络剪枝方法"
+      },
+      "summary": {
+        "en": "Researchers introduce a differential-geometric approach to neural network pruning using Fisher information metric to compute optimal geodesic distances in model space, outperforming traditional magnitude-based methods across architectures.",
+        "zh-Hans": "研究人员提出基于Fisher信息度量的微分几何神经网络剪枝方法，通过计算模型空间中的最优测地距离，在各种架构上优于传统的幅度剪枝方法。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "neural networks",
+        "pruning",
+        "optimization",
+        "fisher information"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "David S. Berman, Yen-Yu Fu, Edward Hirst, Thelma Chiwete Obirai",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:david s. berman, yen-yu fu, edward hirst, thelma chiwete obirai",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances transferable neural network optimization through principled geometric pruning methodology applicable across architectures",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8454aa15bfb528550874f2cf",
+          "url": "https://arxiv.org/abs/2609.16129",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16129v1 Announce Type: new Abstract: A new scheme for parameter pruning is introduced, derived from the differential-geometric distance in model space. Pruning a parameter sets its value to zero, representing a displacement of the model to the hypersurface on which that parameter vanishes. The minimal distance from the unpruned model to this hypersurface is naturally computed via the geodesic distance in the model space as determined by the Fisher information metric. This distance determines the true change in the model, and its performance, under pruning. By analysing progressively more faithful approximations of this geodesic distance a natural hierarchy of optimality for pruning methods is determined. This starts with the traditional magnitude pruning, then develops into new more sophisticated and effective pruning schemes. The method is demonstrated for both fully-connected networks and vision transformers, on MNIST and CIFAR-10, over the complete $0$-$100\\%$ pruning range and across five random seeds. It outperforms pruning by parameter magnitude and by the local Fisher information alone in every architecture and dataset combination considered, on both accuracy and "
         }
       ]
     },
@@ -258,70 +321,7 @@
       ]
     },
     {
-      "id": "item_a48349e5bebabb509d45",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.05446",
-      "url": "https://arxiv.org/abs/2609.05446",
-      "publishedAt": "2026-09-10T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-10T16:29:33.712Z",
-      "updatedAt": "2026-09-10T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "AutoFyn adapts frozen models through persistent state updates across task rounds",
-        "zh-Hans": "AutoFyn通过跨任务轮次的持久状态更新来适应冻结模型"
-      },
-      "summary": {
-        "en": "AutoFyn harness uses expert iteration with persistent memory and verification to improve agent performance across rounds without updating model weights, demonstrating gains on olympiad mathematics and other domains.",
-        "zh-Hans": "AutoFyn框架使用专家迭代与持久记忆和验证机制，在不更新模型权重的情况下跨轮次提升智能体性能，在奥数等领域展现改进效果。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "expert-iteration",
-        "verification",
-        "persistent-state",
-        "multi-round"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Adib Hasan, Daniel Schaffield, Akashnil Dutta, Tarik Adnan Moon",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:adib hasan, daniel schaffield, akashnil dutta, tarik adnan moon",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 89,
-      "importanceScore": 80,
-      "importance": 80,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "Novel approach to agent improvement through external state management and verification rather than parameter updates",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_a48349e5bebabb509d45dcd0",
-          "url": "https://arxiv.org/abs/2609.05446",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-10T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.05446v1 Announce Type: new Abstract: We introduce AutoFyn, an agent harness inspired by the Expert Iteration algorithm, adapting a frozen model across many rounds by updating persistent state from verified reward signals rather than model weights. Each round begins from a fresh model session, and durable information is reintroduced only through explicit interfaces such as persistent memory files, reports, and repository state. Within a round, an orchestrator explores, plans and builds many alternative approaches with specialized agents, while a task-grounded verifier verifies the work and supplies an objective reward for measuring progress. This reward is distilled back into the persistent state, which updates the effective policy for the next round. In this technical report, we formalize this loop and describe its persistent state and verification interfaces. We then demonstrate its use in three domains, namely olympiad mathematics, data science, and cybersecurity. On the six fresh problems of the 2026 International Mathematical Olympiad, every model with room to improve scores higher under AutoFyn than in its provider's own coding agent. AutoFyn also built the top-rank"
-        }
-      ]
-    },
-    {
-      "id": "item_46660cb2ea4362f69cbd",
+      "id": "item_5cbcf08e288841ac31de",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -329,32 +329,31 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "publishedAt": "2026-09-09T15:36:24.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "publishedAt": "2026-09-08T14:23:07.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-10T19:45:42.431Z",
-      "updatedAt": "2026-09-09T15:36:24.000Z",
+      "discoveredAt": "2026-09-10T06:02:29.420Z",
+      "updatedAt": "2026-09-08T14:23:07.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model",
-        "zh-Hans": "IBM发布SOTA Granite时间序列PatchTST-FM-r2模型"
+        "en": "Context-Specific Safety Alignment Challenges Topic-Level Harm Classification",
+        "zh-Hans": "上下文特定安全对齐挑战主题级危害分类"
       },
       "summary": {
-        "en": "IBM releases Granite Time Series PatchTST-FM-r2, a 385M-parameter foundation model with updated architecture, larger pretraining corpus, and strong zero-shot forecasting performance with commercial-friendly licensing.",
-        "zh-Hans": "IBM发布Granite时间序列PatchTST-FM-r2，这是一个3.85亿参数的基础模型，具有更新的架构、更大的预训练语料库和强大的零样本预测性能，采用商业友好许可。"
+        "en": "Analysis reveals limitations of topic-level safety guards like LlamaGuard-3, showing need for context-specific boundaries where same model requires different behavior across deployment settings.",
+        "zh-Hans": "分析揭示了LlamaGuard-3等主题级安全防护的局限性，显示需要上下文特定边界，同一模型在不同部署环境需要不同行为。"
       },
-      "category": "models_capabilities",
+      "category": "safety_security_alignment",
       "tags": [
-        "time series",
-        "foundation model",
-        "forecasting",
-        "granite"
+        "safety alignment",
+        "refusal calibration",
+        "context-specific"
       ],
       "topics": [
-        "models_capabilities"
+        "safety_security_alignment"
       ],
       "entities": [],
       "mediaType": "article",
@@ -366,20 +365,20 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 76,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "Advances foundation model capabilities for temporal reasoning and zero-shot generalization",
+      "freshnessScore": 68,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "addresses fundamental challenge in AGI safety through context-aware alignment mechanisms",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_46660cb2ea4362f69cbd737e",
-          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+          "id": "candidate_5cbcf08e288841ac31de1b5b",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-09-09T15:36:24.000Z",
-          "evidenceSnippet": "TL;DR Strong zero-shot forecasting on GIFT-Eval Competitive even against models allowed to use benchmark training data Architecture: What changed from PatchTST-FM-r1? Training data Open for research experimentation — and for commercial use Try PatchTST-FM-r2 in a few lines of Python From notebooks to streaming time series High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting systems are built. Instead of training and maintaining a separate model for every dataset, users can use a pretrained model and generate forecasts zero-shot. IBM has released Granite Time Series PatchTST-FM-r2 , the latest model in the Granite TSFM family ( github , blog ). PatchTST-FM-r2, a new version of its predecessor PatchTST-FM-r1 , combines an updated architecture, a larger pretraining corpus, probabilistic forecasting, support for imputation of missing values, and strong zero-shot performance in a ~ 385M-parameter model."
+          "publishedAt": "2026-09-08T14:23:07.000Z",
+          "evidenceSnippet": "Narrow-boundary safety Where self-generated safety tuning breaks The trade-off, and a trap it hides What this changes Most safety alignment work treats harm as a property of a topic. A prompt is unsafe because it falls into a general category such as weapons, fraud, or self-harm, and guard models like LlamaGuard-3 encode exactly this kind of topic-level taxonomy. Benchmarks like XSTest and OR-Bench then probe the failure mode this creates, models that refuse safe prompts because they contain a dangerous-looking word, and refusal-calibration work tries to pull that number back down. Real deployments rarely fit the topic-level picture. The same base model may be adapted for a general assistant, an educational product, an enterprise system, or a public-sector service, and each setting needs different boundaries within the same topic. A civics tutor and a public-sector assistant can share a model yet require opposite behaviour on politics: both should answer factual questions about an election, but only one may need to refuse a request to write targeted political manipulation. A topic-level guard cannot express that split. LlamaGuard-3, for example, covers elections only as \"factually "
         }
       ]
     },
@@ -442,6 +441,105 @@
           "publisher": "Microsoft Research",
           "publishedAt": "2026-08-20T16:00:00.000Z",
           "evidenceSnippet": "Skala 1.1, the updated deep-learning exchange-correlation functional from Microsoft Research, provides greater accuracy, expanded accessibility across the computational chemistry ecosystem, and a living benchmark to track computational performance. The post Broadening access to Skala creates a faster path to predictive DFT appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
         }
       ]
     },
@@ -572,65 +670,130 @@
       "mediaType": "article"
     },
     {
-      "id": "release_mistral_shieldstral_20260804",
-      "sourceId": "src_mistral-ai",
-      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
-      "publishedAt": "2026-08-04T00:00:00Z",
-      "title": {
-        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
-        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
-      },
-      "summary": {
-        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
-        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "open-weights",
-        "multimodal",
-        "moderation"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "products_developer_ecosystem"
-      ],
-      "entities": [
-        "Mistral AI",
-        "Shieldstral"
-      ],
-      "author": "Mistral",
-      "org": "Mistral AI",
-      "importanceScore": 83,
-      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
+      "id": "item_e1d8c979505bd048858b",
       "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://mistral.ai/news/shieldstral/",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_mistral-ai",
-        "name": "Mistral AI"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-04T00:00:00Z",
+      "canonicalUrl": "https://arxiv.org/abs/2609.16163",
+      "url": "https://arxiv.org/abs/2609.16163",
+      "publishedAt": "2026-09-16T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T11:44:35.839Z",
+      "updatedAt": "2026-09-16T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
+      "title": {
+        "en": "GNN-Based PPO Framework for Adaptive Real-Time Routing Systems",
+        "zh-Hans": "基于图神经网络的PPO自适应实时路径规划框架"
+      },
+      "summary": {
+        "en": "GPEvac demonstrates a GNN-based PPO framework with edge-first message passing and permutation-invariant scoring that enables single learned policies to operate across diverse building topologies and sizes.",
+        "zh-Hans": "GPEvac展示了基于图神经网络的PPO框架，采用边优先消息传递和排列不变评分机制，使单一学习策略能够适用于不同拓扑和规模的建筑布局。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "reinforcement learning",
+        "graph neural networks",
+        "adaptive routing",
+        "ppo"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Daniel Perkins, Subhadeep Chakraborty",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:daniel perkins, subhadeep chakraborty",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 21,
-      "importance": 83,
-      "verification": "verified_first_party",
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "advances transferable agent capabilities through topology-agnostic policy learning and adaptive routing mechanisms",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_release_mistral_shieldstral_20260804",
-          "url": "https://mistral.ai/news/shieldstral/",
-          "publisher": "Mistral AI",
-          "publishedAt": "2026-08-04T00:00:00Z",
-          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
+          "id": "candidate_e1d8c979505bd048858b22db",
+          "url": "https://arxiv.org/abs/2609.16163",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16163v1 Announce Type: new Abstract: The sharp increase in mass shootings underscores an urgent need for systems that guide victims to safety in real time. An effective evacuation system must minimize threat exposure while also accounting for adversarial uncertainty and crowding dynamics. Current methods in the literature are rigidly constrained to layout-specific policies and computationally intractable in large-scale layouts, while practical guidelines simply advise victims to \"run\", \"hide\", or \"fight\". We propose GPEvac: a GNN-based PPO framework that computes adaptive evacuation routes during shooting events. To capture both local and long-distance dependencies, we introduce an edge-first sequential message-passing scheme with a learnable virtual global node. The resulting graph embeddings are integrated into a permutation-invariant scoring mechanism that allows a single learned policy to operate across building layouts of diverse topologies and sizes. Through extensive simulation, we show that GPEvac outperforms intelligent baselines across distinct architectural layouts, significantly reducing total threat exposure. Crucially, the system computes global evacuation "
         }
+      ]
+    },
+    {
+      "id": "item_a48349e5bebabb509d45",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.05446",
+      "url": "https://arxiv.org/abs/2609.05446",
+      "publishedAt": "2026-09-10T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-10T16:29:33.712Z",
+      "updatedAt": "2026-09-10T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AutoFyn adapts frozen models through persistent state updates across task rounds",
+        "zh-Hans": "AutoFyn通过跨任务轮次的持久状态更新来适应冻结模型"
+      },
+      "summary": {
+        "en": "AutoFyn harness uses expert iteration with persistent memory and verification to improve agent performance across rounds without updating model weights, demonstrating gains on olympiad mathematics and other domains.",
+        "zh-Hans": "AutoFyn框架使用专家迭代与持久记忆和验证机制，在不更新模型权重的情况下跨轮次提升智能体性能，在奥数等领域展现改进效果。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "expert-iteration",
+        "verification",
+        "persistent-state",
+        "multi-round"
       ],
-      "mediaType": "article"
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Adib Hasan, Daniel Schaffield, Akashnil Dutta, Tarik Adnan Moon",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:adib hasan, daniel schaffield, akashnil dutta, tarik adnan moon",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "Novel approach to agent improvement through external state management and verification rather than parameter updates",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a48349e5bebabb509d45dcd0",
+          "url": "https://arxiv.org/abs/2609.05446",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-10T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.05446v1 Announce Type: new Abstract: We introduce AutoFyn, an agent harness inspired by the Expert Iteration algorithm, adapting a frozen model across many rounds by updating persistent state from verified reward signals rather than model weights. Each round begins from a fresh model session, and durable information is reintroduced only through explicit interfaces such as persistent memory files, reports, and repository state. Within a round, an orchestrator explores, plans and builds many alternative approaches with specialized agents, while a task-grounded verifier verifies the work and supplies an objective reward for measuring progress. This reward is distilled back into the persistent state, which updates the effective policy for the next round. In this technical report, we formalize this loop and describe its persistent state and verification interfaces. We then demonstrate its use in three domains, namely olympiad mathematics, data science, and cybersecurity. On the six fresh problems of the 2026 International Mathematical Olympiad, every model with room to improve scores higher under AutoFyn than in its provider's own coding agent. AutoFyn also built the top-rank"
+        }
+      ]
     },
     {
       "id": "item_91d599edde19a6ce7d4b",
@@ -948,7 +1111,7 @@
       ]
     },
     {
-      "id": "item_5cbcf08e288841ac31de",
+      "id": "item_46660cb2ea4362f69cbd",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -956,31 +1119,32 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-      "publishedAt": "2026-09-08T14:23:07.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "publishedAt": "2026-09-09T15:36:24.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-10T06:02:29.420Z",
-      "updatedAt": "2026-09-08T14:23:07.000Z",
+      "discoveredAt": "2026-09-10T19:45:42.431Z",
+      "updatedAt": "2026-09-09T15:36:24.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Context-Specific Safety Alignment Challenges Topic-Level Harm Classification",
-        "zh-Hans": "上下文特定安全对齐挑战主题级危害分类"
+        "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model",
+        "zh-Hans": "IBM发布SOTA Granite时间序列PatchTST-FM-r2模型"
       },
       "summary": {
-        "en": "Analysis reveals limitations of topic-level safety guards like LlamaGuard-3, showing need for context-specific boundaries where same model requires different behavior across deployment settings.",
-        "zh-Hans": "分析揭示了LlamaGuard-3等主题级安全防护的局限性，显示需要上下文特定边界，同一模型在不同部署环境需要不同行为。"
+        "en": "IBM releases Granite Time Series PatchTST-FM-r2, a 385M-parameter foundation model with updated architecture, larger pretraining corpus, and strong zero-shot forecasting performance with commercial-friendly licensing.",
+        "zh-Hans": "IBM发布Granite时间序列PatchTST-FM-r2，这是一个3.85亿参数的基础模型，具有更新的架构、更大的预训练语料库和强大的零样本预测性能，采用商业友好许可。"
       },
-      "category": "safety_security_alignment",
+      "category": "models_capabilities",
       "tags": [
-        "safety alignment",
-        "refusal calibration",
-        "context-specific"
+        "time series",
+        "foundation model",
+        "forecasting",
+        "granite"
       ],
       "topics": [
-        "safety_security_alignment"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
@@ -992,20 +1156,20 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 68,
-      "importanceScore": 72,
-      "importance": 72,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "addresses fundamental challenge in AGI safety through context-aware alignment mechanisms",
+      "freshnessScore": 76,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Advances foundation model capabilities for temporal reasoning and zero-shot generalization",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_5cbcf08e288841ac31de1b5b",
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+          "id": "candidate_46660cb2ea4362f69cbd737e",
+          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-09-08T14:23:07.000Z",
-          "evidenceSnippet": "Narrow-boundary safety Where self-generated safety tuning breaks The trade-off, and a trap it hides What this changes Most safety alignment work treats harm as a property of a topic. A prompt is unsafe because it falls into a general category such as weapons, fraud, or self-harm, and guard models like LlamaGuard-3 encode exactly this kind of topic-level taxonomy. Benchmarks like XSTest and OR-Bench then probe the failure mode this creates, models that refuse safe prompts because they contain a dangerous-looking word, and refusal-calibration work tries to pull that number back down. Real deployments rarely fit the topic-level picture. The same base model may be adapted for a general assistant, an educational product, an enterprise system, or a public-sector service, and each setting needs different boundaries within the same topic. A civics tutor and a public-sector assistant can share a model yet require opposite behaviour on politics: both should answer factual questions about an election, but only one may need to refuse a request to write targeted political manipulation. A topic-level guard cannot express that split. LlamaGuard-3, for example, covers elections only as \"factually "
+          "publishedAt": "2026-09-09T15:36:24.000Z",
+          "evidenceSnippet": "TL;DR Strong zero-shot forecasting on GIFT-Eval Competitive even against models allowed to use benchmark training data Architecture: What changed from PatchTST-FM-r1? Training data Open for research experimentation — and for commercial use Try PatchTST-FM-r2 in a few lines of Python From notebooks to streaming time series High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting systems are built. Instead of training and maintaining a separate model for every dataset, users can use a pretrained model and generate forecasts zero-shot. IBM has released Granite Time Series PatchTST-FM-r2 , the latest model in the Granite TSFM family ( github , blog ). PatchTST-FM-r2, a new version of its predecessor PatchTST-FM-r1 , combines an updated architecture, a larger pretraining corpus, probabilistic forecasting, support for imputation of missing values, and strong zero-shot performance in a ~ 385M-parameter model."
         }
       ]
     },
@@ -6591,105 +6755,6 @@
       ]
     },
     {
-      "id": "statement_meta_personal_superintelligence_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
-      },
-      "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
-      ],
-      "topics": [
-        "agents_automation",
-        "safety_security_alignment"
-      ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
-      "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
-        }
-      ]
-    },
-    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -7050,6 +7115,67 @@
           "publisher": "Google",
           "publishedAt": "2026-08-07T00:00:00Z",
           "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "release_mistral_shieldstral_20260804",
+      "sourceId": "src_mistral-ai",
+      "canonicalUrl": "https://mistral.ai/news/shieldstral/",
+      "publishedAt": "2026-08-04T00:00:00Z",
+      "title": {
+        "en": "Mistral releases the 3B open-weights Shieldstral safety classifier",
+        "zh-Hans": "Mistral 发布 30 亿参数开源权重安全分类器 Shieldstral"
+      },
+      "summary": {
+        "en": "Shieldstral applies plain-language policies at inference time across text and images. Mistral released the 3B weights under Apache 2.0 and says the model runs on one 16GB GPU.",
+        "zh-Hans": "Shieldstral 可在推理时直接接收自然语言安全策略，并统一处理文本与图片。Mistral 以 Apache 2.0 发布 30 亿参数权重，称其可在单张 16GB GPU 上运行。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "open-weights",
+        "multimodal",
+        "moderation"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "products_developer_ecosystem"
+      ],
+      "entities": [
+        "Mistral AI",
+        "Shieldstral"
+      ],
+      "author": "Mistral",
+      "org": "Mistral AI",
+      "importanceScore": 83,
+      "evidence": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://mistral.ai/news/shieldstral/",
+      "source": {
+        "id": "src_mistral-ai",
+        "name": "Mistral AI"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-04T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 21,
+      "importance": 83,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_mistral_shieldstral_20260804",
+          "url": "https://mistral.ai/news/shieldstral/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-04T00:00:00Z",
+          "evidenceSnippet": "A 3B model that runs on a single 16GB GPU... Open — Apache 2.0 weights."
         }
       ],
       "mediaType": "article"
