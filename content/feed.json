@@ -7,8 +7,71 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-16T17:05:38.055Z",
+  "generatedAt": "2026-09-16T20:12:41.233Z",
   "items": [
+    {
+      "id": "item_f46ca6633e8a6274a9cd",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.16213",
+      "url": "https://arxiv.org/abs/2609.16213",
+      "publishedAt": "2026-09-16T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T20:12:23.881Z",
+      "updatedAt": "2026-09-16T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AI biosecurity risks analyzed across digital-to-physical research workflow",
+        "zh-Hans": "人工智能生物安全风险分析涵盖数字到物理研究流程"
+      },
+      "summary": {
+        "en": "Study examines AI biosecurity risks in biological research, finding that while frontier systems exceed expert baselines on computational tasks, tacit knowledge and physical execution remain substantial barriers for wet-laboratory applications.",
+        "zh-Hans": "研究检视生物研究中的AI生物安全风险，发现虽然前沿系统在计算任务上超越专家基线，但隐性知识和物理执行仍是湿实验室应用的重大障碍。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "biosecurity",
+        "ai safety",
+        "biological research",
+        "risk assessment"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Candace S. Y. Chan, Aris Karatzikos, Ilias Georgakopoulos-Soares",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:candace s. y. chan, aris karatzikos, ilias georgakopoulos-soares",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Evaluates AI capabilities and safety considerations in scientific research applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f46ca6633e8a6274a9cd3bfb",
+          "url": "https://arxiv.org/abs/2609.16213",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16213v1 Announce Type: new Abstract: Artificial intelligence is reshaping biological research across an increasingly connected digital-to-physical workflow. General-purpose large language models can retrieve and integrate scientific information, support experimental planning, and computational analysis; biological foundation models can predict, optimize, and generate proteins, genes, and genome-scale sequences; agentic systems can coordinate multistep research tasks; automated laboratories can partially close the design-build-test-learn cycle. These technologies could greatly benefit medicine, public health, and biotechnology. However, their biosecurity risk depends not only on what the AI can do, but also on who uses it, their expertise and intent, their access to laboratory tools and materials, and the safeguards in place. Current evidence shows that AI uplift exists but primarily affects digital rather than physical tasks. Frontier systems have exceeded expert baselines on in-silico, and screening-evasion benchmarks, whereas controlled wet-laboratory studies find that tacit knowledge and physical execution remain substantial barriers. This review describes the differe"
+        }
+      ]
+    },
     {
       "id": "item_84f79990de66e4ccd0da",
       "schemaVersion": "1.0.0",
@@ -68,69 +131,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-16T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.16145v1 Announce Type: new Abstract: We study a practical question: can a small correction module fix errors in a frozen language model's outputs without degrading its base capabilities? We propose CRN v2, a lightweight logit-level correction module (~34M trainable parameters, 0.73% of the 4.65B text module) that sits atop a fully frozen Gemma 4 E2B model. The base model is never updated; only the correction module learns, via supervised fine-tuning followed by reference-free DPO on 83,400 error-correction pairs. On a 60-question domain exam (CEHRI: Certified Human-Robot Intelligence, covering facts, arithmetic, and implicit-goal reasoning), CRN v2 corrects 53.3% of base-model errors (reworded variant: 43.3%) while showing no degradation on tested capability benchmarks (MMLU/BoolQ N=200; car-wash N=8). A LoRA baseline at the matched CRN v1 budget (6.6M params, rank 19) achieves 83.3% correction but suffers 30-75% capability loss on the same benchmarks -- the correction-capability tradeoff. An ablation shows that the KL preservation term (lambda=0.1) is critical: lowering it to 0.01 degrades correction to 35.0%. A hidden-state injection variant at earlier layers (1.6M par"
-        }
-      ]
-    },
-    {
-      "id": "item_fba1d648794c5b2e180e",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.16189",
-      "url": "https://arxiv.org/abs/2609.16189",
-      "publishedAt": "2026-09-16T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-16T17:05:22.687Z",
-      "updatedAt": "2026-09-16T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "AI Not Ready for Strategic Conflicts: Wargame Safety Framework",
-        "zh-Hans": "AI尚未准备好应对战略冲突：兵棋推演安全框架"
-      },
-      "summary": {
-        "en": "Researchers argue language models pose risks in strategic wargames through decision laundering, role collapse, and escalation failures, proposing stress-testing over policy use.",
-        "zh-Hans": "研究人员认为语言模型在战略兵棋推演中存在决策洗白、角色崩溃和升级失败等风险，建议进行压力测试而非政策应用。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "strategic simulation",
-        "wargames",
-        "safety evaluation",
-        "stress testing"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Mark Riedl, Glenn Matlin",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:mark riedl, glenn matlin",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 88,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "addresses safety challenges for AI agents in high-stakes strategic simulation environments",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_fba1d648794c5b2e180ed624",
-          "url": "https://arxiv.org/abs/2609.16189",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-16T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.16189v1 Announce Type: new Abstract: Open-ended strategic wargames are high-stakes LM-based social simulations: they model adversaries, institutions, escalation, plan brittleness, doctrine, and crisis response. Language models (LMs) are attractive because they can play agents, generate scenario branches, adjudicate ambiguous actions, and summarize lessons, but the same affordances make open-ended roles dangerous: model language determines both what an actor attempts and what becomes simulated reality. This position paper argues that no LM-enabled wargame should inform planning, doctrine, policy, or crisis response without an auditable safety case, and that the proper use of open-ended wargames today is to stress-test decision-influencing LM agents. We identify five failure modes: decision laundering, adjudication opacity, role collapse, escalation-through-adjudication, and failure of strategic imagination. Ordinary benchmarks cannot establish safety for these settings. Wargames can expose failures as stress tests; they are not themselves safety cases for consequential use."
         }
       ]
     },
@@ -321,7 +321,7 @@
       ]
     },
     {
-      "id": "item_46660cb2ea4362f69cbd",
+      "id": "item_85052f9befba2c4e17fa",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -329,32 +329,32 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "publishedAt": "2026-09-09T15:36:24.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-10T19:45:42.431Z",
-      "updatedAt": "2026-09-09T15:36:24.000Z",
+      "discoveredAt": "2026-09-16T20:12:23.881Z",
+      "updatedAt": "2026-09-10T00:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model",
-        "zh-Hans": "IBM发布SOTA Granite时间序列PatchTST-FM-r2模型"
+        "en": "Async GRPO training with LoRA adapters deployed across distributed jobs",
+        "zh-Hans": "跨分布式任务部署LoRA适配器的异步GRPO训练"
       },
       "summary": {
-        "en": "IBM releases Granite Time Series PatchTST-FM-r2, a 385M-parameter foundation model with updated architecture, larger pretraining corpus, and strong zero-shot forecasting performance with commercial-friendly licensing.",
-        "zh-Hans": "IBM发布Granite时间序列PatchTST-FM-r2，这是一个3.85亿参数的基础模型，具有更新的架构、更大的预训练语料库和强大的零样本预测性能，采用商业友好许可。"
+        "en": "Hugging Face released LoRA support in AsyncGRPOTrainer, enabling asynchronous training of adapters instead of full models with synchronization to vLLM inference systems.",
+        "zh-Hans": "Hugging Face在AsyncGRPOTrainer中发布LoRA支持，支持异步训练适配器而非完整模型，并与vLLM推理系统同步。"
       },
-      "category": "models_capabilities",
+      "category": "products_developer_ecosystem",
       "tags": [
-        "time series",
-        "foundation model",
-        "forecasting",
-        "granite"
+        "lora",
+        "reinforcement learning",
+        "distributed training",
+        "developer tools"
       ],
       "topics": [
-        "models_capabilities"
+        "products_developer_ecosystem"
       ],
       "entities": [],
       "mediaType": "article",
@@ -366,20 +366,82 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 76,
+      "freshnessScore": 21,
       "importanceScore": 70,
       "importance": 70,
       "agiRelevanceScore": 72,
-      "relevanceReason": "Advances foundation model capabilities for temporal reasoning and zero-shot generalization",
+      "relevanceReason": "Improves efficiency of model training and deployment infrastructure",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_46660cb2ea4362f69cbd737e",
-          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+          "id": "candidate_85052f9befba2c4e17fa41a5",
+          "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-09-09T15:36:24.000Z",
-          "evidenceSnippet": "TL;DR Strong zero-shot forecasting on GIFT-Eval Competitive even against models allowed to use benchmark training data Architecture: What changed from PatchTST-FM-r1? Training data Open for research experimentation — and for commercial use Try PatchTST-FM-r2 in a few lines of Python From notebooks to streaming time series High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting systems are built. Instead of training and maintaining a separate model for every dataset, users can use a pretrained model and generate forecasts zero-shot. IBM has released Granite Time Series PatchTST-FM-r2 , the latest model in the Granite TSFM family ( github , blog ). PatchTST-FM-r2, a new version of its predecessor PatchTST-FM-r1 , combines an updated architecture, a larger pretraining corpus, probabilistic forecasting, support for imputation of missing values, and strong zero-shot performance in a ~ 385M-parameter model."
+          "publishedAt": "2026-09-10T00:00:00.000Z",
+          "evidenceSnippet": "The architecture: leveraging Hugging Face Jobs and Storage Buckets 🪣 The three Jobs The vLLM replicas The dataset choice: the Sanity set The trainer The proxy Routing rollouts by KV prefix Broadcasting the adapter Full run results Weight sync Routing Where the time goes Reward Chasing the bottleneck ping-pong Reading the dashboard r1-dp2&lt;/code>: a trainer that cannot keep up\"> Run 1, r1-dp2 : a trainer that cannot keep up r1-dp2-tb16k&lt;/code>: pack the microbatch\"> Run 2, r1-dp2-tb16k : pack the microbatch r1-dp2-tb16k-nockpt&lt;/code>: stop recomputing the forward\"> Run 3, r1-dp2-tb16k-nockpt : stop recomputing the forward r1-dp3-tb16k-nockpt&lt;/code>: three replicas, and a surprise\"> Run 4, r1-dp3-tb16k-nockpt : three replicas, and a surprise r1-dp3-inflight384&lt;/code>: lift the cap on in-flight requests\"> Run 5, r1-dp3-inflight384 : lift the cap on in-flight requests The scoreboard Try it References TL;DR LoRA support recently landed in TRL's AsyncGRPOTrainer with PR #7017 , and ships with TRL v1.14. The asynchronous trainer can now train an adapter instead of the full model, and it syncs only the LoRA adapter to vLLM. This post covers a real-world project built on top "
+        }
+      ]
+    },
+    {
+      "id": "item_b1b4ad0d4a36bbd2e7dc",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "publishedAt": "2026-08-31T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-06T04:46:34.200Z",
+      "updatedAt": "2026-08-31T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft releases efficient pathology foundation models for population-scale studies",
+        "zh-Hans": "微软发布用于人群规模研究的高效病理学基础模型"
+      },
+      "summary": {
+        "en": "GigaPath-Flash and GigaTIME-Flash reduce computational demands while maintaining performance in pathology analysis, enabling larger-scale medical studies and broader research exploration.",
+        "zh-Hans": "GigaPath-Flash和GigaTIME-Flash在保持病理学分析性能的同时降低计算需求，使更大规模的医学研究和更广泛的研究探索成为可能。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "foundation models",
+        "pathology",
+        "computational efficiency"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Naoto Usuyama, Jeya Maria Jose Valanarasu, Tristan Naumann",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 28,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances efficient foundation model architectures with maintained performance for specialized domain applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b1b4ad0d4a36bbd2e7dc0477",
+          "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-31T16:00:00.000Z",
+          "evidenceSnippet": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash cut computational demands while maintaining strong performance, opening the door to larger studies and broader exploration. The post GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models appeared first on Microsoft Research ."
         }
       ]
     },
@@ -609,66 +671,67 @@
       ]
     },
     {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "id": "item_fba1d648794c5b2e180e",
       "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
+      "canonicalUrl": "https://arxiv.org/abs/2609.16189",
+      "url": "https://arxiv.org/abs/2609.16189",
+      "publishedAt": "2026-09-16T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T17:05:22.687Z",
+      "updatedAt": "2026-09-16T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
+      "title": {
+        "en": "AI Not Ready for Strategic Conflicts: Wargame Safety Framework",
+        "zh-Hans": "AI尚未准备好应对战略冲突：兵棋推演安全框架"
+      },
+      "summary": {
+        "en": "Researchers argue language models pose risks in strategic wargames through decision laundering, role collapse, and escalation failures, proposing stress-testing over policy use.",
+        "zh-Hans": "研究人员认为语言模型在战略兵棋推演中存在决策洗白、角色崩溃和升级失败等风险，建议进行压力测试而非政策应用。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "strategic simulation",
+        "wargames",
+        "safety evaluation",
+        "stress testing"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Mark Riedl, Glenn Matlin",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:mark riedl, glenn matlin",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 88,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "addresses safety challenges for AI agents in high-stakes strategic simulation environments",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+          "id": "candidate_fba1d648794c5b2e180ed624",
+          "url": "https://arxiv.org/abs/2609.16189",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16189v1 Announce Type: new Abstract: Open-ended strategic wargames are high-stakes LM-based social simulations: they model adversaries, institutions, escalation, plan brittleness, doctrine, and crisis response. Language models (LMs) are attractive because they can play agents, generate scenario branches, adjudicate ambiguous actions, and summarize lessons, but the same affordances make open-ended roles dangerous: model language determines both what an actor attempts and what becomes simulated reality. This position paper argues that no LM-enabled wargame should inform planning, doctrine, policy, or crisis response without an auditable safety case, and that the proper use of open-ended wargames today is to stress-test decision-influencing LM agents. We identify five failure modes: decision laundering, adjudication opacity, role collapse, escalation-through-adjudication, and failure of strategic imagination. Ordinary benchmarks cannot establish safety for these settings. Wargames can expose failures as stress tests; they are not themselves safety cases for consequential use."
         }
-      ],
-      "mediaType": "article"
+      ]
     },
     {
       "id": "item_8454aa15bfb528550874",
@@ -1171,6 +1234,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.05459v1 Announce Type: new Abstract: Reinforcement learning and large language models often struggle to accurately capture the causal mechanics of game environments. Standard reinforcement learning agents tend to rely on spurious correlations, while large language models are prone to hallucinating game rules. Although causal reinforcement learning improves interpretability, there is currently no formal methodology to map complex game mechanics directly into causal models. To address this, we propose a deterministic framework that compiles games specified in the Video Game Description Language into Dynamic Structural Causal Models. Rather than inferring causal structures from gameplay traces or noisy large language models' outputs, our methodology directly translates game components, including sprite dynamics, interaction rules, and termination conditions, into explicit structural equations. Each game tick represents a causal transition from state variables at time $t$ to $t+1$. By establishing this grounded mapping, the approach guarantees absolute causal fidelity to the ground-truth game mechanics. The resulting models offer transparent causal pathways that support coun"
+        }
+      ]
+    },
+    {
+      "id": "item_46660cb2ea4362f69cbd",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "publishedAt": "2026-09-09T15:36:24.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-10T19:45:42.431Z",
+      "updatedAt": "2026-09-09T15:36:24.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model",
+        "zh-Hans": "IBM发布SOTA Granite时间序列PatchTST-FM-r2模型"
+      },
+      "summary": {
+        "en": "IBM releases Granite Time Series PatchTST-FM-r2, a 385M-parameter foundation model with updated architecture, larger pretraining corpus, and strong zero-shot forecasting performance with commercial-friendly licensing.",
+        "zh-Hans": "IBM发布Granite时间序列PatchTST-FM-r2，这是一个3.85亿参数的基础模型，具有更新的架构、更大的预训练语料库和强大的零样本预测性能，采用商业友好许可。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "time series",
+        "foundation model",
+        "forecasting",
+        "granite"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 76,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Advances foundation model capabilities for temporal reasoning and zero-shot generalization",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_46660cb2ea4362f69cbd737e",
+          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-09T15:36:24.000Z",
+          "evidenceSnippet": "TL;DR Strong zero-shot forecasting on GIFT-Eval Competitive even against models allowed to use benchmark training data Architecture: What changed from PatchTST-FM-r1? Training data Open for research experimentation — and for commercial use Try PatchTST-FM-r2 in a few lines of Python From notebooks to streaming time series High-performance zero-shot forecasting with commercial-friendly open licensing Time-series foundation models are changing the way forecasting systems are built. Instead of training and maintaining a separate model for every dataset, users can use a pretrained model and generate forecasts zero-shot. IBM has released Granite Time Series PatchTST-FM-r2 , the latest model in the Granite TSFM family ( github , blog ). PatchTST-FM-r2, a new version of its predecessor PatchTST-FM-r1 , combines an updated architecture, a larger pretraining corpus, probabilistic forecasting, support for imputation of missing values, and strong zero-shot performance in a ~ 385M-parameter model."
         }
       ]
     },
@@ -2238,68 +2364,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-31T17:19:40.000Z",
           "evidenceSnippet": "Ayush Jain and Rajat Sen, Research Scientists, Google Research We introduce TimesFM-3, a state-of-the-art time series foundation model that enables highly accurate multivariate time series forecasting in a single forward pass, significantly outperforming other forecasting models across major benchmarks. Since the debut of TimesFM in 2024, we’ve seen the adoption of time-series foundation models for real-world time-series forecasting tasks across multiple domains, such as retail, finance, observability, manufacturing, healthcare and natural sciences ."
-        }
-      ]
-    },
-    {
-      "id": "item_b1b4ad0d4a36bbd2e7dc",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-      "publishedAt": "2026-08-31T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-06T04:46:34.200Z",
-      "updatedAt": "2026-08-31T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft releases efficient pathology foundation models for population-scale studies",
-        "zh-Hans": "微软发布用于人群规模研究的高效病理学基础模型"
-      },
-      "summary": {
-        "en": "GigaPath-Flash and GigaTIME-Flash reduce computational demands while maintaining performance in pathology analysis, enabling larger-scale medical studies and broader research exploration.",
-        "zh-Hans": "GigaPath-Flash和GigaTIME-Flash在保持病理学分析性能的同时降低计算需求，使更大规模的医学研究和更广泛的研究探索成为可能。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "foundation models",
-        "pathology",
-        "computational efficiency"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Naoto Usuyama, Jeya Maria Jose Valanarasu, Tristan Naumann",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 28,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances efficient foundation model architectures with maintained performance for specialized domain applications",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_b1b4ad0d4a36bbd2e7dc0477",
-          "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-31T16:00:00.000Z",
-          "evidenceSnippet": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash cut computational demands while maintaining strong performance, opening the door to larger studies and broader exploration. The post GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models appeared first on Microsoft Research ."
         }
       ]
     },
@@ -7120,6 +7184,68 @@
           "evidenceSnippet": "What makes a good tutor? How TutorMoments works Preliminary results Limitations and next steps 📄 Tech Report: https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf | 📊 Data: https://huggingface.co/datasets/allenai/tutormoments-preview | 💻 Code: https://github.com/allenai/tutormoments Today we're introducing a preview of TutorMoments , a framework to measure whether cutting-edge LLMs can balance one of the hardest trade-offs in education: when to step in and help a student and when to hold back and let the student do more of the work. TutorMoments is a replay-based evaluation built off real one-on-one math tutoring sessions. Experienced math teachers go through transcripts collected from a U.S. tutoring program and flag the moments where a tutor had to choose between making a problem easier to get started on and pushing the student to do more of the reasoning themselves. TutorMoments then takes the transcript up to that decision point, hands it to a language model, and has the model take over as the tutor in a simulated session – with the student played by another language model – to see what the LLM tutor does."
         }
       ]
+    },
+    {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
     },
     {
       "id": "release_google_gemini_omni_builders_20260807",
