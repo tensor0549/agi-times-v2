@@ -7,8 +7,143 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-10T06:02:54.488Z",
+  "generatedAt": "2026-09-16T06:07:27.600Z",
   "items": [
+    {
+      "id": "insight_ai-system-reliability-optimization-techniques_20260916",
+      "slug": "ai-system-reliability-optimization-techniques",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "AI System Reliability: New Techniques for Consistent Performance and Efficient Training",
+        "zh-Hans": "AI系统可靠性：一致性能和高效训练的新技术"
+      },
+      "dek": {
+        "en": "Recent advances address critical gaps in AI reliability through capability-preserving error correction, consistency measurement, and efficient training paradigms.",
+        "zh-Hans": "最新进展通过能力保持错误纠正、一致性测量和高效训练范式解决AI可靠性关键缺陷。"
+      },
+      "body": {
+        "en": "Recent research reveals significant reliability challenges in AI systems while introducing promising solutions. Agent consistency emerges as a critical but underreported issue, with ReAct agents showing substantial performance gaps between average and consistent success rates [^candidate_a1d018f16fad79f97456f75b]. Meanwhile, new correction techniques demonstrate that lightweight modules can fix model errors without capability degradation [^candidate_84f79990de66e4ccd0da3466]. Training efficiency advances through paradigm reversals, with frameworks generating tool-use answers before queries to improve performance [^candidate_aa8533b1c5b411fc0ea79169], and reinforcement learning replacing expensive inference-time reasoning with trained lightweight models [^candidate_f174ca4a3cbc866f5f127805]. These complementary approaches address different aspects of AI system reliability: measurement, correction, and efficient capability development.",
+        "zh-Hans": "最新研究揭示AI系统重大可靠性挑战，同时引入有前景的解决方案。智能体一致性成为关键但报告不足的问题，ReAct智能体在平均成功率和一致成功率间显示显著性能差距[^candidate_a1d018f16fad79f97456f75b]。同时，新纠错技术证明轻量级模块可修复模型错误而不降低能力[^candidate_84f79990de66e4ccd0da3466]。训练效率通过范式逆转获得进展，框架先生成工具使用答案再生成查询以提升性能[^candidate_aa8533b1c5b411fc0ea79169]，强化学习用训练的轻量级模型替代昂贵的推理时推理[^candidate_f174ca4a3cbc866f5f127805]。这些互补方法解决AI系统可靠性的不同方面：测量、纠正和高效能力开发。"
+      },
+      "publishedAt": "2026-09-16T06:07:27.600Z",
+      "updatedAt": "2026-09-16T06:07:27.600Z",
+      "topics": [
+        "models_capabilities",
+        "agents_automation"
+      ],
+      "claims": [
+        {
+          "id": "agent_consistency_gap",
+          "type": "fact",
+          "text": {
+            "en": "ReAct agent using GPT-4.1 achieved 77.4% average success but only 53.0% consistent success across five runs, revealing a 24.4-point consistency gap",
+            "zh-Hans": "使用GPT-4.1的ReAct智能体平均成功率77.4%，但五次运行一致成功率仅53.0%，显示24.4点一致性差距"
+          },
+          "citationIds": [
+            "candidate_a1d018f16fad79f97456f75b"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "capability_preserving_correction",
+          "type": "fact",
+          "text": {
+            "en": "CRN v2 correction module corrects 53.3% of base-model errors using only 0.73% additional parameters while showing no capability degradation, unlike LoRA which suffers 30-75% capability loss",
+            "zh-Hans": "CRN v2纠错模块仅用0.73%额外参数纠正53.3%基础模型错误且无能力降低，而LoRA遭受30-75%能力损失"
+          },
+          "citationIds": [
+            "candidate_84f79990de66e4ccd0da3466"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "id": "training_paradigm_reversal",
+          "type": "fact",
+          "text": {
+            "en": "ToolGrad framework reverses traditional paradigm by generating tool-use answers before user queries, enabling better LLM tool-use performance",
+            "zh-Hans": "ToolGrad框架颠覆传统范式，先生成工具使用答案再生成用户查询，实现更好的LLM工具使用性能"
+          },
+          "citationIds": [
+            "candidate_aa8533b1c5b411fc0ea79169"
+          ],
+          "confidence": 0.88
+        },
+        {
+          "id": "inference_optimization",
+          "type": "fact",
+          "text": {
+            "en": "Retrieve-for-Train framework uses reinforcement learning to train lightweight diffusion models, bypassing expensive autoregressive reasoning to instantly generate coherent results",
+            "zh-Hans": "检索训练框架使用强化学习训练轻量级扩散模型，绕过昂贵的自回归推理即时生成连贯结果"
+          },
+          "citationIds": [
+            "candidate_f174ca4a3cbc866f5f127805"
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_a1d018f16fad79f97456f75b",
+          "feedItemId": "item_a1d018f16fad79f97456",
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-15T16:00:44.000Z",
+          "evidenceSnippet": "The Metric Almost Nobody Reports Why Agents Flip: Sharp Decisions vs. Flat Ones Diagnose, Then Fix Results: Reducing the Gap Without Losing Accuracy The guidelines generalize — they aren't patching one trajectory If You're Shipping an Agent Try It Appendix: Understanding the Metrics Linked artifacts / references Your agent works in rehearsal, but during the live demo, it takes a different path and fails the same task. That is embarrassing onstage. In production, it is a reliability problem: a workflow that succeeded once may fail the next time a user makes the same request. For mission-critical work, such as reconciling a financial transaction or checking a contract for an obligation, that can be a showstopper. Most benchmarks hide this variability behind an average. On AppWorld, a ReAct agent using GPT-4.1 succeeded on 77.4% of runs across five repetitions. But it succeeded in all five runs for only 53.0% of tasks — a 24.4-point consistency gap ."
+        },
+        {
+          "id": "candidate_84f79990de66e4ccd0da3466",
+          "feedItemId": "item_84f79990de66e4ccd0da",
+          "title": "Safe Error Correction for Language Models: Frozen-Base Adjustment with Capability Preservation",
+          "url": "https://arxiv.org/abs/2609.16145",
+          "publisher": "arXiv cs.AI",
+          "author": "Gautam Kishore",
+          "independenceKey": "academic:gautam kishore",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16145v1 Announce Type: new Abstract: We study a practical question: can a small correction module fix errors in a frozen language model's outputs without degrading its base capabilities? We propose CRN v2, a lightweight logit-level correction module (~34M trainable parameters, 0.73% of the 4.65B text module) that sits atop a fully frozen Gemma 4 E2B model. The base model is never updated; only the correction module learns, via supervised fine-tuning followed by reference-free DPO on 83,400 error-correction pairs. On a 60-question domain exam (CEHRI: Certified Human-Robot Intelligence, covering facts, arithmetic, and implicit-goal reasoning), CRN v2 corrects 53.3% of base-model errors (reworded variant: 43.3%) while showing no degradation on tested capability benchmarks (MMLU/BoolQ N=200; car-wash N=8). A LoRA baseline at the matched CRN v1 budget (6.6M params, rank 19) achieves 83.3% correction but suffers 30-75% capability loss on the same benchmarks -- the correction-capability tradeoff. An ablation shows that the KL preservation term (lambda=0.1) is critical: lowering it to 0.01 degrades correction to 35.0%. A hidden-state injection variant at earlier layers (1.6M par"
+        },
+        {
+          "id": "candidate_aa8533b1c5b411fc0ea79169",
+          "feedItemId": "item_aa8533b1c5b411fc0ea7",
+          "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+          "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+          "publisher": "Google Research",
+          "author": "Google Research",
+          "independenceKey": "publisher:google research",
+          "publishedAt": "2026-09-10T22:50:22.000Z",
+          "evidenceSnippet": "Zhongyi Zhou, Research Scientist, and Ruofei Du, Interactive Perception & Graphics Lead, Google XR ToolGrad is a data generation framework that reverses the traditional paradigm by first generating tool-use answers before user queries. We show this design enables LLMs to achieve better tool-use performance. AI agents have shown great potential in automating real-world tasks, such as conducting a Google Search, reading local computer files, or executing generated Python scripts. To achieve such agentic workflows, LLMs need to learn how to use tools correctly and efficiently. To teach large language models tool uses, we need datasets of tool-use chains and their corresponding user queries. In our prior work introduced in InstructPipe , we manually annotated our evaluation data, but it is impractical to scale up the human annotation for advanced LLM fine-tuning workstreams. To streamline the data workstream, prior work, e.g., ToolBench and ToolACE , explored using an agent to automatically search a tool-use path with trial and error. This representative annotation approach involves two steps: (1) generate a hypothetical user instruction from a sampled API pool, and (2) use a depth-fir"
+        },
+        {
+          "id": "candidate_f174ca4a3cbc866f5f127805",
+          "feedItemId": "item_f174ca4a3cbc866f5f12",
+          "title": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
+          "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+          "publisher": "Google Research",
+          "author": "Google Research",
+          "independenceKey": "publisher:google research",
+          "publishedAt": "2026-09-15T20:00:35.000Z",
+          "evidenceSnippet": "Pengcheng Jiang, Student Researcher, and Judith Yue Li, Senior Research Engineer, Google Research Instead of relying on expensive inference-time reasoning, the Retrieve-for-Train framework uses reinforcement learning once to train a lightweight diffusion model. This bypasses the heavy autoregressive \"thinking budget\" to instantly generate a cohesive, expert-level slate of AI search results. Modern search or recommendation applications are increasingly expected to return a coherent set of results rather than a single best match. For example, when a user searches for \"camping gear\", they don’t want ten slight variations of four-person tents. They want a coherent, complementary slate that includes essential camping gear, such as a tent, sleeping bag, portable stove, and headlamp."
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-09-16T06:07:27.600Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-09-16T06:06:59.873Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_llm-evaluation-alignment-advances_20260910",
       "slug": "llm-evaluation-alignment-advances",
