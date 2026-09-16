@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-16T20:12:41.233Z",
+  "generatedAt": "2026-09-16T23:00:21.365Z",
   "items": [
     {
       "id": "item_f46ca6633e8a6274a9cd",
@@ -667,6 +667,69 @@
           "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
           "metadataSourceUrl": "https://openai.com/news/rss.xml",
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
+      "id": "item_f963ef3c21e67ede602c",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.16215",
+      "url": "https://arxiv.org/abs/2609.16215",
+      "publishedAt": "2026-09-16T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T23:00:09.525Z",
+      "updatedAt": "2026-09-16T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Multi-Tier KV Cache Placement Enables 73x More Concurrent LLM Sessions",
+        "zh-Hans": "多层KV缓存放置策略支持73倍并发LLM会话"
+      },
+      "summary": {
+        "en": "Study of KV cache placement across GPU, CPU, and SSD tiers shows 73.02x more concurrent sessions per GPU and 62.04x lower cost per session, with recency-based placement producing 2.30x less migration traffic than frequency-based approaches.",
+        "zh-Hans": "跨GPU、CPU和SSD层级的KV缓存放置研究显示，每GPU支持73.02倍并发会话，每会话成本降低62.04倍，基于时近性的放置策略比频率方法减少2.30倍迁移流量。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "kv cache",
+        "memory management",
+        "tiering",
+        "gpu optimization"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Srikanta Datta Tumkur, Jay Iyer, Mehar Simhadri, Sai Pavan Kumar, Sai Kapil Kumar, Ramesh Nampelly",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:srikanta datta tumkur, jay iyer, mehar simhadri, sai pavan kumar, sai kapil kumar, ramesh nampelly",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 83,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Significantly improves LLM memory efficiency and scalability for long-lived agent sessions",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f963ef3c21e67ede602c5df5",
+          "url": "https://arxiv.org/abs/2609.16215",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16215v1 Announce Type: new Abstract: GPU high bandwidth memory is scarce and expensive, and KV caches consume much of it as chats, agent loops, and document question answering accumulate state. Systems such as Mooncake, LMCache, FlexGen, InfiniGen, and AttentionStore extend GPU memory with CPU DRAM and SSD. The harder question is which blocks belong in each tier, when to move or evict them, and whether prefetching helps. We study these choices in a discrete event simulator spanning GPU HBM, CPU DRAM, and SSD, calibrated against a random forest execution time predictor. We compare recency, reuse frequency, predicted reuse, and an EWMA predictor with prefetch lookahead across chat, agent, and document question answering workloads. Tiering supports 73.02 times more concurrent sessions per GPU and lowers cost per session by 62.04 times. These gains come from tier capacities of 1 plus 8 plus 64, not placement policy. Decode is compute bound at batch size one in our setup, so placement barely affects throughput. It mainly changes PCIe migration traffic and time to first token. Recency produces 2.30 times less migration traffic than reuse frequency for chat. Reuse frequency per"
         }
       ]
     },
