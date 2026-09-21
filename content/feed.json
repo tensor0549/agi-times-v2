@@ -7,197 +7,10 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-16T23:00:21.365Z",
+  "generatedAt": "2026-09-21T14:17:10.196Z",
   "items": [
     {
-      "id": "item_f46ca6633e8a6274a9cd",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.16213",
-      "url": "https://arxiv.org/abs/2609.16213",
-      "publishedAt": "2026-09-16T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-16T20:12:23.881Z",
-      "updatedAt": "2026-09-16T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "AI biosecurity risks analyzed across digital-to-physical research workflow",
-        "zh-Hans": "人工智能生物安全风险分析涵盖数字到物理研究流程"
-      },
-      "summary": {
-        "en": "Study examines AI biosecurity risks in biological research, finding that while frontier systems exceed expert baselines on computational tasks, tacit knowledge and physical execution remain substantial barriers for wet-laboratory applications.",
-        "zh-Hans": "研究检视生物研究中的AI生物安全风险，发现虽然前沿系统在计算任务上超越专家基线，但隐性知识和物理执行仍是湿实验室应用的重大障碍。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "biosecurity",
-        "ai safety",
-        "biological research",
-        "risk assessment"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Candace S. Y. Chan, Aris Karatzikos, Ilias Georgakopoulos-Soares",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:candace s. y. chan, aris karatzikos, ilias georgakopoulos-soares",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 86,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Evaluates AI capabilities and safety considerations in scientific research applications",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_f46ca6633e8a6274a9cd3bfb",
-          "url": "https://arxiv.org/abs/2609.16213",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-16T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.16213v1 Announce Type: new Abstract: Artificial intelligence is reshaping biological research across an increasingly connected digital-to-physical workflow. General-purpose large language models can retrieve and integrate scientific information, support experimental planning, and computational analysis; biological foundation models can predict, optimize, and generate proteins, genes, and genome-scale sequences; agentic systems can coordinate multistep research tasks; automated laboratories can partially close the design-build-test-learn cycle. These technologies could greatly benefit medicine, public health, and biotechnology. However, their biosecurity risk depends not only on what the AI can do, but also on who uses it, their expertise and intent, their access to laboratory tools and materials, and the safeguards in place. Current evidence shows that AI uplift exists but primarily affects digital rather than physical tasks. Frontier systems have exceeded expert baselines on in-silico, and screening-evasion benchmarks, whereas controlled wet-laboratory studies find that tacit knowledge and physical execution remain substantial barriers. This review describes the differe"
-        }
-      ]
-    },
-    {
-      "id": "item_84f79990de66e4ccd0da",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.16145",
-      "url": "https://arxiv.org/abs/2609.16145",
-      "publishedAt": "2026-09-16T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-16T06:06:59.873Z",
-      "updatedAt": "2026-09-16T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Safe Error Correction for Language Models: Frozen-Base Adjustment with Capability Preservation",
-        "zh-Hans": "语言模型安全错误纠正：冻结基础调整与能力保持"
-      },
-      "summary": {
-        "en": "CRN v2 correction module fixes 53.3% of base model errors using only 0.73% additional parameters while preserving original capabilities, unlike LoRA which suffers 30-75% capability loss.",
-        "zh-Hans": "CRN v2纠错模块仅用0.73%额外参数修复53.3%基础模型错误，同时保持原有能力，而LoRA会损失30-75%能力。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "error correction",
-        "capability preservation",
-        "language models"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Gautam Kishore",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:gautam kishore",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "demonstrates transferable capability preservation technique for model correction without degradation",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_84f79990de66e4ccd0da3466",
-          "url": "https://arxiv.org/abs/2609.16145",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-16T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.16145v1 Announce Type: new Abstract: We study a practical question: can a small correction module fix errors in a frozen language model's outputs without degrading its base capabilities? We propose CRN v2, a lightweight logit-level correction module (~34M trainable parameters, 0.73% of the 4.65B text module) that sits atop a fully frozen Gemma 4 E2B model. The base model is never updated; only the correction module learns, via supervised fine-tuning followed by reference-free DPO on 83,400 error-correction pairs. On a 60-question domain exam (CEHRI: Certified Human-Robot Intelligence, covering facts, arithmetic, and implicit-goal reasoning), CRN v2 corrects 53.3% of base-model errors (reworded variant: 43.3%) while showing no degradation on tested capability benchmarks (MMLU/BoolQ N=200; car-wash N=8). A LoRA baseline at the matched CRN v1 budget (6.6M params, rank 19) achieves 83.3% correction but suffers 30-75% capability loss on the same benchmarks -- the correction-capability tradeoff. An ablation shows that the KL preservation term (lambda=0.1) is critical: lowering it to 0.01 degrades correction to 35.0%. A hidden-state injection variant at earlier layers (1.6M par"
-        }
-      ]
-    },
-    {
-      "id": "item_f174ca4a3cbc866f5f12",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-      "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-      "publishedAt": "2026-09-15T20:00:35.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-16T06:06:59.873Z",
-      "updatedAt": "2026-09-15T20:00:35.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
-        "zh-Hans": "绕过推理瓶颈：用检索训练加速复杂AI搜索"
-      },
-      "summary": {
-        "en": "Retrieve-for-Train framework uses reinforcement learning to train lightweight diffusion models, bypassing expensive autoregressive reasoning to instantly generate coherent search result sets.",
-        "zh-Hans": "检索训练框架使用强化学习训练轻量级扩散模型，绕过昂贵的自回归推理，即时生成连贯的搜索结果集。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "inference optimization",
-        "reinforcement learning",
-        "search systems"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 91,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "demonstrates transferable inference optimization technique replacing expensive reasoning with trained models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_f174ca4a3cbc866f5f127805",
-          "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-15T20:00:35.000Z",
-          "evidenceSnippet": "Pengcheng Jiang, Student Researcher, and Judith Yue Li, Senior Research Engineer, Google Research Instead of relying on expensive inference-time reasoning, the Retrieve-for-Train framework uses reinforcement learning once to train a lightweight diffusion model. This bypasses the heavy autoregressive \"thinking budget\" to instantly generate a cohesive, expert-level slate of AI search results. Modern search or recommendation applications are increasingly expected to return a coherent set of results rather than a single best match. For example, when a user searches for \"camping gear\", they don’t want ten slight variations of four-person tents. They want a coherent, complementary slate that includes essential camping gear, such as a tent, sleeping bag, portable stove, and headlamp."
-        }
-      ]
-    },
-    {
-      "id": "item_a1d018f16fad79f97456",
+      "id": "item_ae2a66f3c360fd1788ea",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -205,31 +18,219 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "publishedAt": "2026-09-15T16:00:44.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-16T06:06:59.873Z",
-      "updatedAt": "2026-09-15T16:00:44.000Z",
+      "discoveredAt": "2026-09-21T14:16:34.328Z",
+      "updatedAt": "2026-09-21T13:44:34.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Your Agent Aced the Task. Will It Do It Again?",
-        "zh-Hans": "你的智能体完成了任务，还能再做一次吗？"
+        "en": "Physics-Inspired Block Pruning for LLM Compression Using Ising Optimization",
+        "zh-Hans": "基于伊辛优化的物理启发式LLM块剪枝压缩方法"
       },
       "summary": {
-        "en": "ReAct agent using GPT-4.1 shows 77.4% average success but only 53.0% consistent success across five runs, revealing a 24.4-point consistency gap hidden by benchmark averages.",
-        "zh-Hans": "使用GPT-4.1的ReAct智能体平均成功率77.4%，但五次运行一致成功率仅53.0%，揭示基准平均值掩盖的24.4点一致性差距。"
+        "en": "Multiverse Computing frames transformer block removal as an energy minimization problem from spin physics, treating block selection as interacting binary variables to solve combinatorial optimization challenges in model compression.",
+        "zh-Hans": "Multiverse Computing将变换器块移除建模为自旋物理中的能量最小化问题，将块选择视为相互作用的二元变量来解决模型压缩中的组合优化挑战。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
-        "agent reliability",
-        "consistency",
-        "production deployment"
+        "model compression",
+        "optimization",
+        "physics-inspired",
+        "transformer architecture"
       ],
       "topics": [
-        "agents_automation"
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 99,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances transferable model compression techniques through novel physics-inspired optimization approach",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_ae2a66f3c360fd1788ea542e",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-21T13:44:34.000Z",
+          "evidenceSnippet": "Why picking blocks is a many-body problem The idea: turn block selection into an energy-minimization problem Solving it: exact when you can, quantum or quantum-inspired when you can't Why the whole low-energy spectrum matters Results It generalizes beyond dense transformers Why this fits Multiverse Computing One of the cheapest ways to make a large language model faster is also one of the bluntest: delete whole transformer blocks. Because the model literally gets shorter, block removal (also called depth pruning) buys predictable inference speedups on top of the memory savings, and it stacks cleanly with quantization, low-rank compression, and other techniques. The hard part is deciding which blocks to cut. Remove the wrong ones and the model collapses; and the effect of removing any one block depends on which others you remove alongside it, so the choices interact. That makes it a combinatorial problem, not a ranking problem, and combinatorial problems with interacting binary variables are exactly what the physics of spin systems was built to describe. Our latest paper, LLM Compression by Block Removal with Constrained Binary Optimization , takes that correspondence literally. We "
+        }
+      ]
+    },
+    {
+      "id": "item_7517c50358dbe9ce4cc6",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.20971",
+      "url": "https://arxiv.org/abs/2609.20971",
+      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-21T14:16:34.328Z",
+      "updatedAt": "2026-09-21T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "RBS-Attention Achieves 20x Speedup for Long-Context LLM Prefill",
+        "zh-Hans": "RBS注意力机制实现长上下文LLM预填充20倍加速"
+      },
+      "summary": {
+        "en": "Training-free sparse prefill method addresses mean dilution in block selection through dual-branch approach, achieving significant speedups on H100 GPUs while maintaining accuracy on 128K context lengths.",
+        "zh-Hans": "无需训练的稀疏预填充方法通过双分支方法解决块选择中的均值稀释问题，在H100 GPU上实现显著加速同时保持128K上下文长度的准确性。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "attention mechanism",
+        "long context",
+        "sparse attention",
+        "inference optimization"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Chuxu Song, Jiuqi Wei, Zhencan Peng",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:chuxu song, jiuqi wei, zhencan peng",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "materially advances long-context processing capabilities with transferable attention optimization techniques",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_7517c50358dbe9ce4cc6b6a3",
+          "url": "https://arxiv.org/abs/2609.20971",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-21T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.20971v1 Announce Type: new Abstract: Long-context large language model inference is increasingly limited by prefill, where dense self-attention processes the entire prompt before generation begins. Sparse block selection can reduce this cost, but a block centroid may hide a highly relevant token among many irrelevant ones. We call this failure mode mean dilution and propose RBS-Attention, a training-free sparse-prefill method with two complementary selection branches. A centroid base branch captures average relevance, while a rescue branch uses the maximum key-block radius and its prompt-, layer-, and head-dependent distribution to identify blocks at risk of underestimation. Independently thresholding the two branches and combining their masks controls the contribution of rescue blocks while preserving regular block-sparse FlashAttention execution. On H100 GPUs, RBS-Attention achieves 20.65$\\times$ standalone prefill-attention speedup, 11.92$\\times$ vLLM prefill-attention speedup, and 5.97$\\times$ end-to-end time-to-first-token speedup at 128K on Qwen3-30B-A3B-Instruct-2507-FP8. On the dense Qwen3-32B model, it obtains 88.65 overall RULER accuracy versus 89.52 for dense "
+        }
+      ]
+    },
+    {
+      "id": "item_a51d145ffe436938784a",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.20974",
+      "url": "https://arxiv.org/abs/2609.20974",
+      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-21T14:16:34.328Z",
+      "updatedAt": "2026-09-21T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Attention-Aware Routing Couples MoE Expert Selection with Contextual State",
+        "zh-Hans": "注意力感知路由将MoE专家选择与上下文状态耦合"
+      },
+      "summary": {
+        "en": "Novel routing method augments MoE expert selection with temporal and spectral features from attention weights, demonstrating coupled circuits between routing and attention mechanisms while improving mathematical reasoning performance.",
+        "zh-Hans": "新颖的路由方法通过注意力权重的时间和频谱特征增强MoE专家选择，展示路由与注意力机制间的耦合回路并提升数学推理性能。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mixture of experts",
+        "attention routing",
+        "contextual processing"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Despoina Kosmopoulou, Anastasios Tsetsilas, Efthymios Georgiou, Giannis Karamanolakis, Swastik Roy, Alexandros Potamianos",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:despoina kosmopoulou, anastasios tsetsilas, efthymios georgiou, giannis karamanolakis, swastik roy, alexandros potamianos",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances transferable expert routing mechanisms through attention-routing coupling discovery",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a51d145ffe436938784a0c93",
+          "url": "https://arxiv.org/abs/2609.20974",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-21T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.20974v1 Announce Type: new Abstract: In Mixture-of-Experts language models, the router typically selects and weights experts based on the token's hidden state, utilizing limited contextual information. We propose Attention-Aware Routing (AAR), which augments the router with temporal and spectral features extracted from a sliding window of attention weights that represent a summary of the model's contextual state, disentangled from the hidden state. Keeping the base transformer entirely frozen, we train only the routing parameters, isolating routing as the sole variable. AAR improves GSM8K by +3.37 pp over a routing-only SFT baseline on OLMoE. Beyond performance, we show that routing and attention form a coupled circuit: routing changes at layer l propagate through the residual stream to amplify attention sinks at layer l+1, reshaping attention without any direct update to the attention mechanism itself. Further, AAR reduces long diverging generation, with incorrect answers getting shorter, while correct answers remain unchanged in length. Finally, AAR is strongly depth-sensitive: applying it indiscriminately across layers can degrade factual retrieval, whereas mathematic"
+        }
+      ]
+    },
+    {
+      "id": "item_693b3130e25cc8808f58",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/tokenizers-v1",
+      "url": "https://huggingface.co/blog/tokenizers-v1",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-21T14:16:34.328Z",
+      "updatedAt": "2026-09-21T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Tokenizers v1 Targets Performance Bottlenecks in Scaling ML Workflows",
+        "zh-Hans": "Tokenizers v1针对ML工作流扩展中的性能瓶颈"
+      },
+      "summary": {
+        "en": "Hugging Face redesigns tokenization infrastructure to address emerging bottlenecks as models become faster and workloads scale, preventing GPUs from sitting idle while waiting for CPU tokenization completion.",
+        "zh-Hans": "Hugging Face重新设计分词基础设施以解决模型加速和工作负载扩展中出现的瓶颈，防止GPU在等待CPU分词完成时空闲。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "tokenization",
+        "performance optimization",
+        "scaling"
+      ],
+      "topics": [
+        "compute_infrastructure"
       ],
       "entities": [],
       "mediaType": "article",
@@ -242,19 +243,19 @@
       "metrics": {},
       "classification": null,
       "freshnessScore": 87,
-      "importanceScore": 82,
-      "importance": 82,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "identifies critical reliability gap in agent deployment affecting transferable agent consistency",
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "addresses fundamental infrastructure scaling challenges for model deployment and training",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_a1d018f16fad79f97456f75b",
-          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+          "id": "candidate_693b3130e25cc8808f585a69",
+          "url": "https://huggingface.co/blog/tokenizers-v1",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-09-15T16:00:44.000Z",
-          "evidenceSnippet": "The Metric Almost Nobody Reports Why Agents Flip: Sharp Decisions vs. Flat Ones Diagnose, Then Fix Results: Reducing the Gap Without Losing Accuracy The guidelines generalize — they aren't patching one trajectory If You're Shipping an Agent Try It Appendix: Understanding the Metrics Linked artifacts / references Your agent works in rehearsal, but during the live demo, it takes a different path and fails the same task. That is embarrassing onstage. In production, it is a reliability problem: a workflow that succeeded once may fail the next time a user makes the same request. For mission-critical work, such as reconciling a financial transaction or checking a contract for an obligation, that can be a showstopper. Most benchmarks hide this variability behind an average. On AppWorld, a ReAct agent using GPT-4.1 succeeded on 77.4% of runs across five repetitions. But it succeeded in all five runs for only 53.0% of tasks — a 24.4-point consistency gap ."
+          "publishedAt": "2026-09-21T00:00:00.000Z",
+          "evidenceSnippet": "Results What V1 Is The Split: Bitstreams Instead Of A Regex The Word Cache The Merge Loop Method What This Adds Up To Getting It Progress Towards V1 Release Candidate: Implemented 1.0.0 After 1.0.0 The tokenizer has not historically been the bottleneck within ML workflows. Compute-wise, tokenization is light compared to the heavy modeling happening in the rest of the pipeline. Yet, in some cases, it has rapidly become key to accelerating (or slowing down) your machine learning work. As models become faster and workloads scale, that balance begins to shift. Training on massive datasets, serving many concurrent requests, or repeatedly processing long inputs can put enough pressure on the tokenizer that it starves the model of data. This is why we have chosen to heavily focus on performance for the upcoming version 1 of tokenizers. Tokenization should be light and should scale with your workflow. Your GPUs should never sit idle waiting for the CPU to complete its tokenization."
         }
       ]
     },
@@ -321,127 +322,64 @@
       ]
     },
     {
-      "id": "item_85052f9befba2c4e17fa",
+      "id": "item_8d723f6dece8e3e64bae",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_hugging-face",
+      "sourceId": "src_google-research",
       "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
+        "id": "src_google-research",
+        "name": "Google Research"
       },
-      "canonicalUrl": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
-      "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-16T20:12:23.881Z",
-      "updatedAt": "2026-09-10T00:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Async GRPO training with LoRA adapters deployed across distributed jobs",
-        "zh-Hans": "跨分布式任务部署LoRA适配器的异步GRPO训练"
-      },
-      "summary": {
-        "en": "Hugging Face released LoRA support in AsyncGRPOTrainer, enabling asynchronous training of adapters instead of full models with synchronization to vLLM inference systems.",
-        "zh-Hans": "Hugging Face在AsyncGRPOTrainer中发布LoRA支持，支持异步训练适配器而非完整模型，并与vLLM推理系统同步。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "lora",
-        "reinforcement learning",
-        "distributed training",
-        "developer tools"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 21,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "Improves efficiency of model training and deployment infrastructure",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_85052f9befba2c4e17fa41a5",
-          "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-09-10T00:00:00.000Z",
-          "evidenceSnippet": "The architecture: leveraging Hugging Face Jobs and Storage Buckets 🪣 The three Jobs The vLLM replicas The dataset choice: the Sanity set The trainer The proxy Routing rollouts by KV prefix Broadcasting the adapter Full run results Weight sync Routing Where the time goes Reward Chasing the bottleneck ping-pong Reading the dashboard r1-dp2&lt;/code>: a trainer that cannot keep up\"> Run 1, r1-dp2 : a trainer that cannot keep up r1-dp2-tb16k&lt;/code>: pack the microbatch\"> Run 2, r1-dp2-tb16k : pack the microbatch r1-dp2-tb16k-nockpt&lt;/code>: stop recomputing the forward\"> Run 3, r1-dp2-tb16k-nockpt : stop recomputing the forward r1-dp3-tb16k-nockpt&lt;/code>: three replicas, and a surprise\"> Run 4, r1-dp3-tb16k-nockpt : three replicas, and a surprise r1-dp3-inflight384&lt;/code>: lift the cap on in-flight requests\"> Run 5, r1-dp3-inflight384 : lift the cap on in-flight requests The scoreboard Try it References TL;DR LoRA support recently landed in TRL's AsyncGRPOTrainer with PR #7017 , and ships with TRL v1.14. The asynchronous trainer can now train an adapter instead of the full model, and it syncs only the LoRA adapter to vLLM. This post covers a real-world project built on top "
-        }
-      ]
-    },
-    {
-      "id": "item_b1b4ad0d4a36bbd2e7dc",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-      "publishedAt": "2026-08-31T16:00:00.000Z",
+      "canonicalUrl": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+      "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+      "publishedAt": "2026-09-03T18:20:31.000Z",
       "activityAt": null,
       "discoveredAt": "2026-09-06T04:46:34.200Z",
-      "updatedAt": "2026-08-31T16:00:00.000Z",
+      "updatedAt": "2026-09-03T18:20:31.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Microsoft releases efficient pathology foundation models for population-scale studies",
-        "zh-Hans": "微软发布用于人群规模研究的高效病理学基础模型"
+        "en": "Transfer learning shows mixed results for genomic prediction across populations",
+        "zh-Hans": "迁移学习在跨人群基因组预测中显示混合结果"
       },
       "summary": {
-        "en": "GigaPath-Flash and GigaTIME-Flash reduce computational demands while maintaining performance in pathology analysis, enabling larger-scale medical studies and broader research exploration.",
-        "zh-Hans": "GigaPath-Flash和GigaTIME-Flash在保持病理学分析性能的同时降低计算需求，使更大规模的医学研究和更广泛的研究探索成为可能。"
+        "en": "Google Research finds transfer learning from European genetic cohorts improves prediction in small underrepresented populations but degrades accuracy as target cohort sizes grow, particularly for population-specific genetic traits.",
+        "zh-Hans": "谷歌研究发现，从欧洲遗传队列的迁移学习可改善小型代表性不足人群的预测，但随着目标队列规模增长，准确性会下降，特别是对于人群特异性遗传特征。"
       },
-      "category": "models_capabilities",
+      "category": "research_science",
       "tags": [
-        "foundation models",
-        "pathology",
-        "computational efficiency"
+        "transfer learning",
+        "genomics",
+        "population genetics"
       ],
       "topics": [
-        "models_capabilities"
+        "research_science"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Naoto Usuyama, Jeya Maria Jose Valanarasu, Tristan Naumann",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.92,
+      "sourceReliability": 0.94,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 28,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "advances efficient foundation model architectures with maintained performance for specialized domain applications",
+      "freshnessScore": 57,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "demonstrates transferable machine learning methodology for cross-population genetic prediction with clear performance boundaries",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_b1b4ad0d4a36bbd2e7dc0477",
-          "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-31T16:00:00.000Z",
-          "evidenceSnippet": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash cut computational demands while maintaining strong performance, opening the door to larger studies and broader exploration. The post GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models appeared first on Microsoft Research ."
+          "id": "candidate_8d723f6dece8e3e64bae5486",
+          "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-03T18:20:31.000Z",
+          "evidenceSnippet": "Joey Poomarin Phloyphisut, Software Engineer, and Cory McLean, Senior Staff Software Engineer, Google Research We evaluate ways to improve cross-population genetic risk prediction and find that while transfer learning from European cohorts improves prediction in small underrepresented populations, it degrades accuracy once target cohort sample sizes grow, especially for traits with population-specific genetic architectures. Polygenic risk scores (PRSs) are used to predict disease risk from genetic variants. They usually incorporate the influence of hundreds to millions of genetic variants. However, their adoption for clinical decision making is currently low, partly because historical genome-wide association studies (GWASs) have overwhelmingly evaluated European cohorts , resulting in severe accuracy drops when applied to non-European populations. These accuracy differences arise because of cross-population differences in genetic architectures, population structure, and variant allele frequencies ."
         }
       ]
     },
@@ -667,6 +605,198 @@
           "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
           "metadataSourceUrl": "https://openai.com/news/rss.xml",
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
+      "id": "item_f46ca6633e8a6274a9cd",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.16213",
+      "url": "https://arxiv.org/abs/2609.16213",
+      "publishedAt": "2026-09-16T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T20:12:23.881Z",
+      "updatedAt": "2026-09-16T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "AI biosecurity risks analyzed across digital-to-physical research workflow",
+        "zh-Hans": "人工智能生物安全风险分析涵盖数字到物理研究流程"
+      },
+      "summary": {
+        "en": "Study examines AI biosecurity risks in biological research, finding that while frontier systems exceed expert baselines on computational tasks, tacit knowledge and physical execution remain substantial barriers for wet-laboratory applications.",
+        "zh-Hans": "研究检视生物研究中的AI生物安全风险，发现虽然前沿系统在计算任务上超越专家基线，但隐性知识和物理执行仍是湿实验室应用的重大障碍。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "biosecurity",
+        "ai safety",
+        "biological research",
+        "risk assessment"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Candace S. Y. Chan, Aris Karatzikos, Ilias Georgakopoulos-Soares",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:candace s. y. chan, aris karatzikos, ilias georgakopoulos-soares",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Evaluates AI capabilities and safety considerations in scientific research applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f46ca6633e8a6274a9cd3bfb",
+          "url": "https://arxiv.org/abs/2609.16213",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16213v1 Announce Type: new Abstract: Artificial intelligence is reshaping biological research across an increasingly connected digital-to-physical workflow. General-purpose large language models can retrieve and integrate scientific information, support experimental planning, and computational analysis; biological foundation models can predict, optimize, and generate proteins, genes, and genome-scale sequences; agentic systems can coordinate multistep research tasks; automated laboratories can partially close the design-build-test-learn cycle. These technologies could greatly benefit medicine, public health, and biotechnology. However, their biosecurity risk depends not only on what the AI can do, but also on who uses it, their expertise and intent, their access to laboratory tools and materials, and the safeguards in place. Current evidence shows that AI uplift exists but primarily affects digital rather than physical tasks. Frontier systems have exceeded expert baselines on in-silico, and screening-evasion benchmarks, whereas controlled wet-laboratory studies find that tacit knowledge and physical execution remain substantial barriers. This review describes the differe"
+        }
+      ]
+    },
+    {
+      "id": "item_84f79990de66e4ccd0da",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.16145",
+      "url": "https://arxiv.org/abs/2609.16145",
+      "publishedAt": "2026-09-16T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T06:06:59.873Z",
+      "updatedAt": "2026-09-16T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Safe Error Correction for Language Models: Frozen-Base Adjustment with Capability Preservation",
+        "zh-Hans": "语言模型安全错误纠正：冻结基础调整与能力保持"
+      },
+      "summary": {
+        "en": "CRN v2 correction module fixes 53.3% of base model errors using only 0.73% additional parameters while preserving original capabilities, unlike LoRA which suffers 30-75% capability loss.",
+        "zh-Hans": "CRN v2纠错模块仅用0.73%额外参数修复53.3%基础模型错误，同时保持原有能力，而LoRA会损失30-75%能力。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "error correction",
+        "capability preservation",
+        "language models"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Gautam Kishore",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:gautam kishore",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates transferable capability preservation technique for model correction without degradation",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_84f79990de66e4ccd0da3466",
+          "url": "https://arxiv.org/abs/2609.16145",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-16T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.16145v1 Announce Type: new Abstract: We study a practical question: can a small correction module fix errors in a frozen language model's outputs without degrading its base capabilities? We propose CRN v2, a lightweight logit-level correction module (~34M trainable parameters, 0.73% of the 4.65B text module) that sits atop a fully frozen Gemma 4 E2B model. The base model is never updated; only the correction module learns, via supervised fine-tuning followed by reference-free DPO on 83,400 error-correction pairs. On a 60-question domain exam (CEHRI: Certified Human-Robot Intelligence, covering facts, arithmetic, and implicit-goal reasoning), CRN v2 corrects 53.3% of base-model errors (reworded variant: 43.3%) while showing no degradation on tested capability benchmarks (MMLU/BoolQ N=200; car-wash N=8). A LoRA baseline at the matched CRN v1 budget (6.6M params, rank 19) achieves 83.3% correction but suffers 30-75% capability loss on the same benchmarks -- the correction-capability tradeoff. An ablation shows that the KL preservation term (lambda=0.1) is critical: lowering it to 0.01 degrades correction to 35.0%. A hidden-state injection variant at earlier layers (1.6M par"
         }
       ]
     },
@@ -919,6 +1049,130 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-16T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.16163v1 Announce Type: new Abstract: The sharp increase in mass shootings underscores an urgent need for systems that guide victims to safety in real time. An effective evacuation system must minimize threat exposure while also accounting for adversarial uncertainty and crowding dynamics. Current methods in the literature are rigidly constrained to layout-specific policies and computationally intractable in large-scale layouts, while practical guidelines simply advise victims to \"run\", \"hide\", or \"fight\". We propose GPEvac: a GNN-based PPO framework that computes adaptive evacuation routes during shooting events. To capture both local and long-distance dependencies, we introduce an edge-first sequential message-passing scheme with a learnable virtual global node. The resulting graph embeddings are integrated into a permutation-invariant scoring mechanism that allows a single learned policy to operate across building layouts of diverse topologies and sizes. Through extensive simulation, we show that GPEvac outperforms intelligent baselines across distinct architectural layouts, significantly reducing total threat exposure. Crucially, the system computes global evacuation "
+        }
+      ]
+    },
+    {
+      "id": "item_f174ca4a3cbc866f5f12",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+      "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+      "publishedAt": "2026-09-15T20:00:35.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T06:06:59.873Z",
+      "updatedAt": "2026-09-15T20:00:35.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
+        "zh-Hans": "绕过推理瓶颈：用检索训练加速复杂AI搜索"
+      },
+      "summary": {
+        "en": "Retrieve-for-Train framework uses reinforcement learning to train lightweight diffusion models, bypassing expensive autoregressive reasoning to instantly generate coherent search result sets.",
+        "zh-Hans": "检索训练框架使用强化学习训练轻量级扩散模型，绕过昂贵的自回归推理，即时生成连贯的搜索结果集。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "inference optimization",
+        "reinforcement learning",
+        "search systems"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "demonstrates transferable inference optimization technique replacing expensive reasoning with trained models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f174ca4a3cbc866f5f127805",
+          "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-15T20:00:35.000Z",
+          "evidenceSnippet": "Pengcheng Jiang, Student Researcher, and Judith Yue Li, Senior Research Engineer, Google Research Instead of relying on expensive inference-time reasoning, the Retrieve-for-Train framework uses reinforcement learning once to train a lightweight diffusion model. This bypasses the heavy autoregressive \"thinking budget\" to instantly generate a cohesive, expert-level slate of AI search results. Modern search or recommendation applications are increasingly expected to return a coherent set of results rather than a single best match. For example, when a user searches for \"camping gear\", they don’t want ten slight variations of four-person tents. They want a coherent, complementary slate that includes essential camping gear, such as a tent, sleeping bag, portable stove, and headlamp."
+        }
+      ]
+    },
+    {
+      "id": "item_a1d018f16fad79f97456",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "publishedAt": "2026-09-15T16:00:44.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T06:06:59.873Z",
+      "updatedAt": "2026-09-15T16:00:44.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Your Agent Aced the Task. Will It Do It Again?",
+        "zh-Hans": "你的智能体完成了任务，还能再做一次吗？"
+      },
+      "summary": {
+        "en": "ReAct agent using GPT-4.1 shows 77.4% average success but only 53.0% consistent success across five runs, revealing a 24.4-point consistency gap hidden by benchmark averages.",
+        "zh-Hans": "使用GPT-4.1的ReAct智能体平均成功率77.4%，但五次运行一致成功率仅53.0%，揭示基准平均值掩盖的24.4点一致性差距。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent reliability",
+        "consistency",
+        "production deployment"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 87,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "identifies critical reliability gap in agent deployment affecting transferable agent consistency",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a1d018f16fad79f97456f75b",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-15T16:00:44.000Z",
+          "evidenceSnippet": "The Metric Almost Nobody Reports Why Agents Flip: Sharp Decisions vs. Flat Ones Diagnose, Then Fix Results: Reducing the Gap Without Losing Accuracy The guidelines generalize — they aren't patching one trajectory If You're Shipping an Agent Try It Appendix: Understanding the Metrics Linked artifacts / references Your agent works in rehearsal, but during the live demo, it takes a different path and fails the same task. That is embarrassing onstage. In production, it is a reliability problem: a workflow that succeeded once may fail the next time a user makes the same request. For mission-critical work, such as reconciling a financial transaction or checking a contract for an obligation, that can be a showstopper. Most benchmarks hide this variability behind an average. On AppWorld, a ReAct agent using GPT-4.1 succeeded on 77.4% of runs across five repetitions. But it succeeded in all five runs for only 53.0% of tasks — a 24.4-point consistency gap ."
         }
       ]
     },
@@ -1301,6 +1555,69 @@
       ]
     },
     {
+      "id": "item_85052f9befba2c4e17fa",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T20:12:23.881Z",
+      "updatedAt": "2026-09-10T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Async GRPO training with LoRA adapters deployed across distributed jobs",
+        "zh-Hans": "跨分布式任务部署LoRA适配器的异步GRPO训练"
+      },
+      "summary": {
+        "en": "Hugging Face released LoRA support in AsyncGRPOTrainer, enabling asynchronous training of adapters instead of full models with synchronization to vLLM inference systems.",
+        "zh-Hans": "Hugging Face在AsyncGRPOTrainer中发布LoRA支持，支持异步训练适配器而非完整模型，并与vLLM推理系统同步。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "lora",
+        "reinforcement learning",
+        "distributed training",
+        "developer tools"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 21,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "Improves efficiency of model training and deployment infrastructure",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_85052f9befba2c4e17fa41a5",
+          "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-10T00:00:00.000Z",
+          "evidenceSnippet": "The architecture: leveraging Hugging Face Jobs and Storage Buckets 🪣 The three Jobs The vLLM replicas The dataset choice: the Sanity set The trainer The proxy Routing rollouts by KV prefix Broadcasting the adapter Full run results Weight sync Routing Where the time goes Reward Chasing the bottleneck ping-pong Reading the dashboard r1-dp2&lt;/code>: a trainer that cannot keep up\"> Run 1, r1-dp2 : a trainer that cannot keep up r1-dp2-tb16k&lt;/code>: pack the microbatch\"> Run 2, r1-dp2-tb16k : pack the microbatch r1-dp2-tb16k-nockpt&lt;/code>: stop recomputing the forward\"> Run 3, r1-dp2-tb16k-nockpt : stop recomputing the forward r1-dp3-tb16k-nockpt&lt;/code>: three replicas, and a surprise\"> Run 4, r1-dp3-tb16k-nockpt : three replicas, and a surprise r1-dp3-inflight384&lt;/code>: lift the cap on in-flight requests\"> Run 5, r1-dp3-inflight384 : lift the cap on in-flight requests The scoreboard Try it References TL;DR LoRA support recently landed in TRL's AsyncGRPOTrainer with PR #7017 , and ships with TRL v1.14. The asynchronous trainer can now train an adapter instead of the full model, and it syncs only the LoRA adapter to vLLM. This post covers a real-world project built on top "
+        }
+      ]
+    },
+    {
       "id": "item_46660cb2ea4362f69cbd",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -1610,68 +1927,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-04T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
-        }
-      ]
-    },
-    {
-      "id": "item_8d723f6dece8e3e64bae",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
-      "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
-      "publishedAt": "2026-09-03T18:20:31.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-06T04:46:34.200Z",
-      "updatedAt": "2026-09-03T18:20:31.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Transfer learning shows mixed results for genomic prediction across populations",
-        "zh-Hans": "迁移学习在跨人群基因组预测中显示混合结果"
-      },
-      "summary": {
-        "en": "Google Research finds transfer learning from European genetic cohorts improves prediction in small underrepresented populations but degrades accuracy as target cohort sizes grow, particularly for population-specific genetic traits.",
-        "zh-Hans": "谷歌研究发现，从欧洲遗传队列的迁移学习可改善小型代表性不足人群的预测，但随着目标队列规模增长，准确性会下降，特别是对于人群特异性遗传特征。"
-      },
-      "category": "research_science",
-      "tags": [
-        "transfer learning",
-        "genomics",
-        "population genetics"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 57,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "demonstrates transferable machine learning methodology for cross-population genetic prediction with clear performance boundaries",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_8d723f6dece8e3e64bae5486",
-          "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-03T18:20:31.000Z",
-          "evidenceSnippet": "Joey Poomarin Phloyphisut, Software Engineer, and Cory McLean, Senior Staff Software Engineer, Google Research We evaluate ways to improve cross-population genetic risk prediction and find that while transfer learning from European cohorts improves prediction in small underrepresented populations, it degrades accuracy once target cohort sample sizes grow, especially for traits with population-specific genetic architectures. Polygenic risk scores (PRSs) are used to predict disease risk from genetic variants. They usually incorporate the influence of hundreds to millions of genetic variants. However, their adoption for clinical decision making is currently low, partly because historical genome-wide association studies (GWASs) have overwhelmingly evaluated European cohorts , resulting in severe accuracy drops when applied to non-European populations. These accuracy differences arise because of cross-population differences in genetic architectures, population structure, and variant allele frequencies ."
         }
       ]
     },
@@ -2427,6 +2682,68 @@
           "publisher": "Google Research",
           "publishedAt": "2026-08-31T17:19:40.000Z",
           "evidenceSnippet": "Ayush Jain and Rajat Sen, Research Scientists, Google Research We introduce TimesFM-3, a state-of-the-art time series foundation model that enables highly accurate multivariate time series forecasting in a single forward pass, significantly outperforming other forecasting models across major benchmarks. Since the debut of TimesFM in 2024, we’ve seen the adoption of time-series foundation models for real-world time-series forecasting tasks across multiple domains, such as retail, finance, observability, manufacturing, healthcare and natural sciences ."
+        }
+      ]
+    },
+    {
+      "id": "item_b1b4ad0d4a36bbd2e7dc",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "publishedAt": "2026-08-31T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-06T04:46:34.200Z",
+      "updatedAt": "2026-08-31T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft releases efficient pathology foundation models for population-scale studies",
+        "zh-Hans": "微软发布用于人群规模研究的高效病理学基础模型"
+      },
+      "summary": {
+        "en": "GigaPath-Flash and GigaTIME-Flash reduce computational demands while maintaining performance in pathology analysis, enabling larger-scale medical studies and broader research exploration.",
+        "zh-Hans": "GigaPath-Flash和GigaTIME-Flash在保持病理学分析性能的同时降低计算需求，使更大规模的医学研究和更广泛的研究探索成为可能。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "foundation models",
+        "pathology",
+        "computational efficiency"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Naoto Usuyama, Jeya Maria Jose Valanarasu, Tristan Naumann",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 28,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances efficient foundation model architectures with maintained performance for specialized domain applications",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b1b4ad0d4a36bbd2e7dc0477",
+          "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-31T16:00:00.000Z",
+          "evidenceSnippet": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash cut computational demands while maintaining strong performance, opening the door to larger studies and broader exploration. The post GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models appeared first on Microsoft Research ."
         }
       ]
     },
@@ -7053,73 +7370,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
-        }
-      ]
-    },
-    {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
       ]
     },
