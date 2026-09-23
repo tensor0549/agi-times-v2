@@ -7,8 +7,144 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-21T14:17:10.196Z",
+  "generatedAt": "2026-09-23T23:46:25.081Z",
   "items": [
+    {
+      "id": "insight_ai-infrastructure-advances-robotics-evaluation_20260923",
+      "slug": "ai-infrastructure-advances-robotics-evaluation",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "AI Infrastructure Advances Target Robotics Scaling and Evaluation Reproducibility",
+        "zh-Hans": "AI基础设施进展聚焦机器人规模化和评估可重现性"
+      },
+      "dek": {
+        "en": "Recent developments showcase complementary approaches to AI system optimization through parallel simulation environments and standardized evaluation frameworks.",
+        "zh-Hans": "最新发展展示了通过并行仿真环境和标准化评估框架优化AI系统的互补方法。"
+      },
+      "body": {
+        "en": "Recent infrastructure developments illustrate complementary mechanisms for advancing AI capabilities across robotics and evaluation domains. GPU-accelerated simulation platforms enable massive parallelization, with MuJoCo Warp supporting up to 2,048 parallel robotics environments for learning workloads [^candidate_30aa7c0acfe7f3809f1c0c2e]. This scaling approach is complemented by architectural innovations that distribute computational load, as Microsoft Research demonstrates with offloaded inference systems that improve task success and efficiency in physical AI robotics [^candidate_33f98722c2911516eceeb09c]. Meanwhile, evaluation infrastructure addresses reproducibility challenges through standardized frameworks, with the UK AI Security Institute adopting EvalEval's infrastructure to openly share benchmark results as AI deployment accelerates [^candidate_e9f63aa1f7aaa02f4024a141]. These developments also extend to scientific applications, where AI-driven predictive models like RetroChimera advance chemical synthesis prediction for complex molecular systems [^candidate_d84d5932ca4ed661685084e3].",
+        "zh-Hans": "最新的基础设施发展展示了在机器人和评估领域推进AI能力的互补机制。GPU加速仿真平台实现大规模并行化，MuJoCo Warp支持多达2048个并行机器人环境用于学习工作负载[^candidate_30aa7c0acfe7f3809f1c0c2e]。这种规模化方法得到架构创新的补充，通过分布式计算负载，微软研究院展示的卸载推理系统提高了物理AI机器人的任务成功率和效率[^candidate_33f98722c2911516eceeb09c]。同时，评估基础设施通过标准化框架解决可重现性挑战，英国AI安全研究所采用EvalEval基础设施公开分享基准测试结果，应对AI部署加速的需求[^candidate_e9f63aa1f7aaa02f4024a141]。这些发展还扩展到科学应用，AI驱动的预测模型如RetroChimera推进复杂分子系统的化学合成预测[^candidate_d84d5932ca4ed661685084e3]。"
+      },
+      "publishedAt": "2026-09-23T23:46:25.081Z",
+      "updatedAt": "2026-09-23T23:46:25.081Z",
+      "topics": [
+        "robotics_embodied_ai",
+        "safety_security_alignment",
+        "research_science"
+      ],
+      "claims": [
+        {
+          "id": "parallel_simulation_scaling",
+          "type": "fact",
+          "text": {
+            "en": "MuJoCo Warp built on NVIDIA Warp supports up to 2,048 parallel robotics environments for learning workloads",
+            "zh-Hans": "基于NVIDIA Warp构建的MuJoCo Warp支持多达2048个并行机器人环境用于学习工作负载"
+          },
+          "citationIds": [
+            "candidate_30aa7c0acfe7f3809f1c0c2e"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "offloaded_inference_benefits",
+          "type": "fact",
+          "text": {
+            "en": "Microsoft Research findings show that offloaded inference systems improve task success and efficiency in physical AI robotics",
+            "zh-Hans": "微软研究院发现卸载推理系统提高了物理AI机器人的任务成功率和效率"
+          },
+          "citationIds": [
+            "candidate_33f98722c2911516eceeb09c"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "evaluation_standardization",
+          "type": "fact",
+          "text": {
+            "en": "UK AI Security Institute uses EvalEval infrastructure to openly share evaluation results as AI deployment accelerates",
+            "zh-Hans": "英国AI安全研究所使用EvalEval基础设施公开分享评估结果，应对AI部署加速"
+          },
+          "citationIds": [
+            "candidate_e9f63aa1f7aaa02f4024a141"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "scientific_prediction_advances",
+          "type": "fact",
+          "text": {
+            "en": "RetroChimera predictive model advances chemical synthesis prediction for complex molecular systems",
+            "zh-Hans": "RetroChimera预测模型推进复杂分子系统的化学合成预测"
+          },
+          "citationIds": [
+            "candidate_d84d5932ca4ed661685084e3"
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_30aa7c0acfe7f3809f1c0c2e",
+          "feedItemId": "item_30aa7c0acfe7f3809f1c",
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-23T18:41:40.000Z",
+          "evidenceSnippet": "Putting it together Start with one useful Warp Kernel Three properties make this useful in robotics: Differentiability and Determinism. What is MuJoCo Warp (MJWarp)? Basic usage: structs, batch sizes, and a minimal step Performance tuning Workflow to migrate a MuJoCo scene to MjWarp Get started What’s next References Classic MuJoCo provides fast CPU-based robot simulation for developing, testing, and controlling robots and it can parallelize sampling across CPU cores. But as learning workloads grow, the question shifts from how quickly one world can run to how many worlds can run at once. GPU acceleration makes it possible to advance those worlds in large batches while keeping simulation and learning data close to the device. MuJoCo Warp (MJWarp) , built on NVIDIA Warp , takes compatible MuJoCo models into that GPU-scale regime. In this article, we will move an SO-101 follower arm from a familiar MuJoCo workflow to as many as 2,048 parallel MJWarp environments and examine the technology and validation steps that make the transition possible. Figure 1. How MJWarp connects Python to GPU simulation. MuJoCo loads and compiles the MJCF model; MJWarp implements the physics in NVIDIA Warp"
+        },
+        {
+          "id": "candidate_33f98722c2911516eceeb09c",
+          "feedItemId": "item_33f98722c2911516ecee",
+          "title": "Offloaded inference for real-world physical AI robotics",
+          "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+          "publisher": "Microsoft Research",
+          "author": "Ganesh Ananthanarayanan, Matthew Balkwill, Xenofon Foukas, Sanjeev Mehrotra, Bozidar Radunovic, Connor Settle, Ankit Verma, David White, Shawn Cicoria, Mark Martin, Rachel Johnson, Mayur Patel",
+          "independenceKey": "publisher:microsoft research",
+          "publishedAt": "2026-09-23T16:01:36.000Z",
+          "evidenceSnippet": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads. The post Offloaded inference for real-world physical AI robotics appeared first on Microsoft Research ."
+        },
+        {
+          "id": "candidate_e9f63aa1f7aaa02f4024a141",
+          "feedItemId": "item_e9f63aa1f7aaa02f4024",
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "url": "https://huggingface.co/blog/evaleval-aisi",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-22T00:00:00.000Z",
+          "evidenceSnippet": "Why reproducible evaluation reporting matters What AISI is sharing Contribute to the shared mission About the EvalEval Coalition About the UK AI Security Institute Further reading The EvalEval Coalition is thrilled to share that the UK AI Security Institute (AISI) is using EvalEval's infrastructure to openly share evaluation results, supporting more reproducible and verifiable evaluation science. AISI and EvalEval have previously collaborated on research that began at a joint workshop alongside NeurIPS 2025 , and feedback from the Institute has helped shape the Every Eval Ever (EEE) schema . This next phase of the collaboration puts that shared infrastructure into practice. As AI deployment accelerates, evaluations are becoming increasingly important sources of evidence about model and system performance. Yet results are reported across many formats, platforms, and outlets, often without enough information to reproduce them. Running the evaluations again may itself be prohibitively expensive."
+        },
+        {
+          "id": "candidate_d84d5932ca4ed661685084e3",
+          "feedItemId": "item_d84d5932ca4ed6616850",
+          "title": "Improving synthesis prediction of small molecules at scale with RetroChimera",
+          "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+          "publisher": "Microsoft Research",
+          "author": "Felix Pultar, John Gardner, Guoqing Liu, Marwin Segler",
+          "independenceKey": "publisher:microsoft research",
+          "publishedAt": "2026-09-21T15:30:19.000Z",
+          "evidenceSnippet": "Custom-made molecules are advancing medicine, materials, and agriculture, but producing them is slow and expensive. A new Nature paper highlights RetroChimera, a predictive model that helps accelerate chemical synthesis, helping researchers explore a wide range of molecules. The post Improving synthesis prediction of small molecules at scale with RetroChimera appeared first on Microsoft Research ."
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-09-23T23:46:25.081Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-09-23T23:45:56.344Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_model-optimization-convergence-september-2026_20260921",
       "slug": "model-optimization-convergence-september-2026",

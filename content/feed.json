@@ -7,10 +7,10 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-21T14:17:10.196Z",
+  "generatedAt": "2026-09-23T23:46:25.081Z",
   "items": [
     {
-      "id": "item_ae2a66f3c360fd1788ea",
+      "id": "item_30aa7c0acfe7f3809f1c",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -18,32 +18,32 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "publishedAt": "2026-09-23T18:41:40.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-21T14:16:34.328Z",
-      "updatedAt": "2026-09-21T13:44:34.000Z",
+      "discoveredAt": "2026-09-23T23:45:56.344Z",
+      "updatedAt": "2026-09-23T18:41:40.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Physics-Inspired Block Pruning for LLM Compression Using Ising Optimization",
-        "zh-Hans": "基于伊辛优化的物理启发式LLM块剪枝压缩方法"
+        "en": "NVIDIA Warp and MjWarp Enable GPU-Accelerated Robotics Simulation at Scale",
+        "zh-Hans": "NVIDIA Warp和MjWarp实现大规模GPU加速机器人仿真"
       },
       "summary": {
-        "en": "Multiverse Computing frames transformer block removal as an energy minimization problem from spin physics, treating block selection as interacting binary variables to solve combinatorial optimization challenges in model compression.",
-        "zh-Hans": "Multiverse Computing将变换器块移除建模为自旋物理中的能量最小化问题，将块选择视为相互作用的二元变量来解决模型压缩中的组合优化挑战。"
+        "en": "MuJoCo Warp built on NVIDIA Warp enables up to 2,048 parallel robotics environments on GPU, transitioning from CPU-based single-world simulation to GPU-scale batch processing for learning workloads.",
+        "zh-Hans": "基于NVIDIA Warp构建的MuJoCo Warp支持GPU上多达2048个并行机器人环境，从基于CPU的单世界仿真转向GPU规模的批处理学习工作负载。"
       },
-      "category": "models_capabilities",
+      "category": "robotics_embodied_ai",
       "tags": [
-        "model compression",
-        "optimization",
-        "physics-inspired",
-        "transformer architecture"
+        "gpu-acceleration",
+        "simulation",
+        "robotics",
+        "parallel-environments"
       ],
       "topics": [
-        "models_capabilities"
+        "robotics_embodied_ai"
       ],
       "entities": [],
       "mediaType": "article",
@@ -55,20 +55,208 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 99,
+      "freshnessScore": 95,
       "importanceScore": 75,
       "importance": 75,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "advances transferable model compression techniques through novel physics-inspired optimization approach",
+      "agiRelevanceScore": 80,
+      "relevanceReason": "GPU-accelerated parallel simulation environments directly advance robotics learning capabilities and agent training efficiency",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_ae2a66f3c360fd1788ea542e",
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+          "id": "candidate_30aa7c0acfe7f3809f1c0c2e",
+          "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-09-21T13:44:34.000Z",
-          "evidenceSnippet": "Why picking blocks is a many-body problem The idea: turn block selection into an energy-minimization problem Solving it: exact when you can, quantum or quantum-inspired when you can't Why the whole low-energy spectrum matters Results It generalizes beyond dense transformers Why this fits Multiverse Computing One of the cheapest ways to make a large language model faster is also one of the bluntest: delete whole transformer blocks. Because the model literally gets shorter, block removal (also called depth pruning) buys predictable inference speedups on top of the memory savings, and it stacks cleanly with quantization, low-rank compression, and other techniques. The hard part is deciding which blocks to cut. Remove the wrong ones and the model collapses; and the effect of removing any one block depends on which others you remove alongside it, so the choices interact. That makes it a combinatorial problem, not a ranking problem, and combinatorial problems with interacting binary variables are exactly what the physics of spin systems was built to describe. Our latest paper, LLM Compression by Block Removal with Constrained Binary Optimization , takes that correspondence literally. We "
+          "publishedAt": "2026-09-23T18:41:40.000Z",
+          "evidenceSnippet": "Putting it together Start with one useful Warp Kernel Three properties make this useful in robotics: Differentiability and Determinism. What is MuJoCo Warp (MJWarp)? Basic usage: structs, batch sizes, and a minimal step Performance tuning Workflow to migrate a MuJoCo scene to MjWarp Get started What’s next References Classic MuJoCo provides fast CPU-based robot simulation for developing, testing, and controlling robots and it can parallelize sampling across CPU cores. But as learning workloads grow, the question shifts from how quickly one world can run to how many worlds can run at once. GPU acceleration makes it possible to advance those worlds in large batches while keeping simulation and learning data close to the device. MuJoCo Warp (MJWarp) , built on NVIDIA Warp , takes compatible MuJoCo models into that GPU-scale regime. In this article, we will move an SO-101 follower arm from a familiar MuJoCo workflow to as many as 2,048 parallel MJWarp environments and examine the technology and validation steps that make the transition possible. Figure 1. How MJWarp connects Python to GPU simulation. MuJoCo loads and compiles the MJCF model; MJWarp implements the physics in NVIDIA Warp"
+        }
+      ]
+    },
+    {
+      "id": "item_33f98722c2911516ecee",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "publishedAt": "2026-09-23T16:01:36.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-23T23:45:56.344Z",
+      "updatedAt": "2026-09-23T16:01:36.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Research Demonstrates Offloaded Inference for Physical AI Robotics",
+        "zh-Hans": "微软研究院展示物理AI机器人的卸载推理技术"
+      },
+      "summary": {
+        "en": "Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads for smarter robots.",
+        "zh-Hans": "微软研究院发现，将AI推理转移到机器人之外可以提高任务成功率、提升效率并支持更先进的物理AI工作负载。"
+      },
+      "category": "robotics_embodied_ai",
+      "tags": [
+        "offloaded-inference",
+        "physical-ai",
+        "robotics",
+        "efficiency"
+      ],
+      "topics": [
+        "robotics_embodied_ai"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Ganesh Ananthanarayanan, Matthew Balkwill, Xenofon Foukas, Sanjeev Mehrotra, Bozidar Radunovic, Connor Settle, Ankit Verma, David White, Shawn Cicoria, Mark Martin, Rachel Johnson, Mayur Patel",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Offloaded inference architecture enables more sophisticated AI capabilities in physical robotics systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_33f98722c2911516eceeb09c",
+          "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-09-23T16:01:36.000Z",
+          "evidenceSnippet": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads. The post Offloaded inference for real-world physical AI robotics appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_e9f63aa1f7aaa02f4024",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/evaleval-aisi",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-23T23:45:56.344Z",
+      "updatedAt": "2026-09-22T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "UK AISI and EvalEval Coalition Advance Reproducible AI Benchmark Results",
+        "zh-Hans": "英国AISI和EvalEval联盟推进可重现的AI基准测试结果"
+      },
+      "summary": {
+        "en": "UK AI Security Institute uses EvalEval infrastructure to openly share evaluation results, addressing the challenge of reproducible AI evaluation as deployment accelerates and results are scattered across platforms.",
+        "zh-Hans": "英国AI安全研究所使用EvalEval基础设施公开分享评估结果，解决AI部署加速时评估结果分散在各平台的可重现性挑战。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "evaluation",
+        "reproducibility",
+        "benchmarks",
+        "ai-safety"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 63,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Standardized evaluation infrastructure is critical for reliable assessment of advancing AI model capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e9f63aa1f7aaa02f4024a141",
+          "url": "https://huggingface.co/blog/evaleval-aisi",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-22T00:00:00.000Z",
+          "evidenceSnippet": "Why reproducible evaluation reporting matters What AISI is sharing Contribute to the shared mission About the EvalEval Coalition About the UK AI Security Institute Further reading The EvalEval Coalition is thrilled to share that the UK AI Security Institute (AISI) is using EvalEval's infrastructure to openly share evaluation results, supporting more reproducible and verifiable evaluation science. AISI and EvalEval have previously collaborated on research that began at a joint workshop alongside NeurIPS 2025 , and feedback from the Institute has helped shape the Every Eval Ever (EEE) schema . This next phase of the collaboration puts that shared infrastructure into practice. As AI deployment accelerates, evaluations are becoming increasingly important sources of evidence about model and system performance. Yet results are reported across many formats, platforms, and outlets, often without enough information to reproduce them. Running the evaluations again may itself be prohibitively expensive."
+        }
+      ]
+    },
+    {
+      "id": "item_d84d5932ca4ed6616850",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "publishedAt": "2026-09-21T15:30:19.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-23T23:45:56.344Z",
+      "updatedAt": "2026-09-21T15:30:19.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft's RetroChimera Advances AI-Driven Chemical Synthesis Prediction",
+        "zh-Hans": "微软RetroChimera推进AI驱动的化学合成预测"
+      },
+      "summary": {
+        "en": "RetroChimera predictive model published in Nature helps accelerate chemical synthesis for custom molecules in medicine, materials, and agriculture, addressing slow and expensive production challenges.",
+        "zh-Hans": "发表在《自然》杂志上的RetroChimera预测模型有助于加速医学、材料和农业领域定制分子的化学合成，解决生产缓慢且昂贵的挑战。"
+      },
+      "category": "research_science",
+      "tags": [
+        "chemical-synthesis",
+        "molecular-prediction",
+        "scientific-ai"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Felix Pultar, John Gardner, Guoqing Liu, Marwin Segler",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 58,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 70,
+      "relevanceReason": "AI-driven scientific discovery tools demonstrate transferable predictive capabilities for complex molecular systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d84d5932ca4ed661685084e3",
+          "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-09-21T15:30:19.000Z",
+          "evidenceSnippet": "Custom-made molecules are advancing medicine, materials, and agriculture, but producing them is slow and expensive. A new Nature paper highlights RetroChimera, a predictive model that helps accelerate chemical synthesis, helping researchers explore a wide range of molecules. The post Improving synthesis prediction of small molecules at scale with RetroChimera appeared first on Microsoft Research ."
         }
       ]
     },
@@ -198,64 +386,64 @@
       ]
     },
     {
-      "id": "item_693b3130e25cc8808f58",
+      "id": "item_f174ca4a3cbc866f5f12",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_hugging-face",
+      "sourceId": "src_google-research",
       "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
+        "id": "src_google-research",
+        "name": "Google Research"
       },
-      "canonicalUrl": "https://huggingface.co/blog/tokenizers-v1",
-      "url": "https://huggingface.co/blog/tokenizers-v1",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "canonicalUrl": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+      "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+      "publishedAt": "2026-09-15T20:00:35.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-21T14:16:34.328Z",
-      "updatedAt": "2026-09-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T06:06:59.873Z",
+      "updatedAt": "2026-09-15T20:00:35.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Tokenizers v1 Targets Performance Bottlenecks in Scaling ML Workflows",
-        "zh-Hans": "Tokenizers v1针对ML工作流扩展中的性能瓶颈"
+        "en": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
+        "zh-Hans": "绕过推理瓶颈：用检索训练加速复杂AI搜索"
       },
       "summary": {
-        "en": "Hugging Face redesigns tokenization infrastructure to address emerging bottlenecks as models become faster and workloads scale, preventing GPUs from sitting idle while waiting for CPU tokenization completion.",
-        "zh-Hans": "Hugging Face重新设计分词基础设施以解决模型加速和工作负载扩展中出现的瓶颈，防止GPU在等待CPU分词完成时空闲。"
+        "en": "Retrieve-for-Train framework uses reinforcement learning to train lightweight diffusion models, bypassing expensive autoregressive reasoning to instantly generate coherent search result sets.",
+        "zh-Hans": "检索训练框架使用强化学习训练轻量级扩散模型，绕过昂贵的自回归推理，即时生成连贯的搜索结果集。"
       },
-      "category": "compute_infrastructure",
+      "category": "models_capabilities",
       "tags": [
-        "tokenization",
-        "performance optimization",
-        "scaling"
+        "inference optimization",
+        "reinforcement learning",
+        "search systems"
       ],
       "topics": [
-        "compute_infrastructure"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.9,
+      "sourceReliability": 0.94,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 87,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "addresses fundamental infrastructure scaling challenges for model deployment and training",
+      "freshnessScore": 91,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "demonstrates transferable inference optimization technique replacing expensive reasoning with trained models",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_693b3130e25cc8808f585a69",
-          "url": "https://huggingface.co/blog/tokenizers-v1",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-09-21T00:00:00.000Z",
-          "evidenceSnippet": "Results What V1 Is The Split: Bitstreams Instead Of A Regex The Word Cache The Merge Loop Method What This Adds Up To Getting It Progress Towards V1 Release Candidate: Implemented 1.0.0 After 1.0.0 The tokenizer has not historically been the bottleneck within ML workflows. Compute-wise, tokenization is light compared to the heavy modeling happening in the rest of the pipeline. Yet, in some cases, it has rapidly become key to accelerating (or slowing down) your machine learning work. As models become faster and workloads scale, that balance begins to shift. Training on massive datasets, serving many concurrent requests, or repeatedly processing long inputs can put enough pressure on the tokenizer that it starves the model of data. This is why we have chosen to heavily focus on performance for the upcoming version 1 of tokenizers. Tokenization should be light and should scale with your workflow. Your GPUs should never sit idle waiting for the CPU to complete its tokenization."
+          "id": "candidate_f174ca4a3cbc866f5f127805",
+          "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-15T20:00:35.000Z",
+          "evidenceSnippet": "Pengcheng Jiang, Student Researcher, and Judith Yue Li, Senior Research Engineer, Google Research Instead of relying on expensive inference-time reasoning, the Retrieve-for-Train framework uses reinforcement learning once to train a lightweight diffusion model. This bypasses the heavy autoregressive \"thinking budget\" to instantly generate a cohesive, expert-level slate of AI search results. Modern search or recommendation applications are increasingly expected to return a coherent set of results rather than a single best match. For example, when a user searches for \"camping gear\", they don’t want ten slight variations of four-person tents. They want a coherent, complementary slate that includes essential camping gear, such as a tent, sleeping bag, portable stove, and headlamp."
         }
       ]
     },
@@ -318,130 +506,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-09-10T22:50:22.000Z",
           "evidenceSnippet": "Zhongyi Zhou, Research Scientist, and Ruofei Du, Interactive Perception & Graphics Lead, Google XR ToolGrad is a data generation framework that reverses the traditional paradigm by first generating tool-use answers before user queries. We show this design enables LLMs to achieve better tool-use performance. AI agents have shown great potential in automating real-world tasks, such as conducting a Google Search, reading local computer files, or executing generated Python scripts. To achieve such agentic workflows, LLMs need to learn how to use tools correctly and efficiently. To teach large language models tool uses, we need datasets of tool-use chains and their corresponding user queries. In our prior work introduced in InstructPipe , we manually annotated our evaluation data, but it is impractical to scale up the human annotation for advanced LLM fine-tuning workstreams. To streamline the data workstream, prior work, e.g., ToolBench and ToolACE , explored using an agent to automatically search a tool-use path with trial and error. This representative annotation approach involves two steps: (1) generate a hypothetical user instruction from a sampled API pool, and (2) use a depth-fir"
-        }
-      ]
-    },
-    {
-      "id": "item_8d723f6dece8e3e64bae",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
-      "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
-      "publishedAt": "2026-09-03T18:20:31.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-06T04:46:34.200Z",
-      "updatedAt": "2026-09-03T18:20:31.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Transfer learning shows mixed results for genomic prediction across populations",
-        "zh-Hans": "迁移学习在跨人群基因组预测中显示混合结果"
-      },
-      "summary": {
-        "en": "Google Research finds transfer learning from European genetic cohorts improves prediction in small underrepresented populations but degrades accuracy as target cohort sizes grow, particularly for population-specific genetic traits.",
-        "zh-Hans": "谷歌研究发现，从欧洲遗传队列的迁移学习可改善小型代表性不足人群的预测，但随着目标队列规模增长，准确性会下降，特别是对于人群特异性遗传特征。"
-      },
-      "category": "research_science",
-      "tags": [
-        "transfer learning",
-        "genomics",
-        "population genetics"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 57,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 72,
-      "relevanceReason": "demonstrates transferable machine learning methodology for cross-population genetic prediction with clear performance boundaries",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_8d723f6dece8e3e64bae5486",
-          "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-03T18:20:31.000Z",
-          "evidenceSnippet": "Joey Poomarin Phloyphisut, Software Engineer, and Cory McLean, Senior Staff Software Engineer, Google Research We evaluate ways to improve cross-population genetic risk prediction and find that while transfer learning from European cohorts improves prediction in small underrepresented populations, it degrades accuracy once target cohort sample sizes grow, especially for traits with population-specific genetic architectures. Polygenic risk scores (PRSs) are used to predict disease risk from genetic variants. They usually incorporate the influence of hundreds to millions of genetic variants. However, their adoption for clinical decision making is currently low, partly because historical genome-wide association studies (GWASs) have overwhelmingly evaluated European cohorts , resulting in severe accuracy drops when applied to non-European populations. These accuracy differences arise because of cross-population differences in genetic architectures, population structure, and variant allele frequencies ."
-        }
-      ]
-    },
-    {
-      "id": "item_287b43296ed988c826b3",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
-      "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
-      "publishedAt": "2026-08-20T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-08-30T15:25:03.038Z",
-      "updatedAt": "2026-08-20T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft Research Releases Skala 1.1 for Predictive DFT",
-        "zh-Hans": "微软研究院发布Skala 1.1用于预测性DFT"
-      },
-      "summary": {
-        "en": "Updated deep-learning exchange-correlation functional provides greater accuracy and expanded accessibility across computational chemistry ecosystem.",
-        "zh-Hans": "更新的深度学习交换相关泛函在计算化学生态系统中提供更高精度和更广泛的可访问性。"
-      },
-      "category": "research_science",
-      "tags": [
-        "density functional theory",
-        "computational chemistry",
-        "deep learning"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Sebastian Ehlert, Stefano Battaglia, Thijs Vogels, Jan Hermann, Jens Wehner, Giulia Luise, Klaas Giesbertz, Chin-Wei Huang, Aaron Kaplan, Kate Milton, Stephanie Marisa Lanius, Derk Kooi, P. Bern&aacute;t Szab&oacute;, Gregor Simm, Rianne van den Berg, Paola Gori Giorgi",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 10,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "advances transferable deep learning methods for scientific computation",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_287b43296ed988c826b3e582",
-          "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-08-20T16:00:00.000Z",
-          "evidenceSnippet": "Skala 1.1, the updated deep-learning exchange-correlation functional from Microsoft Research, provides greater accuracy, expanded accessibility across the computational chemistry ecosystem, and a living benchmark to track computational performance. The post Broadening access to Skala creates a faster path to predictive DFT appeared first on Microsoft Research ."
         }
       ]
     },
@@ -609,69 +673,127 @@
       ]
     },
     {
-      "id": "release_meta_muse_glimmer_30b_20260810",
+      "id": "item_ae2a66f3c360fd1788ea",
       "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
+      "type": "article",
+      "sourceId": "src_hugging-face",
       "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-21T14:16:34.328Z",
+      "updatedAt": "2026-09-21T13:44:34.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+        "en": "Physics-Inspired Block Pruning for LLM Compression Using Ising Optimization",
+        "zh-Hans": "基于伊辛优化的物理启发式LLM块剪枝压缩方法"
       },
       "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+        "en": "Multiverse Computing frames transformer block removal as an energy minimization problem from spin physics, treating block selection as interacting binary variables to solve combinatorial optimization challenges in model compression.",
+        "zh-Hans": "Multiverse Computing将变换器块移除建模为自旋物理中的能量最小化问题，将块选择视为相互作用的二元变量来解决模型压缩中的组合优化挑战。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
+        "model compression",
+        "optimization",
+        "physics-inspired",
+        "transformer architecture"
       ],
       "topics": [
-        "agents_automation",
         "models_capabilities"
       ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 99,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances transferable model compression techniques through novel physics-inspired optimization approach",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+          "id": "candidate_ae2a66f3c360fd1788ea542e",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-21T13:44:34.000Z",
+          "evidenceSnippet": "Why picking blocks is a many-body problem The idea: turn block selection into an energy-minimization problem Solving it: exact when you can, quantum or quantum-inspired when you can't Why the whole low-energy spectrum matters Results It generalizes beyond dense transformers Why this fits Multiverse Computing One of the cheapest ways to make a large language model faster is also one of the bluntest: delete whole transformer blocks. Because the model literally gets shorter, block removal (also called depth pruning) buys predictable inference speedups on top of the memory savings, and it stacks cleanly with quantization, low-rank compression, and other techniques. The hard part is deciding which blocks to cut. Remove the wrong ones and the model collapses; and the effect of removing any one block depends on which others you remove alongside it, so the choices interact. That makes it a combinatorial problem, not a ranking problem, and combinatorial problems with interacting binary variables are exactly what the physics of spin systems was built to describe. Our latest paper, LLM Compression by Block Removal with Constrained Binary Optimization , takes that correspondence literally. We "
+        }
+      ]
+    },
+    {
+      "id": "item_693b3130e25cc8808f58",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/tokenizers-v1",
+      "url": "https://huggingface.co/blog/tokenizers-v1",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-21T14:16:34.328Z",
+      "updatedAt": "2026-09-21T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Tokenizers v1 Targets Performance Bottlenecks in Scaling ML Workflows",
+        "zh-Hans": "Tokenizers v1针对ML工作流扩展中的性能瓶颈"
+      },
+      "summary": {
+        "en": "Hugging Face redesigns tokenization infrastructure to address emerging bottlenecks as models become faster and workloads scale, preventing GPUs from sitting idle while waiting for CPU tokenization completion.",
+        "zh-Hans": "Hugging Face重新设计分词基础设施以解决模型加速和工作负载扩展中出现的瓶颈，防止GPU在等待CPU分词完成时空闲。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "tokenization",
+        "performance optimization",
+        "scaling"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 87,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "addresses fundamental infrastructure scaling challenges for model deployment and training",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_693b3130e25cc8808f585a69",
+          "url": "https://huggingface.co/blog/tokenizers-v1",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-21T00:00:00.000Z",
+          "evidenceSnippet": "Results What V1 Is The Split: Bitstreams Instead Of A Regex The Word Cache The Merge Loop Method What This Adds Up To Getting It Progress Towards V1 Release Candidate: Implemented 1.0.0 After 1.0.0 The tokenizer has not historically been the bottleneck within ML workflows. Compute-wise, tokenization is light compared to the heavy modeling happening in the rest of the pipeline. Yet, in some cases, it has rapidly become key to accelerating (or slowing down) your machine learning work. As models become faster and workloads scale, that balance begins to shift. Training on massive datasets, serving many concurrent requests, or repeatedly processing long inputs can put enough pressure on the tokenizer that it starves the model of data. This is why we have chosen to heavily focus on performance for the upcoming version 1 of tokenizers. Tokenization should be light and should scale with your workflow. Your GPUs should never sit idle waiting for the CPU to complete its tokenization."
         }
       ]
     },
@@ -1049,68 +1171,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-16T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.16163v1 Announce Type: new Abstract: The sharp increase in mass shootings underscores an urgent need for systems that guide victims to safety in real time. An effective evacuation system must minimize threat exposure while also accounting for adversarial uncertainty and crowding dynamics. Current methods in the literature are rigidly constrained to layout-specific policies and computationally intractable in large-scale layouts, while practical guidelines simply advise victims to \"run\", \"hide\", or \"fight\". We propose GPEvac: a GNN-based PPO framework that computes adaptive evacuation routes during shooting events. To capture both local and long-distance dependencies, we introduce an edge-first sequential message-passing scheme with a learnable virtual global node. The resulting graph embeddings are integrated into a permutation-invariant scoring mechanism that allows a single learned policy to operate across building layouts of diverse topologies and sizes. Through extensive simulation, we show that GPEvac outperforms intelligent baselines across distinct architectural layouts, significantly reducing total threat exposure. Crucially, the system computes global evacuation "
-        }
-      ]
-    },
-    {
-      "id": "item_f174ca4a3cbc866f5f12",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-      "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-      "publishedAt": "2026-09-15T20:00:35.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-16T06:06:59.873Z",
-      "updatedAt": "2026-09-15T20:00:35.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
-        "zh-Hans": "绕过推理瓶颈：用检索训练加速复杂AI搜索"
-      },
-      "summary": {
-        "en": "Retrieve-for-Train framework uses reinforcement learning to train lightweight diffusion models, bypassing expensive autoregressive reasoning to instantly generate coherent search result sets.",
-        "zh-Hans": "检索训练框架使用强化学习训练轻量级扩散模型，绕过昂贵的自回归推理，即时生成连贯的搜索结果集。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "inference optimization",
-        "reinforcement learning",
-        "search systems"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 91,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "demonstrates transferable inference optimization technique replacing expensive reasoning with trained models",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_f174ca4a3cbc866f5f127805",
-          "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-15T20:00:35.000Z",
-          "evidenceSnippet": "Pengcheng Jiang, Student Researcher, and Judith Yue Li, Senior Research Engineer, Google Research Instead of relying on expensive inference-time reasoning, the Retrieve-for-Train framework uses reinforcement learning once to train a lightweight diffusion model. This bypasses the heavy autoregressive \"thinking budget\" to instantly generate a cohesive, expert-level slate of AI search results. Modern search or recommendation applications are increasingly expected to return a coherent set of results rather than a single best match. For example, when a user searches for \"camping gear\", they don’t want ten slight variations of four-person tents. They want a coherent, complementary slate that includes essential camping gear, such as a tent, sleeping bag, portable stove, and headlamp."
         }
       ]
     },
@@ -1927,6 +1987,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-04T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.03209v1 Announce Type: new Abstract: We study a governed approach to enterprise analytics: a language model interprets the question, while deterministic policy selects and runs a pre-approved analytical program that returns both results and evidence. We show that this restriction can remain expressive within a defined analytical class, using relational operations plus aggregation, comparison, windows, ranking, and similarity. Fixed meaning, policy, data, and execution rules also make results replayable. Across 440 runs, three 8B models generated SQL and selected tools at runtime, while Qwen3-8B interpreted intent only and policy executed the approved program. None of 330 runtime-planning episodes matched the full answer-and-evidence contract across all test datasets; the policy-executed analyzer matched 110 of 110. This is a configuration-specific result, not evidence that runtime agents cannot succeed under other designs."
+        }
+      ]
+    },
+    {
+      "id": "item_8d723f6dece8e3e64bae",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+      "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+      "publishedAt": "2026-09-03T18:20:31.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-06T04:46:34.200Z",
+      "updatedAt": "2026-09-03T18:20:31.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Transfer learning shows mixed results for genomic prediction across populations",
+        "zh-Hans": "迁移学习在跨人群基因组预测中显示混合结果"
+      },
+      "summary": {
+        "en": "Google Research finds transfer learning from European genetic cohorts improves prediction in small underrepresented populations but degrades accuracy as target cohort sizes grow, particularly for population-specific genetic traits.",
+        "zh-Hans": "谷歌研究发现，从欧洲遗传队列的迁移学习可改善小型代表性不足人群的预测，但随着目标队列规模增长，准确性会下降，特别是对于人群特异性遗传特征。"
+      },
+      "category": "research_science",
+      "tags": [
+        "transfer learning",
+        "genomics",
+        "population genetics"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 57,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "demonstrates transferable machine learning methodology for cross-population genetic prediction with clear performance boundaries",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8d723f6dece8e3e64bae5486",
+          "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-03T18:20:31.000Z",
+          "evidenceSnippet": "Joey Poomarin Phloyphisut, Software Engineer, and Cory McLean, Senior Staff Software Engineer, Google Research We evaluate ways to improve cross-population genetic risk prediction and find that while transfer learning from European cohorts improves prediction in small underrepresented populations, it degrades accuracy once target cohort sample sizes grow, especially for traits with population-specific genetic architectures. Polygenic risk scores (PRSs) are used to predict disease risk from genetic variants. They usually incorporate the influence of hundreds to millions of genetic variants. However, their adoption for clinical decision making is currently low, partly because historical genome-wide association studies (GWASs) have overwhelmingly evaluated European cohorts , resulting in severe accuracy drops when applied to non-European populations. These accuracy differences arise because of cross-population differences in genetic architectures, population structure, and variant allele frequencies ."
         }
       ]
     },
@@ -4755,6 +4877,68 @@
       ]
     },
     {
+      "id": "item_287b43296ed988c826b3",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
+      "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
+      "publishedAt": "2026-08-20T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-08-30T15:25:03.038Z",
+      "updatedAt": "2026-08-20T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Research Releases Skala 1.1 for Predictive DFT",
+        "zh-Hans": "微软研究院发布Skala 1.1用于预测性DFT"
+      },
+      "summary": {
+        "en": "Updated deep-learning exchange-correlation functional provides greater accuracy and expanded accessibility across computational chemistry ecosystem.",
+        "zh-Hans": "更新的深度学习交换相关泛函在计算化学生态系统中提供更高精度和更广泛的可访问性。"
+      },
+      "category": "research_science",
+      "tags": [
+        "density functional theory",
+        "computational chemistry",
+        "deep learning"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Sebastian Ehlert, Stefano Battaglia, Thijs Vogels, Jan Hermann, Jens Wehner, Giulia Luise, Klaas Giesbertz, Chin-Wei Huang, Aaron Kaplan, Kate Milton, Stephanie Marisa Lanius, Derk Kooi, P. Bern&aacute;t Szab&oacute;, Gregor Simm, Rianne van den Berg, Paola Gori Giorgi",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 10,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "advances transferable deep learning methods for scientific computation",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_287b43296ed988c826b3e582",
+          "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-08-20T16:00:00.000Z",
+          "evidenceSnippet": "Skala 1.1, the updated deep-learning exchange-correlation functional from Microsoft Research, provides greater accuracy, expanded accessibility across the computational chemistry ecosystem, and a living benchmark to track computational performance. The post Broadening access to Skala creates a faster path to predictive DFT appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
       "id": "item_41b914407b7a3faed8c8",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -7370,6 +7554,73 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
+        }
+      ]
+    },
+    {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
       ]
     },
