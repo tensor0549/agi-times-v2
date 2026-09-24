@@ -7,8 +7,194 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-23T23:46:25.081Z",
+  "generatedAt": "2026-09-24T19:15:30.440Z",
   "items": [
+    {
+      "id": "item_280bf64dcca75cee1131",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "publishedAt": "2026-09-24T14:08:57.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-24T19:15:02.245Z",
+      "updatedAt": "2026-09-24T14:08:57.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LiquidAI releases LFM2.5-VL-DSpark with speculative decoding for vision-language models",
+        "zh-Hans": "LiquidAI发布支持推测解码的视觉语言模型LFM2.5-VL-DSpark"
+      },
+      "summary": {
+        "en": "LiquidAI introduces experimental DSpark draft model for LFM2.5-VL-3B that adds speculative decoding path, trading minimal memory increase for inference speedup without changing output quality.",
+        "zh-Hans": "LiquidAI为LFM2.5-VL-3B推出实验性DSpark草稿模型，通过推测解码路径以最小内存增加换取推理加速且不改变输出质量。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "vision-language",
+        "speculative-decoding",
+        "inference-optimization"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances multimodal model inference efficiency through novel speculative decoding architecture",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_280bf64dcca75cee1131d5bb",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-24T14:08:57.000Z",
+          "evidenceSnippet": "How does speculative decoding work for VLMs Training and Architecture Inference Speedup on CPU and GPU Limitations of speculation for vision workloads How to use LFM2.5-VL-DSpark Get Started Citation Today, we release an experimental DSpark draft model for our vision-language model (VLM) LFM2.5-VL-3B . As with our recently released LFM2.5-DSpark drafter models , it adds a speculative decoding path that trades a minimal increase in memory footprint for a larger speedup without changing output quality. The vision drafter uses the same architecture as our text LFM2.5-DSpark drafters: it captures the target model's hidden states at a fixed set of tapped layers and conditions on them to draft a block of k candidate tokens. Image patches and text tokens are projected into a shared representation before those layers, so the drafter operates on hidden-state vectors of identical dimensionality regardless of input modality. The inference algorithm is therefore unchanged from the text models. We follow the DSpark recipe with a mixture of vision-language SFT data, weighted toward the workloads we expect the model to serve. Based on ablations across 3, 4, and 5 layers, the draft model is a simp"
+        }
+      ]
+    },
+    {
+      "id": "item_5c76f9e2f8d51cc7dafa",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.26891",
+      "url": "https://arxiv.org/abs/2609.26891",
+      "publishedAt": "2026-09-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-24T19:15:02.245Z",
+      "updatedAt": "2026-09-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "JAZ framework proposes minimalist agent harness with recursive invoke primitive",
+        "zh-Hans": "JAZ框架提出具有递归调用原语的极简智能体工具"
+      },
+      "summary": {
+        "en": "Researchers introduce JAZ agent framework built around single LLM-based invoke primitive that allows arbitrary executable code including recursive invoke calls within agent loop.",
+        "zh-Hans": "研究人员推出JAZ智能体框架，围绕单一基于LLM的调用原语构建，允许在智能体循环中执行包括递归调用的任意可执行代码。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent-framework",
+        "minimalist-design",
+        "recursive-invoke"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Zhening Li, Joshua Liu, Mateja Vukelic, Nicole Shen, Supriya Lall, Amitayush Thakur, Alex Zhang, Omar Khattab, Jonathan Light, Armando Solar-Lezama",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:zhening li, joshua liu, mateja vukelic, nicole shen, supriya lall, amitayush thakur, alex zhang, omar khattab, jonathan light, armando solar-lezama",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "introduces novel minimalist architecture for general-purpose agent systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5c76f9e2f8d51cc7dafa8714",
+          "url": "https://arxiv.org/abs/2609.26891",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.26891v1 Announce Type: new Abstract: Modern language-model agents are built around the \\textit{agent loop}, where the LLM is placed in an environment exposing a set of tools, and the LLM has full control over the workflow by alternating between tool calls and observing their output. However, certain workflows currently require additional engineering beyond the agent loop itself, such as memory systems and self-improving systems. We built an LLM agent framework, JAZ, to explore the extent to which a minimal harness that is little more than the agent loop itself can accomplish tasks these specialized systems are built for. JAZ exposes a single LLM-based primitive invoke and provides a set of built-in hooks that allow the programmer to apply constraints and monitoring. Generalizing existing code-mode agent loops, \\texttt{invoke} is the simplest loop that satisfies two defining properties: (1) the LLM can write arbitrary executable code that can include recursive \\texttt{invoke}; (2) everything visible to the LLM --- all inputs to \\texttt{invoke} as well as its interaction history with the code environment --- are variables in the code environment. We motivate our design fro"
+        }
+      ]
+    },
+    {
+      "id": "item_6ec2c1f0d922085c0555",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.26836",
+      "url": "https://arxiv.org/abs/2609.26836",
+      "publishedAt": "2026-09-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-24T19:15:02.245Z",
+      "updatedAt": "2026-09-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Research identifies silent failures in agent-tool interactions within ToolUniverse environment",
+        "zh-Hans": "研究识别ToolUniverse环境中智能体工具交互的静默失败"
+      },
+      "summary": {
+        "en": "Study examines 15 scientific tools in ToolUniverse to identify silent failures where tool invocations appear successful but information is incomplete or missing without user notification.",
+        "zh-Hans": "研究检查ToolUniverse中15个科学工具，识别工具调用看似成功但信息不完整或缺失且无用户通知的静默失败。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent-tool-interaction",
+        "failure-analysis",
+        "silent-failures"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Shreya Gopalan, Devansh Singh, Sundaraparipurnan Narayanan",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:shreya gopalan, devansh singh, sundaraparipurnan narayanan",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses critical reliability issues in agent-tool integration systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6ec2c1f0d922085c0555913a",
+          "url": "https://arxiv.org/abs/2609.26836",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.26836v1 Announce Type: new Abstract: Agentic AI systems are increasingly adopting automated pipelines that integrate multiple tools. While prior research and benchmarks have studied about task success and task completion of these agentic systems, the research about agent to tool interaction, specifically in biology agentic workflow is limited. This study investigates specific failures in agent to tool interaction where a tool invocation appears successful, some or all of the information or functionality from the tool via API/ wrapper is incomplete or missing and there are no communications / notifications to the user or the agent about such missing information. We call this a silent failures as the user or the agents are not aware that such failure has occurred. For the purposes of this study we developed an audit mechanism to identify such silent failures in Agent to tool interaction, by examining 15 scientific tools (and their associated API documentation and tool documentations) integrated within ToolUniverse environment (ToolUniverse serves as our experimental environment rather than the object of the study itself). We structure our study around 7 failure locus chara"
+        }
+      ]
+    },
     {
       "id": "item_30aa7c0acfe7f3809f1c",
       "schemaVersion": "1.0.0",
@@ -136,69 +322,6 @@
       ]
     },
     {
-      "id": "item_e9f63aa1f7aaa02f4024",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/evaleval-aisi",
-      "url": "https://huggingface.co/blog/evaleval-aisi",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-23T23:45:56.344Z",
-      "updatedAt": "2026-09-22T00:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "UK AISI and EvalEval Coalition Advance Reproducible AI Benchmark Results",
-        "zh-Hans": "英国AISI和EvalEval联盟推进可重现的AI基准测试结果"
-      },
-      "summary": {
-        "en": "UK AI Security Institute uses EvalEval infrastructure to openly share evaluation results, addressing the challenge of reproducible AI evaluation as deployment accelerates and results are scattered across platforms.",
-        "zh-Hans": "英国AI安全研究所使用EvalEval基础设施公开分享评估结果，解决AI部署加速时评估结果分散在各平台的可重现性挑战。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "evaluation",
-        "reproducibility",
-        "benchmarks",
-        "ai-safety"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 63,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Standardized evaluation infrastructure is critical for reliable assessment of advancing AI model capabilities",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_e9f63aa1f7aaa02f4024a141",
-          "url": "https://huggingface.co/blog/evaleval-aisi",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-09-22T00:00:00.000Z",
-          "evidenceSnippet": "Why reproducible evaluation reporting matters What AISI is sharing Contribute to the shared mission About the EvalEval Coalition About the UK AI Security Institute Further reading The EvalEval Coalition is thrilled to share that the UK AI Security Institute (AISI) is using EvalEval's infrastructure to openly share evaluation results, supporting more reproducible and verifiable evaluation science. AISI and EvalEval have previously collaborated on research that began at a joint workshop alongside NeurIPS 2025 , and feedback from the Institute has helped shape the Every Eval Ever (EEE) schema . This next phase of the collaboration puts that shared infrastructure into practice. As AI deployment accelerates, evaluations are becoming increasingly important sources of evidence about model and system performance. Yet results are reported across many formats, platforms, and outlets, often without enough information to reproduce them. Running the evaluations again may itself be prohibitively expensive."
-        }
-      ]
-    },
-    {
       "id": "item_d84d5932ca4ed6616850",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -257,131 +380,6 @@
           "publisher": "Microsoft Research",
           "publishedAt": "2026-09-21T15:30:19.000Z",
           "evidenceSnippet": "Custom-made molecules are advancing medicine, materials, and agriculture, but producing them is slow and expensive. A new Nature paper highlights RetroChimera, a predictive model that helps accelerate chemical synthesis, helping researchers explore a wide range of molecules. The post Improving synthesis prediction of small molecules at scale with RetroChimera appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
-      "id": "item_7517c50358dbe9ce4cc6",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.20971",
-      "url": "https://arxiv.org/abs/2609.20971",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-21T14:16:34.328Z",
-      "updatedAt": "2026-09-21T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "RBS-Attention Achieves 20x Speedup for Long-Context LLM Prefill",
-        "zh-Hans": "RBS注意力机制实现长上下文LLM预填充20倍加速"
-      },
-      "summary": {
-        "en": "Training-free sparse prefill method addresses mean dilution in block selection through dual-branch approach, achieving significant speedups on H100 GPUs while maintaining accuracy on 128K context lengths.",
-        "zh-Hans": "无需训练的稀疏预填充方法通过双分支方法解决块选择中的均值稀释问题，在H100 GPU上实现显著加速同时保持128K上下文长度的准确性。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "attention mechanism",
-        "long context",
-        "sparse attention",
-        "inference optimization"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Chuxu Song, Jiuqi Wei, Zhencan Peng",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:chuxu song, jiuqi wei, zhencan peng",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 91,
-      "importanceScore": 82,
-      "importance": 82,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "materially advances long-context processing capabilities with transferable attention optimization techniques",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_7517c50358dbe9ce4cc6b6a3",
-          "url": "https://arxiv.org/abs/2609.20971",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-21T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.20971v1 Announce Type: new Abstract: Long-context large language model inference is increasingly limited by prefill, where dense self-attention processes the entire prompt before generation begins. Sparse block selection can reduce this cost, but a block centroid may hide a highly relevant token among many irrelevant ones. We call this failure mode mean dilution and propose RBS-Attention, a training-free sparse-prefill method with two complementary selection branches. A centroid base branch captures average relevance, while a rescue branch uses the maximum key-block radius and its prompt-, layer-, and head-dependent distribution to identify blocks at risk of underestimation. Independently thresholding the two branches and combining their masks controls the contribution of rescue blocks while preserving regular block-sparse FlashAttention execution. On H100 GPUs, RBS-Attention achieves 20.65$\\times$ standalone prefill-attention speedup, 11.92$\\times$ vLLM prefill-attention speedup, and 5.97$\\times$ end-to-end time-to-first-token speedup at 128K on Qwen3-30B-A3B-Instruct-2507-FP8. On the dense Qwen3-32B model, it obtains 88.65 overall RULER accuracy versus 89.52 for dense "
-        }
-      ]
-    },
-    {
-      "id": "item_a51d145ffe436938784a",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.20974",
-      "url": "https://arxiv.org/abs/2609.20974",
-      "publishedAt": "2026-09-21T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-21T14:16:34.328Z",
-      "updatedAt": "2026-09-21T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Attention-Aware Routing Couples MoE Expert Selection with Contextual State",
-        "zh-Hans": "注意力感知路由将MoE专家选择与上下文状态耦合"
-      },
-      "summary": {
-        "en": "Novel routing method augments MoE expert selection with temporal and spectral features from attention weights, demonstrating coupled circuits between routing and attention mechanisms while improving mathematical reasoning performance.",
-        "zh-Hans": "新颖的路由方法通过注意力权重的时间和频谱特征增强MoE专家选择，展示路由与注意力机制间的耦合回路并提升数学推理性能。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "mixture of experts",
-        "attention routing",
-        "contextual processing"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Despoina Kosmopoulou, Anastasios Tsetsilas, Efthymios Georgiou, Giannis Karamanolakis, Swastik Roy, Alexandros Potamianos",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:despoina kosmopoulou, anastasios tsetsilas, efthymios georgiou, giannis karamanolakis, swastik roy, alexandros potamianos",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 91,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "advances transferable expert routing mechanisms through attention-routing coupling discovery",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_a51d145ffe436938784a0c93",
-          "url": "https://arxiv.org/abs/2609.20974",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-21T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.20974v1 Announce Type: new Abstract: In Mixture-of-Experts language models, the router typically selects and weights experts based on the token's hidden state, utilizing limited contextual information. We propose Attention-Aware Routing (AAR), which augments the router with temporal and spectral features extracted from a sliding window of attention weights that represent a summary of the model's contextual state, disentangled from the hidden state. Keeping the base transformer entirely frozen, we train only the routing parameters, isolating routing as the sole variable. AAR improves GSM8K by +3.37 pp over a routing-only SFT baseline on OLMoE. Beyond performance, we show that routing and attention form a coupled circuit: routing changes at layer l propagate through the residual stream to amplify attention sinks at layer l+1, reshaping attention without any direct update to the attention mechanism itself. Further, AAR reduces long diverging generation, with incorrect answers getting shorter, while correct answers remain unchanged in length. Finally, AAR is strongly depth-sensitive: applying it indiscriminately across layers can degrade factual retrieval, whereas mathematic"
         }
       ]
     },
@@ -510,105 +508,6 @@
       ]
     },
     {
-      "id": "statement_meta_personal_superintelligence_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
-      },
-      "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
-      ],
-      "topics": [
-        "agents_automation",
-        "safety_security_alignment"
-      ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
-      "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
-        }
-      ]
-    },
-    {
       "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
       "schemaVersion": "1.0.0",
       "type": "release",
@@ -673,6 +572,193 @@
       ]
     },
     {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "item_689d78c6e007ab8e2c4f",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-24T19:15:02.245Z",
+      "updatedAt": "2026-09-22T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Transformers library adds support for GGUF quantized model format",
+        "zh-Hans": "Transformers库新增GGUF量化模型格式支持"
+      },
+      "summary": {
+        "en": "Hugging Face integrates GGUF model support into transformers library, enabling efficient local inference of quantized models through familiar APIs.",
+        "zh-Hans": "Hugging Face将GGUF模型支持集成到transformers库中，通过熟悉的API实现量化模型的高效本地推理。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "gguf",
+        "local-inference",
+        "quantization"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 52,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "improves accessibility of advanced models through efficient local deployment",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_689d78c6e007ab8e2c4f1996",
+          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-22T00:00:00.000Z",
+          "evidenceSnippet": "What is the GGUF file format? Load GGUF with transformers Serve GGUF with your preferred interface Benchmarking against llama.cpp transformers and llama.cpp Beyond GGUF: ggml kernels for more models Fast local inference with Python and PyTorch Reusing ggml's Metal kernels Keeping the CPU and GPU working together Current limitations and next steps Acknowledgments We're adding support for running GGUF models efficiently in transformers , so you can use checkpoints sized for your laptop's memory through the familiar transformers APIs. Pick a GGUF from the Hub, load it with from_pretrained , and start generating on your own machine. Running AI models on your laptop has become much easier, and llama.cpp has been a big part of that. Its inference engine powers local AI tools such as Ollama, LM Studio, and Jan. Alongside projects like MLX , it has helped make local inference a practical option for everyday use. A recent example of what local AI can feel like:"
+        }
+      ]
+    },
+    {
+      "id": "item_e9f63aa1f7aaa02f4024",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/evaleval-aisi",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-23T23:45:56.344Z",
+      "updatedAt": "2026-09-22T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "UK AISI and EvalEval Coalition Advance Reproducible AI Benchmark Results",
+        "zh-Hans": "英国AISI和EvalEval联盟推进可重现的AI基准测试结果"
+      },
+      "summary": {
+        "en": "UK AI Security Institute uses EvalEval infrastructure to openly share evaluation results, addressing the challenge of reproducible AI evaluation as deployment accelerates and results are scattered across platforms.",
+        "zh-Hans": "英国AI安全研究所使用EvalEval基础设施公开分享评估结果，解决AI部署加速时评估结果分散在各平台的可重现性挑战。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "evaluation",
+        "reproducibility",
+        "benchmarks",
+        "ai-safety"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 63,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Standardized evaluation infrastructure is critical for reliable assessment of advancing AI model capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e9f63aa1f7aaa02f4024a141",
+          "url": "https://huggingface.co/blog/evaleval-aisi",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-22T00:00:00.000Z",
+          "evidenceSnippet": "Why reproducible evaluation reporting matters What AISI is sharing Contribute to the shared mission About the EvalEval Coalition About the UK AI Security Institute Further reading The EvalEval Coalition is thrilled to share that the UK AI Security Institute (AISI) is using EvalEval's infrastructure to openly share evaluation results, supporting more reproducible and verifiable evaluation science. AISI and EvalEval have previously collaborated on research that began at a joint workshop alongside NeurIPS 2025 , and feedback from the Institute has helped shape the Every Eval Ever (EEE) schema . This next phase of the collaboration puts that shared infrastructure into practice. As AI deployment accelerates, evaluations are becoming increasingly important sources of evidence about model and system performance. Yet results are reported across many formats, platforms, and outlets, often without enough information to reproduce them. Running the evaluations again may itself be prohibitively expensive."
+        }
+      ]
+    },
+    {
       "id": "item_ae2a66f3c360fd1788ea",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -732,6 +818,131 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-21T13:44:34.000Z",
           "evidenceSnippet": "Why picking blocks is a many-body problem The idea: turn block selection into an energy-minimization problem Solving it: exact when you can, quantum or quantum-inspired when you can't Why the whole low-energy spectrum matters Results It generalizes beyond dense transformers Why this fits Multiverse Computing One of the cheapest ways to make a large language model faster is also one of the bluntest: delete whole transformer blocks. Because the model literally gets shorter, block removal (also called depth pruning) buys predictable inference speedups on top of the memory savings, and it stacks cleanly with quantization, low-rank compression, and other techniques. The hard part is deciding which blocks to cut. Remove the wrong ones and the model collapses; and the effect of removing any one block depends on which others you remove alongside it, so the choices interact. That makes it a combinatorial problem, not a ranking problem, and combinatorial problems with interacting binary variables are exactly what the physics of spin systems was built to describe. Our latest paper, LLM Compression by Block Removal with Constrained Binary Optimization , takes that correspondence literally. We "
+        }
+      ]
+    },
+    {
+      "id": "item_7517c50358dbe9ce4cc6",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.20971",
+      "url": "https://arxiv.org/abs/2609.20971",
+      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-21T14:16:34.328Z",
+      "updatedAt": "2026-09-21T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "RBS-Attention Achieves 20x Speedup for Long-Context LLM Prefill",
+        "zh-Hans": "RBS注意力机制实现长上下文LLM预填充20倍加速"
+      },
+      "summary": {
+        "en": "Training-free sparse prefill method addresses mean dilution in block selection through dual-branch approach, achieving significant speedups on H100 GPUs while maintaining accuracy on 128K context lengths.",
+        "zh-Hans": "无需训练的稀疏预填充方法通过双分支方法解决块选择中的均值稀释问题，在H100 GPU上实现显著加速同时保持128K上下文长度的准确性。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "attention mechanism",
+        "long context",
+        "sparse attention",
+        "inference optimization"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Chuxu Song, Jiuqi Wei, Zhencan Peng",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:chuxu song, jiuqi wei, zhencan peng",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "materially advances long-context processing capabilities with transferable attention optimization techniques",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_7517c50358dbe9ce4cc6b6a3",
+          "url": "https://arxiv.org/abs/2609.20971",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-21T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.20971v1 Announce Type: new Abstract: Long-context large language model inference is increasingly limited by prefill, where dense self-attention processes the entire prompt before generation begins. Sparse block selection can reduce this cost, but a block centroid may hide a highly relevant token among many irrelevant ones. We call this failure mode mean dilution and propose RBS-Attention, a training-free sparse-prefill method with two complementary selection branches. A centroid base branch captures average relevance, while a rescue branch uses the maximum key-block radius and its prompt-, layer-, and head-dependent distribution to identify blocks at risk of underestimation. Independently thresholding the two branches and combining their masks controls the contribution of rescue blocks while preserving regular block-sparse FlashAttention execution. On H100 GPUs, RBS-Attention achieves 20.65$\\times$ standalone prefill-attention speedup, 11.92$\\times$ vLLM prefill-attention speedup, and 5.97$\\times$ end-to-end time-to-first-token speedup at 128K on Qwen3-30B-A3B-Instruct-2507-FP8. On the dense Qwen3-32B model, it obtains 88.65 overall RULER accuracy versus 89.52 for dense "
+        }
+      ]
+    },
+    {
+      "id": "item_a51d145ffe436938784a",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.20974",
+      "url": "https://arxiv.org/abs/2609.20974",
+      "publishedAt": "2026-09-21T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-21T14:16:34.328Z",
+      "updatedAt": "2026-09-21T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Attention-Aware Routing Couples MoE Expert Selection with Contextual State",
+        "zh-Hans": "注意力感知路由将MoE专家选择与上下文状态耦合"
+      },
+      "summary": {
+        "en": "Novel routing method augments MoE expert selection with temporal and spectral features from attention weights, demonstrating coupled circuits between routing and attention mechanisms while improving mathematical reasoning performance.",
+        "zh-Hans": "新颖的路由方法通过注意力权重的时间和频谱特征增强MoE专家选择，展示路由与注意力机制间的耦合回路并提升数学推理性能。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mixture of experts",
+        "attention routing",
+        "contextual processing"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Despoina Kosmopoulou, Anastasios Tsetsilas, Efthymios Georgiou, Giannis Karamanolakis, Swastik Roy, Alexandros Potamianos",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:despoina kosmopoulou, anastasios tsetsilas, efthymios georgiou, giannis karamanolakis, swastik roy, alexandros potamianos",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances transferable expert routing mechanisms through attention-routing coupling discovery",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a51d145ffe436938784a0c93",
+          "url": "https://arxiv.org/abs/2609.20974",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-21T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.20974v1 Announce Type: new Abstract: In Mixture-of-Experts language models, the router typically selects and weights experts based on the token's hidden state, utilizing limited contextual information. We propose Attention-Aware Routing (AAR), which augments the router with temporal and spectral features extracted from a sliding window of attention weights that represent a summary of the model's contextual state, disentangled from the hidden state. Keeping the base transformer entirely frozen, we train only the routing parameters, isolating routing as the sole variable. AAR improves GSM8K by +3.37 pp over a routing-only SFT baseline on OLMoE. Beyond performance, we show that routing and attention form a coupled circuit: routing changes at layer l propagate through the residual stream to amplify attention sinks at layer l+1, reshaping attention without any direct update to the attention mechanism itself. Further, AAR reduces long diverging generation, with incorrect answers getting shorter, while correct answers remain unchanged in length. Finally, AAR is strongly depth-sensitive: applying it indiscriminately across layers can degrade factual retrieval, whereas mathematic"
         }
       ]
     },
@@ -7446,6 +7657,105 @@
       ]
     },
     {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+        }
+      ]
+    },
+    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -7748,68 +8058,6 @@
           "evidenceSnippet": "What makes a good tutor? How TutorMoments works Preliminary results Limitations and next steps 📄 Tech Report: https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf | 📊 Data: https://huggingface.co/datasets/allenai/tutormoments-preview | 💻 Code: https://github.com/allenai/tutormoments Today we're introducing a preview of TutorMoments , a framework to measure whether cutting-edge LLMs can balance one of the hardest trade-offs in education: when to step in and help a student and when to hold back and let the student do more of the work. TutorMoments is a replay-based evaluation built off real one-on-one math tutoring sessions. Experienced math teachers go through transcripts collected from a U.S. tutoring program and flag the moments where a tutor had to choose between making a problem easier to get started on and pushing the student to do more of the reasoning themselves. TutorMoments then takes the transcript up to that decision point, hands it to a language model, and has the model take over as the tutor in a simulated session – with the student played by another language model – to see what the LLM tutor does."
         }
       ]
-    },
-    {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
-        }
-      ],
-      "mediaType": "article"
     },
     {
       "id": "release_google_gemini_omni_builders_20260807",

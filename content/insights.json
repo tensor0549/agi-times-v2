@@ -7,8 +7,159 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-23T23:46:25.081Z",
+  "generatedAt": "2026-09-24T19:15:30.440Z",
   "items": [
+    {
+      "id": "insight_agent-infrastructure-advances-september-2024_20260924",
+      "slug": "agent-infrastructure-advances-september-2024",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "Agent Infrastructure Advances: Efficiency Gains and Reliability Challenges",
+        "zh-Hans": "智能体基础设施进展：效率提升与可靠性挑战"
+      },
+      "dek": {
+        "en": "Recent developments showcase complementary approaches to agent system optimization while highlighting critical reliability gaps in tool integration.",
+        "zh-Hans": "最新发展展示了智能体系统优化的互补方法，同时突出了工具集成中的关键可靠性缺陷。"
+      },
+      "body": {
+        "en": "Recent research reveals both promising advances and critical challenges in agent system infrastructure. On the optimization front, LiquidAI's LFM2.5-VL-DSpark demonstrates how speculative decoding can accelerate vision-language model inference without quality loss [^candidate_280bf64dcca75cee1131d5bb], while Hugging Face's GGUF integration makes quantized models more accessible through familiar APIs [^candidate_689d78c6e007ab8e2c4f1996]. The JAZ framework introduces a minimalist approach where agents operate through a single recursive invoke primitive that allows arbitrary executable code within the agent loop [^candidate_5c76f9e2f8d51cc7dafa8714]. However, reliability concerns emerge from research on ToolUniverse, which identified silent failures where tool invocations appear successful but deliver incomplete information without notification [^candidate_6ec2c1f0d922085c0555913a]. These developments illustrate complementary external mechanisms for engineering more capable agents while exposing fundamental reliability gaps that could undermine agent system trustworthiness.",
+        "zh-Hans": "最新研究揭示了智能体系统基础设施中的有希望进展和关键挑战。在优化方面，LiquidAI的LFM2.5-VL-DSpark展示了推测解码如何在不损失质量的情况下加速视觉语言模型推理[^candidate_280bf64dcca75cee1131d5bb]，而Hugging Face的GGUF集成通过熟悉的API使量化模型更易访问[^candidate_689d78c6e007ab8e2c4f1996]。JAZ框架引入了极简方法，智能体通过单一递归调用原语操作，允许在智能体循环中执行任意可执行代码[^candidate_5c76f9e2f8d51cc7dafa8714]。然而，ToolUniverse研究暴露了可靠性担忧，识别出工具调用看似成功但提供不完整信息且无通知的静默失败[^candidate_6ec2c1f0d922085c0555913a]。这些发展说明了工程化更强能力智能体的互补外部机制，同时暴露了可能破坏智能体系统可信度的基本可靠性缺陷。"
+      },
+      "publishedAt": "2026-09-24T19:15:30.440Z",
+      "updatedAt": "2026-09-24T19:15:30.440Z",
+      "topics": [
+        "models_capabilities",
+        "agents_automation",
+        "compute_infrastructure"
+      ],
+      "claims": [
+        {
+          "id": "speculative_decoding_advancement",
+          "type": "fact",
+          "text": {
+            "en": "LiquidAI released LFM2.5-VL-DSpark with speculative decoding that trades minimal memory increase for inference speedup without changing output quality",
+            "zh-Hans": "LiquidAI发布了LFM2.5-VL-DSpark，采用推测解码以最小内存增加换取推理加速且不改变输出质量"
+          },
+          "citationIds": [
+            "candidate_280bf64dcca75cee1131d5bb"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "gguf_integration",
+          "type": "fact",
+          "text": {
+            "en": "Hugging Face integrated GGUF model support into transformers library for efficient local inference through familiar APIs",
+            "zh-Hans": "Hugging Face将GGUF模型支持集成到transformers库中，通过熟悉的API实现高效本地推理"
+          },
+          "citationIds": [
+            "candidate_689d78c6e007ab8e2c4f1996"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "jaz_framework_design",
+          "type": "fact",
+          "text": {
+            "en": "JAZ framework operates through a single recursive invoke primitive that allows LLMs to write arbitrary executable code including recursive invoke calls",
+            "zh-Hans": "JAZ框架通过单一递归调用原语操作，允许LLM编写包括递归调用在内的任意可执行代码"
+          },
+          "citationIds": [
+            "candidate_5c76f9e2f8d51cc7dafa8714"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "id": "silent_failures_identified",
+          "type": "fact",
+          "text": {
+            "en": "Research on ToolUniverse identified silent failures where tool invocations appear successful but information is incomplete or missing without user notification",
+            "zh-Hans": "ToolUniverse研究识别出静默失败，即工具调用看似成功但信息不完整或缺失且无用户通知"
+          },
+          "citationIds": [
+            "candidate_6ec2c1f0d922085c0555913a"
+          ],
+          "confidence": 0.93
+        },
+        {
+          "id": "complementary_mechanisms_inference",
+          "type": "inference",
+          "text": {
+            "en": "These developments illustrate complementary external mechanisms for agent optimization while exposing reliability gaps that could undermine system trustworthiness",
+            "zh-Hans": "这些发展说明了智能体优化的互补外部机制，同时暴露了可能破坏系统可信度的可靠性缺陷"
+          },
+          "citationIds": [
+            "candidate_280bf64dcca75cee1131d5bb",
+            "candidate_689d78c6e007ab8e2c4f1996",
+            "candidate_5c76f9e2f8d51cc7dafa8714",
+            "candidate_6ec2c1f0d922085c0555913a"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_280bf64dcca75cee1131d5bb",
+          "feedItemId": "item_280bf64dcca75cee1131",
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-24T14:08:57.000Z",
+          "evidenceSnippet": "How does speculative decoding work for VLMs Training and Architecture Inference Speedup on CPU and GPU Limitations of speculation for vision workloads How to use LFM2.5-VL-DSpark Get Started Citation Today, we release an experimental DSpark draft model for our vision-language model (VLM) LFM2.5-VL-3B . As with our recently released LFM2.5-DSpark drafter models , it adds a speculative decoding path that trades a minimal increase in memory footprint for a larger speedup without changing output quality. The vision drafter uses the same architecture as our text LFM2.5-DSpark drafters: it captures the target model's hidden states at a fixed set of tapped layers and conditions on them to draft a block of k candidate tokens. Image patches and text tokens are projected into a shared representation before those layers, so the drafter operates on hidden-state vectors of identical dimensionality regardless of input modality. The inference algorithm is therefore unchanged from the text models. We follow the DSpark recipe with a mixture of vision-language SFT data, weighted toward the workloads we expect the model to serve. Based on ablations across 3, 4, and 5 layers, the draft model is a simp"
+        },
+        {
+          "id": "candidate_689d78c6e007ab8e2c4f1996",
+          "feedItemId": "item_689d78c6e007ab8e2c4f",
+          "title": "Transformers now runs llama.cpp quants",
+          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-09-22T00:00:00.000Z",
+          "evidenceSnippet": "What is the GGUF file format? Load GGUF with transformers Serve GGUF with your preferred interface Benchmarking against llama.cpp transformers and llama.cpp Beyond GGUF: ggml kernels for more models Fast local inference with Python and PyTorch Reusing ggml's Metal kernels Keeping the CPU and GPU working together Current limitations and next steps Acknowledgments We're adding support for running GGUF models efficiently in transformers , so you can use checkpoints sized for your laptop's memory through the familiar transformers APIs. Pick a GGUF from the Hub, load it with from_pretrained , and start generating on your own machine. Running AI models on your laptop has become much easier, and llama.cpp has been a big part of that. Its inference engine powers local AI tools such as Ollama, LM Studio, and Jan. Alongside projects like MLX , it has helped make local inference a practical option for everyday use. A recent example of what local AI can feel like:"
+        },
+        {
+          "id": "candidate_5c76f9e2f8d51cc7dafa8714",
+          "feedItemId": "item_5c76f9e2f8d51cc7dafa",
+          "title": "Harness as a Language: A Minimalist Agent Framework With Maximal Expressivity",
+          "url": "https://arxiv.org/abs/2609.26891",
+          "publisher": "arXiv cs.AI",
+          "author": "Zhening Li, Joshua Liu, Mateja Vukelic, Nicole Shen, Supriya Lall, Amitayush Thakur, Alex Zhang, Omar Khattab, Jonathan Light, Armando Solar-Lezama",
+          "independenceKey": "academic:zhening li, joshua liu, mateja vukelic, nicole shen, supriya lall, amitayush thakur, alex zhang, omar khattab, jonathan light, armando solar-lezama",
+          "publishedAt": "2026-09-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.26891v1 Announce Type: new Abstract: Modern language-model agents are built around the \\textit{agent loop}, where the LLM is placed in an environment exposing a set of tools, and the LLM has full control over the workflow by alternating between tool calls and observing their output. However, certain workflows currently require additional engineering beyond the agent loop itself, such as memory systems and self-improving systems. We built an LLM agent framework, JAZ, to explore the extent to which a minimal harness that is little more than the agent loop itself can accomplish tasks these specialized systems are built for. JAZ exposes a single LLM-based primitive invoke and provides a set of built-in hooks that allow the programmer to apply constraints and monitoring. Generalizing existing code-mode agent loops, \\texttt{invoke} is the simplest loop that satisfies two defining properties: (1) the LLM can write arbitrary executable code that can include recursive \\texttt{invoke}; (2) everything visible to the LLM --- all inputs to \\texttt{invoke} as well as its interaction history with the code environment --- are variables in the code environment. We motivate our design fro"
+        },
+        {
+          "id": "candidate_6ec2c1f0d922085c0555913a",
+          "feedItemId": "item_6ec2c1f0d922085c0555",
+          "title": "Silent Failures in Agent-Tool Interaction: An Audit of ToolUniverse",
+          "url": "https://arxiv.org/abs/2609.26836",
+          "publisher": "arXiv cs.AI",
+          "author": "Shreya Gopalan, Devansh Singh, Sundaraparipurnan Narayanan",
+          "independenceKey": "academic:shreya gopalan, devansh singh, sundaraparipurnan narayanan",
+          "publishedAt": "2026-09-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.26836v1 Announce Type: new Abstract: Agentic AI systems are increasingly adopting automated pipelines that integrate multiple tools. While prior research and benchmarks have studied about task success and task completion of these agentic systems, the research about agent to tool interaction, specifically in biology agentic workflow is limited. This study investigates specific failures in agent to tool interaction where a tool invocation appears successful, some or all of the information or functionality from the tool via API/ wrapper is incomplete or missing and there are no communications / notifications to the user or the agent about such missing information. We call this a silent failures as the user or the agents are not aware that such failure has occurred. For the purposes of this study we developed an audit mechanism to identify such silent failures in Agent to tool interaction, by examining 15 scientific tools (and their associated API documentation and tool documentations) integrated within ToolUniverse environment (ToolUniverse serves as our experimental environment rather than the object of the study itself). We structure our study around 7 failure locus chara"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-09-24T19:15:30.440Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-09-24T19:15:02.245Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_ai-infrastructure-advances-robotics-evaluation_20260923",
       "slug": "ai-infrastructure-advances-robotics-evaluation",
