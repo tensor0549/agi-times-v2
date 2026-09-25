@@ -7,8 +7,133 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-24T19:15:30.440Z",
+  "generatedAt": "2026-09-25T07:56:06.905Z",
   "items": [
+    {
+      "id": "item_0e337eac398ad61f7e76",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.28475",
+      "url": "https://arxiv.org/abs/2609.28475",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-25T07:55:42.832Z",
+      "updatedAt": "2026-09-25T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ReliabilityRoute: Steering Forecasting Agent Behavior Based on Source-Dependent Reliability Features",
+        "zh-Hans": "ReliabilityRoute：基于源相关可靠性特征的预测智能体行为引导"
+      },
+      "summary": {
+        "en": "Researchers introduce ReliabilityRoute, a structural intervention that steers forecasting agent behavior using reliability features like historical coverage and evidence strength, finding that mechanism choice is source-dependent across different data-generating processes.",
+        "zh-Hans": "研究人员推出ReliabilityRoute，这是一种结构性干预方法，使用历史覆盖率和证据强度等可靠性特征来引导预测智能体行为，发现机制选择在不同数据生成过程中具有源依赖性。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "forecasting",
+        "reliability",
+        "routing",
+        "agent-behavior"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yufeng Wang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yufeng wang",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 96,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances transferable agent decision-making through reliability-based behavioral routing mechanisms",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_0e337eac398ad61f7e7605c6",
+          "url": "https://arxiv.org/abs/2609.28475",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.28475v1 Announce Type: new Abstract: Forecasting agents increasingly combine language-model reasoning, retrieval, ensembling, and calibration, but it remains unclear when each behavior should be trusted. We study this question on ForecastBench-style binary forecasting tasks, treating the choice to retrieve, reason, defer to a market prior, or use a historical analog as an observable agent behavior rather than a hidden implementation detail. Our central finding is that mechanism choice is source-dependent: structured analogs dominate for some data-generating processes, while market/crowd-style and conservative baselines are better for others. We introduce ReliabilityRoute, a structural intervention that steers forecasting-agent behavior using reliability features such as historical coverage, market-prior availability, source-prior sharpness, evidence strength, evidence disagreement, and horizon. A fixed 2024-fitted rule closely matches a hand taxonomy without hard-coded source-name decisions, while a walk-forward self-adjusting rule refits thresholds from previously resolved vintages and obtains the best mean Brier score among our deterministic systems across 16 later LLM"
+        }
+      ]
+    },
+    {
+      "id": "item_8451e6726f3673677215",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/coherent-long-form-video-generation/",
+      "url": "https://research.google/blog/coherent-long-form-video-generation/",
+      "publishedAt": "2026-09-24T19:40:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-25T07:55:42.832Z",
+      "updatedAt": "2026-09-24T19:40:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research Introduces Multi-Agent Framework for Coherent Long-Form Video Generation",
+        "zh-Hans": "谷歌研究推出用于连贯长视频生成的多智能体框架"
+      },
+      "summary": {
+        "en": "Google Research presents a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, addressing identity drift and cascading failures in current linear AI pipelines for video generation.",
+        "zh-Hans": "谷歌研究提出了一个统一的多智能体框架，能够自主生成时间一致的长视频叙事，解决当前线性AI视频生成管道中的身份漂移和级联失败问题。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multi-agent",
+        "video-generation",
+        "temporal-consistency"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "demonstrates transferable multi-agent coordination for complex generative tasks with temporal consistency requirements",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8451e6726f36736772159469",
+          "url": "https://research.google/blog/coherent-long-form-video-generation/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-24T19:40:00.000Z",
+          "evidenceSnippet": "Yale Song and Yiwen Song, Research Scientists, Google We introduce a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, overcoming the identity drift and cascading failures of current linear AI pipelines. Recent advancements in video diffusion demonstrate remarkable high-fidelity generation with models that can render realistic scenes in seconds. However, while diffusion models generate high-fidelity video clips, transforming them into coherent long storytelling engines remains challenging."
+        }
+      ]
+    },
     {
       "id": "item_280bf64dcca75cee1131",
       "schemaVersion": "1.0.0",
@@ -130,68 +255,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-24T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.26891v1 Announce Type: new Abstract: Modern language-model agents are built around the \\textit{agent loop}, where the LLM is placed in an environment exposing a set of tools, and the LLM has full control over the workflow by alternating between tool calls and observing their output. However, certain workflows currently require additional engineering beyond the agent loop itself, such as memory systems and self-improving systems. We built an LLM agent framework, JAZ, to explore the extent to which a minimal harness that is little more than the agent loop itself can accomplish tasks these specialized systems are built for. JAZ exposes a single LLM-based primitive invoke and provides a set of built-in hooks that allow the programmer to apply constraints and monitoring. Generalizing existing code-mode agent loops, \\texttt{invoke} is the simplest loop that satisfies two defining properties: (1) the LLM can write arbitrary executable code that can include recursive \\texttt{invoke}; (2) everything visible to the LLM --- all inputs to \\texttt{invoke} as well as its interaction history with the code environment --- are variables in the code environment. We motivate our design fro"
-        }
-      ]
-    },
-    {
-      "id": "item_6ec2c1f0d922085c0555",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.26836",
-      "url": "https://arxiv.org/abs/2609.26836",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-24T19:15:02.245Z",
-      "updatedAt": "2026-09-24T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Research identifies silent failures in agent-tool interactions within ToolUniverse environment",
-        "zh-Hans": "研究识别ToolUniverse环境中智能体工具交互的静默失败"
-      },
-      "summary": {
-        "en": "Study examines 15 scientific tools in ToolUniverse to identify silent failures where tool invocations appear successful but information is incomplete or missing without user notification.",
-        "zh-Hans": "研究检查ToolUniverse中15个科学工具，识别工具调用看似成功但信息不完整或缺失且无用户通知的静默失败。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "agent-tool-interaction",
-        "failure-analysis",
-        "silent-failures"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Shreya Gopalan, Devansh Singh, Sundaraparipurnan Narayanan",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:shreya gopalan, devansh singh, sundaraparipurnan narayanan",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 86,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "addresses critical reliability issues in agent-tool integration systems",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_6ec2c1f0d922085c0555913a",
-          "url": "https://arxiv.org/abs/2609.26836",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-24T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.26836v1 Announce Type: new Abstract: Agentic AI systems are increasingly adopting automated pipelines that integrate multiple tools. While prior research and benchmarks have studied about task success and task completion of these agentic systems, the research about agent to tool interaction, specifically in biology agentic workflow is limited. This study investigates specific failures in agent to tool interaction where a tool invocation appears successful, some or all of the information or functionality from the tool via API/ wrapper is incomplete or missing and there are no communications / notifications to the user or the agent about such missing information. We call this a silent failures as the user or the agents are not aware that such failure has occurred. For the purposes of this study we developed an audit mechanism to identify such silent failures in Agent to tool interaction, by examining 15 scientific tools (and their associated API documentation and tool documentations) integrated within ToolUniverse environment (ToolUniverse serves as our experimental environment rather than the object of the study itself). We structure our study around 7 failure locus chara"
         }
       ]
     },
@@ -446,68 +509,6 @@
       ]
     },
     {
-      "id": "item_aa8533b1c5b411fc0ea7",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
-      "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
-      "publishedAt": "2026-09-10T22:50:22.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-16T06:06:59.873Z",
-      "updatedAt": "2026-09-10T22:50:22.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "ToolGrad: Efficient tool-use dataset generation with textual gradients",
-        "zh-Hans": "ToolGrad：用文本梯度高效生成工具使用数据集"
-      },
-      "summary": {
-        "en": "ToolGrad reverses traditional paradigm by generating tool-use answers before user queries, enabling better LLM tool-use performance compared to trial-and-error approaches like ToolBench.",
-        "zh-Hans": "ToolGrad颠覆传统范式，先生成工具使用答案再生成用户查询，相比ToolBench等试错方法实现更好的LLM工具使用性能。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "tool use",
-        "dataset generation",
-        "agent training"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 29,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "introduces transferable data generation technique for improving agent tool-use capabilities",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_aa8533b1c5b411fc0ea79169",
-          "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-10T22:50:22.000Z",
-          "evidenceSnippet": "Zhongyi Zhou, Research Scientist, and Ruofei Du, Interactive Perception & Graphics Lead, Google XR ToolGrad is a data generation framework that reverses the traditional paradigm by first generating tool-use answers before user queries. We show this design enables LLMs to achieve better tool-use performance. AI agents have shown great potential in automating real-world tasks, such as conducting a Google Search, reading local computer files, or executing generated Python scripts. To achieve such agentic workflows, LLMs need to learn how to use tools correctly and efficiently. To teach large language models tool uses, we need datasets of tool-use chains and their corresponding user queries. In our prior work introduced in InstructPipe , we manually annotated our evaluation data, but it is impractical to scale up the human annotation for advanced LLM fine-tuning workstreams. To streamline the data workstream, prior work, e.g., ToolBench and ToolACE , explored using an agent to automatically search a tool-use path with trial and error. This representative annotation approach involves two steps: (1) generate a hypothetical user instruction from a sampled API pool, and (2) use a depth-fir"
-        }
-      ]
-    },
-    {
       "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
       "schemaVersion": "1.0.0",
       "type": "release",
@@ -632,6 +633,68 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_6ec2c1f0d922085c0555",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.26836",
+      "url": "https://arxiv.org/abs/2609.26836",
+      "publishedAt": "2026-09-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-24T19:15:02.245Z",
+      "updatedAt": "2026-09-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Research identifies silent failures in agent-tool interactions within ToolUniverse environment",
+        "zh-Hans": "研究识别ToolUniverse环境中智能体工具交互的静默失败"
+      },
+      "summary": {
+        "en": "Study examines 15 scientific tools in ToolUniverse to identify silent failures where tool invocations appear successful but information is incomplete or missing without user notification.",
+        "zh-Hans": "研究检查ToolUniverse中15个科学工具，识别工具调用看似成功但信息不完整或缺失且无用户通知的静默失败。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent-tool-interaction",
+        "failure-analysis",
+        "silent-failures"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Shreya Gopalan, Devansh Singh, Sundaraparipurnan Narayanan",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:shreya gopalan, devansh singh, sundaraparipurnan narayanan",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "addresses critical reliability issues in agent-tool integration systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6ec2c1f0d922085c0555913a",
+          "url": "https://arxiv.org/abs/2609.26836",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.26836v1 Announce Type: new Abstract: Agentic AI systems are increasingly adopting automated pipelines that integrate multiple tools. While prior research and benchmarks have studied about task success and task completion of these agentic systems, the research about agent to tool interaction, specifically in biology agentic workflow is limited. This study investigates specific failures in agent to tool interaction where a tool invocation appears successful, some or all of the information or functionality from the tool via API/ wrapper is incomplete or missing and there are no communications / notifications to the user or the agent about such missing information. We call this a silent failures as the user or the agents are not aware that such failure has occurred. For the purposes of this study we developed an audit mechanism to identify such silent failures in Agent to tool interaction, by examining 15 scientific tools (and their associated API documentation and tool documentations) integrated within ToolUniverse environment (ToolUniverse serves as our experimental environment rather than the object of the study itself). We structure our study around 7 failure locus chara"
+        }
+      ]
     },
     {
       "id": "item_689d78c6e007ab8e2c4f",
@@ -1444,6 +1507,68 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-15T16:00:44.000Z",
           "evidenceSnippet": "The Metric Almost Nobody Reports Why Agents Flip: Sharp Decisions vs. Flat Ones Diagnose, Then Fix Results: Reducing the Gap Without Losing Accuracy The guidelines generalize — they aren't patching one trajectory If You're Shipping an Agent Try It Appendix: Understanding the Metrics Linked artifacts / references Your agent works in rehearsal, but during the live demo, it takes a different path and fails the same task. That is embarrassing onstage. In production, it is a reliability problem: a workflow that succeeded once may fail the next time a user makes the same request. For mission-critical work, such as reconciling a financial transaction or checking a contract for an obligation, that can be a showstopper. Most benchmarks hide this variability behind an average. On AppWorld, a ReAct agent using GPT-4.1 succeeded on 77.4% of runs across five repetitions. But it succeeded in all five runs for only 53.0% of tasks — a 24.4-point consistency gap ."
+        }
+      ]
+    },
+    {
+      "id": "item_aa8533b1c5b411fc0ea7",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+      "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+      "publishedAt": "2026-09-10T22:50:22.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T06:06:59.873Z",
+      "updatedAt": "2026-09-10T22:50:22.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ToolGrad: Efficient tool-use dataset generation with textual gradients",
+        "zh-Hans": "ToolGrad：用文本梯度高效生成工具使用数据集"
+      },
+      "summary": {
+        "en": "ToolGrad reverses traditional paradigm by generating tool-use answers before user queries, enabling better LLM tool-use performance compared to trial-and-error approaches like ToolBench.",
+        "zh-Hans": "ToolGrad颠覆传统范式，先生成工具使用答案再生成用户查询，相比ToolBench等试错方法实现更好的LLM工具使用性能。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "tool use",
+        "dataset generation",
+        "agent training"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 29,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "introduces transferable data generation technique for improving agent tool-use capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_aa8533b1c5b411fc0ea79169",
+          "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-10T22:50:22.000Z",
+          "evidenceSnippet": "Zhongyi Zhou, Research Scientist, and Ruofei Du, Interactive Perception & Graphics Lead, Google XR ToolGrad is a data generation framework that reverses the traditional paradigm by first generating tool-use answers before user queries. We show this design enables LLMs to achieve better tool-use performance. AI agents have shown great potential in automating real-world tasks, such as conducting a Google Search, reading local computer files, or executing generated Python scripts. To achieve such agentic workflows, LLMs need to learn how to use tools correctly and efficiently. To teach large language models tool uses, we need datasets of tool-use chains and their corresponding user queries. In our prior work introduced in InstructPipe , we manually annotated our evaluation data, but it is impractical to scale up the human annotation for advanced LLM fine-tuning workstreams. To streamline the data workstream, prior work, e.g., ToolBench and ToolACE , explored using an agent to automatically search a tool-use path with trial and error. This representative annotation approach involves two steps: (1) generate a hypothetical user instruction from a sampled API pool, and (2) use a depth-fir"
         }
       ]
     },
