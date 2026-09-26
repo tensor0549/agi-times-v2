@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-25T07:56:06.905Z",
+  "generatedAt": "2026-09-26T22:56:30.747Z",
   "items": [
     {
       "id": "item_0e337eac398ad61f7e76",
@@ -447,7 +447,7 @@
       ]
     },
     {
-      "id": "item_f174ca4a3cbc866f5f12",
+      "id": "item_0f83c2d1d5b8034398fa",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_google-research",
@@ -455,31 +455,32 @@
         "id": "src_google-research",
         "name": "Google Research"
       },
-      "canonicalUrl": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-      "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-      "publishedAt": "2026-09-15T20:00:35.000Z",
+      "canonicalUrl": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "publishedAt": "2026-09-17T20:45:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-16T06:06:59.873Z",
-      "updatedAt": "2026-09-15T20:00:35.000Z",
+      "discoveredAt": "2026-09-26T22:56:13.557Z",
+      "updatedAt": "2026-09-17T20:45:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
-        "zh-Hans": "绕过推理瓶颈：用检索训练加速复杂AI搜索"
+        "en": "Google Research develops generative UI for teacher-created learning simulations",
+        "zh-Hans": "谷歌研究开发生成式UI用于教师创建学习模拟"
       },
       "summary": {
-        "en": "Retrieve-for-Train framework uses reinforcement learning to train lightweight diffusion models, bypassing expensive autoregressive reasoning to instantly generate coherent search result sets.",
-        "zh-Hans": "检索训练框架使用强化学习训练轻量级扩散模型，绕过昂贵的自回归推理，即时生成连贯的搜索结果集。"
+        "en": "Google Research explores generative UI with learning design guardrails to enable teachers to create guided, interactive simulations for educational content across topics.",
+        "zh-Hans": "谷歌研究探索带有学习设计护栏的生成式UI，使教师能够为各种主题创建引导式交互学习模拟。"
       },
-      "category": "models_capabilities",
+      "category": "products_developer_ecosystem",
       "tags": [
-        "inference optimization",
-        "reinforcement learning",
-        "search systems"
+        "generative-ui",
+        "education",
+        "interactive-learning",
+        "google-research"
       ],
       "topics": [
-        "models_capabilities"
+        "products_developer_ecosystem"
       ],
       "entities": [],
       "mediaType": "article",
@@ -491,20 +492,20 @@
       "sourceReliability": 0.94,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 91,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "demonstrates transferable inference optimization technique replacing expensive reasoning with trained models",
+      "freshnessScore": 12,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Generative UI represents automated interface creation capabilities that could extend to general-purpose agent interactions",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_f174ca4a3cbc866f5f127805",
-          "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+          "id": "candidate_0f83c2d1d5b8034398fa197c",
+          "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
           "publisher": "Google Research",
-          "publishedAt": "2026-09-15T20:00:35.000Z",
-          "evidenceSnippet": "Pengcheng Jiang, Student Researcher, and Judith Yue Li, Senior Research Engineer, Google Research Instead of relying on expensive inference-time reasoning, the Retrieve-for-Train framework uses reinforcement learning once to train a lightweight diffusion model. This bypasses the heavy autoregressive \"thinking budget\" to instantly generate a cohesive, expert-level slate of AI search results. Modern search or recommendation applications are increasingly expected to return a coherent set of results rather than a single best match. For example, when a user searches for \"camping gear\", they don’t want ten slight variations of four-person tents. They want a coherent, complementary slate that includes essential camping gear, such as a tent, sleeping bag, portable stove, and headlamp."
+          "publishedAt": "2026-09-17T20:45:00.000Z",
+          "evidenceSnippet": "Gal Elidan, Research Scientist, and Yael Haramaty, Product Manager, Google Research We explore how we can harness generative UI with learning design guardrails to give teachers the ability to generate guided, interactive simulations for every topic and student. Digital educational tools have transformed how students around the world access information, from online textbooks to video libraries. Yet, for all the remarkable leaps in technology and accessibility, digital learning can often feel like a passive experience. Interactive, engaging, multimodal forms of practice that can encourage students to think for themselves and work through solutions have great potential for learning but remain largely out of reach. They are expensive to create, limited in number, and often require a lot more effort from the teacher. We wanted to see if AI could help close this gap."
         }
       ]
     },
@@ -693,6 +694,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-24T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.26836v1 Announce Type: new Abstract: Agentic AI systems are increasingly adopting automated pipelines that integrate multiple tools. While prior research and benchmarks have studied about task success and task completion of these agentic systems, the research about agent to tool interaction, specifically in biology agentic workflow is limited. This study investigates specific failures in agent to tool interaction where a tool invocation appears successful, some or all of the information or functionality from the tool via API/ wrapper is incomplete or missing and there are no communications / notifications to the user or the agent about such missing information. We call this a silent failures as the user or the agents are not aware that such failure has occurred. For the purposes of this study we developed an audit mechanism to identify such silent failures in Agent to tool interaction, by examining 15 scientific tools (and their associated API documentation and tool documentations) integrated within ToolUniverse environment (ToolUniverse serves as our experimental environment rather than the object of the study itself). We structure our study around 7 failure locus chara"
+        }
+      ]
+    },
+    {
+      "id": "item_6b3083011aeb49b1cc1d",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/omlx",
+      "url": "https://huggingface.co/blog/omlx",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-26T22:56:13.557Z",
+      "updatedAt": "2026-09-22T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Hugging Face hires oMLX creator to advance Apple Silicon AI framework",
+        "zh-Hans": "Hugging Face聘请oMLX创建者推进苹果芯片AI框架"
+      },
+      "summary": {
+        "en": "Hugging Face hired Jun Kim, creator of oMLX, to support MLX ecosystem development for local AI on Apple Silicon, transitioning the project from side job to fully funded initiative.",
+        "zh-Hans": "Hugging Face聘请了oMLX创建者Jun Kim，支持苹果芯片本地AI的MLX生态系统开发，将项目从兼职转为全资助项目。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "mlx",
+        "local-ai",
+        "apple-silicon",
+        "hugging-face"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 32,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "MLX framework enables local AI model deployment and optimization on Apple Silicon, supporting distributed AGI infrastructure",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6b3083011aeb49b1cc1d670c",
+          "url": "https://huggingface.co/blog/omlx",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-22T00:00:00.000Z",
+          "evidenceSnippet": "What is the impact for oMLX? What is the impact for MLX at large? We are super excited to welcome Jun as our newest team member 🔥. We are completely invested in local AI, and MLX is a central piece of the ecosystem. We are delighted that Jun chose us to set up home and continue contributing to MLX. MLX is Apple's framework for local AI, especially optimized for Apple Silicon. We are big MLX supporters since it was the Christmas present from Awni and Angelos in 2023, and proud that Hugging Face is the Hub where people find MLX models and contribute their own. Usage of open, local AI is accelerating, and we believe in a healthy ecosystem where people can find the tools that work for them. Stability, and hopefully faster development! Graduating from a side job to a fully maintained and funded project will allow Jun to better guide the contributors and build for the long-term. oMLX stays Apache 2.0, and Jun keeps leading it as before."
         }
       ]
     },
@@ -1445,6 +1509,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-16T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.16163v1 Announce Type: new Abstract: The sharp increase in mass shootings underscores an urgent need for systems that guide victims to safety in real time. An effective evacuation system must minimize threat exposure while also accounting for adversarial uncertainty and crowding dynamics. Current methods in the literature are rigidly constrained to layout-specific policies and computationally intractable in large-scale layouts, while practical guidelines simply advise victims to \"run\", \"hide\", or \"fight\". We propose GPEvac: a GNN-based PPO framework that computes adaptive evacuation routes during shooting events. To capture both local and long-distance dependencies, we introduce an edge-first sequential message-passing scheme with a learnable virtual global node. The resulting graph embeddings are integrated into a permutation-invariant scoring mechanism that allows a single learned policy to operate across building layouts of diverse topologies and sizes. Through extensive simulation, we show that GPEvac outperforms intelligent baselines across distinct architectural layouts, significantly reducing total threat exposure. Crucially, the system computes global evacuation "
+        }
+      ]
+    },
+    {
+      "id": "item_f174ca4a3cbc866f5f12",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+      "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+      "publishedAt": "2026-09-15T20:00:35.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-16T06:06:59.873Z",
+      "updatedAt": "2026-09-15T20:00:35.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
+        "zh-Hans": "绕过推理瓶颈：用检索训练加速复杂AI搜索"
+      },
+      "summary": {
+        "en": "Retrieve-for-Train framework uses reinforcement learning to train lightweight diffusion models, bypassing expensive autoregressive reasoning to instantly generate coherent search result sets.",
+        "zh-Hans": "检索训练框架使用强化学习训练轻量级扩散模型，绕过昂贵的自回归推理，即时生成连贯的搜索结果集。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "inference optimization",
+        "reinforcement learning",
+        "search systems"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "demonstrates transferable inference optimization technique replacing expensive reasoning with trained models",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f174ca4a3cbc866f5f127805",
+          "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-15T20:00:35.000Z",
+          "evidenceSnippet": "Pengcheng Jiang, Student Researcher, and Judith Yue Li, Senior Research Engineer, Google Research Instead of relying on expensive inference-time reasoning, the Retrieve-for-Train framework uses reinforcement learning once to train a lightweight diffusion model. This bypasses the heavy autoregressive \"thinking budget\" to instantly generate a cohesive, expert-level slate of AI search results. Modern search or recommendation applications are increasingly expected to return a coherent set of results rather than a single best match. For example, when a user searches for \"camping gear\", they don’t want ten slight variations of four-person tents. They want a coherent, complementary slate that includes essential camping gear, such as a tent, sleeping bag, portable stove, and headlamp."
         }
       ]
     },
