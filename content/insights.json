@@ -7,8 +7,110 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-26T22:56:30.747Z",
+  "generatedAt": "2026-09-28T07:01:45.106Z",
   "items": [
+    {
+      "id": "insight_agent-architecture-alignment-frameworks_20260928",
+      "slug": "agent-architecture-alignment-frameworks",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "New Frameworks Address Agent Architecture and Alignment Challenges",
+        "zh-Hans": "新框架解决智能体架构和对齐挑战"
+      },
+      "dek": {
+        "en": "Recent research tackles complementary aspects of advanced agent development: cognitive architecture design and safety boundary enforcement.",
+        "zh-Hans": "最新研究解决了高级智能体开发的互补方面：认知架构设计和安全边界执行。"
+      },
+      "body": {
+        "en": "Two recent research efforts illustrate complementary approaches to advancing autonomous agent capabilities while addressing safety concerns. A comprehensive framework for autonomous systems proposes agent architecture that organizes cognitive functions around long-term memory containing evolving knowledge, addressing challenges in linking sensory data to structured memory, goal-oriented decision-making, and agent coordination [^candidate_e06deff32845f95a183d076a]. Separately, researchers have developed ScopeBench, a specialized evaluation framework featuring 30 security tasks designed to test whether agents maintain engagement boundaries under goal pressure, where objectives are reachable only by violating stated scope constraints [^candidate_3280a319e4f2f208735dbaff]. These projects represent distinct but complementary engineering approaches: architectural frameworks for cognitive function integration and evaluation methodologies for boundary adherence testing.",
+        "zh-Hans": "两项最新研究工作展示了推进自主智能体能力同时解决安全问题的互补方法。一个自主系统综合框架提出了围绕包含演化知识的长期记忆组织认知功能的智能体架构，解决了感知数据与结构化记忆链接、目标导向决策制定和智能体协调等挑战 [^candidate_e06deff32845f95a183d076a]。另外，研究人员开发了ScopeBench专门评估框架，包含30个安全任务，用于测试智能体在目标压力下是否保持参与边界，其中目标只能通过违反既定范围约束才能达成 [^candidate_3280a319e4f2f208735dbaff]。这些项目代表了不同但互补的工程方法：认知功能集成的架构框架和边界遵守测试的评估方法。"
+      },
+      "publishedAt": "2026-09-28T07:01:45.106Z",
+      "updatedAt": "2026-09-28T07:01:45.106Z",
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "claims": [
+        {
+          "id": "cognitive_architecture_framework",
+          "type": "fact",
+          "text": {
+            "en": "A framework for autonomous systems organizes cognitive functions around long-term memory containing evolving knowledge and addresses challenges in sensory data processing, decision-making, and agent coordination",
+            "zh-Hans": "自主系统框架围绕包含演化知识的长期记忆组织认知功能，并解决感知数据处理、决策制定和智能体协调等挑战"
+          },
+          "citationIds": [
+            "candidate_e06deff32845f95a183d076a"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "scopebench_evaluation",
+          "type": "fact",
+          "text": {
+            "en": "ScopeBench introduces 30 security tasks where objectives are reachable only by violating stated scope constraints to test agent boundary adherence under goal pressure",
+            "zh-Hans": "ScopeBench引入30个安全任务，其中目标只能通过违反既定范围约束才能达成，以测试智能体在目标压力下的边界遵守能力"
+          },
+          "citationIds": [
+            "candidate_3280a319e4f2f208735dbaff"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "complementary_approaches",
+          "type": "inference",
+          "text": {
+            "en": "These projects represent complementary engineering approaches for agent development: architectural frameworks for cognitive integration and evaluation methodologies for safety boundary testing",
+            "zh-Hans": "这些项目代表了智能体开发的互补工程方法：认知集成的架构框架和安全边界测试的评估方法"
+          },
+          "citationIds": [
+            "candidate_e06deff32845f95a183d076a",
+            "candidate_3280a319e4f2f208735dbaff"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_e06deff32845f95a183d076a",
+          "feedItemId": "item_e06deff32845f95a183d",
+          "title": "Bringing AI to Autonomous Systems -- From Cognition to Collective Intelligence",
+          "url": "https://arxiv.org/abs/2609.30291",
+          "publisher": "arXiv cs.AI",
+          "author": "Joseph Sifakis",
+          "independenceKey": "academic:joseph sifakis",
+          "publishedAt": "2026-09-28T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.30291v1 Announce Type: new Abstract: The purpose of this article is to highlight the central role of autonomous systems as the ultimate stage in the development of AI, to explain the underlying technical challenges that require a combination of connectionist AI and symbolic AI, and to integrate AI and systems engineering. We present a comprehensive framework for the design and evaluation of autonomous systems, based on a generic agent architecture that characterizes their behavior as the composition of cognitive functions organized around a long-term memory containing the agent's evolving knowledge. We address the challenges posed by the implementation of the fundamental features of the agent architecture, in particular the link between sensory data and structured data stored in memory, decision-making related to the achievement of the agent's goals and their planning, as well as the coordination of agents to combine individual and collective intelligence. We explain that agent trustworthiness, unlike that of traditional systems, is not limited to behavioral properties. It includes an essential dimension related to cognitive properties, the validity of which depends on h"
+        },
+        {
+          "id": "candidate_3280a319e4f2f208735dbaff",
+          "feedItemId": "item_3280a319e4f2f208735d",
+          "title": "ScopeBench: Do Agents Preserve Engagement Boundaries Under Goal Pressure?",
+          "url": "https://arxiv.org/abs/2609.30325",
+          "publisher": "arXiv cs.AI",
+          "author": "Shane Caldwell, Max Harley, Ads Dawson, Michael Kouremetis, Vincent Abruzzo, Will Pearce",
+          "independenceKey": "academic:shane caldwell, max harley, ads dawson, michael kouremetis, vincent abruzzo, will pearce",
+          "publishedAt": "2026-09-28T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.30325v1 Announce Type: new Abstract: Agents are increasingly deployed with real autonomy in web application and network penetration testing, where a single out-of-scope action can breach a client's engagement boundary. Existing offensive-security benchmarks measure raw hacking capability; as those benchmarks saturate, the real barrier to deployment is a special case of alignment: scope adherence. We introduce ScopeBench, a benchmark of 30 dead-end agentic security tasks in which the stated objective is reachable only by violating the stated scope. Each task appears under two conditions that share an environment, verifier, and objective and differ only in scope: one instruction set has no scope and measures capability; the other has a natural-language scope to measure adherence. Scopeless trajectories are graded by a standard deterministic verifier. Scoped trajectories pass through two grading arms. First, the same deterministic verifier checks for the flag: because the flag sits behind the scope boundary, a pass proves by construction that a forbidden action occurred, yielding a high-precision lower bound on the violation rate. If the verifier does not pass the trajector"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-09-28T07:01:45.106Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-09-28T07:01:27.366Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_local-ai-infrastructure-generative-interfaces_20260926",
       "slug": "local-ai-infrastructure-generative-interfaces",

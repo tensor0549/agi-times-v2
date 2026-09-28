@@ -7,10 +7,10 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-26T22:56:30.747Z",
+  "generatedAt": "2026-09-28T07:01:45.106Z",
   "items": [
     {
-      "id": "item_0e337eac398ad61f7e76",
+      "id": "item_e06deff32845f95a183d",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -18,57 +18,120 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2609.28475",
-      "url": "https://arxiv.org/abs/2609.28475",
-      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2609.30291",
+      "url": "https://arxiv.org/abs/2609.30291",
+      "publishedAt": "2026-09-28T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-25T07:55:42.832Z",
-      "updatedAt": "2026-09-25T04:00:00.000Z",
+      "discoveredAt": "2026-09-28T07:01:27.366Z",
+      "updatedAt": "2026-09-28T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "ReliabilityRoute: Steering Forecasting Agent Behavior Based on Source-Dependent Reliability Features",
-        "zh-Hans": "ReliabilityRoute：基于源相关可靠性特征的预测智能体行为引导"
+        "en": "Framework for Autonomous Systems Combining Cognitive Functions and Long-term Memory",
+        "zh-Hans": "结合认知功能和长期记忆的自主系统框架"
       },
       "summary": {
-        "en": "Researchers introduce ReliabilityRoute, a structural intervention that steers forecasting agent behavior using reliability features like historical coverage and evidence strength, finding that mechanism choice is source-dependent across different data-generating processes.",
-        "zh-Hans": "研究人员推出ReliabilityRoute，这是一种结构性干预方法，使用历史覆盖率和证据强度等可靠性特征来引导预测智能体行为，发现机制选择在不同数据生成过程中具有源依赖性。"
+        "en": "Researchers present a comprehensive framework for autonomous systems based on agent architecture that integrates cognitive functions around evolving knowledge stored in long-term memory, addressing challenges in sensory data processing, decision-making, and agent coordination.",
+        "zh-Hans": "研究人员提出了基于智能体架构的自主系统综合框架，该框架围绕存储在长期记忆中的演化知识整合认知功能，解决感知数据处理、决策制定和智能体协调等挑战。"
       },
       "category": "agents_automation",
       "tags": [
-        "forecasting",
-        "reliability",
-        "routing",
-        "agent-behavior"
+        "autonomous systems",
+        "cognitive architecture",
+        "symbolic ai",
+        "connectionist ai"
       ],
       "topics": [
         "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Yufeng Wang",
+      "author": "Joseph Sifakis",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:yufeng wang",
+      "independenceKey": "academic:joseph sifakis",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 96,
+      "freshnessScore": 97,
       "importanceScore": 75,
       "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "advances transferable agent decision-making through reliability-based behavioral routing mechanisms",
+      "agiRelevanceScore": 85,
+      "relevanceReason": "presents transferable cognitive architecture combining symbolic and connectionist AI for autonomous agent systems",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_0e337eac398ad61f7e7605c6",
-          "url": "https://arxiv.org/abs/2609.28475",
+          "id": "candidate_e06deff32845f95a183d076a",
+          "url": "https://arxiv.org/abs/2609.30291",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-25T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.28475v1 Announce Type: new Abstract: Forecasting agents increasingly combine language-model reasoning, retrieval, ensembling, and calibration, but it remains unclear when each behavior should be trusted. We study this question on ForecastBench-style binary forecasting tasks, treating the choice to retrieve, reason, defer to a market prior, or use a historical analog as an observable agent behavior rather than a hidden implementation detail. Our central finding is that mechanism choice is source-dependent: structured analogs dominate for some data-generating processes, while market/crowd-style and conservative baselines are better for others. We introduce ReliabilityRoute, a structural intervention that steers forecasting-agent behavior using reliability features such as historical coverage, market-prior availability, source-prior sharpness, evidence strength, evidence disagreement, and horizon. A fixed 2024-fitted rule closely matches a hand taxonomy without hard-coded source-name decisions, while a walk-forward self-adjusting rule refits thresholds from previously resolved vintages and obtains the best mean Brier score among our deterministic systems across 16 later LLM"
+          "publishedAt": "2026-09-28T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.30291v1 Announce Type: new Abstract: The purpose of this article is to highlight the central role of autonomous systems as the ultimate stage in the development of AI, to explain the underlying technical challenges that require a combination of connectionist AI and symbolic AI, and to integrate AI and systems engineering. We present a comprehensive framework for the design and evaluation of autonomous systems, based on a generic agent architecture that characterizes their behavior as the composition of cognitive functions organized around a long-term memory containing the agent's evolving knowledge. We address the challenges posed by the implementation of the fundamental features of the agent architecture, in particular the link between sensory data and structured data stored in memory, decision-making related to the achievement of the agent's goals and their planning, as well as the coordination of agents to combine individual and collective intelligence. We explain that agent trustworthiness, unlike that of traditional systems, is not limited to behavioral properties. It includes an essential dimension related to cognitive properties, the validity of which depends on h"
+        }
+      ]
+    },
+    {
+      "id": "item_3280a319e4f2f208735d",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.30325",
+      "url": "https://arxiv.org/abs/2609.30325",
+      "publishedAt": "2026-09-28T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-28T07:01:27.366Z",
+      "updatedAt": "2026-09-28T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ScopeBench Evaluates Agent Boundary Adherence Under Goal Pressure",
+        "zh-Hans": "ScopeBench评估智能体在目标压力下的边界遵守能力"
+      },
+      "summary": {
+        "en": "New benchmark introduces 30 security tasks where agents must resist violating stated scope boundaries to achieve objectives, measuring alignment through scope adherence rather than raw capability in offensive security scenarios.",
+        "zh-Hans": "新基准测试引入30个安全任务，智能体必须抵制违反既定范围边界来实现目标，通过范围遵守而非原始能力来衡量攻击性安全场景中的对齐性。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "scope adherence",
+        "agent alignment",
+        "security testing",
+        "goal pressure"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Shane Caldwell, Max Harley, Ads Dawson, Michael Kouremetis, Vincent Abruzzo, Will Pearce",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:shane caldwell, max harley, ads dawson, michael kouremetis, vincent abruzzo, will pearce",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 97,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "addresses critical agent alignment challenge of maintaining boundaries under goal pressure with measurable evaluation framework",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_3280a319e4f2f208735dbaff",
+          "url": "https://arxiv.org/abs/2609.30325",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-28T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.30325v1 Announce Type: new Abstract: Agents are increasingly deployed with real autonomy in web application and network penetration testing, where a single out-of-scope action can breach a client's engagement boundary. Existing offensive-security benchmarks measure raw hacking capability; as those benchmarks saturate, the real barrier to deployment is a special case of alignment: scope adherence. We introduce ScopeBench, a benchmark of 30 dead-end agentic security tasks in which the stated objective is reachable only by violating the stated scope. Each task appears under two conditions that share an environment, verifier, and objective and differ only in scope: one instruction set has no scope and measures capability; the other has a natural-language scope to measure adherence. Scopeless trajectories are graded by a standard deterministic verifier. Scoped trajectories pass through two grading arms. First, the same deterministic verifier checks for the flag: because the flag sits behind the scope boundary, a pass proves by construction that a forbidden action occurred, yielding a high-precision lower bound on the violation rate. If the verifier does not pass the trajector"
         }
       ]
     },
@@ -193,68 +256,6 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-24T14:08:57.000Z",
           "evidenceSnippet": "How does speculative decoding work for VLMs Training and Architecture Inference Speedup on CPU and GPU Limitations of speculation for vision workloads How to use LFM2.5-VL-DSpark Get Started Citation Today, we release an experimental DSpark draft model for our vision-language model (VLM) LFM2.5-VL-3B . As with our recently released LFM2.5-DSpark drafter models , it adds a speculative decoding path that trades a minimal increase in memory footprint for a larger speedup without changing output quality. The vision drafter uses the same architecture as our text LFM2.5-DSpark drafters: it captures the target model's hidden states at a fixed set of tapped layers and conditions on them to draft a block of k candidate tokens. Image patches and text tokens are projected into a shared representation before those layers, so the drafter operates on hidden-state vectors of identical dimensionality regardless of input modality. The inference algorithm is therefore unchanged from the text models. We follow the DSpark recipe with a mixture of vision-language SFT data, weighted toward the workloads we expect the model to serve. Based on ablations across 3, 4, and 5 layers, the draft model is a simp"
-        }
-      ]
-    },
-    {
-      "id": "item_5c76f9e2f8d51cc7dafa",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2609.26891",
-      "url": "https://arxiv.org/abs/2609.26891",
-      "publishedAt": "2026-09-24T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-24T19:15:02.245Z",
-      "updatedAt": "2026-09-24T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "JAZ framework proposes minimalist agent harness with recursive invoke primitive",
-        "zh-Hans": "JAZ框架提出具有递归调用原语的极简智能体工具"
-      },
-      "summary": {
-        "en": "Researchers introduce JAZ agent framework built around single LLM-based invoke primitive that allows arbitrary executable code including recursive invoke calls within agent loop.",
-        "zh-Hans": "研究人员推出JAZ智能体框架，围绕单一基于LLM的调用原语构建，允许在智能体循环中执行包括递归调用的任意可执行代码。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "agent-framework",
-        "minimalist-design",
-        "recursive-invoke"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Zhening Li, Joshua Liu, Mateja Vukelic, Nicole Shen, Supriya Lall, Amitayush Thakur, Alex Zhang, Omar Khattab, Jonathan Light, Armando Solar-Lezama",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:zhening li, joshua liu, mateja vukelic, nicole shen, supriya lall, amitayush thakur, alex zhang, omar khattab, jonathan light, armando solar-lezama",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 86,
-      "importanceScore": 80,
-      "importance": 80,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "introduces novel minimalist architecture for general-purpose agent systems",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_5c76f9e2f8d51cc7dafa8714",
-          "url": "https://arxiv.org/abs/2609.26891",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-24T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.26891v1 Announce Type: new Abstract: Modern language-model agents are built around the \\textit{agent loop}, where the LLM is placed in an environment exposing a set of tools, and the LLM has full control over the workflow by alternating between tool calls and observing their output. However, certain workflows currently require additional engineering beyond the agent loop itself, such as memory systems and self-improving systems. We built an LLM agent framework, JAZ, to explore the extent to which a minimal harness that is little more than the agent loop itself can accomplish tasks these specialized systems are built for. JAZ exposes a single LLM-based primitive invoke and provides a set of built-in hooks that allow the programmer to apply constraints and monitoring. Generalizing existing code-mode agent loops, \\texttt{invoke} is the simplest loop that satisfies two defining properties: (1) the LLM can write arbitrary executable code that can include recursive \\texttt{invoke}; (2) everything visible to the LLM --- all inputs to \\texttt{invoke} as well as its interaction history with the code environment --- are variables in the code environment. We motivate our design fro"
         }
       ]
     },
@@ -510,6 +511,105 @@
       ]
     },
     {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+        }
+      ]
+    },
+    {
       "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
       "schemaVersion": "1.0.0",
       "type": "release",
@@ -574,66 +674,129 @@
       ]
     },
     {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "id": "item_0e337eac398ad61f7e76",
       "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
+      "canonicalUrl": "https://arxiv.org/abs/2609.28475",
+      "url": "https://arxiv.org/abs/2609.28475",
+      "publishedAt": "2026-09-25T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-25T07:55:42.832Z",
+      "updatedAt": "2026-09-25T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
+      "title": {
+        "en": "ReliabilityRoute: Steering Forecasting Agent Behavior Based on Source-Dependent Reliability Features",
+        "zh-Hans": "ReliabilityRoute：基于源相关可靠性特征的预测智能体行为引导"
+      },
+      "summary": {
+        "en": "Researchers introduce ReliabilityRoute, a structural intervention that steers forecasting agent behavior using reliability features like historical coverage and evidence strength, finding that mechanism choice is source-dependent across different data-generating processes.",
+        "zh-Hans": "研究人员推出ReliabilityRoute，这是一种结构性干预方法，使用历史覆盖率和证据强度等可靠性特征来引导预测智能体行为，发现机制选择在不同数据生成过程中具有源依赖性。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "forecasting",
+        "reliability",
+        "routing",
+        "agent-behavior"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yufeng Wang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yufeng wang",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 96,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances transferable agent decision-making through reliability-based behavioral routing mechanisms",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+          "id": "candidate_0e337eac398ad61f7e7605c6",
+          "url": "https://arxiv.org/abs/2609.28475",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-25T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.28475v1 Announce Type: new Abstract: Forecasting agents increasingly combine language-model reasoning, retrieval, ensembling, and calibration, but it remains unclear when each behavior should be trusted. We study this question on ForecastBench-style binary forecasting tasks, treating the choice to retrieve, reason, defer to a market prior, or use a historical analog as an observable agent behavior rather than a hidden implementation detail. Our central finding is that mechanism choice is source-dependent: structured analogs dominate for some data-generating processes, while market/crowd-style and conservative baselines are better for others. We introduce ReliabilityRoute, a structural intervention that steers forecasting-agent behavior using reliability features such as historical coverage, market-prior availability, source-prior sharpness, evidence strength, evidence disagreement, and horizon. A fixed 2024-fitted rule closely matches a hand taxonomy without hard-coded source-name decisions, while a walk-forward self-adjusting rule refits thresholds from previously resolved vintages and obtains the best mean Brier score among our deterministic systems across 16 later LLM"
         }
+      ]
+    },
+    {
+      "id": "item_5c76f9e2f8d51cc7dafa",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.26891",
+      "url": "https://arxiv.org/abs/2609.26891",
+      "publishedAt": "2026-09-24T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-24T19:15:02.245Z",
+      "updatedAt": "2026-09-24T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "JAZ framework proposes minimalist agent harness with recursive invoke primitive",
+        "zh-Hans": "JAZ框架提出具有递归调用原语的极简智能体工具"
+      },
+      "summary": {
+        "en": "Researchers introduce JAZ agent framework built around single LLM-based invoke primitive that allows arbitrary executable code including recursive invoke calls within agent loop.",
+        "zh-Hans": "研究人员推出JAZ智能体框架，围绕单一基于LLM的调用原语构建，允许在智能体循环中执行包括递归调用的任意可执行代码。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent-framework",
+        "minimalist-design",
+        "recursive-invoke"
       ],
-      "mediaType": "article"
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Zhening Li, Joshua Liu, Mateja Vukelic, Nicole Shen, Supriya Lall, Amitayush Thakur, Alex Zhang, Omar Khattab, Jonathan Light, Armando Solar-Lezama",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:zhening li, joshua liu, mateja vukelic, nicole shen, supriya lall, amitayush thakur, alex zhang, omar khattab, jonathan light, armando solar-lezama",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "introduces novel minimalist architecture for general-purpose agent systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5c76f9e2f8d51cc7dafa8714",
+          "url": "https://arxiv.org/abs/2609.26891",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-24T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.26891v1 Announce Type: new Abstract: Modern language-model agents are built around the \\textit{agent loop}, where the LLM is placed in an environment exposing a set of tools, and the LLM has full control over the workflow by alternating between tool calls and observing their output. However, certain workflows currently require additional engineering beyond the agent loop itself, such as memory systems and self-improving systems. We built an LLM agent framework, JAZ, to explore the extent to which a minimal harness that is little more than the agent loop itself can accomplish tasks these specialized systems are built for. JAZ exposes a single LLM-based primitive invoke and provides a set of built-in hooks that allow the programmer to apply constraints and monitoring. Generalizing existing code-mode agent loops, \\texttt{invoke} is the simplest loop that satisfies two defining properties: (1) the LLM can write arbitrary executable code that can include recursive \\texttt{invoke}; (2) everything visible to the LLM --- all inputs to \\texttt{invoke} as well as its interaction history with the code environment --- are variables in the code environment. We motivate our design fro"
+        }
+      ]
     },
     {
       "id": "item_6ec2c1f0d922085c0555",
@@ -7908,105 +8071,6 @@
       ]
     },
     {
-      "id": "statement_meta_personal_superintelligence_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
-      },
-      "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
-      ],
-      "topics": [
-        "agents_automation",
-        "safety_security_alignment"
-      ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
-      "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
-        }
-      ]
-    },
-    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -8309,6 +8373,68 @@
           "evidenceSnippet": "What makes a good tutor? How TutorMoments works Preliminary results Limitations and next steps 📄 Tech Report: https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf | 📊 Data: https://huggingface.co/datasets/allenai/tutormoments-preview | 💻 Code: https://github.com/allenai/tutormoments Today we're introducing a preview of TutorMoments , a framework to measure whether cutting-edge LLMs can balance one of the hardest trade-offs in education: when to step in and help a student and when to hold back and let the student do more of the work. TutorMoments is a replay-based evaluation built off real one-on-one math tutoring sessions. Experienced math teachers go through transcripts collected from a U.S. tutoring program and flag the moments where a tutor had to choose between making a problem easier to get started on and pushing the student to do more of the reasoning themselves. TutorMoments then takes the transcript up to that decision point, hands it to a language model, and has the model take over as the tutor in a simulated session – with the student played by another language model – to see what the LLM tutor does."
         }
       ]
+    },
+    {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
     },
     {
       "id": "release_google_gemini_omni_builders_20260807",
