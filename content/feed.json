@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-30T06:48:58.065Z",
+  "generatedAt": "2026-09-30T13:50:46.812Z",
   "items": [
     {
       "id": "item_959ee4f965ced8b1d1f5",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "id": "item_116d1ddf4d50f87e1714",
+      "id": "item_9f86890e896c66b0159c",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -81,57 +81,57 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2609.35833",
-      "url": "https://arxiv.org/abs/2609.35833",
+      "canonicalUrl": "https://arxiv.org/abs/2609.35868",
+      "url": "https://arxiv.org/abs/2609.35868",
       "publishedAt": "2026-09-30T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-30T06:48:49.349Z",
+      "discoveredAt": "2026-09-30T13:50:38.407Z",
       "updatedAt": "2026-09-30T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Neurosymbolic routing system improves reasoning reliability on edge devices",
-        "zh-Hans": "神经符号路由系统提升边缘设备推理可靠性"
+        "en": "Researchers Develop Non-Human-Readable Training Method for Language Model Fine-Tuning",
+        "zh-Hans": "研究人员开发出无需人类可读文本的语言模型微调方法"
       },
       "summary": {
-        "en": "Researchers developed a neurosymbolic router that classifies queries and dispatches structured tasks to deterministic engines while reserving small language models for open-ended problems, using grammatical inference to learn routing logic automatically.",
-        "zh-Hans": "研究人员开发了神经符号路由器，将查询分类并将结构化任务分派给确定性引擎，同时为开放性问题保留小型语言模型，使用语法推理自动学习路由逻辑。"
+        "en": "New DASA method uses activation-gradient feedback to create synthetic embeddings for LLM fine-tuning, achieving comparable performance to natural language data across models from 1B to 32B parameters without requiring human-readable text.",
+        "zh-Hans": "新的DASA方法使用激活梯度反馈创建合成嵌入进行大语言模型微调，在1B到32B参数的模型上达到与自然语言数据相当的性能，无需人类可读文本。"
       },
       "category": "models_capabilities",
       "tags": [
-        "neurosymbolic",
-        "routing",
-        "edge computing",
-        "reasoning"
+        "fine-tuning",
+        "synthetic-data",
+        "embeddings",
+        "optimization"
       ],
       "topics": [
         "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Avyay Sadhu, Alvaro Velasquez, Lekai Chen",
+      "author": "Jinhao Zhang, Zeyu Liu, Zicheng Yan, Yunquan Zhang, Daning Cheng, Song Tang",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:avyay sadhu, alvaro velasquez, lekai chen",
+      "independenceKey": "academic:jinhao zhang, zeyu liu, zicheng yan, yunquan zhang, daning cheng, song tang",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 97,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Advances hybrid reasoning architectures that combine symbolic and neural approaches for more reliable AI systems",
+      "freshnessScore": 91,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Advances model training methodology by eliminating human-readable text requirement while maintaining performance",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_116d1ddf4d50f87e17142f39",
-          "url": "https://arxiv.org/abs/2609.35833",
+          "id": "candidate_9f86890e896c66b0159ca389",
+          "url": "https://arxiv.org/abs/2609.35868",
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-30T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.35833v1 Announce Type: new Abstract: Running a language model on edge hardware provides private and low-latency reasoning without a network connection, and yet the small models that fit on such devices are unreliable on the tasks computers are expected to handle well, such as arithmetic, algebra, and formal logic problems. We argue that much of this unreliability is avoidable. Many queries appearing to demand reasoning are in fact structurally deterministic and permit fast and exact symbolic solutions. Therefore, forcing a probabilistic model to approximate them sacrifices accuracy and energy for little benefit. We present a neurosymbolic router that classifies each incoming query and dispatches it to the cheapest correct solver, sending structured tasks to deterministic engines and reserving the small language model (SLM) for open-ended word problems. Instead of hand-coding the routing logic, we learn a deterministic finite automaton (DFA) with the L* grammatical inference algorithm, using the SLM as a membership oracle and labeled data as an equivalence oracle. On a Raspberry Pi 4B (8 GB RAM, no GPU), evaluated on 100 untested prompts from DeepMind Mathematics, GSM8K, "
+          "evidenceSnippet": "arXiv:2609.35868v1 Announce Type: new Abstract: Is human readability necessary for effective fine-tuning of large language models? We investigate whether model-conditioned training representations can preserve or improve adaptation utility without requiring a human-readable textual form. We propose Desired-Update-Aligned Synthetic Data (DASA), which uses activation-gradient feedback from a frozen reference model to guide the optimization of continuous synthetic input embeddings. Inspired by the role of activation gradients in local risk reduction, DASA targets useful adaptation updates rather than source-text reconstruction or linguistic fluency. The resulting embeddings are used directly for downstream fine-tuning; discrete token projections are employed only for qualitative inspection. Experiments on six models from the Llama and Qwen families, ranging from 1B to 32B parameters, cover six benchmarks spanning knowledge, mathematical reasoning, code generation, and commonsense reasoning. Under matched LoRA adaptation settings, DASA achieves performance comparable to the source natural-language data and surpasses it in multiple configurations, while outperforming GRADMM in most comp"
         }
       ]
     },
@@ -672,6 +672,69 @@
           "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
           "metadataSourceUrl": "https://openai.com/news/rss.xml",
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
+      "id": "item_116d1ddf4d50f87e1714",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.35833",
+      "url": "https://arxiv.org/abs/2609.35833",
+      "publishedAt": "2026-09-30T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T06:48:49.349Z",
+      "updatedAt": "2026-09-30T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Neurosymbolic routing system improves reasoning reliability on edge devices",
+        "zh-Hans": "神经符号路由系统提升边缘设备推理可靠性"
+      },
+      "summary": {
+        "en": "Researchers developed a neurosymbolic router that classifies queries and dispatches structured tasks to deterministic engines while reserving small language models for open-ended problems, using grammatical inference to learn routing logic automatically.",
+        "zh-Hans": "研究人员开发了神经符号路由器，将查询分类并将结构化任务分派给确定性引擎，同时为开放性问题保留小型语言模型，使用语法推理自动学习路由逻辑。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "neurosymbolic",
+        "routing",
+        "edge computing",
+        "reasoning"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Avyay Sadhu, Alvaro Velasquez, Lekai Chen",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:avyay sadhu, alvaro velasquez, lekai chen",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 97,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Advances hybrid reasoning architectures that combine symbolic and neural approaches for more reliable AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_116d1ddf4d50f87e17142f39",
+          "url": "https://arxiv.org/abs/2609.35833",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-30T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.35833v1 Announce Type: new Abstract: Running a language model on edge hardware provides private and low-latency reasoning without a network connection, and yet the small models that fit on such devices are unreliable on the tasks computers are expected to handle well, such as arithmetic, algebra, and formal logic problems. We argue that much of this unreliability is avoidable. Many queries appearing to demand reasoning are in fact structurally deterministic and permit fast and exact symbolic solutions. Therefore, forcing a probabilistic model to approximate them sacrifices accuracy and energy for little benefit. We present a neurosymbolic router that classifies each incoming query and dispatches it to the cheapest correct solver, sending structured tasks to deterministic engines and reserving the small language model (SLM) for open-ended word problems. Instead of hand-coding the routing logic, we learn a deterministic finite automaton (DFA) with the L* grammatical inference algorithm, using the SLM as a membership oracle and labeled data as an equivalence oracle. On a Raspberry Pi 4B (8 GB RAM, no GPU), evaluated on 100 untested prompts from DeepMind Mathematics, GSM8K, "
         }
       ]
     },
