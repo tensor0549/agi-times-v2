@@ -7,10 +7,73 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-28T22:07:04.397Z",
+  "generatedAt": "2026-09-30T00:33:04.499Z",
   "items": [
     {
-      "id": "item_09d1d26fa19dd694ec40",
+      "id": "item_5cc8f180d7d24936a059",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+      "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+      "publishedAt": "2026-09-29T18:38:27.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T00:32:34.988Z",
+      "updatedAt": "2026-09-29T18:38:27.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research introduces Diffusion Controller for precise image generation steering",
+        "zh-Hans": "谷歌研究推出扩散控制器实现精确图像生成引导"
+      },
+      "summary": {
+        "en": "Diffusion Controller is a lightweight steering network that attaches to closed-source models to improve prompt alignment without breaking baseline stability.",
+        "zh-Hans": "扩散控制器是一个轻量级引导网络，可附加到闭源模型以改善提示对齐而不破坏基线稳定性。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "diffusion",
+        "image generation",
+        "steering",
+        "prompt alignment"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 94,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "transferable steering mechanism for improving model controllability across different architectures",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5cc8f180d7d24936a05928ca",
+          "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-29T18:38:27.000Z",
+          "evidenceSnippet": "Chih-wei Hsu and Moonkyung Ryu , Software Engineers, Google Research We introduce Diffusion Controller, a lightweight \"steering damper\" network that precisely steers image generation to achieve significantly better prompt alignment. It seamlessly attaches to even access-restricted, closed-source models, boosting image quality without breaking baseline stability. The rapid advancement of text-to-image AI models, such as Nano Banana , Stable Diffusion and Flux , has fundamentally transformed creative design, allowing anyone to synthesize photorealistic, high-fidelity images from textual descriptions. However, steering these massive models to meet precise user intent, downstream goals, or strict visual constraints remains a delicate and unpredictable balancing act. For example, imagine prompting a model for \"a lizard wearing sunglasses\". The model might generate a realistic lizard that's not wearing sunglasses. Alternatively, forcing the model to include the sunglasses might distort the lizard's face, ruining the image quality."
+        }
+      ]
+    },
+    {
+      "id": "item_dc53fce90c6f36f5c727",
       "schemaVersion": "1.0.0",
       "type": "article",
       "sourceId": "src_hugging-face",
@@ -18,28 +81,155 @@
         "id": "src_hugging-face",
         "name": "Hugging Face"
       },
-      "canonicalUrl": "https://huggingface.co/blog/Hcompany/holo4",
-      "url": "https://huggingface.co/blog/Hcompany/holo4",
-      "publishedAt": "2026-09-28T09:44:05.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "publishedAt": "2026-09-29T15:30:38.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-28T15:35:26.624Z",
-      "updatedAt": "2026-09-28T09:44:05.000Z",
+      "discoveredAt": "2026-09-30T00:32:34.988Z",
+      "updatedAt": "2026-09-29T15:30:38.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Holo4 agentic models for computer interfaces released",
-        "zh-Hans": "Holo4智能体模型发布，支持计算机界面操作"
+        "en": "NVIDIA releases Kumo Tabular foundation model for zero-shot tabular prediction",
+        "zh-Hans": "英伟达发布Kumo表格基础模型实现零样本表格预测"
       },
       "summary": {
-        "en": "Hugging Face releases Holo4 series with 27B dense and 35B-A3B MoE models that interact through GUIs, code, MCP and APIs, trained via supervised and reinforcement learning on diverse environments.",
-        "zh-Hans": "Hugging Face发布Holo4系列模型，包含27B密集型和35B-A3B混合专家模型，可通过GUI、代码、MCP和API交互，使用监督学习和强化学习训练。"
+        "en": "Open foundation model trained on artificial data performs tabular prediction without training or tuning, ranking first on four benchmarks including TabArena.",
+        "zh-Hans": "基于人工数据训练的开放基础模型可进行无需训练或调优的表格预测，在包括TabArena在内的四个基准测试中排名第一。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "tabular data",
+        "foundation model",
+        "zero-shot",
+        "enterprise ml"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 92,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "demonstrates transferable reasoning capabilities across tabular domains without task-specific training",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_dc53fce90c6f36f5c727235e",
+          "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-29T15:30:38.000Z",
+          "evidenceSnippet": "NVIDIA Kumo Tabular, part of the NVIDIA Kumo Structured model collection, is an open foundation model for tabular data now available on Hugging Face . Given a table of labeled rows, it predicts the labels of new rows in a single forward pass, with no training, no tuning, and no feature engineering, for both classification and regression. It was pretrained only on artificial data, comes in three sizes (28M to 215M parameters), runs through our open-source library , and is released under the OpenMDW-1.1 license for commercial use. It ranks first on the four benchmarks TabArena , BeyondArena , TALENT and ScoringBench . Tabular data is the backbone of enterprise machine learning. Customer records, transactions, sensor logs, claims, and orders all live in tables, and predicting churn, default, demand, or price from them is among the most common machine learning tasks in industry. For two decades, this work has been done with gradient-boosted trees, and it has worked well. But the lifecycle around those models has barely changed. Every new question means collecting labels, engineering features, searching hyperparameters, validating, and deploying a model that knows nothing about tables i"
+        }
+      ]
+    },
+    {
+      "id": "item_6432f88e541d56351133",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+      "publishedAt": "2026-09-29T14:00:02.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T00:32:34.988Z",
+      "updatedAt": "2026-09-29T14:00:02.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Research unveils Quine multimodal world model for biological research",
+        "zh-Hans": "微软研究院推出Quine多模态生物研究世界模型"
+      },
+      "summary": {
+        "en": "Early-stage research system creates multimodal world model of biology, connecting insights across biological scales to help scientists search hypothesis space.",
+        "zh-Hans": "早期研究系统创建生物学多模态世界模型，连接跨生物尺度的洞察以帮助科学家搜索假设空间。"
+      },
+      "category": "research_science",
+      "tags": [
+        "multimodal",
+        "world model",
+        "biology",
+        "scientific research"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Nicolo Fusi, Jonathan M. Carlson",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 90,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "multimodal world modeling approach with transferable scientific reasoning capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_6432f88e541d563511336134",
+          "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-09-29T14:00:02.000Z",
+          "evidenceSnippet": "Biology doesn't operate in silos, and neither should the AI representation of it. Quine is an early-stage research effort to create a multimodal world model of biology. By connecting insights across biological scales and modalities, Quine helps scientists computationally search a space far larger than intuition allows and prioritize hypotheses before they reach the lab. Experimental results provide important feedback, helping researchers sharpen future research directions. The post Introducing Quine: An AI research system designed for the complexity of biology appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_afa8c33f8eb7996a3941",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "publishedAt": "2026-09-29T13:07:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T00:32:34.988Z",
+      "updatedAt": "2026-09-29T13:07:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ProvenanceGuard addresses source attribution challenges in MCP-based LLM agents",
+        "zh-Hans": "ProvenanceGuard解决基于MCP的LLM智能体中的来源归属挑战"
+      },
+      "summary": {
+        "en": "Research addresses cross-source conflation in tool-using agents that integrate multiple MCP tool outputs, ensuring claims are supported by correct sources.",
+        "zh-Hans": "研究解决了使用工具的智能体中整合多个MCP工具输出时的跨源混淆问题，确保声明得到正确来源支持。"
       },
       "category": "agents_automation",
       "tags": [
-        "computer-use",
-        "multimodal",
-        "reinforcement-learning"
+        "mcp agents",
+        "factuality verification",
+        "source attribution",
+        "tool use"
       ],
       "topics": [
         "agents_automation"
@@ -54,20 +244,20 @@
       "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 95,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "Multi-interface agent capabilities with reinforcement learning training represent significant advancement in generalist computer-use agents",
+      "freshnessScore": 90,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "addresses fundamental challenge in multi-tool agent architectures with transferable verification mechanisms",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_09d1d26fa19dd694ec40f7bb",
-          "url": "https://huggingface.co/blog/Hcompany/holo4",
+          "id": "candidate_afa8c33f8eb7996a39419dea",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
           "publisher": "Hugging Face",
-          "publishedAt": "2026-09-28T09:44:05.000Z",
-          "evidenceSnippet": "Models built for every interface Competitive with the frontier, at a fraction of the cost AI that does work 3D modeling · Eiffel tower 3D modeling · H logo Game design · Pac-Man How we built Holo4 Agentic task factory Training Harness Holotron4 Nano Run it yourself Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts. Both are available on the H Models API. We are also releasing an updated version of Holotron 3: Holotron4 Nano. Holo4 builds on our previous model and interacts with software through any available interface: GUIs, code, MCP and APIs. It scores well on academic benchmarks, but we built it for real business workflows. It was trained through supervised and reinforcement learning on a large set of environments and tasks, including those generated by our Agentic Task Factory."
+          "publishedAt": "2026-09-29T13:07:00.000Z",
+          "evidenceSnippet": "The problem: supported somewhere is not the same as supported by the right source What ProvenanceGuard does Results Checking claims when sources look similar Repairing blocked answers Why this fits Multiverse Computing Tool-using LLM agents no longer read from a single retrieved passage. Through the Model Context Protocol (MCP) , an agent can call a search tool, inspect a structured patient or account record, query a database, and pull metadata, then weave all of it into one answer. That m aakes the usual question of factuality more subtle than it looks. Most of the systems built to check LLM answers, from RAGAS faithfulness to fine-grained checkers like MiniCheck, AlignScore, and SummaC, ask whether a claim is supported by the available evidence once that evidence has been pooled together. In their usual form, they do not tell us which MCP tool output supports each claim, or whether that is the source the answer names. Our latest paper, ProvenanceGuard: Source-Aware Factuality Verification for MCP-Based LLM Agents (read it on Hugging Face , or on arXiv in the meantime), targets that gap. The failure mode we care about is one we call cross-source conflation: a claim that is true so"
         }
       ]
     },
@@ -259,68 +449,6 @@
       ]
     },
     {
-      "id": "item_280bf64dcca75cee1131",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "publishedAt": "2026-09-24T14:08:57.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-24T19:15:02.245Z",
-      "updatedAt": "2026-09-24T14:08:57.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "LiquidAI releases LFM2.5-VL-DSpark with speculative decoding for vision-language models",
-        "zh-Hans": "LiquidAI发布支持推测解码的视觉语言模型LFM2.5-VL-DSpark"
-      },
-      "summary": {
-        "en": "LiquidAI introduces experimental DSpark draft model for LFM2.5-VL-3B that adds speculative decoding path, trading minimal memory increase for inference speedup without changing output quality.",
-        "zh-Hans": "LiquidAI为LFM2.5-VL-3B推出实验性DSpark草稿模型，通过推测解码路径以最小内存增加换取推理加速且不改变输出质量。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "vision-language",
-        "speculative-decoding",
-        "inference-optimization"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 95,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "advances multimodal model inference efficiency through novel speculative decoding architecture",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_280bf64dcca75cee1131d5bb",
-          "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-09-24T14:08:57.000Z",
-          "evidenceSnippet": "How does speculative decoding work for VLMs Training and Architecture Inference Speedup on CPU and GPU Limitations of speculation for vision workloads How to use LFM2.5-VL-DSpark Get Started Citation Today, we release an experimental DSpark draft model for our vision-language model (VLM) LFM2.5-VL-3B . As with our recently released LFM2.5-DSpark drafter models , it adds a speculative decoding path that trades a minimal increase in memory footprint for a larger speedup without changing output quality. The vision drafter uses the same architecture as our text LFM2.5-DSpark drafters: it captures the target model's hidden states at a fixed set of tapped layers and conditions on them to draft a block of k candidate tokens. Image patches and text tokens are projected into a shared representation before those layers, so the drafter operates on hidden-state vectors of identical dimensionality regardless of input modality. The inference algorithm is therefore unchanged from the text models. We follow the DSpark recipe with a mixture of vision-language SFT data, weighted toward the workloads we expect the model to serve. Based on ablations across 3, 4, and 5 layers, the draft model is a simp"
-        }
-      ]
-    },
-    {
       "id": "item_33f98722c2911516ecee",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -380,131 +508,6 @@
           "publisher": "Microsoft Research",
           "publishedAt": "2026-09-23T16:01:36.000Z",
           "evidenceSnippet": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads. The post Offloaded inference for real-world physical AI robotics appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
-      "id": "item_d84d5932ca4ed6616850",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
-      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
-      "publishedAt": "2026-09-21T15:30:19.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-23T23:45:56.344Z",
-      "updatedAt": "2026-09-21T15:30:19.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft's RetroChimera Advances AI-Driven Chemical Synthesis Prediction",
-        "zh-Hans": "微软RetroChimera推进AI驱动的化学合成预测"
-      },
-      "summary": {
-        "en": "RetroChimera predictive model published in Nature helps accelerate chemical synthesis for custom molecules in medicine, materials, and agriculture, addressing slow and expensive production challenges.",
-        "zh-Hans": "发表在《自然》杂志上的RetroChimera预测模型有助于加速医学、材料和农业领域定制分子的化学合成，解决生产缓慢且昂贵的挑战。"
-      },
-      "category": "research_science",
-      "tags": [
-        "chemical-synthesis",
-        "molecular-prediction",
-        "scientific-ai"
-      ],
-      "topics": [
-        "research_science"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Felix Pultar, John Gardner, Guoqing Liu, Marwin Segler",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 58,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 70,
-      "relevanceReason": "AI-driven scientific discovery tools demonstrate transferable predictive capabilities for complex molecular systems",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_d84d5932ca4ed661685084e3",
-          "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-09-21T15:30:19.000Z",
-          "evidenceSnippet": "Custom-made molecules are advancing medicine, materials, and agriculture, but producing them is slow and expensive. A new Nature paper highlights RetroChimera, a predictive model that helps accelerate chemical synthesis, helping researchers explore a wide range of molecules. The post Improving synthesis prediction of small molecules at scale with RetroChimera appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
-      "id": "item_0f83c2d1d5b8034398fa",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-      "publishedAt": "2026-09-17T20:45:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-26T22:56:13.557Z",
-      "updatedAt": "2026-09-17T20:45:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research develops generative UI for teacher-created learning simulations",
-        "zh-Hans": "谷歌研究开发生成式UI用于教师创建学习模拟"
-      },
-      "summary": {
-        "en": "Google Research explores generative UI with learning design guardrails to enable teachers to create guided, interactive simulations for educational content across topics.",
-        "zh-Hans": "谷歌研究探索带有学习设计护栏的生成式UI，使教师能够为各种主题创建引导式交互学习模拟。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "generative-ui",
-        "education",
-        "interactive-learning",
-        "google-research"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 12,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Generative UI represents automated interface creation capabilities that could extend to general-purpose agent interactions",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_0f83c2d1d5b8034398fa197c",
-          "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-17T20:45:00.000Z",
-          "evidenceSnippet": "Gal Elidan, Research Scientist, and Yael Haramaty, Product Manager, Google Research We explore how we can harness generative UI with learning design guardrails to give teachers the ability to generate guided, interactive simulations for every topic and student. Digital educational tools have transformed how students around the world access information, from online textbooks to video libraries. Yet, for all the remarkable leaps in technology and accessibility, digital learning can often feel like a passive experience. Interactive, engaging, multimodal forms of practice that can encourage students to think for themselves and work through solutions have great potential for learning but remain largely out of reach. They are expensive to create, limited in number, and often require a lot more effort from the teacher. We wanted to see if AI could help close this gap."
         }
       ]
     },
@@ -633,6 +636,68 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_09d1d26fa19dd694ec40",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/Hcompany/holo4",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "publishedAt": "2026-09-28T09:44:05.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-28T15:35:26.624Z",
+      "updatedAt": "2026-09-28T09:44:05.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Holo4 agentic models for computer interfaces released",
+        "zh-Hans": "Holo4智能体模型发布，支持计算机界面操作"
+      },
+      "summary": {
+        "en": "Hugging Face releases Holo4 series with 27B dense and 35B-A3B MoE models that interact through GUIs, code, MCP and APIs, trained via supervised and reinforcement learning on diverse environments.",
+        "zh-Hans": "Hugging Face发布Holo4系列模型，包含27B密集型和35B-A3B混合专家模型，可通过GUI、代码、MCP和API交互，使用监督学习和强化学习训练。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "computer-use",
+        "multimodal",
+        "reinforcement-learning"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "Multi-interface agent capabilities with reinforcement learning training represent significant advancement in generalist computer-use agents",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_09d1d26fa19dd694ec40f7bb",
+          "url": "https://huggingface.co/blog/Hcompany/holo4",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-28T09:44:05.000Z",
+          "evidenceSnippet": "Models built for every interface Competitive with the frontier, at a fraction of the cost AI that does work 3D modeling · Eiffel tower 3D modeling · H logo Game design · Pac-Man How we built Holo4 Agentic task factory Training Harness Holotron4 Nano Run it yourself Holo4 is our new series of agentic models. It comes in two sizes: 27B dense and 35B-A3B Mixture of Experts. Both are available on the H Models API. We are also releasing an updated version of Holotron 3: Holotron4 Nano. Holo4 builds on our previous model and interacts with software through any available interface: GUIs, code, MCP and APIs. It scores well on academic benchmarks, but we built it for real business workflows. It was trained through supervised and reinforcement learning on a large set of environments and tasks, including those generated by our Agentic Task Factory."
+        }
+      ]
     },
     {
       "id": "item_e06deff32845f95a183d",
@@ -882,6 +947,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-25T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.28475v1 Announce Type: new Abstract: Forecasting agents increasingly combine language-model reasoning, retrieval, ensembling, and calibration, but it remains unclear when each behavior should be trusted. We study this question on ForecastBench-style binary forecasting tasks, treating the choice to retrieve, reason, defer to a market prior, or use a historical analog as an observable agent behavior rather than a hidden implementation detail. Our central finding is that mechanism choice is source-dependent: structured analogs dominate for some data-generating processes, while market/crowd-style and conservative baselines are better for others. We introduce ReliabilityRoute, a structural intervention that steers forecasting-agent behavior using reliability features such as historical coverage, market-prior availability, source-prior sharpness, evidence strength, evidence disagreement, and horizon. A fixed 2024-fitted rule closely matches a hand taxonomy without hard-coded source-name decisions, while a walk-forward self-adjusting rule refits thresholds from previously resolved vintages and obtains the best mean Brier score among our deterministic systems across 16 later LLM"
+        }
+      ]
+    },
+    {
+      "id": "item_280bf64dcca75cee1131",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "publishedAt": "2026-09-24T14:08:57.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-24T19:15:02.245Z",
+      "updatedAt": "2026-09-24T14:08:57.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LiquidAI releases LFM2.5-VL-DSpark with speculative decoding for vision-language models",
+        "zh-Hans": "LiquidAI发布支持推测解码的视觉语言模型LFM2.5-VL-DSpark"
+      },
+      "summary": {
+        "en": "LiquidAI introduces experimental DSpark draft model for LFM2.5-VL-3B that adds speculative decoding path, trading minimal memory increase for inference speedup without changing output quality.",
+        "zh-Hans": "LiquidAI为LFM2.5-VL-3B推出实验性DSpark草稿模型，通过推测解码路径以最小内存增加换取推理加速且不改变输出质量。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "vision-language",
+        "speculative-decoding",
+        "inference-optimization"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances multimodal model inference efficiency through novel speculative decoding architecture",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_280bf64dcca75cee1131d5bb",
+          "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-24T14:08:57.000Z",
+          "evidenceSnippet": "How does speculative decoding work for VLMs Training and Architecture Inference Speedup on CPU and GPU Limitations of speculation for vision workloads How to use LFM2.5-VL-DSpark Get Started Citation Today, we release an experimental DSpark draft model for our vision-language model (VLM) LFM2.5-VL-3B . As with our recently released LFM2.5-DSpark drafter models , it adds a speculative decoding path that trades a minimal increase in memory footprint for a larger speedup without changing output quality. The vision drafter uses the same architecture as our text LFM2.5-DSpark drafters: it captures the target model's hidden states at a fixed set of tapped layers and conditions on them to draft a block of k candidate tokens. Image patches and text tokens are projected into a shared representation before those layers, so the drafter operates on hidden-state vectors of identical dimensionality regardless of input modality. The inference algorithm is therefore unchanged from the text models. We follow the DSpark recipe with a mixture of vision-language SFT data, weighted toward the workloads we expect the model to serve. Based on ablations across 3, 4, and 5 layers, the draft model is a simp"
         }
       ]
     },
@@ -1261,6 +1388,68 @@
       ]
     },
     {
+      "id": "item_d84d5932ca4ed6616850",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "publishedAt": "2026-09-21T15:30:19.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-23T23:45:56.344Z",
+      "updatedAt": "2026-09-21T15:30:19.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft's RetroChimera Advances AI-Driven Chemical Synthesis Prediction",
+        "zh-Hans": "微软RetroChimera推进AI驱动的化学合成预测"
+      },
+      "summary": {
+        "en": "RetroChimera predictive model published in Nature helps accelerate chemical synthesis for custom molecules in medicine, materials, and agriculture, addressing slow and expensive production challenges.",
+        "zh-Hans": "发表在《自然》杂志上的RetroChimera预测模型有助于加速医学、材料和农业领域定制分子的化学合成，解决生产缓慢且昂贵的挑战。"
+      },
+      "category": "research_science",
+      "tags": [
+        "chemical-synthesis",
+        "molecular-prediction",
+        "scientific-ai"
+      ],
+      "topics": [
+        "research_science"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Felix Pultar, John Gardner, Guoqing Liu, Marwin Segler",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 58,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 70,
+      "relevanceReason": "AI-driven scientific discovery tools demonstrate transferable predictive capabilities for complex molecular systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d84d5932ca4ed661685084e3",
+          "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-09-21T15:30:19.000Z",
+          "evidenceSnippet": "Custom-made molecules are advancing medicine, materials, and agriculture, but producing them is slow and expensive. A new Nature paper highlights RetroChimera, a predictive model that helps accelerate chemical synthesis, helping researchers explore a wide range of molecules. The post Improving synthesis prediction of small molecules at scale with RetroChimera appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
       "id": "item_ae2a66f3c360fd1788ea",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -1507,6 +1696,69 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-21T00:00:00.000Z",
           "evidenceSnippet": "Results What V1 Is The Split: Bitstreams Instead Of A Regex The Word Cache The Merge Loop Method What This Adds Up To Getting It Progress Towards V1 Release Candidate: Implemented 1.0.0 After 1.0.0 The tokenizer has not historically been the bottleneck within ML workflows. Compute-wise, tokenization is light compared to the heavy modeling happening in the rest of the pipeline. Yet, in some cases, it has rapidly become key to accelerating (or slowing down) your machine learning work. As models become faster and workloads scale, that balance begins to shift. Training on massive datasets, serving many concurrent requests, or repeatedly processing long inputs can put enough pressure on the tokenizer that it starves the model of data. This is why we have chosen to heavily focus on performance for the upcoming version 1 of tokenizers. Tokenization should be light and should scale with your workflow. Your GPUs should never sit idle waiting for the CPU to complete its tokenization."
+        }
+      ]
+    },
+    {
+      "id": "item_0f83c2d1d5b8034398fa",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "publishedAt": "2026-09-17T20:45:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-26T22:56:13.557Z",
+      "updatedAt": "2026-09-17T20:45:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research develops generative UI for teacher-created learning simulations",
+        "zh-Hans": "谷歌研究开发生成式UI用于教师创建学习模拟"
+      },
+      "summary": {
+        "en": "Google Research explores generative UI with learning design guardrails to enable teachers to create guided, interactive simulations for educational content across topics.",
+        "zh-Hans": "谷歌研究探索带有学习设计护栏的生成式UI，使教师能够为各种主题创建引导式交互学习模拟。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "generative-ui",
+        "education",
+        "interactive-learning",
+        "google-research"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 12,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Generative UI represents automated interface creation capabilities that could extend to general-purpose agent interactions",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_0f83c2d1d5b8034398fa197c",
+          "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-17T20:45:00.000Z",
+          "evidenceSnippet": "Gal Elidan, Research Scientist, and Yael Haramaty, Product Manager, Google Research We explore how we can harness generative UI with learning design guardrails to give teachers the ability to generate guided, interactive simulations for every topic and student. Digital educational tools have transformed how students around the world access information, from online textbooks to video libraries. Yet, for all the remarkable leaps in technology and accessibility, digital learning can often feel like a passive experience. Interactive, engaging, multimodal forms of practice that can encourage students to think for themselves and work through solutions have great potential for learning but remain largely out of reach. They are expensive to create, limited in number, and often require a lot more effort from the teacher. We wanted to see if AI could help close this gap."
         }
       ]
     },
