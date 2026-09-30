@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-30T13:50:46.812Z",
+  "generatedAt": "2026-09-30T23:55:53.714Z",
   "items": [
     {
       "id": "item_959ee4f965ced8b1d1f5",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "id": "item_9f86890e896c66b0159c",
+      "id": "item_b4a2d2f3f766c6917b14",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -81,57 +81,56 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2609.35868",
-      "url": "https://arxiv.org/abs/2609.35868",
+      "canonicalUrl": "https://arxiv.org/abs/2609.35869",
+      "url": "https://arxiv.org/abs/2609.35869",
       "publishedAt": "2026-09-30T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-30T13:50:38.407Z",
+      "discoveredAt": "2026-09-30T23:55:38.823Z",
       "updatedAt": "2026-09-30T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Researchers Develop Non-Human-Readable Training Method for Language Model Fine-Tuning",
-        "zh-Hans": "研究人员开发出无需人类可读文本的语言模型微调方法"
+        "en": "Token Boundary Compression Costs in Language Models",
+        "zh-Hans": "语言模型中标记边界的压缩成本"
       },
       "summary": {
-        "en": "New DASA method uses activation-gradient feedback to create synthetic embeddings for LLM fine-tuning, achieving comparable performance to natural language data across models from 1B to 32B parameters without requiring human-readable text.",
-        "zh-Hans": "新的DASA方法使用激活梯度反馈创建合成嵌入进行大语言模型微调，在1B到32B参数的模型上达到与自然语言数据相当的性能，无需人类可读文本。"
+        "en": "Research quantifies how pre-tokenization boundary rules increase optimal token counts by 28-36% on English Wikipedia, with unrestricted tokenization yielding better prediction performance across 12 languages.",
+        "zh-Hans": "研究量化了预分词边界规则如何使英文维基百科的最优标记数量增加28-36%，无限制分词在12种语言中产生更好的预测性能。"
       },
       "category": "models_capabilities",
       "tags": [
-        "fine-tuning",
-        "synthetic-data",
-        "embeddings",
-        "optimization"
+        "tokenization",
+        "compression",
+        "language-models"
       ],
       "topics": [
         "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Jinhao Zhang, Zeyu Liu, Zicheng Yan, Yunquan Zhang, Daning Cheng, Song Tang",
+      "author": "Yuhao Du, Shunian Chen",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:jinhao zhang, zeyu liu, zicheng yan, yunquan zhang, daning cheng, song tang",
+      "independenceKey": "academic:yuhao du, shunian chen",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 91,
+      "freshnessScore": 83,
       "importanceScore": 75,
       "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "Advances model training methodology by eliminating human-readable text requirement while maintaining performance",
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances fundamental tokenization methods affecting language model efficiency and prediction capabilities",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_9f86890e896c66b0159ca389",
-          "url": "https://arxiv.org/abs/2609.35868",
+          "id": "candidate_b4a2d2f3f766c6917b14df40",
+          "url": "https://arxiv.org/abs/2609.35869",
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-30T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.35868v1 Announce Type: new Abstract: Is human readability necessary for effective fine-tuning of large language models? We investigate whether model-conditioned training representations can preserve or improve adaptation utility without requiring a human-readable textual form. We propose Desired-Update-Aligned Synthetic Data (DASA), which uses activation-gradient feedback from a frozen reference model to guide the optimization of continuous synthetic input embeddings. Inspired by the role of activation gradients in local risk reduction, DASA targets useful adaptation updates rather than source-text reconstruction or linguistic fluency. The resulting embeddings are used directly for downstream fine-tuning; discrete token projections are employed only for qualitative inspection. Experiments on six models from the Llama and Qwen families, ranging from 1B to 32B parameters, cover six benchmarks spanning knowledge, mathematical reasoning, code generation, and commonsense reasoning. Under matched LoRA adaptation settings, DASA achieves performance comparable to the source natural-language data and surpasses it in multiple configurations, while outperforming GRADMM in most comp"
+          "evidenceSnippet": "arXiv:2609.35869v1 Announce Type: new Abstract: Pre-tokenisation restricts which text fragments can become prediction units, but its compression cost is obscured when tokenisers are compared only under the same boundaries. We measure this cost by bounding the minimum token count from both sides, with and without a regular-expression boundary rule. Nonnegative prices on token occurrences yield a lower bound through shortest paths and vocabulary-budget selection; maximising over all prices recovers the linear programming relaxation, and an independent integer checker certifies the reported values. On English Wikipedia, boundaries increase the optimal token count by 28.3--36.8\\%. Byte pair encoding lies 2.1\\% above the constrained lower bound, but 10.9\\% above the unrestricted bound. Compression and prediction favour different dictionaries: at 85M non-embedding parameters and matched training-token budgets, unrestricted fitting yields higher mean held-out bits per byte under a common unrestricted decoder in all 12 languages in the paired study and 11 of 12 under independent tuning and evaluation. To study intermediate boundary policies, we introduce boundary licences, which limit the "
         }
       ]
     },
@@ -672,6 +671,131 @@
           "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
           "metadataSourceUrl": "https://openai.com/news/rss.xml",
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
+      "id": "item_9f86890e896c66b0159c",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.35868",
+      "url": "https://arxiv.org/abs/2609.35868",
+      "publishedAt": "2026-09-30T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T13:50:38.407Z",
+      "updatedAt": "2026-09-30T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Researchers Develop Non-Human-Readable Training Method for Language Model Fine-Tuning",
+        "zh-Hans": "研究人员开发出无需人类可读文本的语言模型微调方法"
+      },
+      "summary": {
+        "en": "New DASA method uses activation-gradient feedback to create synthetic embeddings for LLM fine-tuning, achieving comparable performance to natural language data across models from 1B to 32B parameters without requiring human-readable text.",
+        "zh-Hans": "新的DASA方法使用激活梯度反馈创建合成嵌入进行大语言模型微调，在1B到32B参数的模型上达到与自然语言数据相当的性能，无需人类可读文本。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "fine-tuning",
+        "synthetic-data",
+        "embeddings",
+        "optimization"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Jinhao Zhang, Zeyu Liu, Zicheng Yan, Yunquan Zhang, Daning Cheng, Song Tang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:jinhao zhang, zeyu liu, zicheng yan, yunquan zhang, daning cheng, song tang",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 91,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Advances model training methodology by eliminating human-readable text requirement while maintaining performance",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_9f86890e896c66b0159ca389",
+          "url": "https://arxiv.org/abs/2609.35868",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-30T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.35868v1 Announce Type: new Abstract: Is human readability necessary for effective fine-tuning of large language models? We investigate whether model-conditioned training representations can preserve or improve adaptation utility without requiring a human-readable textual form. We propose Desired-Update-Aligned Synthetic Data (DASA), which uses activation-gradient feedback from a frozen reference model to guide the optimization of continuous synthetic input embeddings. Inspired by the role of activation gradients in local risk reduction, DASA targets useful adaptation updates rather than source-text reconstruction or linguistic fluency. The resulting embeddings are used directly for downstream fine-tuning; discrete token projections are employed only for qualitative inspection. Experiments on six models from the Llama and Qwen families, ranging from 1B to 32B parameters, cover six benchmarks spanning knowledge, mathematical reasoning, code generation, and commonsense reasoning. Under matched LoRA adaptation settings, DASA achieves performance comparable to the source natural-language data and surpasses it in multiple configurations, while outperforming GRADMM in most comp"
+        }
+      ]
+    },
+    {
+      "id": "item_1f18ad2c290bf109b0a6",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.35873",
+      "url": "https://arxiv.org/abs/2609.35873",
+      "publishedAt": "2026-09-30T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T23:55:38.823Z",
+      "updatedAt": "2026-09-30T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "LLM Harness Specialization vs Coverage Analysis",
+        "zh-Hans": "大语言模型工具专业化与覆盖率分析"
+      },
+      "summary": {
+        "en": "Study of 386 MATH tasks finds generated LLM harnesses show repeatable patterns but persistent weaknesses, with identical programs providing 2.16 percentage points of oracle headroom through repeated execution.",
+        "zh-Hans": "对386个数学任务的研究发现，生成的大语言模型工具显示可重复模式但存在持续弱点，相同程序通过重复执行提供2.16个百分点的预言机余量。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "llm-harnesses",
+        "task-specialization",
+        "evaluation"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Ziyang Xu, Haitian Zhong, Hao Zhou, Hao Qin, Chenhan Jin, Te Qi, Shengze Xu, Tieyong Zeng",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:ziyang xu, haitian zhong, hao zhou, hao qin, chenhan jin, te qi, shengze xu, tieyong zeng",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 83,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 72,
+      "relevanceReason": "evaluates automated agent harness generation and task specialization mechanisms",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_1f18ad2c290bf109b0a630b7",
+          "url": "https://arxiv.org/abs/2609.35873",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-30T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.35873v1 Announce Type: new Abstract: Automated generation of LLM harnesses promises to improve inference through task specialization. Yet additional answer coverage can arise from repeated execution of the same program, making specialization difficult to identify. We introduce a controlled evaluation that separates answer coverage, repeatable task advantages, and gains from pre-execution selection. On 386 MATH-500 tasks, we compare eight generated harnesses plus a baseline with nine byte-identical baseline copies, using three executions per member. Identical programs yield 2.16 percentage points of repeat-averaged oracle headroom. Generated programs exhibit substantially more repeatable score patterns, but these chiefly reveal persistent weaknesses: losses relative to the baseline persist across all three repeats on 100 tasks, while persistent wins occur on only one task and are sensitive to answer extraction. The frozen selector gains 0.00 percentage points, and both populations reach 98.70% oracle coverage at 27 harness executions. Stable complementarity remains unresolved at three repeats. Supporting BIRD traces locate failures in mechanism implementation, activation,"
         }
       ]
     },
