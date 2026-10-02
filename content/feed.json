@@ -7,7 +7,7 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-10-02T05:48:22.996Z",
+  "generatedAt": "2026-10-02T12:46:16.607Z",
   "items": [
     {
       "id": "item_56c490db040147f1def4",
@@ -135,7 +135,7 @@
       ]
     },
     {
-      "id": "item_d59c4716fcf993c9d046",
+      "id": "item_8cc5380fb99a93aeaaf4",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -143,57 +143,118 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2610.00010",
-      "url": "https://arxiv.org/abs/2610.00010",
+      "canonicalUrl": "https://arxiv.org/abs/2610.00018",
+      "url": "https://arxiv.org/abs/2610.00018",
       "publishedAt": "2026-10-02T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-10-02T05:47:56.345Z",
+      "discoveredAt": "2026-10-02T12:46:02.680Z",
       "updatedAt": "2026-10-02T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Heavy-Tailed Memory Traces in Long-Horizon Language Agents",
-        "zh-Hans": "长期语言智能体中的重尾记忆轨迹"
+        "en": "Message-Intervention Study Reveals Limited Impact of Rationales in Role-Specialized QA",
+        "zh-Hans": "消息干预研究揭示理由在角色专门化问答中的有限影响"
       },
       "summary": {
-        "en": "Research reveals how agent memory concentrates on core states while leaving rare states in long tails, proposing Core-Tail World Model for better memory allocation.",
-        "zh-Hans": "研究揭示智能体记忆如何集中于核心状态而将罕见状态留在长尾中，提出核心-尾部世界模型以改善记忆分配。"
+        "en": "Study finds faithful rationales add almost no answer accuracy over no rationale in QA pipelines, while corrupted rationales strongly alter support judgments in reasoner-to-verifier communication.",
+        "zh-Hans": "研究发现在问答流水线中，忠实的理由相比无理由几乎不增加答案准确性，而损坏的理由会强烈改变推理器到验证器通信中的支持判断。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
-        "memory systems",
-        "long-horizon agents",
-        "retrieval",
-        "world models"
+        "rationales",
+        "verification",
+        "qa systems"
       ],
       "topics": [
-        "agents_automation"
+        "models_capabilities"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Xinyuan Song, Zekun Cai",
+      "author": "Jiameng Zhang, Hongqiu Wu",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:xinyuan song, zekun cai",
+      "independenceKey": "academic:jiameng zhang, hongqiu wu",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 98,
+      "freshnessScore": 92,
       "importanceScore": 70,
       "importance": 70,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "advances transferable memory management mechanisms for long-horizon agent capabilities",
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances understanding of transferable reasoning and verification mechanisms in multi-agent systems",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_d59c4716fcf993c9d04698c7",
-          "url": "https://arxiv.org/abs/2610.00010",
+          "id": "candidate_8cc5380fb99a93aeaaf4c1c6",
+          "url": "https://arxiv.org/abs/2610.00018",
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-10-02T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2610.00010v1 Announce Type: new Abstract: Long-horizon language agents increasingly rely on external memory as a frozen world model, yet current memory systems are usually judged only by task success or token cost. We argue that the missing object is the shape of memory use: under finite context and repeated retrieval, agent memory can concentrate on a small core while leaving rare states in a long tail where prediction errors accumulate. We study this effect through a conservative tail audit and find that concentration is reproducible but policy-dependent. Random-walk agents produce log-normal-compatible retrieval artifacts, whereas semantic LLM policies yield the strongest truncated-power-law-compatible core--tail traces. Motivated by this audit, we propose Core--Tail World Model (CTWM), a rank-based memory controller that allocates prompt budget with a single exponent $\\tau$ while retaining a summarized tail. On Synthetic Graph World, CTWM preserves full state and transition coverage, reduces prompt tokens by 5.9%, and lowers bottom-half tail prediction error by 13.6% relative to a graph-memory baseline. The same paired comparison gives consistent token savings on ALFWorld"
+          "evidenceSnippet": "arXiv:2610.00018v1 Announce Type: new Abstract: Role-specialized QA pipelines increasingly pass rationales from a reasoner to a verifier, but it is unclear what this message actually buys: better answers, stronger support assessment, or a new failure surface. We introduce a message-intervention diagnostic that fixes the evidence and candidate answer while varying only the rationale passed across the reasoner-to-verifier boundary. On 400 MuSiQue, HotpotQA, and 2WikiMultiHopQA examples with DeepSeek as generator and verifier, faithful rationales add almost no answer accuracy over no rationale, while corrupted rationales strongly alter support judgments. Under a blind verifier prompt, harmless paraphrases shift support by only 0--2.5%, whereas corrupted rationales shift support by 10--22%; an explicit rationale-checking prompt amplifies the same pattern to 34--55%. Final answers move less (2--30%), and only 2.9--35.3% of corrupted support flips co-occur with answer changes. Human audits show why this matters: 16/42 valid corruptions are corruption-overtrust cases, and blind humans reject or mark unclear 9/10 audited corrupted rationales that the model accepts. Cross-model and task-bou"
+        }
+      ]
+    },
+    {
+      "id": "item_f928531f963725197f57",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/allenai/olmocore3",
+      "url": "https://huggingface.co/blog/allenai/olmocore3",
+      "publishedAt": "2026-10-01T15:01:43.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-02T12:46:02.680Z",
+      "updatedAt": "2026-10-01T15:01:43.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Olmo-core 3 Enables Trillion-Parameter MoE Training",
+        "zh-Hans": "Olmo-core 3支持万亿参数MoE训练"
+      },
+      "summary": {
+        "en": "Allen AI releases Olmo-core 3, an open framework designed to scale mixture-of-experts training into the trillion-parameter range while preserving computational efficiency.",
+        "zh-Hans": "Allen AI发布Olmo-core 3，这是一个开放框架，旨在将专家混合训练扩展到万亿参数范围，同时保持计算效率。"
+      },
+      "category": "compute_infrastructure",
+      "tags": [
+        "training infrastructure",
+        "mixture of experts",
+        "scaling"
+      ],
+      "topics": [
+        "compute_infrastructure"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 81,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "enables scaling of transferable model architectures to unprecedented parameter counts",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_f928531f963725197f57d3d7",
+          "url": "https://huggingface.co/blog/allenai/olmocore3",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-10-01T15:01:43.000Z",
+          "evidenceSnippet": "Building a training stack around how MoEs actually work Scaling and optimizing MoE training Scaling into the trillion-parameter range Built for the next generation of Olmo, open for everyone 📄 Tech Report | 💻 Code | 🧩 Interactive demo Today we’re releasing Olmo-core 3 , a significant upgrade to our framework for developing large language models featuring a redesigned open mixture-of-experts (MoE) training system. Olmo-core 3 is designed to scale MoE training into the trillion-parameter range while preserving computational efficiency. It’s one of the core systems behind the next generation of Olmo, and part of our ongoing commitment to open up the tools and training infrastructure behind each new model."
         }
       ]
     },
@@ -261,69 +322,6 @@
       ]
     },
     {
-      "id": "item_dc53fce90c6f36f5c727",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "publishedAt": "2026-09-29T15:30:38.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-30T00:32:34.988Z",
-      "updatedAt": "2026-09-29T15:30:38.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "NVIDIA releases Kumo Tabular foundation model for zero-shot tabular prediction",
-        "zh-Hans": "英伟达发布Kumo表格基础模型实现零样本表格预测"
-      },
-      "summary": {
-        "en": "Open foundation model trained on artificial data performs tabular prediction without training or tuning, ranking first on four benchmarks including TabArena.",
-        "zh-Hans": "基于人工数据训练的开放基础模型可进行无需训练或调优的表格预测，在包括TabArena在内的四个基准测试中排名第一。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "tabular data",
-        "foundation model",
-        "zero-shot",
-        "enterprise ml"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 92,
-      "importanceScore": 82,
-      "importance": 82,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "demonstrates transferable reasoning capabilities across tabular domains without task-specific training",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_dc53fce90c6f36f5c727235e",
-          "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-09-29T15:30:38.000Z",
-          "evidenceSnippet": "NVIDIA Kumo Tabular, part of the NVIDIA Kumo Structured model collection, is an open foundation model for tabular data now available on Hugging Face . Given a table of labeled rows, it predicts the labels of new rows in a single forward pass, with no training, no tuning, and no feature engineering, for both classification and regression. It was pretrained only on artificial data, comes in three sizes (28M to 215M parameters), runs through our open-source library , and is released under the OpenMDW-1.1 license for commercial use. It ranks first on the four benchmarks TabArena , BeyondArena , TALENT and ScoringBench . Tabular data is the backbone of enterprise machine learning. Customer records, transactions, sensor logs, claims, and orders all live in tables, and predicting churn, default, demand, or price from them is among the most common machine learning tasks in industry. For two decades, this work has been done with gradient-boosted trees, and it has worked well. But the lifecycle around those models has barely changed. Every new question means collecting labels, engineering features, searching hyperparameters, validating, and deploying a model that knows nothing about tables i"
-        }
-      ]
-    },
-    {
       "id": "item_6432f88e541d56351133",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -387,6 +385,68 @@
       ]
     },
     {
+      "id": "item_8451e6726f3673677215",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/coherent-long-form-video-generation/",
+      "url": "https://research.google/blog/coherent-long-form-video-generation/",
+      "publishedAt": "2026-09-24T19:40:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-25T07:55:42.832Z",
+      "updatedAt": "2026-09-24T19:40:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research Introduces Multi-Agent Framework for Coherent Long-Form Video Generation",
+        "zh-Hans": "谷歌研究推出用于连贯长视频生成的多智能体框架"
+      },
+      "summary": {
+        "en": "Google Research presents a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, addressing identity drift and cascading failures in current linear AI pipelines for video generation.",
+        "zh-Hans": "谷歌研究提出了一个统一的多智能体框架，能够自主生成时间一致的长视频叙事，解决当前线性AI视频生成管道中的身份漂移和级联失败问题。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multi-agent",
+        "video-generation",
+        "temporal-consistency"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "demonstrates transferable multi-agent coordination for complex generative tasks with temporal consistency requirements",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8451e6726f36736772159469",
+          "url": "https://research.google/blog/coherent-long-form-video-generation/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-24T19:40:00.000Z",
+          "evidenceSnippet": "Yale Song and Yiwen Song, Research Scientists, Google We introduce a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, overcoming the identity drift and cascading failures of current linear AI pipelines. Recent advancements in video diffusion demonstrate remarkable high-fidelity generation with models that can render realistic scenes in seconds. However, while diffusion models generate high-fidelity video clips, transforming them into coherent long storytelling engines remains challenging."
+        }
+      ]
+    },
+    {
       "id": "item_33f98722c2911516ecee",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -446,69 +506,6 @@
           "publisher": "Microsoft Research",
           "publishedAt": "2026-09-23T16:01:36.000Z",
           "evidenceSnippet": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads. The post Offloaded inference for real-world physical AI robotics appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
-      "id": "item_0f83c2d1d5b8034398fa",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-      "publishedAt": "2026-09-17T20:45:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-26T22:56:13.557Z",
-      "updatedAt": "2026-09-17T20:45:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research develops generative UI for teacher-created learning simulations",
-        "zh-Hans": "谷歌研究开发生成式UI用于教师创建学习模拟"
-      },
-      "summary": {
-        "en": "Google Research explores generative UI with learning design guardrails to enable teachers to create guided, interactive simulations for educational content across topics.",
-        "zh-Hans": "谷歌研究探索带有学习设计护栏的生成式UI，使教师能够为各种主题创建引导式交互学习模拟。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "generative-ui",
-        "education",
-        "interactive-learning",
-        "google-research"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 12,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Generative UI represents automated interface creation capabilities that could extend to general-purpose agent interactions",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_0f83c2d1d5b8034398fa197c",
-          "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-17T20:45:00.000Z",
-          "evidenceSnippet": "Gal Elidan, Research Scientist, and Yael Haramaty, Product Manager, Google Research We explore how we can harness generative UI with learning design guardrails to give teachers the ability to generate guided, interactive simulations for every topic and student. Digital educational tools have transformed how students around the world access information, from online textbooks to video libraries. Yet, for all the remarkable leaps in technology and accessibility, digital learning can often feel like a passive experience. Interactive, engaging, multimodal forms of practice that can encourage students to think for themselves and work through solutions have great potential for learning but remain largely out of reach. They are expensive to create, limited in number, and often require a lot more effort from the teacher. We wanted to see if AI could help close this gap."
         }
       ]
     },
@@ -637,6 +634,69 @@
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_d59c4716fcf993c9d046",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.00010",
+      "url": "https://arxiv.org/abs/2610.00010",
+      "publishedAt": "2026-10-02T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-02T05:47:56.345Z",
+      "updatedAt": "2026-10-02T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Heavy-Tailed Memory Traces in Long-Horizon Language Agents",
+        "zh-Hans": "长期语言智能体中的重尾记忆轨迹"
+      },
+      "summary": {
+        "en": "Research reveals how agent memory concentrates on core states while leaving rare states in long tails, proposing Core-Tail World Model for better memory allocation.",
+        "zh-Hans": "研究揭示智能体记忆如何集中于核心状态而将罕见状态留在长尾中，提出核心-尾部世界模型以改善记忆分配。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "memory systems",
+        "long-horizon agents",
+        "retrieval",
+        "world models"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Xinyuan Song, Zekun Cai",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:xinyuan song, zekun cai",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "advances transferable memory management mechanisms for long-horizon agent capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d59c4716fcf993c9d04698c7",
+          "url": "https://arxiv.org/abs/2610.00010",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-02T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.00010v1 Announce Type: new Abstract: Long-horizon language agents increasingly rely on external memory as a frozen world model, yet current memory systems are usually judged only by task success or token cost. We argue that the missing object is the shape of memory use: under finite context and repeated retrieval, agent memory can concentrate on a small core while leaving rare states in a long tail where prediction errors accumulate. We study this effect through a conservative tail audit and find that concentration is reproducible but policy-dependent. Random-walk agents produce log-normal-compatible retrieval artifacts, whereas semantic LLM policies yield the strongest truncated-power-law-compatible core--tail traces. Motivated by this audit, we propose Core--Tail World Model (CTWM), a rank-based memory controller that allocates prompt budget with a single exponent $\\tau$ while retaining a summarized tail. On Synthetic Graph World, CTWM preserves full state and transition coverage, reduces prompt tokens by 5.9%, and lowers bottom-half tail prediction error by 13.6% relative to a graph-memory baseline. The same paired comparison gives consistent token savings on ALFWorld"
+        }
+      ]
     },
     {
       "id": "item_959ee4f965ced8b1d1f5",
@@ -948,6 +1008,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-30T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.35833v1 Announce Type: new Abstract: Running a language model on edge hardware provides private and low-latency reasoning without a network connection, and yet the small models that fit on such devices are unreliable on the tasks computers are expected to handle well, such as arithmetic, algebra, and formal logic problems. We argue that much of this unreliability is avoidable. Many queries appearing to demand reasoning are in fact structurally deterministic and permit fast and exact symbolic solutions. Therefore, forcing a probabilistic model to approximate them sacrifices accuracy and energy for little benefit. We present a neurosymbolic router that classifies each incoming query and dispatches it to the cheapest correct solver, sending structured tasks to deterministic engines and reserving the small language model (SLM) for open-ended word problems. Instead of hand-coding the routing logic, we learn a deterministic finite automaton (DFA) with the L* grammatical inference algorithm, using the SLM as a membership oracle and labeled data as an equivalence oracle. On a Raspberry Pi 4B (8 GB RAM, no GPU), evaluated on 100 untested prompts from DeepMind Mathematics, GSM8K, "
+        }
+      ]
+    },
+    {
+      "id": "item_dc53fce90c6f36f5c727",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "publishedAt": "2026-09-29T15:30:38.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T00:32:34.988Z",
+      "updatedAt": "2026-09-29T15:30:38.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "NVIDIA releases Kumo Tabular foundation model for zero-shot tabular prediction",
+        "zh-Hans": "英伟达发布Kumo表格基础模型实现零样本表格预测"
+      },
+      "summary": {
+        "en": "Open foundation model trained on artificial data performs tabular prediction without training or tuning, ranking first on four benchmarks including TabArena.",
+        "zh-Hans": "基于人工数据训练的开放基础模型可进行无需训练或调优的表格预测，在包括TabArena在内的四个基准测试中排名第一。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "tabular data",
+        "foundation model",
+        "zero-shot",
+        "enterprise ml"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 92,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "demonstrates transferable reasoning capabilities across tabular domains without task-specific training",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_dc53fce90c6f36f5c727235e",
+          "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-29T15:30:38.000Z",
+          "evidenceSnippet": "NVIDIA Kumo Tabular, part of the NVIDIA Kumo Structured model collection, is an open foundation model for tabular data now available on Hugging Face . Given a table of labeled rows, it predicts the labels of new rows in a single forward pass, with no training, no tuning, and no feature engineering, for both classification and regression. It was pretrained only on artificial data, comes in three sizes (28M to 215M parameters), runs through our open-source library , and is released under the OpenMDW-1.1 license for commercial use. It ranks first on the four benchmarks TabArena , BeyondArena , TALENT and ScoringBench . Tabular data is the backbone of enterprise machine learning. Customer records, transactions, sensor logs, claims, and orders all live in tables, and predicting churn, default, demand, or price from them is among the most common machine learning tasks in industry. For two decades, this work has been done with gradient-boosted trees, and it has worked well. But the lifecycle around those models has barely changed. Every new question means collecting labels, engineering features, searching hyperparameters, validating, and deploying a model that knows nothing about tables i"
         }
       ]
     },
@@ -1449,68 +1572,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-25T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.28475v1 Announce Type: new Abstract: Forecasting agents increasingly combine language-model reasoning, retrieval, ensembling, and calibration, but it remains unclear when each behavior should be trusted. We study this question on ForecastBench-style binary forecasting tasks, treating the choice to retrieve, reason, defer to a market prior, or use a historical analog as an observable agent behavior rather than a hidden implementation detail. Our central finding is that mechanism choice is source-dependent: structured analogs dominate for some data-generating processes, while market/crowd-style and conservative baselines are better for others. We introduce ReliabilityRoute, a structural intervention that steers forecasting-agent behavior using reliability features such as historical coverage, market-prior availability, source-prior sharpness, evidence strength, evidence disagreement, and horizon. A fixed 2024-fitted rule closely matches a hand taxonomy without hard-coded source-name decisions, while a walk-forward self-adjusting rule refits thresholds from previously resolved vintages and obtains the best mean Brier score among our deterministic systems across 16 later LLM"
-        }
-      ]
-    },
-    {
-      "id": "item_8451e6726f3673677215",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/coherent-long-form-video-generation/",
-      "url": "https://research.google/blog/coherent-long-form-video-generation/",
-      "publishedAt": "2026-09-24T19:40:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-25T07:55:42.832Z",
-      "updatedAt": "2026-09-24T19:40:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research Introduces Multi-Agent Framework for Coherent Long-Form Video Generation",
-        "zh-Hans": "谷歌研究推出用于连贯长视频生成的多智能体框架"
-      },
-      "summary": {
-        "en": "Google Research presents a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, addressing identity drift and cascading failures in current linear AI pipelines for video generation.",
-        "zh-Hans": "谷歌研究提出了一个统一的多智能体框架，能够自主生成时间一致的长视频叙事，解决当前线性AI视频生成管道中的身份漂移和级联失败问题。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "multi-agent",
-        "video-generation",
-        "temporal-consistency"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 89,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "demonstrates transferable multi-agent coordination for complex generative tasks with temporal consistency requirements",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_8451e6726f36736772159469",
-          "url": "https://research.google/blog/coherent-long-form-video-generation/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-24T19:40:00.000Z",
-          "evidenceSnippet": "Yale Song and Yiwen Song, Research Scientists, Google We introduce a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, overcoming the identity drift and cascading failures of current linear AI pipelines. Recent advancements in video diffusion demonstrate remarkable high-fidelity generation with models that can render realistic scenes in seconds. However, while diffusion models generate high-fidelity video clips, transforming them into coherent long storytelling engines remains challenging."
         }
       ]
     },
@@ -2260,6 +2321,69 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-21T00:00:00.000Z",
           "evidenceSnippet": "Results What V1 Is The Split: Bitstreams Instead Of A Regex The Word Cache The Merge Loop Method What This Adds Up To Getting It Progress Towards V1 Release Candidate: Implemented 1.0.0 After 1.0.0 The tokenizer has not historically been the bottleneck within ML workflows. Compute-wise, tokenization is light compared to the heavy modeling happening in the rest of the pipeline. Yet, in some cases, it has rapidly become key to accelerating (or slowing down) your machine learning work. As models become faster and workloads scale, that balance begins to shift. Training on massive datasets, serving many concurrent requests, or repeatedly processing long inputs can put enough pressure on the tokenizer that it starves the model of data. This is why we have chosen to heavily focus on performance for the upcoming version 1 of tokenizers. Tokenization should be light and should scale with your workflow. Your GPUs should never sit idle waiting for the CPU to complete its tokenization."
+        }
+      ]
+    },
+    {
+      "id": "item_0f83c2d1d5b8034398fa",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "publishedAt": "2026-09-17T20:45:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-26T22:56:13.557Z",
+      "updatedAt": "2026-09-17T20:45:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research develops generative UI for teacher-created learning simulations",
+        "zh-Hans": "谷歌研究开发生成式UI用于教师创建学习模拟"
+      },
+      "summary": {
+        "en": "Google Research explores generative UI with learning design guardrails to enable teachers to create guided, interactive simulations for educational content across topics.",
+        "zh-Hans": "谷歌研究探索带有学习设计护栏的生成式UI，使教师能够为各种主题创建引导式交互学习模拟。"
+      },
+      "category": "products_developer_ecosystem",
+      "tags": [
+        "generative-ui",
+        "education",
+        "interactive-learning",
+        "google-research"
+      ],
+      "topics": [
+        "products_developer_ecosystem"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 12,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Generative UI represents automated interface creation capabilities that could extend to general-purpose agent interactions",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_0f83c2d1d5b8034398fa197c",
+          "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-17T20:45:00.000Z",
+          "evidenceSnippet": "Gal Elidan, Research Scientist, and Yael Haramaty, Product Manager, Google Research We explore how we can harness generative UI with learning design guardrails to give teachers the ability to generate guided, interactive simulations for every topic and student. Digital educational tools have transformed how students around the world access information, from online textbooks to video libraries. Yet, for all the remarkable leaps in technology and accessibility, digital learning can often feel like a passive experience. Interactive, engaging, multimodal forms of practice that can encourage students to think for themselves and work through solutions have great potential for learning but remain largely out of reach. They are expensive to create, limited in number, and often require a lot more effort from the teacher. We wanted to see if AI could help close this gap."
         }
       ]
     },
