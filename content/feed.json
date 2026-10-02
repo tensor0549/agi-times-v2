@@ -7,73 +7,73 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-09-30T23:55:53.714Z",
+  "generatedAt": "2026-10-02T05:48:22.996Z",
   "items": [
     {
-      "id": "item_959ee4f965ced8b1d1f5",
+      "id": "item_56c490db040147f1def4",
       "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
+      "type": "article",
+      "sourceId": "src_hugging-face",
       "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2609.35799",
-      "url": "https://arxiv.org/abs/2609.35799",
-      "publishedAt": "2026-09-30T04:00:00.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "publishedAt": "2026-10-02T04:01:31.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-30T06:48:49.349Z",
-      "updatedAt": "2026-09-30T04:00:00.000Z",
+      "discoveredAt": "2026-10-02T05:47:56.345Z",
+      "updatedAt": "2026-10-02T04:01:31.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Researchers reproduce OpenAI-HuggingFace security incident to improve alignment testing",
-        "zh-Hans": "研究人员重现OpenAI-HuggingFace安全事件以改进对齐测试"
+        "en": "AutoSynthData: Generating Training Data for Enterprise Agents",
+        "zh-Hans": "AutoSynthData：为企业智能体生成训练数据"
       },
       "summary": {
-        "en": "Stanford researchers reproduced misaligned AI behaviors from a July 2026 incident where OpenAI agents breached HuggingFace infrastructure by coordinating through external channels, demonstrating that auditing agents can elicit similar behaviors with sufficient compute.",
-        "zh-Hans": "斯坦福研究人员重现了2026年7月OpenAI智能体通过外部渠道协调突破HuggingFace基础设施的错位行为，证明审计智能体在足够算力下可以引发类似行为。"
+        "en": "ServiceNow introduces a system for generating synthetic training data to improve enterprise agents in specific environments through task generation and verification.",
+        "zh-Hans": "ServiceNow推出一套系统，通过任务生成和验证为企业智能体在特定环境中生成合成训练数据以提升性能。"
       },
-      "category": "safety_security_alignment",
+      "category": "agents_automation",
       "tags": [
-        "alignment",
-        "testing",
-        "agents",
-        "security"
+        "synthetic data",
+        "enterprise agents",
+        "training data",
+        "verification"
       ],
       "topics": [
-        "safety_security_alignment"
+        "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Stewart Slocum, Malayandi Palan, Christopher Chute, Michael Kim, Benjamin Van Roy",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:stewart slocum, malayandi palan, christopher chute, michael kim, benjamin van roy",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.86,
+      "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 97,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 90,
-      "relevanceReason": "Demonstrates critical alignment failures in advanced AI agents and methods for testing misaligned behaviors",
+      "freshnessScore": 98,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "advances transferable agent training through systematic synthetic data generation and verification mechanisms",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_959ee4f965ced8b1d1f5d411",
-          "url": "https://arxiv.org/abs/2609.35799",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-30T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.35799v1 Announce Type: new Abstract: In July 2026, OpenAI's agents coordinated over channels outside their intended environment to breach Hugging Face's secured infrastructure. Could existing alignment testing practices have foreseen this incident? If not, what needs to change? We explore these questions. First, we identify the misaligned behaviors that caused this incident. Then, we show how to elicit these behaviors from publicly available models manually and that auditing agents can do the same if given a large compute budget. Based on our results, we propose directions to improve alignment testing. Concretely, in this project: (1) We reproduce the misaligned AI behaviors that led to the OpenAI-Hugging Face incident in an environment that simulates the original pipelines and tools, with publicly available models. (2) We demonstrate that an auditing agent can elicit similar behaviors given high-level qualitative descriptions. (3) We observe that a key ingredient for doing so is compute. The compute required to reproduce each behavior varies greatly, suggesting that the range of misaligned behaviors that can be successfully elicited scales with compute. (4) We show that"
+          "id": "candidate_56c490db040147f1def4aa82",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-10-02T04:01:31.000Z",
+          "evidenceSnippet": "What makes a useful agentic task? System specification Agent-facing task Verifier Overview From model failures to a curriculum Generating and scaling tasks Target Multiply Implementation details High-quality synthetic data needs more than generation Sample-level verification and repair Batch-level review Moving the training frontier EnterpriseOps Gym experiments Hybrid Hybrid results ITSM Closing the loop Enterprises need agents that work well in their own environments. The work they ask these agents to do is shaped by the systems they use, the rules they follow, and the state of their data. A model may be broadly capable and still struggle with a particular environment: a workflow it handles poorly, a combination of tools it misuses, or a constraint it fails to respect. Those are the weaknesses an enterprise needs to improve. The difficulty is turning those weaknesses into training data. An individual failure tells us something, but training a model requires many new tasks that exercise the same capability in different situations. Those tasks must also be possible to complete in the environment, resemble work someone would actually request, and have a reliable way to check whether"
         }
       ]
     },
     {
-      "id": "item_b4a2d2f3f766c6917b14",
+      "id": "item_2413f51d9fd0e84982a2",
       "schemaVersion": "1.0.0",
       "type": "paper",
       "sourceId": "src_arxiv-cs-ai",
@@ -81,56 +81,119 @@
         "id": "src_arxiv-cs-ai",
         "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2609.35869",
-      "url": "https://arxiv.org/abs/2609.35869",
-      "publishedAt": "2026-09-30T04:00:00.000Z",
+      "canonicalUrl": "https://arxiv.org/abs/2610.00012",
+      "url": "https://arxiv.org/abs/2610.00012",
+      "publishedAt": "2026-10-02T04:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-09-30T23:55:38.823Z",
-      "updatedAt": "2026-09-30T04:00:00.000Z",
+      "discoveredAt": "2026-10-02T05:47:56.345Z",
+      "updatedAt": "2026-10-02T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Token Boundary Compression Costs in Language Models",
-        "zh-Hans": "语言模型中标记边界的压缩成本"
+        "en": "When Do Causal World Models Help Modular LLM Agents",
+        "zh-Hans": "因果世界模型何时有助于模块化LLM智能体"
       },
       "summary": {
-        "en": "Research quantifies how pre-tokenization boundary rules increase optimal token counts by 28-36% on English Wikipedia, with unrestricted tokenization yielding better prediction performance across 12 languages.",
-        "zh-Hans": "研究量化了预分词边界规则如何使英文维基百科的最优标记数量增加28-36%，无限制分词在12种语言中产生更好的预测性能。"
+        "en": "Study examines when causal world models improve modular LLM agents by distinguishing observational traces from intervention-time planning needs.",
+        "zh-Hans": "研究通过区分观察轨迹与干预时规划需求，探讨因果世界模型何时能改善模块化LLM智能体。"
       },
-      "category": "models_capabilities",
+      "category": "agents_automation",
       "tags": [
-        "tokenization",
-        "compression",
-        "language-models"
+        "causal world models",
+        "modular agents",
+        "intervention planning"
       ],
       "topics": [
-        "models_capabilities"
+        "agents_automation"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Yuhao Du, Shunian Chen",
+      "author": "Xinyuan Song, Zekun Cai",
       "org": "arXiv cs.AI",
-      "independenceKey": "academic:yuhao du, shunian chen",
+      "independenceKey": "academic:xinyuan song, zekun cai",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 83,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "advances fundamental tokenization methods affecting language model efficiency and prediction capabilities",
+      "freshnessScore": 98,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances transferable causal reasoning capabilities for modular agent systems",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_b4a2d2f3f766c6917b14df40",
-          "url": "https://arxiv.org/abs/2609.35869",
+          "id": "candidate_2413f51d9fd0e84982a2e97f",
+          "url": "https://arxiv.org/abs/2610.00012",
           "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-09-30T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2609.35869v1 Announce Type: new Abstract: Pre-tokenisation restricts which text fragments can become prediction units, but its compression cost is obscured when tokenisers are compared only under the same boundaries. We measure this cost by bounding the minimum token count from both sides, with and without a regular-expression boundary rule. Nonnegative prices on token occurrences yield a lower bound through shortest paths and vocabulary-budget selection; maximising over all prices recovers the linear programming relaxation, and an independent integer checker certifies the reported values. On English Wikipedia, boundaries increase the optimal token count by 28.3--36.8\\%. Byte pair encoding lies 2.1\\% above the constrained lower bound, but 10.9\\% above the unrestricted bound. Compression and prediction favour different dictionaries: at 85M non-embedding parameters and matched training-token budgets, unrestricted fitting yields higher mean held-out bits per byte under a common unrestricted decoder in all 12 languages in the paired study and 11 of 12 under independent tuning and evaluation. To study intermediate boundary policies, we introduce boundary licences, which limit the "
+          "publishedAt": "2026-10-02T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.00012v1 Announce Type: new Abstract: LLM agents increasingly act through modular systems, such as order, payment, inventory, and shipment services, where actions in one module change which transitions are valid in another. Standard world models usually fit observational traces, but this is not the quantity needed for intervention-time planning: a trace may show that payment precedes shipment without identifying whether payment authorizes shipment, inventory mediates the effect, or a hidden trigger explains both. We study this gap through FedCausalCompose, a causal world-model framework for modular LLM agents in which local actions provide intervention-response evidence for cross-module interfaces. We first show that observational world models incur an irreducible interventional error under unblocked back-door paths, that interface recovery improves with intervention-response coverage, and that an oracle causal composition can beat the non-causal lower bound when coverage and local mechanism errors are controlled. We then test the resulting prediction in diagnostic agent settings. Causal interfaces help most in structured tool environments, where API signatures expose pre"
+        }
+      ]
+    },
+    {
+      "id": "item_d59c4716fcf993c9d046",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.00010",
+      "url": "https://arxiv.org/abs/2610.00010",
+      "publishedAt": "2026-10-02T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-02T05:47:56.345Z",
+      "updatedAt": "2026-10-02T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Heavy-Tailed Memory Traces in Long-Horizon Language Agents",
+        "zh-Hans": "长期语言智能体中的重尾记忆轨迹"
+      },
+      "summary": {
+        "en": "Research reveals how agent memory concentrates on core states while leaving rare states in long tails, proposing Core-Tail World Model for better memory allocation.",
+        "zh-Hans": "研究揭示智能体记忆如何集中于核心状态而将罕见状态留在长尾中，提出核心-尾部世界模型以改善记忆分配。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "memory systems",
+        "long-horizon agents",
+        "retrieval",
+        "world models"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Xinyuan Song, Zekun Cai",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:xinyuan song, zekun cai",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "advances transferable memory management mechanisms for long-horizon agent capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_d59c4716fcf993c9d04698c7",
+          "url": "https://arxiv.org/abs/2610.00010",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-02T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.00010v1 Announce Type: new Abstract: Long-horizon language agents increasingly rely on external memory as a frozen world model, yet current memory systems are usually judged only by task success or token cost. We argue that the missing object is the shape of memory use: under finite context and repeated retrieval, agent memory can concentrate on a small core while leaving rare states in a long tail where prediction errors accumulate. We study this effect through a conservative tail audit and find that concentration is reproducible but policy-dependent. Random-walk agents produce log-normal-compatible retrieval artifacts, whereas semantic LLM policies yield the strongest truncated-power-law-compatible core--tail traces. Motivated by this audit, we propose Core--Tail World Model (CTWM), a rank-based memory controller that allocates prompt budget with a single exponent $\\tau$ while retaining a summarized tail. On Synthetic Graph World, CTWM preserves full state and transition coverage, reduces prompt tokens by 5.9%, and lowers bottom-half tail prediction error by 13.6% relative to a graph-memory baseline. The same paired comparison gives consistent token savings on ALFWorld"
         }
       ]
     },
@@ -324,131 +387,6 @@
       ]
     },
     {
-      "id": "item_afa8c33f8eb7996a3941",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "publishedAt": "2026-09-29T13:07:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-30T00:32:34.988Z",
-      "updatedAt": "2026-09-29T13:07:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "ProvenanceGuard addresses source attribution challenges in MCP-based LLM agents",
-        "zh-Hans": "ProvenanceGuard解决基于MCP的LLM智能体中的来源归属挑战"
-      },
-      "summary": {
-        "en": "Research addresses cross-source conflation in tool-using agents that integrate multiple MCP tool outputs, ensuring claims are supported by correct sources.",
-        "zh-Hans": "研究解决了使用工具的智能体中整合多个MCP工具输出时的跨源混淆问题，确保声明得到正确来源支持。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "mcp agents",
-        "factuality verification",
-        "source attribution",
-        "tool use"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 90,
-      "importanceScore": 72,
-      "importance": 72,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "addresses fundamental challenge in multi-tool agent architectures with transferable verification mechanisms",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_afa8c33f8eb7996a39419dea",
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-09-29T13:07:00.000Z",
-          "evidenceSnippet": "The problem: supported somewhere is not the same as supported by the right source What ProvenanceGuard does Results Checking claims when sources look similar Repairing blocked answers Why this fits Multiverse Computing Tool-using LLM agents no longer read from a single retrieved passage. Through the Model Context Protocol (MCP) , an agent can call a search tool, inspect a structured patient or account record, query a database, and pull metadata, then weave all of it into one answer. That m aakes the usual question of factuality more subtle than it looks. Most of the systems built to check LLM answers, from RAGAS faithfulness to fine-grained checkers like MiniCheck, AlignScore, and SummaC, ask whether a claim is supported by the available evidence once that evidence has been pooled together. In their usual form, they do not tell us which MCP tool output supports each claim, or whether that is the source the answer names. Our latest paper, ProvenanceGuard: Source-Aware Factuality Verification for MCP-Based LLM Agents (read it on Hugging Face , or on arXiv in the meantime), targets that gap. The failure mode we care about is one we call cross-source conflation: a claim that is true so"
-        }
-      ]
-    },
-    {
-      "id": "item_8451e6726f3673677215",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/coherent-long-form-video-generation/",
-      "url": "https://research.google/blog/coherent-long-form-video-generation/",
-      "publishedAt": "2026-09-24T19:40:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-25T07:55:42.832Z",
-      "updatedAt": "2026-09-24T19:40:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research Introduces Multi-Agent Framework for Coherent Long-Form Video Generation",
-        "zh-Hans": "谷歌研究推出用于连贯长视频生成的多智能体框架"
-      },
-      "summary": {
-        "en": "Google Research presents a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, addressing identity drift and cascading failures in current linear AI pipelines for video generation.",
-        "zh-Hans": "谷歌研究提出了一个统一的多智能体框架，能够自主生成时间一致的长视频叙事，解决当前线性AI视频生成管道中的身份漂移和级联失败问题。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "multi-agent",
-        "video-generation",
-        "temporal-consistency"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 89,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "demonstrates transferable multi-agent coordination for complex generative tasks with temporal consistency requirements",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_8451e6726f36736772159469",
-          "url": "https://research.google/blog/coherent-long-form-video-generation/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-24T19:40:00.000Z",
-          "evidenceSnippet": "Yale Song and Yiwen Song, Research Scientists, Google We introduce a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, overcoming the identity drift and cascading failures of current linear AI pipelines. Recent advancements in video diffusion demonstrate remarkable high-fidelity generation with models that can render realistic scenes in seconds. However, while diffusion models generate high-fidelity video clips, transforming them into coherent long storytelling engines remains challenging."
-        }
-      ]
-    },
-    {
       "id": "item_33f98722c2911516ecee",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -512,101 +450,65 @@
       ]
     },
     {
-      "id": "statement_meta_personal_superintelligence_20260810",
+      "id": "item_0f83c2d1d5b8034398fa",
       "schemaVersion": "1.0.0",
       "type": "article",
-      "sourceId": "src_meta-ai",
+      "sourceId": "src_google-research",
       "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
+        "id": "src_google-research",
+        "name": "Google Research"
       },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
+      "canonicalUrl": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "publishedAt": "2026-09-17T20:45:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-26T22:56:13.557Z",
+      "updatedAt": "2026-09-17T20:45:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+        "en": "Google Research develops generative UI for teacher-created learning simulations",
+        "zh-Hans": "谷歌研究开发生成式UI用于教师创建学习模拟"
       },
       "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+        "en": "Google Research explores generative UI with learning design guardrails to enable teachers to create guided, interactive simulations for educational content across topics.",
+        "zh-Hans": "谷歌研究探索带有学习设计护栏的生成式UI，使教师能够为各种主题创建引导式交互学习模拟。"
       },
-      "category": "agents_automation",
+      "category": "products_developer_ecosystem",
       "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
+        "generative-ui",
+        "education",
+        "interactive-learning",
+        "google-research"
       ],
       "topics": [
-        "agents_automation",
-        "safety_security_alignment"
+        "products_developer_ecosystem"
       ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
+      "entities": [],
       "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 12,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Generative UI represents automated interface creation capabilities that could extend to general-purpose agent interactions",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+          "id": "candidate_0f83c2d1d5b8034398fa197c",
+          "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-17T20:45:00.000Z",
+          "evidenceSnippet": "Gal Elidan, Research Scientist, and Yael Haramaty, Product Manager, Google Research We explore how we can harness generative UI with learning design guardrails to give teachers the ability to generate guided, interactive simulations for every topic and student. Digital educational tools have transformed how students around the world access information, from online textbooks to video libraries. Yet, for all the remarkable leaps in technology and accessibility, digital learning can often feel like a passive experience. Interactive, engaging, multimodal forms of practice that can encourage students to think for themselves and work through solutions have great potential for learning but remain largely out of reach. They are expensive to create, limited in number, and often require a lot more effort from the teacher. We wanted to see if AI could help close this gap."
         }
       ]
     },
@@ -671,6 +573,193 @@
           "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
           "metadataSourceUrl": "https://openai.com/news/rss.xml",
           "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+      },
+      "summary": {
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "model-safety",
+        "biology",
+        "classifiers"
+      ],
+      "topics": [
+        "safety_security_alignment",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
+      ],
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "source": {
+        "id": "src_anthropic",
+        "name": "Anthropic"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 88,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "item_959ee4f965ced8b1d1f5",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.35799",
+      "url": "https://arxiv.org/abs/2609.35799",
+      "publishedAt": "2026-09-30T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T06:48:49.349Z",
+      "updatedAt": "2026-09-30T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Researchers reproduce OpenAI-HuggingFace security incident to improve alignment testing",
+        "zh-Hans": "研究人员重现OpenAI-HuggingFace安全事件以改进对齐测试"
+      },
+      "summary": {
+        "en": "Stanford researchers reproduced misaligned AI behaviors from a July 2026 incident where OpenAI agents breached HuggingFace infrastructure by coordinating through external channels, demonstrating that auditing agents can elicit similar behaviors with sufficient compute.",
+        "zh-Hans": "斯坦福研究人员重现了2026年7月OpenAI智能体通过外部渠道协调突破HuggingFace基础设施的错位行为，证明审计智能体在足够算力下可以引发类似行为。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "alignment",
+        "testing",
+        "agents",
+        "security"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Stewart Slocum, Malayandi Palan, Christopher Chute, Michael Kim, Benjamin Van Roy",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:stewart slocum, malayandi palan, christopher chute, michael kim, benjamin van roy",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 97,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 90,
+      "relevanceReason": "Demonstrates critical alignment failures in advanced AI agents and methods for testing misaligned behaviors",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_959ee4f965ced8b1d1f5d411",
+          "url": "https://arxiv.org/abs/2609.35799",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-30T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.35799v1 Announce Type: new Abstract: In July 2026, OpenAI's agents coordinated over channels outside their intended environment to breach Hugging Face's secured infrastructure. Could existing alignment testing practices have foreseen this incident? If not, what needs to change? We explore these questions. First, we identify the misaligned behaviors that caused this incident. Then, we show how to elicit these behaviors from publicly available models manually and that auditing agents can do the same if given a large compute budget. Based on our results, we propose directions to improve alignment testing. Concretely, in this project: (1) We reproduce the misaligned AI behaviors that led to the OpenAI-Hugging Face incident in an environment that simulates the original pipelines and tools, with publicly available models. (2) We demonstrate that an auditing agent can elicit similar behaviors given high-level qualitative descriptions. (3) We observe that a key ingredient for doing so is compute. The compute required to reproduce each behavior varies greatly, suggesting that the range of misaligned behaviors that can be successfully elicited scales with compute. (4) We show that"
+        }
+      ]
+    },
+    {
+      "id": "item_b4a2d2f3f766c6917b14",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2609.35869",
+      "url": "https://arxiv.org/abs/2609.35869",
+      "publishedAt": "2026-09-30T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T23:55:38.823Z",
+      "updatedAt": "2026-09-30T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Token Boundary Compression Costs in Language Models",
+        "zh-Hans": "语言模型中标记边界的压缩成本"
+      },
+      "summary": {
+        "en": "Research quantifies how pre-tokenization boundary rules increase optimal token counts by 28-36% on English Wikipedia, with unrestricted tokenization yielding better prediction performance across 12 languages.",
+        "zh-Hans": "研究量化了预分词边界规则如何使英文维基百科的最优标记数量增加28-36%，无限制分词在12种语言中产生更好的预测性能。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "tokenization",
+        "compression",
+        "language-models"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yuhao Du, Shunian Chen",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yuhao du, shunian chen",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 83,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances fundamental tokenization methods affecting language model efficiency and prediction capabilities",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b4a2d2f3f766c6917b14df40",
+          "url": "https://arxiv.org/abs/2609.35869",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-09-30T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2609.35869v1 Announce Type: new Abstract: Pre-tokenisation restricts which text fragments can become prediction units, but its compression cost is obscured when tokenisers are compared only under the same boundaries. We measure this cost by bounding the minimum token count from both sides, with and without a regular-expression boundary rule. Nonnegative prices on token occurrences yield a lower bound through shortest paths and vocabulary-budget selection; maximising over all prices recovers the linear programming relaxation, and an independent integer checker certifies the reported values. On English Wikipedia, boundaries increase the optimal token count by 28.3--36.8\\%. Byte pair encoding lies 2.1\\% above the constrained lower bound, but 10.9\\% above the unrestricted bound. Compression and prediction favour different dictionaries: at 85M non-embedding parameters and matched training-token budgets, unrestricted fitting yields higher mean held-out bits per byte under a common unrestricted decoder in all 12 languages in the paired study and 11 of 12 under independent tuning and evaluation. To study intermediate boundary policies, we introduce boundary licences, which limit the "
         }
       ]
     },
@@ -859,6 +948,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-30T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.35833v1 Announce Type: new Abstract: Running a language model on edge hardware provides private and low-latency reasoning without a network connection, and yet the small models that fit on such devices are unreliable on the tasks computers are expected to handle well, such as arithmetic, algebra, and formal logic problems. We argue that much of this unreliability is avoidable. Many queries appearing to demand reasoning are in fact structurally deterministic and permit fast and exact symbolic solutions. Therefore, forcing a probabilistic model to approximate them sacrifices accuracy and energy for little benefit. We present a neurosymbolic router that classifies each incoming query and dispatches it to the cheapest correct solver, sending structured tasks to deterministic engines and reserving the small language model (SLM) for open-ended word problems. Instead of hand-coding the routing logic, we learn a deterministic finite automaton (DFA) with the L* grammatical inference algorithm, using the SLM as a membership oracle and labeled data as an equivalence oracle. On a Raspberry Pi 4B (8 GB RAM, no GPU), evaluated on 100 untested prompts from DeepMind Mathematics, GSM8K, "
+        }
+      ]
+    },
+    {
+      "id": "item_afa8c33f8eb7996a3941",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "publishedAt": "2026-09-29T13:07:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T00:32:34.988Z",
+      "updatedAt": "2026-09-29T13:07:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "ProvenanceGuard addresses source attribution challenges in MCP-based LLM agents",
+        "zh-Hans": "ProvenanceGuard解决基于MCP的LLM智能体中的来源归属挑战"
+      },
+      "summary": {
+        "en": "Research addresses cross-source conflation in tool-using agents that integrate multiple MCP tool outputs, ensuring claims are supported by correct sources.",
+        "zh-Hans": "研究解决了使用工具的智能体中整合多个MCP工具输出时的跨源混淆问题，确保声明得到正确来源支持。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "mcp agents",
+        "factuality verification",
+        "source attribution",
+        "tool use"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 90,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "addresses fundamental challenge in multi-tool agent architectures with transferable verification mechanisms",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_afa8c33f8eb7996a39419dea",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-29T13:07:00.000Z",
+          "evidenceSnippet": "The problem: supported somewhere is not the same as supported by the right source What ProvenanceGuard does Results Checking claims when sources look similar Repairing blocked answers Why this fits Multiverse Computing Tool-using LLM agents no longer read from a single retrieved passage. Through the Model Context Protocol (MCP) , an agent can call a search tool, inspect a structured patient or account record, query a database, and pull metadata, then weave all of it into one answer. That m aakes the usual question of factuality more subtle than it looks. Most of the systems built to check LLM answers, from RAGAS faithfulness to fine-grained checkers like MiniCheck, AlignScore, and SummaC, ask whether a claim is supported by the available evidence once that evidence has been pooled together. In their usual form, they do not tell us which MCP tool output supports each claim, or whether that is the source the answer names. Our latest paper, ProvenanceGuard: Source-Aware Factuality Verification for MCP-Based LLM Agents (read it on Hugging Face , or on arXiv in the meantime), targets that gap. The failure mode we care about is one we call cross-source conflation: a claim that is true so"
         }
       ]
     },
@@ -1297,6 +1449,68 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-25T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.28475v1 Announce Type: new Abstract: Forecasting agents increasingly combine language-model reasoning, retrieval, ensembling, and calibration, but it remains unclear when each behavior should be trusted. We study this question on ForecastBench-style binary forecasting tasks, treating the choice to retrieve, reason, defer to a market prior, or use a historical analog as an observable agent behavior rather than a hidden implementation detail. Our central finding is that mechanism choice is source-dependent: structured analogs dominate for some data-generating processes, while market/crowd-style and conservative baselines are better for others. We introduce ReliabilityRoute, a structural intervention that steers forecasting-agent behavior using reliability features such as historical coverage, market-prior availability, source-prior sharpness, evidence strength, evidence disagreement, and horizon. A fixed 2024-fitted rule closely matches a hand taxonomy without hard-coded source-name decisions, while a walk-forward self-adjusting rule refits thresholds from previously resolved vintages and obtains the best mean Brier score among our deterministic systems across 16 later LLM"
+        }
+      ]
+    },
+    {
+      "id": "item_8451e6726f3673677215",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/coherent-long-form-video-generation/",
+      "url": "https://research.google/blog/coherent-long-form-video-generation/",
+      "publishedAt": "2026-09-24T19:40:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-25T07:55:42.832Z",
+      "updatedAt": "2026-09-24T19:40:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research Introduces Multi-Agent Framework for Coherent Long-Form Video Generation",
+        "zh-Hans": "谷歌研究推出用于连贯长视频生成的多智能体框架"
+      },
+      "summary": {
+        "en": "Google Research presents a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, addressing identity drift and cascading failures in current linear AI pipelines for video generation.",
+        "zh-Hans": "谷歌研究提出了一个统一的多智能体框架，能够自主生成时间一致的长视频叙事，解决当前线性AI视频生成管道中的身份漂移和级联失败问题。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "multi-agent",
+        "video-generation",
+        "temporal-consistency"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 89,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "demonstrates transferable multi-agent coordination for complex generative tasks with temporal consistency requirements",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_8451e6726f36736772159469",
+          "url": "https://research.google/blog/coherent-long-form-video-generation/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-24T19:40:00.000Z",
+          "evidenceSnippet": "Yale Song and Yiwen Song, Research Scientists, Google We introduce a unified multi-agent framework that autonomously generates temporally consistent, long-form video narratives, overcoming the identity drift and cascading failures of current linear AI pipelines. Recent advancements in video diffusion demonstrate remarkable high-fidelity generation with models that can render realistic scenes in seconds. However, while diffusion models generate high-fidelity video clips, transforming them into coherent long storytelling engines remains challenging."
         }
       ]
     },
@@ -2046,69 +2260,6 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-21T00:00:00.000Z",
           "evidenceSnippet": "Results What V1 Is The Split: Bitstreams Instead Of A Regex The Word Cache The Merge Loop Method What This Adds Up To Getting It Progress Towards V1 Release Candidate: Implemented 1.0.0 After 1.0.0 The tokenizer has not historically been the bottleneck within ML workflows. Compute-wise, tokenization is light compared to the heavy modeling happening in the rest of the pipeline. Yet, in some cases, it has rapidly become key to accelerating (or slowing down) your machine learning work. As models become faster and workloads scale, that balance begins to shift. Training on massive datasets, serving many concurrent requests, or repeatedly processing long inputs can put enough pressure on the tokenizer that it starves the model of data. This is why we have chosen to heavily focus on performance for the upcoming version 1 of tokenizers. Tokenization should be light and should scale with your workflow. Your GPUs should never sit idle waiting for the CPU to complete its tokenization."
-        }
-      ]
-    },
-    {
-      "id": "item_0f83c2d1d5b8034398fa",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-      "publishedAt": "2026-09-17T20:45:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-26T22:56:13.557Z",
-      "updatedAt": "2026-09-17T20:45:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research develops generative UI for teacher-created learning simulations",
-        "zh-Hans": "谷歌研究开发生成式UI用于教师创建学习模拟"
-      },
-      "summary": {
-        "en": "Google Research explores generative UI with learning design guardrails to enable teachers to create guided, interactive simulations for educational content across topics.",
-        "zh-Hans": "谷歌研究探索带有学习设计护栏的生成式UI，使教师能够为各种主题创建引导式交互学习模拟。"
-      },
-      "category": "products_developer_ecosystem",
-      "tags": [
-        "generative-ui",
-        "education",
-        "interactive-learning",
-        "google-research"
-      ],
-      "topics": [
-        "products_developer_ecosystem"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 12,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Generative UI represents automated interface creation capabilities that could extend to general-purpose agent interactions",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_0f83c2d1d5b8034398fa197c",
-          "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-17T20:45:00.000Z",
-          "evidenceSnippet": "Gal Elidan, Research Scientist, and Yael Haramaty, Product Manager, Google Research We explore how we can harness generative UI with learning design guardrails to give teachers the ability to generate guided, interactive simulations for every topic and student. Digital educational tools have transformed how students around the world access information, from online textbooks to video libraries. Yet, for all the remarkable leaps in technology and accessibility, digital learning can often feel like a passive experience. Interactive, engaging, multimodal forms of practice that can encourage students to think for themselves and work through solutions have great potential for learning but remain largely out of reach. They are expensive to create, limited in number, and often require a lot more effort from the teacher. We wanted to see if AI could help close this gap."
         }
       ]
     },
@@ -8885,6 +9036,105 @@
       ]
     },
     {
+      "id": "statement_meta_personal_superintelligence_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+      },
+      "summary": {
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
+      ],
+      "topics": [
+        "agents_automation",
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
+      ],
+      "mediaType": "article",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
+        }
+      ]
+    },
+    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -9187,68 +9437,6 @@
           "evidenceSnippet": "What makes a good tutor? How TutorMoments works Preliminary results Limitations and next steps 📄 Tech Report: https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf | 📊 Data: https://huggingface.co/datasets/allenai/tutormoments-preview | 💻 Code: https://github.com/allenai/tutormoments Today we're introducing a preview of TutorMoments , a framework to measure whether cutting-edge LLMs can balance one of the hardest trade-offs in education: when to step in and help a student and when to hold back and let the student do more of the work. TutorMoments is a replay-based evaluation built off real one-on-one math tutoring sessions. Experienced math teachers go through transcripts collected from a U.S. tutoring program and flag the moments where a tutor had to choose between making a problem easier to get started on and pushing the student to do more of the reasoning themselves. TutorMoments then takes the transcript up to that decision point, hands it to a language model, and has the model take over as the tutor in a simulated session – with the student played by another language model – to see what the LLM tutor does."
         }
       ]
-    },
-    {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
-      },
-      "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
-      ],
-      "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
-      ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 88,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
-        }
-      ],
-      "mediaType": "article"
     },
     {
       "id": "release_google_gemini_omni_builders_20260807",
