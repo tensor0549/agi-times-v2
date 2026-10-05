@@ -7,8 +7,134 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-10-05T07:09:41.207Z",
+  "generatedAt": "2026-10-05T22:43:30.853Z",
   "items": [
+    {
+      "id": "item_7eeb0a9dde53453907ec",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
+      "url": "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
+      "publishedAt": "2026-10-05T21:08:31.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-05T22:43:15.165Z",
+      "updatedAt": "2026-10-05T21:08:31.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research identifies open problems in agentic privacy and security",
+        "zh-Hans": "谷歌研究确定智能体隐私和安全的开放问题"
+      },
+      "summary": {
+        "en": "Google Research releases workshop report on contextual behavioral norms for AI agents, outlining research directions across system, model, and user levels as computing transitions to autonomous agents driven by LLMs.",
+        "zh-Hans": "谷歌研究发布关于AI智能体情境行为规范的研讨会报告，概述了系统、模型和用户层面的研究方向，应对向LLM驱动的自主智能体计算转型。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "privacy",
+        "security",
+        "contextual-integrity",
+        "autonomous-agents"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "addresses fundamental challenges in autonomous agent behavior and contextual appropriateness for general AI systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_7eeb0a9dde53453907ecbc46",
+          "url": "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-10-05T21:08:31.000Z",
+          "evidenceSnippet": "Eugene Bagdasarian, Research Scientist, and Marco Gruteser, Principal Scientist, Google Research To be useful, AI agents must understand and be constrained by contextual behavioral norms to ensure they act appropriately. Inspired by the theory of Contextual Integrity, our new workshop report outlines key open research directions across system, model, and user levels to build AI agents users can trust. We're rapidly transitioning to a computing landscape defined by highly general, increasingly autonomous agents . Driven by large language models (LLMs) that can dynamically generate plans and invoke external tools, these systems offer the potential for AI to seamlessly handle complex, multi-step tasks on our behalf. However, realizing this potential requires solving a key challenge: enabling agent capability while ensuring that agents act appropriately."
+        }
+      ]
+    },
+    {
+      "id": "item_5fd89b8ccb4f8ef45b6c",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.02300",
+      "url": "https://arxiv.org/abs/2610.02300",
+      "publishedAt": "2026-10-05T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-05T22:43:15.165Z",
+      "updatedAt": "2026-10-05T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "CALM method improves text-to-image safety through local counterfactual correction",
+        "zh-Hans": "CALM方法通过局部反事实修正改进文本到图像安全性"
+      },
+      "summary": {
+        "en": "Researchers propose CALM, a training-free safeguard that uses prompt-local counterfactual correction instead of global unsafe signal removal, improving unsafe content suppression while preserving benign utility in text-to-image generation.",
+        "zh-Hans": "研究人员提出CALM，一种免训练安全防护方法，使用提示局部反事实修正而非全局不安全信号移除，在文本到图像生成中改善不安全内容抑制同时保持良性效用。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "text-to-image",
+        "safety",
+        "training-free",
+        "counterfactual-correction"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "NaHyeon Park, Minhyun Lee, Hyunjung Shim",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:nahyeon park, minhyun lee, hyunjung shim",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 84,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances safety mechanisms for generative AI models through novel geometric analysis and counterfactual approaches",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5fd89b8ccb4f8ef45b6c4ebf",
+          "url": "https://arxiv.org/abs/2610.02300",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-05T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.02300v1 Announce Type: new Abstract: Training-free safeguards for text-to-image generation often rely on a reusable safety signal, such as an unsafe direction or global toxic subspace, applied broadly across prompts. We provide a controlled geometric analysis of this global-unsafety assumption and reveal a consistent coverage-selectivity trade-off: compact unsafe subspaces fail to cover heterogeneous unsafe semantics, whereas broader aggregation increasingly distorts safety-adjacent benign prompts. Motivated by this finding, we propose CALM (Counterfactual Adaptive Local Modulation), a training-free safeguard that replaces uniform global removal with prompt-local counterfactual correction. Using matched unsafe-benign anchors, CALM routes each prompt to active unsafe categories, minimally edits only violating token representations toward the safe side, and suppresses positively aligned unsafe residual components. Across broad evaluation, CALM significantly improves unsafe content suppression while preserving benign utility, demonstrating that local counterfactual correction provides a more selective alternative to global unsafe signal removal."
+        }
+      ]
+    },
     {
       "id": "item_bc14691a892bd7c7add9",
       "schemaVersion": "1.0.0",
@@ -68,68 +194,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-10-05T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2610.02260v1 Announce Type: new Abstract: Flow matching models excel at generative modeling, and many downstream applications require their samples to satisfy prescribed constraints, such as observed measurements and physical laws. However, existing constrained samplers often face a trade-off: \\textit{enforcing constraints can substantially displace samples from the pretrained data distribution}. To address this trade-off, we introduce \\textbf{MintFlow}, a training-free constrained sampling framework that formulates constraint enforcement as a minimal intervention on the pretrained flow trajectory. MintFlow seeks the minimal perturbation of an intermediate flow state such that its subsequent evolution under the pretrained flow field satisfies the target constraint. By minimally perturbing the flow state while keeping the pretrained flow field unchanged, MintFlow enforces the constraint while minimizing unnecessary deviation from the pretrained distribution. An adjoint formulation yields a closed-form expression for this perturbation, eliminating expensive iterative optimization. Furthermore, MintFlow adaptively selects the intervention time to balance the required perturbatio"
-        }
-      ]
-    },
-    {
-      "id": "item_4d611d68a5a28f312281",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2610.02267",
-      "url": "https://arxiv.org/abs/2610.02267",
-      "publishedAt": "2026-10-05T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-10-05T07:09:19.816Z",
-      "updatedAt": "2026-10-05T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Fast Models, Slow Evidence: Evaluation of System-1 Decision Models for LLM Agent Harnesses",
-        "zh-Hans": "快速模型，缓慢证据：LLM智能体框架中系统1决策模型的评估"
-      },
-      "summary": {
-        "en": "Evaluation of System-1 decision models for agent harnesses across 11 decision points, showing significant accuracy differences between models and limitations in zero-shot routing.",
-        "zh-Hans": "对智能体框架中系统1决策模型在11个决策点的评估，显示模型间显著的准确性差异和零样本路由的局限性。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "agent harnesses",
-        "system-1 models",
-        "decision making"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Jiawei Li",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:jiawei li",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 97,
-      "importanceScore": 72,
-      "importance": 72,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "evaluates decision-making components critical for agent system optimization and efficiency",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_4d611d68a5a28f312281b92e",
-          "url": "https://arxiv.org/abs/2610.02267",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-10-05T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2610.02267v1 Announce Type: new Abstract: Agent harnesses make many small, typed decisions per task: which model to call, which tool to use, whether retrieved text is relevant, whether an input carries an injection. System-1 decision models answer such questions in a single forward pass with class probabilities, promising large cost and latency savings over LLM calls. We present a paired evaluation of an open-weight (Laya) and a hosted (Jev) System-1 model on 11 agent decision points built from 18 public sources: 7,283 base cases plus 6,640 robustness variants, with byte-identical inputs, paired tests, and cross-hardware and cross-day reproducibility checks. Jev is significantly more accurate on 9 of 11 decision points (+10.8 to +46.0 pp). Neither model beats chance on zero-shot model routing, and they tie on RAG relevance gating. Laya changes 30% of its answers when the option order is reversed and degrades sharply with many or similar candidates (31% at 50 nearest-neighbour tools, vs. 98% for Jev on items with a unique correct tool). We also audit our own pipeline. Three analysis errors and one design confound distorted headline deployment claims: an omitted pre-screen cost"
         }
       ]
     },
@@ -319,69 +383,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-10-02T14:57:41.000Z",
           "evidenceSnippet": "Katharine Daly, Software Engineer, and Daniel Ramage, Research Director, Google Research We announce a new Federated Learning system that provides externally verifiable privacy guarantees while shifting computation to the server to improve training speed, accuracy, and device coverage. In 2017, Google introduced Federated Learning (FL) a machine learning technique that trains models across decentralized, private data. It has been used to power everyday helpful features, including next-word prediction and Smart Compose on Gboard, reply suggestions in Google Messages, and Smart Text Selection in Android."
-        }
-      ]
-    },
-    {
-      "id": "item_5cc8f180d7d24936a059",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
-      "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
-      "publishedAt": "2026-09-29T18:38:27.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-30T00:32:34.988Z",
-      "updatedAt": "2026-09-29T18:38:27.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research introduces Diffusion Controller for precise image generation steering",
-        "zh-Hans": "谷歌研究推出扩散控制器实现精确图像生成引导"
-      },
-      "summary": {
-        "en": "Diffusion Controller is a lightweight steering network that attaches to closed-source models to improve prompt alignment without breaking baseline stability.",
-        "zh-Hans": "扩散控制器是一个轻量级引导网络，可附加到闭源模型以改善提示对齐而不破坏基线稳定性。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "diffusion",
-        "image generation",
-        "steering",
-        "prompt alignment"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 94,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "transferable steering mechanism for improving model controllability across different architectures",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_5cc8f180d7d24936a05928ca",
-          "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-09-29T18:38:27.000Z",
-          "evidenceSnippet": "Chih-wei Hsu and Moonkyung Ryu , Software Engineers, Google Research We introduce Diffusion Controller, a lightweight \"steering damper\" network that precisely steers image generation to achieve significantly better prompt alignment. It seamlessly attaches to even access-restricted, closed-source models, boosting image quality without breaking baseline stability. The rapid advancement of text-to-image AI models, such as Nano Banana , Stable Diffusion and Flux , has fundamentally transformed creative design, allowing anyone to synthesize photorealistic, high-fidelity images from textual descriptions. However, steering these massive models to meet precise user intent, downstream goals, or strict visual constraints remains a delicate and unpredictable balancing act. For example, imagine prompting a model for \"a lizard wearing sunglasses\". The model might generate a realistic lizard that's not wearing sunglasses. Alternatively, forcing the model to include the sunglasses might distort the lizard's face, ruining the image quality."
         }
       ]
     },
@@ -611,66 +612,131 @@
       ]
     },
     {
-      "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
+      "id": "release_meta_muse_glimmer_30b_20260810",
       "schemaVersion": "1.0.0",
       "type": "release",
-      "sourceId": "src_openai",
+      "sourceId": "src_meta-ai",
       "source": {
-        "id": "src_openai",
-        "name": "OpenAI"
+        "id": "src_meta-ai",
+        "name": "Meta"
       },
-      "canonicalUrl": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "publishedAt": "2026-08-10T10:00:00Z",
-      "discoveredAt": "2026-08-10T19:24:50.674Z",
-      "updatedAt": "2026-08-10T10:00:00Z",
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "OpenAI makes GPT-5.6-Cyber available for authorized cybersecurity research",
-        "zh-Hans": "OpenAI 推出 GPT-5.6-Cyber，用于经授权的网络安全研究"
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
       },
       "summary": {
-        "en": "OpenAI made its cybersecurity-specific GPT-5.6-Cyber model available through Daybreak Red for authorized vulnerability research, exploit validation and security testing.",
-        "zh-Hans": "OpenAI 通过 Daybreak Red 提供其网络安全专用模型 GPT-5.6-Cyber，用于开展经授权的漏洞研究、漏洞利用验证和安全测试。"
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
       },
-      "category": "safety_security_alignment",
+      "category": "agents_automation",
       "tags": [
-        "cybersecurity",
-        "authorized-access",
-        "model-release"
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
       ],
       "topics": [
-        "safety_security_alignment"
+        "agents_automation",
+        "models_capabilities"
       ],
       "entities": [
-        "OpenAI",
-        "GPT-5.6-Cyber",
-        "Daybreak Red"
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
       ],
-      "mediaType": "article",
-      "author": "OpenAI",
-      "org": "OpenAI",
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.98,
-      "freshnessScore": 76,
-      "importanceScore": 82,
-      "importance": 82,
-      "agiRelevanceScore": 74,
-      "relevanceReason": "A frontier-lab cybersecurity-specific model release is materially relevant to advanced capability access and misuse controls, without implying general AGI progress.",
-      "verification": "verified_first_party_feed",
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
       "featured": false,
       "citations": [
         {
-          "id": "cit_openai_daybreak_cyber_20260810",
-          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-10T10:00:00Z",
-          "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
-          "metadataSourceUrl": "https://openai.com/news/rss.xml",
-          "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+        }
+      ]
+    },
+    {
+      "id": "item_4d611d68a5a28f312281",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.02267",
+      "url": "https://arxiv.org/abs/2610.02267",
+      "publishedAt": "2026-10-05T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-05T07:09:19.816Z",
+      "updatedAt": "2026-10-05T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Fast Models, Slow Evidence: Evaluation of System-1 Decision Models for LLM Agent Harnesses",
+        "zh-Hans": "快速模型，缓慢证据：LLM智能体框架中系统1决策模型的评估"
+      },
+      "summary": {
+        "en": "Evaluation of System-1 decision models for agent harnesses across 11 decision points, showing significant accuracy differences between models and limitations in zero-shot routing.",
+        "zh-Hans": "对智能体框架中系统1决策模型在11个决策点的评估，显示模型间显著的准确性差异和零样本路由的局限性。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent harnesses",
+        "system-1 models",
+        "decision making"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Jiawei Li",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:jiawei li",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 97,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "evaluates decision-making components critical for agent system optimization and efficiency",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_4d611d68a5a28f312281b92e",
+          "url": "https://arxiv.org/abs/2610.02267",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-05T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.02267v1 Announce Type: new Abstract: Agent harnesses make many small, typed decisions per task: which model to call, which tool to use, whether retrieved text is relevant, whether an input carries an injection. System-1 decision models answer such questions in a single forward pass with class probabilities, promising large cost and latency savings over LLM calls. We present a paired evaluation of an open-weight (Laya) and a hosted (Jev) System-1 model on 11 agent decision points built from 18 public sources: 7,283 base cases plus 6,640 robustness variants, with byte-identical inputs, paired tests, and cross-hardware and cross-day reproducibility checks. Jev is significantly more accurate on 9 of 11 decision points (+10.8 to +46.0 pp). Neither model beats chance on zero-shot model routing, and they tie on RAG relevance gating. Laya changes 30% of its answers when the option order is reversed and degrades sharply with many or similar candidates (31% at 50 nearest-neighbour tools, vs. 98% for Jev on items with a unique correct tool). We also audit our own pipeline. Three analysis errors and one design confound distorted headline deployment claims: an omitted pre-screen cost"
         }
       ]
     },
@@ -1300,6 +1366,69 @@
       ]
     },
     {
+      "id": "item_5cc8f180d7d24936a059",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+      "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+      "publishedAt": "2026-09-29T18:38:27.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-30T00:32:34.988Z",
+      "updatedAt": "2026-09-29T18:38:27.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research introduces Diffusion Controller for precise image generation steering",
+        "zh-Hans": "谷歌研究推出扩散控制器实现精确图像生成引导"
+      },
+      "summary": {
+        "en": "Diffusion Controller is a lightweight steering network that attaches to closed-source models to improve prompt alignment without breaking baseline stability.",
+        "zh-Hans": "扩散控制器是一个轻量级引导网络，可附加到闭源模型以改善提示对齐而不破坏基线稳定性。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "diffusion",
+        "image generation",
+        "steering",
+        "prompt alignment"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 94,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "transferable steering mechanism for improving model controllability across different architectures",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_5cc8f180d7d24936a05928ca",
+          "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-09-29T18:38:27.000Z",
+          "evidenceSnippet": "Chih-wei Hsu and Moonkyung Ryu , Software Engineers, Google Research We introduce Diffusion Controller, a lightweight \"steering damper\" network that precisely steers image generation to achieve significantly better prompt alignment. It seamlessly attaches to even access-restricted, closed-source models, boosting image quality without breaking baseline stability. The rapid advancement of text-to-image AI models, such as Nano Banana , Stable Diffusion and Flux , has fundamentally transformed creative design, allowing anyone to synthesize photorealistic, high-fidelity images from textual descriptions. However, steering these massive models to meet precise user intent, downstream goals, or strict visual constraints remains a delicate and unpredictable balancing act. For example, imagine prompting a model for \"a lizard wearing sunglasses\". The model might generate a realistic lizard that's not wearing sunglasses. Alternatively, forcing the model to include the sunglasses might distort the lizard's face, ruining the image quality."
+        }
+      ]
+    },
+    {
       "id": "item_dc53fce90c6f36f5c727",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -1797,6 +1926,69 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-09-28T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2609.30325v1 Announce Type: new Abstract: Agents are increasingly deployed with real autonomy in web application and network penetration testing, where a single out-of-scope action can breach a client's engagement boundary. Existing offensive-security benchmarks measure raw hacking capability; as those benchmarks saturate, the real barrier to deployment is a special case of alignment: scope adherence. We introduce ScopeBench, a benchmark of 30 dead-end agentic security tasks in which the stated objective is reachable only by violating the stated scope. Each task appears under two conditions that share an environment, verifier, and objective and differ only in scope: one instruction set has no scope and measures capability; the other has a natural-language scope to measure adherence. Scopeless trajectories are graded by a standard deterministic verifier. Scoped trajectories pass through two grading arms. First, the same deterministic verifier checks for the flag: because the flag sits behind the scope boundary, a pass proves by construction that a forbidden action occurred, yielding a high-precision lower bound on the violation rate. If the verifier does not pass the trajector"
+        }
+      ]
+    },
+    {
+      "id": "item_eb916b5190e379580afd",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/rl-environments",
+      "url": "https://huggingface.co/blog/rl-environments",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-05T22:43:15.165Z",
+      "updatedAt": "2026-09-28T00:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Hugging Face launches RL Environments hub for agentic AI systems",
+        "zh-Hans": "Hugging Face为智能体AI系统推出强化学习环境中心"
+      },
+      "summary": {
+        "en": "Hugging Face Hub introduces dedicated RL Environments section providing tasks, observations, and scoring for measuring and improving agent performance during evaluation and training.",
+        "zh-Hans": "Hugging Face Hub引入专门的强化学习环境部分，为评估和训练期间测量和改进智能体性能提供任务、观察和评分。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "reinforcement-learning",
+        "environments",
+        "agent-evaluation",
+        "hugging-face"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 16,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "provides infrastructure for agent development and evaluation across diverse tasks and environments",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_eb916b5190e379580afd8a2b",
+          "url": "https://huggingface.co/blog/rl-environments",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-09-28T00:00:00.000Z",
+          "evidenceSnippet": "Stop building environment registries What shipped Run an environment and inspect its reward Harbor: run a reference solution Verifiers: run a model on the same task OpenEnv: run an agent and inspect its reward NeMo Gym: generate responses and inspect rewards Tag your environment Already on the Hub What comes next Reinforcement Learning environments give new capabilities to agentic AI systems, and they’re a great way to measure and improve performance in your agents. Therefore, Hugging Face Hub now has a special place for RL Environments. An environment gives an agent a task, responds to its actions with observations, and scores the outcome. The resulting rewards can measure an agent's performance during evaluation or provide a learning signal during training. For an introduction to this interaction loop, see our blogpost on environments . Within the environment, the agent will perform a set of tasks that are represented as datasets. Therefore, environments can be split into broadly two parts: tasksets and runtimes. In this release, we are focusing on the tasksets. An RL environment on the Hub is a dataset repo that shows up in the new RL Environments filter . The Use this dataset b"
         }
       ]
     },
@@ -9510,6 +9702,70 @@
       ]
     },
     {
+      "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_openai",
+      "source": {
+        "id": "src_openai",
+        "name": "OpenAI"
+      },
+      "canonicalUrl": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "publishedAt": "2026-08-10T10:00:00Z",
+      "discoveredAt": "2026-08-10T19:24:50.674Z",
+      "updatedAt": "2026-08-10T10:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "OpenAI makes GPT-5.6-Cyber available for authorized cybersecurity research",
+        "zh-Hans": "OpenAI 推出 GPT-5.6-Cyber，用于经授权的网络安全研究"
+      },
+      "summary": {
+        "en": "OpenAI made its cybersecurity-specific GPT-5.6-Cyber model available through Daybreak Red for authorized vulnerability research, exploit validation and security testing.",
+        "zh-Hans": "OpenAI 通过 Daybreak Red 提供其网络安全专用模型 GPT-5.6-Cyber，用于开展经授权的漏洞研究、漏洞利用验证和安全测试。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "cybersecurity",
+        "authorized-access",
+        "model-release"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "OpenAI",
+        "GPT-5.6-Cyber",
+        "Daybreak Red"
+      ],
+      "mediaType": "article",
+      "author": "OpenAI",
+      "org": "OpenAI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 76,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 74,
+      "relevanceReason": "A frontier-lab cybersecurity-specific model release is materially relevant to advanced capability access and misuse controls, without implying general AGI progress.",
+      "verification": "verified_first_party_feed",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_openai_daybreak_cyber_20260810",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-10T10:00:00Z",
+          "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
+          "metadataSourceUrl": "https://openai.com/news/rss.xml",
+          "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
       "id": "item_13c6b5c4068aadbfbaa4",
       "schemaVersion": "1.0.0",
       "type": "paper",
@@ -9618,73 +9874,6 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
-        }
-      ]
-    },
-    {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
-        "models_capabilities"
-      ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
       ]
     },
