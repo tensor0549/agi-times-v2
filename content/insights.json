@@ -7,8 +7,110 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-10-04T00:43:38.660Z",
+  "generatedAt": "2026-10-05T07:09:41.207Z",
   "items": [
+    {
+      "id": "insight_ai-system-optimization-evaluation_20261005",
+      "slug": "ai-system-optimization-evaluation",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "AI System Optimization Through Targeted Evaluation and Constraint Methods",
+        "zh-Hans": "通过针对性评估和约束方法优化AI系统"
+      },
+      "dek": {
+        "en": "Recent research advances system efficiency through constrained generation techniques and specialized evaluation frameworks for agent decision-making.",
+        "zh-Hans": "最新研究通过约束生成技术和智能体决策专用评估框架提升系统效率。"
+      },
+      "body": {
+        "en": "Recent developments demonstrate complementary approaches to optimizing AI system performance through constraint enforcement and evaluation methodologies. MintFlow introduces a training-free framework that enforces constraints on generative models while minimizing deviation from pretrained distributions [^candidate_bc14691a892bd7c7add97d6b]. This approach addresses the trade-off between constraint satisfaction and distribution fidelity by applying minimal perturbations to intermediate flow states [^candidate_bc14691a892bd7c7add97d6b]. In parallel, evaluation of System-1 decision models for agent harnesses reveals significant performance variations across different architectures [^candidate_4d611d68a5a28f312281b92e]. The evaluation shows one model achieving 10.8 to 46.0 percentage point improvements over another across 9 of 11 decision points, while both models struggle with zero-shot routing tasks [^candidate_4d611d68a5a28f312281b92e]. These findings illustrate how targeted constraint methods and systematic evaluation can identify specific optimization opportunities in AI systems.",
+        "zh-Hans": "最新发展展示了通过约束执行和评估方法优化AI系统性能的互补方法。MintFlow引入了一个无需训练的框架，在对生成模型施加约束的同时最小化与预训练分布的偏差 [^candidate_bc14691a892bd7c7add97d6b]。该方法通过对中间流状态应用最小扰动来解决约束满足与分布保真度之间的权衡 [^candidate_bc14691a892bd7c7add97d6b]。与此同时，对智能体框架中系统1决策模型的评估揭示了不同架构间的显著性能差异 [^candidate_4d611d68a5a28f312281b92e]。评估显示一个模型在11个决策点中的9个上比另一个模型提高了10.8到46.0个百分点，而两个模型在零样本路由任务上都表现困难 [^candidate_4d611d68a5a28f312281b92e]。这些发现说明了针对性约束方法和系统性评估如何识别AI系统中的特定优化机会。"
+      },
+      "publishedAt": "2026-10-05T07:09:41.207Z",
+      "updatedAt": "2026-10-05T07:09:41.207Z",
+      "topics": [
+        "models_capabilities",
+        "agents_automation"
+      ],
+      "claims": [
+        {
+          "id": "mintflow_constraint_method",
+          "type": "fact",
+          "text": {
+            "en": "MintFlow provides a training-free framework that enforces constraints while minimizing deviation from pretrained distributions through minimal perturbation of intermediate flow states",
+            "zh-Hans": "MintFlow提供了一个无需训练的框架，通过对中间流状态的最小扰动在施加约束的同时最小化与预训练分布的偏差"
+          },
+          "citationIds": [
+            "candidate_bc14691a892bd7c7add97d6b"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "system1_performance_variation",
+          "type": "fact",
+          "text": {
+            "en": "System-1 decision models show significant performance differences, with one model achieving 10.8 to 46.0 percentage point improvements over another across 9 of 11 decision points, while both struggle with zero-shot routing",
+            "zh-Hans": "系统1决策模型显示显著性能差异，一个模型在11个决策点中的9个上比另一个提高了10.8到46.0个百分点，而两者在零样本路由上都表现困难"
+          },
+          "citationIds": [
+            "candidate_4d611d68a5a28f312281b92e"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "id": "optimization_opportunities",
+          "type": "inference",
+          "text": {
+            "en": "These approaches illustrate how targeted constraint methods and systematic evaluation can identify specific optimization opportunities in AI systems",
+            "zh-Hans": "这些方法说明了针对性约束方法和系统性评估如何识别AI系统中的特定优化机会"
+          },
+          "citationIds": [
+            "candidate_bc14691a892bd7c7add97d6b",
+            "candidate_4d611d68a5a28f312281b92e"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_bc14691a892bd7c7add97d6b",
+          "feedItemId": "item_bc14691a892bd7c7add9",
+          "title": "MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching",
+          "url": "https://arxiv.org/abs/2610.02260",
+          "publisher": "arXiv cs.AI",
+          "author": "Yesom Park, Kelvin Kan, Qifan Chen, Thomas Flynn, Hayden Schaeffer. Xihaier Luo",
+          "independenceKey": "academic:yesom park, kelvin kan, qifan chen, thomas flynn, hayden schaeffer. xihaier luo",
+          "publishedAt": "2026-10-05T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.02260v1 Announce Type: new Abstract: Flow matching models excel at generative modeling, and many downstream applications require their samples to satisfy prescribed constraints, such as observed measurements and physical laws. However, existing constrained samplers often face a trade-off: \\textit{enforcing constraints can substantially displace samples from the pretrained data distribution}. To address this trade-off, we introduce \\textbf{MintFlow}, a training-free constrained sampling framework that formulates constraint enforcement as a minimal intervention on the pretrained flow trajectory. MintFlow seeks the minimal perturbation of an intermediate flow state such that its subsequent evolution under the pretrained flow field satisfies the target constraint. By minimally perturbing the flow state while keeping the pretrained flow field unchanged, MintFlow enforces the constraint while minimizing unnecessary deviation from the pretrained distribution. An adjoint formulation yields a closed-form expression for this perturbation, eliminating expensive iterative optimization. Furthermore, MintFlow adaptively selects the intervention time to balance the required perturbatio"
+        },
+        {
+          "id": "candidate_4d611d68a5a28f312281b92e",
+          "feedItemId": "item_4d611d68a5a28f312281",
+          "title": "Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses",
+          "url": "https://arxiv.org/abs/2610.02267",
+          "publisher": "arXiv cs.AI",
+          "author": "Jiawei Li",
+          "independenceKey": "academic:jiawei li",
+          "publishedAt": "2026-10-05T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.02267v1 Announce Type: new Abstract: Agent harnesses make many small, typed decisions per task: which model to call, which tool to use, whether retrieved text is relevant, whether an input carries an injection. System-1 decision models answer such questions in a single forward pass with class probabilities, promising large cost and latency savings over LLM calls. We present a paired evaluation of an open-weight (Laya) and a hosted (Jev) System-1 model on 11 agent decision points built from 18 public sources: 7,283 base cases plus 6,640 robustness variants, with byte-identical inputs, paired tests, and cross-hardware and cross-day reproducibility checks. Jev is significantly more accurate on 9 of 11 decision points (+10.8 to +46.0 pp). Neither model beats chance on zero-shot model routing, and they tie on RAG relevance gating. Laya changes 30% of its answers when the option order is reversed and degrades sharply with many or similar candidates (31% at 50 nearest-neighbour tools, vs. 98% for Jev on items with a unique correct tool). We also audit our own pipeline. Three analysis errors and one design confound distorted headline deployment claims: an omitted pre-screen cost"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-10-05T07:09:41.207Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-10-05T07:09:19.816Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_agent-evaluation-scientific-models-privacy-advances_20261004",
       "slug": "agent-evaluation-scientific-models-privacy-advances",
