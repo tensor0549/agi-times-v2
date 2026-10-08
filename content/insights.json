@@ -7,8 +7,182 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-10-05T07:09:41.207Z",
+  "generatedAt": "2026-10-08T09:06:10.582Z",
   "items": [
+    {
+      "id": "insight_agent-frameworks-decision-architectures-october-2026_20261008",
+      "slug": "agent-frameworks-decision-architectures-october-2026",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "Agent Frameworks and Decision Architectures Advance Specialized Capabilities",
+        "zh-Hans": "智能体框架和决策架构推进专业化能力发展"
+      },
+      "dek": {
+        "en": "Recent developments showcase complementary approaches to agent training and decision-making, from synthetic trajectory generation to reinforcement learning integration.",
+        "zh-Hans": "最新发展展示了智能体训练和决策制定的互补方法，从合成轨迹生成到强化学习集成。"
+      },
+      "body": {
+        "en": "Multiple research groups are advancing agent capabilities through distinct architectural approaches and training methodologies. GameGo demonstrates systematic trajectory generation, creating 55,060 development paths across 2D, 2.5D, and 3D games by transforming brief concepts into comprehensive requirements documents [^candidate_a8ac830d507256c942102f31]. Text2Dashboard illustrates governed agent architecture, combining schema-constrained model decisions with deterministic execution controls and achieving 6/8 success on enterprise metadata and SQL tasks [^candidate_9e90f3b0496f4064b4ab3d5d]. Agent Lightning provides infrastructure for improving existing agents through reinforcement learning integration without requiring complete rebuilds [^candidate_e986592dff42085cd40df279]. Meanwhile, Liquid AI introduces decision models that answer through single forward passes rather than token generation [^candidate_88e871d5a8d26738db20168d], while Nemotron demonstrates foundation model adaptability by achieving gold-level performance across both algorithmic programming and mathematical proof domains [^candidate_67f5f61696a2949df2730f40]. These projects illustrate complementary mechanisms for engineering specialized agent capabilities through synthetic data generation, architectural governance, training integration, and domain-specific fine-tuning.",
+        "zh-Hans": "多个研究团队通过不同的架构方法和训练方法推进智能体能力发展。GameGo展示了系统化轨迹生成，通过将简短概念转化为全面需求文档，创建了跨越2D、2.5D和3D游戏的55,060个开发路径[^candidate_a8ac830d507256c942102f31]。Text2Dashboard展示了受治理的智能体架构，结合模式约束的模型决策与确定性执行控制，在企业元数据和SQL任务上达到6/8成功率[^candidate_9e90f3b0496f4064b4ab3d5d]。Agent Lightning提供基础设施，通过强化学习集成改进现有智能体而无需完全重建[^candidate_e986592dff42085cd40df279]。同时，Liquid AI引入通过单次前向传播而非令牌生成来回答的决策模型[^candidate_88e871d5a8d26738db20168d]，而Nemotron通过在算法编程和数学证明领域均达到金牌水平展示了基础模型的适应性[^candidate_67f5f61696a2949df2730f40]。这些项目展示了通过合成数据生成、架构治理、训练集成和领域特定微调来工程化专业智能体能力的互补机制。"
+      },
+      "publishedAt": "2026-10-08T09:06:10.582Z",
+      "updatedAt": "2026-10-08T09:06:10.582Z",
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "claims": [
+        {
+          "id": "gamego_trajectory_generation",
+          "type": "fact",
+          "text": {
+            "en": "GameGo created 55,060 development trajectories across 2D, 2.5D, and 3D games by transforming brief game concepts into comprehensive requirements documents",
+            "zh-Hans": "GameGo通过将简短游戏概念转化为全面需求文档，创建了跨越2D、2.5D和3D游戏的55,060个开发轨迹"
+          },
+          "citationIds": [
+            "candidate_a8ac830d507256c942102f31"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "text2dashboard_performance",
+          "type": "fact",
+          "text": {
+            "en": "Text2Dashboard achieved 6/8 success on metadata and SQL tasks using schema-constrained model decisions with deterministic execution controls",
+            "zh-Hans": "Text2Dashboard使用模式约束的模型决策和确定性执行控制，在元数据和SQL任务上达到6/8成功率"
+          },
+          "citationIds": [
+            "candidate_9e90f3b0496f4064b4ab3d5d"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "agent_lightning_integration",
+          "type": "fact",
+          "text": {
+            "en": "Agent Lightning connects existing agents to reinforcement learning training without requiring complete rebuilds",
+            "zh-Hans": "Agent Lightning将现有智能体连接到强化学习训练而无需完全重建"
+          },
+          "citationIds": [
+            "candidate_e986592dff42085cd40df279"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "liquid_decision_models",
+          "type": "fact",
+          "text": {
+            "en": "Liquid AI's decision models answer through single forward passes rather than generating tokens",
+            "zh-Hans": "Liquid AI的决策模型通过单次前向传播而非生成令牌来回答"
+          },
+          "citationIds": [
+            "candidate_88e871d5a8d26738db20168d"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "nemotron_dual_domain_success",
+          "type": "fact",
+          "text": {
+            "en": "Nemotron achieved gold-medal level performance at both International Olympiad in Informatics and Mathematical Olympiad competitions",
+            "zh-Hans": "Nemotron在国际信息学奥林匹克和数学奥林匹克竞赛中均达到金牌水平"
+          },
+          "citationIds": [
+            "candidate_67f5f61696a2949df2730f40"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "complementary_mechanisms_inference",
+          "type": "inference",
+          "text": {
+            "en": "These projects illustrate complementary mechanisms for engineering specialized agent capabilities through synthetic data generation, architectural governance, training integration, and domain-specific fine-tuning",
+            "zh-Hans": "这些项目展示了通过合成数据生成、架构治理、训练集成和领域特定微调来工程化专业智能体能力的互补机制"
+          },
+          "citationIds": [
+            "candidate_a8ac830d507256c942102f31",
+            "candidate_9e90f3b0496f4064b4ab3d5d",
+            "candidate_e986592dff42085cd40df279",
+            "candidate_88e871d5a8d26738db20168d",
+            "candidate_67f5f61696a2949df2730f40"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_a8ac830d507256c942102f31",
+          "feedItemId": "item_a8ac830d507256c94210",
+          "title": "GAMEGO: Training Game-Dev Agents with Synthetic Trajectories Anchored in Real-World Assets",
+          "url": "https://arxiv.org/abs/2610.06910",
+          "publisher": "arXiv cs.AI",
+          "author": "Haoyue Yang, Jingyao Li, Zhengfan Wu, Jing Liu, Xuanle Zhao, Kang Liu",
+          "independenceKey": "academic:haoyue yang, jingyao li, zhengfan wu, jing liu, xuanle zhao, kang liu",
+          "publishedAt": "2026-10-08T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.06910v1 Announce Type: new Abstract: Recent advances in Large Language Models (LLMs) have demonstrated remarkable capabilities in web front-end execution, with browser-based game generation emerging as a particularly prominent frontier. While previous efforts frequently rely on complex multi-turn workflows or focus on static game evaluation benchmarks, this work targets direct end-to-end real-world game synthesis driven by coding agents. However, generating complex games directly from sparse user queries often forces coding agents to make underspecified assumptions, yielding incomplete mechanics, disconnected gameplay flows, and limited visual aesthetics. To resolve this issue, this paper presents GameGo, a scalable framework that systematically transforms brief game seeds into comprehensive Product Requirements Documents grounded in industry game-development practices. To retain core gameplay constraints without restricting design exploration, GameGo uses task-specific dynamic compression to maximize information density while preserving instruction following. Based on this pipeline, GameGoData is constructed with 55,060 development trajectories across 2D, 2.5D, and 3D g"
+        },
+        {
+          "id": "candidate_9e90f3b0496f4064b4ab3d5d",
+          "feedItemId": "item_9e90f3b0496f4064b4ab",
+          "title": "Text2Dashboard: A Governed Agent Architecture for Natural-Language Dashboard Generation over Enterprise DataBrain",
+          "url": "https://arxiv.org/abs/2610.06914",
+          "publisher": "arXiv cs.AI",
+          "author": "Yiou Wu, Zezhi Tang, Ningwei Bai, Liuhaichen Yang",
+          "independenceKey": "academic:yiou wu, zezhi tang, ningwei bai, liuhaichen yang",
+          "publishedAt": "2026-10-08T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.06914v1 Announce Type: new Abstract: Text2Dashboard is a DataBrain-specific prototype that turns natural-language analytic requests into inspectable dashboards. An installable Codex plugin and standalone Agent Runtime combine schema-constrained model decisions with typed tools, persistent state, and deterministic Hooks for approval, audit, checkpointing, recovery, and failure handling. The pipeline resolves entities, discovers metadata, enforces read-only SQL, composes dashboards, and applies static checks, dynamic preflight, and browser inspection. The model proposes actions while deterministic software controls execution and records state transitions. We evaluate the workflow on frozen real-DataBrain tasks and controlled Hook faults. Strict success was 6/8 on metadata and SQL tasks: metadata selection passed 4/4, all four SQL tasks met semantic criteria, and 2/4 met the exact output-column contract. The final release passed 4/4 single-panel dashboard tasks, one two-panel task, and one existing-dashboard refinement; a parameterised task exceeded its step limit. All ten fault scenarios met their specified outcomes without unapproved external side effects. Model inference"
+        },
+        {
+          "id": "candidate_e986592dff42085cd40df279",
+          "feedItemId": "item_e986592dff42085cd40d",
+          "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+          "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+          "publisher": "Microsoft Research",
+          "author": "Zhiyuan He, Yuqing Yang",
+          "independenceKey": "publisher:microsoft research",
+          "publishedAt": "2026-10-07T16:00:00.000Z",
+          "evidenceSnippet": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing agents to RL training, making it easier to improve them without rebuilding them. The post Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses appeared first on Microsoft Research ."
+        },
+        {
+          "id": "candidate_88e871d5a8d26738db20168d",
+          "feedItemId": "item_88e871d5a8d26738db20",
+          "title": "Multimodal open d1 decision models for the edge",
+          "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-10-07T16:54:33.000Z",
+          "evidenceSnippet": "How we built decision models for the edge Benchmark results Speed How to use open d1 decision models Get Started with open d1 decision models Citation Today, we release two open decision models in our d1 decision model family : d1-3B and d1-omni-600M (experimental). These open d1 decision models are built on our Liquid Foundation Models (LFMs). Unlike our generative models, decision models don’t produce tokens but answer in a single forward pass. d1-3B and d1-omni-600M are trained from two very different backbones:"
+        },
+        {
+          "id": "candidate_67f5f61696a2949df2730f40",
+          "feedItemId": "item_67f5f61696a2949df273",
+          "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-10-07T12:45:31.000Z",
+          "evidenceSnippet": "A reusable specialization recipe From general coding ability to IOI gold Teaching Nemotron to prove, check, and revise Fine-tuning and test-time compute work together Open models, data, and recipes on Hugging Face The International Olympiad in Informatics (IOI) and the International Mathematical Olympiad (IMO) test different skills. IOI requires algorithms and code that pass hidden tests under strict time and submission limits. IMO demands rigorous natural-language proofs. Success at either competition is difficult. Success at both points to something broader. Our recent results show that Nemotron is a strong, adaptable foundation for building world-class specialist models. Starting from Nemotron 3, our teams used supervised fine-tuning (SFT), reinforcement learning (RL), and feedback-driven inference to create systems that reached gold-medal level at both IMO 2026 and IOI 2026 . The IOI result came from a live, prospective run under the same time, internet-access, and submission constraints as human contestants. It was an unofficial, unsupervised benchmark and was not included in the official IOI ranking. The IMO system’s submitted proofs were graded by official IMO graders."
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-10-08T09:06:10.582Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-10-08T09:05:38.878Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_ai-system-optimization-evaluation_20261005",
       "slug": "ai-system-optimization-evaluation",

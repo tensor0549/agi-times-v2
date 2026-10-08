@@ -7,8 +7,318 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-10-05T22:43:30.853Z",
+  "generatedAt": "2026-10-08T09:06:10.582Z",
   "items": [
+    {
+      "id": "item_a8ac830d507256c94210",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.06910",
+      "url": "https://arxiv.org/abs/2610.06910",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-08T09:05:38.878Z",
+      "updatedAt": "2026-10-08T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "GameGo Framework Trains Game Development Agents with Synthetic Trajectories",
+        "zh-Hans": "GameGo框架使用合成轨迹训练游戏开发智能体"
+      },
+      "summary": {
+        "en": "Researchers present GameGo, a framework that transforms brief game concepts into comprehensive development documents, creating 55,060 trajectories across 2D, 2.5D, and 3D games for training coding agents.",
+        "zh-Hans": "研究人员提出GameGo框架，将简短游戏概念转化为全面开发文档，创建55,060个2D、2.5D和3D游戏轨迹用于训练编程智能体。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "game development",
+        "coding agents",
+        "synthetic trajectories"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Haoyue Yang, Jingyao Li, Zhengfan Wu, Jing Liu, Xuanle Zhao, Kang Liu",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:haoyue yang, jingyao li, zhengfan wu, jing liu, xuanle zhao, kang liu",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "advances agent capabilities in complex code generation and structured task decomposition",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a8ac830d507256c942102f31",
+          "url": "https://arxiv.org/abs/2610.06910",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-08T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.06910v1 Announce Type: new Abstract: Recent advances in Large Language Models (LLMs) have demonstrated remarkable capabilities in web front-end execution, with browser-based game generation emerging as a particularly prominent frontier. While previous efforts frequently rely on complex multi-turn workflows or focus on static game evaluation benchmarks, this work targets direct end-to-end real-world game synthesis driven by coding agents. However, generating complex games directly from sparse user queries often forces coding agents to make underspecified assumptions, yielding incomplete mechanics, disconnected gameplay flows, and limited visual aesthetics. To resolve this issue, this paper presents GameGo, a scalable framework that systematically transforms brief game seeds into comprehensive Product Requirements Documents grounded in industry game-development practices. To retain core gameplay constraints without restricting design exploration, GameGo uses task-specific dynamic compression to maximize information density while preserving instruction following. Based on this pipeline, GameGoData is constructed with 55,060 development trajectories across 2D, 2.5D, and 3D g"
+        }
+      ]
+    },
+    {
+      "id": "item_9e90f3b0496f4064b4ab",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.06914",
+      "url": "https://arxiv.org/abs/2610.06914",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-08T09:05:38.878Z",
+      "updatedAt": "2026-10-08T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Text2Dashboard Agent Architecture Converts Natural Language to Enterprise Dashboards",
+        "zh-Hans": "Text2Dashboard智能体架构将自然语言转换为企业仪表板"
+      },
+      "summary": {
+        "en": "Text2Dashboard prototype combines schema-constrained decisions with typed tools and deterministic controls, achieving 6/8 success on metadata and SQL tasks with comprehensive audit capabilities.",
+        "zh-Hans": "Text2Dashboard原型结合模式约束决策与类型化工具和确定性控制，在元数据和SQL任务上达到6/8成功率，具备全面审计能力。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "enterprise agents",
+        "natural language",
+        "dashboard generation"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yiou Wu, Zezhi Tang, Ningwei Bai, Liuhaichen Yang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yiou wu, zezhi tang, ningwei bai, liuhaichen yang",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "demonstrates governed agent architecture with state management and execution control",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_9e90f3b0496f4064b4ab3d5d",
+          "url": "https://arxiv.org/abs/2610.06914",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-08T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.06914v1 Announce Type: new Abstract: Text2Dashboard is a DataBrain-specific prototype that turns natural-language analytic requests into inspectable dashboards. An installable Codex plugin and standalone Agent Runtime combine schema-constrained model decisions with typed tools, persistent state, and deterministic Hooks for approval, audit, checkpointing, recovery, and failure handling. The pipeline resolves entities, discovers metadata, enforces read-only SQL, composes dashboards, and applies static checks, dynamic preflight, and browser inspection. The model proposes actions while deterministic software controls execution and records state transitions. We evaluate the workflow on frozen real-DataBrain tasks and controlled Hook faults. Strict success was 6/8 on metadata and SQL tasks: metadata selection passed 4/4, all four SQL tasks met semantic criteria, and 2/4 met the exact output-column contract. The final release passed 4/4 single-panel dashboard tasks, one two-panel task, and one existing-dashboard refinement; a parameterised task exceeded its step limit. All ten fault scenarios met their specified outcomes without unapproved external side effects. Model inference"
+        }
+      ]
+    },
+    {
+      "id": "item_88e871d5a8d26738db20",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "publishedAt": "2026-10-07T16:54:33.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-08T09:05:38.878Z",
+      "updatedAt": "2026-10-07T16:54:33.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Liquid AI Releases Open Decision Models d1-3B and d1-omni-600M for Edge Deployment",
+        "zh-Hans": "Liquid AI发布开源决策模型d1-3B和d1-omni-600M用于边缘部署"
+      },
+      "summary": {
+        "en": "Two open decision models built on Liquid Foundation Models that answer in single forward passes rather than generating tokens, designed for edge deployment scenarios.",
+        "zh-Hans": "基于Liquid基础模型构建的两个开源决策模型，通过单次前向传播而非生成令牌来回答问题，专为边缘部署场景设计。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "decision models",
+        "multimodal",
+        "edge computing"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 86,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "introduces novel decision-making architecture distinct from generative approaches",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_88e871d5a8d26738db20168d",
+          "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-10-07T16:54:33.000Z",
+          "evidenceSnippet": "How we built decision models for the edge Benchmark results Speed How to use open d1 decision models Get Started with open d1 decision models Citation Today, we release two open decision models in our d1 decision model family : d1-3B and d1-omni-600M (experimental). These open d1 decision models are built on our Liquid Foundation Models (LFMs). Unlike our generative models, decision models don’t produce tokens but answer in a single forward pass. d1-3B and d1-omni-600M are trained from two very different backbones:"
+        }
+      ]
+    },
+    {
+      "id": "item_e986592dff42085cd40d",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "publishedAt": "2026-10-07T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-08T09:05:38.878Z",
+      "updatedAt": "2026-10-07T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Releases Agent Lightning Framework for RL Training of Existing Agents",
+        "zh-Hans": "微软发布Agent Lightning框架用于现有智能体的强化学习训练"
+      },
+      "summary": {
+        "en": "Agent Lightning connects existing agents to RL training without rebuilding them, providing a lightweight 3,500-line framework for improving agent performance with real harnesses.",
+        "zh-Hans": "Agent Lightning将现有智能体连接到强化学习训练，无需重建，提供轻量级3,500行框架以通过真实工具改进智能体性能。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "reinforcement learning",
+        "agent training",
+        "framework"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Zhiyuan He, Yuqing Yang",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 85,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "enables systematic improvement of agent capabilities through RL integration",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e986592dff42085cd40df279",
+          "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-10-07T16:00:00.000Z",
+          "evidenceSnippet": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing agents to RL training, making it easier to improve them without rebuilding them. The post Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_67f5f61696a2949df273",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "publishedAt": "2026-10-07T12:45:31.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-08T09:05:38.878Z",
+      "updatedAt": "2026-10-07T12:45:31.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Nemotron Achieves Gold-Level Performance on Both IOI and IMO Competitions",
+        "zh-Hans": "Nemotron在IOI和IMO竞赛中均达到金牌水平"
+      },
+      "summary": {
+        "en": "Nemotron 3 foundation model achieved gold-medal level performance at both International Olympiad in Informatics and Mathematical Olympiad through specialized fine-tuning and reinforcement learning.",
+        "zh-Hans": "Nemotron 3基础模型通过专门微调和强化学习在国际信息学奥林匹克和数学奥林匹克竞赛中均达到金牌水平。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mathematical reasoning",
+        "competitive programming",
+        "fine-tuning"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 82,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates advanced reasoning capabilities across distinct cognitive domains",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_67f5f61696a2949df2730f40",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-10-07T12:45:31.000Z",
+          "evidenceSnippet": "A reusable specialization recipe From general coding ability to IOI gold Teaching Nemotron to prove, check, and revise Fine-tuning and test-time compute work together Open models, data, and recipes on Hugging Face The International Olympiad in Informatics (IOI) and the International Mathematical Olympiad (IMO) test different skills. IOI requires algorithms and code that pass hidden tests under strict time and submission limits. IMO demands rigorous natural-language proofs. Success at either competition is difficult. Success at both points to something broader. Our recent results show that Nemotron is a strong, adaptable foundation for building world-class specialist models. Starting from Nemotron 3, our teams used supervised fine-tuning (SFT), reinforcement learning (RL), and feedback-driven inference to create systems that reached gold-medal level at both IMO 2026 and IOI 2026 . The IOI result came from a live, prospective run under the same time, internet-access, and submission constraints as human contestants. It was an unofficial, unsupervised benchmark and was not included in the official IOI ranking. The IMO system’s submitted proofs were graded by official IMO graders."
+        }
+      ]
+    },
     {
       "id": "item_7eeb0a9dde53453907ec",
       "schemaVersion": "1.0.0",
@@ -69,257 +379,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-10-05T21:08:31.000Z",
           "evidenceSnippet": "Eugene Bagdasarian, Research Scientist, and Marco Gruteser, Principal Scientist, Google Research To be useful, AI agents must understand and be constrained by contextual behavioral norms to ensure they act appropriately. Inspired by the theory of Contextual Integrity, our new workshop report outlines key open research directions across system, model, and user levels to build AI agents users can trust. We're rapidly transitioning to a computing landscape defined by highly general, increasingly autonomous agents . Driven by large language models (LLMs) that can dynamically generate plans and invoke external tools, these systems offer the potential for AI to seamlessly handle complex, multi-step tasks on our behalf. However, realizing this potential requires solving a key challenge: enabling agent capability while ensuring that agents act appropriately."
-        }
-      ]
-    },
-    {
-      "id": "item_5fd89b8ccb4f8ef45b6c",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2610.02300",
-      "url": "https://arxiv.org/abs/2610.02300",
-      "publishedAt": "2026-10-05T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-10-05T22:43:15.165Z",
-      "updatedAt": "2026-10-05T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "CALM method improves text-to-image safety through local counterfactual correction",
-        "zh-Hans": "CALM方法通过局部反事实修正改进文本到图像安全性"
-      },
-      "summary": {
-        "en": "Researchers propose CALM, a training-free safeguard that uses prompt-local counterfactual correction instead of global unsafe signal removal, improving unsafe content suppression while preserving benign utility in text-to-image generation.",
-        "zh-Hans": "研究人员提出CALM，一种免训练安全防护方法，使用提示局部反事实修正而非全局不安全信号移除，在文本到图像生成中改善不安全内容抑制同时保持良性效用。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "text-to-image",
-        "safety",
-        "training-free",
-        "counterfactual-correction"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "NaHyeon Park, Minhyun Lee, Hyunjung Shim",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:nahyeon park, minhyun lee, hyunjung shim",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 84,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "advances safety mechanisms for generative AI models through novel geometric analysis and counterfactual approaches",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_5fd89b8ccb4f8ef45b6c4ebf",
-          "url": "https://arxiv.org/abs/2610.02300",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-10-05T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2610.02300v1 Announce Type: new Abstract: Training-free safeguards for text-to-image generation often rely on a reusable safety signal, such as an unsafe direction or global toxic subspace, applied broadly across prompts. We provide a controlled geometric analysis of this global-unsafety assumption and reveal a consistent coverage-selectivity trade-off: compact unsafe subspaces fail to cover heterogeneous unsafe semantics, whereas broader aggregation increasingly distorts safety-adjacent benign prompts. Motivated by this finding, we propose CALM (Counterfactual Adaptive Local Modulation), a training-free safeguard that replaces uniform global removal with prompt-local counterfactual correction. Using matched unsafe-benign anchors, CALM routes each prompt to active unsafe categories, minimally edits only violating token representations toward the safe side, and suppresses positively aligned unsafe residual components. Across broad evaluation, CALM significantly improves unsafe content suppression while preserving benign utility, demonstrating that local counterfactual correction provides a more selective alternative to global unsafe signal removal."
-        }
-      ]
-    },
-    {
-      "id": "item_bc14691a892bd7c7add9",
-      "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
-      "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
-      },
-      "canonicalUrl": "https://arxiv.org/abs/2610.02260",
-      "url": "https://arxiv.org/abs/2610.02260",
-      "publishedAt": "2026-10-05T04:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-10-05T07:09:19.816Z",
-      "updatedAt": "2026-10-05T04:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching",
-        "zh-Hans": "MintFlow：约束流匹配的最小轨迹干预方法"
-      },
-      "summary": {
-        "en": "Training-free framework that enforces constraints on flow matching models while minimizing deviation from pretrained distributions through minimal perturbation of intermediate flow states.",
-        "zh-Hans": "无需训练的框架，通过对中间流状态的最小扰动，在对流匹配模型施加约束的同时最小化与预训练分布的偏差。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "flow matching",
-        "constrained sampling",
-        "generative models"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Yesom Park, Kelvin Kan, Qifan Chen, Thomas Flynn, Hayden Schaeffer. Xihaier Luo",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:yesom park, kelvin kan, qifan chen, thomas flynn, hayden schaeffer. xihaier luo",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.86,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 97,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "advances constrained generation capabilities for flow matching models with training-free approach",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_bc14691a892bd7c7add97d6b",
-          "url": "https://arxiv.org/abs/2610.02260",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-10-05T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2610.02260v1 Announce Type: new Abstract: Flow matching models excel at generative modeling, and many downstream applications require their samples to satisfy prescribed constraints, such as observed measurements and physical laws. However, existing constrained samplers often face a trade-off: \\textit{enforcing constraints can substantially displace samples from the pretrained data distribution}. To address this trade-off, we introduce \\textbf{MintFlow}, a training-free constrained sampling framework that formulates constraint enforcement as a minimal intervention on the pretrained flow trajectory. MintFlow seeks the minimal perturbation of an intermediate flow state such that its subsequent evolution under the pretrained flow field satisfies the target constraint. By minimally perturbing the flow state while keeping the pretrained flow field unchanged, MintFlow enforces the constraint while minimizing unnecessary deviation from the pretrained distribution. An adjoint formulation yields a closed-form expression for this perturbation, eliminating expensive iterative optimization. Furthermore, MintFlow adaptively selects the intervention time to balance the required perturbatio"
-        }
-      ]
-    },
-    {
-      "id": "item_bd1136d0fcfd6f1357de",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/microsoft/thinkingbox",
-      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
-      "publishedAt": "2026-10-03T22:56:48.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-10-04T00:43:17.129Z",
-      "updatedAt": "2026-10-03T22:56:48.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft ThinkingBox Evaluates Agent Reliability Through Backend State Analysis",
-        "zh-Hans": "微软ThinkingBox通过后端状态分析评估智能体可靠性"
-      },
-      "summary": {
-        "en": "Microsoft's ThinkingBox system grades AI agents based on the actual database records and backend states they produce, rather than their text outputs, testing consistency across multiple runs.",
-        "zh-Hans": "微软的ThinkingBox系统基于智能体产生的实际数据库记录和后端状态来评分，而非文本输出，测试多次运行的一致性。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "agent evaluation",
-        "reliability testing",
-        "microsoft",
-        "thinkingbox"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 98,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "Advances agent reliability evaluation methodology by focusing on actual system state changes rather than language outputs",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_bd1136d0fcfd6f1357de280a",
-          "url": "https://huggingface.co/blog/microsoft/thinkingbox",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-10-03T22:56:48.000Z",
-          "evidenceSnippet": "A tool call is not an outcome One success is not reliability Can you depend on the model behind your agent? What consistency costs Pareto cost frontier Now price consistency Failure signatures How it works Run it yourself Before you start Install Start Typesense Start the MCP servers Start the OpenEnv server Check readiness Score an episode Where this goes next Microsoft ThinkingBox grades AI agents on the records they leave behind, not the sentences they generate, and then asks whether they can do it twenty times in a row. It is now available through Hugging Face. Figure 1: ThinkingBox runs an agent against isolated MCP tool sessions, then grades the terminal backend state and side effects it leaves behind. From our ThinkingBox paper . A customer writes in. Her $745 kitchen appliance has been stuck in a courier \"exception\" at a Nashville distribution center, fifteen days past its estimated delivery date."
-        }
-      ]
-    },
-    {
-      "id": "item_e81b1dea7ce0fb42c978",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/allenai/astabrief",
-      "url": "https://huggingface.co/blog/allenai/astabrief",
-      "publishedAt": "2026-10-02T15:19:50.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-10-04T00:43:17.129Z",
-      "updatedAt": "2026-10-02T15:19:50.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Allen AI Open-Sources AstaBrief Model for Scientific Report Generation",
-        "zh-Hans": "Allen AI开源AstaBrief模型用于科学报告生成"
-      },
-      "summary": {
-        "en": "Allen AI released AstaBrief, a specialized model for generating scientific reports that maintains evidence grounding and supports complex literature synthesis with attribution verification.",
-        "zh-Hans": "Allen AI发布了AstaBrief，这是一个专门用于生成科学报告的模型，能够保持证据基础并支持复杂的文献综合和归因验证。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "scientific research",
-        "report generation",
-        "evidence grounding",
-        "allenai"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 73,
-      "importanceScore": 75,
-      "importance": 75,
-      "agiRelevanceScore": 82,
-      "relevanceReason": "Demonstrates specialized model capabilities for complex reasoning tasks requiring evidence preservation and verification",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_e81b1dea7ce0fb42c9785562",
-          "url": "https://huggingface.co/blog/allenai/astabrief",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-10-02T15:19:50.000Z",
-          "evidenceSnippet": "Training the model Collecting SFT training data Creating DPO pairs Filtering data for better attribution Validating the approach Where this goes next 🤗 Model | 📊 Data Language models can already help researchers search the literature, synthesize evidence, and work through complex questions. But scientific work places particular demands on these models—answers need to stay grounded in evidence, the models need to preserve what the evidence actually supports rather than quietly broadening a study’s conclusions, and researchers need to be able to verify the final outputs. We see that in how scientists use Asta , our agentic platform for scientific work. Instead of simple keyword searches, users often bring substantial context and many constraints—for example, asking Asta to compare approaches across a body of literature while accounting for a particular method, population, or setting. Many also return to generated reports later, treating them as working research artifacts rather than one-off answers."
         }
       ]
     },
@@ -450,231 +509,252 @@
       ]
     },
     {
-      "id": "item_33f98722c2911516ecee",
+      "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
       "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
+      "type": "release",
+      "sourceId": "src_openai",
       "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
+        "id": "src_openai",
+        "name": "OpenAI"
       },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
-      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
-      "publishedAt": "2026-09-23T16:01:36.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-09-23T23:45:56.344Z",
-      "updatedAt": "2026-09-23T16:01:36.000Z",
+      "canonicalUrl": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "publishedAt": "2026-08-10T10:00:00Z",
+      "discoveredAt": "2026-08-10T19:24:50.674Z",
+      "updatedAt": "2026-08-10T10:00:00Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Microsoft Research Demonstrates Offloaded Inference for Physical AI Robotics",
-        "zh-Hans": "微软研究院展示物理AI机器人的卸载推理技术"
+        "en": "OpenAI makes GPT-5.6-Cyber available for authorized cybersecurity research",
+        "zh-Hans": "OpenAI 推出 GPT-5.6-Cyber，用于经授权的网络安全研究"
       },
       "summary": {
-        "en": "Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads for smarter robots.",
-        "zh-Hans": "微软研究院发现，将AI推理转移到机器人之外可以提高任务成功率、提升效率并支持更先进的物理AI工作负载。"
+        "en": "OpenAI made its cybersecurity-specific GPT-5.6-Cyber model available through Daybreak Red for authorized vulnerability research, exploit validation and security testing.",
+        "zh-Hans": "OpenAI 通过 Daybreak Red 提供其网络安全专用模型 GPT-5.6-Cyber，用于开展经授权的漏洞研究、漏洞利用验证和安全测试。"
       },
-      "category": "robotics_embodied_ai",
+      "category": "safety_security_alignment",
       "tags": [
-        "offloaded-inference",
-        "physical-ai",
-        "robotics",
-        "efficiency"
+        "cybersecurity",
+        "authorized-access",
+        "model-release"
       ],
       "topics": [
-        "robotics_embodied_ai"
+        "safety_security_alignment"
+      ],
+      "entities": [
+        "OpenAI",
+        "GPT-5.6-Cyber",
+        "Daybreak Red"
+      ],
+      "mediaType": "article",
+      "author": "OpenAI",
+      "org": "OpenAI",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 76,
+      "importanceScore": 82,
+      "importance": 82,
+      "agiRelevanceScore": 74,
+      "relevanceReason": "A frontier-lab cybersecurity-specific model release is materially relevant to advanced capability access and misuse controls, without implying general AGI progress.",
+      "verification": "verified_first_party_feed",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_openai_daybreak_cyber_20260810",
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-10T10:00:00Z",
+          "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
+          "metadataSourceUrl": "https://openai.com/news/rss.xml",
+          "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+        }
+      ]
+    },
+    {
+      "id": "release_google_gemini_omni_builders_20260807",
+      "sourceId": "src_google-deepmind",
+      "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
+      "publishedAt": "2026-08-07T00:00:00Z",
+      "title": {
+        "en": "Google showcases early Gemini Omni video workflows",
+        "zh-Hans": "Google 展示 Gemini Omni 的首批视频工作流"
+      },
+      "summary": {
+        "en": "Google highlighted builders using Gemini Omni to generate and edit video from text, image, video or audio references, including changes to camera angles, objects and visual styles.",
+        "zh-Hans": "Google 展示了开发者如何用 Gemini Omni 根据文本、图片、视频或音频参考生成和编辑视频，包括调整机位、更换物体和切换视觉风格。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "multimodal",
+        "video-generation",
+        "developers"
+      ],
+      "topics": [
+        "models_capabilities",
+        "products_developer_ecosystem"
+      ],
+      "entities": [
+        "Google",
+        "Gemini Omni"
+      ],
+      "author": "Lindsey Lanquist",
+      "org": "Google",
+      "importanceScore": 72,
+      "evidence": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos.",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
+      "source": {
+        "id": "src_google-deepmind",
+        "name": "Google"
+      },
+      "discoveredAt": "2026-08-10T16:48:06.891Z",
+      "updatedAt": "2026-08-07T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.95,
+      "freshnessScore": 43,
+      "importance": 72,
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_release_google_gemini_omni_builders_20260807",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
+          "publisher": "Google",
+          "publishedAt": "2026-08-07T00:00:00Z",
+          "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
+        }
+      ],
+      "mediaType": "article"
+    },
+    {
+      "id": "item_5fd89b8ccb4f8ef45b6c",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.02300",
+      "url": "https://arxiv.org/abs/2610.02300",
+      "publishedAt": "2026-10-05T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-05T22:43:15.165Z",
+      "updatedAt": "2026-10-05T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "CALM method improves text-to-image safety through local counterfactual correction",
+        "zh-Hans": "CALM方法通过局部反事实修正改进文本到图像安全性"
+      },
+      "summary": {
+        "en": "Researchers propose CALM, a training-free safeguard that uses prompt-local counterfactual correction instead of global unsafe signal removal, improving unsafe content suppression while preserving benign utility in text-to-image generation.",
+        "zh-Hans": "研究人员提出CALM，一种免训练安全防护方法，使用提示局部反事实修正而非全局不安全信号移除，在文本到图像生成中改善不安全内容抑制同时保持良性效用。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "text-to-image",
+        "safety",
+        "training-free",
+        "counterfactual-correction"
+      ],
+      "topics": [
+        "safety_security_alignment"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Ganesh Ananthanarayanan, Matthew Balkwill, Xenofon Foukas, Sanjeev Mehrotra, Bozidar Radunovic, Connor Settle, Ankit Verma, David White, Shawn Cicoria, Mark Martin, Rachel Johnson, Mayur Patel",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
+      "author": "NaHyeon Park, Minhyun Lee, Hyunjung Shim",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:nahyeon park, minhyun lee, hyunjung shim",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.92,
+      "sourceReliability": 0.86,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 93,
-      "importanceScore": 80,
-      "importance": 80,
-      "agiRelevanceScore": 85,
-      "relevanceReason": "Offloaded inference architecture enables more sophisticated AI capabilities in physical robotics systems",
+      "freshnessScore": 84,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances safety mechanisms for generative AI models through novel geometric analysis and counterfactual approaches",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_33f98722c2911516eceeb09c",
-          "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-09-23T16:01:36.000Z",
-          "evidenceSnippet": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads. The post Offloaded inference for real-world physical AI robotics appeared first on Microsoft Research ."
+          "id": "candidate_5fd89b8ccb4f8ef45b6c4ebf",
+          "url": "https://arxiv.org/abs/2610.02300",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-05T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.02300v1 Announce Type: new Abstract: Training-free safeguards for text-to-image generation often rely on a reusable safety signal, such as an unsafe direction or global toxic subspace, applied broadly across prompts. We provide a controlled geometric analysis of this global-unsafety assumption and reveal a consistent coverage-selectivity trade-off: compact unsafe subspaces fail to cover heterogeneous unsafe semantics, whereas broader aggregation increasingly distorts safety-adjacent benign prompts. Motivated by this finding, we propose CALM (Counterfactual Adaptive Local Modulation), a training-free safeguard that replaces uniform global removal with prompt-local counterfactual correction. Using matched unsafe-benign anchors, CALM routes each prompt to active unsafe categories, minimally edits only violating token representations toward the safe side, and suppresses positively aligned unsafe residual components. Across broad evaluation, CALM significantly improves unsafe content suppression while preserving benign utility, demonstrating that local counterfactual correction provides a more selective alternative to global unsafe signal removal."
         }
       ]
     },
     {
-      "id": "statement_meta_personal_superintelligence_20260810",
+      "id": "item_bc14691a892bd7c7add9",
       "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_meta-ai",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
       "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
       },
-      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
-      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-      "publishedAt": "2026-08-10T10:01:23Z",
-      "discoveredAt": "2026-08-10T20:25:00Z",
-      "updatedAt": "2026-08-10T15:28:59Z",
+      "canonicalUrl": "https://arxiv.org/abs/2610.02260",
+      "url": "https://arxiv.org/abs/2610.02260",
+      "publishedAt": "2026-10-05T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-05T07:09:19.816Z",
+      "updatedAt": "2026-10-05T04:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
-        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
+        "en": "MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching",
+        "zh-Hans": "MintFlow：约束流匹配的最小轨迹干预方法"
       },
       "summary": {
-        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
-        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
+        "en": "Training-free framework that enforces constraints on flow matching models while minimizing deviation from pretrained distributions through minimal perturbation of intermediate flow states.",
+        "zh-Hans": "无需训练的框架，通过对中间流状态的最小扰动，在对流匹配模型施加约束的同时最小化与预训练分布的偏差。"
       },
-      "category": "agents_automation",
+      "category": "models_capabilities",
       "tags": [
-        "personal-superintelligence",
-        "agents",
-        "strategy",
-        "access"
+        "flow matching",
+        "constrained sampling",
+        "generative models"
       ],
       "topics": [
-        "agents_automation",
-        "safety_security_alignment"
-      ],
-      "entities": [
-        "Meta",
-        "Mark Zuckerberg",
-        "personal superintelligence"
-      ],
-      "mediaType": "article",
-      "author": "Mark Zuckerberg",
-      "org": "Meta",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 74,
-      "importanceScore": 92,
-      "importance": 92,
-      "agiRelevanceScore": 96,
-      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_meta_personal_superintelligence_principles_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
-        },
-        {
-          "id": "cit_meta_personal_agent_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
-        },
-        {
-          "id": "cit_meta_creation_tools_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
-        },
-        {
-          "id": "cit_meta_tutor_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
-        },
-        {
-          "id": "cit_meta_science_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
-        },
-        {
-          "id": "cit_meta_access_20260810",
-          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
-          "publisher": "Meta",
-          "publishedAt": "2026-08-10T10:01:23Z",
-          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
-        }
-      ]
-    },
-    {
-      "id": "release_meta_muse_glimmer_30b_20260810",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_meta-ai",
-      "source": {
-        "id": "src_meta-ai",
-        "name": "Meta"
-      },
-      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-      "publishedAt": "2026-08-10T00:00:00Z",
-      "discoveredAt": "2026-08-10T20:08:00Z",
-      "updatedAt": "2026-08-10T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
-        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
-      },
-      "summary": {
-        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
-        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "open-weights",
-        "local-agents",
-        "multimodal",
-        "tool-use"
-      ],
-      "topics": [
-        "agents_automation",
         "models_capabilities"
       ],
-      "entities": [
-        "Meta",
-        "Meta Superintelligence Labs",
-        "Muse Glimmer",
-        "Muse Spark"
-      ],
-      "mediaType": "model",
-      "author": "Meta Superintelligence Lab",
-      "org": "Meta",
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yesom Park, Kelvin Kan, Qifan Chen, Thomas Flynn, Hayden Schaeffer. Xihaier Luo",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yesom park, kelvin kan, qifan chen, thomas flynn, hayden schaeffer. xihaier luo",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.98,
-      "freshnessScore": 56,
-      "importanceScore": 90,
-      "importance": 90,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
-      "verification": "verified_first_party",
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 97,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "advances constrained generation capabilities for flow matching models with training-free approach",
+      "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "cit_meta_muse_glimmer_model_card_20260810",
-          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
-          "publisher": "Meta Superintelligence Lab",
-          "publishedAt": "2026-08-10T00:00:00Z",
-          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
-          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
-          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
+          "id": "candidate_bc14691a892bd7c7add97d6b",
+          "url": "https://arxiv.org/abs/2610.02260",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-05T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.02260v1 Announce Type: new Abstract: Flow matching models excel at generative modeling, and many downstream applications require their samples to satisfy prescribed constraints, such as observed measurements and physical laws. However, existing constrained samplers often face a trade-off: \\textit{enforcing constraints can substantially displace samples from the pretrained data distribution}. To address this trade-off, we introduce \\textbf{MintFlow}, a training-free constrained sampling framework that formulates constraint enforcement as a minimal intervention on the pretrained flow trajectory. MintFlow seeks the minimal perturbation of an intermediate flow state such that its subsequent evolution under the pretrained flow field satisfies the target constraint. By minimally perturbing the flow state while keeping the pretrained flow field unchanged, MintFlow enforces the constraint while minimizing unnecessary deviation from the pretrained distribution. An adjoint formulation yields a closed-form expression for this perturbation, eliminating expensive iterative optimization. Furthermore, MintFlow adaptively selects the intervention time to balance the required perturbatio"
         }
       ]
     },
@@ -737,6 +817,132 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-10-05T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2610.02267v1 Announce Type: new Abstract: Agent harnesses make many small, typed decisions per task: which model to call, which tool to use, whether retrieved text is relevant, whether an input carries an injection. System-1 decision models answer such questions in a single forward pass with class probabilities, promising large cost and latency savings over LLM calls. We present a paired evaluation of an open-weight (Laya) and a hosted (Jev) System-1 model on 11 agent decision points built from 18 public sources: 7,283 base cases plus 6,640 robustness variants, with byte-identical inputs, paired tests, and cross-hardware and cross-day reproducibility checks. Jev is significantly more accurate on 9 of 11 decision points (+10.8 to +46.0 pp). Neither model beats chance on zero-shot model routing, and they tie on RAG relevance gating. Laya changes 30% of its answers when the option order is reversed and degrades sharply with many or similar candidates (31% at 50 nearest-neighbour tools, vs. 98% for Jev on items with a unique correct tool). We also audit our own pipeline. Three analysis errors and one design confound distorted headline deployment claims: an omitted pre-screen cost"
+        }
+      ]
+    },
+    {
+      "id": "item_bd1136d0fcfd6f1357de",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "publishedAt": "2026-10-03T22:56:48.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-04T00:43:17.129Z",
+      "updatedAt": "2026-10-03T22:56:48.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft ThinkingBox Evaluates Agent Reliability Through Backend State Analysis",
+        "zh-Hans": "微软ThinkingBox通过后端状态分析评估智能体可靠性"
+      },
+      "summary": {
+        "en": "Microsoft's ThinkingBox system grades AI agents based on the actual database records and backend states they produce, rather than their text outputs, testing consistency across multiple runs.",
+        "zh-Hans": "微软的ThinkingBox系统基于智能体产生的实际数据库记录和后端状态来评分，而非文本输出，测试多次运行的一致性。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "agent evaluation",
+        "reliability testing",
+        "microsoft",
+        "thinkingbox"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 98,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "Advances agent reliability evaluation methodology by focusing on actual system state changes rather than language outputs",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_bd1136d0fcfd6f1357de280a",
+          "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-10-03T22:56:48.000Z",
+          "evidenceSnippet": "A tool call is not an outcome One success is not reliability Can you depend on the model behind your agent? What consistency costs Pareto cost frontier Now price consistency Failure signatures How it works Run it yourself Before you start Install Start Typesense Start the MCP servers Start the OpenEnv server Check readiness Score an episode Where this goes next Microsoft ThinkingBox grades AI agents on the records they leave behind, not the sentences they generate, and then asks whether they can do it twenty times in a row. It is now available through Hugging Face. Figure 1: ThinkingBox runs an agent against isolated MCP tool sessions, then grades the terminal backend state and side effects it leaves behind. From our ThinkingBox paper . A customer writes in. Her $745 kitchen appliance has been stuck in a courier \"exception\" at a Nashville distribution center, fifteen days past its estimated delivery date."
+        }
+      ]
+    },
+    {
+      "id": "item_e81b1dea7ce0fb42c978",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/allenai/astabrief",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "publishedAt": "2026-10-02T15:19:50.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-04T00:43:17.129Z",
+      "updatedAt": "2026-10-02T15:19:50.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Allen AI Open-Sources AstaBrief Model for Scientific Report Generation",
+        "zh-Hans": "Allen AI开源AstaBrief模型用于科学报告生成"
+      },
+      "summary": {
+        "en": "Allen AI released AstaBrief, a specialized model for generating scientific reports that maintains evidence grounding and supports complex literature synthesis with attribution verification.",
+        "zh-Hans": "Allen AI发布了AstaBrief，这是一个专门用于生成科学报告的模型，能够保持证据基础并支持复杂的文献综合和归因验证。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "scientific research",
+        "report generation",
+        "evidence grounding",
+        "allenai"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 73,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "Demonstrates specialized model capabilities for complex reasoning tasks requiring evidence preservation and verification",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e81b1dea7ce0fb42c9785562",
+          "url": "https://huggingface.co/blog/allenai/astabrief",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-10-02T15:19:50.000Z",
+          "evidenceSnippet": "Training the model Collecting SFT training data Creating DPO pairs Filtering data for better attribution Validating the approach Where this goes next 🤗 Model | 📊 Data Language models can already help researchers search the literature, synthesize evidence, and work through complex questions. But scientific work places particular demands on these models—answers need to stay grounded in evidence, the models need to preserve what the evidence actually supports rather than quietly broadening a study’s conclusions, and researchers need to be able to verify the final outputs. We see that in how scientists use Asta , our agentic platform for scientific work. Instead of simple keyword searches, users often bring substantial context and many constraints—for example, asking Asta to compare approaches across a body of literature while accounting for a particular method, population, or setting. Many also return to generated reports later, treating them as working research artifacts rather than one-off answers."
         }
       ]
     },
@@ -2363,6 +2569,69 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-09-23T18:41:40.000Z",
           "evidenceSnippet": "Putting it together Start with one useful Warp Kernel Three properties make this useful in robotics: Differentiability and Determinism. What is MuJoCo Warp (MJWarp)? Basic usage: structs, batch sizes, and a minimal step Performance tuning Workflow to migrate a MuJoCo scene to MjWarp Get started What’s next References Classic MuJoCo provides fast CPU-based robot simulation for developing, testing, and controlling robots and it can parallelize sampling across CPU cores. But as learning workloads grow, the question shifts from how quickly one world can run to how many worlds can run at once. GPU acceleration makes it possible to advance those worlds in large batches while keeping simulation and learning data close to the device. MuJoCo Warp (MJWarp) , built on NVIDIA Warp , takes compatible MuJoCo models into that GPU-scale regime. In this article, we will move an SO-101 follower arm from a familiar MuJoCo workflow to as many as 2,048 parallel MJWarp environments and examine the technology and validation steps that make the transition possible. Figure 1. How MJWarp connects Python to GPU simulation. MuJoCo loads and compiles the MJCF model; MJWarp implements the physics in NVIDIA Warp"
+        }
+      ]
+    },
+    {
+      "id": "item_33f98722c2911516ecee",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "publishedAt": "2026-09-23T16:01:36.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-09-23T23:45:56.344Z",
+      "updatedAt": "2026-09-23T16:01:36.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Research Demonstrates Offloaded Inference for Physical AI Robotics",
+        "zh-Hans": "微软研究院展示物理AI机器人的卸载推理技术"
+      },
+      "summary": {
+        "en": "Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads for smarter robots.",
+        "zh-Hans": "微软研究院发现，将AI推理转移到机器人之外可以提高任务成功率、提升效率并支持更先进的物理AI工作负载。"
+      },
+      "category": "robotics_embodied_ai",
+      "tags": [
+        "offloaded-inference",
+        "physical-ai",
+        "robotics",
+        "efficiency"
+      ],
+      "topics": [
+        "robotics_embodied_ai"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Ganesh Ananthanarayanan, Matthew Balkwill, Xenofon Foukas, Sanjeev Mehrotra, Bozidar Radunovic, Connor Settle, Ankit Verma, David White, Shawn Cicoria, Mark Martin, Rachel Johnson, Mayur Patel",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 93,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 85,
+      "relevanceReason": "Offloaded inference architecture enables more sophisticated AI capabilities in physical robotics systems",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_33f98722c2911516eceeb09c",
+          "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-09-23T16:01:36.000Z",
+          "evidenceSnippet": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads. The post Offloaded inference for real-world physical AI robotics appeared first on Microsoft Research ."
         }
       ]
     },
@@ -9702,66 +9971,101 @@
       ]
     },
     {
-      "id": "release_openai_gpt_5_6_cyber_daybreak_20260810",
+      "id": "statement_meta_personal_superintelligence_20260810",
       "schemaVersion": "1.0.0",
-      "type": "release",
-      "sourceId": "src_openai",
+      "type": "article",
+      "sourceId": "src_meta-ai",
       "source": {
-        "id": "src_openai",
-        "name": "OpenAI"
+        "id": "src_meta-ai",
+        "name": "Meta"
       },
-      "canonicalUrl": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "publishedAt": "2026-08-10T10:00:00Z",
-      "discoveredAt": "2026-08-10T19:24:50.674Z",
-      "updatedAt": "2026-08-10T10:00:00Z",
+      "canonicalUrl": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+      "publishedAt": "2026-08-10T10:01:23Z",
+      "discoveredAt": "2026-08-10T20:25:00Z",
+      "updatedAt": "2026-08-10T15:28:59Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "OpenAI makes GPT-5.6-Cyber available for authorized cybersecurity research",
-        "zh-Hans": "OpenAI 推出 GPT-5.6-Cyber，用于经授权的网络安全研究"
+        "en": "Mark Zuckerberg outlines Meta’s vision for personal superintelligence",
+        "zh-Hans": "扎克伯格阐述 Meta 的个人超级智能愿景"
       },
       "summary": {
-        "en": "OpenAI made its cybersecurity-specific GPT-5.6-Cyber model available through Daybreak Red for authorized vulnerability research, exploit validation and security testing.",
-        "zh-Hans": "OpenAI 通过 Daybreak Red 提供其网络安全专用模型 GPT-5.6-Cyber，用于开展经授权的漏洞研究、漏洞利用验证和安全测试。"
+        "en": "In a Meta letter, Zuckerberg names individual empowerment, invention and a balance of power as guiding principles for personal superintelligence. He describes a future with personal agents, creation tools, tutors, wider participation in science and free or affordable access.",
+        "zh-Hans": "扎克伯格在 Meta 公开信中提出，个人超级智能应以增强个人能力、推动发明和维持权力平衡为原则。他描绘的愿景包括个人智能体、创作工具、个性化导师、更广泛的科研参与，以及免费或价格可负担的使用方式。"
       },
-      "category": "safety_security_alignment",
+      "category": "agents_automation",
       "tags": [
-        "cybersecurity",
-        "authorized-access",
-        "model-release"
+        "personal-superintelligence",
+        "agents",
+        "strategy",
+        "access"
       ],
       "topics": [
+        "agents_automation",
         "safety_security_alignment"
       ],
       "entities": [
-        "OpenAI",
-        "GPT-5.6-Cyber",
-        "Daybreak Red"
+        "Meta",
+        "Mark Zuckerberg",
+        "personal superintelligence"
       ],
       "mediaType": "article",
-      "author": "OpenAI",
-      "org": "OpenAI",
+      "author": "Mark Zuckerberg",
+      "org": "Meta",
       "image": null,
       "imageUrl": null,
       "sourceReliability": 0.98,
-      "freshnessScore": 76,
-      "importanceScore": 82,
-      "importance": 82,
-      "agiRelevanceScore": 74,
-      "relevanceReason": "A frontier-lab cybersecurity-specific model release is materially relevant to advanced capability access and misuse controls, without implying general AGI progress.",
-      "verification": "verified_first_party_feed",
+      "freshnessScore": 74,
+      "importanceScore": 92,
+      "importance": 92,
+      "agiRelevanceScore": 96,
+      "relevanceReason": "A frontier-lab leader’s explicit strategy for personal superintelligence, agent distribution and access is directly relevant to how advanced digital intelligence may be developed and deployed.",
+      "verification": "verified_first_party",
       "featured": false,
       "citations": [
         {
-          "id": "cit_openai_daybreak_cyber_20260810",
-          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-10T10:00:00Z",
-          "evidenceSnippet": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
-          "metadataSourceUrl": "https://openai.com/news/rss.xml",
-          "metadataEvidence": "Official OpenAI RSS pubDate: Mon, 10 Aug 2026 10:00:00 GMT."
+          "id": "cit_meta_personal_superintelligence_principles_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "We propose a philosophy based on individual empowerment as the source of prosperity, invention as the primary purpose of superintelligence, and balance of power as the foundation of safety."
+        },
+        {
+          "id": "cit_meta_personal_agent_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about."
+        },
+        {
+          "id": "cit_meta_creation_tools_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have incredible tools for creation to express your ideas."
+        },
+        {
+          "id": "cit_meta_tutor_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have a personalized tutor and coach with a PhD in every subject and unlimited patience to help you learn anything you want."
+        },
+        {
+          "id": "cit_meta_science_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will benefit from scientific advances and be able to contribute to scientific progress."
+        },
+        {
+          "id": "cit_meta_access_20260810",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/amp/",
+          "publisher": "Meta",
+          "publishedAt": "2026-08-10T10:01:23Z",
+          "evidenceSnippet": "Everyone will have free or affordable access to these tools."
         }
       ]
     },
@@ -9874,6 +10178,73 @@
           "publisher": "arXiv cs.AI",
           "publishedAt": "2026-08-10T04:00:00.000Z",
           "evidenceSnippet": "arXiv:2608.06474v1 Announce Type: new Abstract: Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collec"
+        }
+      ]
+    },
+    {
+      "id": "release_meta_muse_glimmer_30b_20260810",
+      "schemaVersion": "1.0.0",
+      "type": "release",
+      "sourceId": "src_meta-ai",
+      "source": {
+        "id": "src_meta-ai",
+        "name": "Meta"
+      },
+      "canonicalUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "publishedAt": "2026-08-10T00:00:00Z",
+      "discoveredAt": "2026-08-10T20:08:00Z",
+      "updatedAt": "2026-08-10T00:00:00Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Meta releases open-weight 30B Muse Glimmer for local AI agents",
+        "zh-Hans": "Meta 发布面向本地 AI 智能体的 30B 开放权重模型 Muse Glimmer"
+      },
+      "summary": {
+        "en": "Muse Glimmer is an open-weight 30B model, distilled from Muse Spark, that accepts text and images and outputs text. Released under Apache 2.0, it is built for local agent workflows with tool use, long-horizon tasks and failure recovery.",
+        "zh-Hans": "Muse Glimmer 是从 Muse Spark 蒸馏而来的 30B 开放权重模型，可接收文本和图像输入并输出文本。该模型以 Apache 2.0 许可发布，面向本地智能体工作流，支持工具调用、长程任务与故障恢复。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "open-weights",
+        "local-agents",
+        "multimodal",
+        "tool-use"
+      ],
+      "topics": [
+        "agents_automation",
+        "models_capabilities"
+      ],
+      "entities": [
+        "Meta",
+        "Meta Superintelligence Labs",
+        "Muse Glimmer",
+        "Muse Spark"
+      ],
+      "mediaType": "model",
+      "author": "Meta Superintelligence Lab",
+      "org": "Meta",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.98,
+      "freshnessScore": 56,
+      "importanceScore": 90,
+      "importance": 90,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "An open-weight multimodal model purpose-built for autonomous agentic tasks materially expands access to advanced local agent capabilities on consumer hardware.",
+      "verification": "verified_first_party",
+      "featured": false,
+      "citations": [
+        {
+          "id": "cit_meta_muse_glimmer_model_card_20260810",
+          "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+          "publisher": "Meta Superintelligence Lab",
+          "publishedAt": "2026-08-10T00:00:00Z",
+          "evidenceSnippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access. Supported modalities: Input: text + image, Output: text. All artifacts are released under Apache 2.0.",
+          "metadataSourceUrl": "https://huggingface.co/blog/muse-glimmer",
+          "metadataEvidence": "Exact-day release provenance is secondary: Hugging Face’s item-level release article says “Published August 10, 2026” and “Muse Glimmer, released today.” Meta’s first-party model card states only “Model Release Date: August 2026.”"
         }
       ]
     },
@@ -10060,67 +10431,6 @@
           "publisher": "Anthropic",
           "publishedAt": "2026-08-07T00:00:00Z",
           "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
-        }
-      ],
-      "mediaType": "article"
-    },
-    {
-      "id": "release_google_gemini_omni_builders_20260807",
-      "sourceId": "src_google-deepmind",
-      "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
-      "publishedAt": "2026-08-07T00:00:00Z",
-      "title": {
-        "en": "Google showcases early Gemini Omni video workflows",
-        "zh-Hans": "Google 展示 Gemini Omni 的首批视频工作流"
-      },
-      "summary": {
-        "en": "Google highlighted builders using Gemini Omni to generate and edit video from text, image, video or audio references, including changes to camera angles, objects and visual styles.",
-        "zh-Hans": "Google 展示了开发者如何用 Gemini Omni 根据文本、图片、视频或音频参考生成和编辑视频，包括调整机位、更换物体和切换视觉风格。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "multimodal",
-        "video-generation",
-        "developers"
-      ],
-      "topics": [
-        "models_capabilities",
-        "products_developer_ecosystem"
-      ],
-      "entities": [
-        "Google",
-        "Gemini Omni"
-      ],
-      "author": "Lindsey Lanquist",
-      "org": "Google",
-      "importanceScore": 72,
-      "evidence": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos.",
-      "schemaVersion": "1.0.0",
-      "type": "release",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
-      "source": {
-        "id": "src_google-deepmind",
-        "name": "Google"
-      },
-      "discoveredAt": "2026-08-10T16:48:06.891Z",
-      "updatedAt": "2026-08-07T00:00:00Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.95,
-      "freshnessScore": 43,
-      "importance": 72,
-      "verification": "verified_first_party",
-      "featured": false,
-      "citations": [
-        {
-          "id": "cit_release_google_gemini_omni_builders_20260807",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
-          "publisher": "Google",
-          "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
         }
       ],
       "mediaType": "article"
