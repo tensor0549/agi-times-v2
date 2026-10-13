@@ -7,8 +7,134 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-10-08T09:06:10.582Z",
+  "generatedAt": "2026-10-13T09:31:27.595Z",
   "items": [
+    {
+      "id": "insight_automated-agent-development-workflows_20261013",
+      "slug": "automated-agent-development-workflows",
+      "schemaVersion": "1.0.0",
+      "title": {
+        "en": "Automated Workflows Emerge for Agent Development and Evaluation",
+        "zh-Hans": "智能体开发和评估的自动化工作流程兴起"
+      },
+      "dek": {
+        "en": "Recent research demonstrates complementary automation mechanisms for creating, training, and evaluating AI agents across diverse domains.",
+        "zh-Hans": "最新研究展示了在不同领域创建、训练和评估AI智能体的互补自动化机制。"
+      },
+      "body": {
+        "en": "Recent developments illustrate complementary external mechanisms for engineering AI agents and policies. EliteTable demonstrates a program search approach where LLMs guide the generation of control policies through a fixed-capacity table of high-scoring solutions [^candidate_be23a3f6c27fbe895a84081e]. The system showed performance improvements across six Gymnasium control tasks over ten generations [^candidate_be23a3f6c27fbe895a84081e]. Meanwhile, Microsoft's StudentSim addresses agent evaluation by modeling individual learner engagement patterns to provide feedback for AI tutoring systems across subjects like chess, writing, and mathematics [^candidate_e3ff286dbca97504a4835ad2]. Hugging Face's ML Intern represents end-to-end automation, enabling users to describe desired models while the system handles planning, training, evaluation, and publishing with budget management [^candidate_ffd2818196374b7e8d985c5b]. These projects illustrate distinct automation mechanisms—guided search, simulation-based evaluation, and workflow orchestration—that complement traditional agent development approaches.",
+        "zh-Hans": "最新发展展示了工程化AI智能体和策略的互补外部机制。EliteTable展示了一种程序搜索方法，其中大语言模型通过固定容量的高分解决方案表指导控制策略的生成 [^candidate_be23a3f6c27fbe895a84081e]。该系统在六个Gymnasium控制任务中经过十代迭代显示出性能改进 [^candidate_be23a3f6c27fbe895a84081e]。与此同时，微软的StudentSim通过建模个体学习者参与模式来为国际象棋、写作和数学等学科的AI辅导系统提供反馈，解决了智能体评估问题 [^candidate_e3ff286dbca97504a4835ad2]。Hugging Face的ML Intern代表端到端自动化，让用户描述所需模型，而系统处理规划、训练、评估和发布并进行预算管理 [^candidate_ffd2818196374b7e8d985c5b]。这些项目展示了不同的自动化机制——引导搜索、基于仿真的评估和工作流编排——补充了传统的智能体开发方法。"
+      },
+      "publishedAt": "2026-10-13T09:31:27.595Z",
+      "updatedAt": "2026-10-13T09:31:27.595Z",
+      "topics": [
+        "agents_automation",
+        "products_developer_ecosystem"
+      ],
+      "claims": [
+        {
+          "id": "elitetable_program_search",
+          "type": "fact",
+          "text": {
+            "en": "EliteTable uses LLMs to guide program search through a fixed-capacity table of high-scoring solutions and showed performance improvements across six Gymnasium control tasks over ten generations",
+            "zh-Hans": "EliteTable使用大语言模型通过固定容量的高分解决方案表指导程序搜索，在六个Gymnasium控制任务中经过十代迭代显示出性能改进"
+          },
+          "citationIds": [
+            "candidate_be23a3f6c27fbe895a84081e"
+          ],
+          "confidence": 0.95
+        },
+        {
+          "id": "studentsim_evaluation",
+          "type": "fact",
+          "text": {
+            "en": "Microsoft's StudentSim models individual learner engagement with AI tutors to provide feedback for improving performance across chess, writing, and mathematics",
+            "zh-Hans": "微软的StudentSim建模个体学习者与AI导师的互动，为改进国际象棋、写作和数学等领域的表现提供反馈"
+          },
+          "citationIds": [
+            "candidate_e3ff286dbca97504a4835ad2"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "ml_intern_automation",
+          "type": "fact",
+          "text": {
+            "en": "ML Intern enables automated model development where users describe desired models and the system handles planning, training, evaluation, and publishing with budget management",
+            "zh-Hans": "ML Intern实现自动化模型开发，用户描述所需模型，系统处理规划、训练、评估和发布并进行预算管理"
+          },
+          "citationIds": [
+            "candidate_ffd2818196374b7e8d985c5b"
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "complementary_mechanisms",
+          "type": "inference",
+          "text": {
+            "en": "These projects illustrate distinct automation mechanisms that complement traditional agent development approaches through guided search, simulation-based evaluation, and workflow orchestration",
+            "zh-Hans": "这些项目展示了通过引导搜索、基于仿真的评估和工作流编排来补充传统智能体开发方法的不同自动化机制"
+          },
+          "citationIds": [
+            "candidate_be23a3f6c27fbe895a84081e",
+            "candidate_e3ff286dbca97504a4835ad2",
+            "candidate_ffd2818196374b7e8d985c5b"
+          ],
+          "confidence": 0.85
+        }
+      ],
+      "sources": [
+        {
+          "id": "candidate_be23a3f6c27fbe895a84081e",
+          "feedItemId": "item_be23a3f6c27fbe895a84",
+          "title": "EliteTable: Self-Improving Program Search for Executable Control Policies",
+          "url": "https://arxiv.org/abs/2610.12536",
+          "publisher": "arXiv cs.AI",
+          "author": "Stuart Farmer",
+          "independenceKey": "academic:stuart farmer",
+          "publishedAt": "2026-10-13T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.12536v1 Announce Type: new Abstract: EliteTable is a self-improving program-search algorithm guided by large language models (LLMs) that uses a fixed-capacity table of high-scoring solutions to guide new proposals, edits of existing solutions, and remixes of several solutions. Performance was evaluated across six Gymnasium control tasks, each with ten generations and fifty candidate slots per generation. Each task was evaluated across ten independently initialized searches. Candidate-score medians rose between the first and final generations in all six tasks, and selected-winner search-score medians rose in five. In CartPole-v1, the selected winner reached the search-score ceiling in the first generation of all ten searches. All ten paired held-out endpoints improved in four of the six tasks. BipedalWalker-v3 and CarRacing-v3 improved without reaching their reporting targets. Six of ten Acrobot-v1 searches declined on held-out episodes, and the median paired change was negative. The results document improvement during program search and the transfer of selected-winner gains to new episodes in some tasks. Comparisons and ablations are needed to establish EliteTable's rela"
+        },
+        {
+          "id": "candidate_e3ff286dbca97504a4835ad2",
+          "feedItemId": "item_e3ff286dbca97504a483",
+          "title": "Simulating student learning for better AI tutoring",
+          "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+          "publisher": "Microsoft Research",
+          "author": "Ke Yang, Chenglong Wang, Michel Galley, Jeevana Priya Inala, ChengXiang Zhai, Jianfeng Gao",
+          "independenceKey": "publisher:microsoft research",
+          "publishedAt": "2026-10-12T16:00:00.000Z",
+          "evidenceSnippet": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor performance across subjects like chess, writing, and mathematics. The post Simulating student learning for better AI tutoring appeared first on Microsoft Research ."
+        },
+        {
+          "id": "candidate_ffd2818196374b7e8d985c5b",
+          "feedItemId": "item_ffd2818196374b7e8d98",
+          "title": "The model that didn't exist, so you made it yourself",
+          "url": "https://huggingface.co/blog/building-with-ml-intern",
+          "publisher": "Hugging Face",
+          "author": "Hugging Face",
+          "independenceKey": "publisher:hugging face",
+          "publishedAt": "2026-10-08T00:00:00.000Z",
+          "evidenceSnippet": "How I prompt ML Intern 1. A model that knows your field 2. A model that draws your character 3. A model that does a new trick 4. A model that fits your device What it cost Make yours Last week, I wanted a small version of the prompt rewriter that ships with Qwen-Image 2.1. The official one is a 9B model that needs about 20 GB of memory and thinks for thousands of tokens before writing a single paragraph. On the Hub, I found only compressed copies of that same 9B model. So I described what I wanted to ML Intern , and the next day I had a 0.8B version that runs on a CPU. It returns valid output 99.7% of the time and uses about a quarter of the teacher's tokens. The compute for the whole project, including having the 9B model label 8,797 example requests, came to USD 16. Over the course of the next few days, I made five more models the same way. Each one started as a message in HuggingChat with ML-intern switched on, and each one ended as a public model on the Hub with its evaluation in the model card. ML-intern plans the work, asks me for a budget before it spends anything, runs a small test before the real job, then trains, evaluates and publishes on Hugging Face hardware. The first"
+        }
+      ],
+      "editorialGate": {
+        "status": "passed",
+        "checkedAt": "2026-10-13T09:31:27.595Z",
+        "factCheck": "model_constrained_to_captured_evidence_plus_structural_gate",
+        "translationReview": "bilingual_model_draft_heuristics_passed",
+        "aiProseScreen": {
+          "method": "heuristics-v1",
+          "status": "passed",
+          "notes": "Automated candidate; opaque detector scores are advisory only."
+        }
+      },
+      "generation": {
+        "model": "anthropic/claude-sonnet-4",
+        "sourceSnapshotAt": "2026-10-13T09:31:00.854Z",
+        "promptVersion": "current-content-1.0"
+      }
+    },
     {
       "id": "insight_agent-frameworks-decision-architectures-october-2026_20261008",
       "slug": "agent-frameworks-decision-architectures-october-2026",

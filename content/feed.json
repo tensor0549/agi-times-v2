@@ -7,8 +7,132 @@
   "localeAliases": {
     "zh": "zh-Hans"
   },
-  "generatedAt": "2026-10-08T09:06:10.582Z",
+  "generatedAt": "2026-10-13T09:31:27.595Z",
   "items": [
+    {
+      "id": "item_be23a3f6c27fbe895a84",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.12536",
+      "url": "https://arxiv.org/abs/2610.12536",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-13T09:31:00.854Z",
+      "updatedAt": "2026-10-13T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "EliteTable: Program Search Algorithm for Control Policies Using LLM Guidance",
+        "zh-Hans": "EliteTable：使用大语言模型指导的控制策略程序搜索算法"
+      },
+      "summary": {
+        "en": "Algorithm uses LLMs to guide program search with fixed-capacity table of solutions, showing improvement across six Gymnasium control tasks over ten generations.",
+        "zh-Hans": "该算法使用大语言模型指导程序搜索，通过固定容量的解决方案表，在六个Gymnasium控制任务中展现改进效果。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "program search",
+        "control policies",
+        "llm guidance"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Stuart Farmer",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:stuart farmer",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 75,
+      "importance": 75,
+      "agiRelevanceScore": 82,
+      "relevanceReason": "demonstrates transferable program search methodology for autonomous control policy generation",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_be23a3f6c27fbe895a84081e",
+          "url": "https://arxiv.org/abs/2610.12536",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-13T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.12536v1 Announce Type: new Abstract: EliteTable is a self-improving program-search algorithm guided by large language models (LLMs) that uses a fixed-capacity table of high-scoring solutions to guide new proposals, edits of existing solutions, and remixes of several solutions. Performance was evaluated across six Gymnasium control tasks, each with ten generations and fifty candidate slots per generation. Each task was evaluated across ten independently initialized searches. Candidate-score medians rose between the first and final generations in all six tasks, and selected-winner search-score medians rose in five. In CartPole-v1, the selected winner reached the search-score ceiling in the first generation of all ten searches. All ten paired held-out endpoints improved in four of the six tasks. BipedalWalker-v3 and CarRacing-v3 improved without reaching their reporting targets. Six of ten Acrobot-v1 searches declined on held-out episodes, and the median paired change was negative. The results document improvement during program search and the transfer of selected-winner gains to new episodes in some tasks. Comparisons and ablations are needed to establish EliteTable's rela"
+        }
+      ]
+    },
+    {
+      "id": "item_e3ff286dbca97504a483",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+      "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+      "publishedAt": "2026-10-12T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-13T09:31:00.854Z",
+      "updatedAt": "2026-10-12T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "StudentSim: Research System for Evaluating AI Tutoring Tools",
+        "zh-Hans": "StudentSim：评估AI辅导工具的研究系统"
+      },
+      "summary": {
+        "en": "Microsoft Research system models individual learner engagement with AI tutors, providing feedback to improve performance across chess, writing, and mathematics.",
+        "zh-Hans": "微软研究院系统模拟个体学习者与AI导师的互动，为改进国际象棋、写作和数学等领域的表现提供反馈。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "student simulation",
+        "ai tutoring",
+        "evaluation"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Ke Yang, Chenglong Wang, Michel Galley, Jeevana Priya Inala, ChengXiang Zhai, Jianfeng Gao",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 84,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "advances transferable agent evaluation methodology through learner behavior simulation",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e3ff286dbca97504a4835ad2",
+          "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-10-12T16:00:00.000Z",
+          "evidenceSnippet": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor performance across subjects like chess, writing, and mathematics. The post Simulating student learning for better AI tutoring appeared first on Microsoft Research ."
+        }
+      ]
+    },
     {
       "id": "item_a8ac830d507256c94210",
       "schemaVersion": "1.0.0",
@@ -72,64 +196,126 @@
       ]
     },
     {
-      "id": "item_9e90f3b0496f4064b4ab",
+      "id": "item_ffd2818196374b7e8d98",
       "schemaVersion": "1.0.0",
-      "type": "paper",
-      "sourceId": "src_arxiv-cs-ai",
+      "type": "article",
+      "sourceId": "src_hugging-face",
       "source": {
-        "id": "src_arxiv-cs-ai",
-        "name": "arXiv cs.AI"
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
       },
-      "canonicalUrl": "https://arxiv.org/abs/2610.06914",
-      "url": "https://arxiv.org/abs/2610.06914",
-      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "canonicalUrl": "https://huggingface.co/blog/building-with-ml-intern",
+      "url": "https://huggingface.co/blog/building-with-ml-intern",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
       "activityAt": null,
-      "discoveredAt": "2026-10-08T09:05:38.878Z",
-      "updatedAt": "2026-10-08T04:00:00.000Z",
+      "discoveredAt": "2026-10-13T09:31:00.854Z",
+      "updatedAt": "2026-10-08T00:00:00.000Z",
       "language": "en",
       "languageOriginal": "en",
       "originalLanguage": "en",
       "title": {
-        "en": "Text2Dashboard Agent Architecture Converts Natural Language to Enterprise Dashboards",
-        "zh-Hans": "Text2Dashboard智能体架构将自然语言转换为企业仪表板"
+        "en": "ML Intern: Automated Model Creation and Training Platform",
+        "zh-Hans": "ML Intern：自动化模型创建和训练平台"
       },
       "summary": {
-        "en": "Text2Dashboard prototype combines schema-constrained decisions with typed tools and deterministic controls, achieving 6/8 success on metadata and SQL tasks with comprehensive audit capabilities.",
-        "zh-Hans": "Text2Dashboard原型结合模式约束决策与类型化工具和确定性控制，在元数据和SQL任务上达到6/8成功率，具备全面审计能力。"
+        "en": "Hugging Face tool enables users to describe desired models and automatically handles planning, training, evaluation, and publishing with budget management.",
+        "zh-Hans": "Hugging Face工具让用户描述所需模型，自动处理规划、训练、评估和发布，并进行预算管理。"
       },
-      "category": "agents_automation",
+      "category": "products_developer_ecosystem",
       "tags": [
-        "enterprise agents",
-        "natural language",
-        "dashboard generation"
+        "model creation",
+        "ml intern",
+        "automated training"
       ],
       "topics": [
-        "agents_automation"
+        "products_developer_ecosystem"
       ],
       "entities": [],
       "mediaType": "article",
-      "author": "Yiou Wu, Zezhi Tang, Ningwei Bai, Liuhaichen Yang",
-      "org": "arXiv cs.AI",
-      "independenceKey": "academic:yiou wu, zezhi tang, ningwei bai, liuhaichen yang",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
       "image": null,
       "imageUrl": null,
-      "sourceReliability": 0.86,
+      "sourceReliability": 0.9,
       "metrics": {},
       "classification": null,
-      "freshnessScore": 95,
-      "importanceScore": 70,
-      "importance": 70,
-      "agiRelevanceScore": 78,
-      "relevanceReason": "demonstrates governed agent architecture with state management and execution control",
+      "freshnessScore": 29,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "demonstrates automated end-to-end model development workflow with autonomous planning capabilities",
       "verification": "verified_source_excerpt",
       "featured": false,
       "citations": [
         {
-          "id": "candidate_9e90f3b0496f4064b4ab3d5d",
-          "url": "https://arxiv.org/abs/2610.06914",
-          "publisher": "arXiv cs.AI",
-          "publishedAt": "2026-10-08T04:00:00.000Z",
-          "evidenceSnippet": "arXiv:2610.06914v1 Announce Type: new Abstract: Text2Dashboard is a DataBrain-specific prototype that turns natural-language analytic requests into inspectable dashboards. An installable Codex plugin and standalone Agent Runtime combine schema-constrained model decisions with typed tools, persistent state, and deterministic Hooks for approval, audit, checkpointing, recovery, and failure handling. The pipeline resolves entities, discovers metadata, enforces read-only SQL, composes dashboards, and applies static checks, dynamic preflight, and browser inspection. The model proposes actions while deterministic software controls execution and records state transitions. We evaluate the workflow on frozen real-DataBrain tasks and controlled Hook faults. Strict success was 6/8 on metadata and SQL tasks: metadata selection passed 4/4, all four SQL tasks met semantic criteria, and 2/4 met the exact output-column contract. The final release passed 4/4 single-panel dashboard tasks, one two-panel task, and one existing-dashboard refinement; a parameterised task exceeded its step limit. All ten fault scenarios met their specified outcomes without unapproved external side effects. Model inference"
+          "id": "candidate_ffd2818196374b7e8d985c5b",
+          "url": "https://huggingface.co/blog/building-with-ml-intern",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-10-08T00:00:00.000Z",
+          "evidenceSnippet": "How I prompt ML Intern 1. A model that knows your field 2. A model that draws your character 3. A model that does a new trick 4. A model that fits your device What it cost Make yours Last week, I wanted a small version of the prompt rewriter that ships with Qwen-Image 2.1. The official one is a 9B model that needs about 20 GB of memory and thinks for thousands of tokens before writing a single paragraph. On the Hub, I found only compressed copies of that same 9B model. So I described what I wanted to ML Intern , and the next day I had a 0.8B version that runs on a CPU. It returns valid output 99.7% of the time and uses about a quarter of the teacher's tokens. The compute for the whole project, including having the 9B model label 8,797 example requests, came to USD 16. Over the course of the next few days, I made five more models the same way. Each one started as a message in HuggingChat with ML-intern switched on, and each one ended as a public model on the Hub with its evaluation in the model card. ML-intern plans the work, asks me for a budget before it spends anything, runs a small test before the real job, then trains, evaluates and publishes on Hugging Face hardware. The first"
+        }
+      ]
+    },
+    {
+      "id": "item_b96cc914fffc078602a8",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/does-better-work-always-mean-better-workers/",
+      "url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
+      "publishedAt": "2026-10-07T20:19:57.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-13T09:31:00.854Z",
+      "updatedAt": "2026-10-07T20:19:57.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Study: AI's Differential Impact on Professional Skill Development",
+        "zh-Hans": "谷歌研究：AI对专业技能发展的差异化影响"
+      },
+      "summary": {
+        "en": "Three-month trial with patent attorneys shows AI improves work quality universally but affects learning differently: senior lawyers gain judgment skills while junior lawyers show mixed results.",
+        "zh-Hans": "对专利律师进行的三个月试验显示，AI普遍提高工作质量，但对学习的影响不同：资深律师提升判断技能，而初级律师结果参差不齐。"
+      },
+      "category": "society_economy_labor",
+      "tags": [
+        "professional learning",
+        "ai impact",
+        "skill development"
+      ],
+      "topics": [
+        "society_economy_labor"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 28,
+      "importanceScore": 72,
+      "importance": 72,
+      "agiRelevanceScore": 70,
+      "relevanceReason": "provides empirical evidence of AI's impact on human skill acquisition and professional development",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_b96cc914fffc078602a8102a",
+          "url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-10-07T20:19:57.000Z",
+          "evidenceSnippet": "David Autor, Technology & Society Visiting Fellow, and Tanya Rodchenko, Principal, AI & Economy In a three-month randomized controlled trial with practicing patent attorneys, we found that, while routinely using AI lifts work quality across the board, its effects on on-the-job learning depend on seniority: senior lawyers who used AI for 90 days demonstrate stronger judgment than those who didn’t, whereas junior lawyers show no average skill gain, their scores splitting into more strong scores and more low scores. Judgment is what sets senior professionals apart from their junior peers. Building judgment requires thousands of hours learning on the job, usually through tedious but formative engagement with relatively routine work, often under guided supervision by experienced workers. But AI is already changing how on-the-job learning works. On the one hand, empirical studies in radiology , business problem-solving , job-seeker writing , and legal education show that when AI tools are thoughtfully embedded into training workflows, less-experienced workers can improve their independent performance."
         }
       ]
     },
@@ -196,130 +382,6 @@
       ]
     },
     {
-      "id": "item_e986592dff42085cd40d",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_microsoft-research",
-      "source": {
-        "id": "src_microsoft-research",
-        "name": "Microsoft Research"
-      },
-      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-      "publishedAt": "2026-10-07T16:00:00.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-10-08T09:05:38.878Z",
-      "updatedAt": "2026-10-07T16:00:00.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Microsoft Releases Agent Lightning Framework for RL Training of Existing Agents",
-        "zh-Hans": "微软发布Agent Lightning框架用于现有智能体的强化学习训练"
-      },
-      "summary": {
-        "en": "Agent Lightning connects existing agents to RL training without rebuilding them, providing a lightweight 3,500-line framework for improving agent performance with real harnesses.",
-        "zh-Hans": "Agent Lightning将现有智能体连接到强化学习训练，无需重建，提供轻量级3,500行框架以通过真实工具改进智能体性能。"
-      },
-      "category": "agents_automation",
-      "tags": [
-        "reinforcement learning",
-        "agent training",
-        "framework"
-      ],
-      "topics": [
-        "agents_automation"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Zhiyuan He, Yuqing Yang",
-      "org": "Microsoft Research",
-      "independenceKey": "publisher:microsoft research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.92,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 85,
-      "importanceScore": 78,
-      "importance": 78,
-      "agiRelevanceScore": 80,
-      "relevanceReason": "enables systematic improvement of agent capabilities through RL integration",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_e986592dff42085cd40df279",
-          "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-          "publisher": "Microsoft Research",
-          "publishedAt": "2026-10-07T16:00:00.000Z",
-          "evidenceSnippet": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing agents to RL training, making it easier to improve them without rebuilding them. The post Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses appeared first on Microsoft Research ."
-        }
-      ]
-    },
-    {
-      "id": "item_67f5f61696a2949df273",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_hugging-face",
-      "source": {
-        "id": "src_hugging-face",
-        "name": "Hugging Face"
-      },
-      "canonicalUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
-      "publishedAt": "2026-10-07T12:45:31.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-10-08T09:05:38.878Z",
-      "updatedAt": "2026-10-07T12:45:31.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Nemotron Achieves Gold-Level Performance on Both IOI and IMO Competitions",
-        "zh-Hans": "Nemotron在IOI和IMO竞赛中均达到金牌水平"
-      },
-      "summary": {
-        "en": "Nemotron 3 foundation model achieved gold-medal level performance at both International Olympiad in Informatics and Mathematical Olympiad through specialized fine-tuning and reinforcement learning.",
-        "zh-Hans": "Nemotron 3基础模型通过专门微调和强化学习在国际信息学奥林匹克和数学奥林匹克竞赛中均达到金牌水平。"
-      },
-      "category": "models_capabilities",
-      "tags": [
-        "mathematical reasoning",
-        "competitive programming",
-        "fine-tuning"
-      ],
-      "topics": [
-        "models_capabilities"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Hugging Face",
-      "org": "Hugging Face",
-      "independenceKey": "publisher:hugging face",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.9,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 82,
-      "importanceScore": 85,
-      "importance": 85,
-      "agiRelevanceScore": 88,
-      "relevanceReason": "demonstrates advanced reasoning capabilities across distinct cognitive domains",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_67f5f61696a2949df2730f40",
-          "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
-          "publisher": "Hugging Face",
-          "publishedAt": "2026-10-07T12:45:31.000Z",
-          "evidenceSnippet": "A reusable specialization recipe From general coding ability to IOI gold Teaching Nemotron to prove, check, and revise Fine-tuning and test-time compute work together Open models, data, and recipes on Hugging Face The International Olympiad in Informatics (IOI) and the International Mathematical Olympiad (IMO) test different skills. IOI requires algorithms and code that pass hidden tests under strict time and submission limits. IMO demands rigorous natural-language proofs. Success at either competition is difficult. Success at both points to something broader. Our recent results show that Nemotron is a strong, adaptable foundation for building world-class specialist models. Starting from Nemotron 3, our teams used supervised fine-tuning (SFT), reinforcement learning (RL), and feedback-driven inference to create systems that reached gold-medal level at both IMO 2026 and IOI 2026 . The IOI result came from a live, prospective run under the same time, internet-access, and submission constraints as human contestants. It was an unofficial, unsupervised benchmark and was not included in the official IOI ranking. The IMO system’s submitted proofs were graded by official IMO graders."
-        }
-      ]
-    },
-    {
       "id": "item_7eeb0a9dde53453907ec",
       "schemaVersion": "1.0.0",
       "type": "article",
@@ -379,69 +441,6 @@
           "publisher": "Google Research",
           "publishedAt": "2026-10-05T21:08:31.000Z",
           "evidenceSnippet": "Eugene Bagdasarian, Research Scientist, and Marco Gruteser, Principal Scientist, Google Research To be useful, AI agents must understand and be constrained by contextual behavioral norms to ensure they act appropriately. Inspired by the theory of Contextual Integrity, our new workshop report outlines key open research directions across system, model, and user levels to build AI agents users can trust. We're rapidly transitioning to a computing landscape defined by highly general, increasingly autonomous agents . Driven by large language models (LLMs) that can dynamically generate plans and invoke external tools, these systems offer the potential for AI to seamlessly handle complex, multi-step tasks on our behalf. However, realizing this potential requires solving a key challenge: enabling agent capability while ensuring that agents act appropriately."
-        }
-      ]
-    },
-    {
-      "id": "item_a47750453f6e45044c5c",
-      "schemaVersion": "1.0.0",
-      "type": "article",
-      "sourceId": "src_google-research",
-      "source": {
-        "id": "src_google-research",
-        "name": "Google Research"
-      },
-      "canonicalUrl": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
-      "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
-      "publishedAt": "2026-10-02T14:57:41.000Z",
-      "activityAt": null,
-      "discoveredAt": "2026-10-04T00:43:17.129Z",
-      "updatedAt": "2026-10-02T14:57:41.000Z",
-      "language": "en",
-      "languageOriginal": "en",
-      "originalLanguage": "en",
-      "title": {
-        "en": "Google Research Announces Federated Learning System with Verifiable Privacy",
-        "zh-Hans": "谷歌研究发布具有可验证隐私保障的联邦学习系统"
-      },
-      "summary": {
-        "en": "Google Research introduced a new federated learning system providing externally verifiable privacy guarantees while improving training speed and accuracy through server-side computation.",
-        "zh-Hans": "谷歌研究推出了新的联邦学习系统，提供外部可验证的隐私保障，同时通过服务器端计算提高训练速度和准确性。"
-      },
-      "category": "safety_security_alignment",
-      "tags": [
-        "federated learning",
-        "privacy",
-        "google",
-        "machine learning"
-      ],
-      "topics": [
-        "safety_security_alignment"
-      ],
-      "entities": [],
-      "mediaType": "article",
-      "author": "Google Research",
-      "org": "Google Research",
-      "independenceKey": "publisher:google research",
-      "image": null,
-      "imageUrl": null,
-      "sourceReliability": 0.94,
-      "metrics": {},
-      "classification": null,
-      "freshnessScore": 72,
-      "importanceScore": 80,
-      "importance": 80,
-      "agiRelevanceScore": 75,
-      "relevanceReason": "Advances privacy-preserving machine learning infrastructure with verifiable guarantees",
-      "verification": "verified_source_excerpt",
-      "featured": false,
-      "citations": [
-        {
-          "id": "candidate_a47750453f6e45044c5cc5e9",
-          "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
-          "publisher": "Google Research",
-          "publishedAt": "2026-10-02T14:57:41.000Z",
-          "evidenceSnippet": "Katharine Daly, Software Engineer, and Daniel Ramage, Research Director, Google Research We announce a new Federated Learning system that provides externally verifiable privacy guarantees while shifting computation to the server to improve training speed, accuracy, and device coverage. In 2017, Google introduced Federated Learning (FL) a machine learning technique that trains models across decentralized, private data. It has been used to power everyday helpful features, including next-word prediction and Smart Compose on Gboard, reply suggestions in Google Messages, and Smart Text Selection in Android."
         }
       ]
     },
@@ -573,42 +572,43 @@
       ]
     },
     {
-      "id": "release_google_gemini_omni_builders_20260807",
-      "sourceId": "src_google-deepmind",
-      "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
+      "id": "release_anthropic_fable5_bio_safeguards_20260807",
+      "sourceId": "src_anthropic",
+      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
       "publishedAt": "2026-08-07T00:00:00Z",
       "title": {
-        "en": "Google showcases early Gemini Omni video workflows",
-        "zh-Hans": "Google 展示 Gemini Omni 的首批视频工作流"
+        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
+        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
       },
       "summary": {
-        "en": "Google highlighted builders using Gemini Omni to generate and edit video from text, image, video or audio references, including changes to camera angles, objects and visual styles.",
-        "zh-Hans": "Google 展示了开发者如何用 Gemini Omni 根据文本、图片、视频或音频参考生成和编辑视频，包括调整机位、更换物体和切换视觉风格。"
+        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
+        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
       },
-      "category": "models_capabilities",
+      "category": "safety_security_alignment",
       "tags": [
-        "multimodal",
-        "video-generation",
-        "developers"
+        "model-safety",
+        "biology",
+        "classifiers"
       ],
       "topics": [
-        "models_capabilities",
-        "products_developer_ecosystem"
+        "safety_security_alignment",
+        "models_capabilities"
       ],
       "entities": [
-        "Google",
-        "Gemini Omni"
+        "Anthropic",
+        "Fable 5",
+        "Opus 5"
       ],
-      "author": "Lindsey Lanquist",
-      "org": "Google",
-      "importanceScore": 72,
-      "evidence": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos.",
+      "author": "Anthropic",
+      "org": "Anthropic",
+      "importanceScore": 88,
+      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
       "schemaVersion": "1.0.0",
       "type": "release",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
       "source": {
-        "id": "src_google-deepmind",
-        "name": "Google"
+        "id": "src_anthropic",
+        "name": "Anthropic"
       },
       "discoveredAt": "2026-08-10T16:48:06.891Z",
       "updatedAt": "2026-08-07T00:00:00Z",
@@ -619,19 +619,205 @@
       "imageUrl": null,
       "sourceReliability": 0.95,
       "freshnessScore": 43,
-      "importance": 72,
+      "importance": 88,
       "verification": "verified_first_party",
       "featured": false,
       "citations": [
         {
-          "id": "cit_release_google_gemini_omni_builders_20260807",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
-          "publisher": "Google",
+          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
+          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+          "publisher": "Anthropic",
           "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
+          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
         }
       ],
       "mediaType": "article"
+    },
+    {
+      "id": "item_9e90f3b0496f4064b4ab",
+      "schemaVersion": "1.0.0",
+      "type": "paper",
+      "sourceId": "src_arxiv-cs-ai",
+      "source": {
+        "id": "src_arxiv-cs-ai",
+        "name": "arXiv cs.AI"
+      },
+      "canonicalUrl": "https://arxiv.org/abs/2610.06914",
+      "url": "https://arxiv.org/abs/2610.06914",
+      "publishedAt": "2026-10-08T04:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-08T09:05:38.878Z",
+      "updatedAt": "2026-10-08T04:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Text2Dashboard Agent Architecture Converts Natural Language to Enterprise Dashboards",
+        "zh-Hans": "Text2Dashboard智能体架构将自然语言转换为企业仪表板"
+      },
+      "summary": {
+        "en": "Text2Dashboard prototype combines schema-constrained decisions with typed tools and deterministic controls, achieving 6/8 success on metadata and SQL tasks with comprehensive audit capabilities.",
+        "zh-Hans": "Text2Dashboard原型结合模式约束决策与类型化工具和确定性控制，在元数据和SQL任务上达到6/8成功率，具备全面审计能力。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "enterprise agents",
+        "natural language",
+        "dashboard generation"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Yiou Wu, Zezhi Tang, Ningwei Bai, Liuhaichen Yang",
+      "org": "arXiv cs.AI",
+      "independenceKey": "academic:yiou wu, zezhi tang, ningwei bai, liuhaichen yang",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.86,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 95,
+      "importanceScore": 70,
+      "importance": 70,
+      "agiRelevanceScore": 78,
+      "relevanceReason": "demonstrates governed agent architecture with state management and execution control",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_9e90f3b0496f4064b4ab3d5d",
+          "url": "https://arxiv.org/abs/2610.06914",
+          "publisher": "arXiv cs.AI",
+          "publishedAt": "2026-10-08T04:00:00.000Z",
+          "evidenceSnippet": "arXiv:2610.06914v1 Announce Type: new Abstract: Text2Dashboard is a DataBrain-specific prototype that turns natural-language analytic requests into inspectable dashboards. An installable Codex plugin and standalone Agent Runtime combine schema-constrained model decisions with typed tools, persistent state, and deterministic Hooks for approval, audit, checkpointing, recovery, and failure handling. The pipeline resolves entities, discovers metadata, enforces read-only SQL, composes dashboards, and applies static checks, dynamic preflight, and browser inspection. The model proposes actions while deterministic software controls execution and records state transitions. We evaluate the workflow on frozen real-DataBrain tasks and controlled Hook faults. Strict success was 6/8 on metadata and SQL tasks: metadata selection passed 4/4, all four SQL tasks met semantic criteria, and 2/4 met the exact output-column contract. The final release passed 4/4 single-panel dashboard tasks, one two-panel task, and one existing-dashboard refinement; a parameterised task exceeded its step limit. All ten fault scenarios met their specified outcomes without unapproved external side effects. Model inference"
+        }
+      ]
+    },
+    {
+      "id": "item_e986592dff42085cd40d",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_microsoft-research",
+      "source": {
+        "id": "src_microsoft-research",
+        "name": "Microsoft Research"
+      },
+      "canonicalUrl": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "publishedAt": "2026-10-07T16:00:00.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-08T09:05:38.878Z",
+      "updatedAt": "2026-10-07T16:00:00.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Microsoft Releases Agent Lightning Framework for RL Training of Existing Agents",
+        "zh-Hans": "微软发布Agent Lightning框架用于现有智能体的强化学习训练"
+      },
+      "summary": {
+        "en": "Agent Lightning connects existing agents to RL training without rebuilding them, providing a lightweight 3,500-line framework for improving agent performance with real harnesses.",
+        "zh-Hans": "Agent Lightning将现有智能体连接到强化学习训练，无需重建，提供轻量级3,500行框架以通过真实工具改进智能体性能。"
+      },
+      "category": "agents_automation",
+      "tags": [
+        "reinforcement learning",
+        "agent training",
+        "framework"
+      ],
+      "topics": [
+        "agents_automation"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Zhiyuan He, Yuqing Yang",
+      "org": "Microsoft Research",
+      "independenceKey": "publisher:microsoft research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.92,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 85,
+      "importanceScore": 78,
+      "importance": 78,
+      "agiRelevanceScore": 80,
+      "relevanceReason": "enables systematic improvement of agent capabilities through RL integration",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_e986592dff42085cd40df279",
+          "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+          "publisher": "Microsoft Research",
+          "publishedAt": "2026-10-07T16:00:00.000Z",
+          "evidenceSnippet": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing agents to RL training, making it easier to improve them without rebuilding them. The post Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses appeared first on Microsoft Research ."
+        }
+      ]
+    },
+    {
+      "id": "item_67f5f61696a2949df273",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_hugging-face",
+      "source": {
+        "id": "src_hugging-face",
+        "name": "Hugging Face"
+      },
+      "canonicalUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "publishedAt": "2026-10-07T12:45:31.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-08T09:05:38.878Z",
+      "updatedAt": "2026-10-07T12:45:31.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Nemotron Achieves Gold-Level Performance on Both IOI and IMO Competitions",
+        "zh-Hans": "Nemotron在IOI和IMO竞赛中均达到金牌水平"
+      },
+      "summary": {
+        "en": "Nemotron 3 foundation model achieved gold-medal level performance at both International Olympiad in Informatics and Mathematical Olympiad through specialized fine-tuning and reinforcement learning.",
+        "zh-Hans": "Nemotron 3基础模型通过专门微调和强化学习在国际信息学奥林匹克和数学奥林匹克竞赛中均达到金牌水平。"
+      },
+      "category": "models_capabilities",
+      "tags": [
+        "mathematical reasoning",
+        "competitive programming",
+        "fine-tuning"
+      ],
+      "topics": [
+        "models_capabilities"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Hugging Face",
+      "org": "Hugging Face",
+      "independenceKey": "publisher:hugging face",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.9,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 82,
+      "importanceScore": 85,
+      "importance": 85,
+      "agiRelevanceScore": 88,
+      "relevanceReason": "demonstrates advanced reasoning capabilities across distinct cognitive domains",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_67f5f61696a2949df2730f40",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+          "publisher": "Hugging Face",
+          "publishedAt": "2026-10-07T12:45:31.000Z",
+          "evidenceSnippet": "A reusable specialization recipe From general coding ability to IOI gold Teaching Nemotron to prove, check, and revise Fine-tuning and test-time compute work together Open models, data, and recipes on Hugging Face The International Olympiad in Informatics (IOI) and the International Mathematical Olympiad (IMO) test different skills. IOI requires algorithms and code that pass hidden tests under strict time and submission limits. IMO demands rigorous natural-language proofs. Success at either competition is difficult. Success at both points to something broader. Our recent results show that Nemotron is a strong, adaptable foundation for building world-class specialist models. Starting from Nemotron 3, our teams used supervised fine-tuning (SFT), reinforcement learning (RL), and feedback-driven inference to create systems that reached gold-medal level at both IMO 2026 and IOI 2026 . The IOI result came from a live, prospective run under the same time, internet-access, and submission constraints as human contestants. It was an unofficial, unsupervised benchmark and was not included in the official IOI ranking. The IMO system’s submitted proofs were graded by official IMO graders."
+        }
+      ]
     },
     {
       "id": "item_5fd89b8ccb4f8ef45b6c",
@@ -943,6 +1129,69 @@
           "publisher": "Hugging Face",
           "publishedAt": "2026-10-02T15:19:50.000Z",
           "evidenceSnippet": "Training the model Collecting SFT training data Creating DPO pairs Filtering data for better attribution Validating the approach Where this goes next 🤗 Model | 📊 Data Language models can already help researchers search the literature, synthesize evidence, and work through complex questions. But scientific work places particular demands on these models—answers need to stay grounded in evidence, the models need to preserve what the evidence actually supports rather than quietly broadening a study’s conclusions, and researchers need to be able to verify the final outputs. We see that in how scientists use Asta , our agentic platform for scientific work. Instead of simple keyword searches, users often bring substantial context and many constraints—for example, asking Asta to compare approaches across a body of literature while accounting for a particular method, population, or setting. Many also return to generated reports later, treating them as working research artifacts rather than one-off answers."
+        }
+      ]
+    },
+    {
+      "id": "item_a47750453f6e45044c5c",
+      "schemaVersion": "1.0.0",
+      "type": "article",
+      "sourceId": "src_google-research",
+      "source": {
+        "id": "src_google-research",
+        "name": "Google Research"
+      },
+      "canonicalUrl": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+      "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+      "publishedAt": "2026-10-02T14:57:41.000Z",
+      "activityAt": null,
+      "discoveredAt": "2026-10-04T00:43:17.129Z",
+      "updatedAt": "2026-10-02T14:57:41.000Z",
+      "language": "en",
+      "languageOriginal": "en",
+      "originalLanguage": "en",
+      "title": {
+        "en": "Google Research Announces Federated Learning System with Verifiable Privacy",
+        "zh-Hans": "谷歌研究发布具有可验证隐私保障的联邦学习系统"
+      },
+      "summary": {
+        "en": "Google Research introduced a new federated learning system providing externally verifiable privacy guarantees while improving training speed and accuracy through server-side computation.",
+        "zh-Hans": "谷歌研究推出了新的联邦学习系统，提供外部可验证的隐私保障，同时通过服务器端计算提高训练速度和准确性。"
+      },
+      "category": "safety_security_alignment",
+      "tags": [
+        "federated learning",
+        "privacy",
+        "google",
+        "machine learning"
+      ],
+      "topics": [
+        "safety_security_alignment"
+      ],
+      "entities": [],
+      "mediaType": "article",
+      "author": "Google Research",
+      "org": "Google Research",
+      "independenceKey": "publisher:google research",
+      "image": null,
+      "imageUrl": null,
+      "sourceReliability": 0.94,
+      "metrics": {},
+      "classification": null,
+      "freshnessScore": 72,
+      "importanceScore": 80,
+      "importance": 80,
+      "agiRelevanceScore": 75,
+      "relevanceReason": "Advances privacy-preserving machine learning infrastructure with verifiable guarantees",
+      "verification": "verified_source_excerpt",
+      "featured": false,
+      "citations": [
+        {
+          "id": "candidate_a47750453f6e45044c5cc5e9",
+          "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+          "publisher": "Google Research",
+          "publishedAt": "2026-10-02T14:57:41.000Z",
+          "evidenceSnippet": "Katharine Daly, Software Engineer, and Daniel Ramage, Research Director, Google Research We announce a new Federated Learning system that provides externally verifiable privacy guarantees while shifting computation to the server to improve training speed, accuracy, and device coverage. In 2017, Google introduced Federated Learning (FL) a machine learning technique that trains models across decentralized, private data. It has been used to power everyday helpful features, including next-word prediction and Smart Compose on Gboard, reply suggestions in Google Messages, and Smart Text Selection in Android."
         }
       ]
     },
@@ -10374,43 +10623,42 @@
       ]
     },
     {
-      "id": "release_anthropic_fable5_bio_safeguards_20260807",
-      "sourceId": "src_anthropic",
-      "canonicalUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "id": "release_google_gemini_omni_builders_20260807",
+      "sourceId": "src_google-deepmind",
+      "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
       "publishedAt": "2026-08-07T00:00:00Z",
       "title": {
-        "en": "Anthropic reduces Fable 5 biology-safeguard fallbacks",
-        "zh-Hans": "Anthropic 大幅减少 Fable 5 生物学误拦截"
+        "en": "Google showcases early Gemini Omni video workflows",
+        "zh-Hans": "Google 展示 Gemini Omni 的首批视频工作流"
       },
       "summary": {
-        "en": "A classifier update cut biology-related fallbacks by about 85% in Anthropic testing, while dual-use professional biology requests still route to Opus 5.",
-        "zh-Hans": "Anthropic 表示，分类器更新在测试中将生物学相关的模型回退减少约 85%；涉及双重用途的专业生物学请求仍会转交 Opus 5。"
+        "en": "Google highlighted builders using Gemini Omni to generate and edit video from text, image, video or audio references, including changes to camera angles, objects and visual styles.",
+        "zh-Hans": "Google 展示了开发者如何用 Gemini Omni 根据文本、图片、视频或音频参考生成和编辑视频，包括调整机位、更换物体和切换视觉风格。"
       },
-      "category": "safety_security_alignment",
+      "category": "models_capabilities",
       "tags": [
-        "model-safety",
-        "biology",
-        "classifiers"
+        "multimodal",
+        "video-generation",
+        "developers"
       ],
       "topics": [
-        "safety_security_alignment",
-        "models_capabilities"
+        "models_capabilities",
+        "products_developer_ecosystem"
       ],
       "entities": [
-        "Anthropic",
-        "Fable 5",
-        "Opus 5"
+        "Google",
+        "Gemini Omni"
       ],
-      "author": "Anthropic",
-      "org": "Anthropic",
-      "importanceScore": 88,
-      "evidence": "This update reduced biology-related fallbacks by about 85% across our product surfaces.",
+      "author": "Lindsey Lanquist",
+      "org": "Google",
+      "importanceScore": 72,
+      "evidence": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos.",
       "schemaVersion": "1.0.0",
       "type": "release",
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
       "source": {
-        "id": "src_anthropic",
-        "name": "Anthropic"
+        "id": "src_google-deepmind",
+        "name": "Google"
       },
       "discoveredAt": "2026-08-10T16:48:06.891Z",
       "updatedAt": "2026-08-07T00:00:00Z",
@@ -10421,16 +10669,16 @@
       "imageUrl": null,
       "sourceReliability": 0.95,
       "freshnessScore": 43,
-      "importance": 88,
+      "importance": 72,
       "verification": "verified_first_party",
       "featured": false,
       "citations": [
         {
-          "id": "cit_release_anthropic_fable5_bio_safeguards_20260807",
-          "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-          "publisher": "Anthropic",
+          "id": "cit_release_google_gemini_omni_builders_20260807",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
+          "publisher": "Google",
           "publishedAt": "2026-08-07T00:00:00Z",
-          "evidenceSnippet": "This update reduced biology-related fallbacks by about 85% across our product surfaces."
+          "evidenceSnippet": "You can generate high-quality videos from text, image, video, or audio references, and even edit your own videos."
         }
       ],
       "mediaType": "article"
